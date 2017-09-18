@@ -1,0 +1,34 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="cloud-activity-tracker" audience="service" href="/docs/services/cloud-activity-tracker/index.html"}
+IBM Cloud Activity Tracker
+
+    {: .navgroup id="learn"}
+    index.md
+    
+    {: .topicgroup}
+    About
+        activity_tracker_ov.md
+        cloud_services.md
+
+    {: .topicgroup}
+    Monitoring cloud activity
+        svcs/kp_at.md
+
+    {: .topicgroup}
+    Related links
+        [Learn more about Kibana](https://www.elastic.co/guide/en/kibana/5.1/index.html)
+        [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+    {: .navgroup-end}
+    
+    {: .navgroup id="howto"}
+    how-to/provision.md
+    how-to/manage-events-ui/launch_at_ui.md
+    how-to/manage-events-ui/launch_kibana.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    gettinghelp.md
+    {: .navgroup-end}
+    

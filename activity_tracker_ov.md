@@ -1,0 +1,129 @@
+---
+
+copyright:
+  years: 2016, 2017
+
+lastupdated: "2017-09-17"
+
+---
+
+{:shortdesc: .shortdesc}
+{:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+
+
+# Activity Tracker
+{: #activity_tracker_ov}
+
+Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applications interact with {{site.data.keyword.Bluemix}} services. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor for abnormal activity, and comply with regulatory audit requirements. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard.
+{:shortdesc}
+
+* {{site.data.keyword.cloudaccesstrailshort}} offers high-level security governance for your IT resources in the cloud.
+* {{site.data.keyword.cloudaccesstrailshort}} provides a solution for network administrators to capture, store, view, search, and monitor API activity in a single place.
+* {{site.data.keyword.cloudaccesstrailshort}} provides capabilities to download events that you can then use to generate an audit trail report. You might require these reports so that your organization complies with internal regulations and external industry and country regulations.
+
+Compliance with internal policies and industry regulations is a key requirement in any organization's strategy, regardless of where applications run: on-premises, in a hybrid cloud, or in a public cloud. The {{site.data.keyword.cloudaccesstrailshort}} service provides the framework and functionality to monitor API calls and produce the evidence to comply with corporate policies and market industry-specific regulations.
+
+When you work in a cloud environment, such as {{site.data.keyword.Bluemix_notm}}, you must plan the cloud strategy for auditing and monitoring workloads and data in accordance with your internal policies and with industry and country-based compliance requirements. You can use the information that is registered through the {{site.data.keyword.cloudaccesstrailshort}} service to identify security incidents, detect unauthorized access, and comply with regulatory and internal auditing requirements.
+
+For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} logs to identify the following information:
+
+* The users who made API calls to cloud services.
+* The source IP address from where the API calls were made.
+* The time-stamp when the API calls were made.
+* The status of the API call.
+
+
+## Provisioning Activity Tracker in Bluemix
+{: #provision}
+
+You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in each space of your {{site.data.keyword.Bluemix_notm}} account where you want to monitor API activity to Cloud services running in that space.
+
+To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+
+
+
+## Collecting activity logs
+{: #collect}
+
+The {{site.data.keyword.cloudaccesstrailshort}} service only captures activity data that is related to API calls and other actions that are made to selected cloud services in {{site.data.keyword.Bluemix_notm}}. See [Supported cloud services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services) for a list of services.
+
+* Events are collected automatically. 
+* The events that are collected in {{site.data.keyword.cloudaccesstrailshort}} comply with the Cloud Auditing Data Federation (CADF) standard. The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
+
+The CADF event model includes the following components:
+
+<table>
+  <caption>Table 1. Components that are available in a CADF event model</caption>
+  <tr>
+    <th>Component</th>
+	<th>Description</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+	<td>The action is the operation or activity that an initiator performs, attempts to perform, or is waiting to complete.</td>
+  </tr>
+  <tr>
+    <td>Initiator</td>
+	<td>The initiator is the resource that makes an API call and generates a CADF event. The event that is triggered depends on the action that is requested by the API call.</td>
+  </tr>
+  <tr>
+    <td>Observer</td>
+	<td>The observer is the resource that creates and stores a CADF record from information available in a CADF event.</td>
+  </tr>
+  <tr>
+    <td>Outcome</td>
+	<td>The outcome is the status of the action against the target.</td>
+  </tr>
+  <tr>
+    <td>Target</td>
+	<td>The target is the resource against which the action is performed, attempted to perform, or is pending to complete.</td>
+  </tr>
+</table>
+
+
+Consider the following information when you work with the {{site.data.keyword.cloudaccesstrailshort}} log in the {{site.data.keyword.IBM_notm}} public cloud:
+
+* You can only store audit records for API calls made to resources that run in the {{site.data.keyword.IBM_notm}} public cloud.
+* Only {{site.data.keyword.IBM_notm}} public cloud storage is used to collect events.
+* Information is stored for 3 days. After that, the information is deleted on a first-in first-out basis.
+* CADF events of type *Activity* are supported by the {{site.data.keyword.cloudaccesstrailshort}} service.
+
+
+
+## Analizing activity logs
+{: #analyze}
+
+You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix_notm}}, or by using Kibana, an open-source tool. You can monitor events that are available in a specific space or at the account level.
+
+* You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+* You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana).
+
+
+## Security
+{: #security}
+
+Consider the following information:
+
+* IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* The {{site.data.keyword.cloudaccesstrailshort}} service captures user-initiated actions that change the state of Cloud services. The information does not provide direct access to databases or applications.
+* The {{site.data.keyword.cloudaccesstrailshort}} service does not provide file encryption. 
+* The activity logs that are collected by the {{site.data.keyword.cloudaccesstrailshort}} service are not encrypted. 
+* Only authorized users can view and monitor {{site.data.keyword.cloudaccesstrailshort}} event logs. Each user is identified by their unique ID in {{site.data.keyword.Bluemix_notm}}.
+
+
+## Regions
+{: #regions}
+
+The {{site.data.keyword.cloudaccesstrailfull}} service is available in the following regions:
+
+* US South
+* United Kingdom
+
+## Service Plan
+{: #plan}
+
+Currently, the service is in Beta. The only plan that is available for the service is the **free** plan. 
+
