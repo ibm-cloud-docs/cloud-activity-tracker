@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-17"
+lastupdated: "2017-09-25"
 
 ---
 
@@ -28,7 +28,7 @@ Compliance with internal policies and industry regulations is a key requirement 
 
 When you work in a cloud environment, such as {{site.data.keyword.Bluemix_notm}}, you must plan the cloud strategy for auditing and monitoring workloads and data in accordance with your internal policies and with industry and country-based compliance requirements. You can use the information that is registered through the {{site.data.keyword.cloudaccesstrailshort}} service to identify security incidents, detect unauthorized access, and comply with regulatory and internal auditing requirements.
 
-For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} logs to identify the following information:
+For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} activity logs to identify the following information:
 
 * The users who made API calls to cloud services.
 * The source IP address from where the API calls were made.
@@ -98,32 +98,84 @@ Consider the following information when you work with the {{site.data.keyword.cl
 
 You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix_notm}}, or by using Kibana, an open-source tool. You can monitor events that are available in a specific space or at the account level.
 
-* You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
-* You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana).
+You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
 
+You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. * **Note:** This feature is available for **Premium** plan users.
 
-## Security
-{: #security}
+* For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
+* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker/reference/at_event.html#at_event)
 
-Consider the following information:
-
-* IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
-* The {{site.data.keyword.cloudaccesstrailshort}} service captures user-initiated actions that change the state of Cloud services. The information does not provide direct access to databases or applications.
-* The {{site.data.keyword.cloudaccesstrailshort}} service does not provide file encryption. 
-* The activity logs that are collected by the {{site.data.keyword.cloudaccesstrailshort}} service are not encrypted. 
-* Only authorized users can view and monitor {{site.data.keyword.cloudaccesstrailshort}} event logs. Each user is identified by their unique ID in {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Regions
 {: #regions}
 
-The {{site.data.keyword.cloudaccesstrailfull}} service is available in the following regions:
+The {{site.data.keyword.cloudaccesstrailshort}} service is available in the following regions:
 
 * US South
-* United Kingdom
+* United Kingdom (Beta)
+
 
 ## Service Plan
 {: #plan}
 
-Currently, the service is in Beta. The only plan that is available for the service is the **free** plan. 
+The {{site.data.keyword.cloudaccesstrailshort}} service provides multiple plans.
 
+You can change a plan through the {{site.data.keyword.Bluemix_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades in {{site.data.keyword.Bluemix_notm}}, see [Changing the plan](/docs/services/cloud-activity-tracker/plan/change_plan.html#change_plan). 
+
+The following tables outline the features that are available in each service plan:
+
+<table>
+    <caption>Table 1. Capabilities for event ingestion, event retention, and exporting events</caption>
+      <tr>
+        <th>Plan</th>
+        <th>Event Ingestion</th>
+        <th>Event Retention</th>
+		<th>Export events</th>
+      </tr>
+      <tr>
+        <td>Lite (default)</td>
+        <td>No</td>
+        <td>Last 3 days</td>
+		<td>No</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>Yes</td>
+        <td>Configurable number of days.</td>
+		<td>Yes</td>
+      </tr>
+</table>
+
+<table>
+    <caption>Table 2. Capabilities for managing and viewing events</caption>
+      <tr>
+        <th>Plan</th>
+		<th>API</th>
+		<th>CLI</th>
+        <th>Kibana</th>
+      </tr>
+      <tr>
+        <td>Lite (default)</td>
+		<td>No</td>
+		<td>No</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+		<td>Yes</td>
+		<td>Yes</td>
+        <td>Yes</td>
+      </tr>
+</table>
+
+**Note:** The monthly cost of event storage is calculated as an average of the billing cycle.
+
+## Security
+{: #security}
+
+Consider the following information about security when working with the {{site.data.keyword.cloudaccesstrailshort}} service:
+
+* IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* The {{site.data.keyword.cloudaccesstrailshort}} service captures user-initiated actions that change the state of Cloud services. The information does not provide direct access to databases or applications.
+* Only authorized users can view and monitor {{site.data.keyword.cloudaccesstrailshort}} event logs. Each user is identified by their unique ID in {{site.data.keyword.Bluemix_notm}}.

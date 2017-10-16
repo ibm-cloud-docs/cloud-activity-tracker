@@ -178,7 +178,7 @@ By default in Kibana, the space activity logs are displayed through the **Activi
 
 ![Kibana view of the events](images/kibana_space_view.png "Kibana view of the events")
 
-
+You can also use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/manage-events-cli/viewing_event_information.html#viewing_event_status).
 
                                                                                                                       
 

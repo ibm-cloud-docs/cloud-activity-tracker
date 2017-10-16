@@ -32,6 +32,11 @@ Use the {{site.data.keyword.cloudaccesstraillong}} service to monitor user-initi
 	<td>You can use the {{site.data.keyword.keymanagementserviceshort}} service to provision encrypted keys for apps across {{site.data.keyword.Bluemix_notm}}.</td>
 	<td><a href="/docs/services/cloud-activity-tracker/svcs/kp_at.html#kp_at">Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}} </td>
   </tr>
+  <tr>
+    <td><a href="/docs/iam/users_roles.html#userroles">{{site.data.keyword.iamlong}} (IAM)</td>
+	<td>You can use IAM to manage users and roles across the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services. </td>
+	<td></td>
+  </tr>
 </table>
 
 **Note:** To get information about the regions where a service is available in {{site.data.keyword.Bluemix_notm}}, see [Services by region](/docs/services/services_region.html#services_region).

@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-17"
+lastupdated: "2017-09-19"
 
 ---
 
@@ -33,7 +33,7 @@ To manage encrypted keys, you can create and delete keys through the {{site.data
 
 In {{site.data.keyword.Bluemix_notm}}, to monitor the activity trail for the {{site.data.keyword.keymanagementserviceshort}} service, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same space where the {{site.data.keyword.keymanagementserviceshort}} service is provisioned. After both services are provisioned and running, activity events are generated and automatically collected in the {{site.data.keyword.cloudaccesstrailshort}} log when you create, read, or delete a key. 
 
-Due to the sensitivity of the information for an encrypted key, when an event is generated as a result of an API call to the {{site.data.keyword.keymanagementserviceshort}} service, the event that is generated does not include detailed information about the key. The event includes a correlation ID that can be used to identify the key internally in your cloud environment.
+Due to the sensitivity of the information for an encrypted key, when an event is generated as a result of an API call to the {{site.data.keyword.keymanagementserviceshort}} service, the event that is generated does not include detailed information about the key. The event includes a correlation ID that can be used to identify the key internally in your cloud environment. The correlation ID is a field that is returned as part of the **responseHeader.content** field. You use this information to correlate the sensitive data of the encrypted key with the information of the action reported through the event.
 
 The following figure shows the different components and actions that occur when a user makes an API call to create a key:
 

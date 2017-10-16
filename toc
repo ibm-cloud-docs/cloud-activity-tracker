@@ -11,11 +11,16 @@ IBM Cloud Activity Tracker
     About
         activity_tracker_ov.md
         cloud_services.md
+        reference/at_event.md
 
     {: .topicgroup}
     Monitoring cloud activity
         svcs/kp_at.md
 
+    {: .topicgroup}
+    Tutorials
+        /tutorials/manage_events_cli.md
+		
     {: .topicgroup}
     Related links
         [Learn more about Kibana](https://www.elastic.co/guide/en/kibana/5.1/index.html)
@@ -24,9 +29,30 @@ IBM Cloud Activity Tracker
     
     {: .navgroup id="howto"}
     how-to/provision.md
-    how-to/manage-events-ui/launch_at_ui.md
-    how-to/manage-events-ui/launch_kibana.md
+    plan/change_plan.md
+
+    {: .topicgroup}
+    Configuring the CLI
+        cli/config_at_cli.md
+        cli/get_help_cli.md
+
+    {: .topicgroup}
+    Managing events from the CLI
+        how-to/manage-events-cli/viewing_event_information.md
+        how-to/manage-events-cli/downloading_events.md
+        how-to/manage-events-cli/deleting_events.md
+
+    {: .topicgroup}
+    Viewing events through the UI
+        how-to/manage-events-ui/launch_at_ui.md
+        how-to/manage-events-ui/launch_kibana.md
     {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    cli/at_cli.md
+
+    [Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+    {: .navgroup-end}     
 
     {: .navgroup id="help"}
     gettinghelp.md

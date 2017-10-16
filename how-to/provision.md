@@ -37,6 +37,8 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 3. Select the **Security** category to filter the list of services that is displayed.
 
+    The service is also available under the **DevOps** category.
+
 4. Click the **Activity Tracker** tile.
 
 5. Configure the information that defines where the service is going to be provisioned. 
