@@ -60,14 +60,6 @@ Complete the following steps:
 		  <td>US South</td>
 		  <td>api.ng.bluemix.net</td>
 		</tr>
-		<tr>
-		  <td>United Kingdom</td>
-		  <td>api.eu-gb.bluemix.net</td>
-		</tr>
-		<tr>
-		  <td>Germany</td>
-		  <td>api.eu-de.bluemix.net</td>
-		</tr>
 	</table>
 
     For example, run the following command to log in to the US South region:

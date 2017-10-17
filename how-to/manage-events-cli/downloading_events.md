@@ -42,14 +42,6 @@ Where *Endpoint* is the URL to log in to {{site.data.keyword.Bluemix_notm}}. Thi
 	  <td>US South</td>
 	  <td>api.ng.bluemix.net</td>
 	</tr>
-	<tr>
-	  <td>United Kingdom</td>
-	  <td>api.eu-gb.bluemix.net</td>
-	</tr>
-	<tr>
-	  <td>Germany</td>
-	  <td>api.eu-de.bluemix.net</td>
-	</tr>
 </table>
 
 Follow the instructions. 

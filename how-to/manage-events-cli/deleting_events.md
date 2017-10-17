@@ -42,14 +42,6 @@ Use the `cf at status` command to view the size, count, and whether the events a
 		  <td>US South</td>
 		  <td>api.ng.bluemix.net</td>
 		</tr>
-		<tr>
-		  <td>United Kingdom</td>
-		  <td>api.eu-gb.bluemix.net</td>
-		</tr>
-		<tr>
-		  <td>Germany</td>
-		  <td>api.eu-de.bluemix.net</td>
-		</tr>
 	</table>
 
     Follow the instructions. 
