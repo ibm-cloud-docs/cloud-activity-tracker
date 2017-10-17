@@ -28,7 +28,7 @@ Complete the following steps to navigate to the {{site.data.keyword.cloudaccesst
 
 1. Log in to the space, organization, and region of your {{site.data.keyword.Bluemix_notm}} account where you want to monitor your cloud activity.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -46,7 +46,7 @@ Complete the following steps to navigate to the {{site.data.keyword.cloudaccesst
 
 1. Log in to the {{site.data.keyword.Bluemix_notm}} account where you want to monitor your cloud activity.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
