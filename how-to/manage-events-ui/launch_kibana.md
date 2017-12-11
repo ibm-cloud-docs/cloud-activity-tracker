@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-17"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2017-09-17"
 # Navigating to the Kibana dashboard
 {: #launch_kibana}
 
-You can launch Kibana from the {{site.data.keyword.cloudaccesstrailshort}} UI in {{site.data.keyword.Bluemix}}, or directly from a web browser.
+You can launch Kibana from the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.Bluemix}}, or directly from a web browser.
 {:shortdesc}
    
 
@@ -30,7 +30,7 @@ Complete the following steps to launch Kibana from the dashboard of the {{site.d
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -65,12 +65,16 @@ Complete the following steps to launch Kibana from a browser:
             <th>URL</th>
           </tr>
           <tr>
-            <td>US South</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Germany</td>
+            <td>[https://logging.eu-de.bluemix.net](https://logging.eu-de.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>United Kingdom</td>
             <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>US South</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	

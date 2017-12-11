@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-17"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -17,12 +17,12 @@ lastupdated: "2017-09-17"
 # Navigating to the Activity Tracker dashboard
 {: #launch_at_ui}
 
-You can launch the {{site.data.keyword.cloudaccesstrailshort}} UI from {{site.data.keyword.Bluemix}}. By default, you can see space events. You can also view account events.
+You can launch the {{site.data.keyword.cloudaccesstrailshort}} UI from the {{site.data.keyword.Bluemix}}. By default, you can see space events. You can also view account events.
 {:shortdesc}
    
 
 ## Navigating to the Activity Tracker dashboard to monitor cloud activity in a space
-{: #account_view}
+{: #account_view_space}
 
 Complete the following steps to navigate to the {{site.data.keyword.cloudaccesstrailshort}} UI so that you can monitor Cloud activity in a space:
 
@@ -40,13 +40,13 @@ Complete the following steps to navigate to the {{site.data.keyword.cloudaccesst
 
 
 ## Navigating to the Activity Tracker dashboard to monitor cloud activity in the account
-{: #account_view}
+{: #account_view_account}
 
 Complete the following steps to navigate to the {{site.data.keyword.cloudaccesstrailshort}} UI so that you can monitor Cloud activity in an account:
 
 1. Log in to the {{site.data.keyword.Bluemix_notm}} account where you want to monitor your cloud activity.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 

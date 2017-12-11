@@ -49,12 +49,14 @@ IBM Cloud Activity Tracker
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
+    reference/ref_endpoints.md
     cli/at_cli.md
-
-    [Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+	
+    [IBM Cloud Activity Tracker API](https://console.stage1.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
     gettinghelp.md
+    qa/cli_qa.md
     {: .navgroup-end}
     

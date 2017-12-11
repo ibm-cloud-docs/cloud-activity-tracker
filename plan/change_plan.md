@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -16,17 +16,17 @@ lastupdated: "2017-09-07"
 # Changing the plan
 {: #change_plan}
 
-You can change your {{site.data.keyword.cloudaccesstraillong}} service plan in {{site.data.keyword.Bluemix_notm}} in the service Dashboard or by running the `cf update-service` command. You can upgrade or reduce your plan at any time.
+You can change your {{site.data.keyword.cloudaccesstraillong}} service plan through the {{site.data.keyword.Bluemix_notm}} UI or by running the `bx cf update-service` command. You can upgrade or reduce your plan at any time.
 {:shortdesc}
 
 ## Changing the service plan through the UI
 {: #change_plan_ui}
 
-To change your service plan in {{site.data.keyword.Bluemix_notm}} in the service Dashboard, complete the following steps:
+To change your service plan through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
-1. Log in to {{site.data.keyword.Bluemix_notm}}, and then click the {{site.data.keyword.cloudaccesstraillong_notm}} service from the {{site.data.keyword.Bluemix_notm}} dashboard. 
+1. Log in to  the {{site.data.keyword.Bluemix_notm}}, and then click the {{site.data.keyword.cloudaccesstraillong_notm}} service from the *Dashboard*. 
     
-2. Select the **Plan** tab in the {{site.data.keyword.Bluemix_notm}} UI.
+2. Select the **Plan** tab.
 
     Information about your current plan is displayed.
 	
@@ -39,54 +39,20 @@ To change your service plan in {{site.data.keyword.Bluemix_notm}} in the service
 ## Changing the service plan through the CLI
 {: #change_plan_cli}
 
-To change your service plan in Bluemix through the CLI, complete the following steps:
+To change your service plan through the CLI, complete the following steps:
 
-1. Log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-    ```
-    cf login -a Endpoint
-    ```
-    {: codeblock}
+    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
 	
-	Where *Endpoint* is the URL to log in to {{site.data.keyword.Bluemix_notm}}. This URL is different per region.
-	
-	<table>
-	    <caption>List of endpoints to access {{site.data.keyword.Bluemix_notm}}</caption>
-		<tr>
-		  <th>Region</th>
-		  <th>URL</th>
-		</tr>
-		<tr>
-		  <td>US South</td>
-		  <td>api.ng.bluemix.net</td>
-		</tr>
-		<tr>
-		  <td>United Kingdom</td>
-		  <td>api.eu-gb.bluemix.net</td>
-		</tr>
-		<tr>
-		  <td>Germany</td>
-		  <td>api.eu-de.bluemix.net</td>
-		</tr>
-	</table>
-
-    Follow the instructions. Enter your {{site.data.keyword.Bluemix_notm}} credentials, select an organization and a space. 
-
-    For example, run the following command to log in to the US South region:
-	
-	```
-	cf login -a api.ng.bluemix.net
-	```
-	{: codeblock}
-	
-2. Run the `cf services` command to chech your current plan, and to get the {{site.data.keyword.cloudaccesstrailshort}} service name from the list of services that is available in the space. 
+2. Run the `bx cf services` command to check your current plan, and to get the {{site.data.keyword.cloudaccesstrailshort}} service name from the list of services that is available in the space. 
 
     The value of the field **name** is the one that you must use to change the plan. 
 
     For example,
 	
 	```
-	$ cf services
+	$ bx cf services
     Getting services in org MyOrg / space dev as xxx@yyy.com...
     OK
     
@@ -95,10 +61,10 @@ To change your service plan in Bluemix through the CLI, complete the following s
     ```
 	{: screen}
     
-3. Upgrade or reduce your plan. Run the `cf update-service` command.
+3. Upgrade or reduce your plan. Run the `bx cf update-service` command.
     
 	```
-	cf update-service service_name [-p new_plan]
+	bx cf update-service service_name [-p new_plan]
 	```
 	{: codeblock}
 	
@@ -128,7 +94,7 @@ To change your service plan in Bluemix through the CLI, complete the following s
 	For example, to reduce your plan to the *Lite* plan, run the following command:
 	
 	```
-	cf update-service "Activity Tracker-oj" -p lite
+	bx cf update-service "Activity Tracker-oj" -p lite
     Updating service instance Activity Tracker-oj as xxx@yyy.com...
     OK
 	```
@@ -137,7 +103,7 @@ To change your service plan in Bluemix through the CLI, complete the following s
 4. Verify the new plan is changed. Run the `cf services` command.
 
     ```
-	cf services
+	bx cf services
     Getting services in org MyOrg / space dev as xxx@yyy.com...
     OK
 

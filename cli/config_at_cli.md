@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-17"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -12,28 +12,21 @@ lastupdated: "2017-09-17"
 {:codeblock: .codeblock}
 {:pre: .pre}
 
-# Configuring the Activity Tracker CLI
+# Configuring the Activity Tracker CLI (CF plugin)
 {: #config_at_cli}
 
 The {{site.data.keyword.cloudaccesstraillong}} service includes a command line interface (CLI) that you can use to manage your events in the cloud. The CLI is a Cloud Foundry (CF) plugin. You can use commands to view the status of the events, to download events, to restore events, to discard events, and to configure the events retention policy. 
 {:shortdesc}
 
 
-## Installing the Activity Tracker CLI
+## Installing the Activity Tracker CF plugin
 {: #install_cli}
 
 To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the following steps:
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-    For more information, see [Install from shell](/docs/cli/reference/bluemix_cli/download_cli.html#shell_install).
-	
-	For example, to install the {{site.data.keyword.Bluemix_notm}} CLI on Linux, run the following command:
-	
-	```
-	curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
-	```
-	{: codeblock}
+    For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#download_install).
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} CF plugin.
 
@@ -41,7 +34,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     * For Windows, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} CLI on Windows](/docs/services/cloud-activity-tracker/cli/config_at_cli.html#install_cli_windows).
     * For Mac OS X, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} CLI on Mac OS X ](/docs/services/cloud-activity-tracker/cli/config_at_cli.html#install_cli_mac).
  
-3. Verify the installation of the CLI plugin.
+3. Verify the installation of the CF plugin.
   
     For example, check the version of the plugin. Run the following command:
     
@@ -64,14 +57,14 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     {: screen}
 
 	
-## Installing the Activity Tracker CLI on Linux
+## Installing the Activity Tracker CF plugin on Linux
 {: #install_cli_linux}
 
 Complete the following steps to install the {{site.data.keyword.cloudaccesstrailshort}} CF plugin on Linux:
 
 1. Install the {{site.data.keyword.cloudaccesstrailshort}} CLI plugin.
 
-    1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the Bluemix CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
+    1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
 	
 		Select the platform value: **linux64**. 
 		Click **Save file**. 
@@ -126,12 +119,12 @@ Complete the following steps to install the {{site.data.keyword.cloudaccesstrail
     {: screen}
 
 
-## Installing the Activity Tracker CLI on Windows
+## Installing the Activity Tracker CF plugin on Windows
 {: #install_cli_windows}
 
 Complete the following steps to install the{{site.data.keyword.cloudaccesstrailshort}} CF plugin on Windows:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the Bluemix CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
 	
 	1. Select the platform value: **win64**. 
 	2. Click **Save file**.  
@@ -178,17 +171,26 @@ Complete the following steps to install the{{site.data.keyword.cloudaccesstrails
 
 
 
-## Installing the Activity Tracker CLI on Mac OS X
+## Installing the Activity Tracker CF plugin on Mac OS X
 {: #install_cli_mac}
 
 Complete the following steps to install the {{site.data.keyword.cloudaccesstrailshort}} CF plugin on Mac OS X:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the Bluemix CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
 	
 	1. Select the platform value: **osx**. 
 	2. Click **Save file**.  
+	
+2. Make the file executable.
     
-2. Run the **cf install-plugin** command to install the {{site.data.keyword.cloudaccesstrailshort}} plugin on Mac OS X. 
+        For example, to make the file `activitytracker-cli-mac_x64_v3.0.2` executable, run the following command:
+        
+        ```
+        chmod a+x activitytracker-cli-mac_x64_v3.0.2
+        ```
+        {: codeblock}
+    
+3. Run the **cf install-plugin** command to install the {{site.data.keyword.cloudaccesstrailshort}} plugin on Mac OS X. 
 
     ```
 	bx cf install-plugin PluginName
@@ -206,7 +208,7 @@ Complete the following steps to install the {{site.data.keyword.cloudaccesstrail
 	
     When the plugin is installed, you get the following message: `Plugin IBM-ActivityTracker successfully installed.`
 
-3. Verify the installation of the CLI plugin.
+4. Verify the installation of the CLI plugin.
   
     For example, check the version of the plugin. Run the following command:
     
@@ -230,17 +232,26 @@ Complete the following steps to install the {{site.data.keyword.cloudaccesstrail
 
 	
 
-## Updating the Activity Tracker CLI
+## Updating the Activity Tracker CF plugin
 {: #update_cli}
 
 Complete the following steps to update the {{site.data.keyword.cloudaccesstrailshort}} CF plugin:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin from [the Bluemix CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} CF plugin from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#cf-plugins). 
 	
 	1. Select the platform value: **win64** for Windows, **osx** for Mac OS X, or **linux64** for Linux. 
 	2. Click **Save file**.  
+	
+2. Make the file that you download executable if you download the Linux or the Mac OS X plugin.
     
-2. Run the **cf install-plugin** command to update the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows. 
+        For example, to make the file `activitytracker-cli-mac_x64_v3.0.2` executable for a Mac OS X, run the following command:
+        
+        ```
+        chmod a+x activitytracker-cli-mac_x64_v3.0.2
+        ```
+        {: codeblock}
+    
+3. Run the **cf install-plugin** command to update the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows. 
 
     ```
 	bx cf install-plugin PluginName -f
@@ -255,13 +266,13 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
     For example, to update the plugin on Windows, run the following command from a terminal window:
 	
 	```
-	bx cf install-plugin activitytracker-cli-windows_x64_v3.0.2.exe
+	bx cf install-plugin activitytracker-cli-windows_x64_v3.0.2.exe -f
 	```
 	{: codeblock}
 	
     When the plugin is installed, you get the following message: `Plugin IBM-ActivityTracker successfully installed.`
 
-3. Verify the installation of the CLI plugin.
+4. Verify the installation of the CLI plugin.
   
     For example, check the version of the plugin. Run the following command:
     
@@ -285,7 +296,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
 
 	
 	
-## Uninstalling the Activity Tracker CLI
+## Uninstalling the Activity Tracker CF plugin
 {: #uninstall_cli}
 
 To uninstall the {{site.data.keyword.cloudaccesstrailshort}} CLI, delete the plugin.

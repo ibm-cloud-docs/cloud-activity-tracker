@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -79,14 +79,9 @@ To get help on how to use a command, complete the followimg steps:
 
 A command can have subcommands. To get help on subcommands, complete the followimg steps:
 
-1. Log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-    For example, to log in to the US South region, run the following command:
-	
-	```
-    bx login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
+    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
     
 2. Get the list of supported comnmands and identify the one that you need. Run the command:
 

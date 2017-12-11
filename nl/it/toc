@@ -1,0 +1,60 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="cloud-activity-tracker" audience="service" href="/docs/services/cloud-activity-tracker/index.html"}
+Programma di traccia dell'attività IBM Cloud 
+
+    {: .navgroup id="learn"}
+    index.md
+    
+    {: .topicgroup}
+    Informazioni
+        activity_tracker_ov.md
+        cloud_services.md
+        reference/at_event.md
+
+    {: .topicgroup}
+    Monitoraggio dell'attività cloud
+        svcs/kp_at.md
+
+    {: .topicgroup}
+    Esercitazioni
+        /tutorials/manage_events_cli.md
+		
+    {: .topicgroup}
+    Link correlati
+        [Learn more about Kibana](https://www.elastic.co/guide/en/kibana/5.1/index.html)
+        [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+    {: .navgroup-end}
+    
+    {: .navgroup id="howto"}
+    how-to/provision.md
+    plan/change_plan.md
+
+    {: .topicgroup}
+    Configurazione della CLI
+        cli/config_at_cli.md
+        cli/get_help_cli.md
+
+    {: .topicgroup}
+    Gestione degli eventi dalla CLI
+        how-to/manage-events-cli/viewing_event_information.md
+        how-to/manage-events-cli/downloading_events.md
+        how-to/manage-events-cli/deleting_events.md
+
+    {: .topicgroup}
+    Visualizzazione degli eventi attraverso la IU
+        how-to/manage-events-ui/launch_at_ui.md
+        how-to/manage-events-ui/launch_kibana.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    cli/at_cli.md
+
+    [Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+    {: .navgroup-end}     
+
+    {: .navgroup id="help"}
+    gettinghelp.md
+    {: .navgroup-end}
+    

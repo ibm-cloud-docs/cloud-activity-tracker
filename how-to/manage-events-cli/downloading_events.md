@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -20,55 +20,19 @@ You can download events to a local file or pipe data into another program. You d
 
 Complete the following steps to download events that are available in a {{site.data.keyword.Bluemix_notm}} space into a local file:
 
-## Step 1: Log in to Bluemix
+## Step 1: Log in to the {{site.data.keyword.Bluemix_notm}}
 {: #prereq}
 
-Before you start, log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned. 
+Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-```
-bx login -a Endpoint
-```
-{: codeblock}
-	
-Where *Endpoint* is the URL to log in to {{site.data.keyword.Bluemix_notm}}. This URL is different per region.
-	
-<table>
-    <caption>List of endpoints to access {{site.data.keyword.Bluemix_notm}}</caption>
-	<tr>
-	  <th>Region</th>
-	  <th>URL</th>
-	</tr>
-	<tr>
-	  <td>US South</td>
-	  <td>api.ng.bluemix.net</td>
-	</tr>
-</table>
+For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
 
-Follow the instructions. 
 
-For example, run the following command to log in to the US South region:
-	
-```
-bx login -a api.ng.bluemix.net
-```
-{: codeblock}
-
-Then, set the organization and space. Run the following command:
-
-```
-bx target -o OrgName -s SpaceName
-```
-{: codeblock}
-
-where
-
-* OrgName is the name of the organization.
-* SpaceName is the name of the space.
 
 ## Step 2: Identify what events are available
 {: #step2}
 
-1. Use the `cf at status` command to see what events are available.
+1. Use the `bx cf at status` command to see what events are available.
 
     For example, to see what events are available for the last 2 weeks, run the following command:
 
@@ -92,7 +56,7 @@ where
 
     **Note:** The {{site.data.keyword.cloudaccesstrailshort}} service is a global service that uses the Coordinated Universal Time (UTC). Days are define as UTC days. To get events for a specific local-time day, you might need to download multiple UTC days.
 	
-	For more information, see [cf at status](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
+	For more information, see [bx cf at status](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
 
 
 ## Step 3: Create a session
@@ -100,7 +64,7 @@ where
 
 A session is required to define the scope of the event data that is available for a download, and to keep the status of the download. 
 
-Use the command [cf at session create](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_create) to create a session. Optionally, you can specify start date, and end date when you create a session. 
+Use the command [bx cf at session create](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_create) to create a session. Optionally, you can specify start date, and end date when you create a session. 
 
 **Note:** When you specify the start date and the end date, the session provides access to events between those inclusive dates. 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -23,49 +23,11 @@ Use the *cf at status* command to obtain information about the events that are c
 
 Use the `cf at status` command to view the size, count, and whether the events are available or not for analysis in Kibana. For more information, see [cf at status](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
 
-1. Log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-    ```
-    bx login -a Endpoint
-    ```
-    {: codeblock}
-	
-	Where *Endpoint* is the URL to log in to {{site.data.keyword.Bluemix_notm}}. This URL is different per region.
-	
-	<table>
-	    <caption>List of endpoints to access {{site.data.keyword.Bluemix_notm}}</caption>
-		<tr>
-		  <th>Region</th>
-		  <th>URL</th>
-		</tr>
-		<tr>
-		  <td>US South</td>
-		  <td>api.ng.bluemix.net</td>
-		</tr>
-	</table>
-
-    Follow the instructions. 
-
-    For example, run the following command to log in to the US South region:
-	
-	```
-	bx login -a api.ng.bluemix.net
-	```
-	{: codeblock}
-	
-	Then, set the organization and space. Run the following command:
-
-    ```
-    bx target -o OrgName -s SpaceName
-    ```
-   {: codeblock}
-
-    where
-
-    * OrgName is the name of the organization.
-    * SpaceName is the name of the space.
+    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
     
-2. Run the *cf at status* command to view details of the events that are collected in {{site.data.keyword.cloudaccesstrailshort}}.
+2. Run the *bx cf at status* command to view details of the events that are collected in {{site.data.keyword.cloudaccesstrailshort}}.
 
     ```
     $ bx cf at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
@@ -93,7 +55,7 @@ Use the `cf at status` command to view the size, count, and whether the events a
     +------------+-------+------+-----------------+------------+
     | Date       | Count | Size | Types           | Searchable |
     +------------+-------+------+-----------------+------------+
-    | 2017-07-10 | 1     | 2531 | ActivityTracker | All        |
+    | 2017-06-10 | 1     | 2531 | ActivityTracker | All        |
     +------------+-------+------+-----------------+------------+
     ```
     {: screen}

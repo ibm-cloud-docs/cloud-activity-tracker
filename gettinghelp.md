@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -17,10 +17,10 @@ lastupdated: "2017-09-07"
 # Getting help and support
 {: #gettinghelp}
 
-If you have problems or questions when using the {{site.data.keyword.cloudaccesstraillong}} service in {{site.data.keyword.Bluemix}}, you can check {{site.data.keyword.Bluemix_notm}}, or get help by searching for information or by asking questions through a forum. You can also open a support ticket.
+If you have problems or questions when using the {{site.data.keyword.cloudaccesstraillong}} service in the {{site.data.keyword.Bluemix}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 {:shortdesc}
 
-* You can check whether {{site.data.keyword.Bluemix_notm}} is available by going to the [Bluemix status page](https://developer.ibm.com/bluemix/support/#status){:new_window}.
+* You can check whether the {{site.data.keyword.Bluemix_notm}} is available by going to the [{{site.data.keyword.Bluemix_notm}} status page](https://developer.ibm.com/bluemix/support/#status){:new_window}.
 
 * You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->

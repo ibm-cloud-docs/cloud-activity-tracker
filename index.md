@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-17"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2017-09-17"
 # Getting started tutorial
 {: #getting-started-with-cla}
 
-The {{site.data.keyword.cloudaccesstrailfull}} service records user-initiated activities that change the state of a service in the {{site.data.keyword.IBM}} cloud. Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailfull}} service to monitor a user's interaction with a Cloud service. 
+The {{site.data.keyword.cloudaccesstrailfull}} service records user-initiated activities that change the state of a service in the {{site.data.keyword.Bluemix_notm}}. Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailfull}} service to monitor a user's interaction with a Cloud service. 
 {:shortdesc}
 
 The objectives of this getting started tutorial are the following:
@@ -33,7 +33,7 @@ The following figure shows the different components and actions that occur when 
 ## Before you begin
 {: #prereqs}
 
-Create a [{{site.data.keyword.Bluemix_notm}} account](https://console.bluemix.net/registration/). Your user ID must be a member or an owner of a {{site.data.keyword.Bluemix_notm}} account, with developer permissions in the space where you plan to use the {{site.data.keyword.cloudaccesstrailshort}} service.
+Create an [{{site.data.keyword.Bluemix_notm}} account](https://console.bluemix.net/registration/). Your user ID must be a member or an owner of an {{site.data.keyword.Bluemix_notm}} account, with developer permissions in the space where you plan to use the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 
 ## Step 1: Provision Activity Tracker
@@ -43,15 +43,15 @@ You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in th
 
 **Note:** This tutorial shows how to use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}}. The {{site.data.keyword.keymanagementserviceshort}} service is available in US South. Therefore, you must provision {{site.data.keyword.cloudaccesstrailshort}} in the US South region, in the same space where the  {{site.data.keyword.keymanagementserviceshort}} service is available. To see information on which region a service is available, see [Services by region](/docs/services/services_region.html#services_region).
 
-Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in {{site.data.keyword.Bluemix_notm}}:
+Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.Bluemix_notm}}:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to the {{site.data.keyword.Bluemix_notm}}.
 
     The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available on {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available on the {{site.data.keyword.Bluemix_notm}} opens.
 
 3. Select the **Security** category to filter the list of services that is displayed.
 
@@ -81,21 +81,21 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	</table>
 
-6. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the {{site.data.keyword.Bluemix_notm}} space where you are logged in.
+6. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space where you are logged in.
    
 
 ## Step 2:  Provision a cloud service 
 {: #step2}
 	
-Complete the following steps to provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}} US South region:
+Complete the following steps to provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to the {{site.data.keyword.Bluemix_notm}}.
 
     The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
 	
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available on {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available on the {{site.data.keyword.Bluemix_notm}} opens.
 
     Select the **Security** category to filter the list of services that is displayed.
 
@@ -125,7 +125,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	</table>
 
-5. Click **Create** to provision the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}} space where you are logged in.
+5. Click **Create** to provision the {{site.data.keyword.keymanagementserviceshort}} service in the space where you are logged in.
 
 
 ## Step 3: Generate an Activity Tracker event
@@ -135,7 +135,7 @@ In this step, create a security key by using the {{site.data.keyword.keymanageme
 
 Complete the following steps to generate an {{site.data.keyword.cloudaccesstrailshort}} event:
 
-1. From the {{site.data.keyword.Bluemix_notm}} dashboard, select the **Key Protect** service, The {{site.data.keyword.keymanagementserviceshort}} dashboard opens. Then, select the **Manage** tab.
+1. From the {{site.data.keyword.Bluemix_notm}} *Dashboard*, select the **Key Protect** service, The {{site.data.keyword.keymanagementserviceshort}} dashboard opens. Then, select the **Manage** tab.
 
 2. Click **Add Key**. A new window opens.
 
@@ -174,11 +174,11 @@ Complete the following steps to verify that an event has been created:
 
 Next, use the {{site.data.keyword.cloudaccesstrailshort}} pre-defined Kibana dashboard to monitor and analyze event logs. To launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
 
-By default in Kibana, the space activity logs are displayed through the **ActivityTracker_Space_Search_in_24h** dashboard:
+By default in Kibana, the space activity logs are displayed through the **ActivityTracker_Space_Dashboard_in_24h** dashboard:
 
 ![Kibana view of the events](images/kibana_space_view.png "Kibana view of the events")
 
 You can also use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/manage-events-cli/viewing_event_information.html#viewing_event_status).
 
-                                                                                                                      
+
 

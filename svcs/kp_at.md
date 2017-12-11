@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-19"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -25,13 +25,13 @@ Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applicat
 
 {{site.data.keyword.keymanagementserviceshort}} is an encryption key management service. You can use the {{site.data.keyword.keymanagementserviceshort}} service to provision encrypted keys for apps across {{site.data.keyword.Bluemix_notm}}. For more information, see [Getting started with Key Protect](/docs/services/keymgmt/index.html#getting-started-with-key-protect).
 
-To manage encrypted keys, you can create and delete keys through the {{site.data.keyword.Bluemix_notm}} UI or programmatically by using the [IBM Key Protect API](https://docs-api-keyprotect.ng.bluemix.net/#/){: new_window}.
+To manage encrypted keys, you can create and delete keys through the {{site.data.keyword.Bluemix_notm}} UI or programmatically by using the [{{site.data.keyword.keymanagementserviceshort}} API](https://docs-api-keyprotect.ng.bluemix.net/#/){: new_window}.
 
 
 ## How it works
 {: #how}
 
-In {{site.data.keyword.Bluemix_notm}}, to monitor the activity trail for the {{site.data.keyword.keymanagementserviceshort}} service, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same space where the {{site.data.keyword.keymanagementserviceshort}} service is provisioned. After both services are provisioned and running, activity events are generated and automatically collected in the {{site.data.keyword.cloudaccesstrailshort}} log when you create, read, or delete a key. 
+In the {{site.data.keyword.Bluemix_notm}}, to monitor the activity trail for the {{site.data.keyword.keymanagementserviceshort}} service, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same space where the {{site.data.keyword.keymanagementserviceshort}} service is provisioned. After both services are provisioned and running, activity events are generated and automatically collected in the {{site.data.keyword.cloudaccesstrailshort}} log when you create, read, or delete a key. 
 
 Due to the sensitivity of the information for an encrypted key, when an event is generated as a result of an API call to the {{site.data.keyword.keymanagementserviceshort}} service, the event that is generated does not include detailed information about the key. The event includes a correlation ID that can be used to identify the key internally in your cloud environment. The correlation ID is a field that is returned as part of the **responseHeader.content** field. You use this information to correlate the sensitive data of the encrypted key with the information of the action reported through the event.
 
@@ -72,7 +72,7 @@ The following table lists the {{site.data.keyword.keymanagementserviceshort}} AP
 
  	
  	
-## Tutorial: Monitor IBM Key Protect activity in the Cloud
+## Tutorial: Monitor Key Protect activity in the Cloud
 {: #tutorial1}
 
 Use this tutorial to learn how you can monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}}. 
@@ -136,10 +136,10 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	</table>
 
-6. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the {{site.data.keyword.Bluemix_notm}} space where you are logged in.
+6. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space where you are logged in.
    
 
-### Step 2: Provision Key Protect 
+### Step 2: Provision Key Protect
 {: #step2}
 	
 Complete the following steps to provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}} US South region:
@@ -180,7 +180,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	</table>
 
-5. Click **Create** to provision the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}} space where you are logged in.
+5. Click **Create** to provision the {{site.data.keyword.keymanagementserviceshort}} service in the space where you are logged in. This space must be the same as the space where you provisioned the {{site.data.keyword.keymanagementserviceshort}} service.
 
 
 ### Step 3: Create a security key in Key Protect to generate Activity Tracker event data 
@@ -188,7 +188,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 Complete the following steps to generate an {{site.data.keyword.cloudaccesstrailshort}} event:
 
-1. From the {{site.data.keyword.Bluemix_notm}} dashboard, select the **Key Protect** service, The {{site.data.keyword.keymanagementserviceshort}} dashboard opens. Then, select the **Manage** tab.
+1. From the {{site.data.keyword.Bluemix_notm}} dashboard, select the **Key Protect** service. The {{site.data.keyword.keymanagementserviceshort}} dashboard opens. Then, select the **Manage** tab.
 
 2. Click **Add Key**. A new window opens.
 
@@ -202,7 +202,7 @@ Complete the following steps to generate an {{site.data.keyword.cloudaccesstrail
 
     * Click **Add key**. 
 
-### Step 4: Verify through the Bluemix UI that Activity Tracker events are generated 
+### Step 4: Verify through the UI that Activity Tracker events are generated 
 {: #step4}
 
 Verify that an event has been created:

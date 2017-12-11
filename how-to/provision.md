@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2017
 
-lastupdated: "2017-09-17"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-09-17"
 # Provisioning the Activity Tracker service
 {: #provision}
 
-You can provision the {{site.data.keyword.cloudaccesstraillong}} service from {{site.data.keyword.Bluemix}} UI, or from the command line.
+You can provision the {{site.data.keyword.cloudaccesstraillong}} service from the {{site.data.keyword.Bluemix}} UI, or from the command line.
 {:shortdesc}
 
 
@@ -29,7 +29,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} UI can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -84,21 +84,14 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
    For more information, see [Installing the cf CLI ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
     
-2. Log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space. 
+2. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-    For example, to log in to the US South region, run the following command:
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Follow the instructions. Enter your {{site.data.keyword.Bluemix_notm}} credentials, select an organization and a space.
+    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
 	
-3. Run the `cf create-service` command to provision an instance.
+3. Run the `bx cf create-service` command to provision an instance.
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	bx cf create-service service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
@@ -113,14 +106,14 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the Lite plan, run the following command:
 	
 	```
-	cf create-service activityTracker free my_activity_tracker_svc
+	bx cf create-service activityTracker free my_activity_tracker_svc
 	```
 	{: codeblock}
 	
 4. Verify that the service is created successfully. Run the following command:
 
     ```	
-	cf services
+	bx cf services
 	```
 	{: codeblock}
 	

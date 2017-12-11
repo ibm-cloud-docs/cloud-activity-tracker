@@ -4,7 +4,7 @@ copyright:
 
   years: 2016, 2017
 
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -21,8 +21,7 @@ The {{site.data.keyword.cloudaccesstraillong}} CLI is a CF plug-in that you can 
 {: shortdesc}
 
 **Prerequisites**
-* Before running the commands, log in to {{site.data.keyword.Bluemix}} with the `cf login` command to generate a {{site.data.keyword.Bluemix_short}}
- access token and authenticate your session.
+* Before running the commands, log in to the {{site.data.keyword.Bluemix}} with the `bx login` command to generate an access token and authenticate your session.
 
 To find out about how to use the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Managing {{site.data.keyword.cloudaccesstrailshort}} events through the CLI](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#managing_events). 
 
@@ -35,59 +34,59 @@ The {{site.data.keyword.cloudaccesstraillong}} CLI plug-in supports Linux, Mac, 
     <th>When to use it</th>
   </tr>
   <tr>
-    <td>[cf at](#base)</td>
+    <td>[bx cf at](#base)</td>
     <td>Use this command to get information about the CLI, such as version or the list of commands.</td>
   </tr>
   <tr>
-    <td>[cf at delete](#delete)</td>
+    <td>[bx cf at delete](#delete)</td>
     <td>Use this command to delete {{site.data.keyword.cloudaccesstrailshort}} events.</td>
   </tr>
   <tr>
-    <td>[cf at download](#download)</td>
+    <td>[bx cf at download](#download)</td>
     <td>Use this command to download {{site.data.keyword.cloudaccesstrailshort}} logs to a local file. </td>
   </tr>
   <tr>
-    <td>[cf at help](#help)</td>
+    <td>[bx cf at help](#help)</td>
     <td>Use this command to get help on how to use the CLI, and a list of all of the commands.</td>
   </tr>
   <tr>
-    <td>[cf at option](#option)</td>
-    <td>Use this command to view or change {{site.data.keyword.cloudaccesstrailshort}} event options, such as retention, that are available in a {{site.data.keyword.Bluemix_notm}} space or account.</td>
+    <td>[bx cf at option](#option)</td>
+    <td>Use this command to view or change {{site.data.keyword.cloudaccesstrailshort}} event options, such as retention, that are available in a space or in an account.</td>
   </tr>
   <tr>
-    <td>[cf at session create](#session_create)</td>
+    <td>[bx cf at session create](#session_create)</td>
     <td>Use this command to create a new session.</td>
   </tr>
   <tr>
-    <td>[cf at session delete](#session_delete)</td>
+    <td>[bx cf at session delete](#session_delete)</td>
     <td>Use this command to delete a session.</td>
   </tr>  
   <tr>
-    <td>[cf at session list](#session_list)</td>
+    <td>[bx cf at session list](#session_list)</td>
     <td>Use this command to list active sessions and their IDs.</td>
   </tr>  
   <tr>
-    <td>[cf at session show](#session_show)</td>
+    <td>[bx cf at session show](#session_show)</td>
     <td>Use this command to show the status of a single session.</td>
   </tr>   
   <tr>
-    <td>[cf at status](#status)</td>
+    <td>[bx cf at status](#status)</td>
     <td>Use this command to view information about the status of events that are stores in {{site.data.keyword.cloudaccesstrailshort}}.</td>
   </tr>
   <tr>
-    <td>[cf at trail](#trail)</td>
+    <td>[bx cf at trail](#trail)</td>
     <td>Use this command to send events to {{site.data.keyword.cloudaccesstrailshort}}.</td>
   </tr>
   </table>
 
 
-## cf at
+## bx cf at
 {: #base}
 
 Provides information about the version of the CLI and how to use the CLI.
 
 ```
-cf at [parameters]
+bx cf at [parameters]
 ```
 {: codeblock}
 
@@ -107,25 +106,25 @@ cf at [parameters]
 To get the list of commands, run the following command:
 
 ```
-cf at --help
+bx cf at --help
 ```
 {: codeblock}
 
 To get the version of the CLI, run the following command:
 
 ```
-cf at --version
+bx cf at --version
 ```
 {: codeblock}
 
 
-## cf at delete
+## bx cf at delete
 {: #delete}
 
 Deletes {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-cf at delete [parameters] [arguments..]
+bx cf at delete [parameters] [arguments..]
 ```
 {: codeblock}
 
@@ -146,7 +145,7 @@ cf at delete [parameters] [arguments..]
 
 To delete the events for 22 June 2017, run the following command:
 ```
-cf at delete -s 2017-06-22 -e 2017-06-22
+bx cf at delete -s 2017-06-22 -e 2017-06-22
 ```
 {: codeblock}
 
@@ -156,15 +155,15 @@ You receive information similar to the following output:
 `"6 logs were deleted, freeing 13737 bytes."`
 
 
-## cf at download
+## bx cf at download
 {: #download}
 
 Downloads {{site.data.keyword.cloudaccesstrailshort}} events to a local file or streams them out to a terminal window in Windows and Mac OS X, or to stdout in a Linux terminal. 
 
-**Note:** To download files, you must create a session first. A session defines which events to download based on date range. You download events within the context of a session. For more information, see [cf at session create](/docs/services/CloudActivityTracker/reference/at_cli.html#session_create).
+**Note:** To download files, you must create a session first. A session defines which events to download based on date range. You download events within the context of a session. For more information, see [bx cf at session create](/docs/services/CloudActivityTracker/reference/at_cli.html#session_create).
 
 ```
-cf at download [parameters] [arguments...]
+bx cf at download [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -179,7 +178,7 @@ cf at download [parameters] [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>Set the session ID value that you get when you run the command `cf at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `cf at session create` command provides the parameters that control which events are downloaded. </dd>
+<dd>Set the session ID value that you get when you run the command `bx cf at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `bx cf at session create` command provides the parameters that control which events are downloaded. </dd>
 </dl>
 
 **Note:** After the download completes, to download the same data again, you must use a different file, or a different session.
@@ -189,7 +188,7 @@ cf at download [parameters] [arguments...]
 To download events into a file called `events.log`, run the following command:
 
 ```
-cf at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
+bx cf at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
 ```
 {: screen}
 
@@ -202,13 +201,13 @@ Download completed successfully
 {: screen}
 
 
-## cf at help
+## bx cf at help
 {: #help}
 
 Provides information about how to use a command.
 
 ```
-cf at help [parameters]
+bx cf at help [parameters]
 ```
 {: codeblock}
 
@@ -226,23 +225,23 @@ cf at help [parameters]
 To get help on how to run the command to view the status of {{site.data.keyword.cloudaccesstrailshort}}, run the following command:
 
 ```
-cf at help status
+bx cf at help status
 ```
 {: codeblock}
 
 
-## cf at option
+## bx cf at option
 {: #option}
 
-Displays or changes the retention period for events that are available in a {{site.data.keyword.Bluemix_notm}} space. When you set a retention policy, events are deleted automatically when the number of retention days in reached.
+Displays or changes the retention period for events that are available in a space. When you set a retention policy, events are deleted automatically when the number of retention days in reached.
 
 * The period is set in number of days.
 * The default value is **-1**, that is, events are stored and not deleted.
 
-**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `cf at delete` command. 
+**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `bx cf at delete` command. 
 
 ```
-cf at option [parameters] [arguments...]
+bx cf at option [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -259,7 +258,7 @@ cf at option [parameters] [arguments...]
 To see the current retention period for the space where you are logged in, run the following command:
 
 ```
-cf at option
+bx cf at option
 ```
 {: codeblock}
 
@@ -278,7 +277,7 @@ The output is similar to the following output:
 To change the retention period to 25 days for the space where you are logged in, run the following command:
 
 ```
-cf at option -r 25
+bx cf at option -r 25
 ```
 {: codeblock}
 
@@ -295,7 +294,7 @@ The output is similar to the following output:
 
 
 
-## cf at session create
+## bx cf at session create
 {: #session_create}
 
 Creates a new session.
@@ -303,7 +302,7 @@ Creates a new session.
 **Note:** You can have up to 30 concurrent sessions in a space. The session is created for a user. Sessions cannot be shared between users in a space.
 
 ```
-cf at session create [parameters] [arguments...]
+bx cf at session create [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -350,7 +349,7 @@ cf at session create [parameters] [arguments...]
 To create a session for 10 July 2017, run the following command:
 
 ```
-cf at session create -s 2017-07-10 -e 2017-07-10
+bx cf at session create -s 2017-07-10 -e 2017-07-10
 ```
 {: screen}
 
@@ -373,13 +372,13 @@ The output is similar to the following output:
 
 
 
-## cf at session delete
+## bx cf at session delete
 {: #session_delete}
 
 Deletes a session that is specified by the session ID.
 
 ```
-cf at session delete [arguments...]
+bx cf at session delete [arguments...]
 ```
 {: codeblock}
 
@@ -388,7 +387,7 @@ cf at session delete [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>ID of the session that you want to delete. <br>You can use the `cf at session list` command to get all the active session IDs.</dd>
+<dd>ID of the session that you want to delete. <br>You can use the `bx cf at session list` command to get all the active session IDs.</dd>
 </dl>
 
 **Example**
@@ -396,7 +395,7 @@ cf at session delete [arguments...]
 To delete a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-cf at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
+bx cf at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -412,13 +411,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## cf at session list
+## bx cf at session list
 {: #session_list}
 
 Lists the active sessions and their IDs.
 
 ```
-cf at session list 
+bx cf at session list 
 ```
 {: codeblock}
 
@@ -446,7 +445,7 @@ cf at session list
 To list the sessions, run the following command:
 
 ```
-cf at session list
+bx cf at session list
 ```
 {: screen}
 
@@ -463,13 +462,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## cf at session show
+## bx cf at session show
 {: #session_show}
 
 Shows the status of a single session.
 
 ```
-cf at session show [arguments...]
+bx cf at session show [arguments...]
 ```
 {: codeblock}
 
@@ -510,7 +509,7 @@ cf at session show [arguments...]
 To show details of a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-cf at session show 9b8c4db8-5841-4993-a449-305815a53a8e
+bx cf at session show 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -532,13 +531,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## cf at status
+## bx cf at status
 {: #status}
 
 Returns information about the status of {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-cf at status [parameters] [arguments...]
+bx cf at status [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -554,13 +553,13 @@ cf at status [parameters] [arguments...]
   </dd>
   
   <dt>--at-account-level, -a </dt>
-  <dd>(Optional) Sets the scope to account level. <br> **Note:** Set this value to get account information. <br>If this parameter is not specified, the default value is set to the current space only, that is, the space where you logged in by using the command `cf login`.
+  <dd>(Optional) Sets the scope to account level. <br> **Note:** Set this value to get account information. <br>If this parameter is not specified, the default value is set to the current space only, that is, the space where you logged in by using the command `bx cf login`.
   </dd>
   
 </dl>
 
 
-**Note:** The `cf at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
+**Note:** The `bx cf at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
 
 **Returned values**   
 
@@ -592,7 +591,7 @@ cf at status [parameters] [arguments...]
 To show details of events on 20 July 2017, run the following command:
 
 ```
-cf at status -s 2017-07-20 -e 2017-07-20
+bx cf at status -s 2017-07-20 -e 2017-07-20
 ```
 {: codeblock}
 
@@ -610,13 +609,13 @@ You receive information similar to the following output:
 
 
 
-## cf at trail
+## bx cf at trail
 {: #trail}
 
 Send serialized events to {{site.data.keyword.cloudaccesstrailshort}}.
 
 ```
-cf at trail [parameters] [arguments...]
+bx cf at trail [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -637,7 +636,7 @@ cf at trail [parameters] [arguments...]
 To send serialized CADF events to {{site.data.keyword.cloudaccesstrailshort}}, run the following command:
 
 ```
-cf at trail -t cadf -f events.log
+bx cf at trail -t cadf -f events.log
 ```
 {: codeblock}
 

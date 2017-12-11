@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-09-07"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -23,49 +23,11 @@ Use the *cf at delete* command to delete manually events that are stored in {{si
 
 Use the `cf at status` command to view the size, count, and whether the events are available or not for analysis in Kibana. For more information, see [cf at status](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
 
-1. Log in to a {{site.data.keyword.Bluemix_notm}} region, organization, and space. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-    ```
-    bx login -a Endpoint
-    ```
-    {: codeblock}
-	
-	Where *Endpoint* is the URL to log in to {{site.data.keyword.Bluemix_notm}}. This URL is different per region.
-	
-	<table>
-	    <caption>List of endpoints to access {{site.data.keyword.Bluemix_notm}}</caption>
-		<tr>
-		  <th>Region</th>
-		  <th>URL</th>
-		</tr>
-		<tr>
-		  <td>US South</td>
-		  <td>api.ng.bluemix.net</td>
-		</tr>
-	</table>
+    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
 
-    Follow the instructions. 
-
-    For example, run the following command to log in to the US South region:
-	
-	```
-	bx login -a api.ng.bluemix.net
-	```
-	{: codeblock}
-	
-	Then, set the organization and space. Run the following command:
-
-    ```
-    bx target -o OrgName -s SpaceName
-    ```
-   {: codeblock}
-
-    where
-
-    * OrgName is the name of the organization.
-    * SpaceName is the name of the space.
-
-2. Run the *cf at status* command.
+2. Run the *bx cf at status* command to check what events are available for download.
 
     ```
     $ bx cf at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
@@ -84,7 +46,7 @@ Use the `cf at status` command to view the size, count, and whether the events a
     * `bx cf at status -s 2017-05-03` provides information from May 3rd, 2017 till the current date.
     * `bx cf at status -s 2017-05-03 -e 2017-05-08` provides information between May 3, 2017 and May 8, 2017. 
  
-    Use `cf at status` command with the option **-a** to set the donain to account.
+    Use `cf at status` command with the option **-a** to set the domain to account.
 	
     For example, to get information about the events that are available for 10 of June 2017, run the following command:
     
@@ -93,13 +55,44 @@ Use the `cf at status` command to view the size, count, and whether the events a
     +------------+-------+------+------------+
     | Date       | Count | Size | Searchable |
     +------------+-------+------+------------+
-    | 2017-07-10 | 1     | 2531 | All        |
+    | 2017-06-10 | 1     | 2531 | All        |
     +------------+-------+------+------------+
     ```
     {: screen}
 	
+3. Delete events. Run the following command:
 
+    ```
+	bx cf at delete [parameters] [arguments..]
+	```
+	{: codeblock}
 
+    where 	
+
+    Parameters
+
+    --start value, -s value
+        
+		(Optional) Sets the start date in Universal Coordinated Time (UTC): YYYY-MM-DD, for example, 2017-01-02.
+    
+	    The default value is set to 2 weeks ago. 
+		
+    --end value, -e value
+	
+        (Optional) Sets the end date in Universal Coordinated Time (UTC): YYYY-MM-DD
+		
+        The UTC format of the date is YYYY-MM-DD, for example, 2017-01-02.
+		
+        The default value is set to the current date. 
+
+    For example, to delete the events for 10 June 2017, run the following command:
+
+	```
+	bx cf at delete -s 2017-06-10 -e 2017-06-10
+	```
+	{: screen}
+
+    You receive information about the log records that have been deleted.
 
 
 
