@@ -1,29 +1,30 @@
 ---
 
 copyright:
-
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
-{:codeblock: .codeblock}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 # IBM Cloud Activity Tracker CLI
-{: #at_cli}
+{: #at_cli_cloud}
 
-The {{site.data.keyword.cloudaccesstraillong}} CLI is a CF plug-in that you can use to manage {{site.data.keyword.cloudaccesstrailshort}} events.
+You can use the {{site.data.keyword.cloudaccesstraillong}} CLI to manage {{site.data.keyword.cloudaccesstrailshort}} events.
 {: shortdesc}
 
 **Prerequisites**
 * Before running the commands, log in to the {{site.data.keyword.Bluemix}} with the `bx login` command to generate an access token and authenticate your session.
-
-To find out about how to use the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Managing {{site.data.keyword.cloudaccesstrailshort}} events through the CLI](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#managing_events). 
+* To manage events by using the CLI, you must have a paid plan.
 
 The {{site.data.keyword.cloudaccesstraillong}} CLI plug-in supports Linux, Mac, and Windows platforms.
 
@@ -34,59 +35,55 @@ The {{site.data.keyword.cloudaccesstraillong}} CLI plug-in supports Linux, Mac, 
     <th>When to use it</th>
   </tr>
   <tr>
-    <td>[bx cf at](#base)</td>
+    <td>[bx at](#base)</td>
     <td>Use this command to get information about the CLI, such as version or the list of commands.</td>
   </tr>
   <tr>
-    <td>[bx cf at delete](#delete)</td>
+    <td>[bx at delete](#delete)</td>
     <td>Use this command to delete {{site.data.keyword.cloudaccesstrailshort}} events.</td>
   </tr>
   <tr>
-    <td>[bx cf at download](#download)</td>
+    <td>[bx at download](#download)</td>
     <td>Use this command to download {{site.data.keyword.cloudaccesstrailshort}} logs to a local file. </td>
   </tr>
   <tr>
-    <td>[bx cf at help](#help)</td>
+    <td>[bx at help](#help)</td>
     <td>Use this command to get help on how to use the CLI, and a list of all of the commands.</td>
   </tr>
   <tr>
-    <td>[bx cf at option](#option)</td>
+    <td>[bx at option](#option)</td>
     <td>Use this command to view or change {{site.data.keyword.cloudaccesstrailshort}} event options, such as retention, that are available in a space or in an account.</td>
   </tr>
   <tr>
-    <td>[bx cf at session create](#session_create)</td>
+    <td>[bx at session create](#session_create)</td>
     <td>Use this command to create a new session.</td>
   </tr>
   <tr>
-    <td>[bx cf at session delete](#session_delete)</td>
+    <td>[bx at session delete](#session_delete)</td>
     <td>Use this command to delete a session.</td>
   </tr>  
   <tr>
-    <td>[bx cf at session list](#session_list)</td>
+    <td>[bx at session list](#session_list)</td>
     <td>Use this command to list active sessions and their IDs.</td>
   </tr>  
   <tr>
-    <td>[bx cf at session show](#session_show)</td>
+    <td>[bx at session show](#session_show)</td>
     <td>Use this command to show the status of a single session.</td>
   </tr>   
   <tr>
-    <td>[bx cf at status](#status)</td>
+    <td>[bx at status](#status)</td>
     <td>Use this command to view information about the status of events that are stores in {{site.data.keyword.cloudaccesstrailshort}}.</td>
-  </tr>
-  <tr>
-    <td>[bx cf at trail](#trail)</td>
-    <td>Use this command to send events to {{site.data.keyword.cloudaccesstrailshort}}.</td>
   </tr>
   </table>
 
 
-## bx cf at
+## bx at
 {: #base}
 
 Provides information about the version of the CLI and how to use the CLI.
 
 ```
-bx cf at [parameters]
+bx at [parameters]
 ```
 {: codeblock}
 
@@ -106,25 +103,25 @@ bx cf at [parameters]
 To get the list of commands, run the following command:
 
 ```
-bx cf at --help
+bx at --help
 ```
 {: codeblock}
 
 To get the version of the CLI, run the following command:
 
 ```
-bx cf at --version
+bx at --version
 ```
 {: codeblock}
 
 
-## bx cf at delete
+## bx at delete
 {: #delete}
 
 Deletes {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-bx cf at delete [parameters] [arguments..]
+bx at delete [parameters] [arguments..]
 ```
 {: codeblock}
 
@@ -139,13 +136,18 @@ bx cf at delete [parameters] [arguments..]
   <dd>(Optional) Sets the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD* <br>The UTC format of the date is **YYYY-MM-DD**, for example, `2017-01-02`. <br>The default value is set to the current date.
   </dd>
   
+  <dt>--search-time value, -T value</dt>
+  <dd>(Optional) You can set this parameter to delete events that are stored for a number of hours on a specific day. The format of the field is: 0-23
+  </dd>
+
 </dl>
+
 
 **Example**
 
 To delete the events for 22 June 2017, run the following command:
 ```
-bx cf at delete -s 2017-06-22 -e 2017-06-22
+bx at delete -s 2017-06-22 -e 2017-06-22
 ```
 {: codeblock}
 
@@ -155,15 +157,15 @@ You receive information similar to the following output:
 `"6 logs were deleted, freeing 13737 bytes."`
 
 
-## bx cf at download
+## bx at download
 {: #download}
 
 Downloads {{site.data.keyword.cloudaccesstrailshort}} events to a local file or streams them out to a terminal window in Windows and Mac OS X, or to stdout in a Linux terminal. 
 
-**Note:** To download files, you must create a session first. A session defines which events to download based on date range. You download events within the context of a session. For more information, see [bx cf at session create](/docs/services/CloudActivityTracker/reference/at_cli.html#session_create).
+**Note:** To download files, you must create a session first. A session defines which events to download based on date range. You download events within the context of a session. 
 
 ```
-bx cf at download [parameters] [arguments...]
+bx at download [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -178,7 +180,7 @@ bx cf at download [parameters] [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>Set the session ID value that you get when you run the command `bx cf at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `bx cf at session create` command provides the parameters that control which events are downloaded. </dd>
+<dd>Set the session ID value that you get when you run the command `bx at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `bx at session create` command provides the parameters that control which events are downloaded. </dd>
 </dl>
 
 **Note:** After the download completes, to download the same data again, you must use a different file, or a different session.
@@ -188,7 +190,7 @@ bx cf at download [parameters] [arguments...]
 To download events into a file called `events.log`, run the following command:
 
 ```
-bx cf at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
+bx at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
 ```
 {: screen}
 
@@ -201,13 +203,13 @@ Download completed successfully
 {: screen}
 
 
-## bx cf at help
+## bx at help
 {: #help}
 
 Provides information about how to use a command.
 
 ```
-bx cf at help [parameters]
+bx at help [parameters]
 ```
 {: codeblock}
 
@@ -225,12 +227,12 @@ bx cf at help [parameters]
 To get help on how to run the command to view the status of {{site.data.keyword.cloudaccesstrailshort}}, run the following command:
 
 ```
-bx cf at help status
+bx at help status
 ```
 {: codeblock}
 
 
-## bx cf at option
+## bx at option
 {: #option}
 
 Displays or changes the retention period for events that are available in a space. When you set a retention policy, events are deleted automatically when the number of retention days in reached.
@@ -238,10 +240,10 @@ Displays or changes the retention period for events that are available in a spac
 * The period is set in number of days.
 * The default value is **-1**, that is, events are stored and not deleted.
 
-**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `bx cf at delete` command. 
+**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `bx at delete` command. 
 
 ```
-bx cf at option [parameters] [arguments...]
+bx at option [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -251,6 +253,9 @@ bx cf at option [parameters] [arguments...]
 <dt>--retention value, -r value</dt>
 <dd>(Optional) Sets the number of retention days. <br> The default value is *-1* days.</dd>
 
+<dt>--at-account-level, -a</dt>
+<dd>(Optional) Set this parameter to list information about the retention period for events that are stored in every space domain and in the account domain.
+
 </dl>
 
 **Example**
@@ -258,7 +263,7 @@ bx cf at option [parameters] [arguments...]
 To see the current retention period for the space where you are logged in, run the following command:
 
 ```
-bx cf at option
+bx at option
 ```
 {: codeblock}
 
@@ -277,7 +282,7 @@ The output is similar to the following output:
 To change the retention period to 25 days for the space where you are logged in, run the following command:
 
 ```
-bx cf at option -r 25
+bx at option -r 25
 ```
 {: codeblock}
 
@@ -294,7 +299,7 @@ The output is similar to the following output:
 
 
 
-## bx cf at session create
+## bx at session create
 {: #session_create}
 
 Creates a new session.
@@ -302,7 +307,7 @@ Creates a new session.
 **Note:** You can have up to 30 concurrent sessions in a space. The session is created for a user. Sessions cannot be shared between users in a space.
 
 ```
-bx cf at session create [parameters] [arguments...]
+bx at session create [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -316,6 +321,12 @@ bx cf at session create [parameters] [arguments...]
   <dt>--end value, -e value</dt>
   <dd>(Optional)  Sets the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD*, for example, `2017-01-02`. <br>The default value is set to the current date. 
   </dd>
+
+  <dt>--search-time value, -T value</dt>
+  <dd>(Optional) You can set this parameter to delete events that are stored for a number of hours on a specific day. The format of the field is: 0-23
+  </dd>
+
+
  </dl>
 
 **Returned values**
@@ -349,7 +360,7 @@ bx cf at session create [parameters] [arguments...]
 To create a session for 10 July 2017, run the following command:
 
 ```
-bx cf at session create -s 2017-07-10 -e 2017-07-10
+bx at session create -s 2017-07-10 -e 2017-07-10
 ```
 {: screen}
 
@@ -372,13 +383,13 @@ The output is similar to the following output:
 
 
 
-## bx cf at session delete
+## bx at session delete
 {: #session_delete}
 
 Deletes a session that is specified by the session ID.
 
 ```
-bx cf at session delete [arguments...]
+bx at session delete [arguments...]
 ```
 {: codeblock}
 
@@ -387,7 +398,7 @@ bx cf at session delete [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>ID of the session that you want to delete. <br>You can use the `bx cf at session list` command to get all the active session IDs.</dd>
+<dd>ID of the session that you want to delete. <br>You can use the `bx at session list` command to get all the active session IDs.</dd>
 </dl>
 
 **Example**
@@ -395,7 +406,7 @@ bx cf at session delete [arguments...]
 To delete a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-bx cf at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
+bx at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -411,13 +422,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx cf at session list
+## bx at session list
 {: #session_list}
 
 Lists the active sessions and their IDs.
 
 ```
-bx cf at session list 
+bx at session list 
 ```
 {: codeblock}
 
@@ -445,7 +456,7 @@ bx cf at session list
 To list the sessions, run the following command:
 
 ```
-bx cf at session list
+bx at session list
 ```
 {: screen}
 
@@ -462,13 +473,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx cf at session show
+## bx at session show
 {: #session_show}
 
 Shows the status of a single session.
 
 ```
-bx cf at session show [arguments...]
+bx at session show [arguments...]
 ```
 {: codeblock}
 
@@ -509,7 +520,7 @@ bx cf at session show [arguments...]
 To show details of a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-bx cf at session show 9b8c4db8-5841-4993-a449-305815a53a8e
+bx at session show 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -531,13 +542,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx cf at status
+## bx at status
 {: #status}
 
 Returns information about the status of {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-bx cf at status [parameters] [arguments...]
+bx at status [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -559,7 +570,7 @@ bx cf at status [parameters] [arguments...]
 </dl>
 
 
-**Note:** The `bx cf at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
+**Note:** The `bx at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
 
 **Returned values**   
 
@@ -591,7 +602,7 @@ bx cf at status [parameters] [arguments...]
 To show details of events on 20 July 2017, run the following command:
 
 ```
-bx cf at status -s 2017-07-20 -e 2017-07-20
+bx at status -s 2017-07-20 -e 2017-07-20
 ```
 {: codeblock}
 
@@ -608,49 +619,3 @@ You receive information similar to the following output:
 {: screen}
 
 
-
-## bx cf at trail
-{: #trail}
-
-Send serialized events to {{site.data.keyword.cloudaccesstrailshort}}.
-
-```
-bx cf at trail [parameters] [arguments...]
-```
-{: codeblock}
-
-**Parameters**
-
-<dl>
-  <dt>--file FILE, -f FILE</dt>
-  <dd>(Optional) Specify the events file in the format: `PATH/filename`
-  </dd>
-  
-  <dt>--type FORMAT, -t FORMAT</dt>
-  <dd>(Optional) Specify the format of the events that are included in the file. Valid values are: *cadf*, and *kong*. <br> Use *CADF* to send events that comply with the CADF format. Use *KONG* to send events that comply with the Kong format. <br> **Note:** You can only send events of the same type in a file.
-  </dd>
- </dl>
- 
-**Example**
-
-To send serialized CADF events to {{site.data.keyword.cloudaccesstrailshort}}, run the following command:
-
-```
-bx cf at trail -t cadf -f events.log
-```
-{: codeblock}
-
-where *events.log* is the file that contains the events that you want to send to {{site.data.keyword.cloudaccesstrailshort}}. This file include events that comply with the CADF format.
-
-You receive information similar to the following output:
-
-```
-+--------------------------------------+---------------------------+
-|            ID                        |          Value            |
-+--------------------------------------+---------------------------+
-| bbb170dc-2b0a-42d4-b560-b416f3308869 | B0UtwP1FhemsZIr4rTJVKA==  |
-+--------------------------------------+---------------------------+
-| 688f1194-2305-4367-8ece-f468e67c19fb | KLCG9f++usNolgvutRCR1Q==  |
-+--------------------------------------+---------------------------+
-```
-{: screen}

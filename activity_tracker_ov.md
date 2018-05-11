@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Activity Tracker
@@ -45,10 +48,10 @@ To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} servic
 
 
 
-## Collecting activity logs
+## Collecting events
 {: #collect}
 
-The {{site.data.keyword.cloudaccesstrailshort}} service only captures activity data that is related to API calls and other actions that are made to selected cloud services in the {{site.data.keyword.Bluemix_notm}}. See [Supported cloud services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services) for a list of services.
+The {{site.data.keyword.cloudaccesstrailshort}} service only captures activity data that is related to API calls and other actions that are made to selected cloud services in the {{site.data.keyword.Bluemix_notm}}. 
 
 * Events are collected automatically. 
 * The events that are collected in {{site.data.keyword.cloudaccesstrailshort}} comply with the Cloud Auditing Data Federation (CADF) standard. The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
@@ -112,8 +115,10 @@ You can search, analize, and monitor activity logs for the last 3 days through K
 
 The {{site.data.keyword.cloudaccesstrailshort}} service is available in the following regions:
 
+* Germany
+* Sydney
+* United Kingdom 
 * US South
-* United Kingdom (Beta)
 
 
 ## Service Plan
@@ -121,7 +126,7 @@ The {{site.data.keyword.cloudaccesstrailshort}} service is available in the foll
 
 The {{site.data.keyword.cloudaccesstrailshort}} service provides multiple plans.
 
-You can change a plan through the {{site.data.keyword.Bluemix_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/plan/change_plan.html#change_plan). 
+You can change a plan through the {{site.data.keyword.Bluemix_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
 
 The following table outlines the plans that are available:
 
@@ -151,20 +156,20 @@ The following table outlines the plans that are available:
     <caption>Table 2. Capabilities for managing and viewing events</caption>
       <tr>
         <th>Plan</th>
-		<th>API</th>
-		<th>CLI</th>
+		    <th>API</th>
+		    <th>CLI</th>
         <th>Kibana</th>
       </tr>
       <tr>
         <td>Lite (default)</td>
-		<td>No</td>
-		<td>No</td>
+		    <td>No</td>
+		    <td>No</td>
         <td>No</td>
       </tr>
       <tr>
         <td>Premium</td>
-		<td>Yes</td>
-		<td>Yes</td>
+		    <td>Yes</td>
+		    <td>Yes</td>
         <td>Yes</td>
       </tr>
 </table>

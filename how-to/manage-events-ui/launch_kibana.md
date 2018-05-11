@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Navigating to the Kibana dashboard
@@ -66,11 +69,15 @@ Complete the following steps to launch Kibana from a browser:
           </tr>
           <tr>
             <td>Germany</td>
-            <td>[https://logging.eu-de.bluemix.net](https://logging.eu-de.bluemix.net) </td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sydney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>United Kingdom</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
           </tr>
 		  <tr>
             <td>US South</td>

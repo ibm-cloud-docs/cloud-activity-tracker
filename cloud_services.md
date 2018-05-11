@@ -1,48 +1,126 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-05-12"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Cloud services
 {: #cloud_services}
 
-Use the {{site.data.keyword.cloudaccesstraillong}} service to monitor user-initiated activities that change the state of any of the following services in the {{site.data.keyword.IBM}} Cloud:
+Use the {{site.data.keyword.cloudaccesstraillong}} service to monitor user-initiated activities that change the state of any of the following services in the {{site.data.keyword.IBM_notm}} Cloud:
 {:shortdesc}
 
-## Security cloud services
-{: #security}
+**Note:** To get information about the regions where a service is available in the {{site.data.keyword.Bluemix_notm}}, see [Services by region](/docs/services/services_region.html#services_region).
+
+
+## Platform core services
+{: #platform}
+
+The following table lists core platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
 
 <table>
-  <caption>Table 1. List of Cloud services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
+  <caption>List of core platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
   <tr>
+    <th>Area</th>
     <th>Service</th>
-	<th>Description</th>
-	<th>Monitoring cloud activity</th>
+	  <th>Description</th>
+	  <th>{{site.data.keyword.cloudaccesstrailshort}} events</th>
   </tr>
-  <tr>
-    <td><a href="/docs/services/keymgmt/index.html#getting-started-with-key-protect">{{site.data.keyword.keymanagementservicelong}}</a></td>
-	<td>You can use the {{site.data.keyword.keymanagementserviceshort}} service to provision encrypted keys for apps across the {{site.data.keyword.Bluemix_notm}}.</td>
-	<td><a href="/docs/services/cloud-activity-tracker/svcs/kp_at.html#kp_at">Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}} </a></td>
-  </tr>
-  <tr>
-    <td><a href="/docs/iam/users_roles.html#userroles">{{site.data.keyword.iamlong}} (IAM) </a></td>
-	<td>You can use IAM to manage users and roles across the the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services. </td>
-	<td></td>
+  <tr> 
+    <td>Catalog</td>
+    <td><a href="/docs/overview/ui.html#catalogcreate">Provisioning and removing services that are available in the catalog</a></td>
+	  <td>You can provision services, rename a service, and rem ove a service. </br>These events are generated for services that are provisioned in a CF space. </td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/platform.html#catalog">Events generated when interacting with Catalog services</a></td>
   </tr>
 </table>
 
-**Note:** To get information about the regions where a service is available in the {{site.data.keyword.Bluemix_notm}}, see [Services by region](/docs/services/services_region.html#services_region).
+The following table lists core security platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
+
+<table>
+  <caption>List of core security platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
+  <tr>
+    <th>Service</th>
+	  <th>Description</th>
+	  <th>{{site.data.keyword.cloudaccesstrailshort}} events</th>
+  </tr>
+  <tr> 
+    <td><a href="/docs/iam/quickstart.html#getstarted">Log in to the {{site.data.keyword.Bluemix_notm}}</a></td>
+	  <td>You can log into the {{site.data.keyword.Bluemix_notm}} by using a password, an API key, an authorization code, or a passcode. As a federated user, you can log in from the command-line interface (CLI) by using either a one-time passcode or an API key. </td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#login">Events generated when a user or app logs in to the {{site.data.keyword.Bluemix_notm}}</a></td>
+  </tr>
+  <tr>
+    <td><a href="docs/iam/mngcf.html#mngcf">Managing account user's Cloud Foundry access</a></td>
+	  <td>You can grant, revoke, and update Cloud Foundry (CF) permissions to users in the account.</td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/platform.html#cfroles">Events generated when managing CF roles in the account</a></td>
+  </tr>
+  <tr>
+    <td><a href="/docs/iam/apikeys.html#platform-api-keys">Managing platform API keys</a></td>
+	  <td>You can define platformn API keys at the account level in the {{site.data.keyword.IBM_notm}} Cloud.</td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#platform_api_keys">Events generated when managing Platform API keys</a></td>
+  </tr>  
+  <tr>
+    <td><a href="/docs/iam/serviceid.html#serviceids">Managing service IDs</a></td>
+	  <td>You can define service IDs at the account level in the {{site.data.keyword.IBM_notm}} Cloud.</td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#service_ids">Events generated when managing service IDs</a></td>
+  </tr>  
+</table>
+
+## Cloud Foundry applications
+{: #cfapps}
+
+The events that are sent by Cloud Foundry applications to {{site.data.keyword.cloudaccesstrailshort}} are listed in the response area of the `GET /v2/events`, under the body section. The *Type* field lists all actions that generate an event. For more information, see [Events API](https://apidocs.cloudfoundry.org/270/events/list_all_events.html).
+
+
+
+## Security services
+{: #security}
+
+The following table lists security Cloud services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
+
+<table>
+  <caption>List of security Cloud services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
+  <tr>
+    <th>Service</th>
+	  <th>Description</th>
+	  <th>Monitoring cloud activity</th>
+  </tr>
+  <tr>
+    <td><a href="/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov">{{site.data.keyword.cloudaccesstraillong_notm}} </a></td>
+	  <td>You can use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor {{site.data.keyword.cloudaccesstraillong_notm}}. </td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/at.html#at">Events generated by the {{site.data.keyword.cloudaccesstraillong_notm}} service</a></td>
+  </tr>
+  <tr> 
+    <td><a href="/docs/services/certificate-manager/about.html#about-cloud-certs">{{site.data.keyword.cloudcerts_full_notm}} </a></td>
+	  <td>You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.Bluemix_notm}}-based apps and services. </td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#cert_mgr">Events generated by the {{site.data.keyword.cloudcerts_short}} service</a></td>
+  </tr>
+  <tr>
+    <td><a href="/docs/iam/users_roles.html#userroles">{{site.data.keyword.iamlong}} (IAM) </a></td>
+  	<td>You can use IAM to manage users and roles across the the {{site.data.keyword.Bluemix_notm}} Platform and Infrastructure services. </td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/platform.html#cfroles">Events generated when you manage CF roles</a></td>
+  </tr>
+  <tr>
+    <td><a href="/docs/services/keymgmt/index.html#getting-started-with-key-protect">{{site.data.keyword.keymanagementservicelong}}</a></td>
+	  <td>You can use the {{site.data.keyword.keymanagementserviceshort}} service to provision encrypted keys for apps across the {{site.data.keyword.Bluemix_notm}}.</td>
+	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#key_protect">Events generated by the {{site.data.keyword.keymanagementserviceshort}} service</a></td>
+  </tr>
+</table>
+
+
+
 
 
 

@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Managing events by using the Activity Tracker CLI
@@ -23,11 +26,11 @@ Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailsh
 Complete the following steps:
 
 1. [Provision the {{site.data.keyword.keymanagementservicelong_notm}} and generate events](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [Get information about stored events (bx cf at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [Specify which logs to download by creating a session (bx cf at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [Get the actual log data (bx cf at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [Delete the session after the download completes (bx cf at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [Manually delete logs that are not required (bx cf at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+2. [Get information about stored events (bx at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
+2. [Specify which logs to download by creating a session (bx at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
+3. [Get the actual log data (bx at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
+4. [Delete the session after the download completes (bx at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
+5. [Manually delete logs that are not required (bx at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
 
 
 ## Assumptions
@@ -37,13 +40,11 @@ Complete the following steps:
 
     For more information on how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
 
-2. You have installed the {{site.data.keyword.cloudaccesstrailshort}} CF plugin in your local system. This is required for you to be able to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command line. 
+2. You have installed the {{site.data.keyword.cloudaccesstrailshort}} CLI in your local system. This is required for you to be able to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command line. 
 
-    For more information about installing the {{site.data.keyword.cloudaccesstrailshort}} CF plugin, see [Configuring the {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/cli/config_at_cli.html#config_at_cli).
+    For more information about installing the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Configuring the {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
 
-3. You have logged in to {{site.data.keyword.Bluemix_notm}} through the command line by using the following command:
-
-    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
+3. You have logged in to {{site.data.keyword.Bluemix_notm}} through the command line. For example, to log in to the us-south region, run the command: `bx login -a api.ng.bluemix.net`
 
 
 ## Step 1: Provision the IBM Key Protect service and generate events 
@@ -71,8 +72,6 @@ Complete the following steps:
 
     2. Click **Add Key**. A new window opens.
 
-        ![{{site.data.keyword.keymanagementserviceshort}} window to add keys](images/KP_f2.gif)
-
     3. Select **Generate key**, and complete the following steps:
 
         * Enter a name for the key, for example, *MyFirstKey*.
@@ -93,15 +92,13 @@ Complete the following steps:
 	
 	    The data that is displayed correspond to {{site.data.keyword.keymanagementserviceshort}} events that are available for the last 24 hours. 
 
-	    ![{{site.data.keyword.cloudaccesstrailshort}} manage tab](images/KP_f3.gif)
-
 ## Step 2: Get information about stored events
 {: #step2}
 
 Check what events are available for download. For example, if you provision and add a key on the current date, run the following command to get information about events collected today:
 
 ```
-bx cf at status -s 2017-07-25 -e 2017-07-25
+bx at status -s 2017-07-25 -e 2017-07-25
 +------------+-------+-------+------------+
 | Date       | Count | Size  | Searchable |
 +------------+-------+-------+------------+
@@ -114,9 +111,7 @@ This command will count the events for 25 of June, 2017.  {{site.data.keyword.cl
 
 To see the information for multiple days, use `-s` to set the start day and `-e` to set the end date. 
 
-To learn more about the `bx cf at status` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
 
-Use `bx cf at help status` to get help from the command line.
 
 ## Step 3: Specify which events to download
 {: #step3}
@@ -129,7 +124,7 @@ Before downloading events, create a session:
 Use the following command to create a session:
 
 ```
-bx cf at session create -s 2017-07-25 -e 2017-07-25
+bx at session create -s 2017-07-25 -e 2017-07-25
 +--------------+-------------------------------------------+
 | Name         | Value                                     |
 +--------------+-------------------------------------------+
@@ -148,11 +143,11 @@ There is a start date and an end date associated with a session. The download co
 
 The important part of the command's output is the session `Id`. It is referenced in the download command.
 
-To get information about existing sessions, type `bx cf at session list`.
+To get information about existing sessions, type `bx at session list`.
 
-To learn more about sessions and the `bx cf at session create` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_create).
+To learn more about sessions and the `bx at session create` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#session_create).
 
-Use `bx cf at session help create` to get help from the command line.
+Use `bx at session help create` to get help from the command line.
 
 ## Step 4: Download the events that are identified for the scope defined for the session
 {: #step4}
@@ -160,20 +155,20 @@ Use `bx cf at session help create` to get help from the command line.
 To download the events specified by the session parameters, run the following command:
 
 ```
-$ bx cf at events download -o events.log 21b19aeb-3d32-4c60-b912-517609c62db2
+$ bx at events download -o events.log 21b19aeb-3d32-4c60-b912-517609c62db2
  6.70 KiB / 3.06 KiB [================================================================================================================================================================] 219.03% 8.60 MiB/s 0s
 Download Successful
 ```
 
 * The `-o` parameter specifies an output file.
-* The session ID is specified last. You get the value of the session ID from the output of the `cf at session create` command.
+* The session ID is specified last. You get the value of the session ID from the output of the `bx at session create` command.
 * The progress indicator moves from 0 to 100% as the events download.
 
 The format of the downloaded data is compressed JSON. 
 
-To learn more about the `cf at download` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#download).
+To learn more about the `bx at download` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#download).
 
-Use `bx cf at help download` to get help from the command line.
+Use `bx at help download` to get help from the command line.
 
 ## Step 5: Delete the session
 {: #step5}
@@ -183,7 +178,7 @@ After the download completes, delete the session.
 The number of sessions is limited. A session is not deleted automatically. You must manually delete sessions that are not required. 
 
 ```
-$ bx cf at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
+$ bx at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 +---------+------------------------+
 | name    | value                  |
 +---------+------------------------+
@@ -192,27 +187,27 @@ $ bx cf at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 ```
 {: screen}
 
-To learn more about the `cf at session delete` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_delete).
+To learn more about the `bx at session delete` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#session_delete).
 
-Use `bx cf at session help delete` to get help from the command line.
+Use `bx at session help delete` to get help from the command line.
 
 ## Step 6: Delete events from Activity Tracker manually
 {: #step6}
 
 You have control of your own event retention in {{site.data.keyword.cloudaccesstrailshort}}. You can delete events manually, or you can automate the deletion of events.
 
-To delete events manually, run the `bx cf at delete` command. For example,
+To delete events manually, run the `bx at delete` command. For example,
 
 ```
-$ bx cf at delete -s 2017-07-25 -e 2017-07-25
+$ bx at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
 
-To learn more about the `bx cf at delete`command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#delete).
+To learn more about the `bx at delete`command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete).
 
-Use `bx cf at help delete` to get help from the command line.
+Use `bx at help delete` to get help from the command line.
 
-**Note:** To delete events automatically, you can set a retention policy by using the CLI command `bx cf at option`. For more information, see [CLI reference](/docs/services/cloud-activity-tracker/cli/at_cli.html#option)
+**Note:** To delete events automatically, you can set a retention policy by using the CLI command `bx at option`. For more information, see [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#option)
 
 

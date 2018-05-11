@@ -1,16 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-25"
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
-{:codeblock: .codeblock}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 # Downloading events
 {: #downloading_events}
@@ -25,38 +29,37 @@ Complete the following steps to download events that are available in a {{site.d
 
 Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
 
-For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
+For example, `bx login -a api.ng.bluemix.net`
 
 
 
 ## Step 2: Identify what events are available
 {: #step2}
 
-1. Use the `bx cf at status` command to see what events are available.
+1. Use the `bx at status` command to see what events are available.
 
     For example, to see what events are available for the last 2 weeks, run the following command:
 
     ```
-    $ bx cf at status
+    $ bx at status
     ```
     {: codeblock}
     
     For example, the output of running this command is:
     
     ```
-    +------------+--------+-------+--------------------+------------+
-    |    DATE    |  COUNT | SIZE  |       TYPES        | SEARCHABLE |
-    +------------+--------+-------+--------------------+------------+
-    | 2017-07-24 |    16  | 3020  | ActivityTracker    |   None     |
-    +------------+--------+-------+--------------------+------------+
-    | 2017-07-25 |   1224 | 76115 | ActivityTracker    |    All     |
-    +------------+--------+-------+--------------------+------------+
+    +------------+--------+------------+
+    |    DATE    |  COUNT | SEARCHABLE |
+    +------------+--------+------------+
+    | 2017-07-24 |    16  |    None    |
+    +------------+--------+------------+
+    | 2017-07-25 |   1224 |    All     |
+    +------------+--------+------------+
     ```
     {: screen}
 
     **Note:** The {{site.data.keyword.cloudaccesstrailshort}} service is a global service that uses the Coordinated Universal Time (UTC). Days are define as UTC days. To get events for a specific local-time day, you might need to download multiple UTC days.
 	
-	For more information, see [bx cf at status](/docs/services/cloud-activity-tracker/cli/at_cli.html#status).
 
 
 ## Step 3: Create a session
@@ -64,14 +67,14 @@ For more information, see [How do I log in to the {{site.data.keyword.Bluemix_no
 
 A session is required to define the scope of the event data that is available for a download, and to keep the status of the download. 
 
-Use the command [bx cf at session create](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_create) to create a session. Optionally, you can specify start date, and end date when you create a session. 
+Use the command `bx at session create` to create a session. Optionally, you can specify start date, and end date when you create a session. 
 
 **Note:** When you specify the start date and the end date, the session provides access to events between those inclusive dates. 
 
 To create a session that is used to download events for the current date, run the following command:
 
 ```
-bx cf at session create 
+bx at session create 
 ```
 {: codeblock}
 
@@ -85,7 +88,7 @@ The session returns the following information:
 For example,
 
 ```
-$ bx cf at session create 
+$ bx at session create 
 +--------------+-------------------------------------------+
 | Name         | Value                                     |
 +--------------+-------------------------------------------+
@@ -100,12 +103,12 @@ $ bx cf at session create
 ```
 {: screen}
 
-**Tip:** To see the list of active sessions, run the command [cf at session list](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_list).
+**Tip:** To see the list of active sessions, run the command `bx at session list` command.
 
 For example,
 
 ```
-bx cf at session list
+bx at session list
 +--------------------------------------+--------------------------------------+---------------------+--------------------------------+--------------------------------+
 | Id                                   | Space                                |Username             | Create-time                    | Access-time                    |
 +--------------------------------------+--------------------------------------+---------------------+--------------------------------+--------------------------------+
@@ -121,7 +124,7 @@ bx cf at session list
 To download the events that are specified by the session parameters, run the following command:
 
 ```
-bx cf at download -o Events_File_Name Session_ID
+bx at download -o Events_File_Name Session_ID
 ```
 {: codeblock}
 
@@ -133,7 +136,7 @@ where
 For example,
 
 ```
-bx cf at download -o Events_File_Name.log 32c657c5-31c0-4a3c-a139-b380871c737a
+bx at download -o Events_File_Name.log 32c657c5-31c0-4a3c-a139-b380871c737a
  29.89 KiB / 12.19 KiB [================================] 245.14% 9.73 MiB/s 0s
 Download completed successfully
 ```
@@ -149,12 +152,12 @@ The progress indicator moves from 0 to 100% as the events download.
 
 ## Step 4: Delete the session
 
-After the download is complete, you must delete the session by using the [cf at session delete](/docs/services/cloud-activity-tracker/cli/at_cli.html#session_delete) command. 
+After the download is complete, you must delete the session by using the `bx at session delete` command. 
 
 Run the following command to delete a session:
 
 ```
-bx cf at session delete Session_ID
+bx at session delete Session_ID
 ```
 {: codeblock}
 
@@ -163,7 +166,7 @@ Where Session_ID is the GUID of the session that you created in a previous step.
 For example,
 
 ```
-bx cf at session delete 32c657c5-31c0-4a3c-a139-b380871c737a
+bx at session delete 32c657c5-31c0-4a3c-a139-b380871c737a
 +---------+------------------------+
 | Name    | Value                  |
 +---------+------------------------+

@@ -1,21 +1,23 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-11-09"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Provisioning the Activity Tracker service
+
+# Provisioning Activity Tracker
 {: #provision}
 
 You can provision the {{site.data.keyword.cloudaccesstraillong}} service from the {{site.data.keyword.Bluemix}} UI, or from the command line.
@@ -53,7 +55,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	  <tr>
 	    <td>Select region to deploy in:</td>
-		<td>Valid values are: US South, United Kingdom, Germany</td>
+		<td>Valid values are: US South, United Kingdom, Germany, Sydney</td>
 	  </tr>
 	  <tr>
 	    <td>Choose an organization:</td>
@@ -61,7 +63,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	  <tr>
 	    <td>Choose a space:</td>
-		<td>Select the space in the organization that you have selected where you plan to monitor activity.</td>
+		<td>Select a space in the organization that you have selected where you plan to monitor activity.</td>
 	  </tr>
 	</table>
 
@@ -69,7 +71,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
     By default, the **free** plan is set.
 
-    For more information, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+    For more information, see [Service plans](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
 7. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the {{site.data.keyword.Bluemix_notm}} space where you are logged in.
   
@@ -78,42 +80,40 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 ## Provisioning from the CLI
 {: #cli}
 
-Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in {{site.data.keyword.Bluemix_notm}} through the command line:
+Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in {{site.data.keyword.Bluemix_notm}} through the command line:
 
-1. Install the Cloud Foundry (CF) CLI. If the CF CLI is installed, continue with the next step.
+1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the cf CLI ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#download_install).
+   
+   If the CLI is installed, continue with the next step.
     
-2. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
-
-    For more information, see [How do I log in to the {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/qa/cli_qa.html#login).
+2. Log in to the region, organization, and space in the {{site.data.keyword.Bluemix_notm}} where you want to provision the service. 
 	
-3. Run the `bx cf create-service` command to provision an instance.
+3. Run the `bx service create` command to provision an instance.
 
     ```
-	bx cf create-service service_name service_plan service_instance_name
+	bx service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
 	Where
 	
-	* service_name is the name of the service, that is, **activityTracker**.
-	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+	* service_name is the name of the service, that is, **accessTrail**.
+	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
 	* service_instance_name is the name that you want to use for the new service instance that you create.
-	
-	For more information about the cf command, see [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service).
 
-	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the Lite plan, run the following command:
+	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the standard plan, run the following command:
 	
 	```
-	bx cf create-service activityTracker free my_activity_tracker_svc
+	bx service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
 4. Verify that the service is created successfully. Run the following command:
 
     ```	
-	bx cf services
+	bx service list
 	```
 	{: codeblock}
 	
@@ -124,11 +124,12 @@ Complete the following steps to provision an instance of the {{site.data.keyword
     OK
     
     name                           service                  plan                   bound apps              last operation
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 
