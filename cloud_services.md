@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-05-12"
+lastupdated: "2018-06-08"
 
 ---
 
@@ -25,34 +25,84 @@ Use the {{site.data.keyword.cloudaccesstraillong}} service to monitor user-initi
 
 **Note:** To get information about the regions where a service is available in the {{site.data.keyword.Bluemix_notm}}, see [Services by region](/docs/services/services_region.html#services_region).
 
+## Infrastructure: {{site.data.keyword.containershort_notm}}
+{: #icks}
 
-## Platform core services
-{: #platform}
+The {{site.data.keyword.containershort_notm}} generates two types of {{site.data.keyword.cloudaccesstrailshort}} events:
 
-The following table lists core platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
+* **Cluster management events**: 
+    
+    * These events are automatically generated.
+    * These events are automatically forwarded to {{site.data.keyword.cloudaccesstrailshort}}.
+    * You can view these events through the {{site.data.keyword.cloudaccesstrailshort}} **account domain**. 
+
+* **Kubernetes API server audit events**: 
+
+    * These events are automatically generated.
+    * You must configure your cluster to forward these events to the {{site.data.keyword.cloudaccesstrailshort}} service.
+    * You can configure your cluster to send events to the {{site.data.keyword.cloudaccesstrailshort}} **account domain** or to a **space domain**. For more information, see [Sending audit logs](/docs/containers/cs_health.html#api_forward).
+
+The following table lists the types of events that are sent by the {{site.data.keyword.containershort_notm}} to {{site.data.keyword.cloudaccesstrailshort}}:
 
 <table>
-  <caption>List of core platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
+  <caption>Types of events that are sent by the {{site.data.keyword.containershort_notm}}</caption>
   <tr>
-    <th>Area</th>
-    <th>Service</th>
+    <th>Type</th>
 	  <th>Description</th>
 	  <th>{{site.data.keyword.cloudaccesstrailshort}} events</th>
   </tr>
   <tr> 
-    <td>Catalog</td>
-    <td><a href="/docs/overview/ui.html#catalogcreate">Provisioning and removing services that are available in the catalog</a></td>
-	  <td>You can provision services, rename a service, and rem ove a service. </br>These events are generated for services that are provisioned in a CF space. </td>
+    <td><a href="/docs/containers/container_index.html#container_index">Cluster management events</a></td>
+	  <td>These events report on actions like cluster creation, deletion, or update.</td>
+	  <td></td>
+  </tr>
+  <tr> 
+    <td><a href="/docs/containers/container_index.html#container_index">Kubernetes API server audit events.</a></td>
+	  <td>Kubernetes API server audit events provide chronological information about the sequence of activities that affect a cluster. Each action generates an event.</td>
+	  <td></td>
+  </tr>
+</table>
+
+
+## Platform: Cloud Foundry applications
+{: #platform_cfapps}
+
+The events that are sent by Cloud Foundry applications to {{site.data.keyword.cloudaccesstrailshort}} are listed in the response area of the `GET /v2/events`, under the body section. The *Type* field lists all actions that generate an event. For more information, see [Events API](https://apidocs.cloudfoundry.org/270/events/list_all_events.html).
+
+
+## Platform: Core integrated services
+{: #platform_core_integrated}
+
+Core platform services generate {{site.data.keyword.cloudaccesstrailshort}} events that you can view through the {{site.data.keyword.cloudaccesstrailshort}} **account domain**.
+
+The following table lists core platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
+
+<table>
+  <caption>List of core platform actions</caption>
+  <tr>
+    <th>Action</th>
+	  <th>Description</th>
+	  <th>{{site.data.keyword.cloudaccesstrailshort}} events</th>
+  </tr>
+  <tr> 
+    <td><a href="/docs/overview/ui.html#catalogcreate">Provisioning, editing, and removing catalog services that are bind to a Cloud Foundry space.</a></td>
+	  <td>You can provision services, rename a service, and remove a service. </br>These events are generated for services that are provisioned in a CF space. </td>
 	  <td><a href="/docs/services/cloud-activity-tracker/services/platform.html#catalog">Events generated when interacting with Catalog services</a></td>
   </tr>
 </table>
 
+## Platform: Integrated security services
+{: #platform_integrated_security}
+
+Integrated security services generate {{site.data.keyword.cloudaccesstrailshort}} events that you can view through the {{site.data.keyword.cloudaccesstrailshort}} **account domain**.
+
+
 The following table lists core security platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
 
 <table>
-  <caption>List of core security platform services that send events to {{site.data.keyword.cloudaccesstrailshort}}</caption>
+  <caption>List of core security platform services</caption>
   <tr>
-    <th>Service</th>
+    <th>Action</th>
 	  <th>Description</th>
 	  <th>{{site.data.keyword.cloudaccesstrailshort}} events</th>
   </tr>
@@ -62,7 +112,7 @@ The following table lists core security platform services that send events to {{
 	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#login">Events generated when a user or app logs in to the {{site.data.keyword.Bluemix_notm}}</a></td>
   </tr>
   <tr>
-    <td><a href="docs/iam/mngcf.html#mngcf">Managing account user's Cloud Foundry access</a></td>
+    <td><a href="/docs/iam/mngcf.html#mngcf">Managing account user's Cloud Foundry access</a></td>
 	  <td>You can grant, revoke, and update Cloud Foundry (CF) permissions to users in the account.</td>
 	  <td><a href="/docs/services/cloud-activity-tracker/services/platform.html#cfroles">Events generated when managing CF roles in the account</a></td>
   </tr>
@@ -78,14 +128,9 @@ The following table lists core security platform services that send events to {{
   </tr>  
 </table>
 
-## Cloud Foundry applications
-{: #cfapps}
-
-The events that are sent by Cloud Foundry applications to {{site.data.keyword.cloudaccesstrailshort}} are listed in the response area of the `GET /v2/events`, under the body section. The *Type* field lists all actions that generate an event. For more information, see [Events API](https://apidocs.cloudfoundry.org/270/events/list_all_events.html).
 
 
-
-## Security services
+## Platform: Security services
 {: #security}
 
 The following table lists security Cloud services that send events to {{site.data.keyword.cloudaccesstrailshort}}:
@@ -102,8 +147,13 @@ The following table lists security Cloud services that send events to {{site.dat
 	  <td>You can use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor {{site.data.keyword.cloudaccesstraillong_notm}}. </td>
 	  <td><a href="/docs/services/cloud-activity-tracker/services/at.html#at">Events generated by the {{site.data.keyword.cloudaccesstraillong_notm}} service</a></td>
   </tr>
+  <tr>
+    <td><a href="/docs/services/appid/about.html#about">{{site.data.keyword.appid_full_notm}}</a></td>
+	  <td>You can use {{site.data.keyword.appid_short}} to add authentication to your mobile and web apps, and to protect your back-end resources.</td>
+	  <td></td>
+  </tr>  
   <tr> 
-    <td><a href="/docs/services/certificate-manager/about.html#about-cloud-certs">{{site.data.keyword.cloudcerts_full_notm}} </a></td>
+    <td><a href="/docs/services/certificate-manager/about.html#about-certificate-manager">{{site.data.keyword.cloudcerts_full_notm}} </a></td>
 	  <td>You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.Bluemix_notm}}-based apps and services. </td>
 	  <td><a href="/docs/services/cloud-activity-tracker/services/security_svcs.html#cert_mgr">Events generated by the {{site.data.keyword.cloudcerts_short}} service</a></td>
   </tr>
