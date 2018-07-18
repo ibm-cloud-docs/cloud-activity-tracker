@@ -48,6 +48,6 @@ You can view events in an {{site.data.keyword.cloudaccesstrailshort}} space doma
 
 An **account owner** has permissions to view events for any {{site.data.keyword.cloudaccesstrailshort}} space domain.
 
-As a **member in an account**, you must have *developer* role in the space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned to see events.
+As a **member in an account**, you must have *developer* role in the space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
 
 

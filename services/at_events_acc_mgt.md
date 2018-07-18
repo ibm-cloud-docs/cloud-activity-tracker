@@ -23,8 +23,6 @@ lastupdated: "2018-07-09"
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with the {{site.data.keyword.Bluemix}} account. 
 {:shortdesc}
 
-For example, when a user or application logs into the {{site.data.keyword.Bluemix_notm}} by using a password, an API key, an authentication code or a passcode, an {{site.data.keyword.cloudaccesstrailshort}} event is generated for each attempt. 
-
 The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.Bluemix_notm}}. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
 
 To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
