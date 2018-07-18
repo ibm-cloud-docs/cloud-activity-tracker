@@ -44,10 +44,10 @@ As a **member in an account**, consider the following information to view accoun
 ## Viewing space events
 {: #space_events}
 
-You can view events in an {{site.data.keyword.cloudaccesstrailshort}} space domain through the {{site.data.keyword.cloudaccesstrailshort}} UI or through Kibana.
+You can view events in an {{site.data.keyword.cloudaccesstrailshort}} space domain through the {{site.data.keyword.cloudaccesstrailshort}} UI. If you have a premium plan, you can also see events through Kibana.
 
-An **account owner** has permissions to view events in an {{site.data.keyword.cloudaccesstrailshort}} space domain through the {{site.data.keyword.cloudaccesstrailshort}} UI or through Kibana.
+An **account owner** has permissions to view events for any {{site.data.keyword.cloudaccesstrailshort}} space domain.
 
-As a **member in an account**, you must have *developer* role in the space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned and you want to see events.
+As a **member in an account**, you must have *developer* role in the space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned to see events.
 
 

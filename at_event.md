@@ -135,6 +135,6 @@ The following table list common outcome fields that are available for an {{site.
   <tr>
     <td>severity</td>
 	  <td>Defines the level of threat an action may have on the Cloud.  </td>
-    <td>Valid values are: *normal*, *warning*, and *critical* </br></br>**Normal** is set for routine actions in the Cloud. For example: starting an instance, or refreshing a token. </br></br>**Warning** is set for actions where a Cloud resource is updated or its metadata is modified. For example: updating the version of a worker node, renaming a certificate, or renaming a service instance. </br></br>**Critical** is set for a ctions that affect security in the Cloud. For example: changing credentials of a user, deleting data, unauthorized access to work with a Cloud resource. </td>
+    <td>Valid values are: *normal*, *warning*, and *critical* </br></br>**Normal** is set for routine actions in the Cloud. For example: starting an instance, or refreshing a token. </br></br>**Warning** is set for actions where a Cloud resource is updated or its metadata is modified. For example: updating the version of a worker node, renaming a certificate, or renaming a service instance. </br></br>**Critical** is set for actions that affect security in the Cloud. For example: changing credentials of a user, deleting data, unauthorized access to work with a Cloud resource. </td>
   </tr>
 </table>
