@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-25"
+lastupdated: "2018-07-07"
 
 ---
 
@@ -39,6 +39,10 @@ The following table lists the URLs per region that you must use to log in to the
 	  <td>api.eu-de.bluemix.net</td>
 	</tr>
 	<tr>
+	  <td>Sydney</td>
+	  <td>api.au-syd.bluemix.net</td>
+	</tr>
+	<tr>
 	  <td>US South</td>
 	  <td>api.ng.bluemix.net</td>
 	</tr>
@@ -47,3 +51,35 @@ The following table lists the URLs per region that you must use to log in to the
 	  <td>api.eu-gb.bluemix.net</td>
 	</tr>
 </table>
+
+
+## API endpoints
+{: #api_endpoints}
+
+The following table lists the {{site.data.keyword.cloudaccesstrailshort}} endpoints per region that you must use when using the API:
+	
+<table>
+	<caption>Table 2. {{site.data.keyword.cloudaccesstrailshort}} endpoints</caption>
+	<tr>
+	  <th>Region</th>
+	  <th>URL</th>
+	</tr>
+	<tr>
+	  <td>Germany</td>
+	  <td>`https://activity-tracker.eu-de.bluemix.net`</td>
+	</tr>
+	<tr>
+	  <td>Sydney</td>
+	  <td>`https://activity-tracker.au-syd.bluemix.net`</td>
+	</tr>
+	<tr>
+	  <td>US South</td>
+	  <td>`https://activity-tracker.ng.bluemix.net`</td>
+	</tr>
+	<tr>
+	  <td>United Kingdom</td>
+	  <td>`https://activity-tracker.eu-gb.bluemix.net`</td>
+	</tr>
+</table>
+
+

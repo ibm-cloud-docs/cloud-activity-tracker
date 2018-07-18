@@ -11,13 +11,8 @@ IBM Cloud Activity Tracker
     About
         activity_tracker_ov.md
         cloud_services.md
+        at_event.md
         compliance.md
-
-    {: .topicgroup}
-    Monitoring cloud activity
-        services/at.md
-        services/security_svcs.md
-        services/platform.md
         
     {: .topicgroup}
     Tutorials
@@ -35,6 +30,12 @@ IBM Cloud Activity Tracker
     how-to/config_cli.md
 
     {: .topicgroup}
+    Managing events by using the API
+        how-to/manage_events_api/viewing_events_info_api.md
+        how-to/manage_events_api/downloading_events_api.md
+        how-to/manage_events_api/deleting_events_api.md
+
+    {: .topicgroup}
     Managing events from the CLI
         how-to/configuring_retention_policy.md
         how-to/viewing_event_information.md
@@ -45,14 +46,25 @@ IBM Cloud Activity Tracker
     Viewing events through the UI
         how-to/manage-events-ui/launch_at_ui.md
         how-to/manage-events-ui/launch_kibana.md
+        how-to/manage-events-ui/viewing_events.md
+
+    how-to/grant_permissions.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     reference/ref_endpoints.md
+    reference/auth_uaa.md
     reference/at_cli_cloud.md
-    reference/at_event.md
 	
     [IBM Cloud Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+
+    {: .topicgroup}
+    Monitoring cloud activity
+        reference/events.md
+        services/at_events_cf.md
+        services/at_events_iam.md
+        services/at_events_acc_mgt.md
+        services/at_events_rc.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}

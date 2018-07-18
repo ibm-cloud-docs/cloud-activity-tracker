@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-06-21"
 
 ---
 
@@ -39,22 +39,14 @@ For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} activit
 * The status of the API call.
 
 
-## Provisioning Activity Tracker
-{: #provision}
-
-You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in each space of your account where you want to monitor API activity to Cloud services running in that space.
-
-To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
-
-
-
 ## Collecting events
 {: #collect}
 
 The {{site.data.keyword.cloudaccesstrailshort}} service only captures activity data that is related to API calls and other actions that are made to selected cloud services in the {{site.data.keyword.Bluemix_notm}}. 
 
 * Events are collected automatically. 
-* The events that are collected in {{site.data.keyword.cloudaccesstrailshort}} comply with the Cloud Auditing Data Federation (CADF) standard. The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
+* Events that are collected in {{site.data.keyword.cloudaccesstrailshort}} comply with the Cloud Auditing Data Federation (CADF) standard. The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
+* {{site.data.keyword.cloudaccesstrailshort}} stores and groups events by domain. There is an account domain per region, and a space domain per Cloud Foundry space. 
 
 The CADF event model includes the following components:
 
@@ -95,8 +87,18 @@ Consider the following information when you work with the {{site.data.keyword.cl
 * CADF events of type *Activity* are supported by the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 
+## Provisioning Activity Tracker
+{: #provision}
 
-## Analizing activity logs
+To view events that are available through an account domain, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in a Cloud Foundry space in the region where you want to monitor API activity. Only the **account owner** can see account events.
+
+To view events that are available through a space doamin, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space  where you want to monitor API activity.
+
+To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+
+
+
+## Analysing activity logs
 {: #analyze}
 
 You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.Bluemix_notm}}, or by using Kibana, an open-source tool. You can monitor events that are available in a specific space or at the account level.
@@ -106,7 +108,7 @@ You can search, analize, and monitor activity logs for the last 24 hours through
 You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. * **Note:** This feature is available for **Premium** plan users.
 
 * For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
-* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker/reference/at_event.html#at_event)
+* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker/at_event.html#at_event)
 
 
 

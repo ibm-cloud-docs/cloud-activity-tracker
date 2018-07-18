@@ -26,11 +26,11 @@ If you have problems or questions when using the {{site.data.keyword.cloudaccess
 
 * You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} and tag your question with **ibm-bluemix** and **activity-tracker**.
+  * If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} and tag your question with **ibm-cloud** and **activity-tracker**.
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
-  * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/activity-tracker/?smartspace=bluemix){:new_window} forum. Include the  **activity-tracker** and **bluemix** tags.
+  * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/activity-tracker/?smartspace=bluemix){:new_window} forum. Include the  **activity-tracker** and **ibm-cloud** tags.
 
-See [Getting help](https://www.{DomainName}/docs/support/index.html#getting-help) for more details about using the forums.
+See [Getting help](/docs/services/cloud-activity-tracker/gettinghelp.html#gettinghelp) for more details about using the forums.
 
-* If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](https://www.{DomainName}/docs/support/index.html#contacting-support).
+* If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
 

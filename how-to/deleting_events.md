@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -19,84 +19,55 @@ lastupdated: "2018-04-27"
 # Deleting events
 {: #deleting_events}
 
-Use the *bx at delete* command to delete manually events that are stored in {{site.data.keyword.cloudaccesstrailshort}} for a {{site.data.keyword.Bluemix}} space.
+Use the *ibmcloud at delete* command to delete manually events that are stored in {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
-## Deleting events
-{: #viewing_events}
+Complete the following steps:
 
-Use the `bx at status` command to view the size, count, and whether the events are available or not for analysis in Kibana. 
+## Step 1: Log in to the {{site.data.keyword.Bluemix_notm}}
+{: #prereq}
 
-Complete the following steps to delete events:
+Log in to the {{site.data.keyword.Bluemix_notm}}. Complete the following steps:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+1. Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}.
+2. Run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 
-2. Run the *bx at status* command to check what events are available for download.
+**Note:** Set the organization and space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
 
-    ```
-    $ bx at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
-    ```
-    {: codeblock}
-    
-    where
-    
-    * *-a* is used to specify that the request applies to all spaces in the account.
-    * *-s* is used to set the start date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
-    * *-e* is used to set the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
-    	
-	Use `bx at status` command with the options **-s** to set the start day and **-e** to set the end date. For example:
+## Step 2: Identify what events are available
+{: #step2}
 
-    * `bx at status` provides information for the last 2 weeks.
-    * `bx at status -s 2017-05-03` provides information from May 3rd, 2017 till the current date.
-    * `bx at status -s 2017-05-03 -e 2017-05-08` provides information between May 3, 2017 and May 8, 2017. 
- 
-    Use `bx at status` command with the option **-a** to set the domain to account.
+Use the `ibmcloud at status` command to see information about events are available in a space domain.
+
+* To get information about events in a space domain, run the command `ibmcloud at status`.
+* To get information about events in the account domain, run the command `ibmcloud at status` with the option `-a`.
+
+For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
 	
-    For example, to get information about the events that are available for 10 of June 2017, run the following command:
-    
-    ```
-    $ bx at status -s 2017-06-10 -e 2017-06-10
-    +------------+-------+------------+
-    | Date       | Count | Searchable |
-    +------------+-------+------------+
-    | 2017-06-10 | 1     | All        |
-    +------------+-------+------------+
-    ```
-    {: screen}
+  
+## Step 3: Delete events
+{: #step3}
 	
-3. Delete events. Run the following command:
+To delete events, run the command `ibmcloud at delete`.
 
-    ```
-	bx at delete [parameters] [arguments..]
-	```
-	{: codeblock}
-
-    where 	
-
-    Parameters
-
-    --start value, -s value
-        
-		(Optional) Sets the start date in Universal Coordinated Time (UTC): YYYY-MM-DD, for example, 2017-01-02.
+```
+ibmcloud at delete -s YYYY-MM-DD -e YYYY-MM-DD 
+```
+{: codeblock}
     
-	    The default value is set to 2 weeks ago. 
-		
-    --end value, -e value
-	
-        (Optional) Sets the end date in Universal Coordinated Time (UTC): YYYY-MM-DD
-		
-        The UTC format of the date is YYYY-MM-DD, for example, 2017-01-02.
-		
-        The default value is set to the current date. 
+where
 
-    For example, to delete the events for 10 June 2017, run the following command:
+* *-s* is used to set the start date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
+* *-e* is used to set the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
 
-	```
-	bx at delete -s 2017-06-10 -e 2017-06-10
-	```
-	{: screen}
+For example, to delete the events for 10 June 2017, run the following command:
 
-    You receive information about the log records that have been deleted.
+```
+ibmcloud at delete -s 2017-06-10 -e 2017-06-10
+```
+{: screen}
+
+You receive information about the event records that have been deleted.
 
 
 

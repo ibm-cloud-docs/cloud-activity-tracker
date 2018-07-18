@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-06-15"
 
 ---
 
@@ -84,16 +84,18 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#download_install).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
    
    If the CLI is installed, continue with the next step.
     
-2. Log in to the region, organization, and space in the {{site.data.keyword.Bluemix_notm}} where you want to provision the service. 
+2. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+
+    Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
-3. Run the `bx service create` command to provision an instance.
+3. Run the `ibmcloud service create` command to provision an instance.
 
     ```
-	bx service create service_name service_plan service_instance_name
+	ibmcloud service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
@@ -106,14 +108,14 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the standard plan, run the following command:
 	
 	```
-	bx service create accessTrail free my_activitytracker_svc
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
 4. Verify that the service is created successfully. Run the following command:
 
     ```	
-	bx service list
+	ibmcloud service list
 	```
 	{: codeblock}
 	

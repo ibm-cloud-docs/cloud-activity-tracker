@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -23,7 +23,7 @@ You can use the {{site.data.keyword.cloudaccesstraillong}} CLI to manage {{site.
 {: shortdesc}
 
 **Prerequisites**
-* Before running the commands, log in to the {{site.data.keyword.Bluemix}} with the `bx login` command to generate an access token and authenticate your session.
+* Before running the commands, log in to the {{site.data.keyword.Bluemix}} with the `ibmcloud login` command to generate an access token and authenticate your session.
 * To manage events by using the CLI, you must have a paid plan.
 
 The {{site.data.keyword.cloudaccesstraillong}} CLI plug-in supports Linux, Mac, and Windows platforms.
@@ -35,55 +35,55 @@ The {{site.data.keyword.cloudaccesstraillong}} CLI plug-in supports Linux, Mac, 
     <th>When to use it</th>
   </tr>
   <tr>
-    <td>[bx at](#base)</td>
+    <td>[ibmcloud at](#base)</td>
     <td>Use this command to get information about the CLI, such as version or the list of commands.</td>
   </tr>
   <tr>
-    <td>[bx at delete](#delete)</td>
+    <td>[ibmcloud at delete](#delete)</td>
     <td>Use this command to delete {{site.data.keyword.cloudaccesstrailshort}} events.</td>
   </tr>
   <tr>
-    <td>[bx at download](#download)</td>
+    <td>[ibmcloud at download](#download)</td>
     <td>Use this command to download {{site.data.keyword.cloudaccesstrailshort}} logs to a local file. </td>
   </tr>
   <tr>
-    <td>[bx at help](#help)</td>
+    <td>[ibmcloud at help](#help)</td>
     <td>Use this command to get help on how to use the CLI, and a list of all of the commands.</td>
   </tr>
   <tr>
-    <td>[bx at option](#option)</td>
+    <td>[ibmcloud at option](#option)</td>
     <td>Use this command to view or change {{site.data.keyword.cloudaccesstrailshort}} event options, such as retention, that are available in a space or in an account.</td>
   </tr>
   <tr>
-    <td>[bx at session create](#session_create)</td>
+    <td>[ibmcloud at session create](#session_create)</td>
     <td>Use this command to create a new session.</td>
   </tr>
   <tr>
-    <td>[bx at session delete](#session_delete)</td>
+    <td>[ibmcloud at session delete](#session_delete)</td>
     <td>Use this command to delete a session.</td>
   </tr>  
   <tr>
-    <td>[bx at session list](#session_list)</td>
+    <td>[ibmcloud at session list](#session_list)</td>
     <td>Use this command to list active sessions and their IDs.</td>
   </tr>  
   <tr>
-    <td>[bx at session show](#session_show)</td>
+    <td>[ibmcloud at session show](#session_show)</td>
     <td>Use this command to show the status of a single session.</td>
   </tr>   
   <tr>
-    <td>[bx at status](#status)</td>
+    <td>[ibmcloud at status](#status)</td>
     <td>Use this command to view information about the status of events that are stores in {{site.data.keyword.cloudaccesstrailshort}}.</td>
   </tr>
   </table>
 
 
-## bx at
+## ibmcloud at
 {: #base}
 
 Provides information about the version of the CLI and how to use the CLI.
 
 ```
-bx at [parameters]
+ibmcloud at [parameters]
 ```
 {: codeblock}
 
@@ -103,25 +103,25 @@ bx at [parameters]
 To get the list of commands, run the following command:
 
 ```
-bx at --help
+ibmcloud at --help
 ```
 {: codeblock}
 
 To get the version of the CLI, run the following command:
 
 ```
-bx at --version
+ibmcloud at --version
 ```
 {: codeblock}
 
 
-## bx at delete
+## ibmcloud at delete
 {: #delete}
 
 Deletes {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-bx at delete [parameters] [arguments..]
+ibmcloud at delete [parameters] [arguments..]
 ```
 {: codeblock}
 
@@ -147,7 +147,7 @@ bx at delete [parameters] [arguments..]
 
 To delete the events for 22 June 2017, run the following command:
 ```
-bx at delete -s 2017-06-22 -e 2017-06-22
+ibmcloud at delete -s 2017-06-22 -e 2017-06-22
 ```
 {: codeblock}
 
@@ -157,7 +157,7 @@ You receive information similar to the following output:
 `"6 logs were deleted, freeing 13737 bytes."`
 
 
-## bx at download
+## ibmcloud at download
 {: #download}
 
 Downloads {{site.data.keyword.cloudaccesstrailshort}} events to a local file or streams them out to a terminal window in Windows and Mac OS X, or to stdout in a Linux terminal. 
@@ -165,7 +165,7 @@ Downloads {{site.data.keyword.cloudaccesstrailshort}} events to a local file or 
 **Note:** To download files, you must create a session first. A session defines which events to download based on date range. You download events within the context of a session. 
 
 ```
-bx at download [parameters] [arguments...]
+ibmcloud at download [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -180,7 +180,7 @@ bx at download [parameters] [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>Set the session ID value that you get when you run the command `bx at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `bx at session create` command provides the parameters that control which events are downloaded. </dd>
+<dd>Set the session ID value that you get when you run the command `ibmcloud at session create`. This value indicates which session to use when downloading events. <br>**Note:** The `ibmcloud at session create` command provides the parameters that control which events are downloaded. </dd>
 </dl>
 
 **Note:** After the download completes, to download the same data again, you must use a different file, or a different session.
@@ -190,7 +190,7 @@ bx at download [parameters] [arguments...]
 To download events into a file called `events.log`, run the following command:
 
 ```
-bx at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
+ibmcloud at download -o events.log 1db6ce16-824d-4d50-bd40-37f1d8fea9b7
 ```
 {: screen}
 
@@ -203,13 +203,13 @@ Download completed successfully
 {: screen}
 
 
-## bx at help
+## ibmcloud at help
 {: #help}
 
 Provides information about how to use a command.
 
 ```
-bx at help [parameters]
+ibmcloud at help [parameters]
 ```
 {: codeblock}
 
@@ -227,12 +227,12 @@ bx at help [parameters]
 To get help on how to run the command to view the status of {{site.data.keyword.cloudaccesstrailshort}}, run the following command:
 
 ```
-bx at help status
+ibmcloud at help status
 ```
 {: codeblock}
 
 
-## bx at option
+## ibmcloud at option
 {: #option}
 
 Displays or changes the retention period for events that are available in a space. When you set a retention policy, events are deleted automatically when the number of retention days in reached.
@@ -240,10 +240,10 @@ Displays or changes the retention period for events that are available in a spac
 * The period is set in number of days.
 * The default value is **-1**, that is, events are stored and not deleted.
 
-**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `bx at delete` command. 
+**Note:** By default, all the events are stored. If you do not set a retention period, you must delete them manually by using the `ibmcloud at delete` command. 
 
 ```
-bx at option [parameters] [arguments...]
+ibmcloud at option [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -263,7 +263,7 @@ bx at option [parameters] [arguments...]
 To see the current retention period for the space where you are logged in, run the following command:
 
 ```
-bx at option
+ibmcloud at option
 ```
 {: codeblock}
 
@@ -282,7 +282,7 @@ The output is similar to the following output:
 To change the retention period to 25 days for the space where you are logged in, run the following command:
 
 ```
-bx at option -r 25
+ibmcloud at option -r 25
 ```
 {: codeblock}
 
@@ -299,7 +299,7 @@ The output is similar to the following output:
 
 
 
-## bx at session create
+## ibmcloud at session create
 {: #session_create}
 
 Creates a new session.
@@ -307,13 +307,17 @@ Creates a new session.
 **Note:** You can have up to 30 concurrent sessions in a space. The session is created for a user. Sessions cannot be shared between users in a space.
 
 ```
-bx at session create [parameters] [arguments...]
+ibmcloud at session create [parameters] [arguments...]
 ```
 {: codeblock}
 
 **Parameters**
 
 <dl>
+  <dt>--at-account-level, -a </dt>
+  <dd>(Optional) Sets the scope to account level. </br>Set this value to get account information. <br>If this parameter is not specified, the default value is set to the current space only, that is, the space where you logged in by using the command `ibmcloud cf login`.
+  </dd>
+
   <dt>--start value, -s value</dt>
   <dd>(Optional) Sets the start date in Universal Coordinated Time (UTC): *YYYY-MM-DD*, for example, `2017-01-02`. <br>The default value is set to 2 weeks ago. 
   </dd>
@@ -360,7 +364,7 @@ bx at session create [parameters] [arguments...]
 To create a session for 10 July 2017, run the following command:
 
 ```
-bx at session create -s 2017-07-10 -e 2017-07-10
+ibmcloud at session create -s 2017-07-10 -e 2017-07-10
 ```
 {: screen}
 
@@ -383,13 +387,13 @@ The output is similar to the following output:
 
 
 
-## bx at session delete
+## ibmcloud at session delete
 {: #session_delete}
 
 Deletes a session that is specified by the session ID.
 
 ```
-bx at session delete [arguments...]
+ibmcloud at session delete [arguments...]
 ```
 {: codeblock}
 
@@ -398,7 +402,7 @@ bx at session delete [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>ID of the session that you want to delete. <br>You can use the `bx at session list` command to get all the active session IDs.</dd>
+<dd>ID of the session that you want to delete. <br>You can use the `ibmcloud at session list` command to get all the active session IDs.</dd>
 </dl>
 
 **Example**
@@ -406,7 +410,7 @@ bx at session delete [arguments...]
 To delete a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-bx at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
+ibmcloud at session delete 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -422,13 +426,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx at session list
+## ibmcloud at session list
 {: #session_list}
 
 Lists the active sessions and their IDs.
 
 ```
-bx at session list 
+ibmcloud at session list 
 ```
 {: codeblock}
 
@@ -456,7 +460,7 @@ bx at session list
 To list the sessions, run the following command:
 
 ```
-bx at session list
+ibmcloud at session list
 ```
 {: screen}
 
@@ -473,13 +477,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx at session show
+## ibmcloud at session show
 {: #session_show}
 
 Shows the status of a single session.
 
 ```
-bx at session show [arguments...]
+ibmcloud at session show [arguments...]
 ```
 {: codeblock}
 
@@ -520,7 +524,7 @@ bx at session show [arguments...]
 To show details of a session with session ID *9b8c4db8-5841-4993-a449-305815a53a8e*, run the following command:
 
 ```
-bx at session show 9b8c4db8-5841-4993-a449-305815a53a8e
+ibmcloud at session show 9b8c4db8-5841-4993-a449-305815a53a8e
 ```
 {: screen}
 
@@ -542,13 +546,13 @@ The output is similar to the following output:
 {: screen}
 
 
-## bx at status
+## ibmcloud at status
 {: #status}
 
 Returns information about the status of {{site.data.keyword.cloudaccesstrailshort}} events.
 
 ```
-bx at status [parameters] [arguments...]
+ibmcloud at status [parameters] [arguments...]
 ```
 {: codeblock}
 
@@ -564,13 +568,13 @@ bx at status [parameters] [arguments...]
   </dd>
   
   <dt>--at-account-level, -a </dt>
-  <dd>(Optional) Sets the scope to account level. <br> **Note:** Set this value to get account information. <br>If this parameter is not specified, the default value is set to the current space only, that is, the space where you logged in by using the command `bx cf login`.
+  <dd>(Optional) Sets the scope to account level. <br> **Note:** Set this value to get account information. <br>If this parameter is not specified, the default value is set to the current space only, that is, the space where you logged in by using the command `ibmcloud cf login`.
   </dd>
   
 </dl>
 
 
-**Note:** The `bx at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
+**Note:** The `ibmcloud at status` command reports only the last two weeks of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} when no start and end dates are specified. 
 
 **Returned values**   
 
@@ -602,7 +606,7 @@ bx at status [parameters] [arguments...]
 To show details of events on 20 July 2017, run the following command:
 
 ```
-bx at status -s 2017-07-20 -e 2017-07-20
+ibmcloud at status -s 2017-07-20 -e 2017-07-20
 ```
 {: codeblock}
 

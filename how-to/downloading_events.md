@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-25"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -19,47 +19,31 @@ lastupdated: "2018-04-25"
 # Downloading events
 {: #downloading_events}
 
-You can download events to a local file or pipe data into another program. You download events within the context of a session. A session specifies which events will be downloaded. If the download of the events is interrupted, the session enables resuming the download from where it left off. After the download is completed, you must delete the session.
+You can download events to a local file. You download events within the context of a session. A session specifies which events will be downloaded. After the download is completed, you must delete the session.
 {:shortdesc}
 
-Complete the following steps to download events that are available in a {{site.data.keyword.Bluemix_notm}} space into a local file:
+Complete the following steps to download events into a local file:
 
 ## Step 1: Log in to the {{site.data.keyword.Bluemix_notm}}
 {: #prereq}
 
-Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+Log in to the {{site.data.keyword.Bluemix_notm}}. Complete the following steps:
 
-For example, `bx login -a api.ng.bluemix.net`
+1. Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}.
+2. Run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 
-
+**Note:** Set the organization and space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
 
 ## Step 2: Identify what events are available
 {: #step2}
 
-1. Use the `bx at status` command to see what events are available.
+Use the `ibmcloud at status` command to see information about events are available in a space domain.
 
-    For example, to see what events are available for the last 2 weeks, run the following command:
+* To get information about events in a space domain, run the command `ibmcloud at status`.
+* To get information about events in the account domain, run the command `ibmcloud at status` with the option `-a`.
 
-    ```
-    $ bx at status
-    ```
-    {: codeblock}
-    
-    For example, the output of running this command is:
-    
-    ```
-    +------------+--------+------------+
-    |    DATE    |  COUNT | SEARCHABLE |
-    +------------+--------+------------+
-    | 2017-07-24 |    16  |    None    |
-    +------------+--------+------------+
-    | 2017-07-25 |   1224 |    All     |
-    +------------+--------+------------+
-    ```
-    {: screen}
-
-    **Note:** The {{site.data.keyword.cloudaccesstrailshort}} service is a global service that uses the Coordinated Universal Time (UTC). Days are define as UTC days. To get events for a specific local-time day, you might need to download multiple UTC days.
-	
+For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+  
 
 
 ## Step 3: Create a session
@@ -67,20 +51,24 @@ For example, `bx login -a api.ng.bluemix.net`
 
 A session is required to define the scope of the event data that is available for a download, and to keep the status of the download. 
 
-Use the command `bx at session create` to create a session. Optionally, you can specify start date, and end date when you create a session. 
+Use the command `ibmcloud at session create` to create a session. By default, a session includes data for the last 2 weeks.  Optionally, you can specify start date, and end date when you create a session to specify a time range, a specific hour of the day, and the scope of the events. 
 
-**Note:** When you specify the start date and the end date, the session provides access to events between those inclusive dates. 
+**Note:** 
 
-To create a session that is used to download events for the current date, run the following command:
+* When you specify the start date and the end date, the session provides access to events between those inclusive dates. 
+* You cannot download more than 2 weeks of data per session. Therefore, the time range must be less than 2 weeks.
+* You can download events for a space domain or for the account domain in a region.
+
+To create a session that is used to download events for a specific date, run the following command:
 
 ```
-bx at session create 
+ibmcloud at session create -s 2017-07-25 -e 2017-07-25
 ```
 {: codeblock}
 
 The session returns the following information:
 
-* The date range to be downloaded. The default is the current UTC date.
+* The date range to be downloaded.
 * Information about whether to include events that are  available for the entire account, or just for the current space. By default, you get events for the space where you are logged in.
 * The session ID that is required to download events.
 * The user ID that creates the session.
@@ -88,7 +76,7 @@ The session returns the following information:
 For example,
 
 ```
-$ bx at session create 
+$ ibmcloud at session create 
 +--------------+-------------------------------------------+
 | Name         | Value                                     |
 +--------------+-------------------------------------------+
@@ -103,12 +91,12 @@ $ bx at session create
 ```
 {: screen}
 
-**Tip:** To see the list of active sessions, run the command `bx at session list` command.
+**Tip:** To see the list of active sessions, run the command `ibmcloud at session list` command.
 
 For example,
 
 ```
-bx at session list
+ibmcloud at session list
 +--------------------------------------+--------------------------------------+---------------------+--------------------------------+--------------------------------+
 | Id                                   | Space                                |Username             | Create-time                    | Access-time                    |
 +--------------------------------------+--------------------------------------+---------------------+--------------------------------+--------------------------------+
@@ -124,7 +112,7 @@ bx at session list
 To download the events that are specified by the session parameters, run the following command:
 
 ```
-bx at download -o Events_File_Name Session_ID
+ibmcloud at download -o Events_File_Name Session_ID
 ```
 {: codeblock}
 
@@ -136,7 +124,7 @@ where
 For example,
 
 ```
-bx at download -o Events_File_Name.log 32c657c5-31c0-4a3c-a139-b380871c737a
+ibmcloud at download -o Events_File_Name.log 32c657c5-31c0-4a3c-a139-b380871c737a
  29.89 KiB / 12.19 KiB [================================] 245.14% 9.73 MiB/s 0s
 Download completed successfully
 ```
@@ -152,12 +140,12 @@ The progress indicator moves from 0 to 100% as the events download.
 
 ## Step 4: Delete the session
 
-After the download is complete, you must delete the session by using the `bx at session delete` command. 
+After the download is complete, you must delete the session by using the `ibmcloud at session delete` command. 
 
 Run the following command to delete a session:
 
 ```
-bx at session delete Session_ID
+ibmcloud at session delete Session_ID
 ```
 {: codeblock}
 
@@ -166,7 +154,7 @@ Where Session_ID is the GUID of the session that you created in a previous step.
 For example,
 
 ```
-bx at session delete 32c657c5-31c0-4a3c-a139-b380871c737a
+ibmcloud at session delete 32c657c5-31c0-4a3c-a139-b380871c737a
 +---------+------------------------+
 | Name    | Value                  |
 +---------+------------------------+

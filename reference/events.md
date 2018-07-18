@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2018
 
-lastupdated: "2018-05-12"
+lastupdated: "2018-07-07"
 
 ---
 
@@ -17,27 +17,21 @@ lastupdated: "2018-05-12"
 {:download: .download}
 
 
-# {{site.data.keyword.cloudaccesstrailshort}}
-{: #at}
+# {{site.data.keyword.cloudaccesstrailshort}} events
+{: #events}
 
 Use the {{site.data.keyword.cloudaccesstrailfull}} service to track {{site.data.keyword.cloudaccesstrailshort}} in the {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
 
-## How it works
-{: #how}
 
-When you manage {{site.data.keyword.cloudaccesstrailshort}} event data by using the CLI, events are generated to report on these actions. Each action generates one event. You can view these events through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.Bluemix_notm}} or in Kibana if you have a premium plan.
+## List of events
+{: #actions}
 
-
-
-## API methods
-{: #methods}
-
-The following table lists the actions that generate an event when they are called:
+The following table lists the actions that generate an event:
 
 <table>
-  <caption>Table 1. Actions</caption>
+  <caption>Table 1. List of actions that genererate an event</caption>
   <tr>
     <th>Action</th>
 	  <th>Description</th>
@@ -69,6 +63,7 @@ The following table lists the actions that generate an event when they are calle
 </table>
 
 
-	
+## Where to look for the events
+{: #ui}
  	
- 	
+{{site.data.keyword.cloudaccesstrailshort}} events are available in the Cloud Foundry space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned.

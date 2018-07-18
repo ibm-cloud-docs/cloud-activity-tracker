@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -19,48 +19,63 @@ lastupdated: "2018-04-27"
 # Viewing event information
 {: #viewing_event_status}
 
-Use the *bx at status* command to obtain information about the events that are collected and stored in {{site.data.keyword.cloudaccesstrailshort}} for a {{site.data.keyword.Bluemix}} space.
+Use the `ibmcloud at status` command to obtain information about the events that are collected and stored in {{site.data.keyword.cloudaccesstrailshort}} for a {{site.data.keyword.Bluemix}} space.
 {:shortdesc}
 
-## Obtaining information about events
-{: #viewing_event_information}
+You can get information about the size of teh event log, number of records, and whether the events are available or not for analysis in Kibana. 
 
-Use the `bx at status` command to view the size, count, and whether the events are available or not for analysis in Kibana. 
+Complete the following steps to view information about the events log:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+## Step 1: Log in to the {{site.data.keyword.Bluemix_notm}}
+{: #prereq}
 
-2. Run the *bx at status* command to view details of the events that are collected in {{site.data.keyword.cloudaccesstrailshort}}.
+Log in to the {{site.data.keyword.Bluemix_notm}}. Complete the following steps:
 
-    ```
-    $ bx at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
-    ```
-    {: codeblock}
+1. Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}.
+2. Run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+
+**Note:** Set the organization and space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
+
+## Step 2: Identify what events are available
+{: #step2}
+
+Use the `ibmcloud at status` command to see information about events are available in a space domain.
+
+* To get information about events in a space domain, run the command `ibmcloud at status`.
+* To get information about events in the account domain, run the command `ibmcloud at status` with the option `-a`.
+
+```
+$ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
+```
+{: codeblock}
     
-    where
+where
     
-    * *-a* is used to specify account level information
-    * *-s* is used to set the start date in Universal Coordinated Time (UTC): *YYYY-MM-DD*
-    * *-e* is used to set the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD*
-    	
-	Use `bx at status` command with the options **-s** to set the start day and **-e** to set the end date. For example:
+* *-a* is used to specify that the request applies to the account domain.
+* *-s* is used to set the start date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
+* *-e* is used to set the end date in Universal Coordinated Time (UTC): *YYYY-MM-DD*.
 
-    * `bx at status` provides information for the last 2 weeks.
-    * `bx at status -s 2017-05-03` provides information from May 3rd, 2017 till the current date.
-    * `bx at status -s 2017-05-03 -e 2017-05-08` provides information between May 3, 2017 and May 8, 2017. 
- 
-    Use `cf at status` command with the option **-a** to set the donain to account.
-	
-    For example, to get information about the events that are available for 10 of June 2017, run the following command:
+For example, to see what events are available for the last 2 weeks in a space domain, run the following command:
+
+```
+$ ibmcloud at status
+```
+{: codeblock}
     
-    ```
-    $ bx at status -s 2017-06-10 -e 2017-06-10
-    +------------+-------+------------+
-    | Date       | Count | Searchable |
-    +------------+-------+------------+
-    | 2017-06-10 | 10    | All        |
-    +------------+-------+------------+
-    ```
-    {: screen}
+For example, the output of running this command is:
+    
+```
++------------+--------+------------+
+|    DATE    |  COUNT | SEARCHABLE |
++------------+--------+------------+
+| 2017-07-24 |    16  |    None    |
++------------+--------+------------+
+| 2017-07-25 |   1224 |    All     |
++------------+--------+------------+
+```
+{: screen}
+
+**Note:** The {{site.data.keyword.cloudaccesstrailshort}} service is a global service that uses the Coordinated Universal Time (UTC). Days are define as UTC days. To get events for a specific local-time day, you might need to download multiple UTC days.
 	
 
 

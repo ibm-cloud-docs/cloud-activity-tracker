@@ -3,7 +3,7 @@
 copyright:
   years: 2017, 2018
 
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-12"
 
 ---
 
@@ -31,7 +31,7 @@ The General Data Protection Regulation (GDPR) seeks to create a harmonized data 
 ### Regions
 {: #regions}
 
-The {{site.data.keyword.cloudaccesstrailshort}} service intends to be compliant with GDPR by the deadline of May 25, 2018 in the {{site.data.keyword.Bluemix_notm}} Public regions where the service is available.
+The {{site.data.keyword.cloudaccesstrailshort}} service is compliant with GDPR in the {{site.data.keyword.Bluemix_notm}} Public regions where the service is available.
 
 
 ### Data retention
@@ -56,7 +56,7 @@ Consider the following information:
 
 If you change from a paid plan to the standard or lite plan, events that are in the long-term storage repository will be deleted in about one day.
 
-At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Contacting support](https://www.{DomainName}/docs/support/index.html#contacting-support).
+At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
 
 
 

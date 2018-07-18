@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2018
 
-lastupdated: "2018-05-12"
+lastupdated: "2018-07-12"
 
 ---
 
@@ -17,8 +17,8 @@ lastupdated: "2018-05-12"
 {:download: .download}
 
 
-# Platform
-{: #platform}
+# CF events
+{: #cf}
 
 Use the {{site.data.keyword.cloudaccesstrailfull}} service to track interaction with core platform services in the {{site.data.keyword.Bluemix}}. 
 {:shortdesc}

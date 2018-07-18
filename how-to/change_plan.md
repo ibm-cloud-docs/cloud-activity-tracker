@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-07"
 
 ---
 
@@ -20,7 +20,7 @@ lastupdated: "2018-04-27"
 # Changing the plan
 {: #change_plan}
 
-You can change your {{site.data.keyword.cloudaccesstraillong}} service plan through the {{site.data.keyword.Bluemix_notm}} UI or by running the `bx service update` command. You can upgrade or reduce your plan at any time.
+You can change your {{site.data.keyword.cloudaccesstraillong}} service plan through the {{site.data.keyword.Bluemix_notm}} UI or by running the `ibmcloud service update` command. You can upgrade or reduce your plan at any time.
 {:shortdesc}
 
 ## Changing the service plan through the UI
@@ -45,16 +45,18 @@ To change your service plan through the {{site.data.keyword.Bluemix_notm}} UI, c
 
 To change your service plan through the CLI, complete the following steps:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+
+    Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
-2. Run the `bx service list` command to check your current plan, and to get the {{site.data.keyword.cloudaccesstrailshort}} service name from the list of services that is available in the space. 
+2. Run the `ibmcloud service list` command to check your current plan, and to get the {{site.data.keyword.cloudaccesstrailshort}} service name from the list of services that is available in the space. 
 
     The value of the field **name** is the one that you must use to change the plan. 
 
     For example,
 	
 	```
-	$ bx service list
+	$ ibmcloud service list
     Invoking 'cf services'...
 
     Getting services in org MyOrg / space dev as xxx@ibm.com...
@@ -65,16 +67,16 @@ To change your service plan through the CLI, complete the following steps:
     ```
 	{: screen}
     
-3. Upgrade or reduce your plan. Run the `bx service update` command.
+3. Upgrade or reduce your plan. Run the `ibmcloud service update` command.
     
 	```
-	bx service update service_name [-p new_plan]
+	ibmcloud service update service_name [-p new_plan]
 	```
 	{: codeblock}
 	
 	where 
 	
-	* *service_name* is the name of your service. You can run the `bx service list` command to get the value.
+	* *service_name* is the name of your service. You can run the `ibmcloud service list` command to get the value.
 	* *new_plan* is the name of the plan.
 	
 	The following table lists the different plans and their supported values:
@@ -98,7 +100,7 @@ To change your service plan through the CLI, complete the following steps:
 	For example, to reduce your plan to the *Lite* plan, run the following command:
 	
 	```
-	bx service update "Activity Tracker-zt" -p free
+	ibmcloud service update "Activity Tracker-zt" -p free
     Updating service instance Activity Tracker-zt as xxx@ibm.com...
     OK
 	```

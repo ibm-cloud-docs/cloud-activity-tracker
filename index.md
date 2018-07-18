@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-30"
+lastupdated: "2018-07-14"
 
 ---
 
@@ -25,7 +25,7 @@ The {{site.data.keyword.cloudaccesstrailfull}} service records user-initiated ac
 The objectives of this getting started tutorial are the following:
 
 1. Show how to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
-2. Show how to use a Cloud service to generate activity events that are automatically collected by the {{site.data.keyword.cloudaccesstrailshort}} service. Events comply with the Cloud Auditing Data Federation (CADF) standard.
+2. Show how to use a Cloud service to generate activity events that are automatically collected by the {{site.data.keyword.cloudaccesstrailshort}} service. Events comply with the [Cloud Auditing Data Federation (CADF) standard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
 3. Show how to monitor the Cloud activity of a service by using the pre-defined {{site.data.keyword.cloudaccesstrailshort}} dashboards.
 
 The following figure shows the different components and actions that occur when a user-initiated activity changes the state of a service:
@@ -43,9 +43,9 @@ Create an [{{site.data.keyword.Bluemix_notm}} account](https://console.bluemix.n
 ## Step 1: Provision Activity Tracker
 {: #step1}
 
-You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same region and space where the Cloud service whose activity you want to monitor is provisioned. After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services that are provisioned in that space. 
+You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same region where the Cloud service whose activity you want to monitor is provisioned. After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. 
 
-**Note:** This tutorial shows how to use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}}. The {{site.data.keyword.keymanagementserviceshort}} service is available in US South. Therefore, you must provision {{site.data.keyword.cloudaccesstrailshort}} in the US South region, in the same space where the  {{site.data.keyword.keymanagementserviceshort}} service is available. To see information on which region a service is available, see [Services by region](/docs/services/services_region.html#services_region).
+**Note:** This tutorial shows how to use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}} in the US South region. Therefore, you must provision {{site.data.keyword.cloudaccesstrailshort}} in the US South region. To see information on which region a service is available, see [Services by region](/docs/resources/services_region.html#services_region).
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.Bluemix_notm}}:
 
@@ -77,11 +77,11 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	  </tr>
 	  <tr>
 	    <td>Choose an organization:</td>
-		<td>Select the organization where you plan to monitor activity.</td>
+		<td>Select the organization where you plan to provision the {{site.data.keyword.cloudaccesstrailshort}} service.</td>
 	  </tr>
 	  <tr>
 	    <td>Choose a space:</td>
-		<td>Select the space in the organization that you have selected where you plan to monitor activity.</td>
+		<td>Select the space in the organization that you have selected where you plan to provision the {{site.data.keyword.cloudaccesstrailshort}} service.</td>
 	  </tr>
 	</table>
 
@@ -109,7 +109,8 @@ Complete the following steps to configure the {{site.data.keyword.keymanagements
 
 In this step, create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/keymgmt/index.html#creating_keys).
 
-{{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
+* {{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
+* {{site.data.keyword.cloudaccesstrailshort}} events are available in the {{site.data.keyword.cloudaccesstrailshort}} **account domain** that is available in the {{site.data.keyword.Bluemix_notm}} region where the events are generated. 
 
 ## Step 4: Monitor an Activity Tracker event
 {: #step4}
@@ -118,9 +119,11 @@ In this step, verify through the {{site.data.keyword.Bluemix_notm}} UI that {{si
 
 Complete the following steps to verify that an event has been created:
 
-1. From the {{site.data.keyword.Bluemix_notm}} Dashboard, select the {{site.data.keyword.cloudaccesstrailshort}} service. The service dashboard opens.
+1. Grant the user permissions to view account events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events) and [Granting permisisons to see account events](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events).
 
-2. Configure the view to search for the {{site.data.keyword.keymanagementserviceshort}} events that have been generated when you provisioned the service and added a key.
+2. From the {{site.data.keyword.Bluemix_notm}} Dashboard, select the {{site.data.keyword.cloudaccesstrailshort}} service. The service dashboard opens.
+
+3. Configure the view to search for the {{site.data.keyword.keymanagementserviceshort}} events that have been generated when you provisioned the service and added a key.
 
     * Select **Account logs** for the field *View logs*.
     * Select **target.name** for the field *Search field* and enter **kms** in the *Filter* field.

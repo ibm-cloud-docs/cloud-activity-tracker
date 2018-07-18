@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-25"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-04-25"
 
 
 
-# Navigating to the Activity Tracker dashboard
+# Navigating to the Activity Tracker dashboard in the {{site.data.keyword.Bluemix_notm}} Console
 {: #launch_at_ui}
 
 You can launch the {{site.data.keyword.cloudaccesstrailshort}} UI from the {{site.data.keyword.Bluemix}}. By default, you can see space events. You can also view account events.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-04-27"
+lastupdated: "2018-07-07"
 
 ---
 
@@ -30,12 +30,12 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#download_install).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
    
 2. Find out the name of the plugin in the repo. Run the following command:
 
     ```
-    bx plugin repo-plugins
+    ibmcloud plugin repo-plugins
     ```
     {: codeblock}
     
@@ -44,7 +44,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 3. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin. Run the following command:
 
     ```
-    bx plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker -r Bluemix
     ```
     {: codeblock}
  
@@ -53,14 +53,14 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     For example, run the following command to see the list of plugins that are installed:
     
     ```
-    bx plugin list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
     The output looks as follows:
    
     ```
-    bx plugin list
+    ibmcloud plugin list
     Listing installed plug-ins...
 
     Plugin Name               Version   
@@ -76,7 +76,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#download_install).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin.
 
@@ -89,14 +89,14 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     For example, check the version of the plugin. Run the following command:
     
     ```
-    bx plugin list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
     The output looks as follows:
    
     ```
-    bx plugin list
+    ibmcloud plugin list
     Listing installed plug-ins...
 
     Plugin Name               Version   
@@ -122,7 +122,7 @@ Complete the following steps to install the Log Collection plugin on Linux:
 2. Install the plugin. Run the following command:
         
     ```
-    bx plugin install -f activity-tracker-linux-amd64-3.3.0
+    ibmcloud plugin install -f activity-tracker-linux-amd64-3.3.0
     ```
     {: codeblock}
 
@@ -142,7 +142,7 @@ Complete the following steps to install the Log Collection plugin on Windows:
 2. Install the plugin. Run the following command:
         
     ```
-    bx plugin install -f activity-tracker-windows-amd64-3.3.0.exe
+    ibmcloud plugin install -f activity-tracker-windows-amd64-3.3.0.exe
     ```
     {: codeblock}
 
@@ -161,7 +161,7 @@ Complete the following steps to install the Log Collection plugin on Mac OS X:
 2. Install the plugin. Run the following command:
         
     ```
-    bx plugin install -f activity-tracker-darwin-amd64-3.3.0
+    ibmcloud plugin install -f activity-tracker-darwin-amd64-3.3.0
     ```
     {: codeblock}
 
@@ -180,14 +180,14 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
     For example, check the version of the plugin. Run the following command:
     
     ```
-    bx plugin list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
     The output looks as follows:
    
     ```
-    bx plugin list
+    ibmcloud plugin list
     Listing installed plug-ins...
 
     Plugin Name          Version   
@@ -195,12 +195,12 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
     ```
     {: screen}
     
-2. If the plugin is installed, run the `bx plugin uninstall` to uninstall the CLI plugin.
+2. If the plugin is installed, run the `ibmcloud plugin uninstall` to uninstall the CLI plugin.
 
     Run the following command:
         
     ```
-    bx plugin uninstall activity-tracker
+    ibmcloud plugin uninstall activity-tracker
     ```
     {: codeblock}
   
@@ -208,7 +208,7 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
 ## Updating the Log Analysis CLI from the repo
 {: #update_cli}
 
-To update the CLI, run the *bx plugin update* command.
+To update the CLI, run the *ibmcloud plugin update* command.
 {:shortdesc}
 
 Complete the following steps to update the {{site.data.keyword.cloudaccesstrailshort}} service CLI:
@@ -216,7 +216,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
 1. Update the {{site.data.keyword.cloudaccesstrailshort}} plugin. Run the following command:
 
     ```
-    bx plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker -r Bluemix
     ```
     {: codeblock}
  
@@ -225,14 +225,14 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
     For example, verify the version of the plugin. Run the following command:
     
     ```
-    bx plugin list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
     The output looks as follows:
    
     ```
-    bx plugin list
+    ibmcloud plugin list
     Listing installed plug-ins...
 
     Plugin Name             Version   
@@ -254,7 +254,7 @@ To get general information about the CLI and what commands are supported, comple
 2. List information about the supported commands and the CLI. Run the following command:
 
     ```
-    bx at help 
+    ibmcloud at help 
     ```
     {: codeblock}
     
@@ -270,14 +270,14 @@ To get help on how to use a command, complete the followimg steps:
 2. Get the list of supported comnmands and identify the one that you need. Run the command:
 
     ```
-    bx at help 
+    ibmcloud at help 
     ```
     {: codeblock}
 
 3. Get help on the command. Run the following command:
 
     ```
-    bx at help *Command*
+    ibmcloud at help *Command*
     ```
     {: codeblock}
     
@@ -295,14 +295,14 @@ A command can have subcommands. To get help on subcommands, complete the followi
 2. Get the list of supported comnmands and identify the one that you need. Run the command:
 
     ```
-    bx at help 
+    ibmcloud at help 
     ```
     {: codeblock}
 
 3. Get help on the command and identify the supported subcommands. Run the following command:
 
     ```
-    bx at help *Command*
+    ibmcloud at help *Command*
     ```
     {: codeblock}
     
@@ -311,7 +311,7 @@ A command can have subcommands. To get help on subcommands, complete the followi
 4. Get help on the command and identify the supported subcommands. Run the following command:
 
     ```
-    bx at *Command* help *Subcommand*
+    ibmcloud at *Command* help *Subcommand*
     ```
     {: codeblock}
     
@@ -324,17 +324,17 @@ A command can have subcommands. To get help on subcommands, complete the followi
 ## Show the details of the plugin
 {: #show}
   
-Use the 'bx plugin show activity-tracker' command to show the plugin details. 
+Use the 'ibmcloud plugin show activity-tracker' command to show the plugin details. 
 
 ```
-bx plugin show activity-tracker
+ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
 The output looks as follows:
    
 ```
-bx plugin show activity-tracker
+ibmcloud plugin show activity-tracker
                                   
 Plugin                         activity-tracker   
 Version                        3.3.0   
@@ -342,3 +342,6 @@ SDK Version
 Minimal CLI version required   N/A      
 ```
 {: screen}
+
+
+
