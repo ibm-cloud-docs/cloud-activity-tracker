@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2018
 
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-24"
 
 ---
 
@@ -50,11 +50,11 @@ The following table lists the API method that generates an event when they are c
   </tr>
   <tr>
     <td>billing.account.active</td>
-	  <td>An event is generated when you verify the account, that is, an event is generated when the account turns into active state.</td>
+	  <td>An event is generated when you verify the account, that is, an event is generated when the account becomes active.</td>
   </tr>
   <tr>
     <td>billing.account.subscription.create</td>
-	  <td>An event is generated when you create a <a href="/docs/account/index.html#subscription-account">subscription account</a>.</td>
+	  <td>An event is generated when you create a <a href="/docs/account/index.html#subscription-account">Subscription account</a>.</td>
   </tr>
 </table>
 

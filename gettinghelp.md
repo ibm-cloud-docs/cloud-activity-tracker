@@ -30,7 +30,5 @@ If you have problems or questions when using the {{site.data.keyword.cloudaccess
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers](https://developer.ibm.com/answers/topics/activity-tracker/?smartspace=bluemix){:new_window} forum. Include the  **activity-tracker** and **ibm-cloud** tags.
 
-See [Getting help](/docs/services/cloud-activity-tracker/gettinghelp.html#gettinghelp) for more details about using the forums.
-
 * If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
 

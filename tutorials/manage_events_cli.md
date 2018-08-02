@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-07-12"
+lastupdated: "2018-08-01"
 
 ---
 
@@ -40,11 +40,15 @@ Complete the following steps:
 
     For more information on how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
 
-2. You have installed the {{site.data.keyword.cloudaccesstrailshort}} CLI in your local system. This is required for you to be able to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command line. 
+2. You have provisioned an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with a premium plan.
+
+    **Note:** The {{site.data.keyword.cloudaccesstrailshort}} CLI is not available with the Lite plan.
+
+3. You have installed the {{site.data.keyword.cloudaccesstrailshort}} CLI in your local system. This is required for you to be able to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command line. 
 
     For more information about installing the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Configuring the {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
 
-3. You have logged in to {{site.data.keyword.Bluemix_notm}} through the command line. For this tutorial, run the following commands from a terminal: 
+4. You have logged in to {{site.data.keyword.Bluemix_notm}} through the command line. For this tutorial, run the following commands from a terminal: 
 
     `ibmcloud login -a api.ng.bluemix.net` to log in to the us-south region. For more information, see [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login).
     

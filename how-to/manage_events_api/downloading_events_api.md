@@ -54,11 +54,11 @@ Complete the following steps to download events into a local file:
     {: codeblock}
 
     where:
-
+    
     * *token* represents the UAA token value that you obtained in a previous step.
     * *spaceID* represents the UUID of the Cloud Foundry space where you have {{site.data.keyword.cloudaccesstrailshort}} provisioned.
     * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
-    * *start* and *end* represent a time range where you want to download events. The date format is `YYYY-MM-DD`. 
+    * *start* and *end* represent a time range where you want to download events. The date format is *YYYY-MM-DD*. 
     * *AtAccountLevel* indicates if the events to download are in the account domain or in a space domain.
     * *SearchTime* indicates the hour of the day for which you want to download events.
 

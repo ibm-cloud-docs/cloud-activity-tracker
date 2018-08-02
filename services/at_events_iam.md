@@ -37,12 +37,12 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-groups.groups.create` | An event is generated when an initiator looks at information that is related with access groups. | 
-|`iam-groups.groups.read` | An event is generated when an initiator looks at information that is related with access groups. |
-|`iam-groups.groups.update` | An event is generated when an initiator updates a group name or a description. |
-|`iam-groups.groups.delete` | An event is generated when an initiator adds a user to an access group. |
-|`iam-groups.members.add` | An event is generated when an initiator adds a user to an access group. |
-|`iam-groups.members.delete` | An event is generated when an initiator removes a user from an access group. |
+|`iam-groups.group.create` | An event is generated when an initiator looks at information that is related with access groups. | 
+|`iam-groups.group.read` | An event is generated when an initiator looks at information that is related with access groups. |
+|`iam-groups.group.update` | An event is generated when an initiator updates a group name or a description. |
+|`iam-groups.group.delete` | An event is generated when an initiator adds a user to an access group. |
+|`iam-groups.member.add` | An event is generated when an initiator adds a user to an access group. |
+|`iam-groups.member.delete` | An event is generated when an initiator removes a user from an access group. |
 {: caption="Table 1. Manage access groups actions" caption-side="top"} 
 
 

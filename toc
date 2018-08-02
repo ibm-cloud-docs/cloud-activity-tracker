@@ -56,7 +56,7 @@ IBM Cloud Activity Tracker
     reference/auth_uaa.md
     reference/at_cli_cloud.md
 	
-    [IBM Cloud Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+    [IBM Cloud Activity Tracker API](https://console.bluemix.net/apidocs/accesstrail)
 
     {: .topicgroup}
     Monitoring cloud activity

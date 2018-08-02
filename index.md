@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-07-14"
+lastupdated: "2018-08-01"
 
 ---
 
@@ -57,7 +57,9 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 2. Click **Catalog**. The list of the services that are available on the {{site.data.keyword.Bluemix_notm}} opens.
 
-3. Select the **Security** category to filter the list of services that is displayed.
+3. Select the **Security and Identity** category to filter the list of services that is displayed.
+
+    **Note:** The service is also availble through the **Developer Tools** category.
 
 4. Click the **Activity Tracker** tile. 
 
@@ -126,7 +128,7 @@ Complete the following steps to verify that an event has been created:
 3. Configure the view to search for the {{site.data.keyword.keymanagementserviceshort}} events that have been generated when you provisioned the service and added a key.
 
     * Select **Account logs** for the field *View logs*.
-    * Select **target.name** for the field *Search field* and enter **kms** in the *Filter* field.
+    * Select ** target.typeURI_str** for the field *Search field* and enter **kms/secrets** in the *Filter* field.
 	
     The data that is displayed shows {{site.data.keyword.keymanagementserviceshort}} events that are available for the last 24 hours. 
 	
