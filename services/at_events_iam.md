@@ -82,9 +82,6 @@ The following table lists the actions that generate an event:
 | Action | Description |
 |----------|---------|
 |`iam-identity.user-apikey.login` | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key. |  
-|`iam-identity.user-authcode.login` | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using an authorization code. |  
-|`iam-identity.user-passcode.login` | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using a passcode. |  
-|`iam-identity.user-password.login` | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using a password. |  
 |`iam-identity.serviceid-apikey.login` | An event is generated when an initiator logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key that is associated with a service ID. |  
 {: caption="Table 4. User login actions" caption-side="top"} 
 

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" href="/docs/services/cloud-activity-tracker/index.html"}
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html"}
 IBM Cloud Activity Tracker
 
     {: .navgroup id="learn"}
