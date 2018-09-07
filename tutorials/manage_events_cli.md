@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-08-01"
+lastupdated: "2018-09-07"
 
 ---
 
@@ -50,9 +50,9 @@ Complete the following steps:
 
 4. You have logged in to {{site.data.keyword.Bluemix_notm}} through the command line. For this tutorial, run the following commands from a terminal: 
 
-    `ibmcloud login -a api.ng.bluemix.net` to log in to the us-south region. For more information, see [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login).
+    `ibmcloud login -a api.ng.bluemix.net` to log in to the us-south region. For more information, see [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
     
-    `ibmcloud target -o OrgName -s SpaceName` to set the target organization and space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisoned. For more information, see [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target).
+    `ibmcloud target -o OrgName -s SpaceName` to set the target organization and space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisoned. For more information, see [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target).
 
 
 ## Step 1: Provision the IBM Key Protect service and generate events 
@@ -60,7 +60,7 @@ Complete the following steps:
 	
 Complete the following steps to provision the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}} and generate events:
 
-1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/keymgmt/keyprotect_provision.html#provision).
+1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect/provision.html#provision).
 
 2. Define the {{site.data.keyword.Bluemix_notm}} permissions for the user that you are planning to use to work with keys. 
 
@@ -68,7 +68,7 @@ Complete the following steps to provision the {{site.data.keyword.keymanagements
 	* A user needs an IAM policy with a service role set to *manager* to be able to delete keys.
 	* A user needs an IAM policy with a service role set to *reader* to be able to see keys. 
 
-3. Create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/keymgmt/index.html#creating_keys).
+3. Create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
 
 {{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
 

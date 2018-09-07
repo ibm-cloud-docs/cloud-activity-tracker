@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-07-07"
+lastupdated: "2018-09-07"
 
 ---
 
@@ -30,7 +30,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
    
 2. Find out the name of the plugin in the repo. Run the following command:
 
@@ -76,7 +76,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin.
 

@@ -10,10 +10,11 @@ IBM Cloud Activity Tracker
     {: .topicgroup}
     About
         activity_tracker_ov.md
-        cloud_services.md
         at_event.md
         compliance.md
-        
+
+    cloud_services.md
+
     {: .topicgroup}
     Tutorials
         tutorials/manage_events_cli.md

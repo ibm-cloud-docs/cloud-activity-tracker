@@ -37,12 +37,17 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-groups.group.create` | An event is generated when an initiator looks at information that is related with access groups. | 
-|`iam-groups.group.read` | An event is generated when an initiator looks at information that is related with access groups. |
-|`iam-groups.group.update` | An event is generated when an initiator updates a group name or a description. |
-|`iam-groups.group.delete` | An event is generated when an initiator adds a user to an access group. |
-|`iam-groups.member.add` | An event is generated when an initiator adds a user to an access group. |
-|`iam-groups.member.delete` | An event is generated when an initiator removes a user from an access group. |
+| `iam-groups.group.create`   | An event is generated when an initiator creates an access group. | 
+| `iam-groups.group.read`     | An event is generated when an initiator looks at information that is related with access groups. |
+| `iam-groups.group.update`   | An event is generated when an initiator updates a group name or a description. |
+| `iam-groups.group.delete`   | An event is generated when an initiator deletes an access group. |
+| `iam-groups.member.add`     | An event is generated when an initiator adds a member to an access group. |
+| `iam-groups.member.delete`  | An event is generated when an initiator removes a member from an access group. |
+| `iam-groups.member.read`    | An event is generated when an initiator checks a member's membership. |
+| `iam-groups.rule.read`      | An event is generated when an initiator views a rule in an access group. |
+| `iam-groups.rule.create`    | An event is generated when an initiator adds a rule to an access group. |
+| `iam-groups.rule.update`    | An event is generated when an initiator modifies the rule name. |
+| `iam-groups.rule.delete`    | An event is generated when an initiator deletes a rule from an access group. |
 {: caption="Table 1. Manage access groups actions" caption-side="top"} 
 
 
@@ -54,9 +59,9 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-identity.account-serviceid.create` | An event is generated when an initiator creates a service ID.  | 
-|`iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. | 
-|`iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. | 
+| `iam-identity.account-serviceid.create` | An event is generated when an initiator creates a service ID.  | 
+| `iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. | 
+| `iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. | 
 {: caption="Table 2. Working with service IDs actions" caption-side="top"} 
 
 
@@ -67,10 +72,11 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-identity.user-apikey.create` | An event is generated when an initiator creates an API key. |  
-|`iam-identity.user-apikey.delete` | An event is generated when an initiator deletes an API key. |  
-|`iam-identity.serviceid-apikey.create` | An event is generated when an initiator creates an API key for a service ID. |  
-|`iam-identity.serviceid-apikey.delete` | An event is generated when an initiator deletes an API key for a service ID. |  
+| `iam-identity.user-apikey.create`      | An event is generated when an initiator creates an API key. | 
+| `iam-identity.user-apikey.update`      | An event is generated when an initiator renames an API key or modifies its description. |  
+| `iam-identity.user-apikey.delete`      | An event is generated when an initiator deletes an API key. |  
+| `iam-identity.serviceid-apikey.create` | An event is generated when an initiator creates an API key for a service ID. |  
+| `iam-identity.serviceid-apikey.delete` | An event is generated when an initiator deletes an API key for a service ID. |  
 {: caption="Table 3. Working with API keys actions" caption-side="top"} 
 
 
@@ -81,8 +87,10 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-identity.user-apikey.login` | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key. |  
-|`iam-identity.serviceid-apikey.login` | An event is generated when an initiator logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key that is associated with a service ID. |  
+| `iam-identity.user-apikey.login`         | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key. |  
+| `iam-identity.serviceid-apikey.login`    | An event is generated when an initiator logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key that is associated with a service ID. |  
+| `iam-identity.user-identitycookie.login` | This is an event that is generated when an initiator requests a new identity cookie to run an action. |
+| `iam-identity.user-refreshtoken.login`   | This is an event that is generated when the initiator logs in to the IBM Cloud , or when an initiator that has already logged in to the IBM Cloud requests a new refresh token to run an action. |
 {: caption="Table 4. User login actions" caption-side="top"} 
 
 
@@ -93,9 +101,9 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-|`iam-am.policy.create` | An event is generated when an initiator adds a policy to a user or access group. |
-|`iam-am.policy.delete` | An event is generated when an initiator modifies permissions to a policy of a user or access group.|
-|`iam-am.policy.update` | An event is generated when an initiator deletes a policy that is assigned to a user or access group. |
+| `iam-am.policy.create` | An event is generated when an initiator adds a policy to a user or access group. |
+| `iam-am.policy.delete` | An event is generated when an initiator modifies permissions to a policy of a user or access group.|
+| `iam-am.policy.update` | An event is generated when an initiator deletes a policy that is assigned to a user or access group. |
 {: caption="Table 5. Managing policy actions" caption-side="top"} 
 
 

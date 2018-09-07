@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-08-01"
+lastupdated: "2018-09-07"
 
 ---
 
@@ -97,7 +97,7 @@ This tutoral shows how to monitor the API activity for the {{site.data.keyword.k
 
 Complete the following steps to configure the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}}:
 
-1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/keymgmt/keyprotect_provision.html#provision).
+1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect/provision.html#provision).
 
 2. Define the {{site.data.keyword.Bluemix_notm}} permissions for the user that you are planning to use to work with keys. 
 
@@ -109,7 +109,7 @@ Complete the following steps to configure the {{site.data.keyword.keymanagements
 ## Step 3: Generate an Activity Tracker event
 {: # step3}
 
-In this step, create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/keymgmt/index.html#creating_keys).
+In this step, create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
 
 * {{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
 * {{site.data.keyword.cloudaccesstrailshort}} events are available in the {{site.data.keyword.cloudaccesstrailshort}} **account domain** that is available in the {{site.data.keyword.Bluemix_notm}} region where the events are generated. 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-06-15"
+lastupdated: "2018-09-07"
 
 ---
 
@@ -84,13 +84,13 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/bluemix_cli/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
    
    If the CLI is installed, continue with the next step.
     
 2. Log in to the {{site.data.keyword.Bluemix_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/bluemix_cli/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 3. Run the `ibmcloud service create` command to provision an instance.
 
@@ -102,7 +102,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	Where
 	
 	* service_name is the name of the service, that is, **accessTrail**.
-	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
 	* service_instance_name is the name that you want to use for the new service instance that you create.
 
 	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the standard plan, run the following command:
