@@ -3,7 +3,7 @@
 copyright:
   years: 2016, 2018
 
-lastupdated: "2018-07-02"
+lastupdated: "2018-10-08"
 
 ---
 
@@ -101,9 +101,8 @@ The following table lists the API methods that generate an event when they are c
 ## Where to look for the events
 {: #ui}
 
-{{site.data.keyword.cloudaccesstrailshort}} events are available in the {{site.data.keyword.cloudaccesstrailshort}} **account domain** that is available in the {{site.data.keyword.Bluemix_notm}} region where the events are generated. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events).
+{{site.data.keyword.cloudaccesstrailshort}} events are available in the **US-South** region **account domain**.
 
-{{site.data.keyword.cloudaccesstrailshort}} events are automatically forwarded to the {{site.data.keyword.cloudaccesstrailshort}} service in the same region where the action happens.
-
+To view these events, you must provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the **US-South** region. Then, you must open the {{site.data.keyword.cloudaccesstrailshort}} UI, and change to the account domain to see events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events).
 
 
