@@ -6,14 +6,11 @@ IBM Cloud Activity Tracker
 
     {: .navgroup id="learn"}
     index.md
-    
-    {: .topicgroup}
-    About
-        activity_tracker_ov.md
-        at_event.md
-        compliance.md
-
+    activity_tracker_ov.md
+    at_event.md
     cloud_services.md
+    compliance.md
+    whatsnew.md
 
     {: .topicgroup}
     Tutorials
@@ -66,6 +63,7 @@ IBM Cloud Activity Tracker
         services/at_events_iam.md
         services/at_events_acc_mgt.md
         services/at_events_rc.md
+        services/at_events_sl.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
