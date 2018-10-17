@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-06-21"
+lastupdated: "2018-10-20"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-06-21"
 
 
 
-# Activity Tracker
+# About
 {: #activity_tracker_ov}
 
 Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applications interact with the {{site.data.keyword.Bluemix}} services. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor for abnormal activity, and comply with regulatory audit requirements. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard.
