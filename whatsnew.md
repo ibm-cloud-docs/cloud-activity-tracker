@@ -20,7 +20,7 @@ lastupdated: "2018-10-20"
 # What's new
 {: #whatsnew}
 
-Stay up-to-date with new {{site.data.keyword.cloudaccesstrailshort}} features and services so that you get the most out of {{site.data.keyword.cloudaccesstrailshort}}.
+Learn about the latest features and integrations for {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
 ## October 2018
