@@ -1,28 +1,31 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-07-09"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Navegando para o painel Activity Tracker
+
+# Navegando para o painel Activity Tracker no Console do {{site.data.keyword.Bluemix_notm}}
 {: #launch_at_ui}
 
-É possível ativar a UI do {{site.data.keyword.cloudaccesstrailshort}} por meio do {{site.data.keyword.Bluemix}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
+É possível ativar a IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
 {:shortdesc}
    
 
 ## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem em um espaço
-{: #account_view}
+{: #account_view_space}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em um espaço:
 
@@ -40,13 +43,13 @@ Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudac
 
 
 ## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem na conta
-{: #account_view}
+{: #account_view_account}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em uma conta:
 
 1. Efetue login na conta do {{site.data.keyword.Bluemix_notm}} em que você deseja monitorar a atividade de nuvem.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
     
 	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
 

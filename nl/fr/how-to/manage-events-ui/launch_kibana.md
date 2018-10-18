@@ -1,23 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Accès au tableau de bord Kibana
 {: #launch_kibana}
 
-Vous pouvez lancer Kibana depuis l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix}} ou directement depuis un navigateur Web.
+Vous pouvez lancer Kibana depuis l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix}}, ou directement depuis un navigateur Web.
 {:shortdesc}
    
 
@@ -30,7 +33,7 @@ Effectuez les étapes suivantes pour lancer Kibana depuis le tableau de bord du 
 
 1. Connectez-vous à votre compte {{site.data.keyword.Bluemix_notm}}.
 
-    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
     
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
 
@@ -65,12 +68,20 @@ Pour lancer Kibana depuis un navigateur, procédez comme suit :
             <th>URL</th>
           </tr>
           <tr>
-            <td>Sud des Etats-Unis</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Allemagne</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sydney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>Royaume-Uni</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>Sud des Etats-Unis</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	
@@ -87,7 +98,7 @@ Pour lancer Kibana depuis un navigateur, procédez comme suit :
 4. Pour afficher les événements pour l'espace auquel vous êtes connecté, sélectionnez **ActivityTracker_Space_Dashboard_in_24h**.
 
 
-##   Limitations
+## Limitations
 {: #limitations}
 
  En raison de limitations dans Kibana, vous ne pouvez pas ouvrir simultanément plusieurs onglets de navigateur Kibana dans la même session pour afficher différents espaces ou comptes. Par conséquent, si vous avez deux sessions ou plus ouvertes en même temps et que vous modifiez le domaine d'espace à compte, ou inversement, vous risquez d'être confronté à des problèmes.

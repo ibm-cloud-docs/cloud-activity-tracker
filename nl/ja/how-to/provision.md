@@ -1,21 +1,23 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-07"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Activity Tracker サービスのプロビジョン
+
+# Activity Tracker のプロビジョン
 {: #provision}
 
 {{site.data.keyword.Bluemix}} UI またはコマンド・ラインから {{site.data.keyword.cloudaccesstraillong}} サービスをプロビジョンできます。
@@ -29,11 +31,11 @@ lastupdated: "2017-09-17"
 
 1. {{site.data.keyword.Bluemix_notm}} アカウントにログインします。
 
-    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.Bluemix_notm}} UI は、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
     
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
 
-2. **「カタログ」**をクリックします。{{site.data.keyword.Bluemix_notm}} で使用可能なサービスのリストが開きます。
+2. **「カタログ」**をクリックします。 {{site.data.keyword.Bluemix_notm}} で使用可能なサービスのリストが開きます。
 
 3. **「セキュリティー」**カテゴリーを選択して、表示されたサービスのリストをフィルタリングします。
 
@@ -53,7 +55,7 @@ lastupdated: "2017-09-17"
 	  </tr>
 	  <tr>
 	    <td>デプロイする地域の選択:</td>
-		<td>有効な値は、米国南部、英国、ドイツです。</td>
+		<td>有効な値は、米国南部、英国、ドイツ、シドニーです。</td>
 	  </tr>
 	  <tr>
 	    <td>組織の選択:</td>
@@ -69,7 +71,7 @@ lastupdated: "2017-09-17"
 
     デフォルトでは、**「無料」**プランが設定されます。
 
-    詳しくは、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans)を参照してください。
+    詳しくは、[サービス・プラン](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)を参照してください。
 	
 7. **「作成」**をクリックして、ログインしている {{site.data.keyword.Bluemix_notm}} スペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンします。
   
@@ -78,62 +80,58 @@ lastupdated: "2017-09-17"
 ## CLI からのプロビジョン
 {: #cli}
 
-コマンド・ラインを使用して {{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
+コマンド・ラインを使用して {{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. Cloud Foundry (CF) CLI をインストールします。CF CLI がインストールされている場合は、次のステップに進みます。
+1. [前提条件] {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[Installing the cf CLI ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window} を参照してください。 
+   詳しくは、[{{site.data.keyword.Bluemix_notm}} CLI のインストール](/docs/cli/reference/ibmcloud/download_cli.html#install_use)を参照してください。
+   
+   CLI がインストールされている場合は、次のステップに進みます。
     
-2. {{site.data.keyword.Bluemix_notm}} 地域、組織、およびスペースにログインします。 
+2. {{site.data.keyword.Bluemix_notm}} にログインします。 
 
-    例えば、米国南部地域にログインするには、以下のコマンドを実行します。
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    表示される指示に従います。{{site.data.keyword.Bluemix_notm}} 資格情報を入力し、組織とスペースを選択します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
-3. `cf create-service` コマンドを実行して、インスタンスをプロビジョンします。
+3. `ibmcloud service create` コマンドを実行して、インスタンスをプロビジョンします。
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	ibmcloud service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
-	各部分の説明:
+	各部の意味は、次のとおりです。
 	
-	* service_name は、サービスの名前、つまり「activityTracker」です。
-	* service_plan は、サービス・プラン名です。プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans) を参照してください。
+	* service_name は、サービスの名前、つまり**「accessTrail」**です。
+	* service_plan は、サービス・プラン名です。 プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan)を参照してください。
 	* service_instance_name は、作成する新規サービス・インスタンスに使用する名前です。
-	
-	この cf コマンドについて詳しくは、 [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service) を参照してください。
 
-	例えば、ライト・プランで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスを作成するには、次のコマンドを実行します。
+	例えば、標準プランで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスを作成するには、以下のコマンドを実行します。
 	
 	```
-	cf create-service activityTracker free my_activity_tracker_svc
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
-4. サービスが正常に作成されたことを確認します。以下のコマンドを実行します。```	
-	cf services
+4. サービスが正常に作成されたことを確認します。 以下のコマンドを実行します。
+
+    ```	
+	ibmcloud service list
 	```
 	{: codeblock}
 	
 	このコマンドの実行による出力は以下のようになります。
 	
 	```
-    xxx@yyy.com として組織 MyOrg / スペース MySpace 内のサービスを取得しています...
+    Getting services in org MyOrg / space MySpace as xxx@yyy.com...
     OK
     
-    名前                           サービス                  プラン                   バインド済みアプリ              最後の操作
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    name                           service                  plan                   bound apps              last operation
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 

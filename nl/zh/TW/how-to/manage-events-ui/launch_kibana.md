@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # 導覽至 Kibana 儀表板
@@ -30,7 +33,7 @@ Kibana 顯示的活動日誌包括所有資源的事件，這些資源部署在�
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 帳戶。
 
-    {{site.data.keyword.Bluemix_notm}} 儀表板位於：[http://bluemix.net ![外部鏈結圖示](../../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
+    {{site.data.keyword.Bluemix_notm}} 儀表板位於：[http://bluemix.net ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
     
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
 
@@ -65,12 +68,20 @@ Kibana 顯示的日誌資訊包括所有資源的事件，這些資源部署在�
             <th>URL</th>
           </tr>
           <tr>
-            <td>美國南部</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>德國</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>雪梨</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>英國</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>美國南部</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	

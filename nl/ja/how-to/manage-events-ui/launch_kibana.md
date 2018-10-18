@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Kibana ダッシュボードへのナビゲート
@@ -24,13 +27,13 @@ Kibana は、{{site.data.keyword.Bluemix}} 内で {{site.data.keyword.cloudacces
 ##  Activity Tracker サービスのダッシュボードから Kibana へのナビゲート
 {: #launch_Kibana_from_at}
 
-Kibana で表示されるアクティビティー・ログには、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされていて、ログインしている、{{site.data.keyword.Bluemix_notm}} 組織のスペースにデプロイされたすべてのリソースのイベントが含まれます。
+Kibana で表示されるアクティビティー・ログには、ユーザーがログインしている、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされている {{site.data.keyword.Bluemix_notm}} 組織のスペースにデプロイされた、すべてのリソースのイベントが含まれます。
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスのダッシュボードから Kibana を起動するには、以下のステップを実行します。
 
 1. {{site.data.keyword.Bluemix_notm}} アカウントにログインします。
 
-    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
     
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
 
@@ -38,7 +41,7 @@ Kibana で表示されるアクティビティー・ログには、{{site.data.k
     
 3. **「管理」**タブを選択します。
 
-4. **「詳細ビュー」**をクリックします。 
+4. **「拡張ビュー」**をクリックします。 
 
     Kibana ダッシュボードが開きます。
 
@@ -54,23 +57,31 @@ Kibana に表示されるログ情報には、ログインしている {{site.da
 
 ブラウザーから Kibana を起動するには、以下の手順を実行します。
 
-1. Web ブラウザーを開き、Kibana を起動します。その後、Kibana ユーザー・インターフェースにログインします。
+1. Web ブラウザーを開き、Kibana を起動します。 その後、Kibana ユーザー・インターフェースにログインします。
     
     例えば、Kibana を起動するために使用する必要のある、地域別の URL を以下の表に示します。
       
     <table>
-          <caption>表 1. Kibana を起動するために使用する地域ごとの URL </caption>
+          <caption>表 1. Kibana を起動するために使用する地域ごとの URL</caption>
            <tr>
             <th>地域</th>
             <th>URL</th>
           </tr>
           <tr>
-            <td>米国南部</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>ドイツ</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>シドニー</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>英国</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>米国南部</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	
@@ -80,7 +91,7 @@ Kibana に表示されるログ情報には、ログインしている {{site.da
 
     ログインしているスペースで使用可能なイベントおよびログを表示できます。
 
-3. イベントをフィルタリングするには、メニュー・バーから**「Open」**を選択します。
+3. イベントをフィルタリングするには、メニュー・バーから**「開く」**を選択します。
 
     保存済みダッシュボードのリストが表示されます。
 	
@@ -90,7 +101,7 @@ Kibana に表示されるログ情報には、ログインしている {{site.da
 ## 制限
 {: #limitations}
 
- Kibana での制約のため、異なるスペースまたはアカウントを表示するために複数の Kibana ブラウザー・タブを同じセッションで一度に開くことはできません。したがって、一度に複数のセッションを開いて、スペースからアカウントへ (またはアカウントからスペースへ) 領域を変更すると、問題が発生する可能性があります。
+ Kibana での制約のため、異なるスペースまたはアカウントを表示するために複数の Kibana ブラウザー・タブを同じセッションで一度に開くことはできません。 したがって、一度に複数のセッションを開いて、スペースからアカウントへ (またはアカウントからスペースへ) 有効範囲を変更すると、問題が発生する可能性があります。
 	
 
 

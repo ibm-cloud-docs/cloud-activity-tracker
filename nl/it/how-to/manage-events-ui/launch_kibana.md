@@ -1,23 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Passaggio al dashboard Kibana
 {: #launch_kibana}
 
-Puoi avviare Kibana dalla IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix}} o direttamente da un browser web.
+Puoi avviare Kibana dall'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix}} o direttamente da un browser web.
 {:shortdesc}
    
 
@@ -30,7 +33,7 @@ Completa la seguente procedura per avviare Kibana dal dashboard del servizio {{s
 
 1. Accedi al tuo account {{site.data.keyword.Bluemix_notm}}.
 
-    Il dashboard {{site.data.keyword.Bluemix_notm}} può essere trovato all'indirizzo: [http://bluemix.net ![Icona link esterno](../../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
+    Il dashboard {{site.data.keyword.Bluemix_notm}} può essere trovato all'indirizzo: [http://bluemix.net ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.Bluemix_notm}}.
 
@@ -50,9 +53,9 @@ Per impostazione predefinita, viene caricato il dashboard **ActivityTracker_Spac
 ##  Passaggio a Kibana da un browser web
 {: #launch_Kibana_from_browser}
 
-Le informazioni di log che visualizza Kibana includono gli eventi di tutte le risorse distribuite nello spazio dell'organizzazione {{site.data.keyword.Bluemix_notm}} a cui hai eseguito l'accesso 
+Le informazioni di log che visualizza Kibana includono gli eventi di tutte le risorse distribuite nello spazio dell'organizzazione {{site.data.keyword.Bluemix_notm}} a cui hai eseguito l'accesso
 
-Completa la seguente procedura per avviare Kibana da un browser: 
+Completa la seguente procedura per avviare Kibana da un browser:
 
 1. Apri un browser web e avvia Kibana. Quindi, accedi all'interfaccia utente Kibana.
     
@@ -65,12 +68,20 @@ Completa la seguente procedura per avviare Kibana da un browser:
             <th>URL</th>
           </tr>
           <tr>
-            <td>Stati Uniti Sud</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Germania</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sydney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
-            <td>Regno Unito </td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>Regno Unito</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>Stati Uniti Sud</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	

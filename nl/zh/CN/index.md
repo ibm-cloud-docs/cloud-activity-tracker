@@ -1,27 +1,31 @@
 ---
 
 copyright:
-  years: 2016, 2017
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-12"
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:screen: .screen}
-{:codeblock: .codeblock}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 # 入门教程
 {: #getting-started-with-cla}
 
-{{site.data.keyword.cloudaccesstrailfull}} 服务会记录用户发起的用于在 {{site.data.keyword.IBM}} 云中更改服务状态的活动。使用本教程可了解如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来监视用户与云服务的交互。
+{{site.data.keyword.cloudaccesstrailfull}} 服务会记录用户发起的用于在 {{site.data.keyword.Bluemix}} 中更改服务状态的活动。使用本教程可了解如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来监视用户与云服务的交互。
 {:shortdesc}
 
 本入门教程的目标如下：
 
 1. 说明如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
-2. 说明如何使用云服务来生成由 {{site.data.keyword.cloudaccesstrailshort}} 服务自动收集的活动事件。事件符合 Cloud Auditing Data Federation (CADF) 标准。
+2. 说明如何使用云服务来生成由 {{site.data.keyword.cloudaccesstrailshort}} 服务自动收集的活动事件。事件符合 [Cloud Auditing Data Federation (CADF) 标准 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}。
 3. 说明如何使用预定义的 {{site.data.keyword.cloudaccesstrailshort}} 仪表板来监视服务的云活动。
 
 下图显示用户发起的活动更改服务状态时涉及的不同组件和操作：
@@ -39,13 +43,13 @@ lastupdated: "2017-09-17"
 ## 步骤 1：供应 Activity Tracker
 {: #step1}
 
-必须在供应要监视其活动的云服务所在的区域和空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。供应 {{site.data.keyword.cloudaccesstrailshort}} 服务后，将从该空间中供应的所选云服务中自动收集事件。有关可通过 {{site.data.keyword.cloudaccesstrailshort}} 监视其活动的服务的列表，请参阅[支持的云服务](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services)。
+供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的区域必须与供应要监视其活动的云服务的区域相同。供应 {{site.data.keyword.cloudaccesstrailshort}} 服务后，将从所选云服务中自动收集事件。 
 
-**注：**本教程说明如何使用 {{site.data.keyword.cloudaccesstrailshort}} 服务来监视用户与云服务 {{site.data.keyword.keymanagementservicelong_notm}} 的交互。{{site.data.keyword.keymanagementserviceshort}} 服务在美国南部可用。因此，您必须在美国南部区域中 {{site.data.keyword.keymanagementserviceshort}} 服务可用的空间中供应 {{site.data.keyword.cloudaccesstrailshort}}。要查看有关服务在哪个区域中可用的信息，请参阅[按区域列出的服务](/docs/services/services_region.html#services_region)。
+**注：**本教程说明如何使用 {{site.data.keyword.cloudaccesstrailshort}} 服务来监视用户与美国南部区域云服务 {{site.data.keyword.keymanagementservicelong_notm}} 的交互。因此，您必须在美国南部区域供应 {{site.data.keyword.cloudaccesstrailshort}}。要查看有关服务在哪个区域中可用的信息，请参阅[按区域列出的服务](/docs/resources/services_region.html#services_region)。
 
-要在 {{site.data.keyword.Bluemix_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
+完成以下步骤以在 {{site.data.keyword.Bluemix_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例：
 
-1. 登录到您的 {{site.data.keyword.Bluemix_notm}} 帐户。
+1. 登录到 {{site.data.keyword.Bluemix_notm}}。
 
     可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
     
@@ -53,7 +57,9 @@ lastupdated: "2017-09-17"
 
 2. 单击**目录**。这将打开 {{site.data.keyword.Bluemix_notm}} 上可用的服务的列表。
 
-3. 选择**安全性**类别以过滤显示的服务列表。
+3. 选择**安全性和身份**类别以过滤显示的服务列表。
+
+    **注：**该服务还在**开发者工具**类别中提供。
 
 4. 单击 **Activity Tracker** 磁贴。 
 
@@ -73,81 +79,40 @@ lastupdated: "2017-09-17"
 	  </tr>
 	  <tr>
 	    <td>选择组织：</td>
-		<td>选择您计划监视其活动的组织。</td>
+		<td>选择计划用于供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织。</td>
 	  </tr>
 	  <tr>
 	    <td>选择空间：</td>
-		<td>选择所选组织中您计划监视其活动的空间。</td>
+		<td>选择所选组织中您计划供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的空间。</td>
 	  </tr>
 	</table>
 
-6. 单击**创建**以在您登录到的 {{site.data.keyword.Bluemix_notm}} 空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
+6. 单击**创建**以在您登录到的空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
    
 
-## 步骤 2：供应云服务 
+## 步骤 2：配置云服务  
 {: #step2}
-	
-要在 {{site.data.keyword.Bluemix_notm}} 美国南部区域中供应 {{site.data.keyword.keymanagementserviceshort}} 服务的实例，请完成以下步骤：
 
-1. 登录到您的 {{site.data.keyword.Bluemix_notm}} 帐户。
+此教程说明如何监视 {{site.data.keyword.Bluemix_notm}} 中 {{site.data.keyword.keymanagementserviceshort}} 服务的 API 活动。
 
-    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
-	
-	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
+完成以下步骤以在 {{site.data.keyword.Bluemix_notm}} 中配置 {{site.data.keyword.keymanagementserviceshort}} 服务：
 
-2. 单击**目录**。这将打开 {{site.data.keyword.Bluemix_notm}} 上可用的服务的列表。
+1. 在美国南部区域中供应 {{site.data.keyword.keymanagementserviceshort}} 服务的实例。有关更多信息，请参阅[从 IBM Cloud 控制台供应](/docs/services/key-protect/provision.html#provision)。
 
-    选择**安全性**类别以过滤显示的服务列表。
+2. 针对计划使用密钥的用户定义 {{site.data.keyword.Bluemix_notm}} 许可权。 
 
-3. 选择 **Key Protect** 磁贴。
-
-4. 配置用于定义要供应服务的位置的信息。 
-
-    如下表所示输入数据： 
-
-    <table>
-	  <caption>表 2. 供应 {{site.data.keyword.keymanagementserviceshort}} 服务所必需的字段</caption>
-	  <tr>
-	    <th width="50%">字段</th>
-		<th width="50%">值</th>
-	  </tr>
-	  <tr>
-	    <td>选择要在其中部署的区域：</td>
-		<td>美国南部</td>
-	  </tr>
-	  <tr>
-	    <td>选择组织：</td>
-		<td>选择已选中用于供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织。</td>
-	  </tr>
-	  <tr>
-	    <td>选择空间：</td>
-		<td>选择已选中用于供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的空间。</td>
-	  </tr>
-	</table>
-
-5. 单击**创建**以在您登录到的 {{site.data.keyword.Bluemix_notm}} 空间中供应 {{site.data.keyword.keymanagementserviceshort}} 服务。
+    * 用户需要通过服务角色设置为 *manager* 或 *writer* 的 IAM 策略，才能创建密钥。
+	* 用户需要通过服务角色设置为 *manager* 的 IAM 策略，才能删除密钥。
+	* 用户需要通过服务角色设置为 *reader* 的 IAM 策略，才能查看密钥。 
 
 
 ## 步骤 3：生成 Activity Tracker 事件
 {: # step3}
 
-在此步骤中，使用 {{site.data.keyword.keymanagementserviceshort}} 服务创建安全密钥以生成 {{site.data.keyword.cloudaccesstrailshort}} 事件数据。 
+在此步骤中，使用 {{site.data.keyword.keymanagementserviceshort}} 服务创建安全密钥以生成 {{site.data.keyword.cloudaccesstrailshort}} 事件数据。有关更多信息，请参阅[创建新密钥](/docs/services/key-protect/create-standard-keys.html#create-standard-keys)。
 
-要生成 {{site.data.keyword.cloudaccesstrailshort}} 事件，请完成以下步骤：
-
-1. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，选择 **Key Protect** 服务。这将打开 {{site.data.keyword.keymanagementserviceshort}} 仪表板。然后，选择**管理**选项卡。
-
-2. 单击**添加密钥**。这将打开一个新窗口。
-
-3. 选择**生成密钥**，然后完成以下步骤：
-
-    * 输入密钥的名称，例如 *MyFirstKey*。
-
-    * 为密钥选择算法。
-
-    * 单击**添加密钥**。 
-	
-创建密钥会生成 {{site.data.keyword.cloudaccesstrailshort}} 事件。
+* 创建密钥会生成 {{site.data.keyword.cloudaccesstrailshort}} 事件。
+* {{site.data.keyword.cloudaccesstrailshort}} 事件在 {{site.data.keyword.cloudaccesstrailshort}} **帐户域**中提供，此域在生成事件的 {{site.data.keyword.Bluemix_notm}} 区域中提供。 
 
 ## 步骤 4：监视 Activity Tracker 事件
 {: #step4}
@@ -156,29 +121,25 @@ lastupdated: "2017-09-17"
 
 要验证是否已创建事件，请完成以下步骤：
 
-1. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，选择 {{site.data.keyword.cloudaccesstrailshort}} 服务。这将打开该服务仪表板。
+1. 授予用户查看帐户事件的许可权。有关更多信息，请参阅[查看帐户事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events)和[授予许可权以查看帐户事件](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events)。
 
-2. 将该视图配置为搜索在供应该服务并添加密钥时已生成的 {{site.data.keyword.keymanagementserviceshort}} 事件。
+2. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，选择 {{site.data.keyword.cloudaccesstrailshort}} 服务。这将打开该服务仪表板。
 
-    * 对于*查看日志*字段，选择**空间日志**。
-    * 对于*搜索字段*字段，选择 **target.name**。
-    * 在*过滤器*字段中，输入 **ibm-key-protect**。
+3. 将该视图配置为搜索在供应该服务并添加密钥时已生成的 {{site.data.keyword.keymanagementserviceshort}} 事件。
+
+    * 对于*查看日志*字段，选择**帐户日志**。
+    * 在*搜索字段*中选择** target.typeURI_str**，在*过滤器*字段中输入 **kms/secrets**。
 	
     显示的数据是最近 24 小时可用的 {{site.data.keyword.keymanagementserviceshort}} 事件。 
 	
-	![事件的 UI 视图](images/bmx_ui_space_view.png "事件的 UI 视图")
 
 
 ## 后续步骤
 {: #next_steps}
 
-接下来，使用 {{site.data.keyword.cloudaccesstrailshort}} 预定义的 Kibana 仪表板来监视和分析事件日志。要启动 Kibana，请参阅[导航至 Kibana 仪表板](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。 
+接下来，使用 {{site.data.keyword.cloudaccesstrailshort}} 预定义的 Kibana 仪表板来监视和分析事件日志。要启动 Kibana，请参阅[导航至 Kibana 仪表板](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。缺省情况下，在 Kibana 中，空间活动日志通过 **ActivityTracker_Space_Dashboard_in_24h** 仪表板显示：
 
-缺省情况下，在 Kibana 中，空间活动日志通过 **ActivityTracker_Space_Search_in_24h** 仪表板显示：
+还可以使用 {{site.data.keyword.cloudaccesstrailshort}} CLI 通过命令行来管理事件。有关更多信息，请参阅[查看事件信息](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status)。
 
-![事件的 Kibana 视图](images/kibana_space_view.png "事件的 Kibana 视图")
 
-还可以使用 {{site.data.keyword.cloudaccesstrailshort}} CLI 通过命令行来管理事件。有关更多信息，请参阅[查看事件信息](/docs/services/cloud-activity-tracker/how-to/manage-events-cli/viewing_event_information.html#viewing_event_status)。
-
-                                                                                                                      
 

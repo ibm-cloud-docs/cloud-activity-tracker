@@ -1,28 +1,31 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-07-09"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# 导航至 Activity Tracker 仪表板
+
+# 导航至 {{site.data.keyword.Bluemix_notm}} 控制台中的 Activity Tracker 仪表板
 {: #launch_at_ui}
 
-可以从 {{site.data.keyword.Bluemix}} 启动 {{site.data.keyword.cloudaccesstrailshort}} UI。缺省情况下，可以看到空间事件。还可以查看帐户事件。
+您可以从 {{site.data.keyword.Bluemix}} 启动 {{site.data.keyword.cloudaccesstrailshort}} UI。缺省情况下，可以看到空间事件。还可以查看帐户事件。
 {:shortdesc}
    
 
 ## 导航至 Activity Tracker 仪表板以监视空间中的云活动
-{: #account_view}
+{: #account_view_space}
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视空间中的云活动，请完成以下步骤：
 
@@ -40,13 +43,13 @@ lastupdated: "2017-09-17"
 
 
 ## 导航至 Activity Tracker 仪表板以监视帐户中的云活动
-{: #account_view}
+{: #account_view_account}
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视帐户中的云活动，请完成以下步骤：
 
 1. 登录到要在其中监视云活动的 {{site.data.keyword.Bluemix_notm}} 帐户。
 
-    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
+    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
 

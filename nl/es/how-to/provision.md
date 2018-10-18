@@ -1,24 +1,27 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-07"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Suministro del servicio Activity Tracker
+
+# Suministro de Activity Tracker
 {: #provision}
 
-Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde la interfaz de usuario de {{site.data.keyword.Bluemix}} o desde la línea de mandatos.{:shortdesc}
+Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde la interfaz de usuario de {{site.data.keyword.Bluemix}} o desde la línea de mandatos.
+{:shortdesc}
 
 
 ## Suministro desde la interfaz de usuario
@@ -28,19 +31,19 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 
 1. Inicie sesión en su cuenta de {{site.data.keyword.Bluemix_notm}}.
 
-    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    La interfaz de usuario de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
-2. Pulse **Catálogo**. Se abre la lista de los servicios que están disponibles en {{site.data.keyword.Bluemix_notm}}.  
+2. Pulse **Catálogo**. Se abre la lista de los servicios que están disponibles en {{site.data.keyword.Bluemix_notm}}.
 
 3. Seleccione la categoría **Seguridad** para filtrar la lista de servicios que se muestran.
 
-    El servicio también está disponible en la categoría **DevOps**. 
+    El servicio también está disponible en la categoría **DevOps**.
 
 4. Pulse el mosaico **Acivity Tracker**.
 
-5. Configure la información que define dónde se va a suministrar el servicio.  
+5. Configure la información que define dónde se va a suministrar el servicio. 
 
     Especifique los datos como se indica en la tabla siguiente: 
 
@@ -52,7 +55,7 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 	  </tr>
 	  <tr>
 	    <td>Seleccione la región de despliegue:</td>
-		<td>Los valores válidos son: EE.UU. sur, Reino Unido, Alemania</td>
+		<td>Los valores válidos son: EE.UU. sur, Reino Unido, Alemania, Sídney</td>
 	  </tr>
 	  <tr>
 	    <td>Elija una organización:</td>
@@ -60,15 +63,15 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 	  </tr>
 	  <tr>
 	    <td>Elija un espacio:</td>
-		<td>Seleccione el espacio de la organización que ha seleccionado donde piensa supervisar la actividad.</td>
+		<td>Seleccione un espacio de la organización que ha seleccionado donde piensa supervisar la actividad.</td>
 	  </tr>
 	</table>
 
 6. Seleccione un plan de servicio. 
 
-    De forma predeterminada, está definido el plan **gratuito**. 
+    De forma predeterminada, está definido el plan **gratuito**.
 
-    Para obtener más información, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+    Para obtener más información, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
 7. Pulse **Crear** para suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}} en el espacio de {{site.data.keyword.Bluemix_notm}} en el que ha iniciado la sesión.
   
@@ -77,47 +80,42 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 ## Suministro desde la CLI
 {: #cli}
 
-Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.Bluemix_notm}} mediante la línea de mandatos:
+Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.Bluemix_notm}} mediante la línea de mandatos:
 
-1. Instale la CLI de Cloud Foundry (CF). Si la CLI de CF ya está instalada, continúe con el siguiente paso.
+1. [Requisito previo] Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de cf ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   
+   Si la CLI está instalada, continúe en el paso siguiente.
     
-2. Inicie una sesión en una región, organización y espacio de {{site.data.keyword.Bluemix_notm}}.  
+2. Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. 
 
-    Por ejemplo, para iniciar una sesión en la región EE.UU. sur, ejecute el mandato siguiente:
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Siga las instrucciones. Escriba sus credenciales de {{site.data.keyword.Bluemix_notm}} y seleccione una organización y un espacio.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
-3. Ejecute el mandato `cf create-service` para suministrar una instancia. 
+3. Ejecute el mandato `ibmcloud service create` para suministrar una instancia.
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	ibmcloud service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
 	Donde
 	
-	* service_name es el nombre del servicio, es decir, **activityTracker**.
-	* service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+	* service_name es el nombre del servicio, es decir **accessTrail**.
+	* service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
 	* service_instance_name es el nombre que desea utilizar para la nueva instancia de servicio que cree.
-Para obtener más información sobre el mandato, consulte [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service).
 
-	Por ejemplo, para crear una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con el plan Lite, ejecute este mandato:
-```
-	cf create-service activityTracker free my_activity_tracker_svc
+	Por ejemplo, para crear una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con el plan estándar, ejecute este mandato:
+	
+	```
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
 4. Verifique que el servicio se ha creado correctamente. Ejecute el mandato siguiente:
 
     ```	
-	cf services
+	ibmcloud service list
 	```
 	{: codeblock}
 	
@@ -128,11 +126,12 @@ Para obtener más información sobre el mandato, consulte [cf create-service](/d
     OK
     
     name                           service                  plan                   bound apps              last operation
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 

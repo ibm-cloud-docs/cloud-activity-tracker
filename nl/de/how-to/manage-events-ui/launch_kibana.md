@@ -1,36 +1,39 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Zum Kibana-Dashboard navigieren
 {: #launch_kibana}
 
-Sie können Kibana über die {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle in {{site.data.keyword.Bluemix}} starten oder direkt über einen Web-Browser.
+Sie können Kibana von der Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} aus {{site.data.keyword.Bluemix}} oder direkt von einem Web-Browser aus starten.
 {:shortdesc}
    
 
 ##  Über das Dashboard des Activity Tracker-Service zu Kibana navigieren
 {: #launch_Kibana_from_at}
 
-Die in Kibana angezeigten Aktivitätenprotokolle enthalten Ereignisse für alle Ressourcen, die im Bereich der {{site.data.keyword.Bluemix_notm}}-Organisation verfügbar sind, bei der Sie angemeldet sind und in der der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt ist.
+Die in Kibana angezeigten Aktivitätenprotokolle enthalten Ereignisse für alle Ressourcen, die im Bereich der {{site.data.keyword.Bluemix_notm}}-Organisation verfügbar sind, bei der Sie angemeldet sind und in der der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt wird.
 
 Führen Sie die folgenden Schritte aus, um Kibana über das Dashboard des {{site.data.keyword.cloudaccesstrailshort}}-Service zu starten:
 
 1. Melden Sie sich bei Ihrem {{site.data.keyword.Bluemix_notm}}-Konto an.
 
-    Das {{site.data.keyword.Bluemix_notm}}-Dashboard finden Sie unter [http://bluemix.net ![Symbole für externen Link](../../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+    Das {{site.data.keyword.Bluemix_notm}}-Dashboard finden Sie unter [http://bluemix.net ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
     
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
 
@@ -56,21 +59,29 @@ Führen Sie die folgenden Schritte aus, um Kibana über einen Browser zu starten
 
 1. Öffnen Sie einen Web-Browser und starten Sie Kibana. Melden Sie sich anschließend bei der Kibana-Benutzerschnittstelle an.
     
-    In der folgenden Tabelle sind Beispiele für die URLs zum Starten von Kibana in den angegebenen Regionen aufgelistet:
+    In der folgenden Tabelle sind Beispiele für die URLs zum Starten von Kibana nach Region aufgelistet:
       
     <table>
-          <caption>Tabelle 1. URLs zum Starten von Kibana in bestimmten Regionen</caption>
+          <caption>Tabelle 1. URLs zum Starten von Kibana nach Region</caption>
            <tr>
             <th>Region</th>
             <th>URL</th>
           </tr>
           <tr>
-            <td>Vereinigte Staaten (Süden)</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Deutschland</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sydney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>Vereinigtes Königreich</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>Vereinigte Staaten (Süden)</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	
