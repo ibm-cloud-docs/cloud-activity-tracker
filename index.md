@@ -16,7 +16,7 @@ lastupdated: "2018-09-12"
 {:download: .download}
 
 
-# Getting started tutorial
+# Getting started
 {: #getting-started-with-cla}
 
 The {{site.data.keyword.cloudaccesstrailfull}} service records user-initiated activities that change the state of a service in the {{site.data.keyword.Bluemix}}. Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailfull}} service to monitor a user's interaction with a Cloud service. 
