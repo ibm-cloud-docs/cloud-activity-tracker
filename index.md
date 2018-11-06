@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2018
-lastupdated: "2018-10-25"
+lastupdated: "2018-11-06"
 
 ---
 
@@ -175,7 +175,9 @@ To grant a user a developer role in a space from the {{site.data.keyword.Bluemix
 
 After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. To learn more about the services that you can monitor with {{site.data.keyword.cloudaccesstrailshort}}, including information on the actions that generate an {{site.data.keyword.cloudaccesstrailshort}} event, see [Cloud services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services).
 
-To generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp).
+**Note:** For a user to generate {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} events, the user must have access to Infrastructure resources in the IBM Cloud Console. For more information, see [Monitoring {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi).
+
+To learn how to generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp).
 
 ## Step 4: Viewing events
 {: #step4}

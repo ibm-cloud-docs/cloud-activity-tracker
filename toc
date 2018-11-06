@@ -16,6 +16,7 @@ IBM Cloud Activity Tracker
     Tutorials
         tutorials/kp.md
         tutorials/manage_events_cli.md
+        tutorials/vsi.md
 		
     {: .topicgroup}
     Related links
