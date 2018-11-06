@@ -1,28 +1,31 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-07-09"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Navegación en el panel de control de Activity Tracker
+
+# Navegación en el panel de control de Activity Tracker en la consola de {{site.data.keyword.Bluemix_notm}}
 {: #launch_at_ui}
 
-Puede lanzar la IU de {{site.data.keyword.cloudaccesstrailshort}} desde {{site.data.keyword.Bluemix}}. Puede ver sucesos de espacio de forma predeterminada. También puede ver sucesos de cuentas.
+Puede iniciar la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} desde {{site.data.keyword.Bluemix}}. Puede ver sucesos de espacio de forma predeterminada. También puede ver sucesos de cuentas.
 {:shortdesc}
    
 
 ## Navegación en el panel de control de Activity Tracker para supervisar la actividad de nube en un espacio
-{: #account_view}
+{: #account_view_space}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en un espacio:
 
@@ -40,13 +43,13 @@ Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cl
 
 
 ## Navegación al panel de control de Activity Tracker para supervisar la actividad de nube en la cuenta
-{: #account_view}
+{: #account_view_account}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en una cuenta:
 
 1. Inicie sesión en la cuenta {{site.data.keyword.Bluemix_notm}} en la que quiere supervisar la actividad de la nube.
 
-    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 

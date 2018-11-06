@@ -1,23 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-25"
+  years: 2016, 2018
+lastupdated: "2018-06-21"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Activity Tracker
 {: #activity_tracker_ov}
 
-使用 {{site.data.keyword.cloudaccesstrailfull}} 服务可跟踪应用程序与 {{site.data.keyword.Bluemix}} 服务交互的方式。使用 {{site.data.keyword.cloudaccesstrailshort}} 可监视异常活动，以及满足监管审计要求。收集的事件符合 Cloud Auditing Data Federation (CADF) 标准。
+使用 {{site.data.keyword.cloudaccesstrailfull}} 服务可跟踪应用程序与 {{site.data.keyword.Bluemix}} 服务进行交互的情况。使用 {{site.data.keyword.cloudaccesstrailshort}} 可监视异常活动，以及满足监管审计要求。收集的事件符合 Cloud Auditing Data Federation (CADF) 标准。
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} 为云中的 IT 资源提供了高等级的安全管理。
@@ -36,22 +39,14 @@ lastupdated: "2017-09-25"
 * API 调用的状态。
 
 
-## 在 Bluemix 中供应 Activity Tracker
-{: #provision}
-
-在 {{site.data.keyword.Bluemix_notm}} 帐户的每个空间中，要监视针对其中运行的云服务的 API 活动，必须在该空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
-
-要了解如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务，请参阅[供应 {{site.data.keyword.cloudaccesstrailshort}} 服务](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
-
-
-
-## 收集活动日志
+## 收集事件
 {: #collect}
 
-{{site.data.keyword.cloudaccesstrailshort}} 服务只捕获对 {{site.data.keyword.Bluemix_notm}} 中所选云服务发起的 API 调用和其他操作的相关活动数据。有关服务的列表，请参阅[支持的云服务](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services)。
+{{site.data.keyword.cloudaccesstrailshort}} 服务只捕获对 {{site.data.keyword.Bluemix_notm}} 中所选云服务发起的 API 调用和其他操作的相关活动数据。 
 
 * 事件会自动收集。 
 * {{site.data.keyword.cloudaccesstrailshort}} 中收集的事件符合 Cloud Auditing Data Federation (CADF) 标准。CADF 标准定义了完整事件模型，包含证明、管理和审计云环境中应用程序安全性所需的信息。
+* {{site.data.keyword.cloudaccesstrailshort}} 按域存储和分组事件。每个区域都有一个帐户域，并且每个 Cloud Foundry 空间都有一个空间域。 
 
 CADF 事件模型包含以下组件：
 
@@ -92,6 +87,16 @@ CADF 事件模型包含以下组件：
 * {{site.data.keyword.cloudaccesstrailshort}} 服务支持类型为*活动*的 CADF 事件。
 
 
+## 供应 Activity Tracker
+{: #provision}
+
+要查看通过帐户域提供的事件，您必须在监控 API 活动的区域的 Cloud Foundry 空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。只有**帐户所有者**可以看到帐户事件。
+
+要查看通过空间域提供的事件，您必须在监控 API 活动的空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
+
+要了解如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务，请参阅[供应 {{site.data.keyword.cloudaccesstrailshort}} 服务](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
+
+
 
 ## 分析活动日志
 {: #analyze}
@@ -103,7 +108,7 @@ CADF 事件模型包含以下组件：
 可以使用 {{site.data.keyword.cloudaccesstrailshort}} Kibana 仪表板或创建您自己的定制仪表板，通过 Kibana 搜索、分析和监视最近 3 天的活动日志。* **注：**此功能适用于**高级**套餐用户。
 
 * 有关如何启动 Kibana 的更多信息，请参阅[导航至 Kibana 仪表板](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。 
-* 有关可用于在 Kibana 中分析事件的字段的列表，请参阅 [{{site.data.keyword.cloudaccesstrailshort}} 事件字段](/docs/services/cloud-activity-tracker/reference/at_event.html#at_event)
+* 有关可用于在 Kibana 中分析事件的字段的列表，请参阅 [{{site.data.keyword.cloudaccesstrailshort}} 事件字段](/docs/services/cloud-activity-tracker/at_event.html#at_event)
 
 
 
@@ -112,8 +117,10 @@ CADF 事件模型包含以下组件：
 
 {{site.data.keyword.cloudaccesstrailshort}} 服务在以下区域中可用：
 
+* 德国
+* 悉尼
+* 英国 
 * 美国南部
-* 英国 (Beta)
 
 
 ## 服务套餐
@@ -121,9 +128,9 @@ CADF 事件模型包含以下组件：
 
 {{site.data.keyword.cloudaccesstrailshort}} 服务提供有多种套餐。
 
-可以通过 {{site.data.keyword.Bluemix_notm}} UI 或命令行来更改套餐。您可以随时将套餐升级或降级。有关 {{site.data.keyword.Bluemix_notm}} 中服务套餐升级的更多信息，请参阅[更改套餐](/docs/services/cloud-activity-tracker/plan/change_plan.html#change_plan)。 
+可以通过 {{site.data.keyword.Bluemix_notm}} UI 或命令行来更改套餐。您可以随时将套餐升级或降级。有关服务套餐升级的更多信息，请参阅[更改套餐](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。 
 
-以下各表概述了每个服务套餐中可用的功能：
+下表概括了可用的套餐：
 
 <table>
     <caption>表 1. 用于事件获取、事件保留时间和导出事件的功能</caption>
@@ -134,7 +141,7 @@ CADF 事件模型包含以下组件：
 		<th>导出事件</th>
       </tr>
       <tr>
-        <td>Lite（缺省）</td>
+        <td>轻量（缺省）</td>
         <td>否</td>
         <td>最近 3 天</td>
 		<td>否</td>
@@ -151,20 +158,20 @@ CADF 事件模型包含以下组件：
     <caption>表 2. 用于管理和查看事件的功能</caption>
       <tr>
         <th>套餐</th>
-		<th>API</th>
-		<th>CLI</th>
+		    <th>API</th>
+		    <th>CLI</th>
         <th>Kibana</th>
       </tr>
       <tr>
-        <td>Lite（缺省）</td>
-		<td>否</td>
-		<td>否</td>
+        <td>轻量（缺省）</td>
+		    <td>否</td>
+		    <td>否</td>
         <td>否</td>
       </tr>
       <tr>
         <td>高级</td>
-		<td>是</td>
-		<td>是</td>
+		    <td>是</td>
+		    <td>是</td>
         <td>是</td>
       </tr>
 </table>

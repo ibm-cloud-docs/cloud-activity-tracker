@@ -1,23 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Navegando para o painel do Kibana
 {: #launch_kibana}
 
-É possível ativar o Kibana na UI do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}} ou diretamente de um navegador da web.
+É possível ativar o Kibana por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}} ou diretamente de um navegador da web.
 {:shortdesc}
    
 
@@ -30,7 +33,7 @@ Conclua as etapas a seguir para ativar o Kibana por meio do painel do serviço {
 
 1. Efetue login em sua conta do {{site.data.keyword.Bluemix_notm}}.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
     
 	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
 
@@ -65,12 +68,20 @@ Conclua as etapas a seguir para ativar o Kibana em um navegador:
             <th>URL</th>
           </tr>
           <tr>
-            <td>Sul dos EUA</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Alemanha</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sydney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>Reino Unido</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>Sul dos EUA</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	

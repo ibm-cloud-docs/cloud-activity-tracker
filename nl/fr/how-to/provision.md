@@ -1,21 +1,23 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-07"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Mise à disposition du service Activity Tracker
+
+# Mise à disposition d'Activity Tracker
 {: #provision}
 
 Vous pouvez mettre à disposition le service {{site.data.keyword.cloudaccesstraillong}} à partir de l'interface utilisateur {{site.data.keyword.Bluemix}} ou de la ligne de commande.
@@ -29,7 +31,7 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 
 1. Connectez-vous à votre compte {{site.data.keyword.Bluemix_notm}}.
 
-    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    L'interface utilisateur d'{{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
     
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
 
@@ -53,7 +55,7 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 	  </tr>
 	  <tr>
 	    <td>Sélectionnez une région dans laquelle effectuer le déploiement :</td>
-		<td>Les valeurs admises sont : Sud des Etats-Unis, Royaume-Uni et Allemagne</td>
+		<td>Les valeurs admises sont : Sud des Etats-Unis, Royaume-Uni, Allemagne et Sydney. </td>
 	  </tr>
 	  <tr>
 	    <td>Choisissez une organisation :</td>
@@ -61,7 +63,7 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 	  </tr>
 	  <tr>
 	    <td>Choisissez un espace :</td>
-		<td>Sélectionnez l'espace de l'organisation sélectionnée dans lequel vous prévoyez de surveiller l'activité.</td>
+		<td>Sélectionnez un espace dans l'organisation sélectionnée dans lequel vous prévoyez de surveiller l'activité.</td>
 	  </tr>
 	</table>
 
@@ -69,7 +71,7 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 
     Le plan **free** est sélectionné par défaut.
 
-    Pour plus d'information, voir [Plans de service](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+    Pour plus d'information, voir [Plans de service](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
 7. Cliquez sur **Créer** pour mettre à disposition le service {{site.data.keyword.cloudaccesstrailshort}} dans l'espace {{site.data.keyword.Bluemix_notm}} auquel vous êtes connecté.
   
@@ -78,49 +80,42 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 ## Mise à disposition à partir de l'interface de ligne de commande
 {: #cli}
 
-Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstraillong_notm}} dans {{site.data.keyword.Bluemix_notm}} via la ligne de commande :
+Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix_notm}} via la ligne de commande :
 
-1. Installez l'interface de ligne de commande Cloud Foundry (CF). Si l'interface de ligne de commande CF est installée, passez à l'étape suivante.
+1. [Prérequis] Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
-   Pour plus d'informations, voir [Installation de l'interface de ligne de commande cf ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
+   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+   
+   Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
-2. Connectez-vous à un espace, une organisation ou une région {{site.data.keyword.Bluemix_notm}}. 
+2. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
 
-    Par exemple, pour vous connecter à la région du sud des États-Unis, exécutez la commande suivante :
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Suivez les instructions. Entrez vos données d'identification {{site.data.keyword.Bluemix_notm}} et sélectionnez une organisation et un espace.
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
 	
-3. Exécutez la commande `cf create-service` pour mettre à disposition une instance.
+3. Exécutez la commande `ibmcloud service create` pour mettre à disposition une instance.
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	ibmcloud service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
 	Où
 	
-	* service_name est le nom du service, à savoir **activityTracker**.
-	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+	* service_name est le nom du service, en l'occurrence **accessTrail**.
+	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Plans de service](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
 	* service_instance_name est le nom que vous souhaitez utiliser pour la nouvelle instance de service que vous créez.
-	
-	Pour plus d'informations sur la commande cf, voir [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service).
 
-	Par exemple, pour créer une instance de service {{site.data.keyword.cloudaccesstrailshort}} avec le plan Lite, exécutez la commande suivante :
+	Par exemple, pour créer une instance du service {{site.data.keyword.cloudaccesstrailshort}} avec le plan standard, exécutez la commande suivante :
 	
 	```
-	cf create-service activityTracker free my_activity_tracker_svc
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
-4. Vérifiez que le service a bel et bien été créé. Exécutez la commande suivante :
+4. Vérifiez que le service a été créé. Exécutez la commande suivante :
 
     ```	
-	cf services
+	ibmcloud service list
 	```
 	{: codeblock}
 	
@@ -131,11 +126,12 @@ Procédez comme suit pour mettre à disposition une instance du service {{site.d
     OK
     
     name                           service                  plan                   bound apps              last operation
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 

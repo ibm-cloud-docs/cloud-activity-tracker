@@ -1,23 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # 导航至 Kibana 仪表板
 {: #launch_kibana}
 
-可以通过 {{site.data.keyword.Bluemix}} 中的 {{site.data.keyword.cloudaccesstrailshort}} UI 或直接通过 Web 浏览器启动 Kibana。
+您可以通过 {{site.data.keyword.Bluemix}} 中的 {{site.data.keyword.cloudaccesstrailshort}} UI 或直接通过 Web 浏览器启动 Kibana。
 {:shortdesc}
    
 
@@ -30,7 +33,7 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.Bluemix_no
 
 1. 登录到您的 {{site.data.keyword.Bluemix_notm}} 帐户。
 
-    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
+    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
 
@@ -65,12 +68,20 @@ Kibana 显示的日志信息包含您登录到的 {{site.data.keyword.Bluemix_no
             <th>URL</th>
           </tr>
           <tr>
-            <td>美国南部</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net)</td>
+            <td>德国</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net)</td>
+          </tr>
+          <tr>
+            <td>悉尼</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net)</td>
           </tr>
 		  <tr>
             <td>英国</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>美国南部</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net)</td>
           </tr>
     </table>
 	

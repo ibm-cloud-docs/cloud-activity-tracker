@@ -1,24 +1,27 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-07"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Provisionando o serviço Activity Tracker
+
+# Rastreador de Atividade de Provisionamento
 {: #provision}
 
-É possível provisionar o serviço {{site.data.keyword.cloudaccesstraillong}} por meio da UI do {{site.data.keyword.Bluemix}} ou por meio da linha de comandos.
+É possível fornecer o serviço do {{site.data.keyword.cloudaccesstraillong}}
+por meio da UI do {{site.data.keyword.Bluemix}} ou da linha de comandos.
 {:shortdesc}
 
 
@@ -29,7 +32,7 @@ Conclua as etapas a seguir para provisionar uma instância do serviço {{site.da
 
 1. Efetue login em sua conta do {{site.data.keyword.Bluemix_notm}}.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    A IU do {{site.data.keyword.Bluemix_notm}} pode ser localizada em: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
     
 	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
 
@@ -53,7 +56,7 @@ Conclua as etapas a seguir para provisionar uma instância do serviço {{site.da
 	  </tr>
 	  <tr>
 	    <td>Selecionar região para implementar em:</td>
-		<td>Os valores válidos são: Sul dos EUA, Reino Unido, Alemanha</td>
+		<td>Os valores válidos são: Sul dos EUA, Reino Unido, Alemanha, Sydney</td>
 	  </tr>
 	  <tr>
 	    <td>Escolha uma organização:</td>
@@ -61,7 +64,7 @@ Conclua as etapas a seguir para provisionar uma instância do serviço {{site.da
 	  </tr>
 	  <tr>
 	    <td>Escolha um espaço:</td>
-		<td>Selecione o espaço na organização que você selecionou no qual planeja monitorar a atividade.</td>
+		<td>Selecione um espaço na organização que você selecionou no qual planeja monitorar a atividade.</td>
 	  </tr>
 	</table>
 
@@ -69,7 +72,7 @@ Conclua as etapas a seguir para provisionar uma instância do serviço {{site.da
 
     Por padrão, o plano **grátis** está configurado.
 
-    Para obter mais informações, veja [Planos de serviço](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+    Para obter mais informações, veja [Planos de serviço](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
 7. Clique em **Criar** para provisionar o serviço do {{site.data.keyword.cloudaccesstrailshort}} no espaço do {{site.data.keyword.Bluemix_notm}} no qual você está com login efetuado.
   
@@ -78,49 +81,42 @@ Conclua as etapas a seguir para provisionar uma instância do serviço {{site.da
 ## Provisionando por meio da CLI
 {: #cli}
 
-Conclua as etapas a seguir para provisionar uma instância do serviço do {{site.data.keyword.cloudaccesstraillong_notm}} no {{site.data.keyword.Bluemix_notm}} por meio da linha de comandos:
+Conclua as etapas a seguir para provisionar uma instância do serviço do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix_notm}} por meio da linha de comandos:
 
-1. Instale a CLI do Cloud Foundry (CF). Se o CF CLI estiver instalado, continue com a próxima etapa.
+1. [Pré-requisito] Instale a CLI do {{site.data.keyword.Bluemix_notm}}.
 
-   Para obter mais informações, veja [Instalando o cf CLI ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
+   Para obter mais informações, consulte [Instalando a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   
+   Se a CLI estiver instalada, continue com a próxima etapa.
     
-2. Efetue login em uma região, uma organização e um espaço do {{site.data.keyword.Bluemix_notm}}. 
+2. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
 
-    Por exemplo, para efetuar login na região sul dos EUA, execute o comando a seguir:
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Siga as instruções. Insira suas credenciais do {{site.data.keyword.Bluemix_notm}}, selecione uma organização e um espaço.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 	
-3. Execute o comando `cf create-service` para provisionar uma instância.
+3. Execute o comando `ibmcloud service create` para provisionar uma instância.
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	serviço ibmcloud create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
 	Em que
 	
-	* service_name é o nome do serviço, ou seja, **activityTracker**.
-	* service_plan é o nome do plano de serviço. Para obter uma lista de planos, veja [Planos de serviço](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+	* service_name é o nome do serviço, isto é, **accessTrail**.
+	* service_plan é o nome do plano de serviço. Para obter uma lista de planos, veja [Planos de serviço](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
 	* service_instance_name é o nome que você deseja usar para a nova instância de serviço criada.
-	
-	Para obter mais informações sobre o comando cf, veja [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service).
 
-	Por exemplo, para criar uma instância do serviço {{site.data.keyword.cloudaccesstrailshort}} com o plano Lite, execute o comando a seguir:
+	Por exemplo, para criar uma instância do serviço {{site.data.keyword.cloudaccesstrailshort}} com o plano padrão, execute o comando a seguir:
 	
 	```
-	cf create-service activityTracker free my_activity_tracker_svc
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
 4. Verifique se o serviço foi criado com sucesso. Execute o seguinte comando:
 
     ```	
-	cf services
+	ibmcloud service list
 	```
 	{: codeblock}
 	
@@ -131,11 +127,12 @@ Conclua as etapas a seguir para provisionar uma instância do serviço do {{site
     OK
     
     name                           service                  plan                   bound apps              last operation
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 

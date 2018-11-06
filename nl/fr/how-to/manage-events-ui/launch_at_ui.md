@@ -1,34 +1,37 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-07-09"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Accès au tableau de bord Activity Tracker
+
+# Accès au tableau de bord Activity Tracker dans la console {{site.data.keyword.Bluemix_notm}}
 {: #launch_at_ui}
 
-Vous pouvez lancer l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} à partir de {{site.data.keyword.Bluemix}}. Par défaut, vous pouvez afficher des événements d'espace. Vous pouvez également afficher des événements de compte.
+Vous pouvez lancer l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} à partir d'{{site.data.keyword.Bluemix}}. Par défaut, vous pouvez afficher des événements d'espace. Vous pouvez également afficher des événements de compte.
 {:shortdesc}
    
 
 ## Accès au tableau de bord Activity Tracker pour surveiller l'activité de cloud dans un espace
-{: #account_view}
+{: #account_view_space}
 
 Pour accéder à l'identificateur unique d'{{site.data.keyword.cloudaccesstrailshort}} afin de surveiller l'activité de cloud dans un espace, procédez comme suit :
 
 1. Connectez-vous à l'espace, l'organisation et la région du compte {{site.data.keyword.Bluemix_notm}} où vous voulez surveiller l'activité de cloud.
 
-    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
     
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
 
@@ -40,13 +43,13 @@ Pour accéder à l'identificateur unique d'{{site.data.keyword.cloudaccesstrails
 
 
 ## Accès au tableau de bord Activity Tracker pour surveiller l'activité de cloud dans le compte
-{: #account_view}
+{: #account_view_account}
 
 Pour accéder à l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} afin de surveiller l'activité de cloud dans un compte, procédez comme suit :
 
 1. Connectez-vous au compte {{site.data.keyword.Bluemix_notm}} où vous voulez surveiller l'activité de cloud.
 
-    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![External link icon](../../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    Le tableau de bord {{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
     
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
 

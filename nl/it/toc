@@ -1,8 +1,8 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" href="/docs/services/cloud-activity-tracker/index.html"}
-Programma di traccia dell'attività IBM Cloud 
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html"}
+Programma di traccia dell'attività IBM Cloud
 
     {: .navgroup id="learn"}
     index.md
@@ -10,16 +10,14 @@ Programma di traccia dell'attività IBM Cloud
     {: .topicgroup}
     Informazioni
         activity_tracker_ov.md
-        cloud_services.md
-        reference/at_event.md
+        at_event.md
+        compliance.md
 
-    {: .topicgroup}
-    Monitoraggio dell'attività cloud
-        svcs/kp_at.md
+    cloud_services.md
 
     {: .topicgroup}
     Esercitazioni
-        /tutorials/manage_events_cli.md
+        tutorials/manage_events_cli.md
 		
     {: .topicgroup}
     Link correlati
@@ -29,32 +27,49 @@ Programma di traccia dell'attività IBM Cloud
     
     {: .navgroup id="howto"}
     how-to/provision.md
-    plan/change_plan.md
+    how-to/change_plan.md
+    how-to/config_cli.md
 
     {: .topicgroup}
-    Configurazione della CLI
-        cli/config_at_cli.md
-        cli/get_help_cli.md
+    Gestione degli eventi utilizzando l'API
+        how-to/manage_events_api/viewing_events_info_api.md
+        how-to/manage_events_api/downloading_events_api.md
+        how-to/manage_events_api/deleting_events_api.md
 
     {: .topicgroup}
     Gestione degli eventi dalla CLI
-        how-to/manage-events-cli/viewing_event_information.md
-        how-to/manage-events-cli/downloading_events.md
-        how-to/manage-events-cli/deleting_events.md
+        how-to/configuring_retention_policy.md
+        how-to/viewing_event_information.md
+        how-to/downloading_events.md
+        how-to/deleting_events.md
 
     {: .topicgroup}
     Visualizzazione degli eventi attraverso la IU
         how-to/manage-events-ui/launch_at_ui.md
         how-to/manage-events-ui/launch_kibana.md
+        how-to/manage-events-ui/viewing_events.md
+
+    how-to/grant_permissions.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    cli/at_cli.md
+    reference/ref_endpoints.md
+    reference/auth_uaa.md
+    reference/at_cli_cloud.md
+	
+    [API del programma di traccia dell'attività IBM Cloud](https://console.bluemix.net/apidocs/activity-tracker-api)
 
-    [Activity Tracker API](https://console.bluemix.net/apidocs/1052-ibm-cloud-activity-tracker)
+    {: .topicgroup}
+    Monitoraggio dell'attività cloud
+        reference/events.md
+        services/at_events_cf.md
+        services/at_events_iam.md
+        services/at_events_acc_mgt.md
+        services/at_events_rc.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
     gettinghelp.md
+
     {: .navgroup-end}
     

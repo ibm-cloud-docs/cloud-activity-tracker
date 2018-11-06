@@ -1,27 +1,30 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-04-27"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Navegación al panel de control de Kibana 
+
+# Navegación al panel de control de Kibana
 {: #launch_kibana}
 
 Puede lanzar Kibana desde la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.Bluemix}}, o directamente desde un navegador web.
 {:shortdesc}
    
 
-##  Navegación a Kibana desde el panel de control del servicio de Activity Tracker 
+##  Navegación a Kibana desde el panel de control del servicio de Activity Tracker
 {: #launch_Kibana_from_at}
 
 Los registros de actividad que muestra Kibana incluye eventos para todos los recursos que se despliegan en el espacio de la organización de {{site.data.keyword.Bluemix_notm}} en la que ha iniciado sesión y en la que se ha suministrado el servicio de {{site.data.keyword.cloudaccesstrailshort}}.
@@ -30,7 +33,7 @@ Siga los siguientes pasos para iniciar Kibana desde el panel de control del serv
 
 1. Inicie sesión en su cuenta de {{site.data.keyword.Bluemix_notm}}.
 
-    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -47,7 +50,7 @@ De forma predeterminada se carga un panel de control de **ActivityTracker_Space_
 
 	
 	
-##  Navegación a Kibana desde un navegador web 
+##  Navegación a Kibana desde un navegador web
 {: #launch_Kibana_from_browser}
 
 La información de registro que muestra Kibana incluye eventos para todos los recursos que se muestran dentro del espacio de la organización de {{site.data.keyword.Bluemix_notm}} en la que ha iniciado sesión.
@@ -65,16 +68,24 @@ Siga los siguientes pasos para iniciar Kibana desde el navegador:
             <th>URL</th>
           </tr>
           <tr>
-            <td>EE.UU. sur</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>Alemania</td>
+            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+          </tr>
+          <tr>
+            <td>Sídney</td>
+            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
           </tr>
 		  <tr>
             <td>Reino Unido</td>
-            <td>[https://logmet.eu-gb.bluemix.net](https://logmet.eu-gb.bluemix.net)</td>
+            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+          </tr>
+		  <tr>
+            <td>EE.UU. sur</td>
+            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
           </tr>
     </table>
 	
-	Se abre la página Descubrir en Kibana opens.
+	Se abre la página Descubrir en Kibana.
 	
 2. Compruebe que ha iniciado sesión en la cuenta, organización y espacio de {{site.data.keyword.Bluemix_notm}}, donde quiere visualizar y analizar registros de actividad.
 

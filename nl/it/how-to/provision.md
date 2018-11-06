@@ -1,24 +1,26 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-17"
+  years: 2016, 2018
+lastupdated: "2018-09-07"
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
 
 
-# Provisioning del servizio del programma di traccia dell'attività 
+
+# Provisioning del programma di traccia dell'attività
 {: #provision}
 
-Puoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstraillong}} dalla IU {{site.data.keyword.Bluemix}} o dalla riga di comando.
+Puoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstraillong}} dall'IU {{site.data.keyword.Bluemix}} o dalla riga di comando.
 {:shortdesc}
 
 
@@ -29,11 +31,11 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 
 1. Accedi al tuo account {{site.data.keyword.Bluemix_notm}}.
 
-    Il dashboard {{site.data.keyword.Bluemix_notm}} può essere trovato all'indirizzo: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
+    L'IU {{site.data.keyword.Bluemix_notm}} può essere trovata all'indirizzo: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.Bluemix_notm}}.
 
-2. Fai clic su **Catalogo**.Viene aperto l'elenco dei servizi disponibili in {{site.data.keyword.Bluemix_notm}}.
+2. Fai clic su **Catalogo**. Viene aperto l'elenco dei servizi disponibili in {{site.data.keyword.Bluemix_notm}}.
 
 3. Seleziona la categoria **Sicurezza** per filtrare l'elenco dei servizi visualizzati.
 
@@ -49,19 +51,19 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 	  <caption>Tabella 1. Campi obbligatori per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}</caption>
 	  <tr>
 	    <th>Campo</th>
-		<th>Valore </th>
+		<th>Valore</th>
 	  </tr>
 	  <tr>
 	    <td>Seleziona la regione a cui distribuire:</td>
-		<td>I valori validi sono: Stati Uniti Sud, Regno Unito, Germania</td>
+		<td>I valori validi sono: Stati Uniti Sud, Regno Unito, Germania, Sydney</td>
 	  </tr>
 	  <tr>
-	    <td>Scegli un'organizzazione: </td>
+	    <td>Scegli un'organizzazione:</td>
 		<td>Seleziona l'organizzazione in cui il tuo piano monitora l'attività.</td>
 	  </tr>
 	  <tr>
 	    <td>Scegli uno spazio:</td>
-		<td>Seleziona lo spazio nell'organizzazione selezionata in cui il tuo piano monitora l'attività. </td>
+		<td>Seleziona uno spazio nell'organizzazione selezionata in cui il tuo piano monitora l'attività. </td>
 	  </tr>
 	</table>
 
@@ -69,7 +71,7 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 
     Per impostazione predefinita, viene impostato il piano **free**.
 
-    Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+    Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
 7. Fai clic su **Crea** per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio
 {{site.data.keyword.Bluemix_notm}} in cui hai eseguito l'accesso.
@@ -79,50 +81,43 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 ## Provisioning dalla CLI
 {: #cli}
 
-Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}}
+Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}}
 in {{site.data.keyword.Bluemix_notm}} tramite la riga di comando:
 
-1. Installa la CLI Cloud Foundry (CF). Se la CLI CF è installata, continua con il prossimo passo.
+1. [Pre-requisito] Installa la CLI {{site.data.keyword.Bluemix_notm}}.
 
-   Per ulteriori informazioni, vedi [Installing the cf CLI ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://docs.cloudfoundry.org/cf-cli/install-go-cli.html){: new_window}. 
+   Per ulteriori informazioni, consulta [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   
+   Se la CLI è installata, continua con il prossimo passo.
     
-2. Accedi a uno spazio, organizzazione, regione {{site.data.keyword.Bluemix_notm}}. 
+2. Accedi a {{site.data.keyword.Bluemix_notm}}. 
 
-    Ad esempio, per accedere alla regione Stai Uniti Sud, immetti il seguente comando:
-
-    ```
-    cf login -a https://api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Segui le istruzioni. Immetti le tue credenziali {{site.data.keyword.Bluemix_notm}}, seleziona un'organizzazione e uno spazio.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
-3. Esegui il comando `cf create-service` per eseguire il provisioning di un'istanza.
+3. Immetti il comando `ibmcloud service create` per eseguire il provisioning di un'istanza.
 
     ```
-	cf create-service service_name service_plan service_instance_name
+	ibmcloud service create service_name service_plan service_instance_name
 	```
 	{: codeblock}
 	
-	Dove
+	Dove 
 	
-	* service_name è il nome del servizio, ossia, **activityTracker**.
-	* service_plan è il nome del piano di servizio. Per un elenco dei piani, consulta [Piani di servizio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plans).
+	* service_name è il nome del servizio, ossia, **accessTrail**.
+	* service_plan è il nome del piano di servizio. Per un elenco dei piani, consulta [Piani di servizio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
 	* service_instance_name è il nome che vuoi utilizzare per la nuova istanza del servizio da te creata.
-	
-	Per ulteriori informazioni sul comando cf, consulta [cf create-service](/docs/cli/reference/cfcommands/index.html#cf_create-service).
 
-	Ad esempio, per creare un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} con il piano Lite, immetti il seguente comando:
+	Ad esempio, per creare un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} con il piano standard, immetti il seguente comando:
 	
 	```
-	cf create-service activityTracker free my_activity_tracker_svc
+	ibmcloud service create accessTrail free my_activitytracker_svc
 	```
 	{: codeblock}
 	
 4. Verifica che il servizio sia stato creato correttamente. Esegui il seguente comando:
 
     ```	
-	cf services
+	ibmcloud service list
 	```
 	{: codeblock}
 	
@@ -133,11 +128,12 @@ in {{site.data.keyword.Bluemix_notm}} tramite la riga di comando:
     OK
     
     name                           service                  plan                   bound apps              last operation
-    my_activity_tracker_svc        activityTracker          free                                           create succeeded
+    my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}
 
 	
+
 
 
 

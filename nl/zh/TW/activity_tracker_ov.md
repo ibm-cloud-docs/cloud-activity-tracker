@@ -1,17 +1,20 @@
 ---
 
 copyright:
-  years: 2016, 2017
-
-lastupdated: "2017-09-25"
+  years: 2016, 2018
+lastupdated: "2018-06-21"
 
 ---
 
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+
 
 
 # Activity Tracker
@@ -36,22 +39,14 @@ lastupdated: "2017-09-25"
 * API 呼叫的狀態。
 
 
-## 在 Bluemix 中佈建 Activity Tracker
-{: #provision}
-
-您必須將 {{site.data.keyword.cloudaccesstrailshort}} 服務佈建在 {{site.data.keyword.Bluemix_notm}} 帳戶中，想要監視該空間裡執行之雲端服務的 API 活動的的每個空間。
-
-若要了解如何佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務，請參閱[佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
-
-
-
-## 收集活動日誌
+## 收集事件
 {: #collect}
 
-{{site.data.keyword.cloudaccesstrailshort}} 服務只會擷取針對 {{site.data.keyword.Bluemix_notm}} 中所選取雲端服務進行的 API 呼叫及其他動作相關的活動資料。如需服務清單，請參閱[支援的雲端服務](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services)。
+{{site.data.keyword.cloudaccesstrailshort}} 服務只會擷取針對 {{site.data.keyword.Bluemix_notm}} 中所選取雲端服務進行的 API 呼叫及其他動作相關的活動資料。 
 
 * 會自動收集事件。 
-* 在 {{site.data.keyword.cloudaccesstrailshort}} 中所收集的事件符合雲端審核資料聯盟 (CADF) 標準。CADF 標準定義一個完整事件模型，它包括在雲端環境中認證、管理及審核應用程式安全所需的資訊。
+* 在 {{site.data.keyword.cloudaccesstrailshort}} 中所收集的事件符合「雲端審核資料聯盟 (CADF)」標準。CADF 標準定義一個完整事件模型，它包括在雲端環境中認證、管理及審核應用程式安全所需的資訊。
+* {{site.data.keyword.cloudaccesstrailshort}} 會依網域儲存及分組事件。每個地區各有一個帳戶網域，而每個 Cloud Foundry 空間各有一個空間網域。 
 
 CADF 事件模型包含下列元件：
 
@@ -89,7 +84,17 @@ CADF 事件模型包含下列元件：
 * 您只能針對 {{site.data.keyword.IBM_notm}} 公用雲端中執行的資源所發出的 API 呼叫儲存審核記錄。
 * 只會使用 {{site.data.keyword.IBM_notm}} 公用雲端儲存空間來收集事件。
 * 此資訊將儲存 3 天。之後，會根據先進先出來刪除該資訊。
-* {{site.data.keyword.cloudaccesstrailshort}} 服務支援類型為*活動*的 CADF 事件。
+* {{site.data.keyword.cloudaccesstrailshort}} 服務支援類型為*活動* 的 CADF 事件。
+
+
+## 佈建 Activity Tracker
+{: #provision}
+
+若要檢視透過帳戶網域提供的事件，您必須在地區內要監視 API 活動的 Cloud Foundry 空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。只有**帳戶擁有者**可以查看帳戶事件。
+
+若要檢視透過空間網域提供的事件，您必須在要監視 API 活動的空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。
+
+若要了解如何佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務，請參閱[佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
 
 
 
@@ -100,10 +105,10 @@ CADF 事件模型包含下列元件：
 
 您可以在 {{site.data.keyword.Bluemix_notm}} 中透過 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，搜尋、分析及監視過去 24 小時的活動日誌。如需相關資訊，請參閱[導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)。
 
-您可以使用 {{site.data.keyword.cloudaccesstrailshort}} Kibana 儀表板，或自行建立自訂儀表板，來搜尋、分析及監視過去 3 天的活動日誌。**附註：**這項特性適用於**進階**方案使用者。
+您可以使用 {{site.data.keyword.cloudaccesstrailshort}} Kibana 儀表板，或自行建立自訂儀表板，來搜尋、分析及監視過去 3 天的活動日誌。**附註：**這項特性適用於**超值**方案使用者。
 
 * 如需如何啟動 Kibana 的相關資訊，請參閱[導覽至 Kibana 儀表板](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。 
-* 如需可用來在 Kibana 中分析事件的欄位清單，請參閱 [{{site.data.keyword.cloudaccesstrailshort}} 事件欄位](/docs/services/cloud-activity-tracker/reference/at_event.html#at_event)
+* 如需可用來在 Kibana 中分析事件的欄位清單，請參閱 [{{site.data.keyword.cloudaccesstrailshort}} 事件欄位](/docs/services/cloud-activity-tracker/at_event.html#at_event)
 
 
 
@@ -112,8 +117,10 @@ CADF 事件模型包含下列元件：
 
 {{site.data.keyword.cloudaccesstrailshort}} 服務可用於下列地區：
 
+* 德國
+* 雪梨
+* 英國 
 * 美國南部
-* 英國（測試版）
 
 
 ## 服務方案
@@ -121,9 +128,9 @@ CADF 事件模型包含下列元件：
 
 {{site.data.keyword.cloudaccesstrailshort}} 服務提供多種方案。
 
-您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面或指令行，來變更方案。您可以隨時升級或降低您的方案。如需 {{site.data.keyword.Bluemix_notm}} 中之服務方案升級的相關資訊，請參閱[變更方案](/docs/services/cloud-activity-tracker/plan/change_plan.html#change_plan)。 
+您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面或指令行，來變更方案。您可以隨時升級或降低您的方案。如需服務方案升級的相關資訊，請參閱[變更方案](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。 
 
-下表概述每個服務方案中可用的特性：
+下表概述可用的方案：
 
 <table>
     <caption>表 1. 事件汲取、事件保留及匯出事件的功能</caption>
@@ -140,7 +147,7 @@ CADF 事件模型包含下列元件：
 		<td>否</td>
       </tr>
       <tr>
-        <td>進階</td>
+        <td>超值</td>
         <td>是</td>
         <td>可配置的天數。</td>
 		<td>是</td>
@@ -151,20 +158,20 @@ CADF 事件模型包含下列元件：
     <caption>表 2. 管理及檢視事件的功能</caption>
       <tr>
         <th>方案</th>
-		<th>API</th>
-		<th>CLI</th>
+		    <th>API</th>
+		    <th>CLI</th>
         <th>Kibana</th>
       </tr>
       <tr>
         <td>精簡（預設值）</td>
-		<td>否</td>
-		<td>否</td>
+		    <td>否</td>
+		    <td>否</td>
         <td>否</td>
       </tr>
       <tr>
-        <td>進階</td>
-		<td>是</td>
-		<td>是</td>
+        <td>超值</td>
+		    <td>是</td>
+		    <td>是</td>
         <td>是</td>
       </tr>
 </table>
@@ -178,4 +185,4 @@ CADF 事件模型包含下列元件：
 
 * 產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服務會遵循 {{site.data.keyword.IBM_notm}} Cloud 安全原則。如需相關資訊，請參閱 [Trust the security and privacy of IBM Cloud ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}。
 * {{site.data.keyword.cloudaccesstrailshort}} 擷取會擷取變更雲端服務狀態的使用者起始動作。此資訊不提供資料庫或應用程式的直接存取權。
-* 只有獲授權的使用者才能檢視及監視 {{site.data.keyword.cloudaccesstrailshort}} 事件日誌。每一個使用者都是透過 {{site.data.keyword.Bluemix_notm}} 中的唯一 ID 加以識別。
+* 只有獲授權的使用者才能檢視及監視 {{site.data.keyword.cloudaccesstrailshort}} 事件日誌。每一個使用者都是透過其在 {{site.data.keyword.Bluemix_notm}} 中的唯一 ID 加以識別。
