@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html"}
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html" path="services/cloud-activity-tracker"}
 IBM Cloud Activity Tracker
 
     {: .navgroup id="learn"}
@@ -14,6 +14,7 @@ IBM Cloud Activity Tracker
 
     {: .topicgroup}
     Tutorials
+        tutorials/kp.md
         tutorials/manage_events_cli.md
 		
     {: .topicgroup}
@@ -71,3 +72,4 @@ IBM Cloud Activity Tracker
 
     {: .navgroup-end}
     
+
