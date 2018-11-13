@@ -24,7 +24,7 @@ Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applicat
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} offers high-level security governance for your IT resources in the cloud.
-* {{site.data.keyword.cloudaccesstrailshort}} provides a solution for network administrators to capture, store, view, search, and monitor API activity in a single place.
+* {{site.data.keyword.cloudaccesstrailshort}} provides a solution for administrators to capture, store, view, search, and monitor API activity in a single place.
 * {{site.data.keyword.cloudaccesstrailshort}} provides capabilities to download events that you can then use to generate an audit trail report. You might require these reports so that your organization complies with internal regulations and external industry and country regulations.
 
 Compliance with internal policies and industry regulations is a key requirement in any organization's strategy, regardless of where applications run: on-premises, in a hybrid cloud, or in a public cloud. The {{site.data.keyword.cloudaccesstrailshort}} service provides the framework and functionality to monitor API calls and produce the evidence to comply with corporate policies and market industry-specific regulations.

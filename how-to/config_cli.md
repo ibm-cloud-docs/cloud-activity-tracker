@@ -57,16 +57,6 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     ```
     {: codeblock}
     
-    The output looks as follows:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
 
 
 ## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin from a file
@@ -93,17 +83,6 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     ```
     {: codeblock}
     
-    The output looks as follows:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
- 
 
 
 ## Installing the Log Analysis plugin on Linux from a file
@@ -184,17 +163,6 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
     ```
     {: codeblock}
     
-    The output looks as follows:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name          Version   
-    activity-tracker      3.3.0   
-    ```
-    {: screen}
-    
 2. If the plugin is installed, run the `ibmcloud plugin uninstall` to uninstall the CLI plugin.
 
     Run the following command:
@@ -229,16 +197,6 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
     ```
     {: codeblock}
     
-    The output looks as follows:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name             Version   
-    activity-tracker         3.3.0   
-    ```
-    {: screen}
 
 
 
@@ -331,17 +289,7 @@ ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
-The output looks as follows:
-   
-```
-ibmcloud plugin show activity-tracker
-                                  
-Plugin                         activity-tracker   
-Version                        3.3.0   
-SDK Version                       
-Minimal CLI version required   N/A      
-```
-{: screen}
+
 
 
 
