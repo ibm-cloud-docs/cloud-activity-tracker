@@ -74,8 +74,8 @@ The following table lists container platform services that send events to {{site
 
 | Service     | Description | {{site.data.keyword.cloudaccesstrailshort}} events |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}: cluster management events](/docs/containers/container_index.html#container_index)| These events report on actions like cluster creation, deletion, or update. | [Cluster management events ]() |  
-| [{{site.data.keyword.containerlong_notm}}: API server audit events](/docs/containers/container_index.html#container_index)| Kubernetes API server audit events provide chronological information about the sequence of activities that affect a cluster. Each action generates an event | [Kubernetes API server audit events](/docs/containers/cs_at_events.html#at_events) |
+| [{{site.data.keyword.containerlong_notm}}: cluster management events](/docs/containers/container_index.html#container_index)| These events report on actions like cluster creation, deletion, or update. | [Cluster management events ](/docs/containers/cs_at_events.html#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}: API server audit events](/docs/containers/container_index.html#container_index)| Kubernetes API server audit events provide chronological information about the sequence of activities that affect a cluster. Each action generates an event | [Kubernetes API server audit events](/docs/containers/cs_at_events.html#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry/registry_overview.html#registry_overview) | You can use the {{site.data.keyword.registrylong_notm}} service to store and access private Docker images in a highly available and scalable architecture. | [Events generated when interacting with the {{site.data.keyword.registrylong_notm}}](/docs/services/Registry/registry_at_events.html#at_events) | 
 {: caption="Container events" caption-side="top"} 
 
