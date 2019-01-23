@@ -72,15 +72,15 @@ The following table lists the API method that generates an event when they are c
 	  <th>Description</th>
   </tr>
   <tr>
-    <td>billing.account.user.create</td>
+    <td>user-management.user.create</td>
 	  <td>An event is generated when you send an invitation to a user to join an account. </br>The account owner is the only user in the account that can perform this action.</td>
   </tr>
   <tr>
-    <td>billing.user.active</td>
+    <td>user-management.user.active</td>
 	  <td>An event is generated when you activate the user in the account. </br>When the user verifies his email address, the event is generated.</td>
   </tr>
   <tr>
-    <td>billing.account.user.delete</td>
+    <td>user-management.user.delete</td>
 	  <td>An event is generated when you remove a user from the account. </br>The account owner is the only user in the account that can perform this action.</td>
   </tr>
 </table>
