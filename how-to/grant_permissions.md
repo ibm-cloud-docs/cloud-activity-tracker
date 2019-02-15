@@ -30,13 +30,13 @@ Grant a user the following permissions to see account events in a region:
 
 1. *Developer* role in a space of the region where {{site.data.keyword.cloudaccesstrailshort}} is provisioned. 
 
-    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. IAM policy for the {{site.data.keyword.loganalysisshort}} service with *viewer* role in the region. 
 
     Viewer role is the minimum IAM role required. 
 	
-	For more information, see [Granting IAM permisisons](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	For more information, see [Granting IAM permisisons](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
 
 ## Granting permisisons to see space events
@@ -46,7 +46,7 @@ Grant a user the following permission to see space events in a region:
 
 * *Developer* role in the space of the region where {{site.data.keyword.cloudaccesstrailshort}} is provisioned. 
 
-    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
 ## Granting IAM permisisons
@@ -72,7 +72,7 @@ Complete the following steps to grant a user permissions to view events from an 
 	
 3. If the user is a member of the account, select the user name from the list, or click **Manage user** from the *Actions* menu.
 
-    If the user is not a member of the account, see [Inviting users](/docs/iam/iamuserinv.html#iamuserinv).
+    If the user is not a member of the account, see [Inviting users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. In the **Access policies** section, click **Assign access**, then select **Assign access to resources**.
 
@@ -132,7 +132,7 @@ Complete the following steps to grant a user access to view space events:
 	
 3. If the user is a member of the account, select the user name from the list, or click **Manage user** from the *Actions* menu.
 
-    If the user is not a member of the account, see [Inviting users](/docs/iam/iamuserinv.html#iamuserinv).
+    If the user is not a member of the account, see [Inviting users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Select **Cloud Foundry access**, then select the organization.
 

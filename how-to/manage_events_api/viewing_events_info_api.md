@@ -31,7 +31,7 @@ Complete the following steps to view information about the events on a specific 
 
 1. Get a UAA token.
 
-    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Run the following cURL command to get the total number of events that are stored in {{site.data.keyword.cloudaccesstrailshort}} on a specific date.
 
@@ -44,7 +44,7 @@ Complete the following steps to view information about the events on a specific 
 
     * *token* is the UAA token.
     * *$spaceID* represents the UUID of the Cloud Foundry space where you have {{site.data.keyword.cloudaccesstrailshort}} provisioned.
-    * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* and *end* represent a time range where you want to download events. The date format is YYYY-MM-DD. 
     * *AtAccountLevel* indicates the domain where you want to get information about the events.
     * *SearchTime* indicates the hour of the day for which you want information about the events.

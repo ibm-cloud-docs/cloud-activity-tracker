@@ -30,7 +30,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-install_use#install_use).
    
 2. Find out the name of the plugin in the repo. Run the following command:
 
@@ -66,12 +66,12 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud?topic=cloud-cli-install_use#install_use).
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin.
 
-    * For Linux, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Linux](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
-    * For Windows, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
+    * For Linux, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
+    * For Windows, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
     * For Mac OS X, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Mac OS X ](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac).
  
 3. Verify the installation of the CLI plugin.

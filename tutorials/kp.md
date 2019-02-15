@@ -45,7 +45,7 @@ Create an [{{site.data.keyword.Bluemix_notm}} account](https://console.bluemix.n
 
 You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the same region where the Cloud service whose activity you want to monitor is provisioned. After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. 
 
-**Note:** This tutorial shows how to use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}} in the US South region. Therefore, you must provision {{site.data.keyword.cloudaccesstrailshort}} in the US South region. To see information on which region a service is available, see [Services by region](/docs/resources/services_region.html#services_region).
+**Note:** This tutorial shows how to use the {{site.data.keyword.cloudaccesstrailshort}} service to monitor a user's interaction with the Cloud service {{site.data.keyword.keymanagementservicelong_notm}} in the US South region. Therefore, you must provision {{site.data.keyword.cloudaccesstrailshort}} in the US South region. To see information on which region a service is available, see [Services by region](/docs/resources?topic=resources-services_region#services_region).
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.Bluemix_notm}}:
 
@@ -97,7 +97,7 @@ This tutorial shows how to monitor the API activity for the {{site.data.keyword.
 
 Complete the following steps to configure the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.Bluemix_notm}}:
 
-1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect/provision.html#provision).
+1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect?topic=key-protect-provision#provision).
 
 2. Define the {{site.data.keyword.Bluemix_notm}} permissions for the user that you are planning to use to work with keys. 
 
@@ -109,7 +109,7 @@ Complete the following steps to configure the {{site.data.keyword.keymanagements
 ## Step 3: Generate an Activity Tracker event
 {: # step3}
 
-In this step, create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
+In this step, create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect?topic=key-protect-create-standard-keys#create-standard-keys).
 
 * {{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
 * {{site.data.keyword.cloudaccesstrailshort}} events are available in the {{site.data.keyword.cloudaccesstrailshort}} **account domain** that is available in the {{site.data.keyword.Bluemix_notm}} region where the events are generated. 
@@ -121,7 +121,7 @@ In this step, verify through the {{site.data.keyword.Bluemix_notm}} UI that {{si
 
 Complete the following steps to verify that an event has been created:
 
-1. Grant the user permissions to view account events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events) and [Granting permisisons to see account events](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events).
+1. Grant the user permissions to view account events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#account_events) and [Granting permisisons to see account events](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_acc_events).
 
 2. From the {{site.data.keyword.Bluemix_notm}} Dashboard, select the {{site.data.keyword.cloudaccesstrailshort}} service. The service dashboard opens.
 
@@ -137,9 +137,9 @@ Complete the following steps to verify that an event has been created:
 ## Next steps
 {: #next_steps}
 
-Next, use the {{site.data.keyword.cloudaccesstrailshort}} pre-defined Kibana dashboard to monitor and analyze event logs. To launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). By default in Kibana, the space activity logs are displayed through the **ActivityTracker_Space_Dashboard_in_24h** dashboard:
+Next, use the {{site.data.keyword.cloudaccesstrailshort}} pre-defined Kibana dashboard to monitor and analyze event logs. To launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). By default in Kibana, the space activity logs are displayed through the **ActivityTracker_Space_Dashboard_in_24h** dashboard:
 
-You can also use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+You can also use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-viewing_event_status#viewing_event_status).
 
 
 
