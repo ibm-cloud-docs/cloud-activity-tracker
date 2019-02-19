@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -30,9 +30,9 @@ You can set the same retention policy for all spaces in the account or you can c
 
 Complete the following steps to disable a retention policy:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 2. Set the retention period to **-1** to disable the retention period. Run the command:
 
@@ -66,11 +66,11 @@ The output is:
 ## Checking the log retention policy for a space
 {: #check_retention_policy_space}
 
-To get the retention period that is set for a {{site.data.keyword.Bluemix_notm}} space, complete the following steps:
+To get the retention period that is set for a {{site.data.keyword.cloud_notm}} space, complete the following steps:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 2. Get the the retention period. Run the command:
 
@@ -94,11 +94,11 @@ To get the retention period that is set for a {{site.data.keyword.Bluemix_notm}}
 ## Checking the log retention policy for all spaces in an account
 {: #check_retention_policy_account}
 
-To get the retention period that is set for each {{site.data.keyword.Bluemix_notm}} space in an account, complete the following steps:
+To get the retention period that is set for each {{site.data.keyword.cloud_notm}} space in an account, complete the following steps:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
     
 2. Get the the retention period for each space in the account. Run the command:
 
@@ -126,11 +126,11 @@ To get the retention period that is set for each {{site.data.keyword.Bluemix_not
 ## Setting across the account the log retention policy
 {: #set_retention_policy_space}
 
-To set the retention period for a {{site.data.keyword.Bluemix_notm}} account, complete the following steps:
+To set the retention period for a {{site.data.keyword.cloud_notm}} account, complete the following steps:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 2. Set the retention period. Run the command:
 
@@ -170,11 +170,11 @@ The output lists an entry for each space in the account, including information a
 ## Setting the log retention policy for a space
 {: #set_retention_policy_account}
 
-To see the retention period for a {{site.data.keyword.Bluemix_notm}} space, complete the following steps:
+To see the retention period for a {{site.data.keyword.cloud_notm}} space, complete the following steps:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
     
 2. Set the retention period. Run the command:
 

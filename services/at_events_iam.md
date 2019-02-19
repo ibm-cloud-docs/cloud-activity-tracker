@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-
-lastupdated: "2018-07-11"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -18,12 +17,12 @@ lastupdated: "2018-07-11"
 
 
 # IAM events
-{: #at_events}
+{: #at_events_iam}
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with the {{site.data.keyword.iamlong}} (IAM) service in {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
-The {{site.data.keyword.cloudaccesstrailshort}} service records user-initiated activities that change the state of a service in {{site.data.keyword.Bluemix_notm}}. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+The {{site.data.keyword.cloudaccesstrailshort}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
 
 To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
 
@@ -31,7 +30,7 @@ An initiator can be a user, a service, or an application.
 {: tip}
 
 ## Managing access groups events
-{: #access}
+{: #at_events_iam_access}
 
 The following table lists the actions that generate an event:
 
@@ -53,7 +52,7 @@ The following table lists the actions that generate an event:
 
 
 ## Working with service IDs events
-{: #serviceids}
+{: #at_events_iam_serviceids}
 
 The following table lists the actions that generate an event:
 
@@ -66,7 +65,7 @@ The following table lists the actions that generate an event:
 
 
 ## Working with API keys events
-{: #apikeys}
+{: #at_events_iam_apikeys}
 
 The following table lists the actions that generate an event:
 
@@ -81,21 +80,21 @@ The following table lists the actions that generate an event:
 
 
 ## Logging in events
-{: #login}
+{: #at_events_iam_login}
 
 The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-| `iam-identity.user-apikey.login`         | An event is generated when a user logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key. |  
-| `iam-identity.serviceid-apikey.login`    | An event is generated when an initiator logs in to the {{site.data.keyword.Bluemix_notm}} by using an API key that is associated with a service ID. |  
+| `iam-identity.user-apikey.login`         | An event is generated when a user logs in to the {{site.data.keyword.cloud_notm}} by using an API key. |  
+| `iam-identity.serviceid-apikey.login`    | An event is generated when an initiator logs in to the {{site.data.keyword.cloud_notm}} by using an API key that is associated with a service ID. |  
 | `iam-identity.user-identitycookie.login` | This is an event that is generated when an initiator requests a new identity cookie to run an action. |
 | `iam-identity.user-refreshtoken.login`   | This is an event that is generated when the initiator logs in to the IBM Cloud , or when an initiator that has already logged in to the IBM Cloud requests a new refresh token to run an action. |
 {: caption="Table 4. User login actions" caption-side="top"} 
 
 
 ## Managing policies events
-{: #policies}
+{: #at_events_iam_policies}
 
 The following table lists the actions that generate an event:
 
@@ -108,7 +107,7 @@ The following table lists the actions that generate an event:
 
 
 ## Viewing events
-{: #ui}
+{: #at_events_iam_ui}
 
 {{site.data.keyword.cloudaccesstrailshort}} events are available in the **US-South** region **account domain**.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Endpoints are different per {{site.data.keyword.Bluemix}} region.
 {:shortdesc}
 
-## {{site.data.keyword.Bluemix_notm}} endpoints
+## {{site.data.keyword.cloud_notm}} endpoints
 {: #ibm_cloud_endpoints}
 
-The following table lists the URLs per region that you must use to log in to the {{site.data.keyword.Bluemix_notm}}:
+The following table lists the URLs per region that you must use to log in to the {{site.data.keyword.cloud_notm}}:
 	
 <table>
-	<caption>Table 1. {{site.data.keyword.Bluemix_notm}} endpoints</caption>
+	<caption>Table 1. {{site.data.keyword.cloud_notm}} endpoints</caption>
 	<tr>
 	  <th>Region</th>
 	  <th>URL</th>

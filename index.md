@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-11-06"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -29,18 +29,18 @@ The following figure shows the different components and actions that occur when 
 **Note:** This getting started will show you how to get up and running to monitor Cloud activity in us-south.
 
 ## Before you begin
-{: #prereqs}
+{: #index_prereqs}
 
 * Read about the {{site.data.keyword.cloudaccesstrailshort}} service. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov).
-* Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#regions).
-* Get a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. 
+* Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
+* Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
-    To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
+    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
 
 
 
 ## Step 1: Provision {{site.data.keyword.cloudaccesstrailshort}}
-{: #step1}
+{: #index_step1}
 
 Consider the following information to choose where to provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service:
 
@@ -54,15 +54,15 @@ Consider the following information to choose where to provision an instance of t
 
 * To provision an instance, your userID must have **developer role** in the space where you plan to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 
-Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.Bluemix_notm}}:
+Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.cloud_notm}}:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}}.
+1. Log in to the {{site.data.keyword.cloud_notm}}.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
     
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available on the {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available on the {{site.data.keyword.cloud_notm}} opens.
 
 3. Select the **Security and Identity** category to filter the list of services that is displayed.
 
@@ -98,16 +98,16 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
     By default, the **Lite** plan is selected.
 
-	For more information, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
+	For more information, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
 
 7. Click **Create** to provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the space where you are logged in.
    
 
 
 ## Step 2: Grant users access to monitor events
-{: #step2}
+{: #index_step2}
 
-To view events, you must have access permissions in the {{site.data.keyword.Bluemix_notm}}. Permissions vary depending on whether you want to view global account events, events for a service that is provisioned in the context of a resource group, or events for a service that is provisioned in the context of a CF org and space. 
+To view events, you must have access permissions in the {{site.data.keyword.cloud_notm}}. Permissions vary depending on whether you want to view global account events, events for a service that is provisioned in the context of a resource group, or events for a service that is provisioned in the context of a CF org and space. 
 
 **To monitor global account actions** and **to monitor a service that is provisioned in the context of a resource group**, consider the following information:
 
@@ -122,13 +122,13 @@ To view events, you must have access permissions in the {{site.data.keyword.Blue
 **Note: To grant a user an IAM policy, you must be the account owner or an administrator of the {{site.data.keyword.loganalysisshort}} service.**
 
 ### Grant users access to monitor account domain events
-{: #acc}
+{: #index_acc}
 
-Complete the following steps to grant a user an IAM policy from the {{site.data.keyword.Bluemix_notm}} UI:
+Complete the following steps to grant a user an IAM policy from the {{site.data.keyword.cloud_notm}} UI:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}} console.
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
 
-    Open a web browser and launch the {{site.data.keyword.Bluemix_notm}} dashboard: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
 
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 3. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
@@ -140,15 +140,15 @@ Complete the following steps to grant a user an IAM policy from the {{site.data.
 9. Click Assign.
 
 ### Grant users access to monitor space domain events
-{: #space}
+{: #index_space}
 
-To grant a user a developer role in a space from the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To grant a user a developer role in a space from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}} console.
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
 
-    Open a web browser and launch the {{site.data.keyword.Bluemix_notm}} dashboard: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
 	
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 
@@ -171,7 +171,7 @@ To grant a user a developer role in a space from the {{site.data.keyword.Bluemix
 
 
 ## Step 3: Generate {{site.data.keyword.cloudaccesstrailshort}} events
-{: #step3}
+{: #index_step3}
 
 After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. To learn more about the services that you can monitor with {{site.data.keyword.cloudaccesstrailshort}}, including information on the actions that generate an {{site.data.keyword.cloudaccesstrailshort}} event, see [Cloud services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services).
 
@@ -180,9 +180,9 @@ After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, ev
 To learn how to generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp).
 
 ## Step 4: Viewing events
-{: #step4}
+{: #index_step4}
 
-You can monitor {{site.data.keyword.cloudaccesstrailshort}} events in the {{site.data.keyword.Bluemix_notm}} UI. You can also upgrade your plan to the premium plan to monitor events through Kibana. 
+You can monitor {{site.data.keyword.cloudaccesstrailshort}} events in the {{site.data.keyword.cloud_notm}} UI. You can also upgrade your plan to the premium plan to monitor events through Kibana. 
 
 **To monitor global account actions** and **to monitor a service that is provisioned in the context of a resource group**, consider the following information:
 
@@ -194,7 +194,7 @@ You can monitor {{site.data.keyword.cloudaccesstrailshort}} events in the {{site
 
     Events for a service are collected in the account domain of the region where an instance of this service is provisioned.
 
-* The account owner can view events either through the {{site.data.keyword.Bluemix_notm}} UI or in Kibana.
+* The account owner can view events either through the {{site.data.keyword.cloud_notm}} UI or in Kibana.
 * Other users can only view account domain events through Kibana. 
 
 
@@ -202,7 +202,7 @@ You can monitor {{site.data.keyword.cloudaccesstrailshort}} events in the {{site
 
 * Events are collected in a space domain. 
 * Each CF space has an {{site.data.keyword.cloudaccesstrailshort}} space domain associated. 
-* You can view events either through the {{site.data.keyword.Bluemix_notm}} UI or in Kibana.
+* You can view events either through the {{site.data.keyword.cloud_notm}} UI or in Kibana.
 
 The following table defines the {{site.data.keyword.cloudaccesstrailshort}} domain where you must monitor events:
 
@@ -215,15 +215,15 @@ The following table defines the {{site.data.keyword.cloudaccesstrailshort}} doma
 
 To view events, you can choose one of the following options:
 
-* [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#account_view_account) 
-* [Navigating to the Activity Tracker dashboard to monitor cloud activity in a space](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#account_view_space) 
+* [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) 
+* [Navigating to the Activity Tracker dashboard to monitor cloud activity in a space](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
 * [Navigating to Kibana from a web browser](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana).
 
-To view events that you generate by completing the steps in the tutorial, choose [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#account_view_account). If you are not the account owner, upgrade the service plan, and check that you have the correct access permissions to view events. 
+To view events that you generate by completing the steps in the tutorial, choose [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account). If you are not the account owner, upgrade the service plan, and check that you have the correct access permissions to view events. 
 
 
 ## Next steps
-{: #next_steps}
+{: #index_next_steps}
 
 Use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Managing events by using the Activity Tracker CLI](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2).
 

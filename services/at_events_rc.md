@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-
-lastupdated: "2018-10-08"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -18,17 +17,17 @@ lastupdated: "2018-10-08"
 
 
 # Service instance events  
-{: #at_events}
+{: #at_events_rc}
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with the {{site.data.keyword.Bluemix}} services. 
 {:shortdesc}
 
-The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.Bluemix_notm}}. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
 
 To get started monitoring your user's actions, see [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
 
 ## Events for provisioning and managing service instances
-{: #provision}
+{: #at_events_rc_provision}
 
 The following table lists the API methods that generate an event when they are called:
 
@@ -54,7 +53,7 @@ The following table lists the API methods that generate an event when they are c
 
 
 ##  Events for managing API keys that are associated to a service instance
-{: #keys}
+{: #at_events_rc_keys}
 
 The following table lists the API methods that generate an event when they are called:
 
@@ -75,7 +74,7 @@ The following table lists the API methods that generate an event when they are c
 </table>
 
 ##  Events for binding a service instance to an app
-{: #bind}
+{: #at_events_rc_bind}
 
 The following table lists the API methods that generate an event when they are called:
 
@@ -99,10 +98,10 @@ The following table lists the API methods that generate an event when they are c
 
 
 ## Where to look for the events
-{: #ui}
+{: #at_events_rc_ui}
 
 {{site.data.keyword.cloudaccesstrailshort}} events are available in the **US-South** region **account domain**.
 
-To view these events, you must provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the **US-South** region. Then, you must open the {{site.data.keyword.cloudaccesstrailshort}} UI, and change to the account domain to see events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events).
+To view these events, you must provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the **US-South** region. Then, you must open the {{site.data.keyword.cloudaccesstrailshort}} UI, and change to the account domain to see events. For more information, see [Viewing account events](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events).
 
 

@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -60,11 +59,11 @@ To grant a user an IAM role, consider the following information:
 
 Complete the following steps to grant a user permissions to view events from an account domain:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}} console.
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
 
-    Open a web browser and launch the {{site.data.keyword.Bluemix_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
 	
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. From the menu bar, click **Manage > Account > Users**. 
 
@@ -120,11 +119,11 @@ To grant a user a CF role, consider the following information:
 
 Complete the following steps to grant a user access to view space events:
 
-1. Log in to the {{site.data.keyword.Bluemix_notm}} console.
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
 
-    Open a web browser and launch the {{site.data.keyword.Bluemix_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
 	
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. From the menu bar, click **Manage > Account > Users**. 
 

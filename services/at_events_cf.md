@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-
-lastupdated: "2018-07-30"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -27,12 +26,12 @@ Use the {{site.data.keyword.cloudaccesstrailfull}} service to track interaction 
 The following list outlines the different core platform tasks that send events to the {{site.data.keyword.cloudaccesstrailshort}} service: 
 
 * Provisioning a service, removing a service, and changing the name of a service.
-* Granting, updating, and revoking Cloud Foundry roles to users in the account.
+* Granting, updating, and revoking Cloud Foundry space roles to users in the account.
 * Creating a platform API key, renaming a platform key, and deleting a platform key.
 
 
 ## Events generated when interacting with catalog services
-{: #catalog}
+{: #cf_catalog}
 
 When you provision a service, remove a service, and change the name of a service, an event is generated and sent to the space domain in {{site.data.keyword.cloudaccesstrailshort}} that is associated with the Cloud Foundry space where the service is available in the account. 
 
@@ -64,11 +63,11 @@ The following table lists the catalog actions that generate events:
  	
 
 ## Events generated when managing Cloud Foundry roles in the account
-{: #cfroles} 
+{: #cf_cfroles} 
 
 When you grant or revoke (delete) a Cloud Foundry role to a user in the account, an event is generated and sent to the space domain in {{site.data.keyword.cloudaccesstrailshort}} that is associated with the Cloud Foundry space where the role is either granted or revoked. 
 
-For example, you grant user A in space B in the us-south region a *manager* role. An event is generated. To see the event, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in us-south, in the same space where you are managing the user's CF permissions. Then, you can see the event through the {{site.data.keyword.cloudaccesstrailshort}} service UI.
+For example, you grant user A in space B in the us-south region a *space manager* role. An event is generated. To see the event, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in us-south, in the same space where you are managing the user's CF permissions. Then, you can see the event through the {{site.data.keyword.cloudaccesstrailshort}} service UI.
 
 
 The following table lists the actions that generate {{site.data.keyword.cloudaccesstrailshort}} events when you manage a user's Cloud Foundry roles:

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ Use the {{site.data.keyword.cloudaccesstrailshort}} API to delete events that ar
 **Note:** Although you can delete events manually by using the API call, consider setting the retention policy to delete events automatically. For more information, see [Configuring the events retention policy](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
 
 ## Deleting events by using cURL
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 Complete the following steps to delete events that are available in a space domain:
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## NodeJS example of how to delete events
-{: #node}
+{: #deleting_events_api_node}
 
 This is sample code that you can use to test how to delete events:
 

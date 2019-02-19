@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-09-07"
 # Getting a UAA token
 {: #auth_uaa}
 
-Use {{site.data.keyword.Bluemix}} UAA to get an authentication token that you can use to work with the {{site.data.keyword.cloudaccesstraillong}} service. You can obtain the authentication token by using the {{site.data.keyword.Bluemix_notm}} CLI, or by using APIs.
+Use {{site.data.keyword.Bluemix}} UAA to get an authentication token that you can use to work with the {{site.data.keyword.cloudaccesstraillong}} service. You can obtain the authentication token by using the {{site.data.keyword.cloud_notm}} CLI, or by using APIs.
 {:shortdesc}
 
 Consider the following information:
@@ -33,15 +32,15 @@ Consider the following information:
 
 To get the UAA token, complete the following steps:
 
-1. (Pre-req) Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. (Pre-req) Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
    If the CLI is installed, continue with the next step.
     
-2. Log in to the {{site.data.keyword.Bluemix_notm}}. 
+2. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.Bluemix_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 3. Run the `ibmcloud iam oauth-tokens` command to get the UAA token.
 

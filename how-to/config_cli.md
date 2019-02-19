@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,18 +19,18 @@ lastupdated: "2018-09-07"
 # Configuring the Activity Tracker CLI
 {: #config_cli}
 
-The {{site.data.keyword.cloudaccesstraillong}} service includes a command line interface (CLI) that you can use to manage your events in the cloud. You can use the {{site.data.keyword.Bluemix_notm}} plugin to view the status of the events, to download events, and to configure the events retention policy. The CLI offers different types of help: general help to learn about the CLI and supported commands, command help to learn how to use a command, or subcommand help to learn how to use a subcommands for a command.
+The {{site.data.keyword.cloudaccesstraillong}} service includes a command line interface (CLI) that you can use to manage your events in the cloud. You can use the {{site.data.keyword.cloud_notm}} plugin to view the status of the events, to download events, and to configure the events retention policy. The CLI offers different types of help: general help to learn about the CLI and supported commands, command help to learn how to use a command, or subcommand help to learn how to use a subcommands for a command.
 {:shortdesc}
 
 
-## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin from the {{site.data.keyword.Bluemix_notm}} repo
+## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin from the {{site.data.keyword.cloud_notm}} repo
 {: #install_cli_repo}
 
 To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the following steps:
 
-1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
 2. Find out the name of the plugin in the repo. Run the following command:
 
@@ -64,9 +64,9 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the following steps:
 
-1. Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin.
 
@@ -85,14 +85,14 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     
 
 
-## Installing the Log Analysis plugin on Linux from a file
+## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Linux from a file
 {: #install_cli_linux}
 
-Complete the following steps to install the Log Collection plugin on Linux:
+Complete the following steps to install the plugin on Linux:
 
 1. Install the plugin.
 
-    Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	* Select the platform value: **linux64**. 
 	
@@ -108,12 +108,12 @@ Complete the following steps to install the Log Collection plugin on Linux:
 
 
 
-## Installing the Log Analysis plugin on Windows from a file
+## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows from a file
 {: #install_cli_windows}
 
-Complete the following steps to install the Log Collection plugin on Windows:
+Complete the following steps to install the plugin on Windows:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Select the platform value: **win64**. 
 	2. Click **Save file**.  
@@ -127,12 +127,12 @@ Complete the following steps to install the Log Collection plugin on Windows:
 
 	
 
-## Installing the Log Analysis plugin on Mac OS X from a file
+## Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Mac OS X from a file
 {: #install_cli_mac}
 
-Complete the following steps to install the Log Collection plugin on Mac OS X:
+Complete the following steps to install the plugin on Mac OS X:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.Bluemix_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plugin (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Select the platform value: **osx**. 
 	2. Click **Save file**.  
@@ -146,7 +146,7 @@ Complete the following steps to install the Log Collection plugin on Mac OS X:
 
 	
 	
-## Uninstalling the Log Analysis CLI
+## Uninstalling the {{site.data.keyword.cloudaccesstrailshort}} CLI
 {: #uninstall_cli}
 
 To uninstall the CLI, delete the plugin.
@@ -173,7 +173,7 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
     {: codeblock}
   
 
-## Updating the Log Analysis CLI from the repo
+## Updating the {{site.data.keyword.cloudaccesstrailshort}} CLI from the repo
 {: #update_cli}
 
 To update the CLI, run the *ibmcloud plugin update* command.
@@ -207,7 +207,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
 
 To get general information about the CLI and what commands are supported, complete the followimg steps:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.cloud_notm}}. 
     
 2. List information about the supported commands and the CLI. Run the following command:
 
@@ -223,7 +223,7 @@ To get general information about the CLI and what commands are supported, comple
 
 To get help on how to use a command, complete the followimg steps:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.cloud_notm}}. 
     
 2. Get the list of supported comnmands and identify the one that you need. Run the command:
 
@@ -248,7 +248,7 @@ To get help on how to use a command, complete the followimg steps:
 
 A command can have subcommands. To get help on subcommands, complete the followimg steps:
 
-1. Log in to a region, organization, and space in the {{site.data.keyword.Bluemix_notm}}. 
+1. Log in to a region, organization, and space in the {{site.data.keyword.cloud_notm}}. 
     
 2. Get the list of supported comnmands and identify the one that you need. Run the command:
 

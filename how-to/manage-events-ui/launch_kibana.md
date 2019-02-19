@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-27"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -27,37 +27,35 @@ You can launch Kibana from the {{site.data.keyword.cloudaccesstrailshort}} UI in
 ##  Navigating to Kibana from the dashboard of the Activity Tracker service
 {: #launch_Kibana_from_at}
 
-The activity logs that Kibana displays includes events for all the resources that are deployed within the space of the {{site.data.keyword.Bluemix_notm}} organization that you are logged in and where the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned.
+The activity logs that Kibana displays includes events for all the resources that are deployed within the space of the {{site.data.keyword.cloud_notm}} organization that you are logged in and where the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned.
 
 Complete the following steps to launch Kibana from the dashboard of the {{site.data.keyword.cloudaccesstrailshort}} service:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
     
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Select the {{site.data.keyword.cloudaccesstrailshort}} service from the {{site.data.keyword.Bluemix_notm}} dashboard. 
+2. Select the {{site.data.keyword.cloudaccesstrailshort}} service from the {{site.data.keyword.cloud_notm}} dashboard. 
     
 3. Select the **Managed** tab.
 
-4. Click **Advanced view**. 
+4. To view space events, select **Space logs** for the *View Logs* field. **Note:** This is the default view. Then, click **View in Kibana**. 
 
-    The Kibana dashboard opens.
+    The Kibana dashboard opens. The **ActivityTracker_Space_Dashboard_in_24h** dashboard loads with a time filter set to the last 24 hours.
 
-By default, the **ActivityTracker_Space_Dashboard_in_24h** dashboard loads, and a time filter set to the last 24 hours. 
+5. To view account events, select **Account logs** for the *View Logs* field. Then, click **View in Kibana**. 
 
-
+    The **ActivityTracker_Account_Dashboard_in_24h** dashboard loads with a time filter set to the last 24 hours.
 	
 	
 ##  Navigating to Kibana from a web browser
 {: #launch_Kibana_from_browser}
 
-The log information that Kibana displays includes events for all the resources that are deployed within the space of the {{site.data.keyword.Bluemix_notm}} organization that you are logged in.
-
 Complete the following steps to launch Kibana from a browser:
 
-1. Open a web browser and launch Kibana. Then, log in to the Kibana user interface.
+1. Open a web browser and launch Kibana in the region where you want to monitor events. Then, log in to the Kibana user interface.
     
     For example, the following table lists the URL that you must use to launch Kibana per region:
       
@@ -87,19 +85,18 @@ Complete the following steps to launch Kibana from a browser:
 	
 	The Discover page in Kibana opens.
 	
-2. Verify that you are logged in to the {{site.data.keyword.Bluemix_notm}} account, organization, and space where you want to view, and analyze activity logs.
+2. Verify that you are logged in to the {{site.data.keyword.cloud_notm}} account where you want to view, and analyze activity events.
 
-    You can see events and logs that are available in the space where you are logged in.
+3. Select a **Domain**.
 
-3. To filter for events, select **Open** from the menu bar.
+    Select **Account** to view events in the account domain.
+    Select **Space** to view events in a space domain.
 
-    The list of saved dashboards is displayed.
-	
-4. To view the events for the space where you are logged in, select **ActivityTracker_Space_Dashboard_in_24h**.
+The events that you see in Kibana correspond to the events that are hosted in the domain selected in the region where you have launched Kibana.
 
 
 ## Limitations
-{: #limitations}
+{: #launch_kibana_limitations}
 
  Due to limitations in Kibana, you cannot have multiple Kibana browser tabs open at once in the same session to view different spaces or accounts. Therefore, if you have two or more sessions open at once, and change the domain from space to account or viceversa, you may experience problems.
 	
