@@ -31,8 +31,8 @@ The following figure shows the different components and actions that occur when 
 ## Before you begin
 {: #index_prereqs}
 
-* Read about the {{site.data.keyword.cloudaccesstrailshort}} service. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov).
-* Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
+* Read about the {{site.data.keyword.cloudaccesstrailshort}} service. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
+* Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov_regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
     To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
@@ -98,7 +98,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
     By default, the **Lite** plan is selected.
 
-	For more information, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
+	For more information, see [Service plans](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov_plan).
 
 7. Click **Create** to provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the space where you are logged in.
    
@@ -173,11 +173,11 @@ To grant a user a developer role in a space from the {{site.data.keyword.cloud_n
 ## Step 3: Generate {{site.data.keyword.cloudaccesstrailshort}} events
 {: #index_step3}
 
-After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. To learn more about the services that you can monitor with {{site.data.keyword.cloudaccesstrailshort}}, including information on the actions that generate an {{site.data.keyword.cloudaccesstrailshort}} event, see [Cloud services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services).
+After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. To learn more about the services that you can monitor with {{site.data.keyword.cloudaccesstrailshort}}, including information on the actions that generate an {{site.data.keyword.cloudaccesstrailshort}} event, see [Cloud services](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-cloud_services#cloud_services).
 
-**Note:** For a user to generate {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} events, the user must have access to Infrastructure resources in the IBM Cloud Console. For more information, see [Monitoring {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi).
+**Note:** For a user to generate {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} events, the user must have access to Infrastructure resources in the IBM Cloud Console. For more information, see [Monitoring {{site.data.keyword.BluVirtServers_short}} and {{site.data.keyword.baremetal_short}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi).
 
-To learn how to generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp).
+To learn how to generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-kp#kp).
 
 ## Step 4: Viewing events
 {: #index_step4}
@@ -215,17 +215,17 @@ The following table defines the {{site.data.keyword.cloudaccesstrailshort}} doma
 
 To view events, you can choose one of the following options:
 
-* [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) 
-* [Navigating to the Activity Tracker dashboard to monitor cloud activity in a space](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
-* [Navigating to Kibana from a web browser](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana).
+* [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui_account_view_account) 
+* [Navigating to the Activity Tracker dashboard to monitor cloud activity in a space](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui_account_view_space) 
+* [Navigating to Kibana from a web browser](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana).
 
-To view events that you generate by completing the steps in the tutorial, choose [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account). If you are not the account owner, upgrade the service plan, and check that you have the correct access permissions to view events. 
+To view events that you generate by completing the steps in the tutorial, choose [Navigating to the Activity Tracker dashboard to monitor cloud activity in the account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui_account_view_account). If you are not the account owner, upgrade the service plan, and check that you have the correct access permissions to view events. 
 
 
 ## Next steps
 {: #index_next_steps}
 
-Use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Managing events by using the Activity Tracker CLI](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2).
+Use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Managing events by using the Activity Tracker CLI](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2).
 
 
 

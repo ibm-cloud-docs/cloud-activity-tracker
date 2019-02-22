@@ -94,7 +94,7 @@ To view events that are available through an account domain, you must provision 
 
 To view events that are available through a space doamin, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space  where you want to monitor API activity.
 
-To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 
 
@@ -103,12 +103,12 @@ To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} servic
 
 You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}, or by using Kibana, an open-source tool. You can monitor events that are available in a specific space or at the account level.
 
-You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui).
 
 You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. * **Note:** This feature is available for **Premium** plan users.
 
-* For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
-* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker/at_event.html#at_event)
+* For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). 
+* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
 
 
 
@@ -128,7 +128,7 @@ The {{site.data.keyword.cloudaccesstrailshort}} service is available in the foll
 
 The {{site.data.keyword.cloudaccesstrailshort}} service provides multiple plans.
 
-You can change a plan through the {{site.data.keyword.cloud_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+You can change a plan through the {{site.data.keyword.cloud_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan). 
 
 The following table outlines the plans that are available:
 

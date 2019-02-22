@@ -55,7 +55,7 @@ Consider the following information:
 
 If you change from a paid plan to the standard or lite plan, events that are in the long-term storage repository will be deleted in about one day.
 
-At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Contacting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

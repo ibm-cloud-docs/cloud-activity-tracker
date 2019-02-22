@@ -25,12 +25,12 @@ Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailsh
 
 Complete the following steps:
 
-1. [Provision the {{site.data.keyword.keymanagementservicelong_notm}} and generate events](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
-2. [Get information about stored events (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
-2. [Specify which logs to download by creating a session (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
-3. [Get the actual log data (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
-4. [Delete the session after the download completes (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
-5. [Manually delete logs that are not required (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
+1. [Provision the {{site.data.keyword.keymanagementservicelong_notm}} and generate events](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step1)
+2. [Get information about stored events (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step2)
+2. [Specify which logs to download by creating a session (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step3)
+3. [Get the actual log data (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step4)
+4. [Delete the session after the download completes (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step5)
+5. [Manually delete logs that are not required (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2_step6)
 
 
 ## Assumptions
@@ -38,7 +38,7 @@ Complete the following steps:
 
 1. You have an {{site.data.keyword.cloud_notm}} user ID that has developer permissions to work in a space of a {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.cloudaccesstrailshort}} service is provisoned. 
 
-    For more information on how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+    For more information on how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 2. You have provisioned an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with a premium plan.
 
@@ -46,13 +46,13 @@ Complete the following steps:
 
 3. You have installed the {{site.data.keyword.cloudaccesstrailshort}} CLI in your local system. This is required for you to be able to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command line. 
 
-    For more information about installing the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Configuring the {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
+    For more information about installing the {{site.data.keyword.cloudaccesstrailshort}} CLI, see [Configuring the {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli).
 
 4. You have logged in to {{site.data.keyword.cloud_notm}} through the command line. For this tutorial, run the following commands from a terminal: 
 
-    `ibmcloud login -a api.ng.bluemix.net` to log in to the us-south region. For more information, see [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
+    `ibmcloud login -a api.ng.bluemix.net` to log in to the us-south region. For more information, see [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login).
     
-    `ibmcloud target -o OrgName -s SpaceName` to set the target organization and space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisoned. For more information, see [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target).
+    `ibmcloud target -o OrgName -s SpaceName` to set the target organization and space where the {{site.data.keyword.cloudaccesstrailshort}} service is provisoned. For more information, see [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target).
 
 
 ## Step 1: Provision the IBM Key Protect service and generate events 
@@ -60,7 +60,7 @@ Complete the following steps:
 	
 Complete the following steps to provision the {{site.data.keyword.keymanagementserviceshort}} service in the {{site.data.keyword.cloud_notm}} and generate events:
 
-1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect/provision.html#provision).
+1. Provision an instance of the {{site.data.keyword.keymanagementserviceshort}} service in the US South region. For more information, see [Provisioning from the IBM Cloud console](/docs/services/key-protect?topic=key-protect-provision#provision).
 
 2. Define the {{site.data.keyword.cloud_notm}} permissions for the user that you are planning to use to work with keys. 
 
@@ -68,7 +68,7 @@ Complete the following steps to provision the {{site.data.keyword.keymanagements
 	* A user needs an IAM policy with a service role set to *manager* to be able to delete keys.
 	* A user needs an IAM policy with a service role set to *reader* to be able to see keys. 
 
-3. Create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
+3. Create a security key by using the {{site.data.keyword.keymanagementserviceshort}} service to generate {{site.data.keyword.cloudaccesstrailshort}} event data. For more information, see [Creating new keys](/docs/services/key-protect?topic=key-protect-create-standard-keys#create-standard-keys).
 
 {{site.data.keyword.cloudaccesstrailshort}} events are generated as a result of creating a key.
 
@@ -162,7 +162,7 @@ The important part of the command's output is the session `Id`. It is referenced
 
 To get information about existing sessions, type `ibmcloud at session list`.
 
-To learn more about sessions and the `ibmcloud at session create` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#session_create).
+To learn more about sessions and the `ibmcloud at session create` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#session_create).
 
 Use `ibmcloud at session help create` to get help from the command line.
 
@@ -193,7 +193,7 @@ Download Successful
 
 The progress indicator moves from 0 to 100% as the events download.
 
-To learn more about the `ibmcloud at download` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#download).
+To learn more about the `ibmcloud at download` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#download).
 
 Use `ibmcloud at help download` to get help from the command line.
 
@@ -225,7 +225,7 @@ $ ibmcloud at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 ```
 {: screen}
 
-To learn more about the `ibmcloud at session delete` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#session_delete).
+To learn more about the `ibmcloud at session delete` command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#session_delete).
 
 Use `ibmcloud at session help delete` to get help from the command line.
 
@@ -243,10 +243,10 @@ Deleted successfully
 ```
 {: screen}
 
-To learn more about the `ibmcloud at delete`command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete).
+To learn more about the `ibmcloud at delete`command, refer to the [CLI reference](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#delete).
 
 Use `ibmcloud at help delete` to get help from the command line.
 
-**Note:** To delete events automatically, you can set a retention policy by using the CLI command `ibmcloud at option`. For more information, see [CLI reference](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#option)
+**Note:** To delete events automatically, you can set a retention policy by using the CLI command `ibmcloud at option`. For more information, see [CLI reference](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#option)
 
 

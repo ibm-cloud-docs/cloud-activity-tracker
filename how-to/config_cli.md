@@ -70,8 +70,8 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 
 2. Install the {{site.data.keyword.cloudaccesstrailshort}} plugin.
 
-    * For Linux, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Linux](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
-    * For Windows, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
+    * For Linux, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
+    * For Windows, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
     * For Mac OS X, see [Installing the {{site.data.keyword.cloudaccesstrailshort}} plugin on Mac OS X ](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac).
  
 3. Verify the installation of the CLI plugin.

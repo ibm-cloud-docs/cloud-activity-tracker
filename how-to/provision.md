@@ -71,7 +71,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
     By default, the **free** plan is set.
 
-    For more information, see [Service plans](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
+    For more information, see [Service plans](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
 	
 7. Click **Create** to provision the {{site.data.keyword.cloudaccesstrailshort}} service in the {{site.data.keyword.cloud_notm}} space where you are logged in.
   
@@ -90,7 +90,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
     
 2. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 3. Run the `ibmcloud service create` command to provision an instance.
 
@@ -102,7 +102,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 	Where
 	
 	* service_name is the name of the service, that is, **accessTrail**.
-	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
+	* service_plan is the service plan name. For a list of plans, see [Service plans](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov_plan).
 	* service_instance_name is the name that you want to use for the new service instance that you create.
 
 	For example, to create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service with the standard plan, run the following command:
