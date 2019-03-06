@@ -5,7 +5,7 @@
 IBM Cloud Activity Tracker
 
     {: .navgroup id="learn"}
-    getting-started.md
+    index.md
     activity_tracker_ov.md
     at_event.md
     cloud_services.md
@@ -65,11 +65,12 @@ IBM Cloud Activity Tracker
         services/at_events_iam.md
         services/at_events_acc_mgt.md
         services/at_events_rc.md
+        services/at_events_sl.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
     gettinghelp.md
-    index.md
+
     {: .navgroup-end}
     
 
