@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, overview
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# About
+# About {{site.data.keyword.cloudaccesstrailshort}}
 {: #activity_tracker_ov}
 
-Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applications interact with the {{site.data.keyword.Bluemix}} services. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor for abnormal activity, and comply with regulatory audit requirements. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard.
+Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how applications interact with the {{site.data.keyword.cloud_notm}} services. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor for abnormal activity, and comply with regulatory audit requirements. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard.
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} offers high-level security governance for your IT resources in the cloud.
@@ -42,7 +48,7 @@ For example, you can use the {{site.data.keyword.cloudaccesstrailshort}} activit
 ## Collecting events
 {: #activity_tracker_ov_collect}
 
-The {{site.data.keyword.cloudaccesstrailshort}} service only captures activity data that is related to API calls and other actions that are made to selected cloud services in the {{site.data.keyword.cloud_notm}}. 
+The {{site.data.keyword.cloudaccesstrailshort}} service captures activity data that is related to API calls and other actions that are made to selected cloud services in the {{site.data.keyword.cloud_notm}}. 
 
 * Events are collected automatically. 
 * Events that are collected in {{site.data.keyword.cloudaccesstrailshort}} comply with the Cloud Auditing Data Federation (CADF) standard. The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
@@ -81,9 +87,9 @@ The CADF event model includes the following components:
 
 Consider the following information when you work with the {{site.data.keyword.cloudaccesstrailshort}} log in the {{site.data.keyword.IBM_notm}} public cloud:
 
-* You can only store audit records for API calls made to resources that run in the {{site.data.keyword.IBM_notm}} public cloud.
+* You can store only audit records for API calls made to resources that run in the {{site.data.keyword.IBM_notm}} public cloud.
 * Only {{site.data.keyword.IBM_notm}} public cloud storage is used to collect events.
-* Information is stored for 3 days. After that, the information is deleted on a first-in first-out basis.
+* Information is stored for 3 days. After that, the information is deleted on a first-in, first-out (FIFO) method.
 * CADF events of type *Activity* are supported by the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 
@@ -92,23 +98,23 @@ Consider the following information when you work with the {{site.data.keyword.cl
 
 To view events that are available through an account domain, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in a Cloud Foundry space in the region where you want to monitor API activity. Only the **account owner** can see account events.
 
-To view events that are available through a space doamin, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space  where you want to monitor API activity.
+To view events that are available through a space domain, you must provision the {{site.data.keyword.cloudaccesstrailshort}} service in the space  where you want to monitor API activity.
 
-To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service , see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+To learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see [Provisioning the {{site.data.keyword.cloudaccesstrailshort}} service](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 
 
-## Analysing activity logs
+## Analyzing activity logs
 {: #activity_tracker_ov_analyze}
 
-You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}, or by using Kibana, an open-source tool. You can monitor events that are available in a specific space or at the account level.
+You can analyze activity logs through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}, or by using Kibana, an open source tool. You can monitor events that are available in a specific space or at the account level.
 
-You can search, analize, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+You can search, analyze, and monitor activity logs for the last 24 hours through the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}. For more information, see [Navigating to the {{site.data.keyword.cloudaccesstrailshort}} UI](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui).
 
-You can search, analize, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. * **Note:** This feature is available for **Premium** plan users.
+You can search, analyze, and monitor activity logs for the last 3 days through Kibana by using the {{site.data.keyword.cloudaccesstrailshort}} Kibana dashboard, or by creating your own custom dashboards. * **Note:** This feature is available for **Premium** plan users.
 
-* For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
-* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker/at_event.html#at_event)
+* For more information on how to launch Kibana, see [Navigating to the Kibana dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). 
+* For a list of fields that you can use to analyze events in Kibana, see [{{site.data.keyword.cloudaccesstrailshort}} event fields](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
 
 
 
@@ -128,7 +134,7 @@ The {{site.data.keyword.cloudaccesstrailshort}} service is available in the foll
 
 The {{site.data.keyword.cloudaccesstrailshort}} service provides multiple plans.
 
-You can change a plan through the {{site.data.keyword.cloud_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+You can change a plan through the {{site.data.keyword.cloud_notm}} UI or through the command line. You can upgrade or reduce your plan at any time. For more information about service plan upgrades, see [Changing the plan](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan). 
 
 The following table outlines the plans that are available:
 
@@ -181,7 +187,7 @@ The following table outlines the plans that are available:
 ## Security
 {: #activity_tracker_ov_security}
 
-Consider the following information about security when working with the {{site.data.keyword.cloudaccesstrailshort}} service:
+Consider the following information about security when you work with the {{site.data.keyword.cloudaccesstrailshort}} service:
 
 * IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
 * The {{site.data.keyword.cloudaccesstrailshort}} service captures user-initiated actions that change the state of Cloud services. The information does not provide direct access to databases or applications.

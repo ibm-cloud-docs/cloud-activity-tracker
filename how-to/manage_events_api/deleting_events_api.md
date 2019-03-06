@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 Use the {{site.data.keyword.cloudaccesstrailshort}} API to delete events that are stored in {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
-**Note:** Although you can delete events manually by using the API call, consider setting the retention policy to delete events automatically. For more information, see [Configuring the events retention policy](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
+**Note:** Although you can delete events manually by using the API call, consider setting the retention policy to delete events automatically. For more information, see [Configuring the events retention policy](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy).
 
 ## Deleting events by using cURL
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ Complete the following steps to delete events that are available in a space doma
 
 1. Get a UAA token.
 
-    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Run the following cURL command to delete events that are stored in {{site.data.keyword.cloudaccesstrailshort}} on a specific date.
 
@@ -45,7 +51,7 @@ Complete the following steps to delete events that are available in a space doma
 
     * *token* is the UAA token.
     * *spaceID* represents the UUID of the Cloud Foundry space where you have {{site.data.keyword.cloudaccesstrailshort}} provisioned.
-    * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* and *end* represent a time range where you want to download events. The date format is YYYY-MM-DD. 
     * *AtAccountLevel* indicates the domain where you want to get information about the events.
     * *SearchTime* indicates the hour of the day for which you want information about the events.
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

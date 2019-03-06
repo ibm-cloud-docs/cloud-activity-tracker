@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,41 +18,43 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Granting permissions to view events
 {: #grant_permissions}
 
-In the {{site.data.keyword.Bluemix}}, you can assign Cloud Foundry roles, IAM roles or both to a user. These roles define the tasks that a user can perform when working with the {{site.data.keyword.cloudaccesstrailshort}} service.  
+In the {{site.data.keyword.cloud}}, you can assign Cloud Foundry roles, IAM roles or both to a user. These roles define the tasks that a user can perform when you work with the {{site.data.keyword.cloudaccesstrailshort}} service.  
 {:shortdesc}
 
-## Granting permisisons to see account events
+## Granting permissions to see account events
 {: #grant_acc_events}
 
 Grant a user the following permissions to see account events in a region:
 
 1. *Developer* role in a space of the region where {{site.data.keyword.cloudaccesstrailshort}} is provisioned. 
 
-    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. IAM policy for the {{site.data.keyword.loganalysisshort}} service with *viewer* role in the region. 
 
     Viewer role is the minimum IAM role required. 
 	
-	For more information, see [Granting IAM permisisons](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	For more information, see [Granting IAM permissions](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
 
-## Granting permisisons to see space events
+## Granting permissions to see space events
 {: #grant_space_events}
 
 Grant a user the following permission to see space events in a region:
 
 * *Developer* role in the space of the region where {{site.data.keyword.cloudaccesstrailshort}} is provisioned. 
 
-    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    For more information, see [Granting a CF role](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
-## Granting IAM permisisons
+## Granting IAM permissions
 {: #grant_iam_policy}
 
 To grant a user an IAM role, consider the following information:
@@ -57,11 +63,9 @@ To grant a user an IAM role, consider the following information:
 
 * When you define a policy, the regions that you specify define the regions where a user is granted access to view account domain events.
 
-Complete the following steps to grant a user permissions to view events from an account domain:
+Complete the following steps to grant a user permission to view events from an account domain:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} console.
-
-    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 	
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -71,7 +75,7 @@ Complete the following steps to grant a user permissions to view events from an 
 	
 3. If the user is a member of the account, select the user name from the list, or click **Manage user** from the *Actions* menu.
 
-    If the user is not a member of the account, see [Inviting users](/docs/iam/iamuserinv.html#iamuserinv).
+    If the user is not a member of the account, see [Inviting users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. In the **Access policies** section, click **Assign access**, then select **Assign access to resources**.
 
@@ -99,7 +103,7 @@ Complete the following steps to grant a user permissions to view events from an 
 	  </tr>
 	  <tr>
 	    <td>Roles</td>
-		<td>Select one or more IAM roles. <br>Valid roles are: *administrator*, *operator*, *editor*, and *viewer*.</td>
+		<td>Select one or more IAM roles. <br>Valid roles are *administrator*, *operator*, *editor*, and *viewer*.</td>
 	  </tr>
      </table>
 	
@@ -119,9 +123,7 @@ To grant a user a CF role, consider the following information:
 
 Complete the following steps to grant a user access to view space events:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} console.
-
-    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 	
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -131,11 +133,11 @@ Complete the following steps to grant a user access to view space events:
 	
 3. If the user is a member of the account, select the user name from the list, or click **Manage user** from the *Actions* menu.
 
-    If the user is not a member of the account, see [Inviting users](/docs/iam/iamuserinv.html#iamuserinv).
+    If the user is not a member of the account, see [Inviting users](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
-4. Select **Cloud Foundry access**, then select the organization.
+4. Select **Cloud Foundry access**. Then select the organization.
 
-    The list of spaces available in that organization are listed.
+    The spaces that are available in that organization is listed.
 
 5. Choose one space. Then, from the menu action, select **Edit space role**.
 

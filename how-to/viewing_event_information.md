@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Viewing event information
@@ -31,8 +37,8 @@ Complete the following steps to view information about the events log:
 
 Log in to the {{site.data.keyword.cloud_notm}}. Complete the following steps:
 
-1. Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}.
-2. Run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+1. Run the [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}.
+2. Run the [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 **Note:** Set the organization and space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
 

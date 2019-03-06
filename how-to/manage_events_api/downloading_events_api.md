@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Downloading events
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Complete the following steps to download events into a local file:
 
 1. Get a UAA token.
 
-    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    For more information, see [Getting a UAA token](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Create a session, where you specify the conditions that define the subset of events that you want to download.
 

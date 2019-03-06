@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Compliance
 {: #compliance}
 
-[The {{site.data.keyword.Bluemix}} provides a Cloud platform and services that are built to IBM's stringent security standards.](/docs/security/compliance.html#compliance). The {{site.data.keyword.cloudaccesstraillong}} service is a DevOps service that is built for the {{site.data.keyword.cloud_notm}}. 
+[The {{site.data.keyword.cloud_notm}} provides a Cloud platform and services that are built to IBM's stringent security standards](/docs/security/compliance.html#compliance). The {{site.data.keyword.cloudaccesstraillong}} service is a DevOps service that is built for the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Consider the following information:
 
 If you change from a paid plan to the standard or lite plan, events that are in the long-term storage repository will be deleted in about one day.
 
-At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+At any time, you can open a support ticket and request that all your data is deleted. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -64,9 +72,9 @@ At any time, you can open a support ticket and request that all your data is del
 
 For more information, see:
 
-[{{site.data.keyword.cloud_notm}} security compliance](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} security compliance](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - {{site.data.keyword.IBM_notm}} official page](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} official page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

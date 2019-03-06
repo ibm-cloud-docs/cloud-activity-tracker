@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, change plan
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -47,7 +53,7 @@ To change your service plan through the CLI, complete the following steps:
 
 1. Log in to the {{site.data.keyword.cloud_notm}}. 
 
-    Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+    Run the [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}, and then, run the [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 	
 2. Run the `ibmcloud service list` command to check your current plan, and to get the {{site.data.keyword.cloudaccesstrailshort}} service name from the list of services that is available in the space. 
 
@@ -78,6 +84,7 @@ To change your service plan through the CLI, complete the following steps:
 	
 	* *service_name* is the name of your service. You can run the `ibmcloud service list` command to get the value.
 	* *new_plan* is the name of the plan.
+	
 	
 	The following table lists the different plans and their supported values:
 	

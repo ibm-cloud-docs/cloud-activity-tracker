@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Downloading events
@@ -29,8 +35,8 @@ Complete the following steps to download events into a local file:
 
 Log in to the {{site.data.keyword.cloud_notm}}. Complete the following steps:
 
-1. Run the [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}.
-2. Run the [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
+1. Run the [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) command to log in to the {{site.data.keyword.cloud_notm}}.
+2. Run the [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) command to set the organization and space where you want to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 **Note:** Set the organization and space where {{site.data.keyword.cloudaccesstrailshort}} is provisioned.
 
@@ -42,7 +48,7 @@ Use the `ibmcloud at status` command to see information about events are availab
 * To get information about events in a space domain, run the command `ibmcloud at status`.
 * To get information about events in the account domain, run the command `ibmcloud at status` with the option `-a`.
 
-For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+For more information, see [Viewing event information](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-viewing_event_status#viewing_event_status).
   
 
 

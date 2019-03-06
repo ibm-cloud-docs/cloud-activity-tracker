@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch Kibana
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Navigating to the Kibana dashboard
+# Opening the Kibana dashboard
 {: #launch_kibana}
 
-You can launch Kibana from the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.Bluemix}}, or directly from a web browser.
+You can launch Kibana from the {{site.data.keyword.cloudaccesstrailshort}} UI in the {{site.data.keyword.cloud_notm}}, or directly from a web browser.
 {:shortdesc}
    
 
-##  Navigating to Kibana from the dashboard of the Activity Tracker service
+##  Opening Kibana from the dashboard of the Activity Tracker service
 {: #launch_Kibana_from_at}
 
 The activity logs that Kibana displays includes events for all the resources that are deployed within the space of the {{site.data.keyword.cloud_notm}} organization that you are logged in and where the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned.
@@ -33,7 +39,7 @@ Complete the following steps to launch Kibana from the dashboard of the {{site.d
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com/login ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com/login ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -50,7 +56,7 @@ Complete the following steps to launch Kibana from the dashboard of the {{site.d
     The **ActivityTracker_Account_Dashboard_in_24h** dashboard loads with a time filter set to the last 24 hours.
 	
 	
-##  Navigating to Kibana from a web browser
+##  Opening Kibana from a web browser
 {: #launch_Kibana_from_browser}
 
 Complete the following steps to launch Kibana from a browser:

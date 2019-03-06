@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -173,7 +177,7 @@ ibmcloud at download [parameters] [arguments...]
 
 <dl>
 <dt>--output value, -o value</dt>
-<dd>(Optional) Sets the path and filename for the local output file where the events are downloaded. <br>The default value is a hyphen (-). <br>Set this parameter to the default value to output logs to standard output.</dd>
+<dd>(Optional) Sets the path and file name for the local output file where the events are downloaded. <br>The default value is a hyphen (-). <br>Set this parameter to the default value to output logs to standard output.</dd>
 </dl>
 
 **Arguments**
@@ -596,7 +600,7 @@ ibmcloud at status [parameters] [arguments...]
   </dd>
   
   <dt>SEARCHABLE</dt>
-  <dd>This field indicates if the events are available for search in Kibana. <br>When the value of the field **SEARCHABLE** is set to *None*, then events are available for download, but you can not anlyze them in Kibana.
+  <dd>This field indicates if the events are available for search in Kibana. <br>When the value of the field **SEARCHABLE** is set to *None*, then events are available for download, but you cannot analyze them in Kibana.
   </dd>
   
 </dl>
