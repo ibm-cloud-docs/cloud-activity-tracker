@@ -59,19 +59,19 @@ Complete the following steps to download events into a local file:
     ```
     {: codeblock}
 
-    where:
+    Where:
     
-    * *token* represents the UAA token value that you obtained in a previous step.
+    *token* represents the UAA token value that you obtained in a previous step.
 
-    * *spaceID* represents the UUID of the Cloud Foundry space where you have {{site.data.keyword.cloudaccesstrailshort}} provisioned.
+    *spaceID* represents the UUID of the Cloud Foundry space where you have {{site.data.keyword.cloudaccesstrailshort}} provisioned.
 
-    * *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* represents the entry point to the service. Each region has a different URL. To get the list of endpoints per region, see [Endpoints](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* and *end* represent a time range where you want to download events. The date format is *YYYY-MM-DD*. 
+    *start* and *end* represent a time range where you want to download events. The date format is *YYYY-MM-DD*. 
 
-    * *AtAccountLevel* indicates if the events to download are in the account domain or in a space domain.
+    *AtAccountLevel* indicates if the events to download are in the account domain or in a space domain.
     
-    * *SearchTime* indicates the hour of the day for which you want to download events.
+    *SearchTime* indicates the hour of the day for which you want to download events.
 
     To create a session to download events from a space domain in the us-south region, set the parameter **AtAccountLevel** to *false*:
 
@@ -103,7 +103,7 @@ Complete the following steps to download events into a local file:
     ```
     {: codeblock}
 
-    where *FILENAME* is the name of the local file where evenst will be downloaded.
+    Where *FILENAME* is the name of the local file where evenst will be downloaded.
 
     For example:
 
