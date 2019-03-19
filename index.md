@@ -35,7 +35,7 @@ The following figure shows the different components and actions that occur when 
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
-    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
+    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login/registration/){:new_window}.
 
 
 
@@ -56,9 +56,7 @@ Consider the following information to choose where to provision an instance of t
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.cloud_notm}}:
 
-1. Log in to the {{site.data.keyword.cloud_notm}}.
-
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -126,9 +124,7 @@ To view events, you must have access permissions in the {{site.data.keyword.clou
 
 Complete the following steps to grant a user an IAM policy from the {{site.data.keyword.cloud_notm}} UI:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} console.
-
-    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 3. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
@@ -144,9 +140,7 @@ Complete the following steps to grant a user an IAM policy from the {{site.data.
 
 To grant a user a developer role in a space from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} console.
-
-    Open a web browser and launch the {{site.data.keyword.cloud_notm}} dashboard: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 	
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 

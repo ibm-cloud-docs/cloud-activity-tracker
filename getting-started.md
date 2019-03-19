@@ -35,16 +35,16 @@ The following figure shows the different components and actions that occur when 
 **Note:** This tutorial shows you how to get up and running to monitor Cloud activity in us-south.
 
 ## Before you begin
-{: #index_prereqs}
+{: #gs_prereqs}
 
 * Read about the {{site.data.keyword.cloudaccesstrailshort}} service. For more information, see [About {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov_regions).
-* Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. [Register here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
+* Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. [Register here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}
 
 
 
 ## Step 1. Provision {{site.data.keyword.cloudaccesstrailshort}}
-{: #index_step1}
+{: #gs_step1}
 
 Consider the following information to choose where to provision an instance of the {{site.data.keyword.cloudaccesstrailshort}} service:
 
@@ -60,7 +60,7 @@ Consider the following information to choose where to provision an instance of t
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.cloud_notm}}:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} "External link icon")](https://cloud.ibm.com){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
     After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -107,7 +107,7 @@ Complete the following steps to provision an instance of the {{site.data.keyword
 
 
 ## Step 2. Grant users access to monitor events
-{: #index_step2}
+{: #gs_step2}
 
 To view events, you must have access permissions in the {{site.data.keyword.cloud_notm}}. Permissions vary depending on whether you want to view global account events, events for a service that is provisioned in the context of a resource group, or events for a service that is provisioned in the context of a CF org and space. 
 
@@ -124,11 +124,11 @@ To view events, you must have access permissions in the {{site.data.keyword.clou
 **Note: To grant a user an IAM policy, you must be the account owner or an administrator of the {{site.data.keyword.loganalysisshort}} service.**
 
 ### Grant users access to monitor account domain events
-{: #index_acc}
+{: #gs_acc}
 
 Complete the following steps to grant a user an IAM policy from the {{site.data.keyword.cloud_notm}} UI:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 3. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 4. Select **Assign access to resources**.
@@ -139,15 +139,13 @@ Complete the following steps to grant a user an IAM policy from the {{site.data.
 9. Click Assign.
 
 ### Grant users access to monitor space domain events
-{: #index_space}
+{: #gs_space}
 
 To grant a user a developer role in a space from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} console.
-
-    Open a web browser and launch the [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 	
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+    After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 
@@ -170,7 +168,7 @@ To grant a user a developer role in a space from the {{site.data.keyword.cloud_n
 
 
 ## Step 3. Generate {{site.data.keyword.cloudaccesstrailshort}} events
-{: #index_step3}
+{: #gs_step3}
 
 After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, events are collected automatically from selected Cloud services. To learn more about the services that you can monitor with {{site.data.keyword.cloudaccesstrailshort}}, including information on the actions that generate an {{site.data.keyword.cloudaccesstrailshort}} event, see [Cloud services](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-cloud_services#cloud_services).
 
@@ -179,7 +177,7 @@ After the {{site.data.keyword.cloudaccesstrailshort}} service is provisioned, ev
 To learn how to generate events, complete the tutorial [Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-kp#kp).
 
 ## Step 4. Viewing events
-{: #index_step4}
+{: #gs_step4}
 
 You can monitor {{site.data.keyword.cloudaccesstrailshort}} events in the {{site.data.keyword.cloud_notm}} UI. You can also upgrade your plan to the premium plan to monitor events through Kibana. 
 
@@ -222,7 +220,7 @@ To view events that you generate by completing the steps in the tutorial, choose
 
 
 ## Next steps
-{: #index_next_steps}
+{: #gs_next_steps}
 
 Use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage your events from the command line. For more information, see [Managing events by using the Activity Tracker CLI](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-tutorial2#tutorial2).
 

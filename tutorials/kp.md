@@ -41,7 +41,7 @@ The following figure shows the different components and actions that occur when 
 ## Before you begin
 {: #kp_prereqs}
 
-Create an [{{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com). Your user ID must be a member or an owner of an {{site.data.keyword.cloud_notm}} account, with developer permissions in the space where you plan to use the {{site.data.keyword.cloudaccesstrailshort}} service.
+Create an [{{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login). Your user ID must be a member or an owner of an {{site.data.keyword.cloud_notm}} account, with developer permissions in the space where you plan to use the {{site.data.keyword.cloudaccesstrailshort}} service.
 
 
 ## Step 1. Provision Activity Tracker
@@ -53,9 +53,7 @@ You must provision the {{site.data.keyword.cloudaccesstrailshort}} service in th
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.cloud_notm}}:
 
-1. Log in to the {{site.data.keyword.cloud_notm}}.
-
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+1. [Log in to the {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
     
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 

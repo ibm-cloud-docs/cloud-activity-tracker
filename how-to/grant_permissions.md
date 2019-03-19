@@ -65,7 +65,7 @@ To grant a user an IAM role, consider the following information:
 
 Complete the following steps to grant a user permission to view events from an account domain:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 	
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -123,7 +123,7 @@ To grant a user a CF role, consider the following information:
 
 Complete the following steps to grant a user access to view space events:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 	
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
