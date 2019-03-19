@@ -170,6 +170,7 @@ To grant a user a developer role in a space from the {{site.data.keyword.cloud_n
 
 
 
+
 ## Step 3: Generate {{site.data.keyword.cloudaccesstrailshort}} events
 {: #index_step3}
 
