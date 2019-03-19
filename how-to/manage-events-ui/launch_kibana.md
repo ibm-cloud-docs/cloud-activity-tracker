@@ -93,19 +93,30 @@ Complete the following steps to launch Kibana from a browser:
 	
 2. Verify that you are logged in to the {{site.data.keyword.cloud_notm}} account where you want to view, and analyze activity events.
 
-3. Select a **Domain**.
+3. View space or account events
 
-    Select **Account** to view events in the account domain.
-    Select **Space** to view events in a space domain.
+* Click on the upper right of the Kibana window where your login information is displayed.
+* In **Domain** select space or account in the drop-down
+* For space events, select the **space** of interest in the Space drop-down
+* For account events, select the correct **account** in the Account drop-down
+
+4. Adjust search time
+
+* The Kibana default search time is set to the last 15 minutes.
+* Click `Last 15 minutes` in the upper right gray bar
+* Select how far back you want to see events. The last 3 days events are searchable. Pick a time frame 3 days or less.
+
+5. Filter to show just Activity Tracker events
+* You may encounter both Logs and Activity Tracker events when viewing directly in Kibana.
+* In the search bar enter, `type:ActivityTracker` to show only Activity Tracker events.
 
 The events that you see in Kibana correspond to the events that are hosted in the domain selected in the region where you have launched Kibana.
-
 
 ## Limitations
 {: #launch_kibana_limitations}
 
- Due to limitations in Kibana, you cannot have multiple Kibana browser tabs open at once in the same session to view different spaces or accounts. Therefore, if you have two or more sessions open at once, and change the domain from space to account or viceversa, you may experience problems.
-	
+* Due to limitations in Kibana, you cannot have multiple Kibana browser tabs open at once in the same session to view different spaces or accounts. Therefore, if you have two or more sessions open at once, and change the domain from space to account or viceversa, you may experience problems.
+* By default, only the account owner can view account events. To enable others to view account events please follow the instructions in [Viewing account events](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 
