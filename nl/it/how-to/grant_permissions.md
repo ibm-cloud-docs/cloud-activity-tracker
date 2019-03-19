@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -60,23 +59,23 @@ Per concedere a un utente un ruolo IAM, considera le seguenti informazioni:
 
 Completa la seguente procedura per concedere le autorizzazioni utente per visualizzare gli eventi da un dominio dell'account:
 
-1. Accedi alla console {{site.data.keyword.Bluemix_notm}}.
+1. Accedi alla console {{site.data.keyword.cloud_notm}}.
 
-    Apri un browser web e avvia il dashboard {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
+    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
 	
-	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.Bluemix_notm}}.
+	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
-2. Dalla barra dei menu, fai clic su **Manage > Account > Users**. 
+2. Dalla barra dei menu, fai clic su **Gestisci > Account > Utenti**. 
 
-    La finestra *Users* visualizza un elenco di utenti con i relativi indirizzi email per l'account selezionato al momento.
+    La finestra *Utenti* visualizza un elenco di utenti con i relativi indirizzi email per l'account selezionato al momento.
 	
-3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Manage user** dal menu *Actions* .
+3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni* .
 
     Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
 
-4. Nella sezione **Access policies**, fai clic su **Assign access** e seleziona **Assign access to resources**.
+4. Nella sezione **Politiche di accesso**, fai clic su **Assegna accesso** e seleziona quindi **Assegna l'accesso alle risorse**. 
 
-    Viene visualizzata la finestra *Assign resource access to user**.
+    Viene visualizzata la finestra *Assegna l'accesso alla risorsa all'utente**. 
 
 5. Immetti le informazioni sulla politica. La seguente tabella elenca i campi necessari per definire una politica: 
 
@@ -104,7 +103,7 @@ Completa la seguente procedura per concedere le autorizzazioni utente per visual
 	  </tr>
      </table>
 	
-6. Fai clic su **Assign**.
+6. Fai clic su **Assegna**.
 	
 La politica che configuri si applica alle regioni selezionate. 
 
@@ -120,29 +119,29 @@ Per concedere a un utente un ruolo CF, considera le seguenti informazioni:
 
 Completa la seguente procedura per concedere a un utente l'accesso per visualizzare gli eventi dello spazio:
 
-1. Accedi alla console {{site.data.keyword.Bluemix_notm}}.
+1. Accedi alla console {{site.data.keyword.cloud_notm}}.
 
-    Apri un browser web e avvia il dashboard {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
+    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
 	
-	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.Bluemix_notm}}.
+	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
-2. Dalla barra dei menu, fai clic su **Manage > Account > Users**. 
+2. Dalla barra dei menu, fai clic su **Gestisci > Account > Utenti**.  
 
-    La finestra *Users* visualizza un elenco di utenti con i relativi indirizzi email per l'account selezionato al momento.
+    La finestra *Utenti* visualizza un elenco di utenti con i relativi indirizzi email per l'account selezionato al momento.
 	
-3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Manage user** dal menu *Actions* .
+3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni* .
 
     Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
 
-4. Seleziona **Cloud Foundry access** e poi l'organizzazione.
+4. Seleziona **Accesso Cloud Foundry** e poi l'organizzazione.
 
     Viene visualizzato l'elenco degli spazi disponibili in tale organizzazione.
 
-5. Scegli uno spazio. Quindi, dall'azione del menu, seleziona **Edit space role**.
+5. Scegli uno spazio. Quindi, dal menu delle azioni, seleziona **Modifica ruolo spazio**. 
 
-6. Seleziona **Developer**.
+6. Seleziona **Sviluppatore**.
 	
-7. Fai clic su **Save role**.
+7. Fai clic su **Salva ruolo**.
 
 
 

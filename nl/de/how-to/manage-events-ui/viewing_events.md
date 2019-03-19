@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,12 +20,12 @@ lastupdated: "2018-07-09"
 # Ereignisse anzeigen
 {: #view_acc_events}
 
-Sie können Ereignisse über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} in der {{site.data.keyword.Bluemix_notm}}-Konsole oder über Kibana anzeigen.
+Sie können Ereignisse über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} in der {{site.data.keyword.cloud_notm}}-Konsole oder über Kibana anzeigen.
 {:shortdesc}
    
 
 ## Ereignisse für ein Konto anzeigen
-{: #account_events}
+{: #view_acc_events_account_events}
 
 Sie können Ereignisse in einer Kontodomäne von {{site.data.keyword.cloudaccesstrailshort}} über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} oder über Kibana anzeigen.
 
@@ -42,7 +42,7 @@ Als ein **Mitglied eines Kontos** sollten Sie die folgenden Informationen berüc
 
 
 ## Ereignisse für einen Bereich (Space) anzeigen
-{: #space_events}
+{: #view_acc_events_space_events}
 
 Sie können Ereignisse in einer Bereichsdomäne von {{site.data.keyword.cloudaccesstrailshort}} über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} anzeigen. Wenn Sie über einen Plan vom Typ 'Premium' verfügen, können Sie Ereignisse auch über Kibana anzeigen.
 

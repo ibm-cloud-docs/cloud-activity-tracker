@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -23,8 +23,8 @@ lastupdated: "2018-07-09"
 {: shortdesc}
 
 **전제조건**
-* 명령을 실행하기 전에, `ibmcloud login` 명령으로 {{site.data.keyword.Bluemix}}에 로그인하여 액세스 토큰을 생성하고 세션을 인증하십시오. 
-* CLI를 사용하여 이벤트를 관리하려면 유료 플랜이 있어야 합니다. 
+* 명령을 실행하기 전에, `ibmcloud login` 명령으로 {{site.data.keyword.Bluemix}}에 로그인하여 액세스 토큰을 생성하고 세션을 인증하십시오.
+* CLI를 사용하여 이벤트를 관리하려면 유료 플랜이 있어야 합니다.
 
 {{site.data.keyword.cloudaccesstraillong}} CLI 플러그인은 Linux, Mac 및 Windows 플랫폼을 지원합니다.
 
@@ -52,7 +52,7 @@ lastupdated: "2018-07-09"
   </tr>
   <tr>
     <td>[ibmcloud at option](#option)</td>
-    <td>영역 또는 계정에서 사용 가능한, 보존과 같은 {{site.data.keyword.cloudaccesstrailshort}} 이벤트 옵션을 보거나 변경하려면 이 명령을 사용하십시오. </td>
+    <td>영역 또는 계정에서 사용 가능한, 보존과 같은 {{site.data.keyword.cloudaccesstrailshort}} 이벤트 옵션을 보거나 변경하려면 이 명령을 사용하십시오.</td>
   </tr>
   <tr>
     <td>[ibmcloud at session create](#session_create)</td>
@@ -240,7 +240,7 @@ ibmcloud at help status
 * 이 기간은 일 수 단위로 설정됩니다.
 * 기본값은 **-1**로, 이는 이벤트가 저장되고 삭제되지 않음을 의미합니다.
 
-**참고:** 기본적으로는 모든 이벤트가 저장됩니다. 보존 기간을 설정하지 않는 경우에는 `ibmcloud at delete` 명령을 사용하여 이벤트를 수동으로 삭제해야 합니다.  
+**참고:** 기본적으로는 모든 이벤트가 저장됩니다. 보존 기간을 설정하지 않는 경우에는 `ibmcloud at delete` 명령을 사용하여 이벤트를 수동으로 삭제해야 합니다. 
 
 ```
 ibmcloud at option [parameters] [arguments...]
@@ -254,7 +254,7 @@ ibmcloud at option [parameters] [arguments...]
 <dd>(선택사항) 보존 일 수를 설정합니다. <br> 기본값은 *-1*일입니다.</dd>
 
 <dt>--at-account-level, -a</dt>
-<dd>(선택사항) 모든 영역 도메인 및 계정 도메인에 저장된 이벤트의 보존 기간에 대한 정보를 나열하려면 이 매개변수를 설정하십시오. 
+<dd>(선택사항) 모든 영역 도메인 및 계정 도메인에 저장된 이벤트의 보존 기간에 대한 정보를 나열하려면 이 매개변수를 설정하십시오.
 
 </dl>
 
@@ -402,7 +402,7 @@ ibmcloud at session delete [arguments...]
 
 <dl>
 <dt>Session ID</dt>
-<dd>삭제하려는 세션의 ID입니다. <br>`ibmcloud at session list` 명령을 사용하여 활성 세션 ID를 모두 가져올 수 있습니다. </dd>
+<dd>삭제하려는 세션의 ID입니다. <br>`ibmcloud at session list` 명령을 사용하여 활성 세션 ID를 모두 가져올 수 있습니다.</dd>
 </dl>
 
 **예**
@@ -574,7 +574,7 @@ ibmcloud at status [parameters] [arguments...]
 </dl>
 
 
-**참고:** `ibmcloud at status` 명령은 시작 및 종료 날짜가 지정되지 않은 경우 {{site.data.keyword.cloudaccesstrailshort}}에 저장된 최근 2주일 간의 이벤트만 보고합니다.  
+**참고:** `ibmcloud at status` 명령은 시작 및 종료 날짜가 지정되지 않은 경우 {{site.data.keyword.cloudaccesstrailshort}}에 저장된 최근 2주일 간의 이벤트만 보고합니다. 
 
 **리턴값**   
 

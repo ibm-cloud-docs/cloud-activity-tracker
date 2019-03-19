@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ lastupdated: "2018-07-06"
 
 
 ## 使用 CURL 下載事件
-{: #curl}
+{: #downloading_events_api_curl}
 
 請完成下列步驟，將事件下載至本端檔案：
 
@@ -56,10 +56,15 @@ lastupdated: "2018-07-06"
     其中：
     
     * *token* 代表您在前一個步驟中取得的 UAA 記號值。
+
     * *spaceID* 代表已在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 之 Cloud Foundry 空間的 UUID。
+
     * *ENDPOINT* 代表服務的進入點。每一個地區都有不同的 URL。若要取得每個地區的端點清單，請參閱[端點](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)。
+
     * *start* 和 *end* 代表您要下載事件的時間範圍。日期格式為 *YYYY-MM-DD*。 
+
     * *AtAccountLevel* 指出要下載的事件位於帳戶網域或空間網域中。
+    
     * *SearchTime* 指出您要下載事件的當天小時。
 
     若要建立階段作業，以從美國南部地區的空間網域中下載事件，請將參數 **AtAccountLevel** 設為 *false*：
@@ -111,7 +116,7 @@ lastupdated: "2018-07-06"
 
 
 ## 如何下載事件的 NodeJS 範例
-{: #node}
+{: #downloading_events_api_node}
 
 這是您可用來測試如何將事件下載至本端檔案的範例程式碼：
 

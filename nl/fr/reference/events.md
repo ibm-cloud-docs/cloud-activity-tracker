@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-07-07"
 # Evénements {{site.data.keyword.cloudaccesstrailshort}}
 {: #events}
 
-Utilisez le service {{site.data.keyword.cloudaccesstrailfull}} pour suivre {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix}}.
+Utilisez le service {{site.data.keyword.cloudaccesstrailfull}} pour suivre {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
 
@@ -54,11 +53,11 @@ Le tableau suivant répertorie les actions qui génèrent un événement :
   </tr>
   <tr>
     <td>download.events</td>
-	  <td>Permet de télécharger des événements. </td>
+	  <td>Permet de télécharger des événements.</td>
   </tr>
   <tr>
     <td>delete.events</td>
-	  <td>Permet de supprimer des événements. </td>
+	  <td>Permet de supprimer des événements.</td>
   </tr>
 </table>
 
@@ -67,4 +66,3 @@ Le tableau suivant répertorie les actions qui génèrent un événement :
 {: #ui}
  	
 Les événements {{site.data.keyword.cloudaccesstrailshort}} sont disponibles dans l'espace Cloud Foundry où le service {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
-

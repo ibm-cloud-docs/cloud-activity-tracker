@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -60,11 +59,11 @@ lastupdated: "2018-07-09"
 
 請完成下列步驟，以授與使用者許可權來檢視帳戶網域中的事件：
 
-1. 登入 {{site.data.keyword.Bluemix_notm}} 主控台。
+1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
 
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.Bluemix_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
+    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
 	
-	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
 2. 從功能表列中，按一下**管理 > 帳戶 > 使用者**。 
 
@@ -120,11 +119,11 @@ lastupdated: "2018-07-09"
 
 請完成下列步驟，以授與使用者檢視空間事件的存取權：
 
-1. 登入 {{site.data.keyword.Bluemix_notm}} 主控台。
+1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
 
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.Bluemix_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
+    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
 	
-	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
 2. 從功能表列中，按一下**管理 > 帳戶 > 使用者**。 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde l
 
 
 ## Suministro desde la interfaz de usuario
-{: #ui}
+{: #provision_ui}
 
-Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.Bluemix_notm}}:
+Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.cloud_notm}}:
 
-1. Inicie sesión en su cuenta de {{site.data.keyword.Bluemix_notm}}.
+1. Inicie sesión en su cuenta de {{site.data.keyword.cloud_notm}}.
 
-    La interfaz de usuario de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    La interfaz de usuario de {{site.data.keyword.cloud_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
     
-	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
-2. Pulse **Catálogo**. Se abre la lista de los servicios que están disponibles en {{site.data.keyword.Bluemix_notm}}.
+2. Pulse **Catálogo**. Se abre la lista de los servicios que están disponibles en {{site.data.keyword.cloud_notm}}.
 
 3. Seleccione la categoría **Seguridad** para filtrar la lista de servicios que se muestran.
 
@@ -55,7 +55,7 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 	  </tr>
 	  <tr>
 	    <td>Seleccione la región de despliegue:</td>
-		<td>Los valores válidos son: EE.UU. sur, Reino Unido, Alemania, Sídney</td>
+		<td>Los valores válidos son: EE. UU. sur, Reino Unido, Alemania, Sídney</td>
 	  </tr>
 	  <tr>
 	    <td>Elija una organización:</td>
@@ -73,24 +73,24 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 
     Para obtener más información, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
-7. Pulse **Crear** para suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}} en el espacio de {{site.data.keyword.Bluemix_notm}} en el que ha iniciado la sesión.
+7. Pulse **Crear** para suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}} en el espacio de {{site.data.keyword.cloud_notm}} en el que ha iniciado la sesión.
   
  
 
 ## Suministro desde la CLI
-{: #cli}
+{: #provision_cli}
 
-Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.Bluemix_notm}} mediante la línea de mandatos:
+Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}} mediante la línea de mandatos:
 
-1. [Requisito previo] Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
+1. [Requisito previo] Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
    Si la CLI está instalada, continúe en el paso siguiente.
     
-2. Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. 
+2. Inicie una sesión en {{site.data.keyword.cloud_notm}}. 
 
-    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Ejecute el mandato `ibmcloud service create` para suministrar una instancia.
 
@@ -102,7 +102,7 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 	Donde
 	
 	* service_name es el nombre del servicio, es decir **accessTrail**.
-	* service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
+	* service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
 	* service_instance_name es el nombre que desea utilizar para la nueva instancia de servicio que cree.
 
 	Por ejemplo, para crear una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con el plan estándar, ejecute este mandato:

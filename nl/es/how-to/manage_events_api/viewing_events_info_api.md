@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -25,7 +25,7 @@ Utilice la API de {{site.data.keyword.cloudaccesstrailshort}} para obtener infor
 
 
 ## Obtención del número de sucesos mediante cURL
-{: #records_per_day_curl}
+{: #viewing_events_info_api_records_per_day_curl}
 
 Siga los pasos siguientes para ver información sobre los sucesos de una determinada fecha:
 
@@ -50,14 +50,14 @@ Siga los pasos siguientes para ver información sobre los sucesos de una determi
     * *SearchTime* indica la hora del día para la que desea información sobre los sucesos.
 
 
-Por ejemplo, para obtener información sobre los sucesos de un determinado día de un dominio de espacio de la región EE.UU. sur, puede ejecutar el siguiente mandato cURL:
+Por ejemplo, para obtener información sobre los sucesos de un determinado día de un dominio de espacio de la región EE. UU. sur, puede ejecutar el siguiente mandato cURL:
 
 ```
 curl -X GET -H "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "X-Auth-Project-Id:${spaceId}" -H "Accept:application/json"  https://activity-tracker.ng.bluemix.net/v3/events   -d '{"start":"2018-06-28","end":"2018-06-28","AtAccountLevel":false,"SearchTime":""}'
 ```
 {: codeblock}
 
-Por ejemplo, para obtener información sobre los sucesos de cuenta de un determinado día en la región EE.UU. sur, puede ejecutar el siguiente mandato cURL:
+Por ejemplo, para obtener información sobre los sucesos de cuenta de un determinado día en la región EE. UU. sur, puede ejecutar el siguiente mandato cURL:
 
 ```
 curl -X GET -H "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "X-Auth-Project-Id:${spaceId}" -H "Accept:application/json"  https://activity-tracker.ng.bluemix.net/v3/events   -d '{"start":"2018-06-28","end":"2018-06-28","AtAccountLevel":true,"SearchTime":""}'
@@ -73,11 +73,11 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## Ejemplo de NodeJS sobre cómo ver sucesos por día
-{: #node}
+{: #viewing_events_info_api_node}
 
 Este es el código de ejemplo que puede utilizar para probar cómo ver el número de sucesos por día:
 
-En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE.UU. sur. 
+En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE. UU. sur. 
 
 ```
 var http = require("https")

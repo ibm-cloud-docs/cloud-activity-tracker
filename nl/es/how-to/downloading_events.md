@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -24,12 +24,12 @@ Puede descargar sucesos en un archivo local. Puede descargar sucesos dentro del 
 
 Siga los pasos siguientes para descargar los sucesos en un archivo local:
 
-## Paso 1: Iniciar sesión en {{site.data.keyword.Bluemix_notm}}
+## Paso 1: Iniciar sesión en {{site.data.keyword.cloud_notm}}
 {: #prereq}
 
-Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. Siga estos pasos:
+Inicie una sesión en {{site.data.keyword.cloud_notm}}. Siga estos pasos:
 
-1. Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
+1. Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}}.
 2. Ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** establezca la organización y el espacio donde se suministra {{site.data.keyword.cloudaccesstrailshort}}.

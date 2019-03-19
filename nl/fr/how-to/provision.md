@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ Vous pouvez mettre à disposition le service {{site.data.keyword.cloudaccesstrai
 
 
 ## Mise à disposition à partir de l'interface utilisateur
-{: #ui}
+{: #provision_ui}
 
-Pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstraillong_notm}} dans {{site.data.keyword.Bluemix_notm}} :
+Pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstraillong_notm}} dans {{site.data.keyword.cloud_notm}} :
 
-1. Connectez-vous à votre compte {{site.data.keyword.Bluemix_notm}}.
+1. Connectez-vous à votre compte {{site.data.keyword.cloud_notm}}.
 
-    L'interface utilisateur d'{{site.data.keyword.Bluemix_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
+    L'interface utilisateur d'{{site.data.keyword.cloud_notm}} se trouve à l'adresse suivante : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}.
     
-	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
+	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
-2. Cliquez sur **Catalogue**. La liste des services disponibles sur {{site.data.keyword.Bluemix_notm}} s'ouvre.
+2. Cliquez sur **Catalogue**. La liste des services disponibles sur {{site.data.keyword.cloud_notm}} s'ouvre.
 
 3. Sélectionnez la catégorie **Sécurité** pour filtrer la liste de services affichée.
 
@@ -55,7 +55,7 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 	  </tr>
 	  <tr>
 	    <td>Sélectionnez une région dans laquelle effectuer le déploiement :</td>
-		<td>Les valeurs admises sont : Sud des Etats-Unis, Royaume-Uni, Allemagne et Sydney. </td>
+		<td>Les valeurs admises sont : Sud des Etats-Unis, Royaume-Uni, Allemagne et Sydney.</td>
 	  </tr>
 	  <tr>
 	    <td>Choisissez une organisation :</td>
@@ -73,24 +73,24 @@ Pour mettre à disposition une instance du service {{site.data.keyword.cloudacce
 
     Pour plus d'information, voir [Plans de service](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
-7. Cliquez sur **Créer** pour mettre à disposition le service {{site.data.keyword.cloudaccesstrailshort}} dans l'espace {{site.data.keyword.Bluemix_notm}} auquel vous êtes connecté.
+7. Cliquez sur **Créer** pour mettre à disposition le service {{site.data.keyword.cloudaccesstrailshort}} dans l'espace {{site.data.keyword.cloud_notm}} auquel vous êtes connecté.
   
  
 
 ## Mise à disposition à partir de l'interface de ligne de commande
-{: #cli}
+{: #provision_cli}
 
-Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix_notm}} via la ligne de commande :
+Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.cloud_notm}} via la ligne de commande :
 
-1. [Prérequis] Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
+1. [Prérequis] Installez l'interface de ligne de commande {{site.data.keyword.cloud_notm}}.
 
-   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}.](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
-2. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+2. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 	
 3. Exécutez la commande `ibmcloud service create` pour mettre à disposition une instance.
 
@@ -102,7 +102,7 @@ Procédez comme suit pour mettre à disposition une instance du service {{site.d
 	Où
 	
 	* service_name est le nom du service, en l'occurrence **accessTrail**.
-	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Plans de service](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
+	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Plans de service](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
 	* service_instance_name est le nom que vous souhaitez utiliser pour la nouvelle instance de service que vous créez.
 
 	Par exemple, pour créer une instance du service {{site.data.keyword.cloudaccesstrailshort}} avec le plan standard, exécutez la commande suivante :

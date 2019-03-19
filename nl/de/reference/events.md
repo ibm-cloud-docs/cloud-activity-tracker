@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-07-07"
 # {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse
 {: #events}
 
-Verwenden Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service, um {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix}} zu verfolgen.
+Verwenden Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service, um {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix}} zu verfolgen. 
 {:shortdesc}
 
 

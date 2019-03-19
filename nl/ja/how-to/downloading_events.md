@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -24,12 +24,12 @@ lastupdated: "2018-09-07"
 
 イベントをローカル・ファイルにダウンロードするには、以下のステップを実行します。
 
-## ステップ 1: {{site.data.keyword.Bluemix_notm}} にログインする
+## ステップ 1: {{site.data.keyword.cloud_notm}} にログインする
 {: #prereq}
 
-{{site.data.keyword.Bluemix_notm}} にログインします。 以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} にログインします。 以下のステップを実行します。
 
-1. [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して、{{site.data.keyword.Bluemix_notm}} にログインします。
+1. [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して、{{site.data.keyword.cloud_notm}} にログインします。
 2. [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 
 **注:** {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされる組織とスペースを設定してください。
@@ -51,12 +51,12 @@ lastupdated: "2018-09-07"
 
 ダウンロードに使用可能なイベント・データのスコープを定義するため、および、ダウンロードの状況を保持するために、セッションが必要です。 
 
-セッションを作成するには、コマンド `ibmcloud at session create` を使用します。 デフォルトでは、セッションには最近 2 週間のデータが含まれます。オプションで、セッション作成時に開始日と終了日を指定することができ、それによって、イベントの期間、特定の時刻、およびスコープを指定することができます。 
+セッションを作成するには、コマンド `ibmcloud at session create` を使用します。 デフォルトでは、セッションには最近 2 週間のデータが含まれます。  オプションで、セッション作成時に開始日と終了日を指定することができ、それによって、イベントの期間、特定の時刻、およびスコープを指定することができます。 
 
 **注:** 
 
 * 開始日と終了日を指定すると、セッションはそれらの日付の間 (開始日と終了日を含む) のイベントへのアクセスを提供します。 
-* セッション当たり 2 週間を超えるデータをダウンロードすることはできません。したがって、期間は 2 週間未満でなければなりません。
+* セッション当たり 2 週間を超えるデータをダウンロードすることはできません。 したがって、期間は 2 週間未満でなければなりません。
 * 1 つのスペース・ドメインのイベントをダウンロードするか、または、1 つの地域内のアカウント・ドメインのイベントをダウンロードできます。
 
 特定の 1 日のイベントをダウンロードするために使用されるセッションを作成するには、次のコマンドを実行します。

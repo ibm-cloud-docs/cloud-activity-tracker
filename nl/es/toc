@@ -1,23 +1,22 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html"}
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html" path="services/cloud-activity-tracker"}
 IBM Cloud Activity Tracker
 
     {: .navgroup id="learn"}
     index.md
-    
-    {: .topicgroup}
-    Acerca de
-        activity_tracker_ov.md
-        at_event.md
-        compliance.md
-
+    activity_tracker_ov.md
+    at_event.md
     cloud_services.md
+    compliance.md
+    whatsnew.md
 
     {: .topicgroup}
     Guías de aprendizaje
+        tutorials/kp.md
         tutorials/manage_events_cli.md
+        tutorials/vsi.md
 		
     {: .topicgroup}
     Enlaces relacionados
@@ -60,12 +59,13 @@ IBM Cloud Activity Tracker
     [API de IBM Cloud Activity Tracker](https://console.bluemix.net/apidocs/activity-tracker-api)
 
     {: .topicgroup}
-    Supervisión de la actividad de la nube
+    Supervisión de la actividad en la nube
         reference/events.md
         services/at_events_cf.md
         services/at_events_iam.md
         services/at_events_acc_mgt.md
         services/at_events_rc.md
+        services/at_events_sl.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
@@ -73,3 +73,4 @@ IBM Cloud Activity Tracker
 
     {: .navgroup-end}
     
+

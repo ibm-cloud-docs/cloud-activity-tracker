@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # Modificación del plan
 {: #change_plan}
 
-Puede cambiar su plan de servicio de {{site.data.keyword.cloudaccesstraillong}} en la interfaz de usuario de {{site.data.keyword.Bluemix_notm}} o ejecutando el mandato `ibmcloud service update`. Puede actualizar o reducir el plan en cualquier momento.
+Puede cambiar su plan de servicio de {{site.data.keyword.cloudaccesstraillong}} en la interfaz de usuario de {{site.data.keyword.cloud_notm}} o ejecutando el mandato `ibmcloud service update`. Puede actualizar o reducir el plan en cualquier momento.
 {:shortdesc}
 
 ## Modificación del plan de servicio mediante la interfaz de usuario
 {: #change_plan_ui}
 
-Para cambiar el plan de servicio a través de la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}, lleve a cabo los siguientes pasos:
+Para cambiar el plan de servicio a través de la interfaz de usuario de {{site.data.keyword.cloud_notm}}, lleve a cabo los siguientes pasos:
 
-1. Inicie una sesión en {{site.data.keyword.Bluemix_notm}} y luego pulse el servicio {{site.data.keyword.cloudaccesstraillong_notm}} en el *Panel de control*. 
+1. Inicie una sesión en {{site.data.keyword.cloud_notm}} y luego pulse el servicio {{site.data.keyword.cloudaccesstraillong_notm}} en el *Panel de control*. 
     
 2. Seleccione el separador **Plan**.
 
@@ -45,9 +45,9 @@ Para cambiar el plan de servicio a través de la interfaz de usuario de {{site.d
 
 Para cambiar su plan de servicio mediante la CLI, siga los pasos siguientes:
 
-1. Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. 
+1. Inicie una sesión en {{site.data.keyword.cloud_notm}}. 
 
-    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Ejecute el mandato `ibmcloud service list` para comprobar su plan actual y para obtener el nombre del servicio {{site.data.keyword.cloudaccesstrailshort}} de la lista de servicios disponibles en el espacio. 
 

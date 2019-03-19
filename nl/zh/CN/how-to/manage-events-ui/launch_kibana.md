@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-27"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -27,37 +27,35 @@ lastupdated: "2018-04-27"
 ##  通过 Activity Tracker 服务的仪表板导航至 Kibana
 {: #launch_Kibana_from_at}
 
-Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.Bluemix_notm}} 组织空间中以及供应了 {{site.data.keyword.cloudaccesstrailshort}} 服务的 Bluemix 组织空间中部署的所有资源的事件。
+Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm}} 组织空间中以及供应了 {{site.data.keyword.cloudaccesstrailshort}} 服务的 Bluemix 组织空间中部署的所有资源的事件。
 
 要通过 {{site.data.keyword.cloudaccesstrailshort}} 服务的仪表板启动 Kibana，请完成以下步骤：
 
-1. 登录到您的 {{site.data.keyword.Bluemix_notm}} 帐户。
+1. 登录到您的 {{site.data.keyword.cloud_notm}} 帐户。
 
-    可在以下地址找到 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
+    可在以下地址找 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com/login ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
     
-	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
+	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
-2. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，选择 {{site.data.keyword.cloudaccesstrailshort}} 服务。 
+2. 在 {{site.data.keyword.cloud_notm}} 仪表板中选择 {{site.data.keyword.cloudaccesstrailshort}} 服务。 
     
 3. 选择**受管**选项卡。
 
-4. 单击**高级视图**。 
+4. 要查看空间事件，请为*查看日志*字段选择**空间日志**。**注：**此选项为缺省视图。然后，单击**在 Kibana 中查看**。 
 
-    这将打开 Kibana 仪表板。
+    这将打开 Kibana 仪表板。**ActivityTracker_Space_Dashboard_in_24h** 仪表板将通过设置为最近 24 小时的时间过滤器加载数据。
 
-缺省情况下，将装入 **ActivityTracker_Space_Dashboard_in_24h** 仪表板，并且时间过滤器设置为最近 24 小时。 
+5. 要查看帐户事件，请为*查看日志*字段选择**帐户日志**。然后，单击**在 Kibana 中查看**。 
 
-
+    **ActivityTracker_Account_Dashboard_in_24h** 仪表板将通过设置为最近 24 小时的时间过滤器加载数据。
 	
 	
 ##  通过 Web 浏览器导航至 Kibana
 {: #launch_Kibana_from_browser}
 
-Kibana 显示的日志信息包含您登录到的 {{site.data.keyword.Bluemix_notm}} 组织空间中部署的所有资源的事件。
-
 要通过浏览器启动 Kibana，请完成以下步骤：
 
-1. 打开 Web 浏览器并启动 Kibana。然后，登录到 Kibana 用户界面。
+1. 打开 Web 浏览器并在要在其中监视事件的区域中启动 Kibana。然后，登录到 Kibana 用户界面。
     
     例如，下表列出在每个区域启动 Kibana 时必须使用的 URL：
       
@@ -87,19 +85,17 @@ Kibana 显示的日志信息包含您登录到的 {{site.data.keyword.Bluemix_no
 	
 	这将打开 Kibana 中的“发现”页面。
 	
-2. 验证您是否已登录到要查看和分析其活动日志的 {{site.data.keyword.Bluemix_notm}} 帐户、组织和空间。
+2. 验证您是否已登录到要在其中查看并分析活动事件的 {{site.data.keyword.cloud_notm}} 帐户中。
 
-    您可以看到在登录到的空间中可用的事件和日志。
+3. 选择一个**域**。
 
-3. 要过滤事件，请从菜单栏中选择**打开**。
+    选择**帐户**可在帐户域中查看事件。选择**空间**可在空间域中查看事件。
 
-    这将显示已保存仪表板的列表。
-	
-4. 要查看您登录到的空间的事件，请选择 **ActivityTracker_Space_Dashboard_in_24h**。
+在 Kibana 中显示的事件对应于启动了 Kibana 的区域中所选择域中托管的事件。
 
 
 ## 限制
-{: #limitations}
+{: #launch_kibana_limitations}
 
  由于 Kibana 中的限制，您不能在同一会话中同时打开多个 Kibana 浏览器选项卡来查看不同的空间或帐户。因此，如果同时打开两个或更多会话，并将域从空间更改为帐户或从帐户更改为空间，那么可能会遇到问题。
 	

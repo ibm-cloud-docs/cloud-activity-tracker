@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -22,27 +22,27 @@ lastupdated: "2018-09-07"
 Utilisez la commande `ibmcloud at status` pour obtenir des informations sur les événements collectés et stockés dans {{site.data.keyword.cloudaccesstrailshort}} pour un espace {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-Vous pouvez obtenir des informations sur la taille du journal des événements, le nombre d'enregistrements, ainsi que sur la disponibilité des événements pour l'analyse dans Kibana.  
+Vous pouvez obtenir des informations sur la taille du journal des événements, le nombre d'enregistrements, ainsi que sur la disponibilité des événements pour l'analyse dans Kibana. 
 
 Procédez comme suit pour afficher des informations sur le journal des événements :
 
-## Etape 1 : Connexion à {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## Etape 1 : Connexion à {{site.data.keyword.cloud_notm}}
+{: #viewing_event_status_step1}
 
-Connectez-vous à {{site.data.keyword.Bluemix_notm}}.Effectuez les opérations suivantes :
+Connectez-vous à {{site.data.keyword.cloud_notm}}. Effectuez les opérations suivantes :
 
-1. Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
-2. Exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+1. Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}.
+2. Exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 
-**Remarque :** définissez l'organisation et l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
+**Remarque :** définissez l'organisation et l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
 
 ## Etape 2 : Identification des événements disponibles
-{: #step2}
+{: #viewing_event_status_step2}
 
 Utilisez la commande `ibmcloud at status` pour afficher les informations relatives aux événements disponibles dans un domaine d'espace.
 
-* Pour obtenir des informations sur les événements d'un domaine d'espace, exécutez la commande `ibmcloud at status`. 
-* Pour obtenir des informations sur les événements d'un domaine de compte, exécutez la commande `ibmcloud at status` avec l'option `-a`. 
+* Pour obtenir des informations sur les événements d'un domaine d'espace, exécutez la commande `ibmcloud at status`.
+* Pour obtenir des informations sur les événements d'un domaine de compte, exécutez la commande `ibmcloud at status` avec l'option `-a`.
 
 ```
 $ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
@@ -51,7 +51,7 @@ $ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD
     
 où
     
-* *-a* est utilisé pour indiquer que la demande s'applique au domaine de compte. 
+* *-a* est utilisé pour indiquer que la demande s'applique au domaine de compte.
 * *-s* est utilisé pour définir la date de début en UTC (Universal Coordinated Time) : *AAAA-MM-JJ*.
 * *-e* est utilisé pour définir la date de fin en UTC (Universal Coordinated Time) : *AAAA-MM-JJ*.
 

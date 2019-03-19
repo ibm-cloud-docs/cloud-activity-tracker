@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ Utilice la API de {{site.data.keyword.cloudaccesstrailshort}} para suprimir suce
 **Nota:** aunque puede suprimir sucesos manualmente mediante la llamada de API, considere la posibilidad de establecer una política de retención para suprimir sucesos automáticamente. Para obtener más información, consulte [Configuración de la política de retención de sucesos](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
 
 ## Supresión de sucesos mediante cURL
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 Siga los pasos siguientes para suprimir sucesos que están disponibles en un dominio de espacio:
 
@@ -51,7 +51,7 @@ Siga los pasos siguientes para suprimir sucesos que están disponibles en un dom
     * *SearchTime* indica la hora del día para la que desea información sobre los sucesos.
 
 
-Por ejemplo, para suprimir sucesos de un determinado día de un dominio de espacio de la región EE.UU. sur, puede ejecutar el siguiente mandato cURL:
+Por ejemplo, para suprimir sucesos de un determinado día de un dominio de espacio de la región EE. UU. sur, puede ejecutar el siguiente mandato cURL:
 
 ```
 curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "X-Auth-Project-Id:${spaceId}" -H "Accept:application/json" -X DELETE  https://activity-tracker.ng.bluemix.net/v3/events -d '{"start":"2018-06-24","end":"2018-06-24","AtAccountLevel":false,"SearchTime":""}'
@@ -67,11 +67,11 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## Ejemplo de NodeJS de cómo suprimir sucesos
-{: #node}
+{: #deleting_events_api_node}
 
 Este es el código de ejemplo que puede utilizar para probar cómo suprimir sucesos:
 
-En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE.UU. sur. 
+En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE. UU. sur. 
 
 ```
 var http = require("https")

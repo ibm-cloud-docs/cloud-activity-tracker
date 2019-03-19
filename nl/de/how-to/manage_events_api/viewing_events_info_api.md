@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -25,7 +25,7 @@ Verwenden Sie die {{site.data.keyword.cloudaccesstrailshort}}-API, um Informatio
 
 
 ## Anzahl von Ereignissen mithilfe von cURL abrufen
-{: #records_per_day_curl}
+{: #viewing_events_info_api_records_per_day_curl}
 
 Führen Sie die folgenden Schritte aus, um Informationen zu den Ereignissen an einem bestimmten Datum anzuzeigen:
 
@@ -73,7 +73,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## NodeJS-Beispiel für das Anzeigen von Ereignissen für einen bestimmten Tag
-{: #node}
+{: #viewing_events_info_api_node}
 
 Mit dem nachfolgenden Beispielcode können Sie testen, wie Sie die Anzahl von Ereignissen für einen bestimmten Tag anzeigen:
 

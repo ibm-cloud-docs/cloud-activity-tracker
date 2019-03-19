@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Les noeuds finaux varient selon la région {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-## Noeuds finaux {{site.data.keyword.Bluemix_notm}}
+## Noeuds finaux {{site.data.keyword.cloud_notm}}
 {: #ibm_cloud_endpoints}
 
-Le tableau suivant répertorie les URL que vous devez utiliser par région pour vous connecter à {{site.data.keyword.Bluemix_notm}} :
+Le tableau suivant répertorie les URL que vous devez utiliser par région pour vous connecter à {{site.data.keyword.cloud_notm}} :
 	
 <table>
-	<caption>Tableau 1. Noeuds finaux {{site.data.keyword.Bluemix_notm}}</caption>
+	<caption>Tableau 1. Noeuds finaux {{site.data.keyword.cloud_notm}}</caption>
 	<tr>
 	  <th>Région</th>
 	  <th>URL</th>
@@ -56,7 +56,7 @@ Le tableau suivant répertorie les URL que vous devez utiliser par région pour 
 ## Noeuds finaux d'API
 {: #api_endpoints}
 
-Le tableau suivant répertorie les noeuds finaux {{site.data.keyword.cloudaccesstrailshort}} que vous devez utiliser par région lors de l'utilisation de l'API : 
+Le tableau suivant répertorie les noeuds finaux {{site.data.keyword.cloudaccesstrailshort}} que vous devez utiliser par région lors de l'utilisation de l'API :
 	
 <table>
 	<caption>Tableau 2. Noeuds finaux {{site.data.keyword.cloudaccesstrailshort}}</caption>

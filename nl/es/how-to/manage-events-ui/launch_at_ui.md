@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-09"
 
 
 
-# Navegación en el panel de control de Activity Tracker en la consola de {{site.data.keyword.Bluemix_notm}}
+# Navegación en el panel de control de Activity Tracker en la consola de {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
 Puede iniciar la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} desde {{site.data.keyword.Bluemix}}. Puede ver sucesos de espacio de forma predeterminada. También puede ver sucesos de cuentas.
@@ -25,17 +25,17 @@ Puede iniciar la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshor
    
 
 ## Navegación en el panel de control de Activity Tracker para supervisar la actividad de nube en un espacio
-{: #account_view_space}
+{: #launch_at_ui_account_view_space}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en un espacio:
 
-1. Inicie sesión en el espacio, la organización y la revisión de su cuenta de {{site.data.keyword.Bluemix_notm}} donde desea supervisar la actividad en la nube.
+1. Inicie sesión en el espacio, la organización y la revisión de su cuenta de {{site.data.keyword.cloud_notm}} donde desea supervisar la actividad en la nube.
 
-    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    Encontrará el panel de control de {{site.data.keyword.cloud_notm}} en: [https://cloud.ibm.com/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/){:new_window}.
     
-	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
-2. Seleccione el servicio {{site.data.keyword.cloudaccesstrailshort}} en el panel de control de {{site.data.keyword.Bluemix_notm}}. 
+2. Seleccione el servicio {{site.data.keyword.cloudaccesstrailshort}} en el panel de control de {{site.data.keyword.cloud_notm}}. 
     
 3. Seleccione el separador **Gestionado**.
 
@@ -43,17 +43,17 @@ Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cl
 
 
 ## Navegación al panel de control de Activity Tracker para supervisar la actividad de nube en la cuenta
-{: #account_view_account}
+{: #launch_at_ui_account_view_account}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en una cuenta:
 
-1. Inicie sesión en la cuenta {{site.data.keyword.Bluemix_notm}} en la que quiere supervisar la actividad de la nube.
+1. Inicie sesión en la cuenta {{site.data.keyword.cloud_notm}} en la que quiere supervisar la actividad de la nube.
 
-    El panel de control de {{site.data.keyword.Bluemix_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+    Encontrará el panel de control de {{site.data.keyword.cloud_notm}} en: [https://cloud.ibm.com/ ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/){:new_window}.
     
-	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
-2. Seleccione el servicio {{site.data.keyword.cloudaccesstrailshort}} en el panel de control de {{site.data.keyword.Bluemix_notm}}. 
+2. Seleccione el servicio {{site.data.keyword.cloudaccesstrailshort}} en el panel de control de {{site.data.keyword.cloud_notm}}. 
     
 3. Seleccione el separador **Gestionado**.
 

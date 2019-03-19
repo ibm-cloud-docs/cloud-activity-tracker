@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -24,12 +24,12 @@ lastupdated: "2018-09-07"
 
 要将事件下载到本地文件中，请完成以下步骤：
 
-## 步骤 1：登录到 {{site.data.keyword.Bluemix_notm}}
+## 步骤 1：登录到 {{site.data.keyword.cloud_notm}}
 {: #prereq}
 
-登录到 {{site.data.keyword.Bluemix_notm}}。完成以下步骤：
+登录到 {{site.data.keyword.cloud_notm}}。完成以下步骤：
 
-1. 运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.Bluemix_notm}}。
+1. 运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}。
 2. 运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令，以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 
 **注：**设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 的组织和空间。

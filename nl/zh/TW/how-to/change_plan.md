@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # 變更方案
 {: #change_plan}
 
-您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面來變更 {{site.data.keyword.cloudaccesstraillong}} 服務方案，或執行 `ibmcloud service update` 指令來變更。您可以隨時升級或降低您的方案。
+您可以透過 {{site.data.keyword.cloud_notm}} 使用者介面，或執行 `ibmcloud service update` 指令，來變更 {{site.data.keyword.cloudaccesstraillong}} 服務方案。您可以隨時升級或降低您的方案。
 {:shortdesc}
 
 ## 透過使用者介面變更服務方案
 {: #change_plan_ui}
 
-若要透過 {{site.data.keyword.Bluemix_notm}} 使用者介面變更服務方案，請完成下列步驟：
+若要透過 {{site.data.keyword.cloud_notm}} 使用者介面變更服務方案，請完成下列步驟：
 
-1. 登入 {{site.data.keyword.Bluemix_notm}}，然後從*儀表板* 按一下 {{site.data.keyword.cloudaccesstraillong_notm}} 服務。 
+1. 登入 {{site.data.keyword.cloud_notm}}，然後從*儀表板* 按一下 {{site.data.keyword.cloudaccesstraillong_notm}} 服務。 
     
 2. 選取**方案**標籤。
 
@@ -45,9 +45,9 @@ lastupdated: "2018-09-07"
 
 若要透過 CLI 變更服務方案，請完成下列步驟：
 
-1. 登入 {{site.data.keyword.Bluemix_notm}}。 
+1. 登入 {{site.data.keyword.cloud_notm}}。 
 
-    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.Bluemix_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
+    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
 	
 2. 執行 `ibmcloud service list` 指令來檢查現行方案，並從空間可用的服務清單中取得 {{site.data.keyword.cloudaccesstrailshort}} 服務名稱。 
 

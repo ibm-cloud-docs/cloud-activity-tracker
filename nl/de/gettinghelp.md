@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-25"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -22,9 +22,9 @@ lastupdated: "2018-04-25"
 Wenn Sie Probleme oder Fragen hinsichtlich der Verwendung des {{site.data.keyword.cloudaccesstraillong}}-Service in {{site.data.keyword.Bluemix}} haben, können Sie Hilfe erhalten, indem Sie in einem Forum nach Informationen suchen oder Fragen stellen. Außerdem können Sie ein Support-Ticket öffnen.
 {:shortdesc}
 
-* Sie können überprüfen, ob {{site.data.keyword.Bluemix_notm}} verfügbar ist, indem Sie die [{{site.data.keyword.Bluemix_notm}}Bluemix-Statusseite](https://developer.ibm.com/bluemix/support/#status){:new_window} besuchen.
+* Sie können überprüfen, ob {{site.data.keyword.cloud_notm}} verfügbar ist, indem Sie die [{{site.data.keyword.cloud_notm}}Bluemix-Statusseite](https://developer.ibm.com/bluemix/support/#status){:new_window} besuchen.
 
-* In den Foren können Sie prüfen, ob andere Benutzer auf das gleich Problem gestoßen sind. Wenn Sie eine Frage in den Foren stellen, kennzeichnen Sie Ihre Frage durch Tags, damit Sie von den {{site.data.keyword.Bluemix_notm}}-Entwicklungsteams gesehen wird.
+* In den Foren können Sie prüfen, ob andere Benutzer auf das gleich Problem gestoßen sind. Wenn Sie eine Frage in den Foren stellen, kennzeichnen Sie Ihre Frage durch Tags, damit Sie von den {{site.data.keyword.cloud_notm}}-Entwicklungsteams gesehen wird.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
   * Bei technischen Fragen zur Entwicklung oder Bereitstellung einer App mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service posten Sie Ihre Frage unter [Stack Overflow](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} und kennzeichnen Sie Ihre Frage mit den Tags **ibm-cloud** und **activity-tracker**.
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->

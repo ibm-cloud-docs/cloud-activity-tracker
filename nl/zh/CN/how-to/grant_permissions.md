@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -28,13 +27,13 @@ lastupdated: "2018-07-09"
 
 要允许用户查看区域中的帐户事件，请向用户授予以下许可权：
 
-1. 在您供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的*开发者角色*。 
+1. 在供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的 *Developer* 角色。 
 
     有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
 
-2. 区域中 {{site.data.keyword.loganalysisshort}} 服务的 IAM 策略的*查看者*角色。 
+2. 具有区域中 *viewer* 角色的 {{site.data.keyword.loganalysisshort}} 服务的 IAM 策略。 
 
-    查看者角色是所需 IAM 角色中至少要具备的角色。 
+    viewer 角色是必需的最低 IAM 角色。 
 	
 	有关更多信息，请参阅[授予 IAM 许可权](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)。
 
@@ -44,7 +43,7 @@ lastupdated: "2018-07-09"
 
 要允许用户查看区域中的空间事件，请向用户授予以下许可权：
 
-* 在您供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的*开发者*角色。 
+* 在供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的 *Developer* 角色。 
 
     有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
 
@@ -60,11 +59,11 @@ lastupdated: "2018-07-09"
 
 要授予用户查看帐户域中事件的许可权，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
+1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
 
-    打开 Web 浏览器，然后启动 {{site.data.keyword.Bluemix_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
+    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
 	
-	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
+	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
 2. 单击菜单栏中的**管理 > 帐户 > 用户**。 
 
@@ -116,15 +115,15 @@ lastupdated: "2018-07-09"
 
 * 在组织和空间中，您必须有权为用户分配 Cloud Foundry 角色。 
 
-* 只有**开发者**角色允许用户查看事件。
+* 只有 **developer** 角色允许用户查看事件。
 
 要授予用户查看空间事件的访问权，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
+1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
 
-    打开 Web 浏览器，然后启动 {{site.data.keyword.Bluemix_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
+    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
 	
-	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
+	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
 2. 单击菜单栏中的**管理 > 帐户 > 用户**。 
 
@@ -140,7 +139,7 @@ lastupdated: "2018-07-09"
 
 5. 选择一个空间。然后，从菜单操作中，选择**编辑空间角色**。
 
-6. 选择**开发者**。
+6. 选择 **Developer**。
 	
 7. 单击**保存角色**。
 

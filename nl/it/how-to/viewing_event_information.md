@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -22,23 +22,23 @@ lastupdated: "2018-09-07"
 Utilizza il comando `ibmcloud at status` per ottenere le informazioni sugli eventi raccolti e archiviati in {{site.data.keyword.cloudaccesstrailshort}} per uno spazio {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-Puoi ottenere le informazioni sulla dimensione del log di eventi teh, il numero di record e se gli eventi sono disponibili o meno per l'analisi in Kibana.  
+Puoi ottenere le informazioni sulla dimensione del log di eventi teh, il numero di record e se gli eventi sono disponibili o meno per l'analisi in Kibana. 
 
 Completa la seguente procedura per visualizzare le informazioni sul log degli eventi:
 
-## Passo 1: Accedi a {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## Passo 1: Accedi a {{site.data.keyword.cloud_notm}}
+{: #viewing_event_status_step1}
 
-Accedi a {{site.data.keyword.Bluemix_notm}}. Completa la seguente
+Accedi a {{site.data.keyword.cloud_notm}}. Completa la seguente
 procedura:
 
-1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}}.
+1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}}.
 2. Esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per impostare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** imposta l'organizzazione e lo spazio in cui viene eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
 
 ## Passo 2: Identifica quali eventi sono disponibili
-{: #step2}
+{: #viewing_event_status_step2}
 
 Utilizza il comando `ibmcloud at status` per visualizzare le informazioni sugli eventi disponibili in un dominio dello spazio.
 

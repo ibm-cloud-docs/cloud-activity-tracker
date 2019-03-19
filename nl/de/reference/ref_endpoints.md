@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Die Endpunkte variieren je nach {{site.data.keyword.Bluemix}}-Region.
 {:shortdesc}
 
-## {{site.data.keyword.Bluemix_notm}}-Endpunkte
+## {{site.data.keyword.cloud_notm}}-Endpunkte
 {: #ibm_cloud_endpoints}
 
-In der folgenden Tabelle werden die URLs nach Region aufgelistet, über die Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden müssen:
+In der folgenden Tabelle werden die URLs nach Region aufgelistet, über die Sie sich bei {{site.data.keyword.cloud_notm}} anmelden müssen:
 	
 <table>
-	<caption>Tabelle 1. {{site.data.keyword.Bluemix_notm}}-Endpunkte</caption>
+	<caption>Tabelle 1. {{site.data.keyword.cloud_notm}}-Endpunkte</caption>
 	<tr>
 	  <th>Region</th>
 	  <th>URL</th>

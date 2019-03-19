@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-09-07"
 # Ereignisaufbewahrungsrichtlinie konfigurieren
 {: #configuring_retention_policy}
 
-Verwenden Sie den Befehl **ibmcloud at option**, um die Aufbewahrungsrichtlinie, die angibt, über welchen Zeitraum (in Tagen) Ereignisse höchstens in {{site.data.keyword.cloudaccesstrailshort}} aufbewahrt werden, anzuzeigen und zu konfigurieren. Die Aufbewahrungsrichtlinie ist standardmäßig inaktiviert und Ereignisse werden für eine unbegrenzte Dauer aufbewahrt. Nach Ablauf des Aufbewahrungszeitraums werden Ereignisse automatisch gelöscht.
+Verwenden Sie den Befehl **ibmcloud at option**, um die Aufbewahrungsrichtlinie, die angibt, über welchen Zeitraum (in Tagen) Ereignisse höchstens in {{site.data.keyword.cloudaccesstrailshort}} aufbewahrt werden, anzuzeigen und zu konfigurieren. Die Aufbewahrungsrichtlinie ist standardmäßig inaktiviert und Ereignisse werden für eine unbegrenzte Dauer aufbewahrt. Nach Ablauf des Aufbewahrungszeitraums werden Ereignisse automatisch gelöscht. 
 {:shortdesc}
 
 Sie können dieselbe Aufbewahrungsrichtlinie für alle Bereiche (Spaces) des Kontos festlegen oder aber auch die Aufbewahrungsrichtlinie für einen Bereich anpassen. 
@@ -30,9 +30,9 @@ Sie können dieselbe Aufbewahrungsrichtlinie für alle Bereiche (Spaces) des Kon
 
 Führen Sie die folgenden Schritte aus, um eine Aufbewahrungsrichtlinie zu inaktivieren:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 2. Legen Sie für den Aufbewahrungszeitraum den Wert **-1** fest, um die Aufbewahrungsrichtlinie zu inaktivieren. Führen Sie den folgenden Befehl aus:
 
@@ -66,11 +66,11 @@ Die Ausgabe sieht wie folgt aus:
 ## Protokollaufbewahrungsrichtlinie für einen Bereich (Space) prüfen
 {: #check_retention_policy_space}
 
-Führen Sie die folgenden Schritte aus, um den für einen {{site.data.keyword.Bluemix_notm}}-Bereich (Space) festgelegten Aufbewahrungszeitraum abzurufen:
+Führen Sie die folgenden Schritte aus, um den für einen {{site.data.keyword.cloud_notm}}-Bereich (Space) festgelegten Aufbewahrungszeitraum abzurufen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 2. Rufen Sie den Aufbewahrungszeitraum ab. Führen Sie den folgenden Befehl aus:
 
@@ -94,11 +94,11 @@ Führen Sie die folgenden Schritte aus, um den für einen {{site.data.keyword.Bl
 ## Protokollaufbewahrungsrichtlinie für alle Bereiche (Spaces) in einem Konto prüfen
 {: #check_retention_policy_account}
 
-Führen Sie die folgenden Schritte aus, um den für jeden {{site.data.keyword.Bluemix_notm}}-Bereich (Space) in einem Konto festgelegten Aufbewahrungszeitraum abzurufen:
+Führen Sie die folgenden Schritte aus, um den für jeden {{site.data.keyword.cloud_notm}}-Bereich (Space) in einem Konto festgelegten Aufbewahrungszeitraum abzurufen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
     
 2. Rufen Sie den Aufbewahrungszeitraum für jeden Bereich (Space) im Konto ab. Führen Sie den folgenden Befehl aus:
 
@@ -126,11 +126,11 @@ Führen Sie die folgenden Schritte aus, um den für jeden {{site.data.keyword.Bl
 ## Protokollaufbewahrungsrichtlinie für ein Konto festlegen
 {: #set_retention_policy_space}
 
-Führen Sie die folgenden Schritte aus, um den Aufbewahrungszeitraum für ein {{site.data.keyword.Bluemix_notm}}-Konto festzulegen:
+Führen Sie die folgenden Schritte aus, um den Aufbewahrungszeitraum für ein {{site.data.keyword.cloud_notm}}-Konto festzulegen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 2. Legen Sie den Aufbewahrungszeitraum fest. Führen Sie den folgenden Befehl aus:
 
@@ -170,11 +170,11 @@ In der Ausgabe wird für jeden Bereich (Space) im Konto ein Eintrag aufgelistet,
 ## Protokollaufbewahrungsrichtlinie für einen Bereich (Space) festlegen
 {: #set_retention_policy_account}
 
-Führen Sie die folgenden Schritte aus, um den Aufbewahrungszeitraum für einen {{site.data.keyword.Bluemix_notm}}-Bereich (Space) festzulegen:
+Führen Sie die folgenden Schritte aus, um den Aufbewahrungszeitraum für einen {{site.data.keyword.cloud_notm}}-Bereich (Space) festzulegen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
     
 2. Legen Sie den Aufbewahrungszeitraum fest. Führen Sie den folgenden Befehl aus:
 

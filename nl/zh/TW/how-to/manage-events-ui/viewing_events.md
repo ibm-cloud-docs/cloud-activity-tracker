@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,12 +20,12 @@ lastupdated: "2018-07-09"
 # 檢視事件
 {: #view_acc_events}
 
-您可以透過 {{site.data.keyword.Bluemix_notm}} 主控台中的 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面或透過 Kibana 來檢視事件。
+您可以透過 {{site.data.keyword.cloud_notm}}  主控台中的 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面或透過 Kibana 來檢視事件。
 {:shortdesc}
    
 
 ## 檢視帳戶事件
-{: #account_events}
+{: #view_acc_events_account_events}
 
 您可以透過 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面或透過 Kibana，在 {{site.data.keyword.cloudaccesstrailshort}} 帳戶網域中檢視事件。
 
@@ -42,7 +42,7 @@ lastupdated: "2018-07-09"
 
 
 ## 檢視空間事件
-{: #space_events}
+{: #view_acc_events_space_events}
 
 您可以透過 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，在 {{site.data.keyword.cloudaccesstrailshort}} 空間網域中檢視事件。如果您有超值方案，也可以透過 Kibana 來查看事件。
 

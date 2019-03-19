@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ Zum Herunterladen von Ereignissen müssen Sie die folgenden Schritte ausführen:
 
 
 ## Ereignisse mithilfe von cURL herunterladen
-{: #curl}
+{: #downloading_events_api_curl}
 
 Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herunterzuladen:
 
@@ -56,10 +56,15 @@ Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herun
     Dabei gilt Folgendes:
     
     * *token* stellt den Wert des UAA-Tokens dar, das Sie in einem früheren Schritt abgerufen haben.
+
     * *spaceID* stellt die UUID des Cloud Foundry-Bereichs dar, in dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
+
     * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+
     * *start* und *end* stellen einen Zeitbereich dar, für den Sie Ereignisse herunterladen möchten. Das Datumsformat ist *JJJJ-MM-TT*. 
+
     * *AtAccountLevel* gibt an, ob sich die Ereignisse, die heruntergeladen werden sollen, in der Kontodomäne oder in einer Bereichsdomäne befinden.
+    
     * *SearchTime* gibt die Tageszeit an, für die Sie Ereignisse herunterladen wollen.
 
     Wenn Sie eine Sitzung zum Herunterladen von Ereignissen von einer Bereichsdomäne in der Region 'Süden' der Vereinigten Staaten ('us-south') erstellen wollen, legen Sie für den Parameter **AtAccountLevel** den Wert *false* fest:
@@ -111,7 +116,7 @@ Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herun
 
 
 ## NodeJS-Beispiel für das Herunterladen von Ereignissen
-{: #node}
+{: #downloading_events_api_node}
 
 Mit dem nachfolgenden Beispielcode können Sie testen, wie Sie Beispiele in eine lokale Datei herunterladen:
 

@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -60,11 +59,11 @@ Para otorgar a un usuario un rol de IAM, tenga en cuenta la información siguien
 
 Siga los pasos siguientes para otorgar a un usuario permisos para ver sucesos desde un dominio de cuenta:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
+1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
 
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
-	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
 2. En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**. 
 
@@ -120,11 +119,11 @@ Para otorgar a un usuario un rol de CF, tenga en cuenta la información siguient
 
 Siga los pasos siguientes para otorgar a un usuario acceso para ver sucesos del espacio:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
+1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
 
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
-	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
 2. En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**. 
 
@@ -134,7 +133,7 @@ Siga los pasos siguientes para otorgar a un usuario acceso para ver sucesos del 
 
     Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
 
-4. Seleccione **Acceso de Cloud Foundry** y luego seleccione la organización.
+4. Seleccione **Acceso de Cloud Foundry** y seleccione la organización.
 
     Aparece la lista de espacios disponibles en dicha organización.
 

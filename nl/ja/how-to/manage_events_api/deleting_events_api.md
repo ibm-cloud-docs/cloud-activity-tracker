@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -23,10 +23,10 @@ lastupdated: "2018-07-07"
 {{site.data.keyword.cloudaccesstrailshort}} API を使用して、{{site.data.keyword.cloudaccesstrailshort}} に保管されたイベントを削除します。
 {:shortdesc}
 
-**注:** API 呼び出しを使用してイベントを手動で削除することが可能ですが、イベントを自動的に削除する保存ポリシーを設定することを検討してください。詳しくは、[イベント保存ポリシーの構成](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)を参照してください。
+**注:** API 呼び出しを使用してイベントを手動で削除することが可能ですが、イベントを自動的に削除する保存ポリシーを設定することを検討してください。 詳しくは、[イベント保存ポリシーの構成](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)を参照してください。
 
 ## cURL を使用したイベントの削除
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 スペース・ドメイン内の使用可能なイベントを削除するには、以下のステップを実行します。
 
@@ -45,8 +45,8 @@ lastupdated: "2018-07-07"
 
     * *token* は、UAA トークンです。
     * *spaceID* は、{{site.data.keyword.cloudaccesstrailshort}} をプロビジョンした Cloud Foundry スペースの UUID を表します。
-    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。地域ごとに URL は異なります。地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
-    * *start* および *end* は、ダウンロードするイベントの期間を表します。日付形式は YYYY-MM-DD です。 
+    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
+    * *start* および *end* は、ダウンロードするイベントの期間を表します。 日付形式は YYYY-MM-DD です。 
     * *AtAccountLevel* は、イベントに関する情報の取得対象ドメインを示します。
     * *SearchTime* は、イベントに関する情報の取得対象時刻を示します。
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## NodeJS でのイベント削除の例
-{: #node}
+{: #deleting_events_api_node}
 
 以下は、イベントを削除する方法をテストするために使用できるサンプル・コードです。
 

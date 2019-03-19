@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-12"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -16,46 +16,53 @@ lastupdated: "2018-09-12"
 {:download: .download}
 
 
-# Lernprogramm 'Einführung'
+# Einführung
 {: #getting-started-with-cla}
 
-Der {{site.data.keyword.cloudaccesstrailfull}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.Bluemix}} ändern. In diesem Lernprogramm erfahren Sie, wie Sie mit dem {{site.data.keyword.cloudaccesstrailfull}}-Service die Interaktion eines Benutzers mit einem Cloud-Service überwachen können. 
+Der {{site.data.keyword.cloudaccesstrailfull}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.Bluemix}} ändern. Lernen Sie, wie Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um die Interaktion eines Benutzers mit einem Cloud-Service zu überwachen.
 {:shortdesc}
-
-Das Lernprogramm 'Einführung' hat die folgenden Ziele:
-
-1. Die Vorgehensweise zum Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service erläutern
-2. Die Verwendung eines Cloud-Service zum Generieren von Aktivitätsereignissen erläutern, die vom {{site.data.keyword.cloudaccesstrailshort}}-Service automatisch erfasst werden. Ereignisse entsprechend dem [Standard der Cloud Auditing Data Federation (CADF) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
-3. Die Vorgehensweise zum Überwachen der Cloud-Aktivität eines Service unter Verwendung des vordefinierten {{site.data.keyword.cloudaccesstrailshort}}-Dashboards erläutern
 
 Die folgende Abbildung zeigt die verschiedenen Komponenten und Aktionen, die ausgeführt werden, wenn eine vom Benutzer eingeleitete Aktivität den Status eines Service ändert:
 
 ![Komponenten und Aktionen, die auftreten, wenn eine von einem Benutzer eingeleitete Aktivität den Status eines Service ändert](images/AT_f1.png "Komponenten und Aktionen, die auftreten, wenn eine vom Benutzer eingeleitete Aktivität den Status eines Service ändert")
 
-
+**Hinweis:** Diese Einführung bietet Ihnen einen Einstieg in die Überwachung der Cloud-Aktivität in der Region 'Vereinigte Staaten (Süden)'. 
 
 ## Vorbereitungen
-{: #prereqs}
+{: #index_prereqs}
 
-Erstellen Sie ein [{{site.data.keyword.Bluemix_notm}}-Konto](https://console.bluemix.net/registration/). Ihre Benutzer-ID muss ein Mitglied oder Eigner eines {{site.data.keyword.Bluemix_notm}}-Kontos mit Entwicklerberechtigungen in dem Bereich sein, in dem Sie beabsichtigen, den {{site.data.keyword.cloudaccesstrailshort}}-Service zu verwenden.
+* Lesen Sie die Informationen zum {{site.data.keyword.cloudaccesstrailshort}}-Service. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov).
+* Stellen Sie fest, in welchen Regionen der Service verfügbar ist. Weitere Informationen finden Sie in [Regionen](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions). 
+* Fordern Sie eine Benutzer-ID an, die ein Mitglied oder der Eigner eines {{site.data.keyword.cloud_notm}}-Kontos ist.  
+
+    Rufen Sie zum Anfordern einer {{site.data.keyword.cloud_notm}}-Benutzer-ID die Seite für [Registrierung ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/registration/){:new_window} auf. 
 
 
-## Schritt 1: Activity Tracker bereitstellen
-{: #step1}
 
-Sie müssen den {{site.data.keyword.cloudaccesstrailshort}}-Service in derselben Region bereitstellen wie der Cloud-Service, dessen Aktivität Sie überwachen möchten. Nachdem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt worden ist, werden automatisch Ereignisse von den ausgewählten Cloud-Services erfasst.  
+## Schritt 1: {{site.data.keyword.cloudaccesstrailshort}} bereitstellen
+{: #index_step1}
 
-**Hinweis:** In diesem Lernprogramm erfahren Sie, wie Sie mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service die Interaktion eines Benutzers mit dem Cloud-Service {{site.data.keyword.keymanagementservicelong_notm}} in der Region 'Vereinigte Staaten (Süden)' überwachen können. Daher müssen Sie {{site.data.keyword.cloudaccesstrailshort}} in der Region 'Vereinigte Staaten (Süden)' bereitstellen. Informationen dazu, in welcher Region ein Service verfügbar ist, finden Sie in [Services nach Region](/docs/resources/services_region.html#services_region).
+Beachten Sie die folgenden Informationen, wenn Sie eine Position für die Bereitstellung einer Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service auswählen: 
 
-Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in der {{site.data.keyword.Bluemix_notm}} bereitzustellen:
+* {{site.data.keyword.cloudaccesstrailshort}} erfasst Ereignisse in Domänen. Es gibt eine Kontodomäne pro Region und eine Bereichsdomäne (Space Domain) pro Cloud Foundry-Bereich (CF-Bereich).  
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an.
+* **Zum Überwachen von globalen Kontoaktionen** müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region 'Vereinigte Staaten (Süden)' bereitstellen. Einige Beispiele für globale Aktionen sind: Bereitstellung einer Instanz, Änderung der IAM-Richtlinie eines Benutzers oder Einladung eines Benutzers für das Konto. 
 
-    Das {{site.data.keyword.Bluemix_notm}}-Dashboard finden Sie unter [http://bluemix.net ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+* **Zum Überwachen von Ereignissen, die durch einen im Kontext einer CF-Organisation und eines CF-Bereichs bereitgestellten Service generiert werden**, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region und in dem Bereich bereitstellen, in der auch der Service mit den zu überwachenden Aktivitäten bereitgestellt wird.  
+
+* **Zum Überwachen von Ereignissen, die durch einen im Kontext einer Ressourcengruppe bereitgestellten Service generiert werden**, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in einem Bereich in der Region bereitstellen, in der auch der Service mit den zu überwachenden Aktivitäten bereitgestellt wird.  
+
+* Zum Bereitstellen einer Instanz muss Ihre Benutzer-ID über die **Entwicklerrolle** in dem Bereich verfügen, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll. 
+
+Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in der {{site.data.keyword.cloud_notm}} bereitzustellen:
+
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an.
+
+    Das {{site.data.keyword.cloud_notm}}-Dashboard finden Sie unter [https://cloud.ibm.com ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com){:new_window}. 
     
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
-2. Klicken Sie auf **Katalog**. Die Liste der in der {{site.data.keyword.Bluemix_notm}} verfügbaren Services wird geöffnet.
+2. Klicken Sie auf **Katalog**. Die Liste der in der {{site.data.keyword.cloud_notm}} verfügbaren Services wird geöffnet.
 
 3. Wählen Sie die Kategorie **Sicherheit und Identität** aus, um die Liste der angezeigten Services zu filtern.
 
@@ -63,9 +70,9 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
 4. Klicken Sie auf die Kachel **Activity Tracker**. 
 
-5. Konfigurieren Sie die entsprechenden Informationen, um zu definieren, wo der Service bereitgestellt werden soll. 
+5. Konfigurieren Sie die entsprechenden Informationen, um zu definieren, wo der Service bereitgestellt werden soll.
 
-    Geben Sie die Daten ein, wie in der folgenden Tabelle angegeben: 
+    Wenn Sie beispielsweise den Service in der Region 'Vereinigte Staaten (Süden)' bereitstellen möchten, geben Sie die Daten wie in der folgenden Tabelle angegeben ein:  
 
     <table>
 	  <caption>Tabelle 1. Erforderliche Felder zum Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service</caption>
@@ -87,59 +94,138 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 	  </tr>
 	</table>
 
-6. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich, in dem Sie angemeldet sind, bereitzustellen.
+6. Wählen Sie einen Plan aus.  
+
+    Standardmäßig ist der Plan **Lite** ausgewählt. 
+
+	Weitere Informationen finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
+
+7. Klicken Sie auf **Erstellen**, um eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich zu erstellen, in dem Sie angemeldet sind. 
    
 
-## Schritt 2: Cloud-Service konfigurieren  
-{: #step2}
 
-In diesem Lernprogramm erfahren Sie, wie Sie die API-Aktivität für den {{site.data.keyword.keymanagementserviceshort}}-Service in der {{site.data.keyword.Bluemix_notm}} überwachen.
+## Schritt 2: Benutzern Zugriff für die Überwachung von Ereignissen erteilen
+{: #index_step2}
 
-Führen Sie die folgenden Schritte aus, um den {{site.data.keyword.keymanagementserviceshort}}-Service in der {{site.data.keyword.Bluemix_notm}} bereitzustellen:
+Zum Anzeigen von Ereignissen benötigen Sie Zugriffsberechtigungen in der {{site.data.keyword.cloud_notm}}. Die Berechtigungen hängen davon ab, ob Sie globale Kontoereignisse, Ereignisse für einen im Kontext einer Ressourcengruppe bereitgestellten Service oder Ereignisse für einen im Kontext einer CF-Organisation und eines CF-Bereichs bereitgestellten Service anzeigen möchten.  
 
-1. Stellen Sie eine Instanz des {{site.data.keyword.keymanagementserviceshort}}-Service in der Region 'Vereinigte Staaten (Süden)' bereit. Weitere Informationen finden Sie in [Bereitstellung über IBM Cloud-Konsole durchführen](/docs/services/key-protect/provision.html#provision).
+Beachten Sie die folgenden Informationen für die **Überwachung globaler Kontoaktionen** und die **Überwachung eines im Kontext einer Ressourcengruppe bereitgestellten Service**: 
 
-2. Definieren Sie die {{site.data.keyword.Bluemix_notm}}-Berechtigungen für den Benutzer, der künftig mit Schlüsseln arbeiten soll. 
+* Sie müssen über eine IAM-Richtlinie für den {{site.data.keyword.loganalysisshort}}-Service mit der Rolle **Leseberechtigter** für den {{site.data.keyword.loganalysisshort}}-Service verfügen.  
+* Der Kontoeigner oder ein Administrator des {{site.data.keyword.loganalysisshort}}-Service kann diese Richtlinie erteilen. 
 
-    * Damit ein Benutzer Schlüssel erstellen kann, ist für ihn eine IAM-Richtlinie erforderlich, bei der für die Servicerolle der Wert *Manager* (Manager) oder *Schreibberechtigter* (Writer) festgelegt ist.
-	* Damit ein Benutzer Schlüssel löschen kann, ist für ihn eine IAM-Richtlinie erforderlich, bei der für die Servicerolle der Wert *Manager* (Manager) festgelegt ist.
-	* Damit ein Benutzer Schlüssel anzeigen kann, ist für ihn eine IAM-Richtlinie erforderlich, bei der für die Servicerolle der Wert *Leseberechtigter* (Reader) festgelegt ist. 
+Beachten Sie die folgenden Informationen für die **Überwachung eines im Kontext einer CF-Organisation und eines CF-Bereichs bereitgestellten Service**: 
 
+* Sie müssen über die Rolle **Entwickler** für den Bereich verfügen, in dem Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt haben. 
+* Der Kontoeigner, der Organisationsmanager oder der Bereichsmanager können Ihnen die Rolle **Entwickler** für den Bereich erteilen. 
 
-## Schritt 3: Activity Tracker-Ereignis generieren
-{: # step3}
+**Hinweis: Sie müssen der Kontoeigner oder ein Administrator des {{site.data.keyword.loganalysisshort}}-Service sein, um einem Benutzer eine IAM-Richtlinie zu erteilen.** 
 
-In diesem Schritt erstellen Sie mit dem {{site.data.keyword.keymanagementserviceshort}}-Service einen Sicherheitsschlüssel, um {{site.data.keyword.cloudaccesstrailshort}}-Ereignisdaten zu generieren. Weitere Informationen finden Sie in [Neue Schlüssel erstellen](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
+### Benutzern Zugriff für die Überwachung von Kontodomänenereignissen erteilen
+{: #index_acc}
 
-* {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse werden als Ergebnis der Erstellung eines Schlüssels generiert.
-* {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse sind in der **Kontodomäne** von {{site.data.keyword.cloudaccesstrailshort}} verfügbar, die in der {{site.data.keyword.Bluemix_notm}}-Region verfügbar ist, in der die Ereignisse generiert werden. 
+Führen Sie die folgenden Schritte aus, um einem Benutzer über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle (UI) eine IAM-Richtlinie zu erteilen: 
 
-## Schritt 4: Activity Tracker-Ereignis überwachen
-{: #step4}
+1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
 
-In diesem Schritt überprüfen Sie mithilfe der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle, dass {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse generiert wurden.
+    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [https://cloud.ibm.com ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com){:new_window}. 
 
-Führen Sie die folgenden Schritte aus, um zu überprüfen, dass ein Ereignis erstellt wurde:
+2. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie anschließend **Benutzer** aus. 
+3. Wählen Sie in der Zeile für den Benutzer, dem Sie Zugriff zuweisen möchten, das Menü **Aktionen** aus und klicken Sie dann auf **Zugriff zuweisen**. 
+4. Wählen Sie **Zugriff auf Ressourcen zuweisen** aus. 
+5. Wählen Sie **Protokollanalyse** aus. 
+6. Wählen Sie **Alle Regionen** aus. 
+7. Wählen Sie **Alle Serviceinstanzen** aus.
+8. Wählen Sie die Servicerolle **Leseberechtigter** aus. 
+9. Klicken Sie auf 'Zuweisen'. 
 
-1. Erteilen Sie dem Benutzer Berechtigungen zum Anzeigen von Ereignissen für ein Konto. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events) und [Berechtigungen zum Anzeigen von Ereignissen für ein Konto erteilen](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events).
+### Benutzern Zugriff für die Überwachung von Bereichsdomänenereignissen erteilen
+{: #index_space}
 
-2. Wählen Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard den {{site.data.keyword.cloudaccesstrailshort}}-Service aus. Das Service-Dashboard wird geöffnet.
+Führen Sie die folgenden Schritte aus, um einem Benutzer über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle die Entwicklerrolle in einem Bereich zu erteilen: 
 
-3. Konfigurieren Sie die Ansicht, in der nach den {{site.data.keyword.keymanagementserviceshort}}-Ereignissen gesucht werden soll, die beim Bereitstellen des Service und Hinzufügen eines Schlüssels generiert wurden.
+1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
 
-    * Wähle Sie für das Feld *Protokolle anzeigen* die Option **Kontoprotokolle** aus.
-    * Wählen Sie für das Feld *Suche* den Wert **target.typeURI_str** ein und geben Sie im Feld *Filtern* den Wert **kms/secrets** ein.
+    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [https://cloud.ibm.com ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com){:new_window}. 
 	
-    Die angezeigten Daten enthalten verfügbare {{site.data.keyword.keymanagementserviceshort}}-Ereignisse für die letzten 24 Stunden. 
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
+
+2. Klicken Sie in der Menüleiste auf **Verwalten** &gt; **Sicherheit** &gt; **Identität und Zugriff** und wählen Sie anschließend **Benutzer** aus. 
+
+3. Wählen Sie den Benutzer aus. 
+
+4. Wählen Sie **Cloud Foundry-Zugriff** aus. 
+
+5. Erweitern Sie eine Organisation. 
+
+    Es wird eine Liste der in dieser Organisation verfügbaren Bereiche (Spaces) angezeigt.
+
+6. Wählen Sie im Aktionsmenü **Organisationsrolle bearbeiten** aus. Wählen Sie die Rolle **Auditor** im Feld *Organisationsrollen* aus. Klicken Sie anschließend auf **Rolle speichern**. 
+
+7. Wählen Sie einen Bereich aus.  
+
+8. Wählen Sie im Aktionsmenü **Bereichsrolle bearbeiten** aus. Wählen Sie die Rolle **Entwickler** im Feld *Bereichsrollen* aus. Klicken Sie anschließend auf **Rolle speichern**. 
 	
+7. Klicken Sie auf **Zuweisen**.
+
+
+
+## Schritt 3: {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse generieren
+{: #index_step3}
+
+Nachdem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt worden ist, werden automatisch Ereignisse von den ausgewählten Cloud-Services erfasst. Weitere Informationen zu den Services, die Sie mit {{site.data.keyword.cloudaccesstrailshort}} überwachen können, sowie Informationen zu den Aktionen, durch die ein {{site.data.keyword.cloudaccesstrailshort}}-Ereignis generiert wird, finden Sie [Cloud-Services](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services). 
+
+**Hinweis:** Damit ein Benutzer {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse für {{site.data.keyword.BluVirtServers_short}} und {{site.data.keyword.baremetal_short}} generieren kann, benötigt er Zugriff auf Infrastrukturressourcen in der IBM Cloud-Konsole. Weitere Informationen finden Sie in [{{site.data.keyword.BluVirtServers_short}}- und  {{site.data.keyword.baremetal_short}}-Aktivität mit {{site.data.keyword.cloudaccesstrailshort}} überwachen](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi). 
+
+Führen Sie das Lernprogramm [{{site.data.keyword.keymanagementserviceshort}}-Aktivität mit {{site.data.keyword.cloudaccesstrailshort}} überwachen](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp) aus, um zu lernen, wie Ereignisse generiert werden. 
+
+## Schritt 4: Ereignisse anzeigen
+{: #index_step4}
+
+Sie können {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse in der {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle überwachen. Sie können Ihren Plan auch auf einen Premium-Plan aufrüsten, um Ereignisse über Kibana zu überwachen.  
+
+Beachten Sie die folgenden Informationen für die **Überwachung globaler Kontoaktionen** und die **Überwachung eines im Kontext einer Ressourcengruppe bereitgestellten Service**: 
+
+* Ereignisse werden in einer Kontodomäne erfasst. 
+
+    Es gibt eine Kontodomäne pro Region. 
+
+    Globale Kontoaktionen werden in der Kontodomäne 'Vereinigte Staaten (Süden)' erfasst. 
+
+    Ereignisse für einen Service werden in der Kontodomäne der Region erfasst, in der eine Instanz dieses Service bereitgestellt wird. 
+
+* Der Kontoeigner kann Ereignisse entweder über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle oder in Kibana anzeigen. 
+* Andere Benutzer können nur Kontodomänenereignisse über Kibana anzeigen.  
+
+
+Beachten Sie die folgenden Informationen für die **Überwachung eines im Kontext einer CF-Organisation und eines CF-Bereichs bereitgestellten Service**: 
+
+* Ereignisse werden in einer Bereichsdomäne erfasst.  
+* Jedem CF-Bereich ist eine {{site.data.keyword.cloudaccesstrailshort}}-Bereichsdomäne zugeordnet.  
+* Sie können Ereignisse entweder über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle oder in Kibana anzeigen. 
+
+In der folgenden Tabelle ist die {{site.data.keyword.cloudaccesstrailshort}}-Domäne definiert, in der Ereignisse überwacht werden müssen: 
+
+| Überwachung                                                          | {{site.data.keyword.cloudaccesstrailshort}}-Domäne |  
+|----------------------------------------------------------------------|----------------------------------------------------| 
+| `Globale Kontoaktionen`                                             | Kontodomäne 'Vereinigte Staaten (Süden)'           |  
+| `Im Kontext einer Ressourcengruppe bereitgestellte Services`   | Kontodomäne                                        | 
+| `Im Kontext einer CF-Organisation und eines CF-Bereichs bereitgestellte Services` | Bereichsdomäne                                     | 
+{: caption="Tabelle 1. {{site.data.keyword.cloudaccesstrailshort}}-Domänen nach Ereignisquelle" caption-side="top"} 
+
+Zum Anzeigen von Ereignissen können Sie eine der folgenden Optionen auswählen: 
+
+* [Zum Activity Tracker-Dashboard navigieren, um die Cloud-Aktivität in dem Konto zu überwachen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) 
+* [Zum Activity Tracker-Dashboard navigieren, um die Cloud-Aktivität in einem Bereich zu überwachen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
+* [Über einen Web-Browser zu Kibana navigieren](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)
+
+Wählen Sie [Zum Activity Tracker-Dashboard navigieren, um die Cloud-Aktivität in dem Konto zu überwachen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) aus, um die Ereignisse anzuzeigen, die Sie durch die Ausführung der Schritte in diesem Lernprogramm generiert haben. Wenn Sie nicht der Kontoeigner sind, rüsten Sie den Serviceplan auf und überprüfen Sie, ob Sie über die korrekten Zugriffsberechtigungen zum Anzeigen von Ereignissen verfügen.  
 
 
 ## Nächste Schritte
-{: #next_steps}
+{: #index_next_steps}
 
-Verwenden Sie anschließend das vordefinierte Kibana-Dashboard in {{site.data.keyword.cloudaccesstrailshort}}, um Ereignisprotokolle zu überwachen und zu analysieren. Informationen zum Starten von Kibana finden Sie in [Zum Kibana-Dashboard](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana) navigieren. In Kibana werden die Protokolle für Bereichsaktivitäten standardmäßig im Dashboard **ActivityTracker_Space_Dashboard_in_24h** angezeigt:
-
-Sie können auch die {{site.data.keyword.cloudaccesstrailshort}}-CLI verwenden, um Ihre Ereignisse über die Befehlszeile zu verwalten. Weitere Informationen finden Sie in [Ereignisinformationen anzeigen](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+Verwenden Sie die {{site.data.keyword.cloudaccesstrailshort}}-Befehlszeilenschnittstelle (CLI), um die Ereignisse über die Befehlszeile zu verwalten. Weitere Informationen finden Sie in [Ereignisse mithilfe der Activity Tracker-CLI verwalten](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2). 
 
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-09"
 
 
 
-# 導覽至 {{site.data.keyword.Bluemix_notm}} 主控台中的 Activity Tracker 儀表板
+# 導覽至 {{site.data.keyword.cloud_notm}} 主控台中的 Activity Tracker 儀表板
 {: #launch_at_ui}
 
 您可以從 {{site.data.keyword.Bluemix}} 啟動 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面。依預設，您可以查看空間事件。您也可以檢視帳戶事件。
@@ -25,17 +25,17 @@ lastupdated: "2018-07-09"
    
 
 ## 導覽至 Activity Tracker 儀表板以監視空間中的雲端活動
-{: #account_view_space}
+{: #launch_at_ui_account_view_space}
 
 完成下列步驟，以導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，讓您可以監視空間中的雲端活動：
 
-1. 登入您要監視雲端活動之 {{site.data.keyword.Bluemix_notm}} 帳戶的空間、組織及地區。
+1. 登入您要監視雲端活動之 {{site.data.keyword.cloud_notm}} 帳戶的空間、組織及地區。
 
-    {{site.data.keyword.Bluemix_notm}} 儀表板位於：[http://bluemix.net ![外部鏈結圖示](../../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
+    {{site.data.keyword.cloud_notm}} 儀表板位於：[https://cloud.ibm.com/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/){:new_window}。
     
-	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
-2. 從 {{site.data.keyword.Bluemix_notm}} 儀表板選取 {{site.data.keyword.cloudaccesstrailshort}} 服務。 
+2. 從 {{site.data.keyword.cloud_notm}} 儀表板選取 {{site.data.keyword.cloudaccesstrailshort}} 服務。 
     
 3. 選取**受管理**標籤。
 
@@ -43,17 +43,17 @@ lastupdated: "2018-07-09"
 
 
 ## 導覽至 Activity Tracker 儀表板以監視帳戶中的雲端活動
-{: #account_view_account}
+{: #launch_at_ui_account_view_account}
 
 完成下列步驟，以導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，讓您可以監視帳戶中的雲端活動：
 
-1. 登入您要監視雲端活動的 {{site.data.keyword.Bluemix_notm}} 帳戶。
+1. 登入您要監視雲端活動的 {{site.data.keyword.cloud_notm}} 帳戶。
 
-    {{site.data.keyword.Bluemix_notm}} 儀表板位於：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
+    {{site.data.keyword.cloud_notm}} 儀表板位於：[https://cloud.ibm.com/ ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/){:new_window}。
     
-	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
-2. 從 {{site.data.keyword.Bluemix_notm}} 儀表板選取 {{site.data.keyword.cloudaccesstrailshort}} 服務。 
+2. 從 {{site.data.keyword.cloud_notm}} 儀表板選取 {{site.data.keyword.cloudaccesstrailshort}} 服務。 
     
 3. 選取**受管理**標籤。
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # 更改套餐
 {: #change_plan}
 
-您可以通过 {{site.data.keyword.Bluemix_notm}} UI 或运行 `ibmcloud service update` 命令来更改 {{site.data.keyword.cloudaccesstraillong}}服务套餐。您可以随时将套餐升级或降级。
+可以通过 {{site.data.keyword.cloud_notm}} UI 或通过运行 `ibmcloud service update` 命令来更改 {{site.data.keyword.cloudaccesstraillong}} 服务套餐。您可以随时将套餐升级或降级。
 {:shortdesc}
 
 ## 通过 UI 更改服务套餐
 {: #change_plan_ui}
 
-要通过 {{site.data.keyword.Bluemix_notm}} UI 更改服务套餐，请完成以下步骤：
+要通过 {{site.data.keyword.cloud_notm}} UI 更改服务套餐，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}，然后单击*仪表板*中的 {{site.data.keyword.cloudaccesstraillong_notm}} 服务。 
+1. 登录到 {{site.data.keyword.cloud_notm}}，然后单击*仪表板*中的 {{site.data.keyword.cloudaccesstraillong_notm}} 服务。 
     
 2. 选择**套餐**选项卡。
 
@@ -45,9 +45,9 @@ lastupdated: "2018-09-07"
 
 要通过 CLI 更改服务套餐，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 2. 运行 `ibmcloud service list` 命令来检查当前套餐，并从空间中可用的服务列表中获取 {{site.data.keyword.cloudaccesstrailshort}} 服务名称。 
 

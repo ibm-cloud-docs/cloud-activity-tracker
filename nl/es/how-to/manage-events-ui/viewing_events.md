@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,12 +20,12 @@ lastupdated: "2018-07-09"
 # Visualización de sucesos
 {: #view_acc_events}
 
-Puede ver sucesos desde la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} en la consola de {{site.data.keyword.Bluemix_notm}} o mediante Kibana.
+Puede ver sucesos desde la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} en la consola de {{site.data.keyword.cloud_notm}} o mediante Kibana.
 {:shortdesc}
    
 
 ## Visualización de sucesos de cuenta
-{: #account_events}
+{: #view_acc_events_account_events}
 
 Puede ver los sucesos de un dominio de cuenta de {{site.data.keyword.cloudaccesstrailshort}} a través de la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} o a través de Kibana.
 
@@ -42,7 +42,7 @@ Como **miembro en una cuenta**, tenga en cuenta la información siguiente para v
 
 
 ## Visualización de sucesos de espacio
-{: #space_events}
+{: #view_acc_events_space_events}
 
 Puede ver los sucesos de un dominio de espacio de {{site.data.keyword.cloudaccesstrailshort}} a través de la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}}. Si tiene un plan premium, también puede ver los sucesos a través de Kibana.
 

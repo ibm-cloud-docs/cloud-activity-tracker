@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ API を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを�
 
 
 ## cURL を使用したイベントのダウンロード
-{: #curl}
+{: #downloading_events_api_curl}
 
 イベントをローカル・ファイルにダウンロードするには、以下のステップを実行します。
 
@@ -56,10 +56,15 @@ API を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを�
     ここで、
     
     * *token* は、前のステップで取得した UAA トークンを表します。
+
     * *spaceID* は、{{site.data.keyword.cloudaccesstrailshort}} をプロビジョンした Cloud Foundry スペースの UUID を表します。
-    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。地域ごとに URL は異なります。地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
-    * *start* および *end* は、ダウンロードするイベントの期間を表します。日付形式は *YYYY-MM-DD* です。 
+
+    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
+
+    * *start* および *end* は、ダウンロードするイベントの期間を表します。 日付形式は *YYYY-MM-DD* です。 
+
     * *AtAccountLevel* は、ダウンロードするイベントが、アカウント・ドメイン内にあるのか、スペース・ドメイン内にあるのかを示します。
+    
     * *SearchTime* は、ダウンロードするイベントの時刻を示します。
 
     米国南部地域のスペース・ドメインからイベントをダウンロードするためのセッションを作成するには、パラメーター **AtAccountLevel** を *false* に設定します。
@@ -111,7 +116,7 @@ API を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを�
 
 
 ## NodeJS でのイベントのダウンロードの例
-{: #node}
+{: #downloading_events_api_node}
 
 以下は、イベントをローカル・ファイルにダウンロードする方法をテストするために使用できるサンプル・コードです。
 

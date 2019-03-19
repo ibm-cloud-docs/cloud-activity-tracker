@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-12"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,28 +23,43 @@ lastupdated: "2018-09-12"
 Utilizza il servizio {{site.data.keyword.cloudaccesstraillong}} per monitorare le attività avviate dall'utente che modificano lo stato di uno dei seguenti servizi nel cloud {{site.data.keyword.IBM_notm}}:
 {:shortdesc}
 
-**Nota:** per ottenere le informazioni sulle regioni in cui è disponibile un servizio in {{site.data.keyword.Bluemix_notm}}, consulta [Servizi per regione](/docs/resources/services_region.html#services_region).
+**Nota:** per ottenere le informazioni sulle regioni in cui è disponibile un servizio in {{site.data.keyword.cloud_notm}}, consulta [Servizi per regione](/docs/resources/services_region.html#services_region).
 
 
-## Infrastruttura: servizi Virtual Server
-{: #vs}
+## Calcolo: servizi dell'infrastruttura
+{: #infrastructure}
 
-La seguente tabella elenca i servizi Virtual Server che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+**Nota:** perché un utente generi degli eventi {{site.data.keyword.BluVirtServers_short}} e {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, deve avere accesso alle risorse dell'infrastruttura nella console IBM Cloud. Per ulteriori informazioni, vedi [Monitoraggio di {{site.data.keyword.BluVirtServers_short}} e dell'attività di {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi).
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+La seguente tabella elenca i servizi dell'infrastruttura che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.BluVirtServers_short}} ](/docs/vsi/vsi_about.html#about-virtual-servers)|{{site.data.keyword.BluVirtServers}} sono server virtuali scalabili che vengono acquistati con i core dedicati e le allocazioni di memoria. Sono una grande opzione se stai cercando risorse di calcolo, che possono essere aggiunte in pochi minuti, con l'accesso alle funzioni come i template dell'immagine. | [Eventi generati da {{site.data.keyword.BluVirtServers_short}}](/docs/vsi/vsi_activity_tracker_events.html#at_events) |  
-{: caption="Elenco dei servizi Virtual Server che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+| [{{site.data.keyword.BluVirtServers_short}} ](/docs/vsi/vsi_about.html#about-virtual-servers)| {{site.data.keyword.BluVirtServers}} sono server virtuali scalabili che vengono acquistati con i core dedicati e le allocazioni di memoria. Sono una grande opzione se stai cercando risorse di calcolo, che possono essere aggiunte in pochi minuti, con l'accesso alle funzioni come i template dell'immagine.  | [Eventi generati da {{site.data.keyword.BluVirtServers_short}}](/docs/vsi/vsi_activity_tracker_events.html#at_events) |  
+| [{{site.data.keyword.baremetal_long}} ](/docs/bare-metal/about.html#about) | {{site.data.keyword.baremetal_short}} sono server fisici a singolo tenant che ti forniscono prestazioni e controllo con un accesso di basso livello alle risorse hardware. | [Eventi generati da {{site.data.keyword.baremetal_short}}](/docs/bare-metal/bm-activity-tracker-events.html#at_events) | 
+{: caption="Elenco dei servizi dell'infrastruttura che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
+
+
+
+## Calcolo: servizi di calcolo senza server
+{: #serverless}
+
+La seguente tabella elenca i servizi di calcolo senza server che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+|-------------|-------------|-------------|
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk/index.html#index) | {{site.data.keyword.openwhisk_short}} è una piattaforma di programmazione FaaS (Functions-as-a-Service) poliglotta basata su Apache OpenWhisk. {{site.data.keyword.openwhisk_short}} consente agli sviluppatori di scrivere un codice leggero denominato azioni in grado di eseguire in modo scalabile la logica dell'applicazione. | [Eventi generati da {{site.data.keyword.openwhisk_short}}](/docs/openwhisk/at-events.html#activity_tracker) |
+{: caption="Elenco dei servizi di calcolo senza server che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 ## Piattaforma: Servizi di analisi
 {: #analytics}
 
 La seguente tabella elenca i servizi di analisi che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.streaminganalyticsfull}} ](/docs/services/StreamingAnalytics/index.html#gettingstarted)|{{site.data.keyword.streaminganalyticsfull}} è fornito da {{site.data.keyword.streamsshort}}, una piattaforma di analisi avanzata che puoi utilizzare per inserire, analizzare e correlare le informazioni come arrivano da diversi tipi di origini dati in tempo reale. | [Eventi generati da {{site.data.keyword.streaminganalyticsshort}} ]() |  
+| [{{site.data.keyword.streaminganalyticsfull}} ](/docs/services/StreamingAnalytics/index.html#gettingstarted)| {{site.data.keyword.streaminganalyticsfull}} è fornito da {{site.data.keyword.streamsshort}}, una piattaforma di analisi avanzata che puoi utilizzare per inserire, analizzare e correlare le informazioni come arrivano da diversi tipi di origini dati in tempo reale. | [Eventi generati da {{site.data.keyword.streaminganalyticsshort}} ]() |  
 {: caption="Elenco dei servizi cloud di analisi che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 
@@ -55,22 +70,22 @@ La seguente tabella elenca i servizi di analisi che inviano gli eventi a {{site.
 
 * **Eventi di gestione del cluster**: 
     
-    * Questi eventi sono generati automaticamente. 
+    * Questi eventi sono generati automaticamente.
     * Questi eventi sono inoltrati automaticamente a {{site.data.keyword.cloudaccesstrailshort}}.
     * Puoi visualizzare questi eventi tramite il **dominio dell'account** {{site.data.keyword.cloudaccesstrailshort}}. 
 
 * **Eventi di controllo del server API Kubernetes**: 
 
-    * Questi eventi sono generati automaticamente. 
+    * Questi eventi sono generati automaticamente.
     * Devi configurare il tuo cluster per inoltrare questi eventi al servizio {{site.data.keyword.cloudaccesstrailshort}}.
     * Puoi configurare il tuo cluster per inoltrare gli eventi al **dominio dell'account** o al **dominio dello spazio** {{site.data.keyword.cloudaccesstrailshort}}. Per ulteriori informazioni, vedi [Invio dei log di controllo](/docs/containers/cs_health.html#api_forward).
 
 La seguente tabella elenca i servizi della piattaforma del contenitore che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}: eventi di gestione del cluster](/docs/containers/container_index.html#container_index)| Questi eventi si riferiscono ad azioni come la creazione, l'eliminazione o l'aggiornamento del cluster. | [Eventi di gestione del cluster ]() |  
-| [{{site.data.keyword.containerlong_notm}}: eventi di controllo del server API](/docs/containers/container_index.html#container_index)| Gli eventi di controllo del server API Kubernetes forniscono le informazioni cronologiche sulla sequenza delle attività che influenza un cluster. Ogni azione genera un evento | [Eventi di controllo del server API Kubernetes](/docs/containers/cs_at_events.html#at_events) |
+| [{{site.data.keyword.containerlong_notm}}: eventi di gestione del cluster](/docs/containers/container_index.html#container_index)| Questi eventi si riferiscono ad azioni come la creazione, l'eliminazione o l'aggiornamento del cluster. | [Eventi di gestione del cluster ](/docs/containers/cs_at_events.html#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}: eventi di controllo del server API](/docs/containers/container_index.html#container_index)| Gli eventi di controllo del server API Kubernetes forniscono le informazioni cronologiche sulla sequenza delle attività che influenza un cluster. Ogni azione genera un evento | [Eventi di controllo del server API Kubernetes](/docs/containers/cs_at_events.html#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry/registry_overview.html#registry_overview) | Puoi utilizzare il servizio {{site.data.keyword.registrylong_notm}} per archiviare e accedere alle immagini Docker private in un'architettura altamente disponibile e scalabile. | [Eventi generati quando interagiscono con {{site.data.keyword.registrylong_notm}}](/docs/services/Registry/registry_at_events.html#at_events) | 
 {: caption="Eventi del contenitore" caption-side="top"} 
 
@@ -79,7 +94,7 @@ La seguente tabella elenca i servizi della piattaforma del contenitore che invia
 ## Piattaforma: applicazioni Cloud Foundry
 {: #platform_cfapps}
 
-Gli eventi che vengono inviati dalle applicazioni Cloud Foundry a {{site.data.keyword.cloudaccesstrailshort}} sono elencati nell'area di risposta `GET /v2/events`, sotto la sezione del corpo. Il campo *Type* elenca tutte le azioni che generano un evento. Per ulteriori informazioni, vedi [Events API](https://apidocs.cloudfoundry.org/270/events/list_all_events.html).
+Gli eventi che vengono inviati dalle applicazioni Cloud Foundry a {{site.data.keyword.cloudaccesstrailshort}} sono elencati nell'area di risposta `GET /v2/events`, sotto la sezione del corpo. Il campo *Type* elenca tutte le azioni che generano un evento. Per ulteriori informazioni, vedi [Events API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://apidocs.cloudfoundry.org/270/events/list_all_events.html){:new_window}.
 
 
 ## Piattaforma: servizi integrati principali
@@ -89,13 +104,13 @@ I servizi della piattaforma principali generano gli eventi {{site.data.keyword.c
 
 La seguente tabella elenca i servizi della piattaforma principali che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [Provisioning e gestione dei servizi del catalogo per le risorse gestite da {{site.data.keyword.iamshort}} (IAM)](/docs/overview/ui.html#catalogcreate) | Puoi eseguire il provisioning, ridenominare, modificare il piano e rimuovere un'istanza del servizio. | [Eventi generati quando interagiscono con i servizi del catalogo ](/docs/services/cloud-activity-tracker/services/at_events_rc.html#at_events) |  
-| [Provisioning e gestione dei servizi del catalogo associati a uno spazio Cloud Foundry](/docs/overview/ui.html#catalogcreate)| Puoi eseguire il provisioning, ridenominare, modificare il piano e rimuovere un'istanza del servizio. </br>Questi eventi vengono generati per i servizi di cui viene eseguito il provisioning in uno spazio CF. | [Eventi generati quando interagiscono con i servizi del catalogo ](/docs/services/cloud-activity-tracker/services/at_events_cf.html#catalog) |  
-| [Gestione di un account](/docs/account/index.html#accounts) | Puoi registrati a un account {{site.data.keyword.IBM_notm}} utilizzando un ID IBM esistente, creandone uno nuovo o utilizzando un ID federato. | [Eventi generati quando gestisci un account](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#account) |
-| [Gestione di utenti](/docs/iam/iamusermanage.html#iamusermanage) |Puoi visualizzare e gestire gli utenti nell'account o nelle organizzazioni di cui sei proprietario o che gestisci.  | [Eventi generati quando gestisci gli utenti ](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#users) |
-| [Gestione di organizzazioni](/docs/account/orgs_spaces.html#orgsspacesusers) | Come proprietario di un account, puoi aggiungere e gestire le organizzazioni all'account. | [Eventi generati quando gestisci le organizzazioni ](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#org) |
+| [Provisioning e gestione dei servizi del catalogo per le risorse gestite da {{site.data.keyword.iamshort}} (IAM)](/docs/overview/ui.html#catalogcreate) | Puoi eseguire il provisioning, ridenominare, modificare il piano e rimuovere un'istanza del servizio. | [Eventi generati quando interagiscono con i servizi del catalogo ](/docs/services/cloud-activity-tracker/services/at_events_rc.html#at_events_rc) |  
+| [Provisioning e gestione dei servizi del catalogo associati a uno spazio Cloud Foundry](/docs/overview/ui.html#catalogcreate)| Puoi eseguire il provisioning, ridenominare, modificare il piano e rimuovere un'istanza del servizio. </br>Questi eventi vengono generati per i servizi di cui viene eseguito il provisioning in uno spazio CF. | [Eventi generati quando interagiscono con i servizi del catalogo ](/docs/services/cloud-activity-tracker/services/at_events_cf.html#cf_catalog) |  
+| [Gestione di un account](/docs/account/index.html#accounts) | Puoi registrati a un account {{site.data.keyword.IBM_notm}} utilizzando un ID IBM esistente, creandone uno nuovo o utilizzando un ID federato. | [Eventi generati quando gestisci un account](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#at_events_acc_mgt_account) |
+| [Gestione di utenti](/docs/iam/iamusermanage.html#iamusermanage) | Puoi visualizzare e gestire gli utenti nell'account o nelle organizzazioni di cui sei proprietario o che gestisci.  | [Eventi generati quando gestisci gli utenti ](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#at_events_acc_mgt_users) |
+| [Gestione di organizzazioni](/docs/account/orgs_spaces.html#orgsspacesusers) | Come proprietario di un account, puoi aggiungere e gestire le organizzazioni all'account. | [Eventi generati quando gestisci le organizzazioni ](/docs/services/cloud-activity-tracker/services/at_events_acc_mgt.html#at_events_acc_mgt_org) |
 {: caption="Elenco delle azioni della piattaforma principali" caption-side="top"} 
 
 
@@ -104,10 +119,27 @@ La seguente tabella elenca i servizi della piattaforma principali che inviano gl
 
 La seguente tabella elenca i servizi del database che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
+| [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} è un servizio PostgreSQL gestito ospitato in {{site.data.keyword.cloud_notm}} e integrato con altri servizi {{site.data.keyword.cloud_notm}}. | [Eventi generati da {{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis/index.html#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} è un servizio Redis gestito ospitato in {{site.data.keyword.cloud_notm}} e integrato con altri servizi {{site.data.keyword.cloud_notm}}. | [Eventi generati da {{site.data.keyword.databases-for-redis_full_notm}} ](/docs/services/databases-for-redis/reference-activity-tracker.html#activity-tracker-integration) |
 | [{{site.data.keyword.sqlquery_short}}](/docs/services/sql-query/sql-query.html#overview)| Puoi utilizzare il servizio {{site.data.keyword.sqlquery_short}} per eseguire le query SQL (cioè, le istruzioni SELECT) per analizzare, trasformare o ripulire i dati rettangolari. | [Eventi generati da {{site.data.keyword.sqlquery_short}} ](/docs/services/sql-query/activity.html#activity-tracker-events) |  
-{: caption="Elenco dei servizi cloud del database che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+| [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd/index.html#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}} è un servizio etcd gestito ospitato in {{site.data.keyword.cloud_notm}} e integrato con altri servizi {{site.data.keyword.cloud_notm}}. | [Eventi generati da {{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd/reference-activity-tracker.html#activity-tracker-integration) |
+| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch/index.html#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} è un servizio Elasticsearch gestito ospitato in {{site.data.keyword.cloud_notm}} e integrato con altri servizi {{site.data.keyword.cloud_notm}}. | [Eventi generati da [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch/reference-activity-tracker.html#activity-tracker-integration) |
+| [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq/index.html#about-messages-for-rabbitmq)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} è un servizio RabbitMQ gestito ospitato in {{site.data.keyword.cloud_notm}} e integrato con altri servizi {{site.data.keyword.cloud_notm}}. | [Eventi generati da [{{site.data.keyword.messages-for-rabbitmq_full_notm}](/docs/services/messages-for-rabbitmq/reference-activity-tracker.html#activity-tracker-integration) |
+{: caption="Elenco dei servizi cloud del database che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
+
+## Piattaforma: strumenti per gli sviluppatori
+{: #devops}
+
+La seguente tabella elenca i servizi DevOps che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+|-------------|-------------|-------------|
+| [{{site.data.keyword.DRA_short}}](/docs/services/DevOpsInsights/insights_about.html#insights_about) | {{site.data.keyword.DRA_short}} è un'integrazione nel catalogo delle toolchain aperte {{site.data.keyword.cloud_notm}}. | [Eventi generati da {{site.data.keyword.DRA_short}}](/docs/services/DevOpsInsights/at-events.html#at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery/cd_overview.html#cd_overview) | Con {{site.data.keyword.contdelivery_short}}, puoi creare, testare e fornire applicazioni utilizzando le procedure e gli strumenti leader nel settore DevOps. | [Eventi generati da {{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery/at-events.html#at_events) |
+{: caption="Elenco di strumenti per gli sviluppatori che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
+
 
 
 ## Piattaforma: servizi dello sviluppatore integrati
@@ -115,11 +147,11 @@ La seguente tabella elenca i servizi del database che inviano gli eventi a {{sit
 
 La seguente tabella elenca i servizi cloud che puoi utilizzare per sviluppare le applicazioni e inviare gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps/index.html#create) | In {{site.data.keyword.Bluemix_notm}}, puoi creare applicazioni mobili e web a livello aziendale e trarre vantaggio dalle estensioni cloud ospitate da {{site.data.keyword.Bluemix_notm}}. Puoi utilizzare la console {{site.data.keyword.Bluemix_notm}} e gli strumenti della riga di comando per creare, eseguire e distribuire le tue applicazioni. Puoi utilizzare la {{site.data.keyword.dev_console}} per creare un'applicazione utilizzando un kit starter. | [Eventi generati dalla {{site.data.keyword.dev_console}}](/docs/apps/at_events_devx.html#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps/index.html#create) | In {{site.data.keyword.cloud_notm}}, puoi creare applicazioni mobili e web a livello aziendale e trarre vantaggio dalle estensioni cloud ospitate da {{site.data.keyword.cloud_notm}}. Puoi utilizzare la console {{site.data.keyword.cloud_notm}} e gli strumenti della riga di comando per creare, eseguire e distribuire le tue applicazioni. Puoi utilizzare la {{site.data.keyword.dev_console}} per creare un'applicazione utilizzando un kit starter. | [Eventi generati da {{site.data.keyword.dev_console}}](/docs/apps/at_events_devx.html#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush/c_overview_push.html#overview-push)| Puoi utilizzare il servizio {{site.data.keyword.mobilepushshort}} per inviare le notifiche ai dispositivi mobili e ai browser. Le notifiche possono essere destinate a tutti gli utenti dell'applicazione oppure a uno specifico insieme di utenti e dispositivi facendo uso delle tag. Per ogni messaggio che invii al servizio, i destinatari previsti ricevono una notifica. | [Eventi generati da {{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush/push_activity_tracker.html#push_activity_tracker) |  
-{: caption="Elenco dei servizi cloud mobili e web che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+{: caption="Elenco di servizi cloud web e mobili che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
 
 
@@ -131,15 +163,15 @@ I servizi di sicurezza integrati generano gli eventi {{site.data.keyword.cloudac
 
 La seguente tabella elenca i servizi della piattaforma di sicurezza principali che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [Accedi a {{site.data.keyword.Bluemix_notm}}](/docs/iam/quickstart.html#getstarted)| Puoi accedere a {{site.data.keyword.Bluemix_notm}} utilizzando una password, una chiave API, un codice di autorizzazione o un passcode. Come utente federato, puoi accedere all'interfaccia della riga di comando (CLI) utilizzando un passcode monouso o una chiave API. | [Eventi generati quando un utente o un'applicazione accede a {{site.data.keyword.Bluemix_notm}}](/docs/services/cloud-activity-tracker/services/at_events_iam.html#login) |
-| [Gestione dell'accesso Cloud Foundry dell'utente dell'account](/docs/iam/mngcf.html#mngcf) | Puoi concedere, revocare e aggiornare le autorizzazioni Cloud Foundry (CF) agli utenti nell'account. | [Eventi generati durante la gestione dei ruoli CF nell'account](/docs/services/cloud-activity-tracker/services/at_events_cf.html#cfroles) |
-| [{{site.data.keyword.iamlong}} (IAM)](/docs/iam/users_roles.html#userroles) |Puoi utilizzare IAM per gestire gli utenti e i ruoli nei servizi infrastruttura e piattaforma {{site.data.keyword.Bluemix_notm}}. | [Eventi generati quando gestisci le politiche IAM](/docs/services/cloud-activity-tracker/services/at_events_iam.html#policies) |
-| [Gestione delle chiavi API della piattaforma](/docs/iam/apikeys.html#platform-api-keys) | Puoi definire le chiavi API in {{site.data.keyword.IBM_notm}} Cloud che sono associate a un utente o a un ID servizio. | [Eventi generati durante la gestione delle chiavi API della piattaforma](/docs/services/cloud-activity-tracker/services/at_events_iam.html#apikeys) |
-| [Gestione degli ID servizio](/docs/iam/serviceid.html#serviceids) | Puoi definire gli ID servizio a livello dell'account in {{site.data.keyword.IBM_notm}} Cloud. | [Eventi generati durante la gestione degli ID servizio](/docs/services/cloud-activity-tracker/services/at_events_iam.html#serviceids) |
-| [Gestione dei gruppi di accesso](/docs/iam/groups.html#groups) | Puoi definire i gruppi di accesso per organizzare una serie di utenti e ID servizio in una sola entità che ti rende facile assegnare le autorizzazioni. | [Eventi generati durante la gestione dei gruppi di accesso](/docs/services/cloud-activity-tracker/services/at_events_iam.html#access) |
-{: caption="Elenco dei servizi della piattaforma di sicurezza principali" caption-side="top"} 
+| [Accedi a {{site.data.keyword.cloud_notm}}](/docs/iam/quickstart.html#getstarted)| Puoi accedere a {{site.data.keyword.cloud_notm}} utilizzando una password, una chiave API, un codice di autorizzazione o un passcode. Come utente federato, puoi accedere all'interfaccia della riga di comando (CLI) utilizzando un passcode monouso o una chiave API. | [Eventi generati quando un utente o un'applicazione accede a {{site.data.keyword.cloud_notm}}](/docs/services/cloud-activity-tracker/services/at_events_iam.html#at_events_iam_login) |
+| [Gestione dell'accesso Cloud Foundry dell'utente dell'account](/docs/iam/mngcf.html#mngcf) | Puoi concedere, revocare e aggiornare le autorizzazioni Cloud Foundry (CF) agli utenti nell'account. | [Eventi generati durante la gestione dei ruoli CF nell'account](/docs/services/cloud-activity-tracker/services/at_events_cf.html#cf_cfroles) |
+| [{{site.data.keyword.iamlong}} (IAM)](/docs/iam/users_roles.html#userroles) | Puoi utilizzare IAM per gestire gli utenti e i ruoli nei servizi infrastruttura e piattaforma {{site.data.keyword.cloud_notm}}. | [Eventi generati quando gestisci le politiche IAM](/docs/services/cloud-activity-tracker/services/at_events_iam.html#at_events_iam_policies) |
+| [Gestione delle chiavi API della piattaforma](/docs/iam/apikeys.html#platform-api-keys) | Puoi definire le chiavi API della piattaforma in {{site.data.keyword.IBM_notm}} Cloud che sono associate a un utente o a un ID servizio. | [Eventi generati durante la gestione delle chiavi API della piattaforma](/docs/services/cloud-activity-tracker/services/at_events_iam.html#at_events_iam_apikeys) |
+| [Gestione degli ID servizio](/docs/iam/serviceid.html#serviceids) | Puoi definire gli ID servizio a livello dell'account in {{site.data.keyword.IBM_notm}} Cloud. | [Eventi generati durante la gestione degli ID servizio](/docs/services/cloud-activity-tracker/services/at_events_iam.html#at_events_iam_serviceids) |
+| [Gestione dei gruppi di accesso](/docs/iam/groups.html#groups) | Puoi definire i gruppi di accesso per organizzare una serie di utenti e ID servizio in una sola entità che ti rende facile assegnare le autorizzazioni. | [Eventi generati durante la gestione dei gruppi di accesso](/docs/services/cloud-activity-tracker/services/at_events_iam.html#at_events_iam_access) |
+{: caption="Elenco dei servizi della piattaforma di sicurezza principali" caption-side="top"}
 
 
 ## Piattaforma: servizi di integrazione
@@ -147,49 +179,50 @@ La seguente tabella elenca i servizi della piattaforma di sicurezza principali c
 
 La seguente tabella elenca i servizi di integrazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.messagehub}}](/docs/services/MessageHub/messagehub010.html#about)| {{site.data.keyword.messagehub}} è un bus di messaggi di velocità elevata creato con Apache Kafka. È ottimizzato per l'inserimento di eventi in {{site.data.keyword.IBM_notm}} e la distribuzione del flusso di eventi tra i tuoi servizi e le tue applicazioni. | [Eventi generati da {{site.data.keyword.messagehub}} ](/docs/services/MessageHub/at-events.html#at_events) |  
-{: caption="Elenco dei servizi cloud di integrazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+{: caption="Elenco di servizi cloud di integrazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
 
 
 ## Piattaforma: servizi di rete
 {: #network}
 
-La seguente tabella elenca i servizi di rete che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+La seguente tabella elenca i servizi cloud di rete che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio    | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [IBM Cloud Internet Services (CIS)](/docs/infrastructure/cis/about.html#about-ibm-cloud-internet-services-cis-)| IBM Cloud Internet Services (CIS) fornisce un servizio internet sicuro, affidabile, ad elevate prestazioni e veloce. | [Eventi generati da IBM Cloud Internet Services](/docs/infrastructure/cis/at_events.html#at_events) |  
-{: caption="Elenco dei servizi cloud di rete che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+{: caption="Elenco di servizi cloud di rete che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
 
 
 ## Piattaforma: servizi di sicurezza
 {: #security}
 
-La seguente tabella elenca i servizi di sicurezza che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+La seguente tabella elenca i servizi cloud di sicurezza che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.cloudaccesstraillong_notm}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov)| Puoi utilizzare il servizio {{site.data.keyword.cloudaccesstrailshort}} per monitorare {{site.data.keyword.cloudaccesstraillong_notm}}. | [Eventi generati dal servizio {{site.data.keyword.cloudaccesstraillong_notm}}](/docs/services/cloud-activity-tracker/reference/events.html#events) |  
-| [{{site.data.keyword.appid_full_notm}}](/docs/services/appid/about.html#about) | Puoi utilizzare {{site.data.keyword.appid_short}} per aggiungere l'autenticazione alle tue applicazioni mobili e web e per proteggere le risorse di backend. | [Eventi generati dal servizio {{site.data.keyword.appid_short}}](/docs/services/appid/iam.html#tracking) |
-| [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager/about.html#about-certificate-manager) | Puoi utilizzare {{site.data.keyword.cloudcerts_short}} per gestire i certificati SSL per le tue applicazioni e i tuoi servizi basati su {{site.data.keyword.Bluemix_notm}}.  | [Eventi generati dal servizio {{site.data.keyword.cloudcerts_short}}](/docs/services/certificate-manager/at_events.html#at_events) |
-| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect/index.html#getting-started-with-key-protect) |Puoi utilizzare il servizio {{site.data.keyword.keymanagementserviceshort}} per eseguire il provisioning delle chiavi crittografate per le applicazioni in {{site.data.keyword.Bluemix_notm}}.| [Eventi generati dal servizio {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect/at-events.html#at-events) |
-{: caption="Elenco dei servizi cloud di sicurezza che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+| [{{site.data.keyword.appid_full_notm}}](/docs/services/appid/about.html#about) | Puoi utilizzare {{site.data.keyword.appid_short}} per aggiungere l'autenticazione alle tue applicazioni mobili e web e per proteggere le tue risorse di backend. | [Eventi generati dal servizio {{site.data.keyword.appid_short}}](/docs/services/appid/iam.html#tracking) |
+| [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager/about.html#about-certificate-manager) | Puoi utilizzare {{site.data.keyword.cloudcerts_short}} per gestire i certificati SSL per le tue applicazioni e i tuoi servizi basati su {{site.data.keyword.cloud_notm}}.  | [Eventi generati dal servizio {{site.data.keyword.cloudcerts_short}}](/docs/services/certificate-manager/at_events.html#at_events) |
+| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect/index.html#getting-started-with-key-protect) | Puoi utilizzare il servizio {{site.data.keyword.keymanagementserviceshort}} per eseguire il provisioning delle chiavi crittografate per le applicazioni in {{site.data.keyword.cloud_notm}}. | [Eventi generati dal servizio {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect/at-events.html#at-events) |
+| [{{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor/about.html#about) | Puoi utilizzare {{site.data.keyword.security-advisor_short}} per monitorare la sicurezza dei tuoi carichi di lavoro e delle tue applicazioni {{site.data.keyword.cloud_notm}}.   | [Eventi generati dal servizio {{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor/at-events.html#at_events) |
+{: caption="Elenco di servizi cloud di sicurezza che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
 
 ## Piattaforma: servizi di archiviazione
 {: #storage}
 
-La seguente tabella elenca i servizi di archiviazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
+La seguente tabella elenca i servizi cloud di archiviazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}:
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage/about-cos.html#about-ibm-cloud-object-storage)| Puoi utilizzare {{site.data.keyword.cos_full_notm}} per archiviare i dati in {{site.data.keyword.Bluemix_notm}}. I dati vengono codificati e distribuiti in più ubicazioni geografiche e sono accessibili su HTTP utilizzando un'API REST.   | [Eventi generati da {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage/basics/at.html#at_events) |  
-{: caption="Elenco dei servizi cloud di archiviazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
+| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage/about-cos.html#about-ibm-cloud-object-storage)| Puoi utilizzare {{site.data.keyword.cos_full_notm}} per archiviare i dati in {{site.data.keyword.cloud_notm}}. I dati vengono codificati e distribuiti in più ubicazioni geografiche e sono accessibili su HTTP utilizzando un'API REST.   | [Eventi generati da {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage/basics/at.html#at_events) |  
+{: caption="Elenco di servizi cloud di archiviazione che inviano gli eventi a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"}
 
 
 
@@ -197,7 +230,7 @@ La seguente tabella elenca i servizi di archiviazione che inviano gli eventi a {
 {: #watson_data}
 
 
-| Servizio     | Descrizione |Eventi {{site.data.keyword.cloudaccesstrailshort}} |
+| Servizio     | Descrizione | Eventi {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/getting-started/overview-ws.html?context=analytics&linkInPage=true) | Watson Studio fornisce l'ambiente e gli strumenti per risolvere i tuoi problemi di business in modo collaborativo utilizzando i dati. Puoi scegliere gli strumenti di cui hai bisogno per analizzare e visualizzare i dati, per ripulire e modellare i dati, per inserire i dati di streaming, o per creare, preparare e distribuire i modelli di machine learning. | [Eventi generati da Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#ws) |  
 | [Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/ml-overview.html?audience=dr&context=refinery)| Puoi utilizzare Watson Machine Learning per creare modelli analitici sofisticati, preparati con i tuoi dati, che puoi distribuire per l'utilizzo nelle applicazioni. | [Eventi generati da Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#wml) | 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -19,10 +19,10 @@ lastupdated: "2018-09-07"
 # Configuration de la règle de conservation des événements
 {: #configuring_retention_policy}
 
-Utilisez la commande **ibmcloud at option** pour afficher et configurer la règle de conservation qui définit le nombre maximal de jours pendant lequel les événements sont conservés dans {{site.data.keyword.cloudaccesstrailshort}}. Par défaut, la règle de conservation est désactivée et les événements sont conservés indéfiniment. Une fois que la durée de conservation a expiré, les événements sont supprimés automatiquement.
+Utilisez la commande **ibmcloud at option** pour afficher et configurer la règle de conservation qui définit le nombre maximal de jours pendant lequel les événements sont conservés dans {{site.data.keyword.cloudaccesstrailshort}}. Par défaut, la règle de conservation est désactivée et les événements sont conservés indéfiniment. Une fois que la durée de conservation a expiré, les événements sont supprimés automatiquement. 
 {:shortdesc}
 
-Vous pouvez définir la même règle de conservation pour tous les espaces du compte ou vous pouvez personnaliser la période de conservation pour un espace.  
+Vous pouvez définir la même règle de conservation pour tous les espaces du compte ou vous pouvez personnaliser la période de conservation pour un espace. 
 
 
 ## Désactivation de la règle de conservation des événements pour un espace
@@ -30,9 +30,9 @@ Vous pouvez définir la même règle de conservation pour tous les espaces du co
 
 Procédez comme suit pour désactiver une règle de conservation :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 	
 2. Pour désactiver la règle de conservation, définissez la valeur **-1**. Exécutez la commande :
 
@@ -66,11 +66,11 @@ La sortie est :
 ## Vérification de la règle de conservation des journaux d'un espace
 {: #check_retention_policy_space}
 
-Afin d'obtenir la durée de conservation définie pour un espace {{site.data.keyword.Bluemix_notm}}, procédez comme suit :
+Afin d'obtenir la durée de conservation définie pour un espace {{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 	
 2. Obtenez la durée de conservation. Exécutez la commande :
 
@@ -94,11 +94,11 @@ Afin d'obtenir la durée de conservation définie pour un espace {{site.data.key
 ## Vérification de la règle de conservation des journaux de tous les espaces d'un compte
 {: #check_retention_policy_account}
 
-Afin d'obtenir la durée de conservation définie pour chaque espace {{site.data.keyword.Bluemix_notm}} sur un compte, procédez comme suit :
+Afin d'obtenir la durée de conservation définie pour chaque espace {{site.data.keyword.cloud_notm}} sur un compte, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
     
 2. Obtenez la durée de conservation de chaque espace du compte. Exécutez la commande :
 
@@ -126,11 +126,11 @@ Afin d'obtenir la durée de conservation définie pour chaque espace {{site.data
 ## Définition de la règle de conservation des journaux sur le compte
 {: #set_retention_policy_space}
 
-Afin de définir la durée de conservation pour un compte {{site.data.keyword.Bluemix_notm}}, procédez comme suit :
+Afin de définir la durée de conservation pour un compte {{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 	
 2. Définissez la durée de conservation. Exécutez la commande :
 
@@ -170,11 +170,11 @@ La sortie affiche une entrée pour chaque espace du compte, y compris des inform
 ## Définition de la règle de conservation des journaux pour un espace
 {: #set_retention_policy_account}
 
-Afin d'afficher la durée de conservation pour un espace {{site.data.keyword.Bluemix_notm}}, procédez comme suit :
+Afin d'afficher la durée de conservation pour un espace {{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
     
 2. Définissez la durée de conservation. Exécutez la commande :
 

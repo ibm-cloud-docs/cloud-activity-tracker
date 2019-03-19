@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ lastupdated: "2018-09-07"
 
 
 ## 通过 UI 供应
-{: #ui}
+{: #provision_ui}
 
-要在 {{site.data.keyword.Bluemix_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
+要在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
 
-1. 登录到您的 {{site.data.keyword.Bluemix_notm}} 帐户。
+1. 登录到您的 {{site.data.keyword.cloud_notm}} 帐户。
 
-    可在以下地址找到 {{site.data.keyword.Bluemix_notm}} UI：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
+    可在以下地址找到 {{site.data.keyword.cloud_notm}} UI：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
     
-	使用您的用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 会打开。
+	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
-2. 单击**目录**。这将打开 {{site.data.keyword.Bluemix_notm}} 上可用的服务的列表。
+2. 单击**目录**。这将打开 {{site.data.keyword.cloud_notm}} 上可用的服务的列表。
 
 3. 选择**安全性**类别以过滤显示的服务列表。
 
@@ -73,25 +73,24 @@ lastupdated: "2018-09-07"
 
     有关更多信息，请参阅[服务套餐](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。
 	
-7. 单击**创建**以在您登录到的 {{site.data.keyword.Bluemix_notm}} 空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
+7. 单击**创建**以在您登录到的 {{site.data.keyword.cloud_notm}} 空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
   
  
 
 ## 通过 CLI 供应
-{: #cli}
+{: #provision_cli}
 
-要通过命令行在 {{site.data.keyword.Bluemix_notm}} 中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例，请完成以下步骤：
+要通过命令行在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例，请完成以下步骤：
 
-1. [先决条件] 安装 {{site.data.keyword.Bluemix_notm}} CLI。
+1. [先决条件] 安装 {{site.data.keyword.cloud_notm}} CLI。
 
-   有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use)。
+   有关更多信息，请参阅[安装 {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)。
    
    如果 CLI 已安装，请继续执行下一步。
     
-2. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+2. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行
-[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 3. 运行 `ibmcloud service create` 命令以供应实例。
 
@@ -103,7 +102,7 @@ lastupdated: "2018-09-07"
 	其中
 	
 	* service_name 是服务的名称，即 **accessTrail**。
-	* service_plan 是服务套餐名称。有关套餐的列表，请参阅[服务套餐](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan)。
+	* service_plan 是服务套餐名称。有关套餐的列表，请参阅[服务套餐](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)。
 	* service_instance_name 是要用于所创建的新服务实例的名称。
 
 	例如，要使用标准套餐创建 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例，请运行以下命令：

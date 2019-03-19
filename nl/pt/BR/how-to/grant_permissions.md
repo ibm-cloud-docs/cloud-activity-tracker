@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -60,11 +59,11 @@ Para conceder a um usuário uma função do IAM, considere as informações a se
 
 Conclua as etapas a seguir para conceder a um usuário permissões para visualizar eventos de um domínio de contas:
 
-1. Efetue login no console do {{site.data.keyword.Bluemix_notm}}.
+1. Efetue login no console do {{site.data.keyword.cloud_notm}}.
 
-    Abra um navegador da web e ative o painel do {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}
+    Abra um navegador da web e ative o painel do {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}
 	
-	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} será aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
 2. Na barra de menus, clique em **Gerenciar > Conta > Usuários**. 
 
@@ -120,11 +119,11 @@ Para conceder a um usuário uma função do CF, considere as informações a seg
 
 Conclua as etapas a seguir para conceder a um usuário acesso para visualizar eventos de espaço:
 
-1. Efetue login no console do {{site.data.keyword.Bluemix_notm}}.
+1. Efetue login no console do {{site.data.keyword.cloud_notm}}.
 
-    Abra um navegador da web e ative o painel do {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}
+    Abra um navegador da web e ative o painel do {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}
 	
-	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} será aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
 2. Na barra de menus, clique em **Gerenciar > Conta > Usuários**. 
 

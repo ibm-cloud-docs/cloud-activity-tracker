@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -56,15 +55,15 @@ Wenn Sie einem Benutzer eine IAM-Rolle zuordnen möchten, berücksichtigen Sie d
 
 * Sie müssen über die Berechtigung zum Zuweisen von Richtlinien zu anderen Benutzern im Konto verfügen oder Sie müssen der Kontoeigner sein. Wenn Sie nicht der Kontoeigner sind, müssen Sie über eine IAM-Richtlinie mit der Rolle **Administrator** für den {{site.data.keyword.loganalysisshort}}-Service verfügen.
 
-* Wenn Sie eine Richtlinie definieren, so definieren Sie durch die Regionen, die Sie angeben, in welchen Regionen ein Benutzer Zugriff zum Anzeigen von Domänenereignissen erteilt wird. 
+* Wenn Sie eine Richtlinie definieren, so definieren Sie durch die Regionen, die Sie angeben, in welchen Regionen ein Benutzer Zugriff zum Anzeigen von Domänenereignissen erteilt wird.
 
 Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zum Anzeigen von Ereignissen einer Kontodomäne zu erteilen:
 
-1. Melden Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole an.
+1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
 
-    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.Bluemix_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
+    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
 	
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
 2. Klicken Sie in der Menüleiste auf **Verwalten > Konto > Benutzer**. 
 
@@ -120,11 +119,11 @@ Wenn Sie einem Benutzer eine CF-Rolle zuordnen möchten, berücksichtigen Sie di
 
 Führen Sie die folgenden Schritte aus, um einem Benutzer den Zugriff zum Anzeigen von Ereignissen in einem Bereich (Space) zu erteilen:
 
-1. Melden Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole an.
+1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
 
-    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.Bluemix_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
+    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
 	
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
 2. Klicken Sie in der Menüleiste auf **Verwalten > Konto > Benutzer**. 
 

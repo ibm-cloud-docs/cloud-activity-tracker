@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -138,7 +138,7 @@ ibmcloud at delete [parameter] [argumente..]
   
   <dt>--search-time wert, -T wert</dt>
   <dd>(Optional) Sie können diesen Parameter festlegen, um Ereignisse zu löschen, die an einem bestimmten Tag für eine bestimmte Anzahl von Stunden gespeichert wurden. Dieses Feld hat folgendes Format: 0-23
-</dd>
+  </dd>
 
 </dl>
 
@@ -180,7 +180,7 @@ ibmcloud at download [parameter] [argumente...]
 
 <dl>
 <dt>Sitzungs-ID</dt>
-<dd>Legen Sie den Wert für die Sitzungs-ID fest, die beim Ausführen des Befehls `ibmcloud at session create` abgerufen wird. Dieser Wert gibt an, welche Sitzung zum Herunterladen von Ereignissen verwendet wird. <br>**Hinweis:** Der Befehl `ibmcloud at session create` liefert die Parameter, die steuern, welche Ereignisse heruntergeladen werden.</dd>
+<dd>Legen Sie den Wert für die Sitzungs-ID fest, die beim Ausführen des Befehls `ibmcloud at session create` abgerufen wird. Dieser Wert gibt an, welche Sitzung zum Herunterladen von Ereignissen verwendet wird. <br>**Hinweis:** Der Befehl `ibmcloud at session create` liefert die Parameter, die steuern, welche Ereignisse heruntergeladen werden. </dd>
 </dl>
 
 **Hinweis:** Um nach Abschluss des Downloads dieselben Daten erneut herunterzuladen, müssen Sie eine andere Datei oder eine andere Sitzung verwenden.
@@ -328,7 +328,7 @@ ibmcloud at session create [parameter] [argumente...]
 
   <dt>--search-time wert, -T wert</dt>
   <dd>(Optional) Sie können diesen Parameter festlegen, um Ereignisse zu löschen, die an einem bestimmten Tag für eine bestimmte Anzahl von Stunden gespeichert wurden. Dieses Feld hat folgendes Format: 0-23
-</dd>
+  </dd>
 
 
  </dl>

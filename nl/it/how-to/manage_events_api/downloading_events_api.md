@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ Per scaricare gli eventi, devi completare la seguente procedura:
 
 
 ## Scaricamento degli eventi utilizzando CURL
-{: #curl}
+{: #downloading_events_api_curl}
 
 Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
 
@@ -56,10 +56,15 @@ Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
     dove:
     
     * *token* rappresenta il valore del token UAA che è stato ottenuto in un passo precedente.
+
     * *spaceID* rappresenta l'UUID dello spazio Cloud Foundry in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
+
     * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+
     * *start* e *end*rappresentano un intervallo di tempo in cui vuoi scaricare gli eventi. Il formato della data è *YYYY-MM-DD*. 
+
     * *AtAccountLevel* indica se gli eventi da scaricare sono nel dominio dell'account o dello spazio.
+    
     * *SearchTime* indica l'ora della giornata per la quale vuoi scaricare gli eventi.
 
     Per creare una sessione per scaricare gli eventi da un dominio dello spazio nella regione Stati Uniti Sud, imposta il parametro **AtAccountLevel** su *false*:
@@ -111,7 +116,7 @@ Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
 
 
 ## Esempio NodeJS di come scaricare gli eventi
-{: #node}
+{: #downloading_events_api_node}
 
 Questo è il codice di esempio che puoi utilizzare per verificare come scaricare gli eventi in un file locale:
 

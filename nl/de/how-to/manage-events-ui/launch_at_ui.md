@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-09"
 
 
 
-# In der {{site.data.keyword.Bluemix_notm}}-Konsole zum Activity Tracker-Dashboard navigieren
+# In der {{site.data.keyword.cloud_notm}}-Konsole zum Activity Tracker-Dashboard navigieren
 {: #launch_at_ui}
 
 Sie können die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} aus {{site.data.keyword.Bluemix}} starten. Standardmäßig werden Ereignisse für einen Bereich (Space) angezeigt. Sie können auch Ereignisse für ein Konto anzeigen.
@@ -25,17 +25,17 @@ Sie können die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesst
    
 
 ## Zum Activity Tracker-Dashboard navigieren, um die Cloud-Aktivitäten in einem Bereich zu überwachen
-{: #account_view_space}
+{: #launch_at_ui_account_view_space}
 
 Führen Sie die folgenden Schritte aus, um zur {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle zu navigieren, damit Sie die Cloud-Aktivitäten in einem Bereich überwachen können.
 
-1. Melden Sie sich bei dem Bereich, der Organisation und der Region Ihres {{site.data.keyword.Bluemix_notm}}-Kontos an, für das Sie Ihre Cloud-Aktivitäten überwachen möchten.
+1. Melden Sie sich bei dem Bereich, der Organisation und der Region Ihres {{site.data.keyword.cloud_notm}}-Kontos an, für das Sie Ihre Cloud-Aktivitäten überwachen möchten.
 
-    Das {{site.data.keyword.Bluemix_notm}}-Dashboard finden Sie unter [http://bluemix.net ![Symbole für externen Link](../../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+    Das {{site.data.keyword.cloud_notm}}-Dashboard finden Sie unter [https://cloud.ibm.com/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/){:new_window}. 
     
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
-2. Wählen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service im {{site.data.keyword.Bluemix_notm}}-Dashboard aus. 
+2. Wählen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service im {{site.data.keyword.cloud_notm}}-Dashboard aus. 
     
 3. Wählen Sie die Registerkarte **Verwaltet** aus.
 
@@ -43,17 +43,17 @@ Führen Sie die folgenden Schritte aus, um zur {{site.data.keyword.cloudaccesstr
 
 
 ## Zum Activity Tracker-Dashboard navigieren, um die Cloud-Aktivitäten in dem Konto zu überwachen
-{: #account_view_account}
+{: #launch_at_ui_account_view_account}
 
 Führen Sie die folgenden Schritte aus, um zur {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle zu navigieren und die Cloud-Aktivitäten in einem Konto zu überwachen:
 
-1. Melden Sie sich bei dem {{site.data.keyword.Bluemix_notm}}-Konto an, in dem Sie Ihre Cloud-Aktivität überwachen möchten.
+1. Melden Sie sich bei dem {{site.data.keyword.cloud_notm}}-Konto an, in dem Sie Ihre Cloud-Aktivität überwachen möchten.
 
-    Das {{site.data.keyword.Bluemix_notm}}-Dashboard finden Sie unter [http://bluemix.net ![Symbole für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+    Das {{site.data.keyword.cloud_notm}}-Dashboard finden Sie unter [https://cloud.ibm.com/ ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/){:new_window}. 
     
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
-2. Wählen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service im {{site.data.keyword.Bluemix_notm}}-Dashboard aus. 
+2. Wählen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service im {{site.data.keyword.cloud_notm}}-Dashboard aus. 
     
 3. Wählen Sie die Registerkarte **Verwaltet** aus.
 

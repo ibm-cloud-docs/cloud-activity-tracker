@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-27"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -27,37 +27,35 @@ lastupdated: "2018-04-27"
 ##  Navegando para o Kibana do painel do serviço Activity Tracker
 {: #launch_Kibana_from_at}
 
-Os logs de atividades que o Kibana exibe incluem eventos para todos os recursos que são implementados no espaço da organização do {{site.data.keyword.Bluemix_notm}} em que você efetuou login e onde o serviço {{site.data.keyword.cloudaccesstrailshort}} é provisionado.
+Os logs de atividades que o Kibana exibe incluem eventos para todos os recursos que são implementados no espaço da organização do {{site.data.keyword.cloud_notm}} em que você efetuou login e onde o serviço {{site.data.keyword.cloudaccesstrailshort}} é provisionado.
 
 Conclua as etapas a seguir para ativar o Kibana por meio do painel do serviço {{site.data.keyword.cloudaccesstrailshort}}:
 
-1. Efetue login em sua conta do {{site.data.keyword.Bluemix_notm}}.
+1. Efetue login em sua conta do {{site.data.keyword.cloud_notm}}.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/login ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
     
-	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
-2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.Bluemix_notm}}. 
+2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.cloud_notm}}. 
     
 3. Selecione a guia **Gerenciado**.
 
-4. Clique em **Visualização avançada**. 
+4. Para visualizar eventos de espaço, selecione **Logs de espaço** para o campo *Visualizar logs*. **Nota:** essa é a visualização padrão. Em seguida, clique em **Visualizar no Kibana**. 
 
-    O painel Kibana é aberto.
+    O painel Kibana é aberto. O painel **ActivityTracker_Space_Dashboard_in_24h** é carregado com um filtro de tempo configurado para as últimas 24 horas.
 
-Por padrão, o painel **ActivityTracker_Space_Dashboard_in_24h** é carregado e um filtro de tempo configurado para as últimos 24 horas. 
+5. Para visualizar eventos de conta, selecione **Logs de conta** para o campo *Visualizar logs*. Em seguida, clique em **Visualizar no Kibana**. 
 
-
+    O painel **ActivityTracker_Account_Dashboard_in_24h** é carregado com um filtro de tempo configurado para as últimas 24 horas.
 	
 	
 ##  Navegando para o Kibana por meio de um navegador da web
 {: #launch_Kibana_from_browser}
 
-As informações de log que o Kibana exibe incluem eventos para todos os recursos que são implementados no espaço da organização do {{site.data.keyword.Bluemix_notm}} em que você efetuou login.
-
 Conclua as etapas a seguir para ativar o Kibana em um navegador:
 
-1. Abra um navegador da web e ative o Kibana. Em seguida, efetue login na interface com o usuário do Kibana.
+1. Abra um navegador da web e ative o Kibana na região em que você deseja monitorar eventos. Em seguida, efetue login na interface com o usuário do Kibana.
     
     Por exemplo, a tabela a seguir lista a URL que se deve usar para ativar o Kibana por região:
       
@@ -87,19 +85,18 @@ Conclua as etapas a seguir para ativar o Kibana em um navegador:
 	
 	A página Descobrir no Kibana é aberto.
 	
-2. Verifique se você efetuou login na conta, organização e espaço do {{site.data.keyword.Bluemix_notm}} nos quais deseja visualizar e analisar os logs de atividades.
+2. Verifique se você está com login efetuado na conta do {{site.data.keyword.cloud_notm}} em que deseja visualizar e analisar os eventos de atividade.
 
-    É possível ver eventos e logs que estão disponíveis no espaço no qual você efetuou login.
+3. Selecione um **Domínio**.
 
-3. Para filtrar eventos, selecione **Abrir** na barra de menus.
+    Selecione **Conta** para visualizar eventos no domínio de contas.
+    Selecione **Espaço** para visualizar eventos em um domínio de espaço.
 
-    A lista de painéis salvos é exibida.
-	
-4. Para visualizar os eventos para o espaço em que você efetuou login, selecione **ActivityTracker_Space_Dashboard_in_24h**.
+Os eventos que você vê no Kibana correspondem aos eventos que são hospedados no domínio selecionado na região em que você ativou o Kibana.
 
 
 ## Limitações
-{: #limitations}
+{: #launch_kibana_limitations}
 
  Devido a limitações no Kibana, não é possível ter múltiplas guias do navegador do Kibana abertas de uma vez na mesma sessão para visualizar diferentes espaços ou contas. Portanto, se tiver duas ou mais sessões abertas de uma vez e mudar o domínio do espaço para conta ou vice-versa, você poderá ter problemas.
 	

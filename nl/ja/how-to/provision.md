@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ lastupdated: "2018-09-07"
 
 
 ## UI からのプロビジョン
-{: #ui}
+{: #provision_ui}
 
-{{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
+{{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} アカウントにログインします。
+1. {{site.data.keyword.cloud_notm}} アカウントにログインします。
 
-    {{site.data.keyword.Bluemix_notm}} UI は、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.cloud_notm}} UI は、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
     
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
-2. **「カタログ」**をクリックします。 {{site.data.keyword.Bluemix_notm}} で使用可能なサービスのリストが開きます。
+2. **「カタログ」**をクリックします。 {{site.data.keyword.cloud_notm}} で使用可能なサービスのリストが開きます。
 
 3. **「セキュリティー」**カテゴリーを選択して、表示されたサービスのリストをフィルタリングします。
 
@@ -73,24 +73,24 @@ lastupdated: "2018-09-07"
 
     詳しくは、[サービス・プラン](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)を参照してください。
 	
-7. **「作成」**をクリックして、ログインしている {{site.data.keyword.Bluemix_notm}} スペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンします。
+7. **「作成」**をクリックして、ログインしている {{site.data.keyword.cloud_notm}} スペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンします。
   
  
 
 ## CLI からのプロビジョン
-{: #cli}
+{: #provision_cli}
 
-コマンド・ラインを使用して {{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
+コマンド・ラインを使用して {{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. [前提条件] {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
+1. [前提条件] {{site.data.keyword.cloud_notm}} CLI をインストールします。
 
-   詳しくは、[{{site.data.keyword.Bluemix_notm}} CLI のインストール](/docs/cli/reference/ibmcloud/download_cli.html#install_use)を参照してください。
+   詳しくは、[{{site.data.keyword.cloud_notm}} CLI のインストール](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
-2. {{site.data.keyword.Bluemix_notm}} にログインします。 
+2. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 3. `ibmcloud service create` コマンドを実行して、インスタンスをプロビジョンします。
 
@@ -102,7 +102,7 @@ lastupdated: "2018-09-07"
 	各部の意味は、次のとおりです。
 	
 	* service_name は、サービスの名前、つまり**「accessTrail」**です。
-	* service_plan は、サービス・プラン名です。 プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan)を参照してください。
+	* service_plan は、サービス・プラン名です。 プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)を参照してください。
 	* service_instance_name は、作成する新規サービス・インスタンスに使用する名前です。
 
 	例えば、標準プランで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスを作成するには、以下のコマンドを実行します。

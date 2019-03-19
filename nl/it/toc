@@ -1,23 +1,22 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html"}
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html" path="services/cloud-activity-tracker"}
 Programma di traccia dell'attività IBM Cloud
 
     {: .navgroup id="learn"}
     index.md
-    
-    {: .topicgroup}
-    Informazioni
-        activity_tracker_ov.md
-        at_event.md
-        compliance.md
-
+    activity_tracker_ov.md
+    at_event.md
     cloud_services.md
+    compliance.md
+    whatsnew.md
 
     {: .topicgroup}
     Esercitazioni
+        tutorials/kp.md
         tutorials/manage_events_cli.md
+        tutorials/vsi.md
 		
     {: .topicgroup}
     Link correlati
@@ -66,6 +65,7 @@ Programma di traccia dell'attività IBM Cloud
         services/at_events_iam.md
         services/at_events_acc_mgt.md
         services/at_events_rc.md
+        services/at_events_sl.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}
@@ -73,3 +73,4 @@ Programma di traccia dell'attività IBM Cloud
 
     {: .navgroup-end}
     
+

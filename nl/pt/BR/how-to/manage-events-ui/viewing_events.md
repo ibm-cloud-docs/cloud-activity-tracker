@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -17,15 +17,15 @@ lastupdated: "2018-07-09"
 
 
 
-# Visualizando Eventos
+# Visualizando eventos
 {: #view_acc_events}
 
-É possível visualizar eventos por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} no console do {{site.data.keyword.Bluemix_notm}} ou por meio do Kibana.
+É possível visualizar eventos por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} no console do {{site.data.keyword.cloud_notm}} ou por meio do Kibana.
 {:shortdesc}
    
 
 ## Visualizando eventos de conta
-{: #account_events}
+{: #view_acc_events_account_events}
 
 É possível visualizar eventos em um domínio de contas do {{site.data.keyword.cloudaccesstrailshort}} por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} ou por meio do Kibana.
 
@@ -42,7 +42,7 @@ Como um **membro em uma conta**, considere as informações a seguir para visual
 
 
 ## Visualizando eventos de espaço
-{: #space_events}
+{: #view_acc_events_space_events}
 
 É possível visualizar eventos em um domínio de espaço do {{site.data.keyword.cloudaccesstrailshort}} por meio da IU do {{site.data.keyword.cloudaccesstrailshort}}. Se você tiver um plano premium, também será possível ver eventos por meio do Kibana.
 

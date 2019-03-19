@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -26,19 +26,19 @@ Use o comando `ibmcloud at status` para obter informações sobre os eventos que
 
 Conclua as etapas a seguir para visualizar informações sobre o log de eventos:
 
-## Etapa 1: Efetuar login no {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## Etapa 1: Efetuar login no {{site.data.keyword.cloud_notm}}
+{: #viewing_event_status_step1}
 
-Efetue login no {{site.data.keyword.Bluemix_notm}}. Conclua
+Efetue login no {{site.data.keyword.cloud_notm}}. Conclua
 as etapas a seguir:
 
-1. Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}}.
+1. Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}}.
 2. Execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** configure a organização e o espaço nos quais o {{site.data.keyword.cloudaccesstrailshort}} é provisionado.
 
 ## Etapa 2: identificar quais eventos estão disponíveis
-{: #step2}
+{: #viewing_event_status_step2}
 
 Use o comando `ibmcloud at status` para ver informações sobre os eventos disponíveis em um domínio de espaço.
 
@@ -46,7 +46,7 @@ Use o comando `ibmcloud at status` para ver informações sobre os eventos dispo
 * Para obter informações sobre eventos no domínio de contas, execute o comando `ibmcloud at status` com a opção `-a`.
 
 ```
-$ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD
+$ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD 
 ```
 {: codeblock}
     

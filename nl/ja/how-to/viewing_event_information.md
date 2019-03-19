@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -26,18 +26,18 @@ lastupdated: "2018-09-07"
 
 イベント・ログに関する情報を表示するには、以下のステップを実行します。
 
-## ステップ 1: {{site.data.keyword.Bluemix_notm}} にログインする
-{: #prereq}
+## ステップ 1: {{site.data.keyword.cloud_notm}} にログインする
+{: #viewing_event_status_step1}
 
-{{site.data.keyword.Bluemix_notm}} にログインします。 以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} にログインします。 以下のステップを実行します。
 
-1. [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して、{{site.data.keyword.Bluemix_notm}} にログインします。
+1. [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して、{{site.data.keyword.cloud_notm}} にログインします。
 2. [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 
 **注:** {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされる組織とスペースを設定してください。
 
 ## ステップ 2: 使用可能なイベントを識別する
-{: #step2}
+{: #viewing_event_status_step2}
 
 `ibmcloud at status` コマンドを使用して、スペース・ドメイン内の使用可能なイベントに関する情報を表示します。
 

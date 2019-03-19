@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-06-21"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-06-21"
 
 
 
-# Programma di traccia dell'attività
+# Informazioni sul prodotto
 {: #activity_tracker_ov}
 
 Utilizza il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come le applicazioni interagiscono con i servizi {{site.data.keyword.Bluemix}}. Utilizza {{site.data.keyword.cloudaccesstrailshort}} per monitorare attività anomala e rispettare i requisiti di controllo normativi. Gli eventi vengono raccolti conformi agli standard CADF (Cloud Auditing Data Federation).
@@ -25,9 +25,7 @@ Utilizza il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare co
 
 * {{site.data.keyword.cloudaccesstrailshort}} offre governance di sicurezza di alto livello
 per le tue risorse IT nel cloud.
-* {{site.data.keyword.cloudaccesstrailshort}} fornisce una soluzione per gli amministratori
-di rete per acquisire, memorizzare, visualizzare, cercare e monitorare l'attività API
-in un solo posto.
+* {{site.data.keyword.cloudaccesstrailshort}} fornisce una soluzione per gli amministratori per acquisire, memorizzare, visualizzare, cercare e monitorare l'attività API in un solo posto. 
 * {{site.data.keyword.cloudaccesstrailshort}} fornisce capacità per scaricare gli eventi che possono venire utilizzati per generare un report audit trail. Puoi richiedere
 questi report in modo che la tua organizzazione sia conforme con i regolamenti interni, le normative di settore esterne
 e i regolamenti nazionali.
@@ -38,7 +36,7 @@ o in un cloud pubblico. Il servizio {{site.data.keyword.cloudaccesstrailshort}}
 fornisce il framework e la funzionalità per monitorare le chiamate API ed esegue il controllo di conformità
 con le politiche aziendali e le normative specifiche per il settore di marketing.
 
-Quando lavori in un ambiente cloud, come ad esempio {{site.data.keyword.Bluemix_notm}}, devi pianificare la strategia cloud per il controllo e il monitoraggio dei carichi di lavoro e dei dati in conformità alle tue politiche interne e ai requisiti di conformità su base nazionale e di settore. Puoi utilizzare le informazioni registrate tramite il servizio
+Quando lavori in un ambiente cloud, come ad esempio {{site.data.keyword.cloud_notm}}, devi pianificare la strategia cloud per il controllo e il monitoraggio dei carichi di lavoro e dei dati in conformità alle tue politiche interne e ai requisiti di conformità su base nazionale e di settore. Puoi utilizzare le informazioni registrate tramite il servizio
 {{site.data.keyword.cloudaccesstrailshort}} per identificare
 gli incidenti di sicurezza, individuare un accesso non autorizzato ed essere conforme con le normative
 e i requisiti di controllo interni.
@@ -52,9 +50,9 @@ Ad esempio, puoi utilizzare i log di attività {{site.data.keyword.cloudaccesstr
 
 
 ## Raccolta degli eventi
-{: #collect}
+{: #activity_tracker_ov_collect}
 
-Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce solo i dati di attività relativi alle chiamate API e ad altre azioni effettuate nei servizi cloud selezionati in {{site.data.keyword.Bluemix_notm}}.  
+Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce solo i dati di attività relativi alle chiamate API e ad altre azioni effettuate nei servizi cloud selezionati in {{site.data.keyword.cloud_notm}}. 
 
 * Gli eventi vengono raccolti automaticamente. 
 * Gli eventi vengono raccolti in {{site.data.keyword.cloudaccesstrailshort}} conformi agli standard CADF (Cloud Auditing Data Federation). Lo standard CADF definisce un modello evento completo che include le informazioni necessarie per
@@ -106,11 +104,11 @@ primo arrivato primo eliminato.
 
 
 ## Provisioning del programma di traccia dell'attività
-{: #provision}
+{: #activity_tracker_ov_provision}
 
 Per visualizzare gli eventi disponibili tramite un dominio dell'account, devi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} in uno spazio Cloud Foundry nella regione in cui vuoi monitorare l'attività API. Solo il **proprietario dell'account** può visualizzare gli eventi dell'account.
 
-Per visualizzare gli eventi disponibili tramite un dominio dello spazio, devi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui vuoi monitorare l'attività API. 
+Per visualizzare gli eventi disponibili tramite un dominio dello spazio, devi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui vuoi monitorare l'attività API.
 
 Per informazioni su come eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, consulta
 [Provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
@@ -118,11 +116,11 @@ Per informazioni su come eseguire il provisioning del servizio {{site.data.keywo
 
 
 ## Analisi dei log attività
-{: #analyze}
+{: #activity_tracker_ov_analyze}
 
-Puoi analizzare i log attività tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix_notm}} o utilizzando Kibana, uno strumento open source. Puoi monitorare gli eventi disponibili in uno spazio specifico o al livello dell'account.
+Puoi analizzare i log attività tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}} o utilizzando Kibana, uno strumento open source. Puoi monitorare gli eventi disponibili in uno spazio specifico o al livello dell'account.
 
-Puoi ricercare, analizzare e monitorare i log attività per le ultime 24 ore tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, consulta
+Puoi ricercare, analizzare e monitorare i log attività per le ultime 24 ore tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}}. Per ulteriori informazioni, consulta
 [Passaggio all'IU {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
 
 Puoi ricercare, analizzare e monitorare i log attività per gli ultimi 3 giorni tramite Kibana utilizzando il dashboard Kibana
@@ -135,24 +133,24 @@ Puoi ricercare, analizzare e monitorare i log attività per gli ultimi 3 giorni 
 
 
 ## Regioni
-{: #regions}
+{: #activity_tracker_ov_regions}
 
 Il servizio {{site.data.keyword.cloudaccesstrailshort}} è disponibile nelle seguenti regioni:
 
 * Germania
 * Sydney
-* Regno Unito 
+* Regno Unito (è disponibile solo il piano Lite) 
 * Stati Uniti Sud
 
 
 ## Piano di servizio
-{: #plan}
+{: #activity_tracker_ov_plan}
 
 Il servizio {{site.data.keyword.cloudaccesstrailshort}} fornisce più piani.
 
-Puoi modificare un piano tramite l'IU {{site.data.keyword.Bluemix_notm}} o con la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli aggiornamenti del piano di servizio, consulta [Modifica del piano](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+Puoi modificare un piano tramite l'IU {{site.data.keyword.cloud_notm}} o con la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli aggiornamenti del piano di servizio, consulta [Modifica del piano](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
 
-La seguente tabella illustra i piani disponibili: 
+La seguente tabella illustra i piani disponibili:
 
 <table>
     <caption>Tabella 1. Funzionalità per l'inserimento, la conservazione e l'esportazione degli eventi.</caption>
@@ -201,10 +199,10 @@ La seguente tabella illustra i piani disponibili:
 **Nota:** il costo mensile dell'archiviazione degli eventi viene calcolato come una media del ciclo di fatturazione.
 
 ## Sicurezza
-{: #security}
+{: #activity_tracker_ov_security}
 
 Considera le seguenti informazioni sulla sicurezza quando utilizzi il servizio {{site.data.keyword.cloudaccesstrailshort}}:
 
 * I servizi IBM che generano gli eventi {{site.data.keyword.cloudaccesstrailshort}} seguono la politica di sicurezza cloud {{site.data.keyword.IBM_notm}}. Per ulteriori informazioni, consulta [Trust the security and privacy of IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
 * Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce le azioni avviate dall'utente che modificano lo stato dei servizi cloud. Le informazioni non forniscono l'accesso diretto al database o alle applicazioni.
-* Soltanto gli utenti autorizzati possono visualizzare e monitorare i log evento {{site.data.keyword.cloudaccesstrailshort}}. Ogni utente viene identificato tramite il proprio ID univoco {{site.data.keyword.Bluemix_notm}}.
+* Soltanto gli utenti autorizzati possono visualizzare e monitorare i log evento {{site.data.keyword.cloudaccesstrailshort}}. Ogni utente viene identificato tramite il proprio ID univoco {{site.data.keyword.cloud_notm}}.

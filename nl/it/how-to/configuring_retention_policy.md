@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-09-07"
 # Configurazione della politica di conservazione degli eventi
 {: #configuring_retention_policy}
 
-Utilizza il comando **ibmcloud at option** per visualizzare e configurare la politica di conservazione che definisce il numero massimo di giorni in cui gli eventi vengono conservati in {{site.data.keyword.cloudaccesstrailshort}}. Per impostazione predefinita, la politica di conservazione è disabilitata e gli eventi vengono conservati indefinitamente. Dopo che il periodo di conservazione è scaduto, gli eventi vengono eliminati automaticamente.
+Utilizza il comando **ibmcloud at option** per visualizzare e configurare la politica di conservazione che definisce il numero massimo di giorni in cui gli eventi vengono conservati in {{site.data.keyword.cloudaccesstrailshort}}. Per impostazione predefinita, la politica di conservazione è disabilitata e gli eventi vengono conservati indefinitamente. Dopo che il periodo di conservazione è scaduto, gli eventi vengono eliminati automaticamente. 
 {:shortdesc}
 
 Puoi impostare la stessa politica di conservazione per tutti gli spazi nell'account o personalizzare il periodo di conservazione di uno spazio. 
@@ -30,9 +30,9 @@ Puoi impostare la stessa politica di conservazione per tutti gli spazi nell'acco
 
 Per disabilitare una politica di conservazione, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}. 
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Imposta il periodo di conservazione su **-1** per disabilitare il periodo di conservazione. Esegui il comando:
 
@@ -66,11 +66,11 @@ L'output è:
 ## Controllo della politica di conservazione dei log di uno spazio
 {: #check_retention_policy_space}
 
-Per ottenere il periodo di conservazione impostato per uno spazio {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
+Per ottenere il periodo di conservazione impostato per uno spazio {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}. 
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Ottieni il periodo di conservazione. Esegui il comando:
 
@@ -94,11 +94,11 @@ Per ottenere il periodo di conservazione impostato per uno spazio {{site.data.ke
 ## Verifica della politica di conservazione dei log per tutti gli spazi in un account
 {: #check_retention_policy_account}
 
-Per ottenere il periodo di conservazione impostato per ogni spazio {{site.data.keyword.Bluemix_notm}} in un account, completa la seguente procedura:
+Per ottenere il periodo di conservazione impostato per ogni spazio {{site.data.keyword.cloud_notm}} in un account, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}. 
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
     
 2. Ottieni il periodo di conservazione di ogni spazio nell'account. Esegui il comando:
 
@@ -126,11 +126,11 @@ Per ottenere il periodo di conservazione impostato per ogni spazio {{site.data.k
 ## Impostazione della politica di conservazione dei log nell'account
 {: #set_retention_policy_space}
 
-Per impostare il periodo di conservazione per un account {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
+Per impostare il periodo di conservazione per un account {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}. 
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Imposta il periodo di conservazione. Esegui il comando:
 
@@ -170,11 +170,11 @@ L'output elenca una voce per ogni spazio nell'account, incluse le informazioni s
 ## Configurazione della politica di conservazione dei log di uno spazio
 {: #set_retention_policy_account}
 
-Per visualizzare il periodo di conservazione per un spazio {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
+Per visualizzare il periodo di conservazione per uno spazio {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}. 
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
     
 2. Imposta il periodo di conservazione. Esegui il comando:
 

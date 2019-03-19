@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -130,7 +130,7 @@ ibmcloud at delete [parameters] [arguments..]
 
 <dl>
   <dt>--start value, -s value</dt>
-  <dd>(Opcional) Configura a data de início em Universal Coordinated Time (UTC): *YYYY-MM-DD*, por exemplo, `2017-01-02`. <br>O valor padrão é configurado como 2 semanas atrás.
+  <dd>(Opcional) Configura a data de início em Universal Coordinated Time (UTC): *YYYY-MM-DD*, por exemplo, `2017-01-02`. <br>O valor padrão é configurado como 2 semanas atrás. 
   </dd>
   
   <dt>--end value, -e value</dt>
@@ -182,7 +182,7 @@ ibmcloud at download [parameters] [arguments...]
 
 <dl>
 <dt>ID de sessão</dt>
-<dd>Configure o valor de ID de sessão que você obterá ao executar o comando `ibmcloud at session create`. Esse valor indica qual sessão usar ao fazer download de eventos. <br>**Nota:** o comando `ibmcloud at session create` fornece os parâmetros que controlam quais eventos são transferidos por download.</dd>
+<dd>Configure o valor de ID de sessão que você obterá ao executar o comando `ibmcloud at session create`. Esse valor indica qual sessão usar ao fazer download de eventos. <br>**Nota:** o comando `ibmcloud at session create` fornece os parâmetros que controlam quais eventos são transferidos por download. </dd>
 </dl>
 
 **Nota:** após a conclusão do download, para fazer download dos mesmos dados novamente, deve-se usar um arquivo diferente ou uma sessão diferente.
@@ -439,7 +439,7 @@ A saída é semelhante à saída a seguir:
 Lista as sessões ativas e seus IDs.
 
 ```
-ibmcloud at session list
+ibmcloud at session list 
 ```
 {: codeblock}
 
@@ -498,7 +498,7 @@ ibmcloud at session show [arguments...]
 **Argumentos**
 
 <dl>
-<dt>Session ID</dt>
+<dt>ID de sessão</dt>
 <dd>ID da sessão ativa da qual você deseja obter informações.</dd>
 </dl>
 

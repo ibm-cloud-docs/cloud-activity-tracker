@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-12"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -16,46 +16,53 @@ lastupdated: "2018-09-12"
 {:download: .download}
 
 
-# Esercitazione introduttiva
+# Introduzione
 {: #getting-started-with-cla}
 
-Il servizio {{site.data.keyword.cloudaccesstrailfull}} registra le attività avviate dall'utente che modificano lo stato di un servizio in {{site.data.keyword.Bluemix}}. Utilizza questa esercitazione per informazioni su come utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare un'interazione dell'utente con un servizio cloud. 
+Il servizio {{site.data.keyword.cloudaccesstrailfull}} registra le attività avviate dall'utente che modificano lo stato di un servizio in {{site.data.keyword.Bluemix}}. Impara ad utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare un'interazione dell'utente con un servizio cloud.
 {:shortdesc}
-
-Gli obiettivi di questa esercitazione introduttiva sono i seguenti:
-
-1. Mostrare come eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
-2. Mostrare come utilizzare un servizio cloud per generare gli eventi attività raccolti automaticamente dal servizio {{site.data.keyword.cloudaccesstrailshort}}. Gli eventi sono conformi agli standard [Cloud Auditing Data Federation (CADF) ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
-3. Mostrare come monitorare l'attività cloud di un servizio utilizzando i dashboard {{site.data.keyword.cloudaccesstrailshort}} predefiniti.
 
 La seguente figura mostra i diversi componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio:
 
 ![Componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio](images/AT_f1.png "Componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio")
 
-
+**Nota:** questa introduzione ti mostrerà come diventare operativo per monitorare l'attività cloud in Stati Uniti Sud.
 
 ## Prima di iniziare
-{: #prereqs}
+{: #index_prereqs}
 
-Crea un account [{{site.data.keyword.Bluemix_notm}}](https://console.bluemix.net/registration/). Il tuo ID utente deve essere un membro o un proprietario di un account {{site.data.keyword.Bluemix_notm}}, con autorizzazioni da sviluppatore nello spazio in cui pianifichi di utilizzare il servizio {{site.data.keyword.cloudaccesstrailshort}}.
+* Leggi le informazioni sul servizio {{site.data.keyword.cloudaccesstrailshort}}. Per ulteriori informazioni, vedi [Informazioni su {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov).
+* Controlla le regioni in cui è disponibile il servizio. Per ulteriori informazioni, vedi [Regioni](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
+* Ottieni un ID utente che è un membro o un proprietario di un account {{site.data.keyword.cloud_notm}}. 
+
+    Per ottenere un ID utente {{site.data.keyword.cloud_notm}}, vai a: [Registrazione ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/registration/){:new_window}.
 
 
-## Passo 1: esegui il provisioning del programma di traccia dell'attività
-{: #step1}
 
-Devi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nella stessa regione in cui viene eseguito il provisioning del servizio cloud di cui desideri monitorare l'attività. Dopo aver eseguito il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, gli eventi vengono raccolti automaticamente dai servizi cloud selezionati.  
+## Passo 1: provisioning di {{site.data.keyword.cloudaccesstrailshort}}
+{: #index_step1}
 
-**Nota:** questa esercitazione mostra come utilizzare il servizio {{site.data.keyword.cloudaccesstrailshort}} per monitorare un'interazione dell'utente con il servizio cloud {{site.data.keyword.keymanagementservicelong_notm}} nella regione Stati Uniti Sud. Pertanto, devi eseguire il provisioning di {{site.data.keyword.cloudaccesstrailshort}} nella regione Stati Uniti Sud. Per visualizzare le informazioni su quale regione è disponibile un servizio, consulta [Servizi per regione](/docs/resources/services_region.html#services_region).
+Prendi in considerazione le seguenti informazioni per scegliere dove eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}}:
 
-Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}} in {{site.data.keyword.Bluemix_notm}}:
+* {{site.data.keyword.cloudaccesstrailshort}} raccoglie gli eventi nei domini. Esiste un dominio dell'account per regione e un dominio dello spazio per spazio Cloud Foundry (CF). 
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}.
+* **Per monitorare le azioni dell'account globali**, devi eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} in uno spazio nella regione Stati Uniti Sud. Questi sono alcuni esempi di azioni globali: provisioning di un'istanza, modifica della politica IAM di un utente o invito di un utente nell'account.
 
-    Il dashboard {{site.data.keyword.Bluemix_notm}} può essere trovato all'indirizzo: [http://bluemix.net ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
+* **Per monitorare gli eventi generati da un servizio di cui viene eseguito il provisioning nel contesto di un'organizzazione e uno spazio CF**, devi eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} negli stessi spazio e regione in cui viene eseguito il provisioning del servizio di cui desideri monitorare l'attività. 
+
+* **Per monitorare gli eventi generati da un servizio di cui viene eseguito il provisioning nel contesto di un gruppo di risorse**, devi eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} in uno spazio nella stessa regione in cui viene eseguito il provisioning del servizio di cui desideri monitorare l'attività. 
+
+* Per eseguire il provisioning di un'istanza, il tuo ID utente deve avere il **ruolo di sviluppatore** nello spazio in cui pianifichi di eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+
+Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}} in {{site.data.keyword.cloud_notm}}:
+
+1. Accedi a {{site.data.keyword.cloud_notm}}.
+
+    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}.
     
-	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.Bluemix_notm}}.
+	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
-2. Fai clic su **Catalogo**. Viene aperto l'elenco dei servizi disponibili in {{site.data.keyword.Bluemix_notm}}.
+2. Fai clic su **Catalogo**. Viene aperto l'elenco dei servizi disponibili in {{site.data.keyword.cloud_notm}}.
 
 3. Seleziona la categoria **Sicurezza e identità** per filtrare l'elenco dei servizi visualizzati.
 
@@ -63,9 +70,9 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 
 4. Fai clic sul tile **Programma di traccia dell'attività**. 
 
-5. Configura le informazioni che definiscono dove viene eseguito il provisioning del servizio. 
+5. Configura le informazioni che definiscono dove viene eseguito il provisioning del servizio.
 
-    Immetti i dati come indicato nella seguente tabella: 
+    Ad esempio, per eseguire il provisioning del servizio nella regione Stai Uniti Sud, immetti i dati come indicato nella seguente tabella: 
 
     <table>
 	  <caption>Tabella 1. Campi obbligatori per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}</caption>
@@ -83,64 +90,142 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 	  </tr>
 	  <tr>
 	    <td>Scegli uno spazio:</td>
-		<td>Seleziona lo spazio nell'organizzazione selezionata in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}. </td>
+		<td>Seleziona lo spazio nell'organizzazione selezionata in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.</td>
 	  </tr>
 	</table>
 
-6. Fai clic su **Crea** per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui hai eseguito l'accesso.
+6. Seleziona un piano.  
+
+    Per impostazione predefinita, viene selezionato il piano **Lite**.
+
+	Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
+
+7. Fai clic su **Crea** per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui hai eseguito l'accesso.
    
 
-## Passo 2:  Configura il servizio cloud  
-{: #step2}
 
-Questa esercitazione illustra come monitorare l'attività dell'API per il servizio {{site.data.keyword.keymanagementserviceshort}} in {{site.data.keyword.Bluemix_notm}}.
+## Passo 2: concedi l'accesso utente per monitorare gli eventi
+{: #index_step2}
 
-Completa la seguente procedura per configurare il servizio {{site.data.keyword.keymanagementserviceshort}} in {{site.data.keyword.Bluemix_notm}}:
+Per visualizzare gli eventi, devi avere le autorizzazioni di accesso in {{site.data.keyword.cloud_notm}}. Le autorizzazioni variano a seconda se vuoi visualizzare gli eventi dell'account globali, gli eventi di un servizio di cui è stato eseguito il provisioning nel contesto di un gruppo di risorse oppure gli eventi di un servizio di cui è stato eseguito il provisioning nel contesto di uno spazio e un'organizzazione CF. 
 
-1. Esegui il provisioning di un'istanza del servizio {{site.data.keyword.keymanagementserviceshort}} nella regione Stati Uniti Sud. Per ulteriori informazioni, vedi [Provisioning dalla console IBM Cloud](/docs/services/key-protect/provision.html#provision).
+**Per monitorare la azioni dell'account globali** e **monitorare un servizio di cui è stato eseguito il provisioning nel contesto di un gruppo di risorse**, prendi in considerazione le seguenti informazioni:
 
-2. Definisci le autorizzazioni {{site.data.keyword.Bluemix_notm}} per l'utente che stai pianificando di utilizzare con le chiavi. 
+* Devi avere una politica IAM per il servizio {{site.data.keyword.loganalysisshort}} con il ruolo di **lettore** sul servizio {{site.data.keyword.loganalysisshort}}. 
+* Il proprietario dell'account o un amministratore del servizio {{site.data.keyword.loganalysisshort}} può concedere questa politica.
 
-    * Un utente ha bisogno di una politica IAM con un ruolo del servizio impostato su *gestore* o *scrittore* per poter creare le chiavi.
-	* Un utente ha bisogno di una politica IAM con un ruolo del servizio impostato su *gestore* per poter eliminare le chiavi.
-	* Un utente ha bisogno di una politica IAM con un ruolo del servizio impostato su *lettore* per poter visualizzare le chiavi. 
+**Per monitorare un servizio di cui è stato eseguito il provisioning nel contesto di uno spazio e un'organizzazione CF**, prendi in considerazione le seguenti informazioni:
 
+* Devi avere il ruolo di **sviluppatore** per lo spazio in cui hai eseguito il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+* Il proprietario dell'account, il gestore dell'organizzazione o il gestore dello spazio può concederti il ruolo di **sviluppatore** per lo spazio.
 
-## Passo 3: Genera un evento del programma di traccia dell'attività
-{: # step3}
+**Nota: per concedere a un utente una politica IAM, devi essere il proprietario dell'account o un amministratore del servizio {{site.data.keyword.loganalysisshort}}.**
 
-In questo passo, crea una chiave di sicurezza utilizzando il servizio {{site.data.keyword.keymanagementserviceshort}} per generare i dati dell'evento
-{{site.data.keyword.cloudaccesstrailshort}}. Per ulteriori informazioni, consulta [Creazione di nuove chiavi](/docs/services/key-protect/create-standard-keys.html#create-standard-keys).
+### Concedi l'accesso agli utenti per monitorare gli eventi del dominio dell'account
+{: #index_acc}
 
-* Gli eventi {{site.data.keyword.cloudaccesstrailshort}} vengono generati come risultato della creazione di una chiave.
-* Gli eventi {{site.data.keyword.cloudaccesstrailshort}} sono disponibili nel **dominio dell'account** {{site.data.keyword.cloudaccesstrailshort}} disponibile nella regione {{site.data.keyword.Bluemix_notm}} in cui vengono generati gli eventi.  
+Completa la seguente procedura per concedere una politica IAM a un utente dall'IU {{site.data.keyword.cloud_notm}}:
 
-## Passo 4: Monitora un evento del programma di traccia dell'attività
-{: #step4}
+1. Accedi alla console {{site.data.keyword.cloud_notm}}.
 
-In questo passo, verifica tramite la IU {{site.data.keyword.Bluemix_notm}} che gli eventi {{site.data.keyword.cloudaccesstrailshort}} siano stati generati.
+    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}
 
-Completa la seguente procedura per verificare che un evento è stato creato:
+2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**. 
+3. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** e fai quindi clic su **Assegna accesso**. 
+4. Seleziona **Assegna l'accesso alle risorse**.
+5. Seleziona **Analisi log**.
+6. Seleziona **Tutte le regioni**.
+7. Seleziona **Tutte le istanze del servizio**.
+8. Seleziona il ruolo del servizio **Lettore**.
+9. Fai clic su Assegna.
 
-1. Concedi le autorizzazioni all'utente per visualizzare gli eventi dell'account. Per ulteriori informazioni, vedi [Visualizzazione degli eventi dell'account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events) e [Concessione delle autorizzazioni per visualizzare gli eventi dell'account](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events).
+### Concedi l'accesso agli utenti per monitorare gli eventi del dominio dello spazio
+{: #index_space}
 
-2. Dal dashboard {{site.data.keyword.Bluemix_notm}}, seleziona il servizio {{site.data.keyword.cloudaccesstrailshort}}. Viene aperto il dashboard del servizio.
+Per concedere a un utente un ruolo di sviluppatore in uno spazio dall'IU {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-3. Configura la vista per ricercare gli eventi {{site.data.keyword.keymanagementserviceshort}} che sono stati generati quando hai eseguito il provisioning del servizio e aggiunto una chiave.
+1. Accedi alla console {{site.data.keyword.cloud_notm}}.
 
-    * Seleziona **Account logs** per il campo *View logs*.
-    * Seleziona ** target.typeURI_str** per il campo *Search field* e immetti **kms/secrets** nel campo *Filter*.
+    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}
 	
-    I dati visualizzati mostrano gli eventi {{site.data.keyword.keymanagementserviceshort}} disponibili per le ultime 24 ore. 
+	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
+
+2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**. 
+
+3. Seleziona l'utente.
+
+4. Seleziona **Accesso Cloud Foundry**.
+
+5. Espandi un'organizzazione.
+
+    Viene visualizzato l'elenco degli spazi disponibili in tale organizzazione.
+
+6. Dal menu delle azioni, seleziona **Modifica ruolo organizzazione**. Seleziona il ruolo **Revisore** per il campo *Ruoli organizzazione*. Fai quindi clic su **Salva ruolo**.
+
+7. Seleziona uno spazio. 
+
+8. Dal menu delle azioni, seleziona **Modifica ruolo spazio**. Seleziona il ruolo **Sviluppatore** per il campo *Ruoli spazio*. Fai quindi clic su **Salva ruolo**.
 	
+7. Fai clic su **Assegna**.
+
+
+
+## Passo 3: genera gli eventi {{site.data.keyword.cloudaccesstrailshort}} 
+{: #index_step3}
+
+Dopo aver eseguito il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, gli eventi vengono raccolti automaticamente dai servizi cloud selezionati. Per ulteriori informazioni sui servizi che puoi monitorare con {{site.data.keyword.cloudaccesstrailshort}}, incluse le informazioni sulle azioni che generano un evento {{site.data.keyword.cloudaccesstrailshort}}, consulta [Servizi cloud](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services).
+
+**Nota:** perché un utente generi degli eventi {{site.data.keyword.BluVirtServers_short}} e {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, deve avere accesso alle risorse dell'infrastruttura nella console IBM Cloud. Per ulteriori informazioni, vedi [Monitoraggio di {{site.data.keyword.BluVirtServers_short}} e dell'attività di {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi).
+
+Per informazioni su come generare gli eventi, completa l'esercitazione [Monitoraggio dell'attività di {{site.data.keyword.keymanagementserviceshort}} con {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp).
+
+## Passo 4: visualizzazione degli eventi
+{: #index_step4}
+
+Puoi monitorare gli eventi {{site.data.keyword.cloudaccesstrailshort}} nell'IU {{site.data.keyword.cloud_notm}}. Puoi inoltre eseguire l'upgrade del tuo piano al piano premium per monitorare gli eventi tramite Kibana. 
+
+**Per monitorare la azioni dell'account globali** e **monitorare un servizio di cui è stato eseguito il provisioning nel contesto di un gruppo di risorse**, prendi in considerazione le seguenti informazioni:
+
+* Gli eventi vengono raccolti in un dominio dell'account.
+
+    Esiste un dominio dell'account per regione.
+
+    Le azioni dell'account globali vengono raccolte nel dominio dell'account Stati Uniti Sud.
+
+    Gli eventi per un servizio vengono raccolti nel dominio dell'account della regione in cui viene eseguito il provisioning di un'istanza di questo servizio.
+
+* Il proprietario dell'account può visualizzare gli eventi tramite l'IU {{site.data.keyword.cloud_notm}} o in Kibana.
+* Gli altri utenti possono soltanto visualizzare gli eventi del dominio dell'account tramite Kibana. 
+
+
+**Per monitorare un servizio di cui è stato eseguito il provisioning nel contesto di uno spazio e un'organizzazione CF**, prendi in considerazione le seguenti informazioni:
+
+* Gli eventi vengono raccolti in un dominio dello spazio. 
+* Ogni spazio CF ha un dominio dello spazio {{site.data.keyword.cloudaccesstrailshort}} associato. 
+* Puoi visualizzare gli eventi tramite l'IU {{site.data.keyword.cloud_notm}} o in Kibana.
+
+La seguente tabella definisce il dominio {{site.data.keyword.cloudaccesstrailshort}} in cui devi monitorare gli eventi:
+
+| Monitoraggio                                                           | Dominio {{site.data.keyword.cloudaccesstrailshort}}  |  
+|----------------------------------------------------------------------|----------------------------------------------------| 
+| `Global account actions`                                             | dominio account Stati Uniti Sud                            |  
+| `Services that are provisioned in the context of a resource group`   | dominio account                                     | 
+| `Services that are provisioned in the context of a CF org and space` | dominio spazio                                       | 
+{: caption="Tabella 1. Domini {{site.data.keyword.cloudaccesstrailshort}} per origine evento" caption-side="top"} 
+
+Per visualizzare gli eventi, puoi scegliere una delle seguenti opzioni:
+
+* [Passaggio al dashboard del programma di traccia dell'attività per monitorare l'attività cloud nell'account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) 
+* [Passaggio al dashboard del programma di traccia dell'attività per monitorare l'attività cloud in uno spazio](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
+* [Passaggio a Kibana da un browser web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana).
+
+Per visualizzare gli eventi che generi completando la procedura nell'esercitazione, scegli [Passaggio al dashboard del programma di traccia dell'attività per monitorare l'attività cloud nell'account](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account). Se non sei il proprietario dell'account, esegui l'upgrade al piano del servizio e controlla di disporre delle autorizzazioni di accesso corrette per visualizzare gli eventi. 
 
 
 ## Passo successivo
-{: #next_steps}
+{: #index_next_steps}
 
-Successivamente, utilizza il dashboard Kibana predefinito {{site.data.keyword.cloudaccesstrailshort}} per monitorare e analizzare i log evento. Per avviare Kibana, consulta [Passaggio al dashboard Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). Per impostazione predefinita, in Kibana, i log di attività dello spazio vengono visualizzati tramite il dashboard **ActivityTracker_Space_Dashboard_in_24h**:
-
-Puoi anche utilizzare la CLI {{site.data.keyword.cloudaccesstrailshort}} per gestire i tuoi eventi dalla riga di comando. Per ulteriori informazioni, vedi [Visualizzazione di informazioni sull'evento](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+Utilizza la CLI {{site.data.keyword.cloudaccesstrailshort}} per gestire i tuoi eventi dalla riga di comando. Per ulteriori informazioni, consulta [Gestione degli eventi utilizzando la CLI del programma di traccia dell'attività](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2).
 
 
 

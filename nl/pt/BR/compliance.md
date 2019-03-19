@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-12"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -18,7 +17,7 @@ lastupdated: "2018-07-12"
 # Conformidade
 {: #compliance}
 
-[O {{site.data.keyword.Bluemix}} fornece uma plataforma de nuvem e serviços que são construídos para padrões de segurança rigorosos da IBM.](/docs/security/compliance.html#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.Bluemix_notm}}.
+[O {{site.data.keyword.Bluemix}} fornece uma plataforma de nuvem e serviços que são construídos para padrões de segurança rigorosos da IBM.](/docs/security/compliance.html#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -26,16 +25,16 @@ lastupdated: "2018-07-12"
 
 O General Data Protection Regulation (GDPR) procura criar uma estrutura harmonizada de lei de proteção de dados em toda a UE e visa devolver aos cidadãos o controle de seus dados pessoais, impondo regras rígidas aos que hospedam e 'processam' esses dados, em qualquer lugar do mundo. O regulamento também introduz regras relativas à livre circulação de dados pessoais dentro e fora da UE. 
 
-**Renúncia de responsabilidade:** o serviço {{site.data.keyword.cloudaccesstrailshort}} armazena e exibe registros de eventos de recursos de nuvem que são executados em sua conta no {{site.data.keyword.Bluemix_notm}}. Informações pessoais (PI) não devem ser incluídas em nenhuma das entradas de eventos armazenadas no {{site.data.keyword.cloudaccesstrailshort}}, pois esses dados são acessíveis a outros usuários dentro de sua Empresa, bem como à {{site.data.keyword.IBM_notm}} para poder suportar o serviço do Cloud.
+**Renúncia de responsabilidade:** o serviço {{site.data.keyword.cloudaccesstrailshort}} armazena e exibe registros de eventos de recursos de nuvem que são executados em sua conta no {{site.data.keyword.cloud_notm}}. Informações pessoais (PI) não devem ser incluídas em nenhuma das entradas de eventos armazenadas no {{site.data.keyword.cloudaccesstrailshort}}, pois esses dados são acessíveis a outros usuários dentro de sua Empresa, bem como à {{site.data.keyword.IBM_notm}} para poder suportar o serviço do Cloud.
 
 ### Regiões
-{: #regions}
+{: #compliance_regions}
 
-O serviço {{site.data.keyword.cloudaccesstrailshort}} é compatível com o GDPR nas regiões do {{site.data.keyword.Bluemix_notm}} Public em que o serviço está disponível.
+O serviço {{site.data.keyword.cloudaccesstrailshort}} é compatível com o GDPR nas regiões do {{site.data.keyword.cloud_notm}} Public em que o serviço está disponível.
 
 
 ### Retenção de Dados
-{: #data_retention}
+{: #compliance_data_retention}
 
 O serviço {{site.data.keyword.cloudaccesstrailshort}} inclui dois repositórios de dados nos quais os dados do evento são armazenados: 
 
@@ -44,7 +43,7 @@ O serviço {{site.data.keyword.cloudaccesstrailshort}} inclui dois repositórios
 
 
 ### Exclusão de dados
-{: #data_deletion}
+{: #compliance_data_deletion}
 
 Considere as informações a seguir:
 
@@ -61,11 +60,11 @@ A qualquer momento, é possível abrir um chamado de suporte e solicitar que tod
 
 
 ### Informações adicionais
-{: #info}
+{: #compliance_info}
 
 Para obter mais informações, veja:
 
-[{{site.data.keyword.Bluemix_notm}} conformidade de segurança](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} conformidade de segurança](/docs/security/compliance.html#compliance)
 
 [PIBR- {{site.data.keyword.IBM_notm}} oficial página](https://www.ibm.com/data-responsibility/gdpr/)
 

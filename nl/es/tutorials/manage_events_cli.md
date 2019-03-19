@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -25,20 +25,20 @@ Utilice esta guía de aprendizaje para aprender a utilizar la CLI de {{site.data
 
 Siga estos pasos:
 
-1. [Suministre {{site.data.keyword.keymanagementservicelong_notm}} y genere sucesos](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [Obtenga información sobre sucesos almacenados (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [Especifique los registros que desea descargar mediante la creación de una sesión (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [Obtenga los datos de registro real (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [Suprima la sesión después de que finalice la descarga (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [Suprima manualmente los registros que no se necesiten (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+1. [Suministre {{site.data.keyword.keymanagementservicelong_notm}} y genere sucesos](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
+2. [Obtenga información sobre sucesos almacenados (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
+2. [Especifique los registros que desea descargar mediante la creación de una sesión (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
+3. [Obtenga los datos de registro real (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
+4. [Suprima la sesión después de que finalice la descarga (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
+5. [Suprima manualmente los registros que no se necesiten (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
 
 
 ## Supuestos
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. Tiene un ID de usuario de {{site.data.keyword.Bluemix_notm}} con permisos de desarrollador para trabajar en un espacio de una cuenta de {{site.data.keyword.Bluemix_notm}} en la que se suministra el servicio {{site.data.keyword.cloudaccesstrailshort}}. 
+1. Tiene un ID de usuario de {{site.data.keyword.cloud_notm}} con permisos de desarrollador para trabajar en un espacio de una cuenta de {{site.data.keyword.cloud_notm}} en la que se suministra el servicio {{site.data.keyword.cloudaccesstrailshort}}. 
 
-    Para obtener más información sobre cómo suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}, consulte [Suministro del servicio {{site.data.keyword.cloudaccesstrailshort}} ](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+    Para obtener más información sobre cómo suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}, consulte [Suministro del servicio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
 
 2. Ha suministrado una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con un plan premium.
 
@@ -48,21 +48,21 @@ Siga estos pasos:
 
     Para obtener más información sobre cómo instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}}, consulte [Configuración de la CLI de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
 
-4. Ha iniciado una sesión en {{site.data.keyword.Bluemix_notm}} mediante la línea de mandatos. En esta guía de aprendizaje, ejecute los siguientes mandatos desde un terminal: 
+4. Ha iniciado una sesión en {{site.data.keyword.cloud_notm}} mediante la línea de mandatos. En esta guía de aprendizaje, ejecute los siguientes mandatos desde un terminal: 
 
-    `ibmcloud login -a api.ng.bluemix.net` para iniciar una sesión en la región EE.UU. sur. Para obtener más información, consulte [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
+    `ibmcloud login -a api.ng.bluemix.net` para iniciar una sesión en la región EE. UU. sur. Para obtener más información, consulte [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
     
     `ibmcloud target -o OrgName -s SpaceName` para definir la organización y el espacio de destino donde se suministrará el servicio {{site.data.keyword.cloudaccesstrailshort}}. Para obtener más información, consulte [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target).
 
 
 ## Paso 1: Suministrar el servicio IBM Key Protect y generar sucesos 
-{: #step1}
+{: #tutorial2_step1}
 	
-Siga estos pasos para suministrar el servicio {{site.data.keyword.keymanagementserviceshort}} en {{site.data.keyword.Bluemix_notm}} y generar sucesos:
+Siga estos pasos para suministrar el servicio {{site.data.keyword.keymanagementserviceshort}} en {{site.data.keyword.cloud_notm}} y generar sucesos:
 
-1. Suministre una instancia del servicio {{site.data.keyword.keymanagementserviceshort}} en la región EE.UU. sur. Para obtener más información, consulte [Suministro desde la consola de IBM Cloud](/docs/services/key-protect/provision.html#provision).
+1. Suministre una instancia del servicio {{site.data.keyword.keymanagementserviceshort}} en la región EE. UU. sur. Para obtener más información, consulte [Suministro desde la consola de IBM Cloud](/docs/services/key-protect/provision.html#provision).
 
-2. Defina los permisos de {{site.data.keyword.Bluemix_notm}} para el usuario que va a utilizar para trabajar con claves. 
+2. Defina los permisos de {{site.data.keyword.cloud_notm}} para el usuario que va a utilizar para trabajar con claves. 
 
     * Un usuario necesita una política de IAM con el rol de servicio *gestor (manager)* o *escritor (writer)* para poder crear claves.
 	* Un usuario necesita una política de IAM con el rol de servicio *gestor (manager)* para poder suprimir claves.
@@ -73,11 +73,11 @@ Siga estos pasos para suministrar el servicio {{site.data.keyword.keymanagements
 Como resultado de crear una clave se generan sucesos de {{site.data.keyword.cloudaccesstrailshort}}.
 
 ## Paso 2: Obtener información sobre sucesos almacenados
-{: #step2}
+{: #tutorial2_step2}
 
 Los sucesos de {{site.data.keyword.keymanagementserviceshort}} están disponibles en el dominio de la cuenta de {{site.data.keyword.cloudaccesstrailshort}}.
 
-En esta guía de aprendizaje, los sucesos de {{site.data.keyword.keymanagementserviceshort}} están disponibles en el dominio de cuenta de EE.UU. sur, que es la región en la que se ha suministrado el servicio {{site.data.keyword.keymanagementserviceshort}}. 
+En esta guía de aprendizaje, los sucesos de {{site.data.keyword.keymanagementserviceshort}} están disponibles en el dominio de cuenta de EE. UU. sur, que es la región en la que se ha suministrado el servicio {{site.data.keyword.keymanagementserviceshort}}. 
 
 Ejecute el mandato siguiente para obtener información sobre los sucesos recopilados en una fecha específica:
 
@@ -112,7 +112,7 @@ Este mandato contará los sucesos correspondientes al 25 de junio de 2017.  {{si
 
 
 ## Paso 3: Especificar los sucesos que se van a descargar
-{: #step3}
+{: #tutorial2_step3}
 
 Antes de descargar sucesos, cree una sesión. La sesión especifica los sucesos que se descargarán.
 
@@ -167,7 +167,7 @@ Para obtener más información sobre las sesiones y el mandato `ibmcloud at sess
 Utilice `ibmcloud at session help create` para obtener ayuda desde la línea de mandatos.
 
 ## Paso 4: Descargue los sucesos identificados para el ámbito definido para la sesión
-{: #step4}
+{: #tutorial2_step4}
 
 Para descargar los sucesos especificados por los parámetros de la sesión, ejecute el siguiente mandato:
 
@@ -198,7 +198,7 @@ Para obtener más información sobre el mandato `ibmcloud at download`, consulte
 Utilice `ibmcloud at help download` para obtener ayuda desde la línea de mandatos.
 
 ## Paso 5: Suprimir la sesión
-{: #step5}
+{: #tutorial2_step5}
 
 Una vez finalizada la descarga, suprima la sesión. Ejecute el mandato siguiente:
 
@@ -230,7 +230,7 @@ Para obtener más información sobre el mandato `ibmcloud at session delete`, co
 Utilice `ibmcloud at session help delete` para obtener ayuda desde la línea de mandatos.
 
 ## Paso 6: Suprimir sucesos de Activity Tracker automáticamente
-{: #step6}
+{: #tutorial2_step6}
 
 El usuario tiene el control de su propia retención de sucesos en {{site.data.keyword.cloudaccesstrailshort}}. Puede suprimir sucesos manualmente, o puede automatizar la supresión de sucesos.
 
@@ -241,6 +241,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 Para obtener más información sobre el mandato `ibmcloud at delete`, consulte la [Referencia de CLI](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete).
 

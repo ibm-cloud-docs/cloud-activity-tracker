@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -25,7 +25,7 @@ lastupdated: "2018-07-07"
 
 
 ## 使用 cURL 取得事件數
-{: #records_per_day_curl}
+{: #viewing_events_info_api_records_per_day_curl}
 
 請完成下列步驟，以檢視特定日期事件的相關資訊：
 
@@ -73,7 +73,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## 如何檢視每天事件數的 NodeJS 範例
-{: #node}
+{: #viewing_events_info_api_node}
 
 這是您可用來測試如何檢視每天事件數的範例程式碼：
 

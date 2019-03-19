@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -24,12 +24,12 @@ Sie können Ereignisse in eine lokale Datei herunterladen. Ereignisse werden im 
 
 Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herunterzuladen:
 
-## Schritt 1: Bei {{site.data.keyword.Bluemix_notm}} anmelden
+## Schritt 1: Bei {{site.data.keyword.cloud_notm}} anmelden
 {: #prereq}
 
-Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. Führen Sie die folgenden Schritte aus:
+Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. Führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an.
+1. Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an.
 2. Führen Sie den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 
 **Hinweis:** Legen Sie die Organisation und den Bereich (Space) fest, in der bzw. dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie in [Ereignisinformationen anzeigen](/docs/servi
 
 Eine Sitzung ist erforderlich, um den Bereich der Ereignisdaten zu definieren, die für den Download verfügbar sind, und den Downloadstatus beizubehalten. 
 
-Verwenden Sie den Befehl `ibmcloud at session create`, um eine Sitzung zu erstellen. Standardmäßig umfasst eine Sitzung Daten der letzten zwei Wochen. Optional können Sie beim Erstellen einer Sitzung ein Start- und ein Enddatum festlegen, um einen Zeitbereich anzugeben, eine bestimmte Tageszeit angeben oder den Geltungsbereich der Ereignisse festlegen. 
+Verwenden Sie den Befehl `ibmcloud at session create`, um eine Sitzung zu erstellen. Standardmäßig umfasst eine Sitzung Daten der letzten zwei Wochen.  Optional können Sie beim Erstellen einer Sitzung ein Start- und ein Enddatum festlegen, um einen Zeitbereich anzugeben, eine bestimmte Tageszeit angeben oder den Geltungsbereich der Ereignisse festlegen. 
 
 **Hinweis:** 
 

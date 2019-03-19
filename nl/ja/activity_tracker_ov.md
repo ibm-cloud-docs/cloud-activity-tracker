@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-06-21"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,19 +17,19 @@ lastupdated: "2018-06-21"
 
 
 
-# Activity Tracker
+# 紹介
 {: #activity_tracker_ov}
 
 {{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、アプリケーションが {{site.data.keyword.Bluemix}} サービスとどのように対話するのかをトラッキングします。 {{site.data.keyword.cloudaccesstrailshort}} を使用して異常なアクティビティーをモニターすることで、規制監査要件に準拠することができます。 収集されるイベントは、Cloud Auditing Data Federation (CADF) 標準に準拠しています。
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} は、クラウド内の IT リソースに対する高水準のセキュリティー・ガバナンスを実現します。
-* {{site.data.keyword.cloudaccesstrailshort}} は、ネットワーク管理者が 1 つの場所で API アクティビティーの取り込み、保管、表示、検索、およびモニターを行えるようにするソリューションを提供します。
+* {{site.data.keyword.cloudaccesstrailshort}} は、管理者が 1 つの場所で API アクティビティーの取り込み、保管、表示、検索、およびモニターを行えるようにするソリューションを提供します。
 * {{site.data.keyword.cloudaccesstrailshort}} は、イベントをダウンロードする機能を提供します。ダウンロードしたイベントは監査証跡レポートを生成するために使用できます。 組織が社内規定および外部の業界や国の規制に準拠するために、これらのレポートが必要になることがあります。
 
 アプリケーションの実行場所がオンプレミス、ハイブリッド・クラウド、またはパブリック・クラウドのいずれであるかに関係なく、社内のポリシーおよび業界の規定に準拠することは、すべての組織の戦略にとって重要な要件です。 {{site.data.keyword.cloudaccesstrailshort}} サービスでは、API 呼び出しをモニターして企業のポリシーおよび市場の業界固有の規定への準拠の証拠を生成するためのフレームワークおよび機能を提供します。
 
-クラウド環境 ({{site.data.keyword.Bluemix_notm}} など) で作業をする場合、社内のポリシーと業界や国ベースの準拠要件に従って、ワークロードやデータの監査とモニターに関するクラウド戦略を立てる必要があります。 {{site.data.keyword.cloudaccesstrailshort}} サービスを通じて登録された情報を使用することで、セキュリティー・インシデントを特定し、無許可アクセスを検出して、規制上および社内の監査要件に準拠することができます。
+クラウド環境 ({{site.data.keyword.cloud_notm}} など) で作業をする場合、社内のポリシーと業界や国ベースの準拠要件に従って、ワークロードやデータの監査とモニターに関するクラウド戦略を立てる必要があります。 {{site.data.keyword.cloudaccesstrailshort}} サービスを通じて登録された情報を使用することで、セキュリティー・インシデントを特定し、無許可アクセスを検出して、規制上および社内の監査要件に準拠することができます。
 
 例えば、{{site.data.keyword.cloudaccesstrailshort}} アクティビティー・ログを使用して、以下の情報を識別できます。
 
@@ -40,13 +40,13 @@ lastupdated: "2018-06-21"
 
 
 ## イベントの収集
-{: #collect}
+{: #activity_tracker_ov_collect}
 
-{{site.data.keyword.cloudaccesstrailshort}} サービスは、{{site.data.keyword.Bluemix_notm}} 内の選択されたクラウド・サービスに対して行われる API 呼び出しおよびその他のアクションに関連したアクティビティー・データのみを取り込みます。 
+{{site.data.keyword.cloudaccesstrailshort}} サービスは、{{site.data.keyword.cloud_notm}} 内の選択されたクラウド・サービスに対して行われる API 呼び出しおよびその他のアクションに関連したアクティビティー・データのみを取り込みます。 
 
 * イベントは自動的に収集されます。 
 * {{site.data.keyword.cloudaccesstrailshort}} で収集されるイベントは、Cloud Auditing Data Federation (CADF) 標準に準拠しています。 CADF 標準は、クラウド環境にあるアプリケーションのセキュリティーの認証、管理、および監査に必要な情報が含まれた、フルイベント・モデルを定義しています。
-* {{site.data.keyword.cloudaccesstrailshort}} は、ドメイン別にイベントを保管およびグループ化します。地域ごとに 1 つのアカウント・ドメインがあり、Cloud Foundry スペースごとに 1 つのスペース・ドメインがあります。 
+* {{site.data.keyword.cloudaccesstrailshort}} は、ドメイン別にイベントを保管およびグループ化します。 地域ごとに 1 つのアカウント・ドメインがあり、Cloud Foundry スペースごとに 1 つのスペース・ドメインがあります。 
 
 CADF イベント・モデルには、以下のコンポーネントが含まれています。
 
@@ -88,9 +88,9 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 
 
 ## Activity Tracker のプロビジョン
-{: #provision}
+{: #activity_tracker_ov_provision}
 
-アカウント・ドメインを通して使用可能なイベントを表示するには、API アクティビティーをモニターしたい地域の Cloud Foundry スペースに {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする必要があります。**アカウント所有者**のみが、アカウント・イベントを表示できます。
+アカウント・ドメインを通して使用可能なイベントを表示するには、API アクティビティーをモニターしたい地域の Cloud Foundry スペースに {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする必要があります。 **アカウント所有者**のみが、アカウント・イベントを表示できます。
 
 スペース・ドメインを通して使用可能なイベントを表示するには、API アクティビティーをモニターしたいスペースに {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする必要があります。
 
@@ -99,11 +99,11 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 
 
 ## アクティビティー・ログの分析
-{: #analyze}
+{: #activity_tracker_ov_analyze}
 
-アクティビティー・ログの分析は、{{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} UI を介して行うか、オープン・ソース・ツールである Kibana を使用して行うことができます。 特定のスペースで使用可能なイベントをモニターするか、アカウント・レベルで使用可能なイベントをモニターすることができます。
+アクティビティー・ログの分析は、{{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} UI を介して行うか、オープン・ソース・ツールである Kibana を使用して行うことができます。 特定のスペースで使用可能なイベントをモニターするか、アカウント・レベルで使用可能なイベントをモニターすることができます。
 
-{{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} UI を介して、過去 24 時間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} UI へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)を参照してください。
+{{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} UI を介して、過去 24 時間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} UI へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)を参照してください。
 
 {{site.data.keyword.cloudaccesstrailshort}} Kibana ダッシュボードを使用するか、または、ユーザー独自のカスタム・ダッシュボードを作成することによって、Kibana を介して過去 3 日間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。 **注:** この機能を使用できるのは、**プレミアム**・プランのユーザーです。
 
@@ -113,22 +113,22 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 
 
 ## 地域
-{: #regions}
+{: #activity_tracker_ov_regions}
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスは、以下の地域で使用可能です。
 
 * ドイツ
 * シドニー
-* 英国 
+* 英国 (ライト・プランのみが使用可能です)
 * 米国南部
 
 
 ## サービス・プラン
-{: #plan}
+{: #activity_tracker_ov_plan}
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスには複数のプランが用意されています。
 
-プランは {{site.data.keyword.Bluemix_notm}} UI またはコマンド・ラインを使用して変更できます。 プランのアップグレード、またはライト・プランへの切り替えは、いつでも実行できます。 サービス・プランのアップグレードについて詳しくは、[プランの変更](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)を参照してください。 
+プランは {{site.data.keyword.cloud_notm}} UI またはコマンド・ラインを使用して変更できます。 プランのアップグレード、またはライト・プランへの切り替えは、いつでも実行できます。 サービス・プランのアップグレードについて詳しくは、[プランの変更](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)を参照してください。 
 
 使用可能なプランの概要を次の表に示します。
 
@@ -179,10 +179,10 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 **注:** イベント・ストレージの 1 カ月のコストは、請求サイクルの平均として計算されます。
 
 ## セキュリティー
-{: #security}
+{: #activity_tracker_ov_security}
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスを使用するときには、セキュリティーに関する以下の情報を考慮してください。
 
 * {{site.data.keyword.cloudaccesstrailshort}} イベントを生成する IBM サービスは、{{site.data.keyword.IBM_notm}} クラウドのセキュリティー・ポリシーに従います。 詳しくは、[Trust the security and privacy of IBM Cloud ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window} を参照してください。
 * {{site.data.keyword.cloudaccesstrailshort}} サービスは、クラウド・サービスの状態を変更するユーザー開始アクションを取り込みます。 この情報からデータベースまたはアプリケーションに直接アクセスすることはできません。
-* 許可されたユーザーのみが {{site.data.keyword.cloudaccesstrailshort}} イベント・ログの表示およびモニターを行うことができます。 各ユーザーは、{{site.data.keyword.Bluemix_notm}} での固有の ID によって識別されます。
+* 許可されたユーザーのみが {{site.data.keyword.cloudaccesstrailshort}} イベント・ログの表示およびモニターを行うことができます。 各ユーザーは、{{site.data.keyword.cloud_notm}} での固有の ID によって識別されます。

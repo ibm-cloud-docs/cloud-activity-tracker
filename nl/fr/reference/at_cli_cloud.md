@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -23,8 +23,8 @@ Vous pouvez utiliser l'interface de ligne de commande {{site.data.keyword.clouda
 {: shortdesc}
 
 **Prérequis**
-* Avant d'exécuter les commandes, connectez-vous à {{site.data.keyword.Bluemix}} avec la commande `ibmcloud login` pour générer un jeton d'accès et authentifier votre session. 
-* Pour gérer des événements à l'aide de l'interface de ligne de commande, vous devez disposer d'un plan payant. 
+* Avant d'exécuter les commandes, connectez-vous à {{site.data.keyword.Bluemix}} avec la commande `ibmcloud login` pour générer un jeton d'accès et authentifier votre session.
+* Pour gérer des événements à l'aide de l'interface de ligne de commande, vous devez disposer d'un plan payant.
 
 Le plug-in de l'interface de ligne de commande d'{{site.data.keyword.cloudaccesstraillong}} prend en charge les plateformes Linux, Mac et Windows.
 
@@ -52,7 +52,7 @@ Le plug-in de l'interface de ligne de commande d'{{site.data.keyword.cloudaccess
   </tr>
   <tr>
     <td>[ibmcloud at option](#option)</td>
-    <td>Utilisez cette commande pour afficher ou modifier des options d'événement {{site.data.keyword.cloudaccesstrailshort}}, telles que la conservation, disponibles dans un espace ou un compte. </td>
+    <td>Utilisez cette commande pour afficher ou modifier des options d'événement {{site.data.keyword.cloudaccesstrailshort}}, telles que la conservation, disponibles dans un espace ou un compte.</td>
   </tr>
   <tr>
     <td>[ibmcloud at session create](#session_create)</td>
@@ -255,7 +255,7 @@ ibmcloud at option [parameters] [arguments...]
 <dd>(Facultatif) Définit le nombre de jours de conservation. <br> La valeur par défaut est *-1* jour.</dd>
 
 <dt>--at-account-level, -a</dt>
-<dd>(Facultatif) Définissez ce paramètre pour répertorier les informations relatives à la durée de conservation pour les événements stockés dans chaque domaine d'espace et dans le domaine de compte. 
+<dd>(Facultatif) Définissez ce paramètre pour répertorier les informations relatives à la durée de conservation pour les événements stockés dans chaque domaine d'espace et dans le domaine de compte.
 
 </dl>
 
@@ -264,8 +264,8 @@ ibmcloud at option [parameters] [arguments...]
 Pour afficher la durée de conservation en cours pour l'espace où vous êtes connecté, exécutez la commande suivante :
 
 ```
-    ibmcloud at option
-    ```
+ibmcloud at option
+```
 {: codeblock}
 
 La sortie obtenue est similaire à la suivante :

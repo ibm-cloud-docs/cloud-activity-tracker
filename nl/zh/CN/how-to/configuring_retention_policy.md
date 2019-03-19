@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -30,9 +30,9 @@ lastupdated: "2018-09-07"
 
 要禁用保留时间策略，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 2. 将保留期设置为 **-1** 以禁用保留期。运行以下命令：
 
@@ -66,11 +66,11 @@ ibmcloud at option -r -1
 ## 检查空间的日志保留时间策略
 {: #check_retention_policy_space}
 
-要获取为 {{site.data.keyword.Bluemix_notm}} 空间设置的保留期，请完成以下步骤：
+要获取为 {{site.data.keyword.cloud_notm}} 空间设置的保留期，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 2. 获取保留期。运行以下命令：
 
@@ -94,11 +94,11 @@ ibmcloud at option -r -1
 ## 检查帐户中所有空间的日志保留时间策略
 {: #check_retention_policy_account}
 
-要获取为帐户中每个 {{site.data.keyword.Bluemix_notm}} 空间设置的保留期，请完成以下步骤：
+要获取为帐户中每个 {{site.data.keyword.cloud_notm}} 空间设置的保留期，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
     
 2. 获取帐户中每个空间的保留期。运行以下命令：
 
@@ -126,11 +126,11 @@ ibmcloud at option -r -1
 ## 跨帐户设置日志保留时间策略
 {: #set_retention_policy_space}
 
-要设置 {{site.data.keyword.Bluemix_notm}} 帐户的保留期，请完成以下步骤：
+要设置 {{site.data.keyword.cloud_notm}} 帐户的保留期，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 2. 设置保留期。运行以下命令：
 
@@ -171,11 +171,11 @@ ibmcloud at option -r 15 -a
 ## 设置空间的日志保留时间策略
 {: #set_retention_policy_account}
 
-要查看 {{site.data.keyword.Bluemix_notm}} 空间的保留期，请完成以下步骤：
+要查看 {{site.data.keyword.cloud_notm}} 空间的保留期，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+1. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令，以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令来设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
     
 2. 设置保留期。运行以下命令：
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ lastupdated: "2018-07-07"
 **附註：**雖然您可以使用 API 呼叫手動刪除事件，但請考慮設定保留原則來自動刪除事件。如需相關資訊，請參閱[配置事件保留原則](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)。
 
 ## 使用 cURL 刪除事件
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 請完成下列步驟，以刪除空間網域中可用的事件：
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## 如何刪除事件的 NodeJS 範例
-{: #node}
+{: #deleting_events_api_node}
 
 這是您可用來測試如何刪除事件的範例程式碼：
 

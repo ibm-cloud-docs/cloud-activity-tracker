@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-06-21"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-06-21"
 
 
 
-# Activity Tracker
+# Informationen
 {: #activity_tracker_ov}
 
 Verwenden Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service, um zu verfolgen, wie Anwendungen mit {{site.data.keyword.Bluemix}}-Service interagieren. {{site.data.keyword.cloudaccesstrailshort}} unterstützt
@@ -26,12 +26,12 @@ Standard der Cloud Auditing Data Federation (CADF).
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} bietet allgemeine Sicherheitsgovernance für Ihre IT-Ressourcen in der Cloud.
-* {{site.data.keyword.cloudaccesstrailshort}} bietet eine Lösung für Netzadministratoren zum Erfassen, Speichern, Anzeigen, Suchen und Überwachen der API-Aktivität von einem Punkt aus.
+* {{site.data.keyword.cloudaccesstrailshort}} bietet eine Lösung für Administratoren zum Erfassen, Speichern, Anzeigen, Suchen und Überwachen der API-Aktivität von einem einzigen Punkt aus. 
 * {{site.data.keyword.cloudaccesstrailshort}} bietet Funktionen zum Herunterladen von Ereignissen, die Sie anschließend zum Erstellen eines Prüfprotokollberichts verwenden können. Sie benötigen diese Berichte möglicherweise, damit Ihre Organisation interne Vorschriften und externe branchen- oder länderspezifische Vorschriften einhalten kann.
 
 Die Einhaltung interner Richtlinien und branchenspezifischer Vorschriften ist eine wichtige Voraussetzung in jeder Unternehmensstrategie, unabhängig davon, wo Anwendungen ausgeführt werden: vor Ort, in einer Hybrid-Cloud oder in einer öffentlichen Cloud. Der {{site.data.keyword.cloudaccesstrailshort}}-Service liefert das Gerüst und die Funktionalität zum Überwachen von API-Aufrufen und zum Nachweisen der Einhaltung von Unternehmensrichtlinien und branchenspezifischen Marktvorschriften.
 
-Beim Arbeiten in einer Cloudumgebung wie {{site.data.keyword.Bluemix_notm}} müssen Sie die Cloudstrategie zum Prüfen und Überwachen von Workloads und Daten in Übereinstimmung mit Ihren internen Richtlinien sowie mit branchen- und länderspezifischen Compliance-Anforderungen planen. Anhand der Informationen, die vom {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst werden, können Sie Sicherheitsvorfälle identifizieren, unbefugten Zugriff erkennen und Vorschriften sowie interne Prüfanforderungen einhalten.
+Beim Arbeiten in einer Cloudumgebung wie {{site.data.keyword.cloud_notm}} müssen Sie die Cloudstrategie zum Prüfen und Überwachen von Workloads und Daten in Übereinstimmung mit Ihren internen Richtlinien sowie mit branchen- und länderspezifischen Compliance-Anforderungen planen. Anhand der Informationen, die vom {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst werden, können Sie Sicherheitsvorfälle identifizieren, unbefugten Zugriff erkennen und Vorschriften sowie interne Prüfanforderungen einhalten.
 
 Sie können die {{site.data.keyword.cloudaccesstrailshort}}-Aktivitätenprotokolle beispielsweise verwenden, um die folgenden Informationen zu ermitteln:
 
@@ -42,9 +42,9 @@ Sie können die {{site.data.keyword.cloudaccesstrailshort}}-Aktivitätenprotokol
 
 
 ## Erfassen von Ereignissen
-{: #collect}
+{: #activity_tracker_ov_collect}
 
-Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst nur Aktivitätsdaten, die sich auf API-Aufrufe beziehen, und andere Aktionen, die für ausgewählte Cloud-Services in {{site.data.keyword.Bluemix_notm}} ausgeführt werden. 
+Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst nur Aktivitätsdaten, die sich auf API-Aufrufe beziehen, und andere Aktionen, die für ausgewählte Cloud-Services in {{site.data.keyword.cloud_notm}} ausgeführt werden. 
 
 * Ereignisse werden automatisch erfasst. 
 * Die in {{site.data.keyword.cloudaccesstrailshort}} erfassten Ereignisse erfüllen den Standard der Cloud Auditing Data Federation (CADF). Der CADF-Standard definiert ein vollständiges Ereignismodell, das alle Informationen beinhaltet, die zum Zertifizieren, Verwalten und Prüfen der Sicherheit von Anwendungen in Cloud-Umgebungen erforderlich sind.
@@ -90,22 +90,22 @@ Beachten Sie Folgendes beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrai
 
 
 ## Bereitstellen von Activity Tracker
-{: #provision}
+{: #activity_tracker_ov_provision}
 
 Um Ereignisse anzeigen zu können, die über eine Kontodomäne verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in einem Cloud Foundry-Bereich (Space) in der Region bereitstellen, in der die API-Aktivität überwacht werden soll. Nur der **Kontoeigner** kann Ereignisse für ein Konto anzeigen.
 
-Um Ereignisse anzeigen zu können, die über eine Bereichsdomäne (Spacedomäne) verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich (Space) bereitstellen, in der die API-Aktivität überwacht werden soll. 
+Um Ereignisse anzeigen zu können, die über eine Bereichsdomäne (Spacedomäne) verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich (Space) bereitstellen, in der die API-Aktivität überwacht werden soll.
 
 Informationen zur Vorgehensweise beim Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service bereitstellen](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
 
 
 
 ## Analysieren von Aktivitätenprotokollen
-{: #analyze}
+{: #activity_tracker_ov_analyze}
 
-Sie können Aktivitätenprotokolle mit der {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle in {{site.data.keyword.Bluemix_notm}} oder mit dem Open-Source-Tool Kibana analysieren. Sie können Ereignisse überwachen, die in einem bestimmten Bereich oder auf Kontoebene verfügbar sind.
+Sie können Aktivitätenprotokolle mit der {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle in {{site.data.keyword.cloud_notm}} oder mit dem Open-Source-Tool Kibana analysieren. Sie können Ereignisse überwachen, die in einem bestimmten Bereich oder auf Kontoebene verfügbar sind.
 
-Sie können Aktivitätenprotokolle für die letzten 24 Stunden mit der {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle in {{site.data.keyword.Bluemix_notm}} suchen, analysieren und überwachen. Weitere Informationen finden Sie in [Zur {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle navigieren](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+Sie können Aktivitätenprotokolle für die letzten 24 Stunden mit der {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle in {{site.data.keyword.cloud_notm}} suchen, analysieren und überwachen. Weitere Informationen finden Sie in [Zur {{site.data.keyword.cloudaccesstrailshort}}-Benutzerschnittstelle navigieren](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
 
 Sie können Aktivitätenprotokolle für die letzten 3 Tage mit Kibana über das Kibana-Dashboard in {{site.data.keyword.cloudaccesstrailshort}} suchen, analysieren und überwachen, oder indem Sie eigene angepasste Dashboards erstellen. * **Hinweis:** Dieses Feature ist für Benutzer im Rahmen des **Premium-Plans** verfügbar.
 
@@ -115,22 +115,22 @@ Sie können Aktivitätenprotokolle für die letzten 3 Tage mit Kibana über das 
 
 
 ## Regionen
-{: #regions}
+{: #activity_tracker_ov_regions}
 
 Der {{site.data.keyword.cloudaccesstrailshort}}-Service ist in den folgenden Regionen verfügbar:
 
 * Deutschland
 * Sydney
-* Vereinigtes Königreich 
+* Vereinigtes Königreich (nur Lite-Plan ist verfügbar)
 * Vereinigte Staaten (Süden)
 
 
 ## Serviceplan
-{: #plan}
+{: #activity_tracker_ov_plan}
 
 Der {{site.data.keyword.cloudaccesstrailshort}}-Service stellt mehrere Pläne bereit.
 
-Sie können einen Plan über die Benutzerschnittstelle (UI) für {{site.data.keyword.Bluemix_notm}} oder über die Befehlszeile ändern. Sie können für Ihren Plan jederzeit ein Upgrade oder eine Herabstufung vornehmen. Weitere Informationen zu Upgrades des Serviceplans finden Sie in [Plan ändern](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+Sie können einen Plan über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloud_notm}} oder über die Befehlszeile ändern. Sie können für Ihren Plan jederzeit ein Upgrade oder eine Herabstufung vornehmen. Weitere Informationen zu Upgrades des Serviceplans finden Sie in [Plan ändern](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
 
 Die folgende Tabelle liefert einen Überblick über die verfügbaren Pläne:
 
@@ -181,10 +181,10 @@ Die folgende Tabelle liefert einen Überblick über die verfügbaren Pläne:
 **Hinweis:** Die monatlichen Kosten für den Ereignisspeicher werden als Durchschnittswert für den Abrechnungszyklus berechnet.
 
 ## Sicherheit
-{: #security}
+{: #activity_tracker_ov_security}
 
 Beachten Sie beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service die folgenden Informationen zur Sicherheit:
 
 * IBM Services, die {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse erstellen, entsprechen der Sicherheitsrichtlinie für {{site.data.keyword.IBM_notm}} Cloud. Weitere Informationen finden Sie unter [Vertrauen Sie der Sicherheit und dem Datenschutz von IBM Cloud ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
 * Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst vom Benutzer eingeleitete Aktionen, die den Status von Cloud-Services ändern. Über diese Informationen ist kein direkter Zugriff auf Datenbanken oder Anwendungen möglich.
-* Nur berechtigte Benutzer können {{site.data.keyword.cloudaccesstrailshort}}-Ereignisprotokolle anzeigen und überwachen. Jeder Benutzer wird durch eine eindeutige persönliche ID in {{site.data.keyword.Bluemix_notm}} identifiziert.
+* Nur berechtigte Benutzer können {{site.data.keyword.cloudaccesstrailshort}}-Ereignisprotokolle anzeigen und überwachen. Jeder Benutzer wird durch eine eindeutige persönliche ID in {{site.data.keyword.cloud_notm}} identifiziert.

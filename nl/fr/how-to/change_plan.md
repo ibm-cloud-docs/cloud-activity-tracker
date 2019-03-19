@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # Changement de plan
 {: #change_plan}
 
-Vous pouvez changer de plan de service {{site.data.keyword.cloudaccesstraillong}} dans l'interface utilisateur {{site.data.keyword.Bluemix_notm}} ou en exécutant la commande `ibmcloud service update`. Vous pouvez mettre à niveau ou rétrograder votre plan à tout moment.
+Vous pouvez changer de plan de service {{site.data.keyword.cloudaccesstraillong}} dans l'interface utilisateur {{site.data.keyword.cloud_notm}} ou en exécutant la commande `ibmcloud service update`. Vous pouvez mettre à niveau ou rétrograder votre plan à tout moment.
 {:shortdesc}
 
 ## Changement de plan de service via l'interface utilisateur
 {: #change_plan_ui}
 
-Pour changer votre plan de service dans l'interface utilisateur {{site.data.keyword.Bluemix_notm}}, procédez comme suit :
+Pour changer votre plan de service dans l'interface utilisateur {{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}, puis cliquez sur le service {{site.data.keyword.cloudaccesstraillong_notm}} dans le *Tableau de bord*.  
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}, puis cliquez sur le service {{site.data.keyword.cloudaccesstraillong_notm}} dans le *Tableau de bord*. 
     
 2. Sélectionnez l'onglet **Plan**.
 
@@ -45,9 +45,9 @@ Pour changer votre plan de service dans l'interface utilisateur {{site.data.keyw
 
 Pour modifier votre plan de service via l'interface de ligne de commande, procédez comme suit :
 
-1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à {{site.data.keyword.cloud_notm}}. 
 
-    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+    Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}, puis exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 	
 2. Exécutez la commande `ibmcloud service list` pour identifier le plan en cours et obtenir le nom du service {{site.data.keyword.cloudaccesstrailshort}} depuis la liste des services qui est disponible dans l'espace. 
 
@@ -67,7 +67,7 @@ Pour modifier votre plan de service via l'interface de ligne de commande, procé
     ```
 	{: screen}
     
-3. Mettez à niveau votre plan ou rétrogradez-le. Exécutez la commande `ibmcloud service update`. 
+3. Mettez à niveau votre plan ou rétrogradez-le. Exécutez la commande `ibmcloud service update`.
     
 	```
 	ibmcloud service update service_name [-p new_plan]

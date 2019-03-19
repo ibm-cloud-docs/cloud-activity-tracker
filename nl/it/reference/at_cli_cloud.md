@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -23,7 +23,7 @@ Puoi utilizzare la CLI {{site.data.keyword.cloudaccesstraillong}} per gestire gl
 {: shortdesc}
 
 **Prerequisiti**
-* Prima di eseguire i comandi, accedi a {{site.data.keyword.Bluemix}} con il comando `ibmcloud login` per generare un token di accesso e per autenticare la tua sessione. 
+* Prima di eseguire i comandi, accedi a {{site.data.keyword.Bluemix}} con il comando `ibmcloud login` per generare un token di accesso e per autenticare la tua sessione.
 * Per gestire gli eventi utilizzando la CLI, devi disporre di un piano a pagamento.
 
 Il plugin CLI {{site.data.keyword.cloudaccesstraillong}} supporta le piattaforme Linux, Mac e Windows.

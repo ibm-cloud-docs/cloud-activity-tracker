@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,18 +19,18 @@ lastupdated: "2018-09-07"
 # 配置 Activity Tracker CLI
 {: #config_cli}
 
-{{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.Bluemix_notm}} 插件来查看事件的状态，下载事件以及配置事件保留策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）和子命令帮助（用于了解如何使用某个命令的子命令）。
+{{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.cloud_notm}} 插件来查看事件的状态，下载事件以及配置事件保留策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）和子命令帮助（用于了解如何使用某个命令的子命令）。
 {:shortdesc}
 
 
-## 从 {{site.data.keyword.Bluemix_notm}} 存储库安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
+## 通过 {{site.data.keyword.cloud_notm}} 存储库安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
 {: #install_cli_repo}
 
 要安装 {{site.data.keyword.cloudaccesstrailshort}} CLI，请完成以下步骤：
 
-1. 安装 {{site.data.keyword.Bluemix_notm}} CLI。
+1. 安装 {{site.data.keyword.cloud_notm}} CLI。
 
-   有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use)。
+   有关更多信息，请参阅[安装 {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)。
    
 2. 在存储库中查找插件的名称。运行以下命令：
 
@@ -57,16 +57,6 @@ lastupdated: "2018-09-07"
     ```
     {: codeblock}
     
-    输出如下所示：
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
 
 
 ## 通过文件安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
@@ -74,9 +64,9 @@ lastupdated: "2018-09-07"
 
 要安装 {{site.data.keyword.cloudaccesstrailshort}} CLI，请完成以下步骤：
 
-1. 安装 {{site.data.keyword.Bluemix_notm}} CLI。
+1. 安装 {{site.data.keyword.cloud_notm}} CLI。
 
-   有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use)。
+   有关更多信息，请参阅[安装 {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)。
 
 2. 安装 {{site.data.keyword.cloudaccesstrailshort}} 插件。
 
@@ -93,27 +83,16 @@ lastupdated: "2018-09-07"
     ```
     {: codeblock}
     
-    输出如下所示：
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
- 
 
 
-## 在 Linux 上通过文件安装 Log Analysis 插件
+## 在 Linux 上通过文件安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
 {: #install_cli_linux}
 
-要在 Linux 上安装 Log Analysis 插件，请完成以下步骤：
+要在 Linux 上安装插件，请完成以下步骤：
 
 1. 安装插件。
 
-    从 [{{site.data.keyword.Bluemix_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+    从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
 	
 	* 选择平台值：**linux64**。 
 	
@@ -129,12 +108,12 @@ lastupdated: "2018-09-07"
 
 
 
-## 在 Windows 上通过文件安装 Log Analysis 插件
+## 在 Windows 上通过文件安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
 {: #install_cli_windows}
 
-要在 Windows 上安装 Log Analysis 插件，请完成以下步骤：
+要在 Windows 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.Bluemix_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
 	
 	1. 选择平台值：**win64**。 
 	2. 单击**保存文件**。  
@@ -148,12 +127,12 @@ lastupdated: "2018-09-07"
 
 	
 
-## 在 Mac OS X 上通过文件安装 Log Analysis 插件
+## 在 Mac OS X 上通过文件安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
 {: #install_cli_mac}
 
-要在 Mac OS X 上安装 Log Analysis 插件，请完成以下步骤：
+要在 Mac OS X 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.Bluemix_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
 	
 	1. 选择平台值：**osx**。 
 	2. 单击**保存文件**。  
@@ -167,7 +146,7 @@ lastupdated: "2018-09-07"
 
 	
 	
-## 卸载 Log Analysis CLI
+## 卸载 {{site.data.keyword.cloudaccesstrailshort}} CLI
 {: #uninstall_cli}
 
 要卸载 CLI，请删除插件。
@@ -184,17 +163,6 @@ lastupdated: "2018-09-07"
     ```
     {: codeblock}
     
-    输出如下所示：
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name          Version   
-    activity-tracker      3.3.0   
-    ```
-    {: screen}
-    
 2. 如果插件已安装，请运行 `ibmcloud plugin uninstall` 来卸载 CLI 插件。
 
     运行以下命令：
@@ -205,7 +173,7 @@ lastupdated: "2018-09-07"
     {: codeblock}
   
 
-## 从存储库更新 Log Analysis CLI
+## 从存储库更新 {{site.data.keyword.cloudaccesstrailshort}} CLI
 {: #update_cli}
 
 要更新 CLI，请运行 *ibmcloud plugin update* 命令。
@@ -229,16 +197,6 @@ lastupdated: "2018-09-07"
     ```
     {: codeblock}
     
-    输出如下所示：
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name             Version   
-    activity-tracker         3.3.0   
-    ```
-    {: screen}
 
 
 
@@ -249,7 +207,7 @@ lastupdated: "2018-09-07"
 
 要获取有关 CLI 以及支持哪些命令的常规信息，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
+1. 登录到 {{site.data.keyword.cloud_notm}} 中的区域、组织和空间。 
     
 2. 列出有关受支持命令和 CLI 的信息。运行以下命令：
 
@@ -265,7 +223,7 @@ lastupdated: "2018-09-07"
 
 要获取有关如何使用命令的帮助，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
+1. 登录到 {{site.data.keyword.cloud_notm}} 中的区域、组织和空间。 
     
 2. 获取受支持命令的列表，并确定需要的命令。运行以下命令：
 
@@ -290,7 +248,7 @@ lastupdated: "2018-09-07"
 
 一个命令可以有多个子命令。要获取有关子命令的帮助，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
+1. 登录到 {{site.data.keyword.cloud_notm}} 中的区域、组织和空间。 
     
 2. 获取受支持命令的列表，并确定需要的命令。运行以下命令：
 
@@ -332,17 +290,7 @@ ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
-输出如下所示：
-   
-```
-ibmcloud plugin show activity-tracker
-                                  
-Plugin                         activity-tracker   
-Version                        3.3.0   
-SDK Version                       
-Minimal CLI version required   N/A      
-```
-{: screen}
+
 
 
 

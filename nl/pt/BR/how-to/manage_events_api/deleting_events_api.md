@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ Use a API do {{site.data.keyword.cloudaccesstrailshort}} para excluir eventos qu
 **Nota:** embora seja possível excluir eventos manualmente usando a chamada API, considere configurar a política de retenção para excluir eventos automaticamente. Para obter mais informações, consulte [Configurando a política de retenção de eventos](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
 
 ## Excluindo eventos usando cURL
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 Conclua as etapas a seguir para excluir eventos que estão disponíveis em um domínio de espaço:
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## Exemplo de NodeJS de como excluir eventos
-{: #node}
+{: #deleting_events_api_node}
 
 Este é um código de amostra que pode ser usado para testar como excluir eventos:
 

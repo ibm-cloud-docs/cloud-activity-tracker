@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-07-09"
 # イベントを表示する許可の付与
 {: #grant_permissions}
 
-{{site.data.keyword.Bluemix}} では、Cloud Foundry 役割、IAM 役割、あるいは両方をユーザーに割り当てることができます。これらの役割は、ユーザーが {{site.data.keyword.cloudaccesstrailshort}} サービスを使用して作業するときに実行できるタスクを定義します。  
+{{site.data.keyword.Bluemix}} では、Cloud Foundry 役割、IAM 役割、あるいは両方をユーザーに割り当てることができます。 これらの役割は、ユーザーが {{site.data.keyword.cloudaccesstrailshort}} サービスを使用して作業するときに実行できるタスクを定義します。  
 {:shortdesc}
 
 ## アカウント・イベントを表示する許可の付与
@@ -54,17 +53,17 @@ lastupdated: "2018-07-09"
 
 ユーザーに IAM 役割を付与するには、以下を考慮してください。
 
-* アカウント内の他のユーザーにポリシーを割り当てる許可を持っているか、アカウント所有者である必要があります。アカウント所有者でない場合、**管理者** 役割が指定された、{{site.data.keyword.loganalysisshort}} サービスの IAM ポリシーを持っている必要があります。
+* アカウント内の他のユーザーにポリシーを割り当てる許可を持っているか、アカウント所有者である必要があります。 アカウント所有者でない場合、**管理者** 役割が指定された、{{site.data.keyword.loganalysisshort}} サービスの IAM ポリシーを持っている必要があります。
 
 * ポリシーを定義するときに指定する地域が、ユーザーがアカウント・ドメイン・イベントを表示する権限を付与される地域を定義します。
 
 アカウント・ドメインからのイベントを表示する許可をユーザーに付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} コンソールにログインします。
+1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
 
-    Web ブラウザーを開き、{{site.data.keyword.Bluemix_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
+    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
 	
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
 2. メニュー・バーから、**「管理」>「アカウント」>「ユーザー」**をクリックします。 
 
@@ -92,7 +91,7 @@ lastupdated: "2018-07-09"
 	  </tr>	  
 	  <tr>
 	    <td>地域</td>
-		<td>ユーザーにイベントに対する作業を行う権限が付与される地域を指定できます。1 つ以上の地域を個々に選択するか、または、**「すべての現行地域」**を選択してすべての地域の権限を付与します。</td>
+		<td>ユーザーにイベントに対する作業を行う権限が付与される地域を指定できます。 1 つ以上の地域を個々に選択するか、または、**「すべての現行地域」**を選択してすべての地域の権限を付与します。</td>
 	  </tr>
 	  <tr>
 	    <td>サービス・インスタンス</td>
@@ -100,7 +99,7 @@ lastupdated: "2018-07-09"
 	  </tr>
 	  <tr>
 	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 </td>
+		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。</td>
 	  </tr>
      </table>
 	
@@ -120,11 +119,11 @@ lastupdated: "2018-07-09"
 
 スペース・イベントを表示する権限をユーザーに付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} コンソールにログインします。
+1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
 
-    Web ブラウザーを開き、{{site.data.keyword.Bluemix_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
+    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
 	
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
 2. メニュー・バーから、**「管理」>「アカウント」>「ユーザー」**をクリックします。 
 

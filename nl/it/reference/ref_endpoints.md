@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Gli endpoint sono diversi per regione {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-## Endpoint {{site.data.keyword.Bluemix_notm}}
+## Endpoint {{site.data.keyword.cloud_notm}}
 {: #ibm_cloud_endpoints}
 
-La seguente tabella elenca gli URL per regione che devi utilizzare per accedere a {{site.data.keyword.Bluemix_notm}}:
+La seguente tabella elenca gli URL per regione che devi utilizzare per accedere a {{site.data.keyword.cloud_notm}}:
 	
 <table>
-	<caption>Tabella 1. Endpoint {{site.data.keyword.Bluemix_notm}} </caption>
+	<caption>Tabella 1. Endpoint {{site.data.keyword.cloud_notm}}</caption>
 	<tr>
 	  <th>Regione</th>
 	  <th>URL</th>
@@ -59,7 +59,7 @@ La seguente tabella elenca gli URL per regione che devi utilizzare per accedere 
 La seguente tabella elenca gli endpoint {{site.data.keyword.cloudaccesstrailshort}} per regione che devi utilizzare quando utilizzi l'API:
 	
 <table>
-	<caption>Tabella 2. Endpoint {{site.data.keyword.cloudaccesstrailshort}} </caption>
+	<caption>Tabella 2. Endpoint {{site.data.keyword.cloudaccesstrailshort}}</caption>
 	<tr>
 	  <th>Regione</th>
 	  <th>URL</th>

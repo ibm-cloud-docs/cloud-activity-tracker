@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-09-07"
 # UAA-Token abrufen
 {: #auth_uaa}
 
-Verwenden Sie die {{site.data.keyword.Bluemix}}-UAA, um ein Authentifizierungstoken abzurufen, das Sie zum Arbeiten mit dem {{site.data.keyword.cloudaccesstraillong}}-Service verwenden können. Dieses Authentifizierungstoken können Sie über die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.Bluemix_notm}} oder mithilfe von APIs abrufen.
+Verwenden Sie die {{site.data.keyword.Bluemix}}-UAA, um ein Authentifizierungstoken abzurufen, das Sie zum Arbeiten mit dem {{site.data.keyword.cloudaccesstraillong}}-Service verwenden können. Dieses Authentifizierungstoken können Sie über die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}} oder mithilfe von APIs abrufen.
 {:shortdesc}
 
 Berücksichtigen Sie die folgenden Informationen:
@@ -33,15 +32,15 @@ Berücksichtigen Sie die folgenden Informationen:
 
 Führen Sie zum Abrufen des UAA-Tokens die folgenden Schritte aus:
 
-1. (Voraussetzung) Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.Bluemix_notm}}.
+1. (Voraussetzung) Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}}.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
    
    Wenn die CLI installiert ist, fahren Sie mit dem nächsten Schritt fort.
     
-2. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+2. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 3. Rufen Sie das UAA-Token durch Ausführen des Befehls `ibmcloud iam oauth-tokens` ab.
 

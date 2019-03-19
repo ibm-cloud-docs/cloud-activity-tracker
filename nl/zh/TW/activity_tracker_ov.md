@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-06-21"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,19 +17,19 @@ lastupdated: "2018-06-21"
 
 
 
-# Activity Tracker
+# 關於
 {: #activity_tracker_ov}
 
 請使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來追蹤應用程式與 {{site.data.keyword.Bluemix}} 服務互動的情形。使用 {{site.data.keyword.cloudaccesstrailshort}} 可以監視異常活動，以及符合法規審核需求。所收集的事件符合雲端審核資料聯盟 (CADF) 標準。
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} 會在雲端中為 IT 資源提供高階安全控管。
-* {{site.data.keyword.cloudaccesstrailshort}} 為網路管理者提供一個解決方案，可在單一位置中擷取、儲存、檢視、搜尋及監視 API 活動。
+* {{site.data.keyword.cloudaccesstrailshort}} 為管理者提供一個解決方案，可在單一位置中擷取、儲存、檢視、搜尋及監視 API 活動。
 * {{site.data.keyword.cloudaccesstrailshort}} 提供功能，可用來下載事件，然後您便可以使用這些事件產生審核追蹤報告。您可能需要這些報告，使您的組織符合內部規定及外部產業和國家法規。
 
 不管應用程式是在何處執行（內部部署、在混合式雲端中或在公用雲端中），符合內部原則及產業法規是任何組織策略的主要需求。{{site.data.keyword.cloudaccesstrailshort}} 服務提供用來監視 API 呼叫的架構和功能，並產生符合公司政策及市場產業特有法規的證明。
 
-當您在雲端環境（例如 {{site.data.keyword.Bluemix_notm}}）中工作時，您必須規劃用來審核及監視工作負載和資料的雲端策略，使它符合內部原則及產業和各國法規遵循需求。您可以使用透過 {{site.data.keyword.cloudaccesstrailshort}} 服務所登錄的資訊來識別資安事件，偵測未獲授權的存取，以及符合法規和內部審核需求。
+當您在雲端環境（例如 {{site.data.keyword.cloud_notm}}）中工作時，您必須規劃用來審核及監視工作負載和資料的雲端策略，使它符合內部原則及產業和各國法規遵循需求。您可以使用透過 {{site.data.keyword.cloudaccesstrailshort}} 服務所登錄的資訊來識別資安事件，偵測未獲授權的存取，以及符合法規和內部審核需求。
 
 例如，您可以使用 {{site.data.keyword.cloudaccesstrailshort}} 活動日誌來識別下列資訊：
 
@@ -40,9 +40,9 @@ lastupdated: "2018-06-21"
 
 
 ## 收集事件
-{: #collect}
+{: #activity_tracker_ov_collect}
 
-{{site.data.keyword.cloudaccesstrailshort}} 服務只會擷取針對 {{site.data.keyword.Bluemix_notm}} 中所選取雲端服務進行的 API 呼叫及其他動作相關的活動資料。 
+{{site.data.keyword.cloudaccesstrailshort}} 服務只會擷取針對 {{site.data.keyword.cloud_notm}} 中所選取雲端服務進行的 API 呼叫及其他動作相關的活動資料。 
 
 * 會自動收集事件。 
 * 在 {{site.data.keyword.cloudaccesstrailshort}} 中所收集的事件符合「雲端審核資料聯盟 (CADF)」標準。CADF 標準定義一個完整事件模型，它包括在雲端環境中認證、管理及審核應用程式安全所需的資訊。
@@ -88,7 +88,7 @@ CADF 事件模型包含下列元件：
 
 
 ## 佈建 Activity Tracker
-{: #provision}
+{: #activity_tracker_ov_provision}
 
 若要檢視透過帳戶網域提供的事件，您必須在地區內要監視 API 活動的 Cloud Foundry 空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。只有**帳戶擁有者**可以查看帳戶事件。
 
@@ -99,11 +99,11 @@ CADF 事件模型包含下列元件：
 
 
 ## 分析活動日誌
-{: #analyze}
+{: #activity_tracker_ov_analyze}
 
-您可以在 {{site.data.keyword.Bluemix_notm}} 中透過 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，或使用 Kibana 這項開放程式碼工具，來分析活動日誌。您可以監視在特定空間或帳戶層次可以使用的事件。
+您可以透過 {{site.data.keyword.cloud_notm}} 中的 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，或使用 Kibana 這項開放程式碼工具，來分析活動日誌。您可以監視在特定空間或帳戶層次可以使用的事件。
 
-您可以在 {{site.data.keyword.Bluemix_notm}} 中透過 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，搜尋、分析及監視過去 24 小時的活動日誌。如需相關資訊，請參閱[導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)。
+您可以透過 {{site.data.keyword.cloud_notm}} 中的 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，搜尋、分析及監視過去 24 小時的活動日誌。如需相關資訊，請參閱[導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)。
 
 您可以使用 {{site.data.keyword.cloudaccesstrailshort}} Kibana 儀表板，或自行建立自訂儀表板，來搜尋、分析及監視過去 3 天的活動日誌。**附註：**這項特性適用於**超值**方案使用者。
 
@@ -113,22 +113,22 @@ CADF 事件模型包含下列元件：
 
 
 ## 地區
-{: #regions}
+{: #activity_tracker_ov_regions}
 
 {{site.data.keyword.cloudaccesstrailshort}} 服務可用於下列地區：
 
 * 德國
 * 雪梨
-* 英國 
+* 英國（僅提供精簡方案）
 * 美國南部
 
 
 ## 服務方案
-{: #plan}
+{: #activity_tracker_ov_plan}
 
 {{site.data.keyword.cloudaccesstrailshort}} 服務提供多種方案。
 
-您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面或指令行，來變更方案。您可以隨時升級或降低您的方案。如需服務方案升級的相關資訊，請參閱[變更方案](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。 
+您可以透過 {{site.data.keyword.cloud_notm}} 使用者介面或指令行，來變更方案。您可以隨時升級或降低您的方案。如需服務方案升級的相關資訊，請參閱[變更方案](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。 
 
 下表概述可用的方案：
 
@@ -179,10 +179,10 @@ CADF 事件模型包含下列元件：
 **附註：**事件儲存空間的每月成本會以計費週期的平均值來計算。
 
 ## 安全
-{: #security}
+{: #activity_tracker_ov_security}
 
 使用 {{site.data.keyword.cloudaccesstrailshort}} 服務時，請考量下列有關安全的資訊：
 
 * 產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服務會遵循 {{site.data.keyword.IBM_notm}} Cloud 安全原則。如需相關資訊，請參閱 [Trust the security and privacy of IBM Cloud ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}。
 * {{site.data.keyword.cloudaccesstrailshort}} 擷取會擷取變更雲端服務狀態的使用者起始動作。此資訊不提供資料庫或應用程式的直接存取權。
-* 只有獲授權的使用者才能檢視及監視 {{site.data.keyword.cloudaccesstrailshort}} 事件日誌。每一個使用者都是透過其在 {{site.data.keyword.Bluemix_notm}} 中的唯一 ID 加以識別。
+* 只有獲授權的使用者才能檢視及監視 {{site.data.keyword.cloudaccesstrailshort}} 事件日誌。每一個使用者都是透過其在 {{site.data.keyword.cloud_notm}} 中的唯一 ID 加以識別。

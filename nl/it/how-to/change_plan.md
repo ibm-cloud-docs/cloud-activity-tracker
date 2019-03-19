@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # Modifica del piano
 {: #change_plan}
 
-Puoi modificare il tuo piano di servizio {{site.data.keyword.cloudaccesstraillong}} tramite l'IU {{site.data.keyword.Bluemix_notm}} o immettendo il comando `ibmcloud service update`. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento.
+Puoi modificare il tuo piano di servizio {{site.data.keyword.cloudaccesstraillong}} tramite l'IU {{site.data.keyword.cloud_notm}} o immettendo il comando `ibmcloud service update`. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento.
 {:shortdesc}
 
 ## Modifica del piano di servizio tramite la IU
 {: #change_plan_ui}
 
-Per modificare il tuo piano di servizio tramite l'IU {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
+Per modificare il tuo piano di servizio tramite l'IU {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}} e fai clic sul servizio {{site.data.keyword.cloudaccesstraillong_notm}} dal *Dashboard*. 
+1. Accedi a {{site.data.keyword.cloud_notm}} e fai clic sul servizio {{site.data.keyword.cloudaccesstraillong_notm}} dal *Dashboard*. 
     
 2. Seleziona la scheda **Plan**.
 
@@ -45,9 +45,9 @@ Per modificare il tuo piano di servizio tramite l'IU {{site.data.keyword.Bluemix
 
 Per modificare il tuo piano di servizio tramite la CLI, completa la seguente procedura:
 
-1. Accedi a {{site.data.keyword.Bluemix_notm}}.  
+1. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Esegui il comando `ibmcloud service` per controllare il tuo piano corrente e per ottenere il nome del servizio {{site.data.keyword.cloudaccesstrailshort}} dall'elenco dei servizi disponibili nello spazio. 
 

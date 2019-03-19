@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -25,18 +25,18 @@ lastupdated: "2018-09-07"
 
 以下のステップを実行します。
 
-1. [{{site.data.keyword.keymanagementservicelong_notm}} をプロビジョンし、イベントを生成する](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [保管されたイベントに関する情報を取得する (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [セッションを作成することによって、ダウンロードするログを指定する (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [実際のログ・データを取得する (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [ダウンロード完了後にセッションを削除する (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [不要なログを手動で削除する (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+1. [{{site.data.keyword.keymanagementservicelong_notm}} をプロビジョンし、イベントを生成する](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
+2. [保管されたイベントに関する情報を取得する (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
+2. [セッションを作成することによって、ダウンロードするログを指定する (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
+3. [実際のログ・データを取得する (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
+4. [ダウンロード完了後にセッションを削除する (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
+5. [不要なログを手動で削除する (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
 
 
 ## 前提条件
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. {{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされた {{site.data.keyword.Bluemix_notm}} アカウントのスペース内で作業するために、開発者の許可がある {{site.data.keyword.Bluemix_notm}} ユーザー ID を持っていること。 
+1. {{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされた {{site.data.keyword.cloud_notm}} アカウントのスペース内で作業するために、開発者の許可がある {{site.data.keyword.cloud_notm}} ユーザー ID を持っていること。 
 
     {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする方法について詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} サービスのプロビジョン](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)を参照してください。
 
@@ -48,21 +48,21 @@ lastupdated: "2018-09-07"
 
     {{site.data.keyword.cloudaccesstrailshort}} CLI のインストールについて詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} CLI の構成](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli)を参照してください。
 
-4. コマンド・ラインを介して {{site.data.keyword.Bluemix_notm}} にログイン済みであること。 このチュートリアルの場合、端末から以下のコマンドを実行します。 
+4. コマンド・ラインを介して {{site.data.keyword.cloud_notm}} にログイン済みであること。 このチュートリアルの場合、端末から以下のコマンドを実行します。 
 
-    `ibmcloud login -a api.ng.bluemix.net` を実行して、米国南部地域にログインします。詳しくは、[ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) を参照してください。
+    `ibmcloud login -a api.ng.bluemix.net` を実行して、米国南部地域にログインします。 詳しくは、[ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) を参照してください。
     
-    `ibmcloud target -o OrgName -s SpaceName` を実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされるターゲット組織およびスペースを設定します。詳しくは、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) を参照してください。
+    `ibmcloud target -o OrgName -s SpaceName` を実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされるターゲット組織およびスペースを設定します。 詳しくは、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) を参照してください。
 
 
 ## ステップ 1: IBM Key Protect サービスをプロビジョンし、イベントを生成する 
-{: #step1}
+{: #tutorial2_step1}
 	
-{{site.data.keyword.Bluemix_notm}} 内で {{site.data.keyword.keymanagementserviceshort}} サービスをプロビジョンし、イベントを生成するため、以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.keymanagementserviceshort}} サービスをプロビジョンし、イベントを生成するため、以下のステップを実行します。
 
-1. 米国南部地域に {{site.data.keyword.keymanagementserviceshort}} サービスのインスタンスをプロビジョンします。詳しくは、[IBM Cloud コンソールからのプロビジョン](/docs/services/key-protect/provision.html#provision)を参照してください。
+1. 米国南部地域に {{site.data.keyword.keymanagementserviceshort}} サービスのインスタンスをプロビジョンします。 詳しくは、[IBM Cloud コンソールからのプロビジョン](/docs/services/key-protect/provision.html#provision)を参照してください。
 
-2. キーの処理に使用するユーザーの {{site.data.keyword.Bluemix_notm}} 許可を定義します。 
+2. キーの処理に使用するユーザーの {{site.data.keyword.cloud_notm}} 許可を定義します。 
 
     * キーを作成できるためには、ユーザーは、サービス役割が*マネージャー* または*ライター* に設定された IAM ポリシーを必要とします。
 	* キーを削除できるためには、ユーザーは、サービス役割が*マネージャー* に設定された IAM ポリシーを必要とします。
@@ -73,7 +73,7 @@ lastupdated: "2018-09-07"
 鍵の作成の結果として、{{site.data.keyword.cloudaccesstrailshort}} イベントが生成されます。
 
 ## ステップ 2: 保管されたイベントに関する情報を取得する
-{: #step2}
+{: #tutorial2_step2}
 
 {{site.data.keyword.keymanagementserviceshort}} イベントは、{{site.data.keyword.cloudaccesstrailshort}} アカウント・ドメイン内で使用可能です。
 
@@ -89,9 +89,9 @@ ibmcloud at status -s startDate -e endDate -a
 ここで、 
 
 * `-s` は開始日を設定するために使用されます。 
-* `startDate` は、開始日を表します。形式は *YYYY-MM-DD* です。
+* `startDate` は、開始日を表します。 形式は *YYYY-MM-DD* です。
 * `-e` は、終了日を設定するために使用されます。
-* `endDate` は、終了日を表します。形式は *YYYY-MM-DD* です。
+* `endDate` は、終了日を表します。 形式は *YYYY-MM-DD* です。
 * `-a` は、アカウント・ドメインでのイベントを含めることを指示するために使用されます。
 
 以下に例を示します。
@@ -112,7 +112,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 
 
 ## ステップ 3: ダウンロードするイベントを指定する
-{: #step3}
+{: #tutorial2_step3}
 
 イベントをダウンロードする前に、セッションを作成します。 セッションは、どのイベントがダウンロードされるのかを指定します。
 
@@ -127,9 +127,9 @@ ibmcloud at session create -s startDate -e endDate -a
 ここで、 
 
 * `-s` は開始日を設定するために使用されます。 
-* `startDate` は、開始日を表します。形式は *YYYY-MM-DD* です。
+* `startDate` は、開始日を表します。 形式は *YYYY-MM-DD* です。
 * `-e` は、終了日を設定するために使用されます。
-* `endDate` は、終了日を表します。形式は *YYYY-MM-DD* です。
+* `endDate` は、終了日を表します。 形式は *YYYY-MM-DD* です。
 * `-a` は、アカウント・ドメインでのイベントを含めることを指示するために使用されます。
 
 以下に例を示します。
@@ -167,7 +167,7 @@ ibmcloud at session create -s 2017-07-25 -e 2017-07-25 -a
 コマンド・ラインからヘルプを取得するには、`ibmcloud at session help create` を使用してください。
 
 ## ステップ 4: セッションに定義されたスコープに対して識別されたイベントをダウンロードする
-{: #step4}
+{: #tutorial2_step4}
 
 セッションのパラメーターによって指定されたイベントをダウンロードするには、次のコマンドを実行します。
 
@@ -178,7 +178,7 @@ ibmcloud at events download -o outputFile sessionID
 
 * `-o`パラメーターは、出力ファイルを指定します。
 * `outputFile` は、ローカル・ファイルの名前です。
-* `sessionID` は最後に指定されます。セッション ID の値は、`ibmcloud at session create` コマンドの出力から取得します。
+* `sessionID` は最後に指定されます。 セッション ID の値は、`ibmcloud at session create` コマンドの出力から取得します。
 
 ダウンロードされたデータのフォーマットは、圧縮 JSON です。 
 
@@ -198,7 +198,7 @@ Download Successful
 コマンド・ラインからヘルプを取得するには、`ibmcloud at help download` を使用してください。
 
 ## ステップ 5: セッションを削除する
-{: #step5}
+{: #tutorial2_step5}
 
 ダウンロードが完了した後、セッションを削除します。 以下のコマンドを実行します。
 
@@ -230,7 +230,7 @@ $ ibmcloud at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 コマンド・ラインからヘルプを取得するには、`ibmcloud at session help delete` を使用してください。
 
 ## ステップ 6: Activity Tracker からイベントを自動的に削除する
-{: #step6}
+{: #tutorial2_step6}
 
 {{site.data.keyword.cloudaccesstrailshort}} では、独自のイベント保存を制御できます。 イベントを手動で削除するか、イベントの削除を自動化することができます。
 
@@ -241,6 +241,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 `ibmcloud at delete` コマンドについて詳しくは、[CLI リファレンス](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete)を参照してください。
 

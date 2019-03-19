@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -22,15 +22,15 @@ lastupdated: "2018-09-07"
 Puoi scaricare gli eventi in un file locale. Scarichi gli eventi nel contesto di una sessione. Una sessione specifica quali eventi saranno scaricati. Dopo il completamento del download, devi eliminare la sessione.
 {:shortdesc}
 
-Completa le seguenti istruzioni per scaricare gli eventi in un file locale: 
+Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
 
-## Passo 1: Accedi a {{site.data.keyword.Bluemix_notm}} 
+## Passo 1: Accedi a {{site.data.keyword.cloud_notm}}
 {: #prereq}
 
-Accedi a {{site.data.keyword.Bluemix_notm}}. Completa la seguente
+Accedi a {{site.data.keyword.cloud_notm}}. Completa la seguente
 procedura:
 
-1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}}.
+1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}}.
 2. Esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per impostare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** imposta l'organizzazione e lo spazio in cui viene eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.

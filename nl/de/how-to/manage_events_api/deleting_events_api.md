@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ Verwenden Sie die {{site.data.keyword.cloudaccesstrailshort}}-API, um in {{site.
 **Hinweis:** Auch wenn Sie Ereignisse manuell mithilfe des API-Aufrufs löschen können, sollten Sie überlegen, ob Sie die Aufbewahrungsrichtlinie so konfigurieren, dass Ereignisse automatisch gelöscht werden. Weitere Informationen finden Sie in [Ereignisaufbewahrungsrichtlinie konfigurieren](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
 
 ## Ereignisse mithilfe von cURL löschen
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 Führen Sie die folgenden Schritte aus, um Ereignisse zu löschen, die in einer Bereichsdomäne verfügbar sind:
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## NodeJS-Beispiel für das Löschen von Ereignissen
-{: #node}
+{: #deleting_events_api_node}
 
 Mit dem nachfolgenden Beispielcode können Sie testen, wie Sie Beispiele löschen:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-09"
 
 
 
-# Navegando para o painel Activity Tracker no Console do {{site.data.keyword.Bluemix_notm}}
+# Navegando para o painel Activity Tracker no Console do {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
 É possível ativar a IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
@@ -25,17 +25,17 @@ lastupdated: "2018-07-09"
    
 
 ## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem em um espaço
-{: #account_view_space}
+{: #launch_at_ui_account_view_space}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em um espaço:
 
-1. Efetue login no espaço, organização e região de sua conta do {{site.data.keyword.Bluemix_notm}} em que deseja monitorar sua atividade de nuvem.
+1. Efetue login no espaço, organização e região de sua conta do {{site.data.keyword.cloud_notm}} em que deseja monitorar sua atividade de nuvem.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/ ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/){:new_window}.
     
-	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
-2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.Bluemix_notm}}. 
+2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.cloud_notm}}. 
     
 3. Selecione a guia **Gerenciado**.
 
@@ -43,17 +43,17 @@ Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudac
 
 
 ## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem na conta
-{: #account_view_account}
+{: #launch_at_ui_account_view_account}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em uma conta:
 
-1. Efetue login na conta do {{site.data.keyword.Bluemix_notm}} em que você deseja monitorar a atividade de nuvem.
+1. Efetue login na conta do {{site.data.keyword.cloud_notm}} em que você deseja monitorar a atividade de nuvem.
 
-    O painel do {{site.data.keyword.Bluemix_notm}} pode ser localizado em: [http://bluemix.net ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://bluemix.net){:new_window}.
+    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/ ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/){:new_window}.
     
-	Depois de efetuar login com seu ID de usuário e senha, a UI do {{site.data.keyword.Bluemix_notm}} é aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
-2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.Bluemix_notm}}. 
+2. Selecione o serviço {{site.data.keyword.cloudaccesstrailshort}} no painel do {{site.data.keyword.cloud_notm}}. 
     
 3. Selecione a guia **Gerenciado**.
 

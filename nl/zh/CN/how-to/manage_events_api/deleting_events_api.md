@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -27,7 +27,7 @@ lastupdated: "2018-07-07"
 [配置事件保留时间策略](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)。
 
 ## 使用 cURL 删除事件
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 要删除空间域中可用的事件，请完成以下步骤：
 
@@ -69,7 +69,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## 如何删除事件的 NodeJS 示例
-{: #node}
+{: #deleting_events_api_node}
 
 以下是样本代码，可用于测试如何删除事件：
 

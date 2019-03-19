@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ Sie können den {{site.data.keyword.cloudaccesstraillong}}-Service über die Ben
 
 
 ## Bereitstellen über die Benutzerschnittstelle (UI)
-{: #ui}
+{: #provision_ui}
 
-Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in {{site.data.keyword.Bluemix_notm}} bereitzustellen:
+Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in {{site.data.keyword.cloud_notm}} bereitzustellen:
 
-1. Melden Sie sich bei Ihrem {{site.data.keyword.Bluemix_notm}}-Konto an.
+1. Melden Sie sich bei Ihrem {{site.data.keyword.cloud_notm}}-Konto an.
 
-    Die Benutzerschnittstelle (UI) für {{site.data.keyword.Bluemix_notm}} finden Sie unter der Adresse [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+    Die Benutzerschnittstelle (UI) für {{site.data.keyword.cloud_notm}} finden Sie unter der Adresse [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
     
-	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle geöffnet.
+	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
-2. Klicken Sie auf **Katalog**. Die Liste der in {{site.data.keyword.Bluemix_notm}} verfügbaren Services wird geöffnet.
+2. Klicken Sie auf **Katalog**. Die Liste der in {{site.data.keyword.cloud_notm}} verfügbaren Services wird geöffnet.
 
 3. Wählen Sie die Kategorie **Sicherheit** aus, um die Liste der angezeigten Services zu filtern.
 
@@ -73,24 +73,24 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
     Weitere Informationen finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
 	
-7. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem {{site.data.keyword.Bluemix_notm}}-Bereich bereitzustellen, bei dem Sie angemeldet sind.
+7. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem {{site.data.keyword.cloud_notm}}-Bereich bereitzustellen, bei dem Sie angemeldet sind.
   
  
 
 ## Bereitstellen über die CLI
-{: #cli}
+{: #provision_cli}
 
-Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in {{site.data.keyword.Bluemix_notm}} über die Befehlszeile bereitzustellen:
+Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in {{site.data.keyword.cloud_notm}} über die Befehlszeile bereitzustellen:
 
-1. [Voraussetzung] Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.Bluemix_notm}}.
+1. [Voraussetzung] Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}}.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
    
    Wenn die CLI installiert ist, fahren Sie mit dem nächsten Schritt fort.
     
-2. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+2. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 3. Führen Sie den Befehl `ibmcloud service create` aus, um eine Instanz bereitzustellen.
 
@@ -102,7 +102,7 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 	Dabei gilt Folgendes:
 	
 	* 'service_name' ist der Name des Service, d. h. **accessTrail**.
-	* 'service_plan' ist der Name des Serviceplans. Eine Liste der Pläne finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan).
+	* 'service_plan' ist der Name des Serviceplans. Eine Liste der Pläne finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
 	* 'service_instance_name' ist der Name für die neue Serviceinstanz, die Sie erstellen.
 
 	Wenn Sie zum Beispiel eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service mit dem Standardplan erstellen wollen, führen Sie den folgenden Befehl aus:

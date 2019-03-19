@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -17,7 +17,7 @@ lastupdated: "2018-07-09"
 
 
 
-# {{site.data.keyword.Bluemix_notm}} コンソールでの Activity Tracker ダッシュボードへのナビゲート
+# {{site.data.keyword.cloud_notm}} コンソールでの Activity Tracker ダッシュボードへのナビゲート
 {: #launch_at_ui}
 
 {{site.data.keyword.Bluemix}} から {{site.data.keyword.cloudaccesstrailshort}} UI を起動できます。 デフォルトでは、スペース・イベントを表示できます。 アカウント・イベントを表示することもできます。
@@ -25,17 +25,17 @@ lastupdated: "2018-07-09"
    
 
 ## スペース内のクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート
-{: #account_view_space}
+{: #launch_at_ui_account_view_space}
 
 スペース内のクラウド・アクティビティーをモニターできるように {{site.data.keyword.cloudaccesstrailshort}} UI にナビゲートするには、以下の手順を実行します。
 
-1. クラウド・アクティビティーをモニターしたい、{{site.data.keyword.Bluemix_notm}} アカウントのスペース、組織、および地域にログインします。
+1. クラウド・アクティビティーをモニターしたい、{{site.data.keyword.cloud_notm}} アカウントのスペース、組織、および地域にログインします。
 
-    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.cloud_notm}} ダッシュボードは、[https://cloud.ibm.com/ ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/){:new_window} にあります。
     
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
-2. {{site.data.keyword.Bluemix_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
+2. {{site.data.keyword.cloud_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
     
 3. **「管理」**タブを選択します。
 
@@ -43,17 +43,17 @@ lastupdated: "2018-07-09"
 
 
 ## アカウントでのクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート
-{: #account_view_account}
+{: #launch_at_ui_account_view_account}
 
 アカウントでのクラウド・アクティビティーをモニターできるように {{site.data.keyword.cloudaccesstrailshort}} UI にナビゲートするには、以下の手順を実行します。
 
-1. クラウド・アクティビティーをモニターしたい {{site.data.keyword.Bluemix_notm}} アカウントにログインします。
+1. クラウド・アクティビティーをモニターしたい {{site.data.keyword.cloud_notm}} アカウントにログインします。
 
-    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.cloud_notm}} ダッシュボードは、[https://cloud.ibm.com/ ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/){:new_window} にあります。
     
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
-2. {{site.data.keyword.Bluemix_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
+2. {{site.data.keyword.cloud_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
     
 3. **「管理」**タブを選択します。
 

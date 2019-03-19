@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,18 +19,18 @@ lastupdated: "2018-09-07"
 # Activity Tracker-CLI konfigurieren
 {: #config_cli}
 
-Der {{site.data.keyword.cloudaccesstraillong}}-Service enthält eine Befehlszeilenschnittstelle (Command Line Interface, CLI), mit der Sie Ihre Ereignisse in der Cloud verwalten können. Mit dem {{site.data.keyword.Bluemix_notm}}-Plug-in können Sie den Status der Ereignisse anzeigen, Ereignisse herunterladen, Ereignisse wiederherstellen, Ereignisse löschen und die Richtlinie für Ereignisaufbewahrung konfigurieren. Die CLI bietet verschiedene Typen von Hilfe an: Allgemeine Hilfe für die CLI und die unterstützten Befehle, Hilfe zu Befehlen mit Informationen zur Verwendung eines Befehls sowie Hilfe zu Unterbefehlen mit Informationen zur Verwendung eines Unterbefehle für einen bestimmten Befehl.
+Der {{site.data.keyword.cloudaccesstraillong}}-Service enthält eine Befehlszeilenschnittstelle (Command Line Interface, CLI), mit der Sie Ihre Ereignisse in der Cloud verwalten können. Mit dem {{site.data.keyword.cloud_notm}}-Plug-in können Sie den Status der Ereignisse anzeigen, Ereignisse herunterladen, Ereignisse wiederherstellen, Ereignisse löschen und die Richtlinie für Ereignisaufbewahrung konfigurieren. Die CLI bietet verschiedene Typen von Hilfe an: Allgemeine Hilfe für die CLI und die unterstützten Befehle, Hilfe zu Befehlen mit Informationen zur Verwendung eines Befehls sowie Hilfe zu Unterbefehlen mit Informationen zur Verwendung eines Unterbefehle für einen bestimmten Befehl.
 {:shortdesc}
 
 
-## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in über das {{site.data.keyword.Bluemix_notm}}-Repository installieren
+## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in über das {{site.data.keyword.cloud_notm}}-Repository installieren
 {: #install_cli_repo}
 
 Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstrailshort}}-CLI zu installieren:
 
-1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-CLI.
+1. Installieren Sie die {{site.data.keyword.cloud_notm}}-CLI.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
    
 2. Ermitteln Sie den Namen des Plug-ins im Repository. Führen Sie den folgenden Befehl aus:
 
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstr
     
     Der Name des Plug-ins lautet **activity-tracker**.
 
-3. Installieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in. Führen Sie den folgenden Befehl aus: 
+3. Installieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in. Führen Sie den folgenden Befehl aus:
 
     ```
     ibmcloud plugin install activity-tracker -r Bluemix
@@ -57,16 +57,6 @@ Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstr
     ```
     {: codeblock}
     
-    Die Ausgabe sieht wie folgt aus:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
 
 
 ## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in mithilfe einer Datei installieren
@@ -74,11 +64,11 @@ Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstr
 
 Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstrailshort}}-CLI zu installieren:
 
-1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-CLI.
+1. Installieren Sie die {{site.data.keyword.cloud_notm}}-CLI.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
 
-2. Installieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in. 
+2. Installieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in.
 
     * Informationen für die Installation unter Linux finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Plug-in unter Linux installieren](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
     * Informationen für die Installation unter Windows finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Plug-in unter Windows installieren](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
@@ -86,40 +76,29 @@ Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.cloudaccesstr
  
 3. Überprüfen Sie die Installation des CLI-Plug-ins.
   
-    Prüfen Sie beispielsweise die Version des Plug-ins. Führen Sie den folgenden Befehl aus:
+    Prüfen Sie beispielsweise die Version des Plug-ins. Führen Sie den folgenden Befehl aus: 
     
     ```
     ibmcloud plugin list
     ```
     {: codeblock}
     
-    Die Ausgabe sieht wie folgt aus:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
- 
 
 
-## Log Analysis-Plug-in unter Linux mithilfe einer Datei installieren
+## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in unter Linux mithilfe einer Datei installieren
 {: #install_cli_linux}
 
-Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Linux zu installieren:
+Führen Sie die folgenden Schritte aus, um das Plug-in unter Linux zu installieren: 
 
 1. Installieren Sie das Plug-in.
 
-    Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von der [{{site.data.keyword.Bluemix_notm}}-CLI](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)-Seite herunter. 
+    Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von [der {{site.data.keyword.cloud_notm}}-CLI-Seite](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins) herunter.  
 	
 	* Wählen Sie den folgenden Wert für die Plattform aus: **linux64**. 
 	
 	* Klicken Sie auf **Datei speichern**. 
     
-2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus:
+2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus: 
         
     ```
     ibmcloud plugin install -f activity-tracker-linux-amd64-3.3.0
@@ -129,17 +108,17 @@ Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Linu
 
 
 
-## Log Analysis-Plug-in unter Windows mithilfe einer Datei installieren
+## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in unter Windows mithilfe einer Datei installieren
 {: #install_cli_windows}
 
-Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Windows zu installieren:
+Führen Sie die folgenden Schritte aus, um das Plug-in unter Windows zu installieren: 
 
-1. Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von der [{{site.data.keyword.Bluemix_notm}}-CLI](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)-Seite herunter. 
+1. Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von [der {{site.data.keyword.cloud_notm}}-CLI-Seite](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins) herunter.  
 	
 	1. Wählen Sie den folgenden Wert für die Plattform aus: **win64**. 
 	2. Klicken Sie auf **Datei speichern**.  
     
-2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus:
+2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus: 
         
     ```
     ibmcloud plugin install -f activity-tracker-windows-amd64-3.3.0.exe
@@ -148,17 +127,17 @@ Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Wind
 
 	
 
-## Log Analysis-Plug-in unter Mac OS X mithilfe einer Datei installieren
+## {{site.data.keyword.cloudaccesstrailshort}}-Plug-in unter Mac OS X mithilfe einer Datei installieren
 {: #install_cli_mac}
 
-Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Mac OS X zu installieren:
+Führen Sie die folgenden Schritte aus, um das Plug-in unter Mac OS X zu installieren: 
 
-1. Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von der [{{site.data.keyword.Bluemix_notm}}-CLI](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)-Seite herunter. 
+1. Laden Sie die aktuelle Version des CLI-Plug-ins für den {{site.data.keyword.cloudaccesstrailshort}}-Service (activity-tracker) von [der {{site.data.keyword.cloud_notm}}-CLI-Seite](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins) herunter.  
 	
 	1. Wählen Sie den folgenden Wert für die Plattform aus: **osx**. 
 	2. Klicken Sie auf **Datei speichern**.  
     
-2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus:
+2. Installieren Sie das Plug-in. Führen Sie den folgenden Befehl aus: 
         
     ```
     ibmcloud plugin install -f activity-tracker-darwin-amd64-3.3.0
@@ -167,7 +146,7 @@ Führen Sie die folgenden Schritte aus, um das Log Collection-Plug-in unter Mac 
 
 	
 	
-## Log Analysis-CLI deinstallieren
+## {{site.data.keyword.cloudaccesstrailshort}}-CLI deinstallieren
 {: #uninstall_cli}
 
 Zum Deinstallieren der CLI müssen Sie das Plug-in löschen.
@@ -184,21 +163,9 @@ Führen Sie zum Deinstallieren der CLI für den {{site.data.keyword.cloudaccesst
     ```
     {: codeblock}
     
-    Die Ausgabe sieht wie folgt aus:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name          Version   
-    activity-tracker      3.3.0   
-    ```
-    {: screen}
-    
 2. Wenn das Plug-in installiert ist, führen Sie den Befehl `ibmcloud plugin uninstall` aus, um das CLI-Plug-in zu deinstallieren.
 
-
-    Führen Sie den folgenden Befehl aus:
+    Führen Sie den folgenden Befehl aus: 
         
     ```
     ibmcloud plugin uninstall activity-tracker
@@ -206,7 +173,7 @@ Führen Sie zum Deinstallieren der CLI für den {{site.data.keyword.cloudaccesst
     {: codeblock}
   
 
-## Log Analysis-CLI über das Repository aktualisieren
+## {{site.data.keyword.cloudaccesstrailshort}}-CLI über das Repository aktualisieren
 {: #update_cli}
 
 Führen Sie zum Aktualisieren der CLI den Befehl *ibmcloud plugin update* aus.
@@ -214,7 +181,7 @@ Führen Sie zum Aktualisieren der CLI den Befehl *ibmcloud plugin update* aus.
 
 Führen Sie die folgenden Schritte aus, um die CLI für den {{site.data.keyword.cloudaccesstrailshort}}-Service zu aktualisieren:
 
-1. Aktualisieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in. Führen Sie den folgenden Befehl aus:
+1. Aktualisieren Sie das {{site.data.keyword.cloudaccesstrailshort}}-Plug-in. Führen Sie den folgenden Befehl aus: 
 
     ```
     ibmcloud plugin update activity-tracker -r Bluemix
@@ -223,23 +190,13 @@ Führen Sie die folgenden Schritte aus, um die CLI für den {{site.data.keyword.
  
 2. Überprüfen Sie die Installation des CLI-Plug-ins.
   
-    Überprüfen Sie beispielsweise die Version des Plug-ins. Führen Sie den folgenden Befehl aus:
+    Überprüfen Sie beispielsweise die Version des Plug-ins. Führen Sie den folgenden Befehl aus: 
     
     ```
     ibmcloud plugin list
     ```
     {: codeblock}
     
-    Die Ausgabe sieht wie folgt aus:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name             Version   
-    activity-tracker         3.3.0   
-    ```
-    {: screen}
 
 
 
@@ -250,9 +207,9 @@ Führen Sie die folgenden Schritte aus, um die CLI für den {{site.data.keyword.
 
 Führen Sie die folgenden Schritte aus, um allgemeine Hilfeinformationen zur Befehlszeilenschnittstelle (Command Line Interface, CLI) und zu den unterstützten Befehlen abzurufen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
     
-2. Rufen Sie die Informationen zu den unterstützten Befehlen und zur CLI auf. Führen Sie den folgenden Befehl aus:
+2. Rufen Sie die Informationen zu den unterstützten Befehlen und zur CLI auf. Führen Sie den folgenden Befehl aus: 
 
     ```
     ibmcloud at help 
@@ -266,7 +223,7 @@ Führen Sie die folgenden Schritte aus, um allgemeine Hilfeinformationen zur Bef
 
 Führen Sie die folgenden Schritte aus, um Hilfeinformationen zur Verwendung eines Befehls abzurufen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
     
 2. Rufen Sie die Liste der unterstützten Befehle ab und geben Sie den gewünschten Befehl an. Führen Sie den folgenden Befehl aus:
 
@@ -275,7 +232,7 @@ Führen Sie die folgenden Schritte aus, um Hilfeinformationen zur Verwendung ein
     ```
     {: codeblock}
 
-3. Rufen Sie die Hilfeinformationen zu dem Befehl ab. Führen Sie den folgenden Befehl aus:
+3. Rufen Sie die Hilfeinformationen zu dem Befehl ab. Führen Sie den folgenden Befehl aus: 
 
     ```
     ibmcloud at help *Command*
@@ -291,7 +248,7 @@ Führen Sie die folgenden Schritte aus, um Hilfeinformationen zur Verwendung ein
 
 Ein Befehl kann Unterbefehle beinhalten. Führen Sie die folgenden Schritte aus, um Hilfeinformationen zu Unterbefehlen abzurufen:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} bei einer Region, einer Organisation und einem Bereich (Space) an. 
     
 2. Rufen Sie die Liste der unterstützten Befehle ab und geben Sie den gewünschten Befehl an. Führen Sie den folgenden Befehl aus:
 
@@ -300,7 +257,7 @@ Ein Befehl kann Unterbefehle beinhalten. Führen Sie die folgenden Schritte aus,
     ```
     {: codeblock}
 
-3. Rufen Sie die Hilfeinformationen zu dem Befehl ab und ermitteln Sie die unterstützten Unterbefehle. Führen Sie den folgenden Befehl aus:
+3. Rufen Sie die Hilfeinformationen zu dem Befehl ab und ermitteln Sie die unterstützten Unterbefehle. Führen Sie den folgenden Befehl aus: 
 
     ```
     ibmcloud at help *Command*
@@ -309,7 +266,7 @@ Ein Befehl kann Unterbefehle beinhalten. Führen Sie die folgenden Schritte aus,
     
     Dabei ist *Command* der Name des CLI-Befehls (zum Beispiel *session*).
 
-4. Rufen Sie die Hilfeinformationen zu dem Befehl ab und ermitteln Sie die unterstützten Unterbefehle. Führen Sie den folgenden Befehl aus:
+4. Rufen Sie die Hilfeinformationen zu dem Befehl ab und ermitteln Sie die unterstützten Unterbefehle. Führen Sie den folgenden Befehl aus: 
 
     ```
     ibmcloud at *Command* help *Subcommand*
@@ -332,17 +289,7 @@ ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
-Die Ausgabe sieht wie folgt aus:
-   
-```
-ibmcloud plugin show activity-tracker
-                                  
-Plugin                         activity-tracker   
-Version                        3.3.0   
-SDK Version                       
-Minimal CLI version required   N/A      
-```
-{: screen}
+
 
 
 

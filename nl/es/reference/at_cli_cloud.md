@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -348,14 +348,14 @@ ibmcloud at session create [parámetros] [argumentos...]
 <dt>ID</dt>
 <dd>ID de sesión.</dd>
 
-<dt>Espacio</dt>
+<dt>Space</dt>
 <dd>ID de espacio en el que la sesión está activa.</dd>
 
 <dt>Type-Account</dt>
 <dd>Este valor está establecido en **ActivityTracker**.</dd>
 
-<dt>Nombre de usuario</dt>
-<dd>{{site.data.keyword.IBM_notm}}El ID del usuario que ha creado la sesión.</dd>
+<dt>Username</dt>
+<dd>{{site.data.keyword.IBM_notm}}ID del usuario que ha creado la sesión.</dd>
 </dl>
 
 
@@ -442,11 +442,11 @@ ibmcloud at session list
 <dt>ID</dt>
 <dd>ID de sesión.</dd>
 
-<dt>ESPACIO</dt>
+<dt>SPACE</dt>
 <dd>ID de espacio en el que la sesión está activa.</dd>
 
 <dt>USERNAME</dt>
-<dd>{{site.data.keyword.IBM_notm}}El ID del usuario que ha creado la sesión.</dd>
+<dd>{{site.data.keyword.IBM_notm}}ID del usuario que ha creado la sesión.</dd>
 
 <dt>CREATE-TIME</dt>
 <dd>Indicación de fecha y hora correspondiente a la fecha y hora en que se ha creado la sesión.</dd>
@@ -509,14 +509,14 @@ ibmcloud at session show [argumentos...]
 <dt>id</dt>
 <dd>ID de sesión.</dd>
 
-<dt>Espacio</dt>
+<dt>Space</dt>
 <dd>ID de espacio en el que la sesión está activa.</dd>
 
 <dt>Type-Account</dt>
 <dd>Este valor está establecido en **ActivityTracker**.</dd>
 
-<dt>Nombre de usuario</dt>
-<dd>{{site.data.keyword.IBM_notm}}El ID del usuario que ha creado la sesión.</dd>
+<dt>Username</dt>
+<dd>{{site.data.keyword.IBM_notm}}ID del usuario que ha creado la sesión.</dd>
 </dl>
 
 **Ejemplo**

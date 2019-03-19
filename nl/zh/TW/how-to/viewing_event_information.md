@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -26,18 +26,18 @@ lastupdated: "2018-09-07"
 
 請完成下列步驟，以檢視事件日誌的相關資訊：
 
-## 步驟 1：登入 {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## 步驟 1：登入 {{site.data.keyword.cloud_notm}}
+{: #viewing_event_status_step1}
 
-登入 {{site.data.keyword.Bluemix_notm}}。請完成下列步驟：
+登入 {{site.data.keyword.cloud_notm}}。請完成下列步驟：
 
-1. 執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.Bluemix_notm}}。
+1. 執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}。
 2. 執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
 
 **附註：**設定在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 的組織及空間。
 
 ## 步驟 2：識別可用的事件
-{: #step2}
+{: #viewing_event_status_step2}
 
 請使用 `ibmcloud at status` 指令來查看空間網域中可用事件的相關資訊。
 

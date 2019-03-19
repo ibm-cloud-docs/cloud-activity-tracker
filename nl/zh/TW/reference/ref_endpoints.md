@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 每個 {{site.data.keyword.Bluemix}} 地區的端點都不同。
 {:shortdesc}
 
-## {{site.data.keyword.Bluemix_notm}} 端點
+## {{site.data.keyword.cloud_notm}} 端點
 {: #ibm_cloud_endpoints}
 
-下表列出您必須用來登入 {{site.data.keyword.Bluemix_notm}} 之每個地區的 URL：
+下表列出您必須用來登入 {{site.data.keyword.cloud_notm}} 之每個地區的 URL：
 	
 <table>
-	<caption>表 1. {{site.data.keyword.Bluemix_notm}} 端點</caption>
+	<caption>表 1. {{site.data.keyword.cloud_notm}} 端點</caption>
 	<tr>
 	  <th>地區</th>
 	  <th>URL</th>

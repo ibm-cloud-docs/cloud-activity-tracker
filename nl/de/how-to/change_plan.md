@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # Plan ändern
 {: #change_plan}
 
-Sie können Ihren Serviceplan für {{site.data.keyword.cloudaccesstraillong}} über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle (UI) oder durch Ausführen des Befehls `ibmcloud service update` ändern. Ein Upgrade oder eine Herabstufung Ihres Plan kann jederzeit vorgenommen werden.
+Sie können Ihren Serviceplan für {{site.data.keyword.cloudaccesstraillong}} über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle (UI) oder durch Ausführen des Befehls `ibmcloud service update` ändern. Ein Upgrade oder eine Herabstufung Ihres Plan kann jederzeit vorgenommen werden.
 {:shortdesc}
 
 ## Serviceplan über die Benutzerschnittstelle ändern
 {: #change_plan_ui}
 
-Wenn Sie Ihren Serviceplan über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle (UI) ändern wollen, führen Sie die folgenden Schritte aus:
+Wenn Sie Ihren Serviceplan über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle (UI) ändern wollen, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an und klicken Sie im *Dashboard* auf den {{site.data.keyword.cloudaccesstraillong_notm}}-Service. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an und klicken Sie im *Dashboard* auf den {{site.data.keyword.cloudaccesstraillong_notm}}-Service. 
     
 2. Wählen Sie die Registerkarte **Plan** aus.
 
@@ -45,9 +45,9 @@ Wenn Sie Ihren Serviceplan über die {{site.data.keyword.Bluemix_notm}}-Benutzer
 
 Wenn Sie Ihren Serviceplan über die Befehlszeilenschnittstelle (CLI) ändern wollen, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
+1. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 2. Führen Sie den Befehl `ibmcloud service list` aus, um Ihren aktuellen Plan zu prüfen und den Namen des {{site.data.keyword.cloudaccesstrailshort}}-Service aus der Liste der in dem Bereich verfügbaren Services abzurufen. 
 

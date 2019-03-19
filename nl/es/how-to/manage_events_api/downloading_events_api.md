@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ Para descargar sucesos, debe seguir los pasos siguientes:
 
 
 ## Descarga de sucesos mediante CURL
-{: #curl}
+{: #downloading_events_api_curl}
 
 Siga los pasos siguientes para descargar los sucesos en un archivo local:
 
@@ -56,13 +56,18 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
     Donde:
     
     * *token* representa el valor de señal de UAA que ha obtenido en un paso anterior.
+
     * *spaceID* representa el UUID del espacio de Cloud Foundry en el que se ha suministrado {{site.data.keyword.cloudaccesstrailshort}}.
+
     * *ENDPOINT* representa el punto de entrada al servicio. Cada región tiene un URL diferente. Para obtener la lista de puntos finales por región, consulte [Puntos finales](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+
     * *start* y *end* representan un intervalo de tiempo en el que desea descargar los sucesos. El formato de fecha es *AAAA-MM-DD*. 
+
     * *AtAccountLevel* indica si los sucesos que se van a descargar están en el dominio de cuenta o en un dominio de espacio.
+    
     * *SearchTime* indica la hora del día para la que desea descargar los sucesos.
 
-    Para crear una sesión desde la que descargar sucesos desde un dominio de espacio en la región EE.UU. sur, establezca el parámetro **AtAccountLevel** en *false*:
+    Para crear una sesión desde la que descargar sucesos desde un dominio de espacio en la región EE. UU. sur, establezca el parámetro **AtAccountLevel** en *false*:
 
     ```
     curl -X POST -H "Content-Type: application/json" -H "X-Auth-Token: bearer $token" -H "X-Auth-Project-Id: $spaceID" https://activity-tracker.ng.bluemix.net/v3/sessions -d '{"start":"2018-06-28","end":"2018-06-28","AtAccountLevel":false,"SearchTime":""}'
@@ -78,7 +83,7 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
     ```
     {: screen}
     
-    Por ejemplo, para crear una sesión para descargar sucesos de cuenta desde el dominio de cuenta en la región EE.UU. sur, establezca el parámetro **AtAccountLevel** en *true*:
+    Por ejemplo, para crear una sesión para descargar sucesos de cuenta desde el dominio de cuenta en la región EE. UU. sur, establezca el parámetro **AtAccountLevel** en *true*:
 
     ```
     curl -X POST -H "Content-Type: application/json" -H "X-Auth-Token: bearer $token" -H "X-Auth-Project-Id: $spaceID" https://activity-tracker.ng.bluemix.net/v3/sessions -d '{"start":"2018-06-28","end":"2018-06-28","AtAccountLevel":true,"SearchTime":""}'
@@ -111,11 +116,11 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
 
 
 ## Ejemplo de NodeJS de cómo descargar sucesos
-{: #node}
+{: #downloading_events_api_node}
 
 Este es el código de ejemplo que puede utilizar para probar cómo se descargan sucesos en un archivo local:
 
-En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE.UU. sur. 
+En el ejemplo se da por supuesto que el servicio {{site.data.keyword.cloudaccesstrailshort}} se suministra en la región EE. UU. sur. 
 
 ```
 var http = require("https")

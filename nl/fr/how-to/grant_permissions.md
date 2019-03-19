@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-07-09"
 # Octroi de droits pour l'affichage des événements
 {: #grant_permissions}
 
-Dans {{site.data.keyword.Bluemix}}, vous pouvez affecter des rôles Cloud Foundry et/ou des rôles IAM à un utilisateur. Ces rôles définissent les tâches qu'un utilisateur peut effectuer lors de l'utilisation du service {{site.data.keyword.cloudaccesstrailshort}}.   
+Dans {{site.data.keyword.Bluemix}}, vous pouvez affecter des rôles Cloud Foundry et/ou des rôles IAM à un utilisateur. Ces rôles définissent les tâches qu'un utilisateur peut effectuer lors de l'utilisation du service {{site.data.keyword.cloudaccesstrailshort}}.  
 {:shortdesc}
 
 ## Octroi de droits pour l'affichage d'événements de compte
@@ -28,7 +27,7 @@ Dans {{site.data.keyword.Bluemix}}, vous pouvez affecter des rôles Cloud Foundr
 
 Accordez les droits suivants à un utilisateur pour afficher les événements de compte dans une région :
 
-1. Rôle *Développeur* dans un espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.  
+1. Rôle *Développeur* dans un espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
 
     Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
 
@@ -44,7 +43,7 @@ Accordez les droits suivants à un utilisateur pour afficher les événements de
 
 Accordez le droit suivant à un utilisateur pour afficher les événements d'espace dans une région :
 
-* Rôle *Développeur* dans l'espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.  
+* Rôle *Développeur* dans l'espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
 
     Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
 
@@ -54,17 +53,17 @@ Accordez le droit suivant à un utilisateur pour afficher les événements d'esp
 
 Pour accorder un rôle IAM à un utilisateur, tenez compte des informations suivantes :
 
-* Vous devez être autorisé à affecter des règles à d'autres utilisateurs dans le compte, ou vous devez être le propriétaire du compte. Si vous n'êtes pas le propriétaire du compte, vous devez disposer d'une règle IAM dotée du rôle **Administrateur** pour le service {{site.data.keyword.loganalysisshort}}. 
+* Vous devez être autorisé à affecter des règles à d'autres utilisateurs dans le compte, ou vous devez être le propriétaire du compte. Si vous n'êtes pas le propriétaire du compte, vous devez disposer d'une règle IAM dotée du rôle **Administrateur** pour le service {{site.data.keyword.loganalysisshort}}.
 
-* Lorsque vous définissez une règle, les régions que vous spécifiez définissent les régions auxquelles un utilisateur peut accéder pour afficher des événements de domaine de compte. 
+* Lorsque vous définissez une règle, les régions que vous spécifiez définissent les régions auxquelles un utilisateur peut accéder pour afficher des événements de domaine de compte.
 
 Procédez comme suit pour accorder à un utilisateur des droits permettant d'afficher des événements à partir d'un domaine de compte :
 
-1. Connectez-vous à la console {{site.data.keyword.Bluemix_notm}}.
+1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
 
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.Bluemix_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
+    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
 	
-	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
+	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
 2. Dans la barre de menus, cliquez sur **Gérer > Compte > Utilisateurs**. 
 
@@ -100,7 +99,7 @@ Procédez comme suit pour accorder à un utilisateur des droits permettant d'aff
 	  </tr>
 	  <tr>
 	    <td>Rôles</td>
-		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*. </td>
+		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*.</td>
 	  </tr>
      </table>
 	
@@ -114,17 +113,17 @@ La règle que vous configurez est applicable aux régions sélectionnées.
 
 Pour accorder un rôle CF à un utilisateur, tenez compte des informations suivantes :
 
-* Vous devez disposer de droits dans l'organisation et l'espace qui permettent d'attribuer à l'utilisateur un rôle Cloud Foundry.  
+* Vous devez disposer de droits dans l'organisation et l'espace qui permettent d'attribuer à l'utilisateur un rôle Cloud Foundry. 
 
-* Seul le rôle **Développeur** permet à un utilisateur d'afficher des événements. 
+* Seul le rôle **Développeur** permet à un utilisateur d'afficher des événements.
 
 Procédez comme suit pour permettre à un utilisateur d'afficher les événements d'un espace :
 
-1. Connectez-vous à la console {{site.data.keyword.Bluemix_notm}}.
+1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
 
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.Bluemix_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
+    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
 	
-	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.Bluemix_notm}} s'ouvre.
+	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
 2. Dans la barre de menus, cliquez sur **Gérer > Compte > Utilisateurs**. 
 

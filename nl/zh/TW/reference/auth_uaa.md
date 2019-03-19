@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-09-07"
 # 取得 UAA 記號
 {: #auth_uaa}
 
-請使用 {{site.data.keyword.Bluemix}} UAA 來取得鑑別記號，您可利用它來使用 {{site.data.keyword.cloudaccesstraillong}} 服務。您可以使用 {{site.data.keyword.Bluemix_notm}} CLI 或使用 API 來取得鑑別記號。
+請使用 {{site.data.keyword.Bluemix}} UAA 來取得鑑別記號，您可利用它來使用 {{site.data.keyword.cloudaccesstraillong}} 服務。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或使用 API 來取得鑑別記號。
 {:shortdesc}
 
 請考量下列資訊：
@@ -33,15 +32,15 @@ lastupdated: "2018-09-07"
 
 若要取得 UAA 記號，請完成下列步驟：
 
-1. （必要條件）安裝 {{site.data.keyword.Bluemix_notm}} CLI。
+1. （必要條件）安裝 {{site.data.keyword.cloud_notm}} CLI。
 
-   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use)。
+   如需相關資訊，請參閱[安裝 {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)。
    
    如果已安裝 CLI，請繼續進行下一步。
     
-2. 登入 {{site.data.keyword.Bluemix_notm}}。 
+2. 登入 {{site.data.keyword.cloud_notm}}。 
 
-    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.Bluemix_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
+    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
 	
 3. 執行 `ibmcloud iam oauth-tokens` 指令以取得 UAA 記號。
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -24,18 +24,18 @@ Utilice el mandato *ibmcloud at delete* para suprimir manualmente los sucesos qu
 
 Siga estos pasos:
 
-## Paso 1: Iniciar sesión en {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## Paso 1: Iniciar sesión en {{site.data.keyword.cloud_notm}}
+{: #deleting_events_prereq}
 
-Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. Siga estos pasos:
+Inicie una sesión en {{site.data.keyword.cloud_notm}}. Siga estos pasos:
 
-1. Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
+1. Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}}.
 2. Ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** establezca la organización y el espacio donde se suministra {{site.data.keyword.cloudaccesstrailshort}}.
 
 ## Paso 2: Identificar los sucesos que están disponibles
-{: #step2}
+{: #deleting_events_step2}
 
 Utilice el mandato `ibmcloud at status` para ver información sobre los sucesos que están disponibles en un dominio del espacio.
 
@@ -46,7 +46,7 @@ Para obtener más información, consulte [Visualización de la información de s
 	
   
 ## Paso 3: Suprimir sucesos
-{: #step3}
+{: #deleting_events_step3}
 	
 Para suprimir sucesos, ejecute el mandato `ibmcloud at delete`.
 

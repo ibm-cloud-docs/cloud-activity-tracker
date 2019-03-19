@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-27"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -27,37 +27,35 @@ Kibana は、{{site.data.keyword.Bluemix}} 内で {{site.data.keyword.cloudacces
 ##  Activity Tracker サービスのダッシュボードから Kibana へのナビゲート
 {: #launch_Kibana_from_at}
 
-Kibana で表示されるアクティビティー・ログには、ユーザーがログインしている、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされている {{site.data.keyword.Bluemix_notm}} 組織のスペースにデプロイされた、すべてのリソースのイベントが含まれます。
+Kibana で表示されるアクティビティー・ログには、ユーザーがログインしている、{{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされている {{site.data.keyword.cloud_notm}} 組織のスペースにデプロイされた、すべてのリソースのイベントが含まれます。
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスのダッシュボードから Kibana を起動するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} アカウントにログインします。
+1. {{site.data.keyword.cloud_notm}} アカウントにログインします。
 
-    {{site.data.keyword.Bluemix_notm}} ダッシュボードは、[http://bluemix.net ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+    {{site.data.keyword.cloud_notm}} ダッシュボードは、[https://cloud.ibm.com/login ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} にあります。
     
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
-2. {{site.data.keyword.Bluemix_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
+2. {{site.data.keyword.cloud_notm}} ダッシュボードから {{site.data.keyword.cloudaccesstrailshort}} サービスを選択します。 
     
 3. **「管理」**タブを選択します。
 
-4. **「拡張ビュー」**をクリックします。 
+4. スペース・イベントを表示するには、*「ログの表示」* フィールドで**「スペース・ログ」**を選択します。**注:** これはデフォルトの表示です。次に、**「Kibana で表示」**をクリックします。 
 
-    Kibana ダッシュボードが開きます。
+    Kibana ダッシュボードが開きます。 時刻フィルターが過去 24 時間に設定され、**ActivityTracker_Space_Dashboard_in_24h** ダッシュボードがロードされます。
 
-デフォルトでは、**ActivityTracker_Space_Dashboard_in_24h** ダッシュボードがロードされ、時刻フィルターは過去 24 時間に設定されます。 
+5. アカウント・イベントを表示するには、*「ログの表示」* フィールドで**「アカウント・ログ」**を選択します。次に、**「Kibana で表示」**をクリックします。 
 
-
+    時刻フィルターが過去 24 時間に設定され、**ActivityTracker_Account_Dashboard_in_24h** ダッシュボードがロードされます。
 	
 	
 ##  Web ブラウザーから Kibana へのナビゲート
 {: #launch_Kibana_from_browser}
 
-Kibana に表示されるログ情報には、ログインしている {{site.data.keyword.Bluemix_notm}} 組織のスペース内にデプロイされているすべてのリソースのイベントが含まれます。
-
 ブラウザーから Kibana を起動するには、以下の手順を実行します。
 
-1. Web ブラウザーを開き、Kibana を起動します。 その後、Kibana ユーザー・インターフェースにログインします。
+1. イベントをモニターする地域で Web ブラウザーを開き、Kibana を起動します。その後、Kibana ユーザー・インターフェースにログインします。
     
     例えば、Kibana を起動するために使用する必要のある、地域別の URL を以下の表に示します。
       
@@ -87,19 +85,18 @@ Kibana に表示されるログ情報には、ログインしている {{site.da
 	
 	Kibana の「Discover」ページが開きます。
 	
-2. アクティビティー・ログの表示および分析を行いたい、{{site.data.keyword.Bluemix_notm}} アカウント、組織、およびスペースにログインしていることを確認します。
+2. アクティビティー・イベントの表示および分析を行いたい {{site.data.keyword.cloud_notm}} アカウントにログインしていることを確認します。
 
-    ログインしているスペースで使用可能なイベントおよびログを表示できます。
+3. **ドメイン**を選択します。
 
-3. イベントをフィルタリングするには、メニュー・バーから**「開く」**を選択します。
+    アカウント・ドメイン内のイベントを表示するには、**「アカウント」**を選択します。
+    スペース・ドメイン内のイベントを表示するには、**「スペース」**を選択します。
 
-    保存済みダッシュボードのリストが表示されます。
-	
-4. ログインしているスペースのイベントを表示するには、**ActivityTracker_Space_Dashboard_in_24h** を選択します。
+Kibana に表示されるイベントは、Kibana を起動した地域で選択されたドメインでホストされているイベントに対応します。
 
 
 ## 制限
-{: #limitations}
+{: #launch_kibana_limitations}
 
  Kibana での制約のため、異なるスペースまたはアカウントを表示するために複数の Kibana ブラウザー・タブを同じセッションで一度に開くことはできません。 したがって、一度に複数のセッションを開いて、スペースからアカウントへ (またはアカウントからスペースへ) 有効範囲を変更すると、問題が発生する可能性があります。
 	

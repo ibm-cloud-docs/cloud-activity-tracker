@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,19 +19,19 @@ lastupdated: "2018-09-07"
 # Configuration de l'interface de ligne de commande d'Activity Tracker
 {: #config_cli}
 
-Le service {{site.data.keyword.cloudaccesstraillong}} inclut une interface de ligne de commande (CLI) qui vous permet de gérer vos événements dans le cloud. Vous pouvez utiliser le plug-in {{site.data.keyword.Bluemix_notm}} pour afficher le statut des événements, télécharger des événements et configurer la règle de conservation des événements. L'interface de ligne de commande offre différents types d'aides : une aide générale concernant l'interface de ligne de commande et les commandes prises en charge,
+Le service {{site.data.keyword.cloudaccesstraillong}} inclut une interface de ligne de commande (CLI) qui vous permet de gérer vos événements dans le cloud. Vous pouvez utiliser le plug-in {{site.data.keyword.cloud_notm}} pour afficher le statut des événements, télécharger des événements et configurer la règle de conservation des événements. L'interface de ligne de commande offre différents types d'aides : une aide générale concernant l'interface de ligne de commande et les commandes prises en charge,
 une aide relative aux commandes pour savoir comment utiliser une commande et une aide relative aux sous-commandes pour savoir comment utiliser une sous-commande d'une commande.
 {:shortdesc}
 
 
-## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} depuis le référentiel {{site.data.keyword.Bluemix_notm}}
+## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} depuis le référentiel {{site.data.keyword.cloud_notm}}
 {: #install_cli_repo}
 
 Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, procédez comme suit :
 
-1. Installez l'interface CLI {{site.data.keyword.Bluemix_notm}}.
+1. Installez l'interface CLI {{site.data.keyword.cloud_notm}}.
 
-   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}.](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)
    
 2. Recherchez le nom du plug-in dans le référentiel. Exécutez la commande suivante :
 
@@ -58,16 +58,6 @@ Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, pr
     ```
     {: codeblock}
     
-    La sortie prend la forme suivante :
-   
-    ```
-    ibmcloud plugin list
-    Création d'une liste des plug-in installés...
-
-    Nom du plug-in    Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
 
 
 ## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} depuis un fichier
@@ -75,9 +65,9 @@ Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, pr
 
 Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, procédez comme suit :
 
-1. Installez l'interface CLI {{site.data.keyword.Bluemix_notm}}.
+1. Installez l'interface CLI {{site.data.keyword.cloud_notm}}.
 
-   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}.](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)
 
 2. Installez le plug-in {{site.data.keyword.cloudaccesstrailshort}}.
 
@@ -94,31 +84,20 @@ Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, pr
     ```
     {: codeblock}
     
-    La sortie prend la forme suivante :
-   
-    ```
-    ibmcloud plugin list
-    Création d'une liste des plug-in installés...
-
-    Nom du plug-in    Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
- 
 
 
-## Installation du plug-in Log Analysis sous Linux depuis un fichier
+## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Linux depuis un fichier
 {: #install_cli_linux}
 
-Procédez comme suit pour installer le plug-in Log Collection sous Linux :
+Procédez comme suit pour installer le plug-in sous Linux :
 
 1. Installez le plug-in.
 
-    Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	* Sélectionnez la valeur de plateforme : **linux64**. 
 	
-	* Cliquez sur **Save file**. 
+	* Cliquez sur **Enregistrer le fichier**. 
     
 2. Installez le plug-in. Exécutez la commande suivante :
         
@@ -130,15 +109,15 @@ Procédez comme suit pour installer le plug-in Log Collection sous Linux :
 
 
 
-## Installation du plug-in Log Analysis sous Windows depuis un fichier
+## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Windows depuis un fichier
 {: #install_cli_windows}
 
-Procédez comme suit pour installer le plug-in Log Collection sous Windows :
+Procédez comme suit pour installer le plug-in sous Windows :
 
-1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Sélectionnez la valeur de plateforme : **win64**. 
-	2. Cliquez sur **Save file**.  
+	2. Cliquez sur **Enregistrer le fichier**.  
     
 2. Installez le plug-in. Exécutez la commande suivante :
         
@@ -149,15 +128,15 @@ Procédez comme suit pour installer le plug-in Log Collection sous Windows :
 
 	
 
-## Installation du plug-in Log Analysis sous Mac OS X depuis un fichier
+## Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Mac OS X depuis un fichier
 {: #install_cli_mac}
 
-Procédez comme suit pour installer le plug-in Log Collection sous Mac OS X :
+Procédez comme suit pour installer le plug-in sous Mac OS X :
 
-1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Sélectionnez la valeur de plateforme : **osx**. 
-	2. Cliquez sur **Save file**.  
+	2. Cliquez sur **Enregistrer le fichier**.  
     
 2. Installez le plug-in. Exécutez la commande suivante :
         
@@ -168,10 +147,10 @@ Procédez comme suit pour installer le plug-in Log Collection sous Mac OS X :
 
 	
 	
-## Désinstallation de l'interface de ligne de commande de Log Analysis
+## Désinstallation de l'interface de ligne de commande {{site.data.keyword.cloudaccesstrailshort}}
 {: #uninstall_cli}
 
-Pour désinstaller l'interface, supprimez le plug-in.
+Pour désinstaller l'interface de ligne de commande, supprimez le plug-in.
 {:shortdesc}
 
 Procédez comme suit pour désinstaller l'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} :
@@ -185,18 +164,7 @@ Procédez comme suit pour désinstaller l'interface de ligne de commande du serv
     ```
     {: codeblock}
     
-    La sortie prend la forme suivante :
-   
-    ```
-    ibmcloud plugin list
-    Création d'une liste des plug-in installés...
-
-    Nom du plug-in    Version   
-    activity-tracker      3.3.0   
-    ```
-    {: screen}
-    
-2. Si le plug-in est installé, exécutez la commande `ibmcloud plugin uninstall` pour désinstaller le plug-in d'interface de ligne de commande. 
+2. Si le plug-in est installé, exécutez la commande `ibmcloud plugin uninstall` pour désinstaller le plug-in d'interface de ligne de commande.
 
     Exécutez la commande suivante :
         
@@ -206,7 +174,7 @@ Procédez comme suit pour désinstaller l'interface de ligne de commande du serv
     {: codeblock}
   
 
-## Mise à jour de l'interface de ligne de commande Log Analysis depuis le référentiel
+## Mise à jour de l'interface de ligne de commande {{site.data.keyword.cloudaccesstrailshort}} depuis le référentiel
 {: #update_cli}
 
 Pour mettre à jour l'interface de ligne de commande, exécutez la commande *ibmcloud plugin update*.
@@ -230,16 +198,6 @@ Procédez comme suit pour mettre à jour l'interface de ligne de commande du ser
     ```
     {: codeblock}
     
-    La sortie prend la forme suivante :
-   
-    ```
-    ibmcloud plugin list
-    Création d'une liste des plug-in installés...
-
-    Nom du plug-in    Version   
-    activity-tracker         3.3.0   
-    ```
-    {: screen}
 
 
 
@@ -250,7 +208,7 @@ Procédez comme suit pour mettre à jour l'interface de ligne de commande du ser
 
 Pour obtenir des informations générales sur l'interface de ligne de commande et savoir quelles commandes sont prises en charge, procédez comme suit :
 
-1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.cloud_notm}}. 
     
 2. Affichez des informations sur les commandes prises en charge et sur l'interface de ligne de commande. Exécutez la commande suivante :
 
@@ -266,12 +224,12 @@ Pour obtenir des informations générales sur l'interface de ligne de commande e
 
 Pour obtenir de l'aide au sujet de l'utilisation d'une commande, procédez comme suit :
 
-1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.cloud_notm}}. 
     
 2. Obtenez la liste des commandes prises en charge et identifiez celle dont vous avez besoin. Exécutez la commande :
 
     ```
-    ibmcloud at help
+    ibmcloud at help 
     ```
     {: codeblock}
 
@@ -291,12 +249,12 @@ Pour obtenir de l'aide au sujet de l'utilisation d'une commande, procédez comme
 
 Une commande peut avoir des sous-commandes. Pour obtenir de l'aide sur des sous-commandes, procédez comme suit :
 
-1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
+1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.cloud_notm}}. 
     
 2. Obtenez la liste des commandes prises en charge et identifiez celle dont vous avez besoin. Exécutez la commande :
 
     ```
-    ibmcloud at help
+    ibmcloud at help 
     ```
     {: codeblock}
 
@@ -332,17 +290,7 @@ ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
-La sortie prend la forme suivante :
-   
-```
-ibmcloud plugin show activity-tracker
-                                  
-Plug-in                                                     activity-tracker
-Version                                                     3.3.0
-Version SDK
-Version d'interface de ligne de commande minimale requise   N/A
-```
-{: screen}
+
 
 
 

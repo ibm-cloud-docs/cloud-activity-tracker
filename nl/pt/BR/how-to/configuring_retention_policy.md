@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-09-07"
 # Configurando a política de retenção de eventos
 {: #configuring_retention_policy}
 
-Use o comando **ibmcloud at option** para visualizar e configurar a política de retenção que define o número máximo de dias que os eventos são mantidos no {{site.data.keyword.cloudaccesstrailshort}}. Por padrão, a política de retenção é desativada e os eventos são mantidos indefinidamente. Depois que o período de retenção tiver expirado, os eventos serão excluídos automaticamente.
+Use o comando **ibmcloud at option** para visualizar e configurar a política de retenção que define o número máximo de dias que os eventos são mantidos no {{site.data.keyword.cloudaccesstrailshort}}. Por padrão, a política de retenção é desativada e os eventos são mantidos indefinidamente. Depois que o período de retenção tiver expirado, os eventos serão excluídos automaticamente. 
 {:shortdesc}
 
 É possível configurar a mesma política de retenção para todos os espaços na conta ou você pode customizar o período de retenção para um espaço. 
@@ -30,9 +30,9 @@ Use o comando **ibmcloud at option** para visualizar e configurar a política de
 
 Conclua as etapas a seguir para desativar uma política de retenção:
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
+1. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Configure o período de retenção como **-1** para desativar o período de retenção. Execute o
 comando:
@@ -68,11 +68,11 @@ A saída é:
 ## Verificando a política de retenção de log de um espaço
 {: #check_retention_policy_space}
 
-Para obter o período de retenção configurado para um espaço do {{site.data.keyword.Bluemix_notm}}, conclua as etapas a seguir:
+Para obter o período de retenção configurado para um espaço do {{site.data.keyword.cloud_notm}}, conclua as etapas a seguir:
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
+1. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Obtenha o período de retenção. Execute o
 comando:
@@ -97,11 +97,11 @@ comando:
 ## Verificando a política de retenção de log de todos os espaços em uma conta
 {: #check_retention_policy_account}
 
-Para obter o período de retenção configurado para cada espaço do {{site.data.keyword.Bluemix_notm}} em uma conta, conclua as etapas a seguir:
+Para obter o período de retenção configurado para cada espaço do {{site.data.keyword.cloud_notm}} em uma conta, conclua as etapas a seguir:
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
+1. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
     
 2. Obtenha o período de retenção de cada espaço na conta. Execute o
 comando:
@@ -130,11 +130,11 @@ comando:
 ## Configurando a política de retenção de log na conta
 {: #set_retention_policy_space}
 
-Para configurar o período de retenção para uma conta do {{site.data.keyword.Bluemix_notm}}, conclua as etapas a seguir:
+Para configurar o período de retenção para uma conta do {{site.data.keyword.cloud_notm}}, conclua as etapas a seguir:
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
+1. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 	
 2. Configure o período de retenção. Execute o
 comando:
@@ -176,11 +176,11 @@ A saída lista uma entrada de cada espaço na conta, incluindo informações sob
 ## Configurando a política de retenção de log de um espaço
 {: #set_retention_policy_account}
 
-Para ver o período de retenção de um espaço do {{site.data.keyword.Bluemix_notm}}, conclua as etapas a seguir:
+Para ver o período de retenção de um espaço do {{site.data.keyword.cloud_notm}}, conclua as etapas a seguir:
 
-1. Efetue login no {{site.data.keyword.Bluemix_notm}}. 
+1. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.Bluemix_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
     
 2. Configure o período de retenção. Execute o
 comando:

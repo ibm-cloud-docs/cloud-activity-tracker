@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -26,18 +26,18 @@ Sie können Informationen zu der Größe des Ereignisprotokolls, zur Anzahl der 
 
 Führen Sie die folgenden Schritte aus, um Informationen zum Ereignisprotokoll anzuzeigen:
 
-## Schritt 1: Bei {{site.data.keyword.Bluemix_notm}} anmelden
-{: #prereq}
+## Schritt 1: Bei {{site.data.keyword.cloud_notm}} anmelden
+{: #viewing_event_status_step1}
 
-Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. Führen Sie die folgenden Schritte aus:
+Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. Führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.Bluemix_notm}} an.
+1. Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an.
 2. Führen Sie den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 
 **Hinweis:** Legen Sie die Organisation und den Bereich (Space) fest, in der bzw. dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
 
 ## Schritt 2: Ermitteln Sie, welche Ereignisse verfügbar sind.
-{: #step2}
+{: #viewing_event_status_step2}
 
 Verwenden Sie den Befehl `ibmcloud at status`, um Informationen zu den Ereignissen zu erhalten, die in einer Bereichsdomäne verfügbar sind.
 

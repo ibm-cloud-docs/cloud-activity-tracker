@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-09-07"
 # 获取 UAA 令牌
 {: #auth_uaa}
 
-使用 {{site.data.keyword.Bluemix}} UAA，获取可用于 {{site.data.keyword.cloudaccesstraillong}} 服务的认证令牌。您可以使用 {{site.data.keyword.Bluemix_notm}} CLI 或 API 获取认证令牌。
+使用 {{site.data.keyword.Bluemix}} UAA，获取可用于 {{site.data.keyword.cloudaccesstraillong}} 服务的认证令牌。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或 API 获取认证令牌。
 {:shortdesc}
 
 请考虑以下信息：
@@ -33,15 +32,15 @@ lastupdated: "2018-09-07"
 
 要获取 UAA 令牌，请完成以下步骤：
 
-1. （先决条件）安装 {{site.data.keyword.Bluemix_notm}} CLI。
+1. （先决条件）安装 {{site.data.keyword.cloud_notm}} CLI。
 
-   有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/reference/ibmcloud/download_cli.html#install_use)。
+   有关更多信息，请参阅[安装 {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)。
    
    如果 CLI 已安装，请继续执行下一步。
     
-2. 登录到 {{site.data.keyword.Bluemix_notm}}。 
+2. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.Bluemix_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 3. 运行 `ibmcloud iam oauth-tokens` 命令以获取 UAA 令牌。
 

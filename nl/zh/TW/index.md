@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-12"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -16,56 +16,63 @@ lastupdated: "2018-09-12"
 {:download: .download}
 
 
-# 入門指導教學
+# 開始使用
 {: #getting-started-with-cla}
 
-{{site.data.keyword.cloudaccesstrailfull}} 服務會記錄使用者起始的活動，這些活動會在 {{site.data.keyword.Bluemix}} 中變更服務的狀態。使用本指導教學，學習如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來監視使用者與雲端服務的互動。
+{{site.data.keyword.cloudaccesstrailfull}} 服務會記錄使用者起始的活動，這些活動會在 {{site.data.keyword.Bluemix}} 中變更服務的狀態。學習如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來監視使用者與雲端服務的互動。
 {:shortdesc}
-
-此入門指導教學的目標如下：
-
-1. 顯示如何佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。
-2. 顯示如何使用雲端服務來產生自動由 {{site.data.keyword.cloudaccesstrailshort}} 服務收集的活動事件。事件會符合[雲端審核資料聯盟 (CADF) 標準 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}。
-3. 顯示如何使用預先定義的 {{site.data.keyword.cloudaccesstrailshort}} 儀表板，以監視服務的雲端活動。
 
 下圖顯示當使用者起始的活動變更服務的狀態時，發生的不同元件和動作：
 
 ![當使用者起始的活動變更服務的狀態時，發生的元件和動作](images/AT_f1.png "當使用者起始的活動變更服務的狀態時，發生的元件和動作")
 
-
+**附註：**此入門指導教學將會示範如何開始在美國南部監視雲端活動。
 
 ## 開始之前
-{: #prereqs}
+{: #index_prereqs}
 
-建立 [{{site.data.keyword.Bluemix_notm}} 帳戶](https://console.bluemix.net/registration/)。您的使用者 ID 必須是 {{site.data.keyword.Bluemix_notm}} 帳戶的成員或擁有者，且在您計劃使用 {{site.data.keyword.cloudaccesstrailshort}} 服務的空間中具有開發人員許可權。
+* 查看 {{site.data.keyword.cloudaccesstrailshort}} 服務。如需相關資訊，請參閱[關於 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov)。
+* 查看提供該服務的地區。如需相關資訊，請參閱[地區](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)。
+* 取得具有 {{site.data.keyword.cloud_notm}} 帳戶成員或擁有者身分的使用者 ID。 
+
+    若要取得 {{site.data.keyword.cloud_notm}} 使用者 ID，請移至：[登錄 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/registration/){:new_window}。
 
 
-## 步驟 1：佈建 Activity Tracker
-{: #step1}
 
-您必須將 {{site.data.keyword.cloudaccesstrailshort}} 服務佈建在要監視其活動的雲端服務佈建所在的相同地區中。佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務之後，即會自動從所選取的雲端服務中收集事件。 
+## 步驟 1：佈建 {{site.data.keyword.cloudaccesstrailshort}}
+{: #index_step1}
 
-**附註：**本指導教學顯示如何使用 {{site.data.keyword.cloudaccesstrailshort}} 服務來監視使用者與美國南部地區之雲端服務 {{site.data.keyword.keymanagementservicelong_notm}} 的互動。因此，您必須在美國南部地區佈建 {{site.data.keyword.cloudaccesstrailshort}}。若要查看服務可用之地區的相關資訊，請參閱[依地區列出的服務](/docs/resources/services_region.html#services_region)。
+請考量下列資訊，以選擇要將 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例佈建在哪裡：
 
-請完成下列步驟，以在 {{site.data.keyword.Bluemix_notm}} 中佈建 {{site.data.keyword.cloudaccesstraillong_notm}} 服務的實例：
+* {{site.data.keyword.cloudaccesstrailshort}} 會將事件收集至網域中。每個地區各有一個帳戶網域，而每個 Cloud Foundry (CF) 空間各有一個空間網域。 
 
-1. 登入 {{site.data.keyword.Bluemix_notm}}。
+* **若要監視廣域帳戶動作**，您必須在美國南部地區的空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例。廣域動作的部分範例如下：佈建實例、變更使用者的 IAM 原則，或是邀請使用者加入帳戶。
 
-    {{site.data.keyword.Bluemix_notm}} 儀表板位於：[http://bluemix.net ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
+* **若要監視佈建在 CF 組織和空間環境定義中的服務所產生的事件**，您必須將 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例佈建在您要監視其活動之服務佈建所在的相同地區和空間中。 
+
+* **若要監視佈建在資源群組環境定義中的服務所產生的事件**，您必須將 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例佈建在您要監視其活動之服務佈建所在的相同地區的空間中。 
+
+* 若要佈建實例，您的使用者 ID 必須具有您計劃佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務之空間中的**開發人員角色**。
+
+請完成下列步驟，以在 {{site.data.keyword.cloud_notm}} 中佈建 {{site.data.keyword.cloudaccesstraillong_notm}} 服務的實例：
+
+1. 登入 {{site.data.keyword.cloud_notm}}。
+
+    {{site.data.keyword.cloud_notm}} 儀表板位於：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}。
     
-	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.Bluemix_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
-2. 按一下**型錄**。即會開啟 {{site.data.keyword.Bluemix_notm}} 上可用的服務清單。
+2. 按一下**型錄**。即會開啟 {{site.data.keyword.cloud_notm}} 上可用的服務清單。
 
 3. 選取**安全和身分**種類，以過濾顯示的服務清單。
 
-    **附註：**也可以透過**開發人員工具**種類來提供服務。
+    **附註：**服務也提供於**開發人員工具**種類。
 
 4. 按一下 **Activity Tracker** 磚。 
 
-5. 配置定義將佈建服務之處的資訊。 
+5. 配置定義將佈建服務之處的資訊。
 
-    如下表所示輸入資料： 
+    例如，若要在美國南部地區佈建服務，請依照下表的指示輸入資料： 
 
     <table>
 	  <caption>表 1. 佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務所需的欄位</caption>
@@ -87,59 +94,138 @@ lastupdated: "2018-09-12"
 	  </tr>
 	</table>
 
-6. 按一下**建立**，以在您登入的空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。
+6. 選取方案。 
+
+    依預設會選取**精簡**方案。
+
+	如需相關資訊，請參閱[服務方案](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)。
+
+7. 按一下**建立**，以在您登入的空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例。
    
 
-## 步驟 2：配置雲端服務  
-{: #step2}
 
-本指導教學顯示如何在 {{site.data.keyword.Bluemix_notm}} 中監視 {{site.data.keyword.keymanagementserviceshort}} 服務的 API 活動。
+## 步驟 2：為使用者授與監視事件的存取權
+{: #index_step2}
 
-請完成下列步驟，以在 {{site.data.keyword.Bluemix_notm}} 中配置 {{site.data.keyword.keymanagementserviceshort}} 服務：
+若要檢視事件，您必須具有 {{site.data.keyword.cloud_notm}} 中的存取權。依據您是要檢視廣域帳戶事件、佈建在資源群組環境定義中之服務的事件，還是佈建在 CF 組織和空間環境定義中之服務的事件，所需的存取權各不相同。 
 
-1. 在美國南部地區佈建 {{site.data.keyword.keymanagementserviceshort}} 服務的實例。如需相關資訊，請參閱[從 IBM Cloud 主控台佈建](/docs/services/key-protect/provision.html#provision)。
+**若要監視廣域帳戶動作**以及**監視佈建在資源群組環境定義中的服務**，請考量下列資訊：
 
-2. 針對您計劃用來使用金鑰的使用者定義 {{site.data.keyword.Bluemix_notm}} 許可權。 
+* 您必須具有 {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則，以及 {{site.data.keyword.loganalysisshort}} 服務的**讀者**角色。 
+* 帳戶擁有者或 {{site.data.keyword.loganalysisshort}} 服務的管理者可以授與此原則。
 
-    * 使用者需要一個 IAM 原則，且服務角色設為*管理員* 或*撰寫者* 才能建立金鑰。
-	* 使用者需要一個 IAM 原則，且服務角色設為*管理員* 才能刪除金鑰。
-	* 使用者需要一個 IAM 原則，且服務角色設為*讀者* 才能查看金鑰。 
+**若要監視佈建在 CF 組織和空間環境定義中的服務**，請考量下列資訊：
 
+* 您必須具有已佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務實例之空間的**開發人員**角色。
+* 帳戶擁有者、組織管理員或空間管理員可以為您授與空間的**開發人員**角色。
 
-## 步驟 3：產生 Activity Tracker 事件
-{: # step3}
+**附註：若要為使用者授與 IAM 原則，您必須是帳戶擁有者或 {{site.data.keyword.loganalysisshort}} 服務的管理者。**
 
-在此步驟中，使用 {{site.data.keyword.keymanagementserviceshort}} 服務建立安全金鑰，以產生 {{site.data.keyword.cloudaccesstrailshort}} 事件資料。如需相關資訊，請參閱[建立新金鑰](/docs/services/key-protect/create-standard-keys.html#create-standard-keys)。
+### 為使用者授與監視帳戶網域事件的存取權
+{: #index_acc}
 
-* {{site.data.keyword.cloudaccesstrailshort}} 事件會因為建立金鑰而產生。
-* {{site.data.keyword.cloudaccesstrailshort}} 事件可在 {{site.data.keyword.cloudaccesstrailshort}} **帳戶網域**（可在產生事件的 {{site.data.keyword.Bluemix_notm}} 地區中取得）中取得。 
+請完成下列步驟，從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與 IAM 原則：
 
-## 步驟 4：監視 Activity Tracker 事件
-{: #step4}
+1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
 
-在此步驟中，透過 {{site.data.keyword.Bluemix_notm}} 使用者介面來驗證是否已產生 {{site.data.keyword.cloudaccesstrailshort}} 事件。
+    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}
 
-請完成下列步驟來驗證是否已建立事件：
+2. 從功能表列按一下**管理** &gt; **安全** &gt; **身分及存取**，然後選取**使用者**。
+3. 從您要指派存取權的使用者列中，選取**動作**功能表，然後按一下**指派存取權**。
+4. 選取**指派對資源的存取權**。
+5. 選取 **Log Analysis**。
+6. 選取**所有地區**。
+7. 選取**所有服務實例**。
+8. 選取服務角色：**讀者**。
+9. 按一下「指派」。
 
-1. 授與使用者可檢視帳戶事件的許可權。如需相關資訊，請參閱[檢視帳戶事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events)和[授與許可權以查看帳戶事件](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_acc_events)。
+### 為使用者授與監視空間網域事件的存取權
+{: #index_space}
 
-2. 從 {{site.data.keyword.Bluemix_notm}} 儀表板中，選取 {{site.data.keyword.cloudaccesstrailshort}} 服務。服務儀表板隨即開啟。
+若要從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與空間中的開發人員角色，請完成下列步驟：
 
-3. 配置視圖，以搜尋在您佈建服務及新增金鑰時產生的 {{site.data.keyword.keymanagementserviceshort}} 事件。
+1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
 
-    * 針對*檢視日誌* 欄位選取**帳戶日誌**。
-    * 針對*搜尋欄位* 欄位選取 **target.typeURI_str**，然後在*過濾器* 欄位中輸入 **kms/secrets**。
+    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}
 	
-    顯示的資料會顯示過去 24 小時可用的 {{site.data.keyword.keymanagementserviceshort}} 事件。 
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
+
+2. 從功能表列按一下**管理** &gt; **安全** &gt; **身分及存取**，然後選取**使用者**。
+
+3. 選取使用者。
+
+4. 選取 **Cloud Foundry 存取**。
+
+5. 展開組織。
+
+    即會列出該組織中可用的空間清單。
+
+6. 從動作功能表選取**編輯組織角色**。在*組織角色* 欄位選取**審核員**角色。然後按一下**儲存角色**。
+
+7. 選取空間。 
+
+8. 從動作功能表選取**編輯空間角色**。在*空間角色* 欄位選取**開發人員**角色。然後按一下**儲存角色**。
 	
+7. 按一下**指派**。
+
+
+
+## 步驟 3：產生 {{site.data.keyword.cloudaccesstrailshort}} 事件
+{: #index_step3}
+
+佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務之後，即會自動從所選取的雲端服務中收集事件。若要進一步瞭解您可以使用 {{site.data.keyword.cloudaccesstrailshort}} 來監視的服務，包括會產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的動作相關資訊，請參閱[雲端服務](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services)。
+
+**附註：**若要讓使用者產生 {{site.data.keyword.BluVirtServers_short}} 和 {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} 事件，該使用者必須要有在「IBM Cloud 主控台」中存取「基礎架構」資源的權限。如需相關資訊，請參閱[使用 {{site.data.keyword.cloudaccesstrailshort}} 來監視 {{site.data.keyword.BluVirtServers_short}} 和 {{site.data.keyword.baremetal_short}} 活動](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi)。
+
+若要瞭解如何產生事件，請完成[使用 {{site.data.keyword.cloudaccesstrailshort}} 來監視 {{site.data.keyword.keymanagementserviceshort}} 活動](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp)的指導教學。
+
+## 步驟 4：檢視事件
+{: #index_step4}
+
+您可以在 {{site.data.keyword.cloud_notm}} 使用者介面中監視 {{site.data.keyword.cloudaccesstrailshort}} 事件。您也可以將您的方案升級為超值方案，以透過 Kibana 來監視事件。 
+
+**若要監視廣域帳戶動作**以及**監視佈建在資源群組環境定義中的服務**，請考量下列資訊：
+
+* 事件會收集在帳戶網域中。
+
+    每個地區各有一個帳戶網域。
+
+    廣域帳戶動作會收集在美國南部帳戶網域中。
+
+    服務的事件會收集在此服務實例佈建所在地區的帳戶網域中。
+
+* 帳戶擁有者可以透過 {{site.data.keyword.cloud_notm}} 使用者介面或 Kibana 來檢視事件。
+* 其他使用者只能透過 Kibana 來檢視帳戶網域事件。 
+
+
+**若要監視佈建在 CF 組織和空間環境定義中的服務**，請考量下列資訊：
+
+* 事件會收集在空間網域中。 
+* 每個 CF 空間各有一個相關聯的 {{site.data.keyword.cloudaccesstrailshort}} 空間網域。 
+* 您可以透過 {{site.data.keyword.cloud_notm}} 使用者介面或 Kibana 來檢視事件。
+
+下表定義您必須監視事件的 {{site.data.keyword.cloudaccesstrailshort}} 網域：
+
+| 監視                                                           | {{site.data.keyword.cloudaccesstrailshort}} 網域 |  
+|----------------------------------------------------------------------|----------------------------------------------------| 
+| `廣域帳戶動作`                                             | 美國南部帳戶網域                            |  
+| `佈建在資源群組環境定義中的服務`   | 帳戶網域                                     | 
+| `佈建在 CF 組織和空間環境定義中的服務` | 空間網域                                       | 
+{: caption="表 1. 每個事件來源的 {{site.data.keyword.cloudaccesstrailshort}} 網域" caption-side="top"} 
+
+若要檢視事件，您可以選擇下列其中一個選項：
+
+* [導覽至 Activity Tracker 儀表板以監視帳戶中的雲端活動](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account) 
+* [導覽至 Activity Tracker 儀表板以監視空間中的雲端活動](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
+* [從 Web 瀏覽器導覽至 Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。
+
+若要檢視您完成指導教學中的步驟後所產生的事件，請選擇[導覽至 Activity Tracker 儀表板以監視帳戶中的雲端活動](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account)。如果您不是帳戶擁有者，請升級服務方案，並檢查您是否有檢視事件的正確存取權。 
 
 
 ## 後續步驟
-{: #next_steps}
+{: #index_next_steps}
 
-接著，使用 {{site.data.keyword.cloudaccesstrailshort}} 預先定義 Kibana 儀表板來監視及分析事件日誌。若要啟動 Kibana，請參閱[導覽至 Kibana 儀表板](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)。依預設，在 Kibana 中，空間活動日誌是透過 **ActivityTracker_Space_Dashboard_in_24h** 儀表板來顯示：
-
-您也可以使用 {{site.data.keyword.cloudaccesstrailshort}} CLI，從指令行管理事件。如需相關資訊，請參閱[檢視事件資訊](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status)。
+使用 {{site.data.keyword.cloudaccesstrailshort}} CLI 可從指令行管理事件。如需相關資訊，請參閱[使用 Activity Tracker CLI 管理事件](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2)。
 
 
 

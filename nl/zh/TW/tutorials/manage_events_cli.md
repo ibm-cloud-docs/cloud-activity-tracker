@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -25,18 +25,18 @@ lastupdated: "2018-09-07"
 
 請完成下列步驟：
 
-1. [佈建 {{site.data.keyword.keymanagementservicelong_notm}} 並產生事件](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [取得儲存事件的相關資訊 (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [指定透過建立階段作業來下載哪些日誌 (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [取得實際日誌資料 (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [下載完成之後刪除階段作業 (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [手動刪除不需要的日誌 (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+1. [佈建 {{site.data.keyword.keymanagementservicelong_notm}} 並產生事件](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
+2. [取得儲存事件的相關資訊 (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
+2. [指定透過建立階段作業來下載哪些日誌 (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
+3. [取得實際日誌資料 (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
+4. [下載完成之後刪除階段作業 (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
+5. [手動刪除不需要的日誌 (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
 
 
 ## 假設
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. 您有 {{site.data.keyword.Bluemix_notm}} 使用者 ID，其具有開發人員許可權，可以在佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的 {{site.data.keyword.Bluemix_notm}} 帳戶空間中運作。 
+1. 您有 {{site.data.keyword.cloud_notm}} 使用者 ID，其具有開發人員許可權，可以在佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的 {{site.data.keyword.cloud_notm}} 帳戶空間中運作。 
 
     如需如何佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的相關資訊，請參閱[佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
 
@@ -48,7 +48,7 @@ lastupdated: "2018-09-07"
 
     如需安裝 {{site.data.keyword.cloudaccesstrailshort}} CLI 的相關資訊，請參閱[配置 {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli)。
 
-4. 您已透過指令行登入 {{site.data.keyword.Bluemix_notm}}。對於本指導教學，請從終端機執行下列指令： 
+4. 您已透過指令行登入 {{site.data.keyword.cloud_notm}}。對於本指導教學，請從終端機執行下列指令： 
 
     `ibmcloud login -a api.ng.bluemix.net`，以登入美國南部地區。如需相關資訊，請參閱 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)。
     
@@ -56,13 +56,13 @@ lastupdated: "2018-09-07"
 
 
 ## 步驟 1：佈建 IBM Key Protect 服務並產生事件 
-{: #step1}
+{: #tutorial2_step1}
 	
-請完成下列步驟，以在 {{site.data.keyword.Bluemix_notm}} 中佈建 {{site.data.keyword.keymanagementserviceshort}} 服務，並產生事件：
+請完成下列步驟，以在 {{site.data.keyword.cloud_notm}} 中佈建 {{site.data.keyword.keymanagementserviceshort}} 服務，並產生事件：
 
 1. 在美國南部地區佈建 {{site.data.keyword.keymanagementserviceshort}} 服務的實例。如需相關資訊，請參閱[從 IBM Cloud 主控台佈建](/docs/services/key-protect/provision.html#provision)。
 
-2. 針對您計劃用來使用金鑰的使用者定義 {{site.data.keyword.Bluemix_notm}} 許可權。 
+2. 針對您計劃用來使用金鑰的使用者定義 {{site.data.keyword.cloud_notm}} 許可權。 
 
     * 使用者需要一個 IAM 原則，且服務角色設為*管理員* 或*撰寫者* 才能建立金鑰。
 	* 使用者需要一個 IAM 原則，且服務角色設為*管理員* 才能刪除金鑰。
@@ -73,7 +73,7 @@ lastupdated: "2018-09-07"
 {{site.data.keyword.cloudaccesstrailshort}} 事件會因為建立金鑰而產生。
 
 ## 步驟 2：取得儲存事件的相關資訊
-{: #step2}
+{: #tutorial2_step2}
 
 {{site.data.keyword.keymanagementserviceshort}} 事件可在 {{site.data.keyword.cloudaccesstrailshort}} 帳戶網域中取得。
 
@@ -112,7 +112,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 
 
 ## 步驟 3：指定要下載的事件
-{: #step3}
+{: #tutorial2_step3}
 
 下載事件之前，請先建立階段作業。階段作業指定將下載哪些事件。
 
@@ -167,7 +167,7 @@ ibmcloud at session create -s 2017-07-25 -e 2017-07-25 -a
 請使用 `ibmcloud at session help create` 來取得指令行的說明。
 
 ## 步驟 4：下載針對階段作業所定義的範圍而識別的事件
-{: #step4}
+{: #tutorial2_step4}
 
 若要下載由階段作業參數指定的事件，請執行下列指令：
 
@@ -198,7 +198,7 @@ Download Successful
 請使用 `ibmcloud at help download` 來取得指令行的說明。
 
 ## 步驟 5：刪除階段作業
-{: #step5}
+{: #tutorial2_step5}
 
 下載完成之後，請刪除階段作業。執行下列指令：
 
@@ -230,7 +230,7 @@ $ ibmcloud at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 請使用 `ibmcloud at session help delete` 來取得指令行的說明。
 
 ## 步驟 6：自動從 Activity Tracker 刪除事件
-{: #step6}
+{: #tutorial2_step6}
 
 您可以在 {{site.data.keyword.cloudaccesstrailshort}} 中控制自己的事件保留。您可以手動刪除事件，也可以自動刪除事件。
 
@@ -241,6 +241,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 若要進一步瞭解 `ibmcloud at delete` 指令，請參閱 [CLI 參考資料](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete)。
 

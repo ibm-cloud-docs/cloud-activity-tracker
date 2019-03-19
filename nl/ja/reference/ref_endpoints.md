@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 エンドポイントは {{site.data.keyword.Bluemix}} 地域ごとに異なります。
 {:shortdesc}
 
-## {{site.data.keyword.Bluemix_notm}} エンドポイント
+## {{site.data.keyword.cloud_notm}} エンドポイント
 {: #ibm_cloud_endpoints}
 
-以下の表に、{{site.data.keyword.Bluemix_notm}} にログインするために使用する必要のある、地域ごとの URL をリストします。
+以下の表に、{{site.data.keyword.cloud_notm}} にログインするために使用する必要のある、地域ごとの URL をリストします。
 	
 <table>
-	<caption>表 1. {{site.data.keyword.Bluemix_notm}} エンドポイント</caption>
+	<caption>表 1. {{site.data.keyword.cloud_notm}} エンドポイント</caption>
 	<tr>
 	  <th>地域</th>
 	  <th>URL</th>

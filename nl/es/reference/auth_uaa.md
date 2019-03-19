@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -20,7 +19,7 @@ lastupdated: "2018-09-07"
 # Obtención de una señal de UAA
 {: #auth_uaa}
 
-Utilice UAA de {{site.data.keyword.Bluemix}} para obtener una señal de autenticación que puede utilizar para trabajar con el servicio {{site.data.keyword.cloudaccesstraillong}}. Puede obtener la señal de autenticación mediante la CLI de {{site.data.keyword.Bluemix_notm}} o mediante las API.
+Utilice UAA de {{site.data.keyword.Bluemix}} para obtener una señal de autenticación que puede utilizar para trabajar con el servicio {{site.data.keyword.cloudaccesstraillong}}. Puede obtener la señal de autenticación mediante la CLI de {{site.data.keyword.cloud_notm}} o mediante las API.
 {:shortdesc}
 
 Tenga en cuenta la información siguiente:
@@ -33,15 +32,15 @@ Tenga en cuenta la información siguiente:
 
 Para obtener una señal de UAA, siga estos pasos:
 
-1. (Requisito previo) Instalar la CLI de {{site.data.keyword.Bluemix_notm}}.
+1. (Requisito previo) Instalar la CLI de {{site.data.keyword.cloud_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
    Si la CLI está instalada, continúe en el paso siguiente.
     
-2. Inicie una sesión en {{site.data.keyword.Bluemix_notm}}. 
+2. Inicie una sesión en {{site.data.keyword.cloud_notm}}. 
 
-    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.Bluemix_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Ejecute el mandato `ibmcloud iam oauth-tokens` para obtener la señal de UAA.
 
@@ -72,7 +71,7 @@ Para obtener una señal de UAA para una clave de API de la plataforma, siga esto
 
 2. Añada una clave de API de la plataforma.
 
-    En la consola de IBM Cloud, vaya a ** Gestionar > Seguridad > Claves de API de la plataforma**.
+    En la consola de IBM Cloud, vaya a **Gestionar > Seguridad > Claves de API de la plataforma**.
     A continuación, cree una clave de API.
 
 3. Obtenga la señal. Ejecute el siguiente mandato cURL:

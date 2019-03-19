@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,17 +20,17 @@ lastupdated: "2018-09-07"
 # 플랜 변경
 {: #change_plan}
 
-{{site.data.keyword.Bluemix_notm}} UI를 통해, 또는 `ibmcloud service update` 명령을 실행하여 {{site.data.keyword.cloudaccesstraillong}} 서비스 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드 또는 다운그레이드할 수 있습니다.
+{{site.data.keyword.cloud_notm}} UI를 통해 또는 `ibmcloud service update` 명령을 실행하여 {{site.data.keyword.cloudaccesstraillong}} 서비스 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드 또는 다운그레이드할 수 있습니다.
 {:shortdesc}
 
 ## UI를 통한 서비스 플랜 변경
 {: #change_plan_ui}
 
-{{site.data.keyword.Bluemix_notm}} UI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십시오. 
+{{site.data.keyword.cloud_notm}} UI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.Bluemix_notm}}에 로그인한 후 *대시보드*에서 {{site.data.keyword.cloudaccesstraillong_notm}} 서비스를 클릭하십시오.  
+1. {{site.data.keyword.cloud_notm}}에 로그인한 후 *대시보드*에서 {{site.data.keyword.cloudaccesstraillong_notm}} 서비스를 클릭하십시오. 
     
-2. **플랜** 탭을 선택하십시오. 
+2. **플랜** 탭을 선택하십시오.
 
     현재 플랜에 대한 정보가 표시됩니다.
 	
@@ -43,13 +43,13 @@ lastupdated: "2018-09-07"
 ## CLI를 통한 서비스 플랜 변경
 {: #change_plan_cli}
 
-CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십시오. 
+CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오.  
+1. {{site.data.keyword.cloud_notm}}에 로그인하십시오. 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.Bluemix_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오. 
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
 	
-2. `ibmcloud service list` 명령을 실행하여 현재 플랜을 확인하고, 영역에서 사용 가능한 서비스의 목록에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 이름을 가져오십시오.  
+2. `ibmcloud service list` 명령을 실행하여 현재 플랜을 확인하고, 영역에서 사용 가능한 서비스의 목록에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 이름을 가져오십시오. 
 
     필드 **name**의 값이 플랜을 변경하는 데 사용해야 하는 값입니다. 
 
@@ -67,7 +67,7 @@ CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십�
     ```
 	{: screen}
     
-3. 플랜을 업그레이드하거나 다운그레이드하십시오. `ibmcloud service update` 명령을 실행하십시오. 
+3. 플랜을 업그레이드하거나 다운그레이드하십시오. `ibmcloud service update` 명령을 실행하십시오.
     
 	```
 	ibmcloud service update service_name [-p new_plan]
@@ -76,7 +76,7 @@ CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십�
 	
 	여기서, 
 	
-	* *service_name*은 서비스의 이름입니다. `ibmcloud service list` 명령을 실행하여 이 값을 가져올 수 있습니다. 
+	* *service_name*은 서비스의 이름입니다. `ibmcloud service list` 명령을 실행하여 이 값을 가져올 수 있습니다.
 	* *new_plan*은 플랜의 이름입니다.
 	
 	다음 표에는 다양한 플랜과 해당 지원 값이 나열되어 있습니다.

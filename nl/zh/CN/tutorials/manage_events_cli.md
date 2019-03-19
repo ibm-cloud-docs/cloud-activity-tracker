@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -25,18 +25,18 @@ lastupdated: "2018-09-07"
 
 完成以下步骤：
 
-1. [供应 {{site.data.keyword.keymanagementservicelong_notm}} 并生成事件](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [获取有关存储的事件的信息 (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [通过创建会话指定要下载的日志 (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [获取实际日志数据 (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [下载完成后删除会话 (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [手动删除不需要的日志 (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+1. [供应 {{site.data.keyword.keymanagementservicelong_notm}} 并生成事件](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
+2. [获取有关存储的事件的信息 (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
+2. [通过创建会话指定要下载的日志 (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
+3. [获取实际日志数据 (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
+4. [下载完成后删除会话 (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
+5. [手动删除不需要的日志 (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
 
 
 ## 假定
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. 您有 {{site.data.keyword.Bluemix_notm}} 用户标识，该用户标识具有开发者许可权，可以在供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的 {{site.data.keyword.Bluemix_notm}} 帐户的空间中工作。 
+1. 您有 {{site.data.keyword.cloud_notm}} 用户标识，该用户标识具有开发者许可权，可以在供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的 {{site.data.keyword.cloud_notm}} 帐户的空间中工作。 
 
     有关如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的更多信息，请参阅[供应 {{site.data.keyword.cloudaccesstrailshort}} 服务](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)。
 
@@ -48,7 +48,7 @@ lastupdated: "2018-09-07"
 
     有关安装 {{site.data.keyword.cloudaccesstrailshort}} CLI 的更多信息，请参阅[配置 {{site.data.keyword.cloudaccesstrailshort}} CLI](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli)。
 
-4. 您已通过命令行登录到 {{site.data.keyword.Bluemix_notm}}。对于本教程，从终端运行以下命令： 
+4. 您已通过命令行登录到 {{site.data.keyword.cloud_notm}}。对于本教程，从终端运行以下命令： 
 
     `ibmcloud login -a api.ng.bluemix.net`，用于登录到美国南部区域。有关更多信息，请参阅 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)。
     
@@ -56,13 +56,13 @@ lastupdated: "2018-09-07"
 
 
 ## 步骤 1：供应 IBM Key Protect 服务并生成事件 
-{: #step1}
+{: #tutorial2_step1}
 	
-完成以下步骤以在 {{site.data.keyword.Bluemix_notm}} 中供应 {{site.data.keyword.keymanagementserviceshort}} 服务并生成事件：
+完成以下步骤以在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.keymanagementserviceshort}} 服务并生成事件：
 
 1. 在美国南部区域中供应 {{site.data.keyword.keymanagementserviceshort}} 服务的实例。有关更多信息，请参阅[从 IBM Cloud 控制台供应](/docs/services/key-protect/provision.html#provision)。
 
-2. 针对计划使用密钥的用户定义 {{site.data.keyword.Bluemix_notm}} 许可权。 
+2. 针对计划使用密钥的用户定义 {{site.data.keyword.cloud_notm}} 许可权。 
 
     * 用户需要通过服务角色设置为 *manager* 或 *writer* 的 IAM 策略，才能创建密钥。
 	* 用户需要通过服务角色设置为 *manager* 的 IAM 策略，才能删除密钥。
@@ -73,7 +73,7 @@ lastupdated: "2018-09-07"
 创建密钥会生成 {{site.data.keyword.cloudaccesstrailshort}} 事件。
 
 ## 步骤 2：获取有关已存储事件的信息
-{: #step2}
+{: #tutorial2_step2}
 
 {{site.data.keyword.keymanagementserviceshort}} 事件在 {{site.data.keyword.cloudaccesstrailshort}} 帐户域中提供。
 
@@ -113,7 +113,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 
 
 ## 步骤 3：指定要下载的事件
-{: #step3}
+{: #tutorial2_step3}
 
 下载事件之前，请创建会话。会话指定将下载哪些事件。
 
@@ -170,7 +170,7 @@ ibmcloud at session create -s 2017-07-25 -e 2017-07-25 -a
 使用 `ibmcloud at session help create` 可从命令行获取相关帮助。
 
 ## 步骤 4：下载针对为会话定义的作用域所确定的事件
-{: #step4}
+{: #tutorial2_step4}
 
 要下载由会话参数指定的事件，请运行以下命令：
 
@@ -201,7 +201,7 @@ Download Successful
 使用 `ibmcloud at help download` 可从命令行获取相关帮助。
 
 ## 步骤 5：删除会话
-{: #step5}
+{: #tutorial2_step5}
 
 下载完成后，请删除相应会话。运行以下命令：
 
@@ -234,7 +234,7 @@ $ ibmcloud at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 使用 `ibmcloud at session help delete` 可从命令行获取相关帮助。
 
 ## 步骤 6：从 Activity Tracker 中自动删除事件
-{: #step6}
+{: #tutorial2_step6}
 
 可以在 {{site.data.keyword.cloudaccesstrailshort}} 中控制自己的事件保留时间。可以手动删除事件，也可以自动删除事件。
 
@@ -245,6 +245,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 要了解有关 `ibmcloud at delete` 命令的更多信息，请参阅 [CLI 参考](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete)。
 

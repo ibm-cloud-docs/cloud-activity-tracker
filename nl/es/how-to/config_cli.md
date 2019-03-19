@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,19 +19,19 @@ lastupdated: "2018-09-07"
 # Configuración de la CLI de Activity Tracker
 {: #config_cli}
 
-El servicio {{site.data.keyword.cloudaccesstraillong}} incluye una interfaz de línea de mandatos (CLI) que puede utilizar para gestionar los sucesos en la nube. Puede utilizar el plugin de {{site.data.keyword.Bluemix_notm}} para ver el estado de los sucesos, para descargar sucesos y para configurar la política de retención de sucesos. La CLI ofrece distintos tipos de ayuda: ayuda general para obtener información sobre la CLI y los mandatos soportados, ayuda sobre mandatos para ver cómo se utiliza un mandato o ayuda sobre submandatos para aprender a utilizar un submandato de un mandato.
+El servicio {{site.data.keyword.cloudaccesstraillong}} incluye una interfaz de línea de mandatos (CLI) que puede utilizar para gestionar los sucesos en la nube. Puede utilizar el plugin de {{site.data.keyword.cloud_notm}} para ver el estado de los sucesos, para descargar sucesos y para configurar la política de retención de sucesos. La CLI ofrece distintos tipos de ayuda: ayuda general para obtener información sobre la CLI y los mandatos soportados, ayuda sobre mandatos para ver cómo se utiliza un mandato o ayuda sobre submandatos para aprender a utilizar un submandato de un mandato.
 {:shortdesc}
 
 
-## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} desde el repositorio de {{site.data.keyword.Bluemix_notm}}
+## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} desde el repositorio de {{site.data.keyword.cloud_notm}}
 {: #install_cli_repo}
 
 Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}},
 siga estos pasos:
 
-1. Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
+1. Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
 2. Averigüe el nombre del plugin en el repositorio. Ejecute el mandato siguiente:
 
@@ -58,16 +58,6 @@ siga estos pasos:
     ```
     {: codeblock}
     
-    El resultado se parecerá al siguiente:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
 
 
 ## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} desde un archivo
@@ -76,9 +66,9 @@ siga estos pasos:
 Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}},
 siga estos pasos:
 
-1. Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
+1. Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/reference/ibmcloud/download_cli.html#install_use).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 2. Instale el plugin de {{site.data.keyword.cloudaccesstrailshort}}.
 
@@ -95,27 +85,16 @@ siga estos pasos:
     ```
     {: codeblock}
     
-    El resultado se parecerá al siguiente:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name               Version   
-    activity-tracker          3.3.0   
-    ```
-    {: screen}
- 
 
 
-## Instalación del plugin de Log Analysis en Linux desde un archivo
+## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Linux desde un archivo
 {: #install_cli_linux}
 
-Siga estos pasos para instalar el plugin de recopilación de registros en Linux:
+Siga estos pasos para instalar el plugin en Linux:
 
 1. Instale el plugin.
 
-    Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	* Seleccione el valor de la plataforma: **linux64**. 
 	
@@ -131,12 +110,12 @@ Siga estos pasos para instalar el plugin de recopilación de registros en Linux:
 
 
 
-## Instalación del plugin de Log Analysis en Windows desde un archivo
+## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Windows desde un archivo
 {: #install_cli_windows}
 
-Siga estos pasos para instalar el plugin de recopilación de registros en Windows:
+Siga estos pasos para instalar el plugin en Windows:
 
-1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Seleccione el valor de la plataforma: **win64**. 
 	2. Pulse **Guardar archivo**.  
@@ -150,12 +129,12 @@ Siga estos pasos para instalar el plugin de recopilación de registros en Window
 
 	
 
-## Instalación del plugin de Log Analysis en Mac OS X desde un archivo
+## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Mac OS X desde un archivo
 {: #install_cli_mac}
 
-Siga estos pasos para instalar el plugin de recopilación de registros en Mac OS X:
+Siga estos pasos para instalar el plugin en Mac OS X:
 
-1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.Bluemix_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
 	
 	1. Seleccione el valor de plataforma: **osx**. 
 	2. Pulse **Guardar archivo**.  
@@ -169,7 +148,7 @@ Siga estos pasos para instalar el plugin de recopilación de registros en Mac OS
 
 	
 	
-## Desinstalación de la CLI de Log Analysis
+## Desinstalación de la CLI de {{site.data.keyword.cloudaccesstrailshort}}
 {: #uninstall_cli}
 
 Para desinstalar la CLI, suprima el plugin.
@@ -186,17 +165,6 @@ Siga estos pasos para desinstalar la CLI del servicio {{site.data.keyword.clouda
     ```
     {: codeblock}
     
-    El resultado se parecerá al siguiente:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name          Version   
-    activity-tracker      3.3.0   
-    ```
-    {: screen}
-    
 2. Si el plugin está instalado, ejecute `ibmcloud plugin uninstall` para desinstalar el plugin de la CLI.
 
     Ejecute el mandato siguiente:
@@ -207,7 +175,7 @@ Siga estos pasos para desinstalar la CLI del servicio {{site.data.keyword.clouda
     {: codeblock}
   
 
-## Actualización de la CLI de Log Analysis desde el repositorio
+## Actualización de la CLI de {{site.data.keyword.cloudaccesstrailshort}} desde el repositorio
 {: #update_cli}
 
 Para actualizar la CLI, ejecute el mandato *ibmcloud plugin update*.
@@ -231,16 +199,6 @@ Complete los pasos siguientes para actualizar la CLI de servicio de {{site.data.
     ```
     {: codeblock}
     
-    El resultado se parecerá al siguiente:
-   
-    ```
-    ibmcloud plugin list
-    Listing installed plug-ins...
-
-    Plugin Name             Version   
-    activity-tracker         3.3.0   
-    ```
-    {: screen}
 
 
 
@@ -251,7 +209,7 @@ Complete los pasos siguientes para actualizar la CLI de servicio de {{site.data.
 
 Para obtener información general sobre la CLI y los mandatos soportados, siga los pasos siguientes:
 
-1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
+1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.cloud_notm}}. 
     
 2. Obtenga una lista de la información sobre los mandatos soportados y la CLI. Ejecute el mandato siguiente:
 
@@ -267,7 +225,7 @@ Para obtener información general sobre la CLI y los mandatos soportados, siga l
 
 Para obtener ayuda sobre cómo utilizar un mandato, siga los pasos siguientes:
 
-1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
+1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.cloud_notm}}. 
     
 2. Obtenga la lista de mandatos soportados e identifique el que necesita. Ejecute el mandato:
 
@@ -292,7 +250,7 @@ Para obtener ayuda sobre cómo utilizar un mandato, siga los pasos siguientes:
 
 Un mandato puede tener submandatos. Para obtener ayuda sobre los submandatos, siga los pasos siguientes:
 
-1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
+1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.cloud_notm}}. 
     
 2. Obtenga la lista de mandatos soportados e identifique el que necesita. Ejecute el mandato:
 
@@ -333,17 +291,7 @@ ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
-El resultado se parecerá al siguiente:
-   
-```
-ibmcloud plugin show activity-tracker
-                                  
-Plugin                         activity-tracker
-Version                        3.3.0
-SDK Version
-Minimal CLI version required   N/A      
-```
-{: screen}
+
 
 
 

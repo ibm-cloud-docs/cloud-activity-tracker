@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-
-lastupdated: "2018-07-12"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -18,7 +17,7 @@ lastupdated: "2018-07-12"
 # 合规性
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} 提供了根据 IBM 严格安全标准构建的云平台和服务。](/docs/security/compliance.html#compliance){{site.data.keyword.cloudaccesstraillong}} 服务是专为 {{site.data.keyword.Bluemix_notm}} 而构建的 DevOps 服务。
+[{{site.data.keyword.Bluemix}} 提供了根据 IBM 严格安全标准构建的云平台和服务。](/docs/security/compliance.html#compliance){{site.data.keyword.cloudaccesstraillong}} 服务是专为 {{site.data.keyword.cloud_notm}} 而构建的 DevOps 服务。
 {:shortdesc}
 
 
@@ -26,16 +25,16 @@ lastupdated: "2018-07-12"
 
 《一般数据保护条例》(GDPR) 致力于在整个欧盟建立协调的数据保护法律框架，目标是让公民重获对个人数据的控制权，同时对世界各地托管和“处理”这些数据的组织实施严格的规定。该条例还引入了有关在欧盟内外自由移动个人数据的规定。 
 
-**免责声明：**{{site.data.keyword.cloudaccesstrailshort}} 服务会存储和显示 {{site.data.keyword.Bluemix_notm}} 中在您的帐户下运行的云资源的事件记录。在 {{site.data.keyword.cloudaccesstrailshort}} 中存储的任何事件条目都不得包含个人信息 (PI)，因为企业中的其他用户可能会访问这些事件条目，{{site.data.keyword.IBM_notm}} 也可能会访问这些事件条目来为云服务提供支持。
+**免责声明：** {{site.data.keyword.cloudaccesstrailshort}} 服务会存储和显示 {{site.data.keyword.cloud_notm}} 中您帐户下运行的云资源的事件记录。在 {{site.data.keyword.cloudaccesstrailshort}} 中存储的任何事件条目都不得包含个人信息 (PI)，因为企业中的其他用户可能会访问这些事件条目，{{site.data.keyword.IBM_notm}} 也可能会访问这些事件条目来为云服务提供支持。
 
 ### 区域
-{: #regions}
+{: #compliance_regions}
 
-{{site.data.keyword.cloudaccesstrailshort}} 服务遵循提供该服务的 {{site.data.keyword.Bluemix_notm}} Public 区域中的 GDPR 规定。
+{{site.data.keyword.cloudaccesstrailshort}} 服务遵循提供该服务的 {{site.data.keyword.cloud_notm}} Public 区域中的 GDPR 规定。
 
 
 ### 数据保留
-{: #data_retention}
+{: #compliance_data_retention}
 
 {{site.data.keyword.cloudaccesstrailshort}} 服务包含 2 个数据存储库，用于存储事件数据。 
 
@@ -44,7 +43,7 @@ lastupdated: "2018-07-12"
 
 
 ### 数据删除
-{: #data_deletion}
+{: #compliance_data_deletion}
 
 请考虑以下信息：
 
@@ -61,11 +60,11 @@ lastupdated: "2018-07-12"
 
 
 ### 更多信息
-{: #info}
+{: #compliance_info}
 
 有关更多信息，请参阅：
 
-[{{site.data.keyword.Bluemix_notm}} 安全合规性](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} 安全合规性](/docs/security/compliance.html#compliance)
 
 [GDPR - {{site.data.keyword.IBM_notm}} 官方页面](https://www.ibm.com/data-responsibility/gdpr/)
 

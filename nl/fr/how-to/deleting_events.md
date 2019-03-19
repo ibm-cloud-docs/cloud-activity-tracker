@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -24,31 +24,31 @@ Utilisez la commande *ibmcloud at delete* pour supprimer manuellement des évén
 
 Effectuez les opérations suivantes :
 
-## Etape 1 : Connexion à {{site.data.keyword.Bluemix_notm}}
-{: #prereq}
+## Etape 1 : Connexion à {{site.data.keyword.cloud_notm}}
+{: #deleting_events_prereq}
 
-Connectez-vous à {{site.data.keyword.Bluemix_notm}}.Effectuez les opérations suivantes :
+Connectez-vous à {{site.data.keyword.cloud_notm}}. Effectuez les opérations suivantes :
 
-1. Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
-2. Exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition. 
+1. Exécutez la commande [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) pour vous connecter à {{site.data.keyword.cloud_notm}}.
+2. Exécutez la commande [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) pour définir l'organisation et l'espace où mettre le service {{site.data.keyword.cloudaccesstrailshort}} à disposition.
 
-**Remarque :** définissez l'organisation et l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
+**Remarque :** définissez l'organisation et l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
 
 ## Etape 2 : Identification des événements disponibles
-{: #step2}
+{: #deleting_events_step2}
 
 Utilisez la commande `ibmcloud at status` pour afficher les informations relatives aux événements disponibles dans un domaine d'espace.
 
-* Pour obtenir des informations sur les événements d'un domaine d'espace, exécutez la commande `ibmcloud at status`. 
-* Pour obtenir des informations sur les événements d'un domaine de compte, exécutez la commande `ibmcloud at status` avec l'option `-a`. 
+* Pour obtenir des informations sur les événements d'un domaine d'espace, exécutez la commande `ibmcloud at status`.
+* Pour obtenir des informations sur les événements d'un domaine de compte, exécutez la commande `ibmcloud at status` avec l'option `-a`.
 
 Pour plus d'information, voir [Affichage d'informations sur les événements](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
 	
   
 ## Etape 3 : Suppression d'événements
-{: #step3}
+{: #deleting_events_step3}
 	
-Pour supprimer des événements, exécutez la commande `ibmcloud at delete`. 
+Pour supprimer des événements, exécutez la commande `ibmcloud at delete`.
 
 ```
 ibmcloud at delete -s YYYY-MM-DD -e YYYY-MM-DD 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,19 +25,19 @@ Utilizza il comando *ibmcloud at delete* per eliminare manualmente gli eventi ar
 Completa la seguente
 procedura:
 
-## Passo 1: Accedi a {{site.data.keyword.Bluemix_notm}} 
-{: #prereq}
+## Passo 1: Accedi a {{site.data.keyword.cloud_notm}}
+{: #deleting_events_prereq}
 
-Accedi a {{site.data.keyword.Bluemix_notm}}. Completa la seguente
+Accedi a {{site.data.keyword.cloud_notm}}. Completa la seguente
 procedura:
 
-1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.Bluemix_notm}}.
+1. Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}}.
 2. Esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per impostare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** imposta l'organizzazione e lo spazio in cui viene eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
 
 ## Passo 2: Identifica quali eventi sono disponibili
-{: #step2}
+{: #deleting_events_step2}
 
 Utilizza il comando `ibmcloud at status` per visualizzare le informazioni sugli eventi disponibili in un dominio dello spazio.
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni, vedi [Visualizzazione di informazioni sull'evento](/
 	
   
 ## Passo 3: Elimina gli eventi
-{: #step3}
+{: #deleting_events_step3}
 	
 Per eliminare gli eventi, esegui il comando `ibmcloud at delete`.
 

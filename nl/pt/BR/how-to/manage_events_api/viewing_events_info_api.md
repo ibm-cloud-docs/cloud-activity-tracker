@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -25,7 +25,7 @@ Use a API do {{site.data.keyword.cloudaccesstrailshort}} para obter informaçõe
 
 
 ## Obtendo o número de eventos usando cURL
-{: #records_per_day_curl}
+{: #viewing_events_info_api_records_per_day_curl}
 
 Conclua as etapas a seguir para visualizar informações sobre os eventos em uma data específica:
 
@@ -73,7 +73,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## Exemplo de NodeJS de como visualizar eventos por dia
-{: #node}
+{: #viewing_events_info_api_node}
 
 Este é um código de amostra que pode ser usado para testar como visualizar o número de eventos por dia:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -26,7 +26,7 @@ Utilizza l'API {{site.data.keyword.cloudaccesstrailshort}} per eliminare gli eve
 **Nota:** anche se puoi eliminare gli eventi manualmente utilizzando la chiamata API, considera l'impostazione della politica di conservazione per eliminare gli eventi automaticamente. Per ulteriori informazioni, consulta [Configurazione della politica di conservazione degli eventi](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
 
 ## Eliminazione di eventi utilizzando cURL
-{: #records_per_day_curl}
+{: #deleting_events_api_records_per_day_curl}
 
 Completa la seguente procedura per eliminare gli eventi disponibili in un dominio dello spazio:
 
@@ -67,7 +67,7 @@ curl -H  "Content-Type:application/json" -H "X-Auth-Token: bearer ${token}" -H "
 
 
 ## Esempio NodeJS di come eliminare gli eventi
-{: #node}
+{: #deleting_events_api_node}
 
 Questo è il codice di esempio che puoi utilizzare per verificare come eliminare gli eventi:
 

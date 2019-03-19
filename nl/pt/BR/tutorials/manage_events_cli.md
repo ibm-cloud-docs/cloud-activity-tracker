@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -26,18 +26,18 @@ Use este tutorial para aprender como usar a CLI do {{site.data.keyword.cloudacce
 Conclua
 as etapas a seguir:
 
-1. [Provisione o {{site.data.keyword.keymanagementservicelong_notm}} e gere eventos](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1)
-2. [Obtenha informações sobre eventos armazenados (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2)
-2. [Especifique de quais logs fazer download criando uma sessão (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3)
-3. [Obtenha os dados do log reais (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4)
-4. [Exclua a sessão após a conclusão do download (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5)
-5. [Exclua manualmente os logs que não são necessários (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6)
+1. [Provisione o {{site.data.keyword.keymanagementservicelong_notm}} e gere eventos](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1)
+2. [Obtenha informações sobre eventos armazenados (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2)
+2. [Especifique de quais logs fazer download criando uma sessão (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3)
+3. [Obtenha os dados do log reais (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4)
+4. [Exclua a sessão após a conclusão do download (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5)
+5. [Exclua manualmente os logs que não são necessários (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6)
 
 
 ## Suposições
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. Você tem um ID do usuário do {{site.data.keyword.Bluemix_notm}} que tem permissões de desenvolvedor para trabalhar em um espaço de uma conta do {{site.data.keyword.Bluemix_notm}} na qual o serviço {{site.data.keyword.cloudaccesstrailshort}} é provisionado. 
+1. Você tem um ID do usuário do {{site.data.keyword.cloud_notm}} que tem permissões de desenvolvedor para trabalhar em um espaço de uma conta do {{site.data.keyword.cloud_notm}} na qual o serviço {{site.data.keyword.cloudaccesstrailshort}} é provisionado. 
 
     Para obter mais informações sobre como provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}, veja [Provisionando o serviço {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
 
@@ -49,7 +49,7 @@ as etapas a seguir:
 
     Para obter mais informações sobre como instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, veja [Configurando a CLI do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
 
-4. Você efetuou login no {{site.data.keyword.Bluemix_notm}} por meio da linha de comandos. Para esse tutorial, execute os comandos a seguir em um terminal: 
+4. Você efetuou login no {{site.data.keyword.cloud_notm}} por meio da linha de comandos. Para esse tutorial, execute os comandos a seguir em um terminal: 
 
     `ibmcloud login -a api.ng.bluemix.net` para efetuar login na região us-south. Para obter mais informações, consulte  [ login ibmcloud ](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
     
@@ -57,13 +57,13 @@ as etapas a seguir:
 
 
 ## Etapa 1: provisionar o serviço IBM Key Protect e gerar eventos 
-{: #step1}
+{: #tutorial2_step1}
 	
-Conclua as etapas a seguir para provisionar o serviço {{site.data.keyword.keymanagementserviceshort}} no {{site.data.keyword.Bluemix_notm}} e gerar eventos:
+Conclua as etapas a seguir para provisionar o serviço {{site.data.keyword.keymanagementserviceshort}} no {{site.data.keyword.cloud_notm}} e gerar eventos:
 
 1. Provisione uma instância do serviço {{site.data.keyword.keymanagementserviceshort}} na região Sul dos EUA. Para obter mais informações, consulte [Provisionando por meio do console do IBM Cloud](/docs/services/key-protect/provision.html#provision).
 
-2. Defina as permissões do {{site.data.keyword.Bluemix_notm}} para o usuário que você está planejando usar para trabalhar com chaves. 
+2. Defina as permissões do {{site.data.keyword.cloud_notm}} para o usuário que você está planejando usar para trabalhar com chaves. 
 
     * Um usuário precisa de uma política do IAM com uma função de serviço configurada como *manager* ou *writer* para que possa criar chaves.
 	* Um usuário precisa de uma política do IAM com uma função de serviço configurada como *manager* para que possa excluir chaves.
@@ -74,7 +74,7 @@ Conclua as etapas a seguir para provisionar o serviço {{site.data.keyword.keyma
 Os eventos do {{site.data.keyword.cloudaccesstrailshort}} são gerados como resultado da criação de uma chave.
 
 ## Etapa 2: obter informações sobre eventos armazenados
-{: #step2}
+{: #tutorial2_step2}
 
 Os eventos do {{site.data.keyword.keymanagementserviceshort}} estão disponíveis no domínio de contas do
 {{site.data.keyword.cloudaccesstrailshort}}.
@@ -114,7 +114,7 @@ Esse comando contará os eventos para 25 de junho de 2017.  {{site.data.keyword.
 
 
 ## Etapa 3: especificar de quais eventos fazer download
-{: #step3}
+{: #tutorial2_step3}
 
 Antes de fazer download de eventos, crie uma sessão. A sessão especifica quais eventos serão transferidos por download.
 
@@ -169,7 +169,7 @@ Para saber mais sobre as sessões e o comando `ibmcloud at session create`, cons
 Use `ibmcloud at session help create` para obter ajuda na linha de comandos.
 
 ## Etapa 4: fazer download de eventos que são identificados para o escopo definido para a sessão
-{: #step4}
+{: #tutorial2_step4}
 
 Para fazer download dos eventos especificados pelos parâmetros de sessão, execute o comando a seguir:
 
@@ -200,7 +200,7 @@ Para saber mais sobre o comando `ibmcloud at download`, consulte a [Referência 
 Use `ibmcloud at help download` para obter ajuda na linha de comandos.
 
 ## Etapa 5: excluir a sessão
-{: #step5}
+{: #tutorial2_step5}
 
 Após a conclusão do download, exclua a sessão. Execute o seguinte comando:
 
@@ -232,7 +232,7 @@ Para saber mais sobre o comando `ibmcloud at session delete`, consulte a [Refer�
 Use `ibmcloud at session help delete` para obter ajuda na linha de comandos.
 
 ## Etapa 6: excluir eventos do Activity Tracker automaticamente
-{: #step6}
+{: #tutorial2_step6}
 
 Você tem controle de sua própria retenção de eventos no {{site.data.keyword.cloudaccesstrailshort}}. É possível excluir eventos manualmente ou automatizar a exclusão de eventos.
 
@@ -244,6 +244,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 Para saber mais sobre o comando `ibmcloud at delete`, consulte a [Referência da CLI](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete).
 

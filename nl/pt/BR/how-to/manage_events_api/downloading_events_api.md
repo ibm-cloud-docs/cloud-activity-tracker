@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-06"
+  years: 2016, 2019
+lastupdated: "2019-01-22"
 
 ---
 
@@ -38,7 +38,7 @@ Para fazer download de eventos, deve-se concluir as etapas a seguir:
 
 
 ## Fazendo download de eventos usando CURL
-{: #curl}
+{: #downloading_events_api_curl}
 
 Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
 
@@ -56,11 +56,16 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
     em que:
     
     * *token* representa o valor do token da UAA que você obteve em uma etapa anterior.
+
     * *spaceID* representa o UUID do espaço do Cloud Foundry no qual o {{site.data.keyword.cloudaccesstrailshort}} está provisionado.
+
     * *ENDPOINT* representa o ponto de entrada para o serviço. Cada região possui uma URL diferente. Para obter a lista de terminais por região, consulte [Terminais](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+
     * *start* e *end* representam um intervalo de tempo no qual você deseja fazer download de eventos. O formato de data é
 *YYYY-MM-DD*. 
+
     * *AtAccountLevel* indica se os eventos a serem transferidos por download estão no domínio de contas ou em um domínio de espaço.
+    
     * *SearchTime* indica a hora do dia para a qual você deseja fazer download de eventos.
 
     Para criar uma sessão para fazer download de eventos de um domínio de espaço na região us-south, configure o parâmetro **AtAccountLevel** como *false*:
@@ -112,7 +117,7 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
 
 
 ## Exemplo de NodeJS de como fazer download de eventos
-{: #node}
+{: #downloading_events_api_node}
 
 Este é um código de amostra que pode ser usado para testar como fazer download de eventos para um arquivo local:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Los puntos finales varían según la región de {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-## Puntos finales de {{site.data.keyword.Bluemix_notm}}
+## Puntos finales de {{site.data.keyword.cloud_notm}}
 {: #ibm_cloud_endpoints}
 
-En la tabla siguiente se muestran los URL por región que debe utilizar para iniciar una sesión en {{site.data.keyword.Bluemix_notm}}:
+En la tabla siguiente se muestran los URL por región que debe utilizar para iniciar una sesión en {{site.data.keyword.cloud_notm}}:
 	
 <table>
-	<caption>Tabla 1. Puntos finales de {{site.data.keyword.Bluemix_notm}}</caption>
+	<caption>Tabla 1. Puntos finales de {{site.data.keyword.cloud_notm}}</caption>
 	<tr>
 	  <th>Región</th>
 	  <th>URL</th>
@@ -43,7 +43,7 @@ En la tabla siguiente se muestran los URL por región que debe utilizar para ini
 	  <td>api.au-syd.bluemix.net</td>
 	</tr>
 	<tr>
-	  <td>EE.UU. sur</td>
+	  <td>EE. UU. sur</td>
 	  <td>api.ng.bluemix.net</td>
 	</tr>
 	<tr>
@@ -73,7 +73,7 @@ En la tabla siguiente se muestran los puntos finales de {{site.data.keyword.clou
 	  <td>`https://activity-tracker.au-syd.bluemix.net`</td>
 	</tr>
 	<tr>
-	  <td>EE.UU. sur</td>
+	  <td>EE. UU. sur</td>
 	  <td>`https://activity-tracker.ng.bluemix.net`</td>
 	</tr>
 	<tr>

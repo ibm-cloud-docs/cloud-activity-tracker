@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-09-07"
 # イベント保存ポリシーの構成
 {: #configuring_retention_policy}
 
-コマンド **ibmcloud at option** を使用して、{{site.data.keyword.cloudaccesstrailshort}} 内でイベントが保持される最大日数を定義する保存ポリシーを表示および構成します。デフォルトでは、保存ポリシーは無効になっており、イベントは無期限に保持されます。保存期間を過ぎると、イベントは自動的に削除されます。
+コマンド **ibmcloud at option** を使用して、{{site.data.keyword.cloudaccesstrailshort}} 内でイベントが保持される最大日数を定義する保存ポリシーを表示および構成します。 デフォルトでは、保存ポリシーは無効になっており、イベントは無期限に保持されます。 保存期間を過ぎると、イベントは自動的に削除されます。 
 {:shortdesc}
 
 アカウント内のすべてのスペースに同じ保存ポリシーを設定するか、特定のスペースの保存期間をカスタマイズすることができます。 
@@ -30,9 +30,9 @@ lastupdated: "2018-09-07"
 
 保存ポリシーを無効化するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 2. 保存期間を無効にするため、保存期間を **-1** に設定します。 次のコマンドを実行します。
 
@@ -66,11 +66,11 @@ ibmcloud at option -r -1
 ## スペースのログ保存ポリシーの確認
 {: #check_retention_policy_space}
 
-{{site.data.keyword.Bluemix_notm}} スペースに設定されている保存期間を取得するには、以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} スペースに設定されている保存期間を取得するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 2. 保存期間を取得します。 次のコマンドを実行します。
 
@@ -94,11 +94,11 @@ ibmcloud at option -r -1
 ## アカウントのすべてのスペースのログ保存ポリシーの確認
 {: #check_retention_policy_account}
 
-アカウントの各 {{site.data.keyword.Bluemix_notm}} スペースに設定されている保存期間を取得するには、以下のステップを実行します。
+アカウントの各 {{site.data.keyword.cloud_notm}} スペースに設定されている保存期間を取得するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
     
 2. アカウントの各スペースの保存期間を取得します。 次のコマンドを実行します。
 
@@ -126,11 +126,11 @@ ibmcloud at option -r -1
 ## アカウント全体でのログ保存ポリシーの設定
 {: #set_retention_policy_space}
 
-{{site.data.keyword.Bluemix_notm}} アカウントの保存期間を設定するには、以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} アカウントの保存期間を設定するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 2. 保存期間を設定します。 次のコマンドを実行します。
 
@@ -170,11 +170,11 @@ ibmcloud at option -r 15 -a
 ## スペースのログ保存ポリシーの設定
 {: #set_retention_policy_account}
 
-{{site.data.keyword.Bluemix_notm}} スペースの保存期間を表示するには、以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} スペースの保存期間を表示するには、以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
     
 2. 保存期間を設定します。 次のコマンドを実行します。
 

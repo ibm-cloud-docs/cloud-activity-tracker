@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -25,18 +25,18 @@ In diesem Lernprogramm erfahren Sie, wie Sie mit der {{site.data.keyword.cloudac
 
 Führen Sie die folgenden Schritte aus:
 
-1. [Stellen Sie die {{site.data.keyword.keymanagementservicelong_notm}} bereit und generieren Sie Ereignisse](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step1).
-2. [Rufen Sie Informationen zu gespeicherten Ereignissen ab (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step2).
-2. [Geben Sie durch Erstellen einer Sitzung an, welche Protokolle heruntergeladen werden (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step3).
-3. [Rufen Sie die tatsächlichen Protokolldaten ab (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step4).
-4. [Löschen Sie die Sitzung nach Beendigung des Downloads (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step5).
-5. [Löschen Sie nicht erforderliche Protokolle manuell (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#step6).
+1. [Stellen Sie die {{site.data.keyword.keymanagementservicelong_notm}} bereit und generieren Sie Ereignisse](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step1).
+2. [Rufen Sie Informationen zu gespeicherten Ereignissen ab (ibmcloud at status)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step2).
+2. [Geben Sie durch Erstellen einer Sitzung an, welche Protokolle heruntergeladen werden (ibmcloud at session create)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step3).
+3. [Rufen Sie die tatsächlichen Protokolldaten ab (ibmcloud at download)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step4).
+4. [Löschen Sie die Sitzung nach Beendigung des Downloads (ibmcloud at session delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step5).
+5. [Löschen Sie nicht erforderliche Protokolle manuell (ibmcloud at delete)](/docs/services/cloud-activity-tracker/tutorials/manage_events_cli.html#tutorial2_step6).
 
 
 ## Voraussetzungen
-{: #assumptions}
+{: #tutorial2_assumptions}
 
-1. Sie verfügen über eine {{site.data.keyword.Bluemix_notm}}-Benutzer-ID mit Entwicklerberechtigungen zum Arbeiten in einem Bereich eines {{site.data.keyword.Bluemix_notm}}-Kontos, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt ist. 
+1. Sie verfügen über eine {{site.data.keyword.cloud_notm}}-Benutzer-ID mit Entwicklerberechtigungen zum Arbeiten in einem Bereich eines {{site.data.keyword.cloud_notm}}-Kontos, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt ist. 
 
     Weitere Information zum Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service](/docs/services/cloud-activity-tracker/how-to/provision.html#provision) bereitstellen.
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus:
 
     Weitere Informationen zum Installieren der Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloudaccesstrailshort}} finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-CLI konfigurieren](/docs/services/cloud-activity-tracker/how-to/config_cli.html#config_cli).
 
-4. Sie haben sich über die Befehlszeile bei {{site.data.keyword.Bluemix_notm}} angemeldet. In diesem Lernprogramm sollten Sie die folgenden Befehle von einem Terminal ausführen: 
+4. Sie haben sich über die Befehlszeile bei {{site.data.keyword.cloud_notm}} angemeldet. In diesem Lernprogramm sollten Sie die folgenden Befehle von einem Terminal ausführen: 
 
     Befehl `ibmcloud login -a api.ng.bluemix.net` zum Anmelden bei der Region 'Vereinigte Staaten (Süden)'. Weitere Informationen finden Sie in [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login).
     
@@ -56,13 +56,13 @@ Führen Sie die folgenden Schritte aus:
 
 
 ## Schritt 1: IBM Key Protect-Service bereitstellen und Ereignisse generieren 
-{: #step1}
+{: #tutorial2_step1}
 	
-Führen Sie die folgenden Schritte aus, um den {{site.data.keyword.keymanagementserviceshort}}-Service in der {{site.data.keyword.Bluemix_notm}} bereitzustellen und Ereignisse zu generieren:
+Führen Sie die folgenden Schritte aus, um den {{site.data.keyword.keymanagementserviceshort}}-Service in der {{site.data.keyword.cloud_notm}} bereitzustellen und Ereignisse zu generieren:
 
 1. Stellen Sie eine Instanz des {{site.data.keyword.keymanagementserviceshort}}-Service in der Region 'Vereinigte Staaten (Süden)' bereit. Weitere Informationen finden Sie in [Bereitstellung über IBM Cloud-Konsole durchführen](/docs/services/key-protect/provision.html#provision).
 
-2. Definieren Sie die {{site.data.keyword.Bluemix_notm}}-Berechtigungen für den Benutzer, der künftig mit Schlüsseln arbeiten soll. 
+2. Definieren Sie die {{site.data.keyword.cloud_notm}}-Berechtigungen für den Benutzer, der künftig mit Schlüsseln arbeiten soll. 
 
     * Damit ein Benutzer Schlüssel erstellen kann, ist für ihn eine IAM-Richtlinie erforderlich, bei der für die Servicerolle der Wert *Manager* (Manager) oder *Schreibberechtigter* (Writer) festgelegt ist.
 	* Damit ein Benutzer Schlüssel löschen kann, ist für ihn eine IAM-Richtlinie erforderlich, bei der für die Servicerolle der Wert *Manager* (Manager) festgelegt ist.
@@ -73,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um den {{site.data.keyword.keymanagement
 {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse werden als Ergebnis der Erstellung eines Schlüssels generiert.
 
 ## Schritt 2: Informationen zu den gespeicherten Ereignissen abrufen
-{: #step2}
+{: #tutorial2_step2}
 
 {{site.data.keyword.keymanagementserviceshort}}-Ereignisse sind in der {{site.data.keyword.cloudaccesstrailshort}}-Kontodomäne verfügbar.
 
@@ -106,13 +106,13 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 ```
 {: screen}
 
-Dieser Befehl zählt die Ereignisse für den 25. Juni 2017. {{site.data.keyword.cloudaccesstrailshort}} ist ein globaler Service, darum sind die Tage in koordinierter Weltzeit (UTC) angegeben. Um die Ereignisse für einen vollständigen Tag der Ortszeit abzurufen, müssen Sie wahrscheinlich die Daten für mehrere UTC-Tage herunterladen.
+Dieser Befehl zählt die Ereignisse für den 25. Juni 2017.  {{site.data.keyword.cloudaccesstrailshort}} ist ein globaler Service, darum sind die Tage in koordinierter Weltzeit (UTC) angegeben. Um die Ereignisse für einen vollständigen Tag der Ortszeit abzurufen, müssen Sie wahrscheinlich die Daten für mehrere UTC-Tage herunterladen.
 
 
 
 
 ## Schritt 3: Ereignisse zum Herunterladen angeben
-{: #step3}
+{: #tutorial2_step3}
 
 Erstellen Sie vor dem Herunterladen von Ereignissen eine Sitzung. In der Sitzung wird angegeben, welche Ereignisse heruntergeladen werden.
 
@@ -167,7 +167,7 @@ Weitere Informationen zu Sitzungen und zum Befehl `ibmcloud at session create` f
 Verwenden Sie den Befehl `ibmcloud at session help create`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 4: Laden Sie die Ereignisse herunter, die für den Bereich erkannt werden, der für die Sitzung definiert ist
-{: #step4}
+{: #tutorial2_step4}
 
 Führen Sie den folgenden Befehl aus, um die durch die Sitzungsparameter angegebenen Ereignisse herunterzuladen:
 
@@ -198,7 +198,7 @@ Weitere Informationen zum Befehl `ibmcloud at download` finden Sie in der [CLI-R
 Verwenden Sie den Befehl `ibmcloud at help download`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 5: Sitzung löschen
-{: #step5}
+{: #tutorial2_step5}
 
 Wenn der Download abgeschlossen ist, löschen Sie die Sitzung. Führen Sie dazu den folgenden Befehl aus:
 
@@ -230,7 +230,7 @@ Weitere Informationen zum Befehl `ibmcloud at session delete` finden Sie in der 
 Verwenden Sie den Befehl `ibmcloud at session help delete`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 6: Ereignisse in Activity Tracker automatisch löschen
-{: #step6}
+{: #tutorial2_step6}
 
 Sie können die Aufbewahrungsdauer für Îhre Ereignisse in {{site.data.keyword.cloudaccesstrailshort}} steuern. Sie können Ereignisse manuell löschen oder das automatische Löschen von Ereignissen konfigurieren.
 
@@ -241,6 +241,7 @@ $ ibmcloud at delete -s 2017-07-25 -e 2017-07-25
 Deleted successfully
 "6 logs were deleted,freeing 13737 bytes."
 ```
+{: screen}
 
 Weitere Informationen zum Befehl `ibmcloud at delete` finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference/at_cli_cloud.html#delete).
 

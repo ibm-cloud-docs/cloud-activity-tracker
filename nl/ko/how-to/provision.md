@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,17 +25,17 @@ lastupdated: "2018-09-07"
 
 
 ## UI에서의 프로비저닝
-{: #ui}
+{: #provision_ui}
 
-{{site.data.keyword.Bluemix_notm}}에서 {{site.data.keyword.cloudaccesstraillong_notm}} 서비스의 인스턴스를 프로비저닝하려면 다음 단계를 완료하십시오.
+{{site.data.keyword.cloudaccesstraillong_notm}}의 인스턴스를 {{site.data.keyword.cloud_notm}}에서 프로비저닝하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.Bluemix_notm}} 계정에 로그인하십시오.
+1. {{site.data.keyword.cloud_notm}} 계정에 로그인하십시오.
 
-    {{site.data.keyword.Bluemix_notm}} UI는 [http://bluemix.net ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://bluemix.net){:new_window}에 있습니다. 
+    {{site.data.keyword.cloud_notm}} UI는 [http://bluemix.net ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://bluemix.net){:new_window}에 있습니다.
     
-	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.Bluemix_notm}} UI가 열립니다.
+	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
-2. **카탈로그**를 클릭하십시오. {{site.data.keyword.Bluemix_notm}}에서 사용 가능한 서비스의 목록이 열립니다.
+2. **카탈로그**를 클릭하십시오. {{site.data.keyword.cloud_notm}}에서 사용 가능한 서비스의 목록이 열립니다.
 
 3. **보안** 카테고리를 선택하여 표시되는 서비스의 목록을 필터링하십시오.
 
@@ -55,7 +55,7 @@ lastupdated: "2018-09-07"
 	  </tr>
 	  <tr>
 	    <td>배치할 지역 선택:</td>
-		<td>올바른 값은 미국 남부, 영국, 독일, 시드니입니다. </td>
+		<td>올바른 값은 미국 남부, 영국, 독일, 시드니입니다.</td>
 	  </tr>
 	  <tr>
 	    <td>조직 선택:</td>
@@ -63,7 +63,7 @@ lastupdated: "2018-09-07"
 	  </tr>
 	  <tr>
 	    <td>영역 선택:</td>
-		<td>활동을 모니터하기 위해 선택한 조직 내의 영역을 선택하십시오. </td>
+		<td>활동을 모니터하기 위해 선택한 조직 내의 영역을 선택하십시오.</td>
 	  </tr>
 	</table>
 
@@ -73,26 +73,26 @@ lastupdated: "2018-09-07"
 
     자세한 정보는 [서비스 플랜](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)을 참조하십시오.
 	
-7. **작성**을 클릭하여 로그인되어 있는 {{site.data.keyword.Bluemix_notm}} 영역에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하십시오.
+7. **작성**을 클릭하여 로그인되어 있는 {{site.data.keyword.cloud_notm}} 영역에 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하십시오.
   
  
 
 ## CLI에서의 프로비저닝
-{: #cli}
+{: #provision_cli}
 
-CLI를 통해 {{site.data.keyword.cloudaccesstrailshort}}의 인스턴스를 {{site.data.keyword.Bluemix_notm}}에서 프로비저닝하려면 다음 단계를 완료하십시오.
+CLI를 통해 {{site.data.keyword.cloudaccesstrailshort}}의 인스턴스를 {{site.data.keyword.cloud_notm}}에서 프로비저닝하려면 다음 단계를 완료하십시오.
 
-1. [전제조건] {{site.data.keyword.Bluemix_notm}} CLI를 설치하십시오. 
+1. [전제조건] {{site.data.keyword.cloud_notm}} CLI를 설치하십시오.
 
-   자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli/reference/ibmcloud/download_cli.html#install_use)를 참조하십시오. 
+   자세한 정보는 [{{site.data.keyword.cloud_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)를 참조하십시오.
    
-   CLI가 설치되어 있는 경우에는 다음 단계로 진행하십시오. 
+   CLI가 설치되어 있는 경우에는 다음 단계로 진행하십시오.
     
-2. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오.  
+2. {{site.data.keyword.cloud_notm}}에 로그인하십시오. 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.Bluemix_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오. 
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
 	
-3. `ibmcloud service create` 명령을 실행하여 인스턴스를 프로비저닝하십시오. 
+3. `ibmcloud service create` 명령을 실행하여 인스턴스를 프로비저닝하십시오.
 
     ```
 	ibmcloud service create service_name service_plan service_instance_name
@@ -101,11 +101,11 @@ CLI를 통해 {{site.data.keyword.cloudaccesstrailshort}}의 인스턴스를 {{s
 	
 	여기서,
 	
-	* service_name은 서비스의 이름(즉, **accessTrail**)입니다. 
-	* service_plan은 서비스 플랜 이름입니다. 플랜의 목록은 [서비스 플랜](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#plan)을 참조하십시오. 
-	* service_instance_name은 작성하는 새 서비스 인스턴스에 사용할 이름입니다. 
+	* service_name은 서비스의 이름(즉, **accessTrail**)입니다.
+	* service_plan은 서비스 플랜 이름입니다. 플랜의 목록은 [서비스 플랜](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)을 참조하십시오.
+	* service_instance_name은 작성하는 새 서비스 인스턴스에 사용할 이름입니다.
 
-	예를 들어, 표준 플랜을 사용하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스의 인스턴스를 작성하려면 다음 명령을 실행하십시오.	
+	예를 들어, 표준 플랜을 사용하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스의 인스턴스를 작성하려면 다음 명령을 실행하십시오.
 	
 	```
 	ibmcloud service create accessTrail free my_activitytracker_svc

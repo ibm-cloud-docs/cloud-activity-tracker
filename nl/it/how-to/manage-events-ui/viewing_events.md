@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-09"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,12 +20,12 @@ lastupdated: "2018-07-09"
 # Visualizzazione degli eventi
 {: #view_acc_events}
 
-Puoi visualizzare gli eventi tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} nella console {{site.data.keyword.Bluemix_notm}} o tramite Kibana.
+Puoi visualizzare gli eventi tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} nella console {{site.data.keyword.cloud_notm}} o tramite Kibana.
 {:shortdesc}
    
 
 ## Visualizzazione degli eventi dell'account
-{: #account_events}
+{: #view_acc_events_account_events}
 
 Puoi visualizzare gli eventi in un dominio dell'account {{site.data.keyword.cloudaccesstrailshort}} tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} o Kibana.
 
@@ -33,7 +33,7 @@ Un **proprietario dell'account** dispone delle autorizzazioni per visualizzare g
 
 Come **membro in un account**, considera le seguenti informazioni per visualizzare gli eventi dell'account in una regione:
 
-* Devi avere il ruolo di *sviluppatore* nello spazio in cui viene eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+* Devi avere il ruolo di *sviluppatore* nello spazio in cui viene eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}. Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
 
 * Devi avere una politica IAM per il servizio {{site.data.keyword.loganalysisshort}} con il ruolo *visualizzatore* in tale regione. Il ruolo di visualizzatore è il ruolo minimo IAM richiesto. Per ulteriori informazioni, vedi [Concessione delle autorizzazioni IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
 
@@ -42,7 +42,7 @@ Come **membro in un account**, considera le seguenti informazioni per visualizza
 
 
 ## Visualizzazione degli eventi dello spazio
-{: #space_events}
+{: #view_acc_events_space_events}
 
 Puoi visualizzare gli eventi in un dominio dello spazio {{site.data.keyword.cloudaccesstrailshort}} tramite l'IU {{site.data.keyword.cloudaccesstrailshort}}. Se hai un piano premium, puoi visualizzare gli eventi anche tramite Kibana.
 

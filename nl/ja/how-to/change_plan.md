@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-09-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -20,15 +20,15 @@ lastupdated: "2018-09-07"
 # プランの変更
 {: #change_plan}
 
-{{site.data.keyword.Bluemix_notm}} UI を介して、または、`ibmcloud service update` コマンドを実行することによって、{{site.data.keyword.cloudaccesstraillong}} サービス・プランを変更できます。プランのアップグレード、またはライト・プランへの切り替えは、いつでも実行できます。
+{{site.data.keyword.cloud_notm}} UI を介して、または、`ibmcloud service update` コマンドを実行することによって、{{site.data.keyword.cloudaccesstraillong}} サービス・プランを変更できます。 プランのアップグレード、またはライト・プランへの切り替えは、いつでも実行できます。
 {:shortdesc}
 
 ## UI を介したサービス・プランの変更
 {: #change_plan_ui}
 
-{{site.data.keyword.Bluemix_notm}} UI を介してサービス・プランを変更するには、以下の手順を実行します。
+{{site.data.keyword.cloud_notm}} UI を介してサービス・プランを変更するには、以下の手順を実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインし、*ダッシュボード* から {{site.data.keyword.cloudaccesstraillong_notm}} サービスをクリックします。 
+1. {{site.data.keyword.cloud_notm}} にログインし、*ダッシュボード* から {{site.data.keyword.cloudaccesstraillong_notm}} サービスをクリックします。 
     
 2. **「プラン」**タブを選択します。
 
@@ -45,9 +45,9 @@ lastupdated: "2018-09-07"
 
 CLI を介してサービス・プランを変更するには、以下の手順を実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} にログインします。 
+1. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.Bluemix_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 2. `ibmcloud service list` コマンドを実行して、現在のプランを確認し、スペースで使用可能なサービスのリストから {{site.data.keyword.cloudaccesstrailshort}} サービス名を取得します。 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-07-07"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -23,13 +23,13 @@ lastupdated: "2018-07-07"
 Terminais são diferentes por  {{site.data.keyword.Bluemix}}  região.
 {:shortdesc}
 
-## Terminais {{site.data.keyword.Bluemix_notm}}
+## Terminais {{site.data.keyword.cloud_notm}}
 {: #ibm_cloud_endpoints}
 
-A tabela a seguir lista as URLs por região que devem ser usadas para efetuar login no {{site.data.keyword.Bluemix_notm}}:
+A tabela a seguir lista as URLs por região que devem ser usadas para efetuar login no {{site.data.keyword.cloud_notm}}:
 	
 <table>
-	<caption>Tabela 1. Terminais {{site.data.keyword.Bluemix_notm}}</caption>
+	<caption>Tabela 1. Terminais {{site.data.keyword.cloud_notm}}</caption>
 	<tr>
 	  <th>Região</th>
 	  <th>URL</th>

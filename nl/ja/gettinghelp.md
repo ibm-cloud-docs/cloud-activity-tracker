@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2018
-lastupdated: "2018-04-25"
+  years: 2016, 2019
+lastupdated: "2019-01-23"
 
 ---
 
@@ -22,9 +22,9 @@ lastupdated: "2018-04-25"
 {{site.data.keyword.Bluemix}} で {{site.data.keyword.cloudaccesstraillong}} サービスを使用していて問題や質問がある場合は、フォーラムで情報を検索したり質問を投稿したりして役立つ情報を得ることができます。 サポート・チケットをオープンすることもできます。
 {:shortdesc}
 
-* [{{site.data.keyword.Bluemix_notm}} 状況ページ](https://developer.ibm.com/bluemix/support/#status){:new_window}にアクセスすることにより、{{site.data.keyword.Bluemix_notm}} が使用可能かどうかを確認できます。
+* [{{site.data.keyword.cloud_notm}} 状況ページ](https://developer.ibm.com/bluemix/support/#status){:new_window}にアクセスすることにより、{{site.data.keyword.cloud_notm}} が使用可能かどうかを確認できます。
 
-* フォーラムで過去に他のユーザーが同じ問題に遭遇したかどうかを確認できます。 フォーラムを使用して質問する場合は、{{site.data.keyword.Bluemix_notm}}  の開発チームの目に触れるように、質問にタグを付けます。
+* フォーラムで過去に他のユーザーが同じ問題に遭遇したかどうかを確認できます。 フォーラムを使用して質問する場合は、{{site.data.keyword.cloud_notm}}  の開発チームの目に触れるように、質問にタグを付けます。
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
   * {{site.data.keyword.cloudaccesstrailshort}} サービスを使用したアプリの開発やデプロイについて技術的な質問がある場合は、[Stack Overflow](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} に質問を投稿し、その質問に「**ibm-cloud**」と「**activity-tracker**」のタグを付けます。
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
