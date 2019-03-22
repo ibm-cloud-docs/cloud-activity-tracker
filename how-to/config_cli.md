@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-22"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -41,7 +41,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 2. Find out the name of the plug-in in the repo. Run the following command:
 
     ```
-    ibmcloud plug-in repo-plugins
+    ibmcloud plugin repo-plugins
     ```
     {: codeblock}
     
@@ -50,7 +50,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 3. Install the {{site.data.keyword.cloudaccesstrailshort}} plug-in. Run the following command:
 
     ```
-    ibmcloud plug-in install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker -r Bluemix
     ```
     {: codeblock}
  
@@ -59,7 +59,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     For example, run the following command to see the list of plugins that are installed:
     
     ```
-    ibmcloud plug-in list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
@@ -85,7 +85,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
     For example, check the version of the plug-in. Run the following command:
     
     ```
-    ibmcloud plug-in list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
@@ -107,7 +107,7 @@ Complete the following steps to install the plug-in on Linux:
 2. Install the plug-in. Run the following command:
         
     ```
-    ibmcloud plug-in install -f activity-tracker-linux-amd64-3.3.0
+    ibmcloud plugin install -f activity-tracker-linux-amd64-3.3.0
     ```
     {: codeblock}
 
@@ -127,7 +127,7 @@ Complete the following steps to install the plug-in on Windows:
 2. Install the plug-in. Run the following command:
         
     ```
-    ibmcloud plug-in install -f activity-tracker-windows-amd64-3.3.0.exe
+    ibmcloud plugin install -f activity-tracker-windows-amd64-3.3.0.exe
     ```
     {: codeblock}
 
@@ -146,7 +146,7 @@ Complete the following steps to install the plug-in on Mac OS X:
 2. Install the plug-in. Run the following command:
         
     ```
-    ibmcloud plug-in install -f activity-tracker-darwin-amd64-3.3.0
+    ibmcloud plugin install -f activity-tracker-darwin-amd64-3.3.0
     ```
     {: codeblock}
 
@@ -165,16 +165,16 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
     For example, check the version of the plug-in. Run the following command:
     
     ```
-    ibmcloud plug-in list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
-2. If the plug-in is installed, run the `ibmcloud plug-in uninstall` to uninstall the CLI plug-in.
+2. If the plug-in is installed, run the `ibmcloud plugin uninstall` to uninstall the CLI plug-in.
 
     Run the following command:
         
     ```
-    ibmcloud plug-in uninstall activity-tracker
+    ibmcloud plugin uninstall activity-tracker
     ```
     {: codeblock}
   
@@ -182,7 +182,7 @@ Complete the following steps to uninstall the {{site.data.keyword.cloudaccesstra
 ## Updating the {{site.data.keyword.cloudaccesstrailshort}} CLI from the repo
 {: #update_cli}
 
-To update the CLI, run the *ibmcloud plug-in update* command.
+To update the CLI, run the *ibmcloud plugin update* command.
 {:shortdesc}
 
 Complete the following steps to update the {{site.data.keyword.cloudaccesstrailshort}} service CLI:
@@ -190,7 +190,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
 1. Update the {{site.data.keyword.cloudaccesstrailshort}} plug-in. Run the following command:
 
     ```
-    ibmcloud plug-in update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker -r Bluemix
     ```
     {: codeblock}
  
@@ -199,7 +199,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
     For example, verify the version of the plug-in. Run the following command:
     
     ```
-    ibmcloud plug-in list
+    ibmcloud plugin list
     ```
     {: codeblock}
     
@@ -289,10 +289,10 @@ A command can have subcommands. To get help on subcommands, complete the followi
 ## Show the details of the plug-in
 {: #show}
   
-Use the 'ibmcloud plug-in show activity-tracker' command to show the plug-in details. 
+Use the 'ibmcloud plugin show activity-tracker' command to show the plug-in details. 
 
 ```
-ibmcloud plug-in show activity-tracker
+ibmcloud plugin show activity-tracker
 ```
 {: codeblock}
     
