@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: IBM Cloud, Activity Tracker, account events
 
@@ -84,7 +84,7 @@ The following table lists the API method that generates an event when they are c
 	  <td>An event is generated when you activate the user in the account. </br>When the user verifies his email address, the event is generated.</td>
   </tr>
   <tr>
-    <td>user-management.account.user.delete</td>
+    <td>user-management.user.delete</td>
 	  <td>An event is generated when you remove a user from the account. </br>The account owner is the only user in the account that can perform this action.</td>
   </tr>
 </table>
