@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 合规性
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} 提供了根据 IBM 严格安全标准构建的云平台和服务。](/docs/security/compliance.html#compliance){{site.data.keyword.cloudaccesstraillong}} 服务是专为 {{site.data.keyword.cloud_notm}} 而构建的 DevOps 服务。
+[{{site.data.keyword.cloud_notm}} 提供了根据 IBM 严格安全标准构建的云平台和服务](/docs/security/compliance.html#compliance)。{{site.data.keyword.cloudaccesstraillong}} 服务是专为 {{site.data.keyword.cloud_notm}} 而构建的 DevOps 服务。
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ lastupdated: "2019-01-23"
 
 如果将付费套餐更改为标准套餐或轻量套餐，那么长期存储库中的事件大约将在一天后删除。
 
-您可以随时开具支持凭单来请求删除所有数据。有关开具 IBM 支持凭单的信息，请参阅[联系支持人员](/docs/get-support/howtogetsupport.html#getting-customer-support)。
+您可以随时开具支持凭单来请求删除所有数据。有关开具 IBM 支持凭单的信息，请参阅[获取支持](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)。
 
 
 
@@ -64,9 +72,9 @@ lastupdated: "2019-01-23"
 
 有关更多信息，请参阅：
 
-[{{site.data.keyword.cloud_notm}} 安全合规性](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} 安全合规性](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - {{site.data.keyword.IBM_notm}} 官方页面](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} 官方页面 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

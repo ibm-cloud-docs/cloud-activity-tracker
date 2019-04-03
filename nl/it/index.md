@@ -19,7 +19,7 @@ lastupdated: "2019-02-18"
 # Introduzione
 {: #getting-started-with-cla}
 
-Il servizio {{site.data.keyword.cloudaccesstrailfull}} registra le attività avviate dall'utente che modificano lo stato di un servizio in {{site.data.keyword.Bluemix}}. Impara ad utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare un'interazione dell'utente con un servizio cloud.
+Il servizio {{site.data.keyword.cloudaccesstrailfull}} registra le attività avviate dall'utente che modificano lo stato di un servizio in {{site.data.keyword.Bluemix}}. Impara ad utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare un'interazione dell'utente con un servizio cloud. 
 {:shortdesc}
 
 La seguente figura mostra i diversi componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio:
@@ -35,7 +35,7 @@ La seguente figura mostra i diversi componenti e azioni che si verificano quando
 * Controlla le regioni in cui è disponibile il servizio. Per ulteriori informazioni, vedi [Regioni](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
 * Ottieni un ID utente che è un membro o un proprietario di un account {{site.data.keyword.cloud_notm}}. 
 
-    Per ottenere un ID utente {{site.data.keyword.cloud_notm}}, vai a: [Registrazione ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/registration/){:new_window}.
+    Per ottenere un ID utente {{site.data.keyword.cloud_notm}}, vai a: [Registrazione ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 
 
 
@@ -56,9 +56,7 @@ Prendi in considerazione le seguenti informazioni per scegliere dove eseguire il
 
 Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}} in {{site.data.keyword.cloud_notm}}:
 
-1. Accedi a {{site.data.keyword.cloud_notm}}.
-
-    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}.
+1. [Accedi a {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -86,7 +84,7 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 	  </tr>
 	  <tr>
 	    <td>Scegli un'organizzazione:</td>
-		<td>Seleziona l'organizzazione in cui scegli di eseguire il provisioning del tuo piano {{site.data.keyword.cloudaccesstrailshort}}.</td>
+		<td>Seleziona l'organizzazione in cui scegli di eseguire il provisioning del tuo servizio {{site.data.keyword.cloudaccesstrailshort}}.</td>
 	  </tr>
 	  <tr>
 	    <td>Scegli uno spazio:</td>
@@ -94,7 +92,7 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 	  </tr>
 	</table>
 
-6. Seleziona un piano.  
+6. Seleziona un piano. 
 
     Per impostazione predefinita, viene selezionato il piano **Lite**.
 
@@ -126,12 +124,10 @@ Per visualizzare gli eventi, devi avere le autorizzazioni di accesso in {{site.d
 
 Completa la seguente procedura per concedere una politica IAM a un utente dall'IU {{site.data.keyword.cloud_notm}}:
 
-1. Accedi alla console {{site.data.keyword.cloud_notm}}.
+1. [Accedi alla console {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 
-    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}
-
-2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**. 
-3. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** e fai quindi clic su **Assegna accesso**. 
+2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**.
+3. Dalla riga per l'utente a cui desideri assegnare l'accesso, seleziona il menu **Azioni** e fai quindi clic su **Assegna accesso**.
 4. Seleziona **Assegna l'accesso alle risorse**.
 5. Seleziona **Analisi log**.
 6. Seleziona **Tutte le regioni**.
@@ -144,13 +140,11 @@ Completa la seguente procedura per concedere una politica IAM a un utente dall'I
 
 Per concedere a un utente un ruolo di sviluppatore in uno spazio dall'IU {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. Accedi alla console {{site.data.keyword.cloud_notm}}.
-
-    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com){:new_window}
+1. [Accedi alla console {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 	
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
-2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**. 
+2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**.
 
 3. Seleziona l'utente.
 
@@ -170,7 +164,8 @@ Per concedere a un utente un ruolo di sviluppatore in uno spazio dall'IU {{site.
 
 
 
-## Passo 3: genera gli eventi {{site.data.keyword.cloudaccesstrailshort}} 
+
+## Passo 3: genera gli eventi {{site.data.keyword.cloudaccesstrailshort}}
 {: #index_step3}
 
 Dopo aver eseguito il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, gli eventi vengono raccolti automaticamente dai servizi cloud selezionati. Per ulteriori informazioni sui servizi che puoi monitorare con {{site.data.keyword.cloudaccesstrailshort}}, incluse le informazioni sulle azioni che generano un evento {{site.data.keyword.cloudaccesstrailshort}}, consulta [Servizi cloud](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services).
@@ -206,7 +201,7 @@ Puoi monitorare gli eventi {{site.data.keyword.cloudaccesstrailshort}} nell'IU {
 
 La seguente tabella definisce il dominio {{site.data.keyword.cloudaccesstrailshort}} in cui devi monitorare gli eventi:
 
-| Monitoraggio                                                           | Dominio {{site.data.keyword.cloudaccesstrailshort}}  |  
+| Monitoraggio                                                           | Dominio {{site.data.keyword.cloudaccesstrailshort}} |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
 | `Global account actions`                                             | dominio account Stati Uniti Sud                            |  
 | `Services that are provisioned in the context of a resource group`   | dominio account                                     | 

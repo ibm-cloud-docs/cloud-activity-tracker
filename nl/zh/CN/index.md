@@ -35,7 +35,7 @@ lastupdated: "2019-02-18"
 * 查看提供该服务的区域。有关更多信息，请参阅[区域](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)。
 * 获取 {{site.data.keyword.cloud_notm}} 帐户的成员或所有者的用户标识。 
 
-    要获取 {{site.data.keyword.cloud_notm}} 用户标识，请转至[注册 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/registration/){:new_window}。
+    要获取 {{site.data.keyword.cloud_notm}} 用户标识，请转至[注册 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 
 
 
@@ -56,9 +56,7 @@ lastupdated: "2019-02-18"
 
 要在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.cloud_notm}}。
-
-    可在以下地址找到 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com){:new_window}。
+1. [登录到 {{site.data.keyword.cloud_notm}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -126,9 +124,7 @@ lastupdated: "2019-02-18"
 
 要通过 {{site.data.keyword.cloud_notm}} UI 来为用户授予 IAM 策略，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
-
-    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com){:new_window}
+1. [登录到 {{site.data.keyword.cloud_notm}} 控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 
 2. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后选择**用户**。
 3. 在要为其分配访问权的用户所在的行中，选择**操作**菜单，然后单击**分配访问权**。
@@ -144,9 +140,7 @@ lastupdated: "2019-02-18"
 
 要通过 {{site.data.keyword.cloud_notm}} UI 为用户授予空间中的 developer 角色，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
-
-    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com){:new_window}
+1. [登录到 {{site.data.keyword.cloud_notm}} 控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -167,6 +161,7 @@ lastupdated: "2019-02-18"
 8. 从操作菜单中，选择**编辑空间角色**。为*空间角色*字段选择 **Developer** 角色。然后，单击**保存角色**。
 	
 7. 单击**分配**。
+
 
 
 

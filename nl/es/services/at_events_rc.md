@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, resource controller events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # Sucesos de instancia de servicio  
 {: #at_events_rc}
@@ -22,9 +27,10 @@ lastupdated: "2019-01-23"
 Como agente de seguridad, auditor o gestor, puede utilizar el servicio {{site.data.keyword.cloudaccesstrailfull}} para realizar un seguimiento de cómo interactúan los usuarios y las aplicaciones con los servicios de {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
-El servicio {{site.data.keyword.cloudaccesstrailfull_notm}} registra las actividades iniciadas por el usuario que cambian el estado de un servicio en {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Acerca de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+El servicio {{site.data.keyword.cloudaccesstrailfull_notm}} registra las actividades iniciadas por el usuario que cambian el estado de un servicio en {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Acerca de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 
-Para empezar a supervisar las acciones del usuario, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
+Para empezar a supervisar las acciones del usuario, consulte [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). 
+
 
 ## Sucesos para el suministro y la gestión de instancias de servicio
 {: #at_events_rc_provision}
@@ -102,6 +108,9 @@ En la tabla siguiente se muestran los métodos de API que generan un suceso cuan
 
 Los sucesos de {{site.data.keyword.cloudaccesstrailshort}} están disponibles en el **dominio de cuenta** de la región **EE. UU. sur**.
 
-Para ver estos sucesos, debe suministrar una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} en la región **EE. UU. sur**. A continuación, debe abrir la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} y cambiar al dominio de cuenta para ver los sucesos. Para obtener más información, consulte [Visualización de sucesos de cuenta](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events).
+Para ver estos sucesos, debe suministrar una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} en la región **EE. UU. sur**. A continuación, debe abrir la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} y cambiar al dominio de cuenta para ver los sucesos. 
+
+Para obtener más información, consulte [Visualización de sucesos de cuenta](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events).
+
 
 

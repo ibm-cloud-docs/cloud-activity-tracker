@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # イベントのダウンロード
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ API を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを�
 
 1. UAA トークンを取得します。
 
-    詳しくは、[UAA トークンの取得](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)を参照してください。
+    詳しくは、[UAA トークンの取得](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)を参照してください。
 
 2. セッションを作成し、ダウンロードするイベントのサブセットを定義する条件を指定します。
 
@@ -53,19 +59,19 @@ API を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを�
     ```
     {: codeblock}
 
-    ここで、
+    各部の意味は次のとおりです。
     
-    * *token* は、前のステップで取得した UAA トークンを表します。
+    *token* は、前のステップで取得した UAA トークンを表します。
 
-    * *spaceID* は、{{site.data.keyword.cloudaccesstrailshort}} をプロビジョンした Cloud Foundry スペースの UUID を表します。
+    *spaceID* は、{{site.data.keyword.cloudaccesstrailshort}} をプロビジョンした Cloud Foundry スペースの UUID を表します。
 
-    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
+    *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
 
-    * *start* および *end* は、ダウンロードするイベントの期間を表します。 日付形式は *YYYY-MM-DD* です。 
+    *start* および *end* は、ダウンロードするイベントの期間を表します。 日付形式は *YYYY-MM-DD* です。 
 
-    * *AtAccountLevel* は、ダウンロードするイベントが、アカウント・ドメイン内にあるのか、スペース・ドメイン内にあるのかを示します。
+    *AtAccountLevel* は、ダウンロードするイベントが、アカウント・ドメイン内にあるのか、スペース・ドメイン内にあるのかを示します。
     
-    * *SearchTime* は、ダウンロードするイベントの時刻を示します。
+    *SearchTime* は、ダウンロードするイベントの時刻を示します。
 
     米国南部地域のスペース・ドメインからイベントをダウンロードするためのセッションを作成するには、パラメーター **AtAccountLevel** を *false* に設定します。
 

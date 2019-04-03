@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Visualización de sucesos
@@ -33,11 +38,11 @@ Un **propietario de cuenta** tiene permisos para ver los sucesos de un dominio d
 
 Como **miembro en una cuenta**, tenga en cuenta la información siguiente para ver los sucesos de la cuenta en una región:
 
-* Debe tener el rol de *desarrollador* en el espacio en el que se suministra {{site.data.keyword.cloudaccesstrailshort}}. Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+* Debe tener el rol de *desarrollador* en el espacio en el que se suministra {{site.data.keyword.cloudaccesstrailshort}}. Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
-* Debe tener una política de IAM para el servicio {{site.data.keyword.loganalysisshort}} con el rol de *visor* en la región. El rol de visor es el rol de IAM mínimo necesario. Para obtener más información, consulte [Concesión de permisos de IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+* Debe tener una política de IAM para el servicio {{site.data.keyword.loganalysisshort}} con el rol de *visor* en la región. El rol de visor es el rol de IAM mínimo necesario. Para obtener más información, consulte [Concesión de permisos de IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
-* Puede ver los sucesos a través de Kibana. Para obtener más información sobre cómo iniciar Kibana, consulte [Navegación a Kibana desde un navegador web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_Kibana_from_browser).
+* Puede ver los sucesos a través de Kibana. Para obtener más información sobre cómo iniciar Kibana, consulte [Navegación a Kibana desde un navegador web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_Kibana_from_browser).
 
 
 

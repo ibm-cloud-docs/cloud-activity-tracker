@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 규제 준수
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}}에서는 IBM의 엄격한 보안 표준을 준수하도록 빌드된 클라우드 플랫폼 및 서비스를 제공합니다](/docs/security/compliance.html#compliance). {{site.data.keyword.cloudaccesstraillong}} 서비스는 {{site.data.keyword.cloud_notm}}를 위해 빌드된 DevOps 서비스입니다. 
+[{{site.data.keyword.cloud_notm}}에서는 IBM의 엄격한 보안 표준을 준수하도록 빌드된 클라우드 플랫폼 및 서비스를 제공합니다](/docs/security/compliance.html#compliance). {{site.data.keyword.cloudaccesstraillong}} 서비스는 {{site.data.keyword.cloud_notm}}를 위해 빌드된 DevOps 서비스입니다. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ lastupdated: "2019-01-23"
 
 유료 플랜에서 표준 또는 Lite 플랜으로 변경하는 경우 장기 저장소에 저장된 이벤트는 1일 내에 삭제됩니다.
 
-사용자는 언제든지 지원 티켓을 열어 모든 데이터를 삭제하도록 요청할 수 있습니다. IBM 지원 티켓을 여는 데 대한 정보는 [지원 문의](/docs/get-support/howtogetsupport.html#getting-customer-support)를 참조하십시오.
+사용자는 언제든지 지원 티켓을 열어 모든 데이터를 삭제하도록 요청할 수 있습니다. IBM 지원 티켓을 여는 데 대한 정보는 [지원 받기](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)를 참조하십시오.
 
 
 
@@ -64,9 +72,9 @@ lastupdated: "2019-01-23"
 
 자세한 정보는 다음을 참조하십시오.
 
-[{{site.data.keyword.cloud_notm}} 보안 규제 준수](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} 보안 규제 준수](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - {{site.data.keyword.IBM_notm}} 공식 페이지](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} 공식 페이지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

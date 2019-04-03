@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -596,7 +600,7 @@ ibmcloud at status [parameter] [argumente...]
   </dd>
   
   <dt>SEARCHABLE (Durchsuchbar)</dt>
-  <dd>Dieses Feld gibt an, ob die Ereignisse für die Suche in Kibana verfügbar sind. <br>Wenn der Wert für das Feld **SEARCHABLE** auf *None* gesetzt ist, dann sind zwar Ereignisse zum Herunterladen verfügbar, aber Sie können diese Ereignisse nicht in Kibana analysieren.
+  <dd>Dieses Feld gibt an, ob die Ereignisse für die Suche in Kibana verfügbar sind. <br>Wenn der Wert für das Feld **SEARCHABLE** auf *None* gesetzt ist, sind zwar Ereignisse zum Herunterladen verfügbar, aber Sie können diese Ereignisse nicht in Kibana analysieren.
   </dd>
   
 </dl>

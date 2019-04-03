@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, news
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,8 +18,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
-
+{:important: .important}
+{:note: .note}
 
 # 新機能
 {: #whatsnew}
@@ -23,37 +27,23 @@ lastupdated: "2019-02-18"
 {{site.data.keyword.cloudaccesstrailshort}} に関する最新のフィーチャーと統合について説明します。
 {:shortdesc}
 
-## 2018 年 10 月
-{: #october2018}
-
-* **{{site.data.keyword.baremetal_short}} を {{site.data.keyword.cloudaccesstrailshort}} でモニターします。**
-
-    {{site.data.keyword.baremetal_short}} は、ハードウェア・リソースへの下位レベルのアクセス権限でパフォーマンスと制御の機能を提供する、シングル・テナントの物理サーバーです。 
-    
-    イベントについては、[{{site.data.keyword.baremetal_short}} によって生成されるイベント](/docs/bare-metal/bm-activity-tracker-events.html#at_events)を参照してください。
+{{site.data.keyword.cloudaccesstrailshort}} と統合されたサービスの最新リストについては、[クラウド・サービス](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-cloud_services#cloud_services)を参照してください。
+{: important}
 
 
-## 2018 年 9 月
-{: #september2018}
+## 2019 年 2 月
+{: #february2019}
 
-* **{{site.data.keyword.databases-for-postgresql_full_notm}} を {{site.data.keyword.cloudaccesstrailshort}} でモニターします。**
+* **{{site.data.keyword.GlobalizationPipeline_short}} サービスを {{site.data.keyword.cloudaccesstrailshort}} でモニターできます。**
 
-    {{site.data.keyword.databases-for-postgresql_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象 PostgreSQL サービスです。
+    {{site.data.keyword.GlobalizationPipeline_short}} は、アプリケーション開発者が翻訳済みアプリケーションをグローバルな顧客に素早くリリースすることを可能にします。
 
-    イベントについては、[{{site.data.keyword.databases-for-postgresql_full_notm}} によって生成されるイベント](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker)を参照してください。  
-
-
-* **{{site.data.keyword.databases-for-redis_full_notm}} を {{site.data.keyword.cloudaccesstrailshort}} でモニターします。**
-
-    {{site.data.keyword.databases-for-redis_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象 .Redis サービスです。
-
-    イベントについては、[{{site.data.keyword.databases-for-redis_full_notm}} によって生成されるイベント](/docs/services/databases-for-redis/reference-activity-tracker.html#activity-tracker-integration)を参照してください。
+    {{site.data.keyword.cloudaccesstrailshort}} イベントについて詳しくは、[{{site.data.keyword.GlobalizationPipeline_short}} によって生成されるイベント](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)を参照してください。
 
 
-* **{{site.data.keyword.openwhisk_short}}} を {{site.data.keyword.cloudaccesstrailshort}} でモニターします。**
 
-    {{site.data.keyword.openwhisk_short}} は、Apache OpenWhisk に基づく多言語 Functions-as-a-Service (FaaS) プログラミング・プラットフォームです。{{site.data.keyword.openwhisk_short}} は、アクションと呼ばれる軽量のコードを開発者が作成できるようにします。アクションは、アプリケーション・ロジックをスケーラブルに実行します。
-    
-    イベントについては、[{{site.data.keyword.openwhisk_short}} によって生成されるイベント](/docs/openwhisk/at-events.html#activity_tracker)を参照してください。
+
+
+
 
 

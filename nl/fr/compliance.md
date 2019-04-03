@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Conformité
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} fournit une plateforme cloud et des services qui respectent les normes strictes de sécurité d'IBM.](/docs/security/compliance.html#compliance). Le service {{site.data.keyword.cloudaccesstraillong}} est un service DevOps conçu pour {{site.data.keyword.cloud_notm}}. 
+[{{site.data.keyword.cloud_notm}} fournit un plateforme et des services cloud qui respectent les normes de sécurité exigeantes d'IBM](/docs/security/compliance.html#compliance). Le service {{site.data.keyword.cloudaccesstraillong}} est un service DevOps conçu pour {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Prenez en compte les informations suivantes :
 
 Si vous passez d'un plan payant au plan standard ou Lite, les événements situés dans le référentiel de stockage à long terme seront supprimés au bout d'une journée environ.
 
-A tout moment, vous pouvez ouvrir un ticket de demande de service et demander que toutes vos données soient supprimées. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, voir la rubrique décrivant [comment contacter le support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+A tout moment, vous pouvez ouvrir un ticket de demande de service et demander que toutes vos données soient supprimées. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, voir [Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -64,9 +72,9 @@ A tout moment, vous pouvez ouvrir un ticket de demande de service et demander qu
 
 Pour plus d'informations, voir :
 
-[{{site.data.keyword.cloud_notm}} - Conformité en matière de sécurité](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} - Conformité en matière de sécurité](/docs/overview?topic=overview-security#compliance)
 
-[RGPD - Page officielle {{site.data.keyword.IBM_notm}}](https://www.ibm.com/data-responsibility/gdpr/)
+[RGPD - Page officielle d'{{site.data.keyword.IBM_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

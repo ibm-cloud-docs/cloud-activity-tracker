@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Ereignisse herunterladen
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herun
 
 1. Rufen Sie ein UAA-Token ab.
 
-    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Erstellen Sie eine Sitzung, in der Sie die Bedingungen angeben, mit denen die Untergruppe der Ereignisse definiert wird, die Sie herunterladen wollen.
 
@@ -53,19 +59,19 @@ Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herun
     ```
     {: codeblock}
 
-    Dabei gilt Folgendes:
+    Dabei gilt Folgendes: 
     
-    * *token* stellt den Wert des UAA-Tokens dar, das Sie in einem früheren Schritt abgerufen haben.
+    *token* stellt den Wert des UAA-Tokens dar, das Sie in einem früheren Schritt abgerufen haben.
 
-    * *spaceID* stellt die UUID des Cloud Foundry-Bereichs dar, in dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
+    *spaceID* stellt die UUID des Cloud Foundry-Bereichs dar, in dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
 
-    * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* und *end* stellen einen Zeitbereich dar, für den Sie Ereignisse herunterladen möchten. Das Datumsformat ist *JJJJ-MM-TT*. 
+    *start* und *end* stellen einen Zeitbereich dar, für den Sie Ereignisse herunterladen möchten. Das Datumsformat ist *JJJJ-MM-TT*. 
 
-    * *AtAccountLevel* gibt an, ob sich die Ereignisse, die heruntergeladen werden sollen, in der Kontodomäne oder in einer Bereichsdomäne befinden.
+    *AtAccountLevel* gibt an, ob sich die Ereignisse, die heruntergeladen werden sollen, in der Kontodomäne oder in einer Bereichsdomäne befinden.
     
-    * *SearchTime* gibt die Tageszeit an, für die Sie Ereignisse herunterladen wollen.
+    *SearchTime* gibt die Tageszeit an, für die Sie Ereignisse herunterladen wollen.
 
     Wenn Sie eine Sitzung zum Herunterladen von Ereignissen von einer Bereichsdomäne in der Region 'Süden' der Vereinigten Staaten ('us-south') erstellen wollen, legen Sie für den Parameter **AtAccountLevel** den Wert *false* fest:
 
@@ -97,7 +103,7 @@ Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herun
     ```
     {: codeblock}
 
-    Dabei ist *FILENAME* der Name der lokalen Datei, in die Ereignisse heruntergeladen werden.
+    Dabei ist *FILENAME* der Name der lokalen Datei, in die Ereignisse heruntergeladen werden. 
 
     Beispiel:
 

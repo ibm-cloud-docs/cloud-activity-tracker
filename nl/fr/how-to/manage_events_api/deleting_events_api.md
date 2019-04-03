@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 Utilisez l'API {{site.data.keyword.cloudaccesstrailshort}} pour supprimer les événements qui sont stockés dans {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
-**Remarque :** bien que vous puissiez supprimer des événements manuellement à l'aide de l'appel API, envisagez de définir la règle de conservation pour supprimer des événements automatiquement. Pour plus d'informations, voir [Configuration de la règle de conservation des événements](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
+**Remarque :** bien que vous puissiez supprimer des événements manuellement à l'aide de l'appel API, envisagez de définir la règle de conservation pour supprimer des événements automatiquement. Pour plus d'informations, voir [Configuration de la règle de conservation des événements](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy).
 
 ## Suppression d'événements à l'aide de cURL
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ Procédez comme suit pour supprimer les événements qui sont disponibles dans u
 
 1. Obtenez un jeton UAA.
 
-    Pour plus d'informations, voir [Obtention d'un jeton UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Pour plus d'informations, voir [Obtention d'un jeton UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Exécutez la commande cURL suivante pour supprimer les événements qui sont stockés dans {{site.data.keyword.cloudaccesstrailshort}} à une date spécifique.
 
@@ -45,7 +51,7 @@ Procédez comme suit pour supprimer les événements qui sont disponibles dans u
 
     * *token* est le jeton UAA.
     * *spaceID* représente l'identificateur unique universel de l'espace Cloud Foundry où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
-    * *ENDPOINT* représente le point d'entrée vers le service. Chaque région a une adresse URL différente. Pour obtenir la liste des noeuds finaux par région, voir [Noeuds finaux](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* représente le point d'entrée vers le service. Chaque région a une adresse URL différente. Pour obtenir la liste des noeuds finaux par région, voir [Noeuds finaux](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* et *end* représentent la plage de temps pendant laquelle vous souhaitez télécharger des événements. Le format de date est AAAA-MM-JJ. 
     * *AtAccountLevel* indique le domaine dans lequel vous voulez obtenir des informations sur les événements.
     * *SearchTime* indique l'heure de la journée pour laquelle vous souhaitez des informations sur les événements.
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

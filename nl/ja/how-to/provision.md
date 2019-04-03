@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # Activity Tracker のプロビジョン
 {: #provision}
 
-{{site.data.keyword.Bluemix}} UI またはコマンド・ラインから {{site.data.keyword.cloudaccesstraillong}} サービスをプロビジョンできます。
+{{site.data.keyword.cloud_notm}} UI またはコマンド・ラインから {{site.data.keyword.cloudaccesstraillong}} サービスをプロビジョンできます。
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. {{site.data.keyword.cloud_notm}} アカウントにログインします。
-
-    {{site.data.keyword.cloud_notm}} UI は、[http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} にあります。
+1. [{{site.data.keyword.cloud_notm}} アカウントにログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
     
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-02-18"
 
     デフォルトでは、**「無料」**プランが設定されます。
 
-    詳しくは、[サービス・プラン](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)を参照してください。
+    詳しくは、[サービス・プラン](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)を参照してください。
 	
 7. **「作成」**をクリックして、ログインしている {{site.data.keyword.cloud_notm}} スペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンします。
   
@@ -90,31 +94,33 @@ lastupdated: "2019-02-18"
     
 2. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 3. `ibmcloud service create` コマンドを実行して、インスタンスをプロビジョンします。
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
-	```
-	{: codeblock}
+	  ibmcloud service create service_name service_plan service_instance_name
+    ```
+	  {: codeblock}
 	
-	各部の意味は、次のとおりです。
+	  各部の意味は、次のとおりです。
 	
-	* service_name は、サービスの名前、つまり**「accessTrail」**です。
-	* service_plan は、サービス・プラン名です。 プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)を参照してください。
-	* service_instance_name は、作成する新規サービス・インスタンスに使用する名前です。
+	  * service_name は、サービスの名前、つまり**「accessTrail」**です。
 
-	例えば、標準プランで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスを作成するには、以下のコマンドを実行します。
+	  * service_plan は、サービス・プラン名です。 プランのリストについては、[サービス・プラン](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)を参照してください。
+
+	  * service_instance_name は、作成する新規サービス・インスタンスに使用する名前です。
+
+	  例えば、標準プランで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスを作成するには、以下のコマンドを実行します。
 	
-	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
+	  ```
+	  {: codeblock}
 	
 4. サービスが正常に作成されたことを確認します。 以下のコマンドを実行します。
 
-    ```	
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}

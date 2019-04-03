@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, account events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # アカウント管理イベント  
 {: #at_events_acc_mgt}
@@ -22,9 +27,9 @@ lastupdated: "2019-01-23"
 セキュリティー担当者、監査員、またはマネージャーは、{{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、ユーザーおよびアプリケーションが {{site.data.keyword.Bluemix}} アカウントとどのように対話しているのかをトラッキングできます。 
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull_notm}} サービスは、{{site.data.keyword.cloud_notm}} 内のサービスの状態を変更するユーザー開始アクティビティーを記録します。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} 概要](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov )を参照してください。
+{{site.data.keyword.cloudaccesstrailfull_notm}} サービスは、{{site.data.keyword.cloud_notm}} 内のサービスの状態を変更するユーザー開始アクティビティーを記録します。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} の紹介](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)を参照してください。
 
-ユーザーのアクションのモニターを開始するには、[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)を参照してください。 
+ユーザーのアクションのモニターを開始するには、[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)を参照してください。 
 
 
 
@@ -53,7 +58,7 @@ lastupdated: "2019-01-23"
   </tr>
   <tr>
     <td>billing.account.subscription.create</td>
-	  <td><a href="/docs/account/index.html#subscription-account">サブスクリプション・アカウント</a>を作成すると、イベントが生成されます。</td>
+	  <td><a href="/docs/account?topic=account-accounts#subscription-account">サブスクリプション・アカウント</a>を作成すると、イベントが生成されます。</td>
   </tr>
 </table>
 
@@ -104,9 +109,11 @@ lastupdated: "2019-01-23"
 ## イベントを検索する場所
 {: #at_events_acc_mgt_ui}
 
-{{site.data.keyword.cloudaccesstrailshort}} イベントは、**米国南部**地域の**アカウント・ドメイン**内で使用可能です。 詳しくは、[アカウント・イベントの表示](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events)を参照してください。
+{{site.data.keyword.cloudaccesstrailshort}} イベントは、**米国南部**地域の**アカウント・ドメイン**内で使用可能です。 
 
-これらのイベントを表示するには、**米国南部**地域に {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする必要があります。 次に、{{site.data.keyword.cloudaccesstrailshort}} UI を開き、イベントを表示するアカウント・ドメインに移動します。 詳しくは、[アカウント・イベントの表示](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events)を参照してください。 
+これらのイベントを表示するには、**米国南部**地域に {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする必要があります。 次に、{{site.data.keyword.cloudaccesstrailshort}} UI を開き、イベントを表示するアカウント・ドメインに移動します。  
+
+詳しくは、[アカウント・イベントの表示](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events)を参照してください。
 
 
 

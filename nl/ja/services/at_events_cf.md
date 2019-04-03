@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, Cloud Foundry events, CF
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Cloud Foundry イベント
@@ -67,7 +73,7 @@ lastupdated: "2019-01-23"
 
 アカウント内のユーザーに Cloud Foundry 役割を付与するか、または取り消す (削除する) と、イベントが生成され、役割の付与または取り消しが行われた Cloud Foundry スペースと関連付けられた、{{site.data.keyword.cloudaccesstrailshort}} 内のスペース・ドメインに送信されます。 
 
-例えば、米国南部地域のスペース B 内のユーザー A に*スペース管理者* 役割を付与します。イベントが生成されます。 このイベントを表示するには、米国南部で、ユーザーの CF 許可を管理しているのと同じスペースに {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする必要があります。 そうすると、このイベントを {{site.data.keyword.cloudaccesstrailshort}} サービス UI を介して表示することができます。
+例えば、米国南部地域のスペース B 内のユーザー A に*スペース管理者* 役割を付与します。 イベントが生成されます。 このイベントを表示するには、米国南部で、ユーザーの CF 許可を管理しているのと同じスペースに {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする必要があります。 そうすると、このイベントを {{site.data.keyword.cloudaccesstrailshort}} サービス UI を介して表示することができます。
 
 
 次の表に、ユーザーの Cloud Foundry 役割を管理すると {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するアクションをリストします。

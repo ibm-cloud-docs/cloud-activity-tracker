@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Concesión de permisos para ver sucesos
 {: #grant_permissions}
 
-En {{site.data.keyword.Bluemix}}, puede asignar roles de Cloud Foundry, roles de IAM o ambos a un usuario. Estos roles definen las tareas que puede realizar un usuario cuando trabaje con el servicio {{site.data.keyword.cloudaccesstrailshort}}.  
+En {{site.data.keyword.cloud}}, puede asignar roles de Cloud Foundry, roles de IAM o ambos a un usuario. Estos roles definen las tareas que puede realizar un usuario cuando trabaje con el servicio {{site.data.keyword.cloudaccesstrailshort}}.  
 {:shortdesc}
 
 ## Concesión de permisos para ver sucesos de cuenta
@@ -29,13 +35,13 @@ Puede otorgar a un usuario los permisos siguientes para ver los sucesos de la cu
 
 1. Rol de *desarrollador* en un espacio de la región en la que se suministra {{site.data.keyword.cloudaccesstrailshort}}. 
 
-    Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. Política de IAM para el servicio {{site.data.keyword.loganalysisshort}} con el rol de *visor* en la región. 
 
     El rol de visor es el rol de IAM mínimo necesario. 
 	
-	Para obtener más información, consulte [Concesión de permisos de IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	Para obtener más información, consulte [Concesión de permisos de IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
 
 ## Concesión de permisos para ver sucesos de espacio
@@ -45,7 +51,7 @@ Puede otorgar a un usuario el permiso siguiente para ver los sucesos de espacio 
 
 * Rol de *desarrollador* en un espacio de la región en la que se suministra {{site.data.keyword.cloudaccesstrailshort}}. 
 
-    Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Para obtener más información, consulte [Concesión de un rol de CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
 ## Concesión de permisos de IAM
@@ -57,11 +63,10 @@ Para otorgar a un usuario un rol de IAM, tenga en cuenta la información siguien
 
 * Cuando defina una política, las regiones que especifique definen las regiones en las que se otorga a un usuario acceso para ver los sucesos de dominio de la cuenta.
 
-Siga los pasos siguientes para otorgar a un usuario permisos para ver sucesos desde un dominio de cuenta:
+Siga los pasos siguientes para otorgar a un usuario permiso para ver sucesos desde un dominio de cuenta:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
-
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+1. [Inicie sesión en la consola de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 	
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -71,7 +76,7 @@ Siga los pasos siguientes para otorgar a un usuario permisos para ver sucesos de
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** en el menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. En la sección **Políticas de acceso**, pulse **Asignar acceso** y, a continuación, seleccione **Asignar acceso a recursos**.
 
@@ -99,7 +104,7 @@ Siga los pasos siguientes para otorgar a un usuario permisos para ver sucesos de
 	  </tr>
 	  <tr>
 	    <td>Roles</td>
-		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son: *administrador*, *operador*, *editor*, y *visor*.</td>
+		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son *administrador*, *operador*, *editor*, y *visor*.</td>
 	  </tr>
      </table>
 	
@@ -119,9 +124,8 @@ Para otorgar a un usuario un rol de CF, tenga en cuenta la información siguient
 
 Siga los pasos siguientes para otorgar a un usuario acceso para ver sucesos del espacio:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
-
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+1. [Inicie sesión en la consola de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 	
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -131,11 +135,11 @@ Siga los pasos siguientes para otorgar a un usuario acceso para ver sucesos del 
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** en el menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
-4. Seleccione **Acceso de Cloud Foundry** y seleccione la organización.
+4. Seleccione **Acceso a Cloud Foundry**. A continuación, seleccione la organización.
 
-    Aparece la lista de espacios disponibles en dicha organización.
+    Aparecerán los espacios que estén disponibles en dicha organización.
 
 5. Elija un espacio. A continuación, en la acción de menú, seleccione **Editar rol de espacio**.
 

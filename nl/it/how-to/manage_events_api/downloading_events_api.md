@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Scaricamento degli eventi
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
 
 1. Ottieni un token UAA.
 
-    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Crea una sessione, in cui specificare le condizioni che definiscono il sottoinsieme di eventi che vuoi scaricare.
 
@@ -53,19 +59,19 @@ Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
     ```
     {: codeblock}
 
-    dove:
+    Dove:
     
-    * *token* rappresenta il valore del token UAA che è stato ottenuto in un passo precedente.
+    *token* rappresenta il valore del token UAA che è stato ottenuto in un passo precedente.
 
-    * *spaceID* rappresenta l'UUID dello spazio Cloud Foundry in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
+    *spaceID* rappresenta l'UUID dello spazio Cloud Foundry in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
 
-    * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* e *end*rappresentano un intervallo di tempo in cui vuoi scaricare gli eventi. Il formato della data è *YYYY-MM-DD*. 
+    *start* e *end*rappresentano un intervallo di tempo in cui vuoi scaricare gli eventi. Il formato della data è *YYYY-MM-DD*. 
 
-    * *AtAccountLevel* indica se gli eventi da scaricare sono nel dominio dell'account o dello spazio.
+    *AtAccountLevel* indica se gli eventi da scaricare sono nel dominio dell'account o dello spazio.
     
-    * *SearchTime* indica l'ora della giornata per la quale vuoi scaricare gli eventi.
+    *SearchTime* indica l'ora della giornata per la quale vuoi scaricare gli eventi.
 
     Per creare una sessione per scaricare gli eventi da un dominio dello spazio nella regione Stati Uniti Sud, imposta il parametro **AtAccountLevel** su *false*:
 
@@ -97,7 +103,7 @@ Completa le seguenti istruzioni per scaricare gli eventi in un file locale:
     ```
     {: codeblock}
 
-    dove *FILENAME* è il nome dello spazio in cui sarà scaricato l'evento.
+    Dove *FILENAME* è il nome dello spazio in cui sarà scaricato l'evento.
 
     Ad esempio:
 

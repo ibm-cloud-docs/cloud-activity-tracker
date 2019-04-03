@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,20 +18,22 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Accès au tableau de bord Activity Tracker dans la console {{site.data.keyword.cloud_notm}}
+# Ouverture du tableau de bord Activity Tracker dans la console {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
-Vous pouvez lancer l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} à partir d'{{site.data.keyword.Bluemix}}. Par défaut, vous pouvez afficher des événements d'espace. Vous pouvez également afficher des événements de compte.
+Vous pouvez lancer l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} à partir d'{{site.data.keyword.cloud_notm}}. Par défaut, vous pouvez afficher des événements d'espace. Vous pouvez également afficher des événements de compte.
 {:shortdesc}
    
 
-## Accès au tableau de bord Activity Tracker pour surveiller l'activité de cloud dans un espace
+## Ouverture du tableau de bord Activity Tracker pour surveiller l'activité de cloud dans un espace
 {: #launch_at_ui_account_view_space}
 
-Pour accéder à l'identificateur unique d'{{site.data.keyword.cloudaccesstrailshort}} afin de surveiller l'activité de cloud dans un espace, procédez comme suit :
+Pour accéder à l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} afin de surveiller l'activité de cloud dans un espace, procédez comme suit :
 
 1. Connectez-vous à l'espace, l'organisation et la région du compte {{site.data.keyword.cloud_notm}} où vous voulez surveiller l'activité de cloud.
 
@@ -42,7 +48,7 @@ Pour accéder à l'identificateur unique d'{{site.data.keyword.cloudaccesstrails
     Le tableau de bord **ActivityTracker_Space_Dashboard_in_24h** s'ouvre. Depuis ce tableau de bord, vous pouvez surveiller l'activité de cloud dans cet espace au cours des dernières 24 heures. 
 
 
-## Accès au tableau de bord Activity Tracker pour surveiller l'activité de cloud dans le compte
+## Ouverture du tableau de bord Activity Tracker pour surveiller l'activité de cloud dans le compte
 {: #launch_at_ui_account_view_account}
 
 Pour accéder à l'interface utilisateur d'{{site.data.keyword.cloudaccesstrailshort}} afin de surveiller l'activité de cloud dans un compte, procédez comme suit :

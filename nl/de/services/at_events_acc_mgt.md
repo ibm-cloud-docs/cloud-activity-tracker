@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, account events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # Kontoverwaltungsereignisse  
 {: #at_events_acc_mgt}
@@ -22,9 +27,9 @@ lastupdated: "2019-01-23"
 Als Sicherheitsbeauftragter, Prüfer oder Manager können Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um zu verfolgen, wie Benutzer und Anwendungen mit dem {{site.data.keyword.Bluemix}}-Konto interagieren. 
 {:shortdesc}
 
-Der {{site.data.keyword.cloudaccesstrailfull_notm}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.cloud_notm}} ändern. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+Der {{site.data.keyword.cloudaccesstrailfull_notm}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.cloud_notm}} ändern. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 
-Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
+Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). 
 
 
 
@@ -53,7 +58,7 @@ In der folgenden Tabelle sind die API-Methoden aufgeführt, die ein Ereignis gen
   </tr>
   <tr>
     <td>billing.account.subscription.create</td>
-	  <td>Es wird ein Ereignis generiert, wenn Sie ein <a href="/docs/account/index.html#subscription-account">Abonnementkonto</a> erstellen.</td>
+	  <td>Es wird ein Ereignis generiert, wenn Sie ein <a href="/docs/account?topic=account-accounts#subscription-account">Abonnementkonto</a> erstellen.</td>
   </tr>
 </table>
 
@@ -104,9 +109,11 @@ In der folgenden Tabelle sind die API-Methoden aufgeführt, die ein Ereignis gen
 ## Wo Sie die Ereignisse finden
 {: #at_events_acc_mgt_ui}
 
-Sie finden {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse sind in der **Kontodomäne** der Region **'Süden' der Vereinigten Staaten** (us-south) verfügbar. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events).
+Sie finden {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse sind in der **Kontodomäne** der Region **'Süden' der Vereinigten Staaten** (us-south) verfügbar. 
 
-Um diese Ereignisse anzeigen zu können, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region **'Süden' der Vereinigten Staaten** ('us-south') bereitstellen. Danach müssen Sie die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} öffnen und zu der Kontodomäne wechseln, um Ereignisse zu sehen. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events). 
+Um diese Ereignisse anzeigen zu können, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region **'Süden' der Vereinigten Staaten** ('us-south') bereitstellen. Danach müssen Sie die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} öffnen und zu der Kontodomäne wechseln, um Ereignisse zu sehen. 
+
+Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events).
 
 
 

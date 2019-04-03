@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, overview
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,18 +18,20 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Informazioni sul prodotto
+# Informazioni relative a {{site.data.keyword.cloudaccesstrailshort}}
 {: #activity_tracker_ov}
 
-Utilizza il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come le applicazioni interagiscono con i servizi {{site.data.keyword.Bluemix}}. Utilizza {{site.data.keyword.cloudaccesstrailshort}} per monitorare attività anomala e rispettare i requisiti di controllo normativi. Gli eventi vengono raccolti conformi agli standard CADF (Cloud Auditing Data Federation).
+Utilizza il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come le applicazioni interagiscono con i servizi {{site.data.keyword.cloud_notm}}. Utilizza {{site.data.keyword.cloudaccesstrailshort}} per monitorare attività anomala e rispettare i requisiti di controllo normativi. Gli eventi vengono raccolti conformi agli standard CADF (Cloud Auditing Data Federation).
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} offre governance di sicurezza di alto livello
 per le tue risorse IT nel cloud.
-* {{site.data.keyword.cloudaccesstrailshort}} fornisce una soluzione per gli amministratori per acquisire, memorizzare, visualizzare, cercare e monitorare l'attività API in un solo posto. 
+* {{site.data.keyword.cloudaccesstrailshort}} fornisce una soluzione per gli amministratori per acquisire, memorizzare, visualizzare, cercare e monitorare l'attività API in un solo posto.
 * {{site.data.keyword.cloudaccesstrailshort}} fornisce capacità per scaricare gli eventi che possono venire utilizzati per generare un report audit trail. Puoi richiedere
 questi report in modo che la tua organizzazione sia conforme con i regolamenti interni, le normative di settore esterne
 e i regolamenti nazionali.
@@ -52,7 +58,7 @@ Ad esempio, puoi utilizzare i log di attività {{site.data.keyword.cloudaccesstr
 ## Raccolta degli eventi
 {: #activity_tracker_ov_collect}
 
-Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce solo i dati di attività relativi alle chiamate API e ad altre azioni effettuate nei servizi cloud selezionati in {{site.data.keyword.cloud_notm}}. 
+Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce i dati di attività relativi alle chiamate API e ad altre azioni effettuate nei servizi cloud selezionati in {{site.data.keyword.cloud_notm}}. 
 
 * Gli eventi vengono raccolti automaticamente. 
 * Gli eventi vengono raccolti in {{site.data.keyword.cloudaccesstrailshort}} conformi agli standard CADF (Cloud Auditing Data Federation). Lo standard CADF definisce un modello evento completo che include le informazioni necessarie per
@@ -98,8 +104,7 @@ Considera le seguenti informazioni quando utilizzi il log {{site.data.keyword.cl
 
 * Puoi solo memorizzare i record di controllo delle chiamate API effettuate alle risorse eseguite nel cloud pubblico {{site.data.keyword.IBM_notm}}.
 * Viene utilizzata solo l'archiviazione cloud pubblica {{site.data.keyword.IBM_notm}} per raccogliere gli eventi.
-* Le informazioni vengono memorizzate per 3 giorni. Dopo tale intervallo, le informazioni vengono eliminate su base
-primo arrivato primo eliminato.
+* Le informazioni vengono memorizzate per 3 giorni. Dopo tale intervallo, le informazioni vengono eliminate in base al metodo FIFO (first-in, first-out).
 * Gli eventi CADF del tipo *Activity* sono supportati dal servizio {{site.data.keyword.cloudaccesstrailshort}}.
 
 
@@ -110,8 +115,7 @@ Per visualizzare gli eventi disponibili tramite un dominio dell'account, devi es
 
 Per visualizzare gli eventi disponibili tramite un dominio dello spazio, devi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui vuoi monitorare l'attività API.
 
-Per informazioni su come eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, consulta
-[Provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+Per informazioni su come eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}, consulta [Provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 
 
@@ -120,15 +124,13 @@ Per informazioni su come eseguire il provisioning del servizio {{site.data.keywo
 
 Puoi analizzare i log attività tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}} o utilizzando Kibana, uno strumento open source. Puoi monitorare gli eventi disponibili in uno spazio specifico o al livello dell'account.
 
-Puoi ricercare, analizzare e monitorare i log attività per le ultime 24 ore tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}}. Per ulteriori informazioni, consulta
-[Passaggio all'IU {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+Puoi ricercare, analizzare e monitorare i log attività per le ultime 24 ore tramite l'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}}. Per ulteriori informazioni, consulta [Passaggio all'IU {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui).
 
-Puoi ricercare, analizzare e monitorare i log attività per gli ultimi 3 giorni tramite Kibana utilizzando il dashboard Kibana
-{{site.data.keyword.cloudaccesstrailshort}} o creando i tuoi propri dashboard personalizzati. * **Nota:** questa funzione è disponibile per gli utenti del piano **Premium**.
+Puoi ricercare, analizzare e monitorare i log attività per gli ultimi 3 giorni tramite Kibana utilizzando il dashboard Kibana {{site.data.keyword.cloudaccesstrailshort}} o creando i tuoi dashboard personalizzati. * **Nota:** questa funzione è disponibile per gli utenti del piano **Premium**.
 
 * Per ulteriori informazioni su come avviare Kibana, consulta
-[Passaggio al dashboard Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
-* Per un elenco di campi che puoi utilizzare per analizzare gli eventi in Kibana, consulta [Campi evento {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/at_event.html#at_event)
+[Passaggio al dashboard Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). 
+* Per un elenco di campi che puoi utilizzare per analizzare gli eventi in Kibana, consulta [Campi evento {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
 
 
 
@@ -139,7 +141,7 @@ Il servizio {{site.data.keyword.cloudaccesstrailshort}} è disponibile nelle seg
 
 * Germania
 * Sydney
-* Regno Unito (è disponibile solo il piano Lite) 
+* Regno Unito (è disponibile solo il piano Lite)
 * Stati Uniti Sud
 
 
@@ -148,7 +150,7 @@ Il servizio {{site.data.keyword.cloudaccesstrailshort}} è disponibile nelle seg
 
 Il servizio {{site.data.keyword.cloudaccesstrailshort}} fornisce più piani.
 
-Puoi modificare un piano tramite l'IU {{site.data.keyword.cloud_notm}} o con la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli aggiornamenti del piano di servizio, consulta [Modifica del piano](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+Puoi modificare un piano tramite l'IU {{site.data.keyword.cloud_notm}} o con la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli aggiornamenti del piano di servizio, consulta [Modifica del piano](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan). 
 
 La seguente tabella illustra i piani disponibili:
 

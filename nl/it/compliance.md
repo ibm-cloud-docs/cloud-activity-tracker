@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Conformità
 {: #compliance}
 
-[ {{site.data.keyword.Bluemix}} fornisce una piattaforma cloud e i servizi creati con gli standard di sicurezza più rigorosi di IBM.](/docs/security/compliance.html#compliance). Il servizio {{site.data.keyword.cloudaccesstraillong}} è un servizio DevOps creato per {{site.data.keyword.cloud_notm}}. 
+[{{site.data.keyword.cloud_notm}} fornisce una piattaforma cloud e i servizi creati con gli standard di sicurezza più rigorosi di IBM](/docs/security/compliance.html#compliance). Il servizio {{site.data.keyword.cloudaccesstraillong}} è un servizio DevOps creato per {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Tieni conto delle seguenti informazioni:
 
 Se passi da un piano a pagamento a un piano standard o lite, gli eventi che si trovano nel repository di archiviazione a lungo termine verranno eliminati in circa un giorno.
 
-In qualsiasi momento, puoi aprire un ticket di supporto e richiedere che tutti i tuoi dati vengano eliminati. Per informazioni sull'apertura di un ticket di supporto IBM, consulta [Come contattare il supporto](/docs/get-support/howtogetsupport.html#getting-customer-support).
+In qualsiasi momento, puoi aprire un ticket di supporto e richiedere che tutti i tuoi dati vengano eliminati. Per informazioni sull'apertura di un ticket di supporto IBM, consulta [Richiesta di supporto](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -64,9 +72,9 @@ In qualsiasi momento, puoi aprire un ticket di supporto e richiedere che tutti i
 
 Per ulteriori informazioni, consulta:
 
-[Conformità di sicurezza di {{site.data.keyword.cloud_notm}} ](/docs/security/compliance.html#compliance)
+[Conformità di sicurezza di {{site.data.keyword.cloud_notm}} ](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - pagina ufficiale {{site.data.keyword.IBM_notm}}](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - Pagina ufficiale {{site.data.keyword.IBM_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

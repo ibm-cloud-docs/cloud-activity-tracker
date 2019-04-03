@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# 導覽至 {{site.data.keyword.cloud_notm}} 主控台中的 Activity Tracker 儀表板
+# 在 {{site.data.keyword.cloud_notm}} 主控台中開啟 Activity Tracker 儀表板
 {: #launch_at_ui}
 
-您可以從 {{site.data.keyword.Bluemix}} 啟動 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面。依預設，您可以查看空間事件。您也可以檢視帳戶事件。
+您可以從 {{site.data.keyword.cloud_notm}} 啟動 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面。依預設，您可以查看空間事件。您也可以檢視帳戶事件。
 {:shortdesc}
    
 
-## 導覽至 Activity Tracker 儀表板以監視空間中的雲端活動
+## 開啟 Activity Tracker 儀表板以監視空間中的雲端活動
 {: #launch_at_ui_account_view_space}
 
 完成下列步驟，以導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，讓您可以監視空間中的雲端活動：
@@ -42,7 +48,7 @@ lastupdated: "2019-02-18"
     **ActivityTracker_Space_Dashboard_in_24h** 儀表板隨即開啟。透過此儀表板，您可以監視過去 24 小時內該空間中的雲端活動。 
 
 
-## 導覽至 Activity Tracker 儀表板以監視帳戶中的雲端活動
+## 開啟 Activity Tracker 儀表板以監視帳戶中的雲端活動
 {: #launch_at_ui_account_view_account}
 
 完成下列步驟，以導覽至 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，讓您可以監視帳戶中的雲端活動：

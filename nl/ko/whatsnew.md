@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, news
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,8 +18,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
-
+{:important: .important}
+{:note: .note}
 
 # 새로운 기능
 {: #whatsnew}
@@ -23,37 +27,23 @@ lastupdated: "2019-02-18"
 {{site.data.keyword.cloudaccesstrailshort}}에 대한 최신 기능과 통합에 대해 알아보십시오.
 {:shortdesc}
 
-## 2018년 10월
-{: #october2018}
-
-* **{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.baremetal_short}}를 모니터하십시오.**
-
-    {{site.data.keyword.baremetal_short}}는 하드웨어 리소스에 대한 하위 레벨 액세스 권한과 함께 성능과 제어를 제공하는 실제 싱글 테넌트 서버입니다. 
-    
-    이벤트에 대한 정보는 [{{site.data.keyword.baremetal_short}}에 의해 생성된 이벤트](/docs/bare-metal/bm-activity-tracker-events.html#at_events)를 참조하십시오.
+{{site.data.keyword.cloudaccesstrailshort}}과 통합된 최신 서비스 목록을 보려면 [클라우드 서비스](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-cloud_services#cloud_services)를 참조하십시오.
+{: important}
 
 
-## 2018년 9월
-{: #september2018}
+## 2019년 2월
+{: #february2019}
 
-* **{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.databases-for-postgresql_full_notm}}을 모니터하십시오.**
+* **{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.GlobalizationPipeline_short}} 서비스를 모니터할 수 있습니다. **
 
-    {{site.data.keyword.databases-for-postgresql_full_notm}}은 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 PostgreSQL 서비스입니다.
+    {{site.data.keyword.GlobalizationPipeline_short}}을 통해 애플리케이션 개발자가 변환된 애플리케이션을 글로벌 고객에게 신속하게 릴리스할 수 있습니다.
 
-    이벤트에 대한 정보는 [{{site.data.keyword.databases-for-postgresql_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker)를 참조하십시오.  
-
-
-* **{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.databases-for-redis_full_notm}}를 모니터하십시오.**
-
-    {{site.data.keyword.databases-for-redis_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 .Redis 서비스입니다.
-
-    이벤트에 대한 정보는 [{{site.data.keyword.databases-for-redis_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-redis/reference-activity-tracker.html#activity-tracker-integration)를 참조하십시오.
+    {{site.data.keyword.cloudaccesstrailshort}} 이벤트에 대한 자세한 정보는 [{{site.data.keyword.GlobalizationPipeline_short}}에 의해 생성된 이벤트](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)를 참조하십시오.
 
 
-* **{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.openwhisk_short}}}를 모니터하십시오.**
 
-     {{site.data.keyword.openwhisk_short}}는 Apache OpenWhisk를 기반으로 하며 여러 언어로 된 FaaS(Functions-as-a-Service) 프로그래밍 플랫폼입니다. {{site.data.keyword.openwhisk_short}}를 사용하면 개발자가 앱 로직을 확장 가능하게 실행하는 조치(경량 코드)를 작성할 수 있습니다.
-    
-    이벤트에 대한 정보는 [{{site.data.keyword.openwhisk_short}}에 의해 생성된 이벤트](/docs/openwhisk/at-events.html#activity_tracker)를 참조하십시오.
+
+
+
 
 

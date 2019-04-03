@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, news
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,8 +18,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
-
+{:important: .important}
+{:note: .note}
 
 # Nouveautés
 {: #whatsnew}
@@ -23,37 +27,23 @@ lastupdated: "2019-02-18"
 Découvrez les fonctions et intégrations les plus récentes d'{{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
-## Octobre 2018
-{: #october2018}
-
-* **Surveillance des serveurs {{site.data.keyword.baremetal_short}} avec {{site.data.keyword.cloudaccesstrailshort}}.**
-
-    Les serveurs {{site.data.keyword.baremetal_short}} sont des serveurs physiques à service exclusif, offrant performance et contrôle avec un accès de bas niveau aux ressources matérielles.  
-    
-    Pour plus d'informations sur les événements, voir [Evénements générés par {{site.data.keyword.baremetal_short}}](/docs/bare-metal/bm-activity-tracker-events.html#at_events).
+Pour obtenir la liste à jour des services intégrés avec {{site.data.keyword.cloudaccesstrailshort}}, voir [Services Cloud](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-cloud_services#cloud_services).
+{: important}
 
 
-## Septembre 2018
-{: #september2018}
+## Février 2019
+{: #february2019}
 
-* **Surveillance du service {{site.data.keyword.databases-for-postgresql_full_notm}} avec {{site.data.keyword.cloudaccesstrailshort}}.**
+* **Vous pouvez surveiller le service {{site.data.keyword.GlobalizationPipeline_short}} avec {{site.data.keyword.cloudaccesstrailshort}}.**
 
-    {{site.data.keyword.databases-for-postgresql_full_notm}} est un service PostgreSQL géré qui est hébergé dans {{site.data.keyword.cloud_notm}} et intégré à d'autres services {{site.data.keyword.cloud_notm}}.
+    Le service {{site.data.keyword.GlobalizationPipeline_short}} permet aux développeurs d'application de publier rapidement des applications traduites aux clients dans le monde entier.
 
-    Pour plus d'informations sur les événements, voir [Evénements générés par {{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker).  
-
-
-* **Surveillance du service {{site.data.keyword.databases-for-redis_full_notm}} avec {{site.data.keyword.cloudaccesstrailshort}}.**
-
-    {{site.data.keyword.databases-for-redis_full_notm}} est un service Redis géré qui est hébergé dans {{site.data.keyword.cloud_notm}} et intégré à d'autres services {{site.data.keyword.cloud_notm}}.
-
-    Pour plus d'informations sur les événements, voir [Evénements générés par {{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis/reference-activity-tracker.html#activity-tracker-integration)
+    Pour plus d'informations sur les événements {{site.data.keyword.cloudaccesstrailshort}}, voir [Evénements générés par {{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events).
 
 
-* **Surveillance de la plateforme {{site.data.keyword.openwhisk_short}} avec {{site.data.keyword.cloudaccesstrailshort}}.**
 
-    {{site.data.keyword.openwhisk_short}} est une plateforme de programmation de type Functions-as-a-Service (FaaS) polyglotte basée sur Apache OpenWhisk. {{site.data.keyword.openwhisk_short}} permet aux développeurs d'écrire un code simple, désigné par "actions", chargé d'exécuter la logique d'application de manière évolutive.
-    
-    Pour plus d'informations sur les événements, voir [Evénements générés par {{site.data.keyword.openwhisk_short}}](/docs/openwhisk/at-events.html#activity_tracker).
+
+
+
 
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch Kibana
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,26 +18,28 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Navegación al panel de control de Kibana
+# Apertura del panel de control de Kibana
 {: #launch_kibana}
 
-Puede lanzar Kibana desde la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.Bluemix}}, o directamente desde un navegador web.
+Puede lanzar Kibana desde la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}}, o directamente desde un navegador web.
 {:shortdesc}
    
 
-##  Navegación a Kibana desde el panel de control del servicio de Activity Tracker
+##  Apertura de Kibana desde el panel de control del servicio Activity Tracker
 {: #launch_Kibana_from_at}
 
-Los registros de actividad que muestra Kibana incluye eventos para todos los recursos que se despliegan en el espacio de la organización de {{site.data.keyword.cloud_notm}} en la que ha iniciado sesión y en la que se ha suministrado el servicio de {{site.data.keyword.cloudaccesstrailshort}}.
+Los registros de actividad que muestra Kibana incluye sucesos para todos los recursos que se despliegan en el espacio de la organización de {{site.data.keyword.cloud_notm}} en la que ha iniciado sesión y en la que se ha suministrado el servicio de {{site.data.keyword.cloudaccesstrailshort}}.
 
 Siga los siguientes pasos para iniciar Kibana desde el panel de control del servicio de {{site.data.keyword.cloudaccesstrailshort}}:
 
 1. Inicie sesión en su cuenta de {{site.data.keyword.cloud_notm}}.
 
-    Encontrará el panel de control de {{site.data.keyword.cloud_notm}} en: [https://cloud.ibm.com/login ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
+    Encontrará el panel de control de {{site.data.keyword.cloud_notm}} en: [https://cloud.ibm.com/login ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -50,7 +56,7 @@ Siga los siguientes pasos para iniciar Kibana desde el panel de control del serv
     El panel de control **ActivityTracker_Account_Dashboard_in_24h** se carga con un filtro de tiempo establecido en las últimas 24 horas.
 	
 	
-##  Navegación a Kibana desde un navegador web
+##  Apertura de Kibana desde un navegador web
 {: #launch_Kibana_from_browser}
 
 Siga los siguientes pasos para iniciar Kibana desde el navegador:
@@ -87,19 +93,31 @@ Siga los siguientes pasos para iniciar Kibana desde el navegador:
 	
 2. Compruebe que ha iniciado una sesión en la cuenta de {{site.data.keyword.cloud_notm}} donde quiere visualizar y analizar sucesos de actividad.
 
-3. Seleccione un **Dominio**.
+3. Visualizar sucesos de cuenta o espacio
 
-    Seleccione **Cuenta** para ver los sucesos en el dominio de la cuenta.
-    Seleccione **Espacio** para ver los sucesos en el dominio del espacio.
+* Pulse sobre la parte superior derecha de la ventana de Kibana donde aparezca su información de inicio de sesión.
+* En **Dominio**, seleccione espacio o cuenta en el menú desplegable
+* Para sucesos de espacio, seleccione el **espacio** de interés en el menú desplegable Espacio
+* Para sucesos de cuenta, seleccione la **cuenta** correcta en el menú desplegable Cuenta
+
+4. Ajustar tiempo de búsqueda
+
+* El tiempo de búsqueda predeterminado de Kibana está establecido en los últimos 15 minutos.
+* Pulse `Últimos 15 minutos` en la barra gris de la parte superior derecha
+* Seleccione hasta cuánto tiempo hacia atrás desea poder ver los sucesos. Es posible buscar en los sucesos de los últimos 3 días. Elija un marco de tiempo de 3 días o menos.
+
+5. Filtrar para mostrar solamente sucesos de Activity Tracker
+* Puede que encuentre sucesos tanto de registros como de Activity Tracker cuando los visualice directamente en Kibana.
+* En la barra de búsqueda, especifique `type:ActivityTracker` para mostrar únicamente los sucesos de Activity Tracker.
 
 Los sucesos que se pueden ver en Kibana corresponden a los sucesos que están alojados en el dominio seleccionado en la región donde se ha iniciado Kibana.
-
 
 ## Limitaciones
 {: #launch_kibana_limitations}
 
- Debido a limitaciones en Kibana, no puede tener varios separadores de Kibana abiertos al mismo tiempo en la misma sesión para ver distintos espacios o cuentas. Por lo tanto, si tienen dos o más sesiones abiertas a la vez, y cambia el dominio desde el espacio a la cuenta o viceversa, podría surgir algún problema.
-	
+* Debido a limitaciones en Kibana, no puede tener varios separadores de Kibana abiertos al mismo tiempo en la misma sesión para ver distintos espacios o cuentas. Por lo tanto, si tienen dos o más sesiones abiertas a la vez, y cambia el dominio desde el espacio a la cuenta o viceversa, podría surgir algún problema.
+* De forma predeterminada, únicamente el propietario de la cuenta puede visualizar sucesos de cuenta. Para permitir que otros puedan ver sucesos de cuenta, siga las instrucciones de
+[Visualización de sucesos de cuenta](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# {{site.data.keyword.cloud_notm}} コンソールでの Activity Tracker ダッシュボードへのナビゲート
+# {{site.data.keyword.cloud_notm}} コンソールでの Activity Tracker ダッシュボードのオープン
 {: #launch_at_ui}
 
-{{site.data.keyword.Bluemix}} から {{site.data.keyword.cloudaccesstrailshort}} UI を起動できます。 デフォルトでは、スペース・イベントを表示できます。 アカウント・イベントを表示することもできます。
+{{site.data.keyword.cloud_notm}} から {{site.data.keyword.cloudaccesstrailshort}} UI を起動できます。デフォルトでは、スペース・イベントを表示できます。 アカウント・イベントを表示することもできます。
 {:shortdesc}
    
 
-## スペース内のクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート
+## スペース内のクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードのオープン
 {: #launch_at_ui_account_view_space}
 
 スペース内のクラウド・アクティビティーをモニターできるように {{site.data.keyword.cloudaccesstrailshort}} UI にナビゲートするには、以下の手順を実行します。
@@ -42,7 +48,7 @@ lastupdated: "2019-02-18"
     **ActivityTracker_Space_Dashboard_in_24h** ダッシュボードが開きます。 このダッシュボードを介して、過去 24 時間のそのスペース内のクラウド・アクティビティーをモニターできます。 
 
 
-## アカウントでのクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート
+## アカウントでのクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードのオープン
 {: #launch_at_ui_account_view_account}
 
 アカウントでのクラウド・アクティビティーをモニターできるように {{site.data.keyword.cloudaccesstrailshort}} UI にナビゲートするには、以下の手順を実行します。

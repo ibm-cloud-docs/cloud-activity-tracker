@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 下载事件
@@ -29,20 +35,20 @@ lastupdated: "2019-01-23"
 
 登录到 {{site.data.keyword.cloud_notm}}。完成以下步骤：
 
-1. 运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}。
-2. 运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令，以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+1. 运行 [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}。
+2. 运行 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 命令，以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 
 **注：**设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 的组织和空间。
 
 ## 步骤 2：确定可用的事件
 {: #step2}
 
-使用 `ibmcloud at status` 命令可查看空间域中可用的事件的相关信息。
+使用 `ibmcloud at status` 命令查看空间域中可用事件的相关信息。
 
 * 要获取空间域中事件的相关信息，请运行 `ibmcloud at status` 命令。
 * 要获取帐户域中事件的相关信息，请运行带有 `-a` 选项的 `ibmcloud at status` 命令。
 
-有关更多信息，请参阅[查看事件信息](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status)。
+有关更多信息，请参阅[查看事件信息](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-viewing_event_status#viewing_event_status)。
   
 
 

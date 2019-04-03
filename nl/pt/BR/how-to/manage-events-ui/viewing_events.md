@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Visualizando eventos
@@ -33,11 +38,11 @@ Um **proprietário da conta** tem permissões para visualizar eventos em um dom�
 
 Como um **membro em uma conta**, considere as informações a seguir para visualizar eventos de conta em uma região:
 
-* Deve-se ter a função de *desenvolvedor* no espaço em que o {{site.data.keyword.cloudaccesstrailshort}} é provisionado. Para obter mais informações, consulte [Concedendo uma função do CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+* Deve-se ter a função de *desenvolvedor* no espaço em que o {{site.data.keyword.cloudaccesstrailshort}} é provisionado. Para obter mais informações, consulte [Concedendo uma função do CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
-* Deve-se ter uma política do IAM para o serviço {{site.data.keyword.loganalysisshort}} com a função de *visualizador* nessa região. A função de visualizador é a função mínima do IAM necessária. Para obter mais informações, consulte [Concedendo permissões do IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+* Deve-se ter uma política do IAM para o serviço {{site.data.keyword.loganalysisshort}} com a função de *visualizador* nessa região. A função de visualizador é a função mínima do IAM necessária. Para obter mais informações, consulte [Concedendo permissões do IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
-* É possível visualizar eventos por meio do Kibana. Para obter mais informações sobre como ativar o Kibana, veja [Navegando para o Kibana de um navegador da web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_Kibana_from_browser).
+* É possível visualizar eventos por meio do Kibana. Para obter mais informações sobre como ativar o Kibana, veja [Navegando para o Kibana de um navegador da web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_Kibana_from_browser).
 
 
 

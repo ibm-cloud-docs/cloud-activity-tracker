@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Visualizando informações de evento
@@ -31,7 +36,7 @@ Conclua as etapas a seguir para visualizar informações sobre os eventos em uma
 
 1. Obtenha um token da UAA.
 
-    Para obter mais informações, consulte [Obtendo um token UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Para obter mais informações, consulte [Obtendo um token UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Execute o comando cURL a seguir para obter o número total de eventos que estão armazenados no {{site.data.keyword.cloudaccesstrailshort}} em uma data específica.
 
@@ -44,7 +49,7 @@ Conclua as etapas a seguir para visualizar informações sobre os eventos em uma
 
     * *token* é o token da UAA.
     * *$spaceID* representa o UUID do espaço do Cloud Foundry no qual você tem o {{site.data.keyword.cloudaccesstrailshort}} provisionado.
-    * *ENDPOINT* representa o ponto de entrada para o serviço. Cada região possui uma URL diferente. Para obter a lista de terminais por região, consulte [Terminais](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* representa o ponto de entrada para o serviço. Cada região possui uma URL diferente. Para obter a lista de terminais por região, consulte [Terminais](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* e *end* representam um intervalo de tempo no qual você deseja fazer download de eventos. O formato de data é YYYY-MM-DD. 
     * *AtAccountLevel* indica o domínio no qual você deseja obter informações sobre os eventos.
     * *SearchTime* indica a hora do dia para a qual você deseja obter informações sobre os eventos.

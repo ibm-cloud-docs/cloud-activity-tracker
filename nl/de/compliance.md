@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Konformität
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} bietet eine Cloud-Plattform und Services, die den strengen Sicherheitsstandards von IBM entsprechen.](/docs/security/compliance.html#compliance). Der {{site.data.keyword.cloudaccesstraillong}}-Service ist ein DevOps-Service, der für {{site.data.keyword.cloud_notm}} erstellt wurde. 
+[{{site.data.keyword.cloud_notm}} bietet eine Cloudplattform und Services, die den strengen Sicherheitsstandards von IBM entsprechen](/docs/security/compliance.html#compliance). Der {{site.data.keyword.cloudaccesstraillong}}-Service ist ein DevOps-Service, der für {{site.data.keyword.cloud_notm}} erstellt wurde. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Beachten Sie die folgenden Informationen:
 
 Wenn Sie von einem kostenpflichtigen Plan in den Standard- oder Lite-Plan wechseln, werden Ereignisse, die sich im Langzeitspeicher befinden, in ungefähr einem Tag gelöscht.
 
-Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Kontaktaufnahme mit dem Support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). 
 
 
 
@@ -64,9 +72,9 @@ Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre D
 
 Weitere Informationen finden Sie unter:
 
-[{{site.data.keyword.cloud_notm}} - Einhaltung von Sicherheitsbestimmungen](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} - Einhaltung von Sicherheitsbestimmungen](/docs/overview?topic=overview-security#compliance)
 
-[DSGVO - Offizielle Seite von {{site.data.keyword.IBM_notm}}](https://www.ibm.com/data-responsibility/gdpr/)
+[DSGVO - offizielle {{site.data.keyword.IBM_notm}} Seite ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

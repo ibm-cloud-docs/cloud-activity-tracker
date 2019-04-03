@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Fazendo download de eventos
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
 
 1. Obtenha um token da UAA.
 
-    Para obter mais informações, consulte [Obtendo um token UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Para obter mais informações, consulte [Obtendo um token UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Crie uma sessão, na qual você especifica as condições que definem o subconjunto de eventos que você deseja fazer download.
 
@@ -53,20 +59,20 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
     ```
     {: codeblock}
 
-    em que:
+    Aonde:
     
-    * *token* representa o valor do token da UAA que você obteve em uma etapa anterior.
+    *token* representa o valor do token da UAA que você obteve em uma etapa anterior.
 
-    * *spaceID* representa o UUID do espaço do Cloud Foundry no qual o {{site.data.keyword.cloudaccesstrailshort}} está provisionado.
+    *spaceID* representa o UUID do espaço do Cloud Foundry no qual o {{site.data.keyword.cloudaccesstrailshort}} está provisionado.
 
-    * *ENDPOINT* representa o ponto de entrada para o serviço. Cada região possui uma URL diferente. Para obter a lista de terminais por região, consulte [Terminais](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* representa o ponto de entrada para o serviço. Cada região possui uma URL diferente. Para obter a lista de terminais por região, consulte [Terminais](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* e *end* representam um intervalo de tempo no qual você deseja fazer download de eventos. O formato de data é
+    *start* e *end* representam um intervalo de tempo no qual você deseja fazer download de eventos. O formato de data é
 *YYYY-MM-DD*. 
 
-    * *AtAccountLevel* indica se os eventos a serem transferidos por download estão no domínio de contas ou em um domínio de espaço.
+    *AtAccountLevel* indica se os eventos a serem transferidos por download estão no domínio de contas ou em um domínio de espaço.
     
-    * *SearchTime* indica a hora do dia para a qual você deseja fazer download de eventos.
+    *SearchTime* indica a hora do dia para a qual você deseja fazer download de eventos.
 
     Para criar uma sessão para fazer download de eventos de um domínio de espaço na região us-south, configure o parâmetro **AtAccountLevel** como *false*:
 
@@ -98,7 +104,7 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
     ```
     {: codeblock}
 
-    em que *FILENAME* é o nome do arquivo local no qual os eventos serão transferidos por download.
+    Em que *FILENAME* é o nome do arquivo local no qual os eventos serão transferidos por download.
 
     Exemplo:
 

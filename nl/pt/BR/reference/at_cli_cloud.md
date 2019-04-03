@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -175,7 +179,7 @@ ibmcloud at download [parameters] [arguments...]
 
 <dl>
 <dt>--output value, -o value</dt>
-<dd>(Opcional) Configura o caminho e o nome do arquivo para o arquivo de saída local para o qual os eventos são transferidos por download. <br>O valor padrão é um hífen (-). <br>Configure esse parâmetro como o valor padrão para logs de saída para a saída padrão.</dd>
+<dd>(Opcional) Configura o caminho e o nome do arquivo para o arquivo de saída local no qual os eventos são transferidos por download. <br>O valor padrão é um hífen (-). <br>Configure esse parâmetro como o valor padrão para logs de saída para a saída padrão.</dd>
 </dl>
 
 **Argumentos**
@@ -320,7 +324,8 @@ ibmcloud at session create [parameters] [arguments...]
 
 <dl>
   <dt>--at-account-level, -a </dt>
-  <dd>(Opcional) Configura o escopo como nível de conta. </br>Configure esse valor para obter informações de conta. <br>Se esse parâmetro não for especificado, o valor padrão será definido somente para o espaço atual, ou seja, o espaço no qual você efetuou login usando o comando `ibmcloud cf login`.
+  <dd>(Opcional) Configura o escopo como nível de conta. </br>Configure esse valor para obter informações de conta. <br>Se esse parâmetro não for especificado, o valor padrão será definido somente para o espaço atual,
+ou seja, o espaço no qual você efetuou login usando o comando `ibmcloud cf login`.
   </dd>
 
   <dt>--start value, -s value</dt>
@@ -606,7 +611,7 @@ ou seja, o espaço no qual você efetuou login usando o comando `ibmcloud cf log
   </dd>
   
   <dt>SEARCHABLE</dt>
-  <dd>Este campo indica se os eventos estão disponíveis para procura no Kibana. <br>Quando o valor do campo **SEARCHABLE** é configurado para *None*, os eventos estão disponíveis para download, mas não é possível analisá-los no Kibana.
+  <dd>Este campo indica se os eventos estão disponíveis para procura no Kibana. <br>Quando o valor do campo **SEARCHABLE** for configurado como *Nenhum*, então, os eventos ficarão disponíveis para download, mas não será possível analisá-los no Kibana.
   </dd>
   
 </dl>

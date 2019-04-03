@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch Kibana
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Navegando para o painel do Kibana
+# Abrindo o painel do Kibana
 {: #launch_kibana}
 
-É possível ativar o Kibana por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}} ou diretamente de um navegador da web.
+É possível ativar o Kibana por meio da IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.cloud_notm}} ou diretamente de um navegador da web.
 {:shortdesc}
    
 
-##  Navegando para o Kibana do painel do serviço Activity Tracker
+##  Abrindo o Kibana por meio do painel do serviço do Activity Tracker
 {: #launch_Kibana_from_at}
 
 Os logs de atividades que o Kibana exibe incluem eventos para todos os recursos que são implementados no espaço da organização do {{site.data.keyword.cloud_notm}} em que você efetuou login e onde o serviço {{site.data.keyword.cloudaccesstrailshort}} é provisionado.
@@ -33,7 +39,7 @@ Conclua as etapas a seguir para ativar o Kibana por meio do painel do serviço {
 
 1. Efetue login em sua conta do {{site.data.keyword.cloud_notm}}.
 
-    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/login ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
+    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/login ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
     
 	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
@@ -50,7 +56,7 @@ Conclua as etapas a seguir para ativar o Kibana por meio do painel do serviço {
     O painel **ActivityTracker_Account_Dashboard_in_24h** é carregado com um filtro de tempo configurado para as últimas 24 horas.
 	
 	
-##  Navegando para o Kibana por meio de um navegador da web
+##  Abrindo o Kibana por meio de um navegador da web
 {: #launch_Kibana_from_browser}
 
 Conclua as etapas a seguir para ativar o Kibana em um navegador:
@@ -87,19 +93,30 @@ Conclua as etapas a seguir para ativar o Kibana em um navegador:
 	
 2. Verifique se você está com login efetuado na conta do {{site.data.keyword.cloud_notm}} em que deseja visualizar e analisar os eventos de atividade.
 
-3. Selecione um **Domínio**.
+3. Visualizar eventos de espaço ou de conta
 
-    Selecione **Conta** para visualizar eventos no domínio de contas.
-    Selecione **Espaço** para visualizar eventos em um domínio de espaço.
+* Clique no canto superior direito da janela do Kibana no qual as informações de login são exibidas.
+* Em **Domínio** selecione espaço ou conta no menu suspenso
+* Para eventos de espaço, selecione o **espaço** de interesse no menu suspenso Espaço
+* Para eventos de conta, selecione a **conta** correta no menu suspenso Conta
+
+4. Ajuste o horário de procura
+
+* O horário de procura padrão do Kibana é configurado para os últimos 15 minutos.
+* Clique em `Last 15 minutes` na barra cinza superior direita
+* Selecione o período para o qual você deseja ver os eventos. Os últimos eventos de 3 dias são pesquisáveis. Selecione um prazo de 3 dias ou menos.
+
+5. Filtre para mostrar apenas eventos do Activity Tracker
+* Você pode encontrar os eventos de Logs e do Activity Tracker ao visualizar diretamente no Kibana.
+* Na barra de procura insira, `type:ActivityTracker` para mostrar apenas eventos do Activity Tracker.
 
 Os eventos que você vê no Kibana correspondem aos eventos que são hospedados no domínio selecionado na região em que você ativou o Kibana.
-
 
 ## Limitações
 {: #launch_kibana_limitations}
 
- Devido a limitações no Kibana, não é possível ter múltiplas guias do navegador do Kibana abertas de uma vez na mesma sessão para visualizar diferentes espaços ou contas. Portanto, se tiver duas ou mais sessões abertas de uma vez e mudar o domínio do espaço para conta ou vice-versa, você poderá ter problemas.
-	
+* Devido a limitações no Kibana, não é possível ter múltiplas guias do navegador do Kibana abertas de uma vez na mesma sessão para visualizar diferentes espaços ou contas. Portanto, se tiver duas ou mais sessões abertas de uma vez e mudar o domínio do espaço para conta ou vice-versa, você poderá ter problemas.
+* Por padrão, somente o proprietário da conta pode visualizar eventos de conta. Para permitir que outros visualizem os eventos de conta, siga as instruções em [Visualizando eventos de conta](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 

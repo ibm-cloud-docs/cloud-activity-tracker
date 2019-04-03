@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # イベント情報の表示
@@ -31,7 +36,7 @@ lastupdated: "2019-01-22"
 
 1. UAA トークンを取得します。
 
-    詳しくは、[UAA トークンの取得](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)を参照してください。
+    詳しくは、[UAA トークンの取得](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)を参照してください。
 
 2. {{site.data.keyword.cloudaccesstrailshort}} に保管された特定の日のイベントの総数を取得するには、次の cURL コマンドを実行します。
 
@@ -44,7 +49,7 @@ lastupdated: "2019-01-22"
 
     * *token* は、UAA トークンです。
     * *$spaceID* は、{{site.data.keyword.cloudaccesstrailshort}} をプロビジョンした Cloud Foundry スペースの UUID を表します。
-    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)を参照してください。
+    * *ENDPOINT* は、サービスのエントリー・ポイントを表します。 地域ごとに URL は異なります。 地域ごとのエンドポイントのリストを取得するには、[エンドポイント](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints)を参照してください。
     * *start* および *end* は、ダウンロードするイベントの期間を表します。 日付形式は YYYY-MM-DD です。 
     * *AtAccountLevel* は、イベントに関する情報の取得対象ドメインを示します。
     * *SearchTime* は、イベントに関する情報の取得対象時刻を示します。

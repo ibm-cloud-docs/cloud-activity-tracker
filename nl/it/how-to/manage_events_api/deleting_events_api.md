@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 Utilizza l'API {{site.data.keyword.cloudaccesstrailshort}} per eliminare gli eventi archiviati in {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
-**Nota:** anche se puoi eliminare gli eventi manualmente utilizzando la chiamata API, considera l'impostazione della politica di conservazione per eliminare gli eventi automaticamente. Per ulteriori informazioni, consulta [Configurazione della politica di conservazione degli eventi](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
+**Nota:** anche se puoi eliminare gli eventi manualmente utilizzando la chiamata API, considera l'impostazione della politica di conservazione per eliminare gli eventi automaticamente. Per ulteriori informazioni, consulta [Configurazione della politica di conservazione degli eventi](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy).
 
 ## Eliminazione di eventi utilizzando cURL
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ Completa la seguente procedura per eliminare gli eventi disponibili in un domini
 
 1. Ottieni un token UAA.
 
-    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Immetti il seguente comando cURL per eliminare gli eventi archiviati in {{site.data.keyword.cloudaccesstrailshort}} in una data specifica.
 
@@ -45,7 +51,7 @@ Completa la seguente procedura per eliminare gli eventi disponibili in un domini
 
     * *token* è il token UAA.
     * *spaceID* rappresenta l'UUID dello spazio Cloud Foundry in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
-    * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* e *end*rappresentano un intervallo di tempo in cui vuoi scaricare gli eventi. Il formato della data è YYYY-MM-DD. 
     * *AtAccountLevel* indica il dominio in cui vuoi ottenere le informazioni sugli eventi.
     * *SearchTime* indica l'ora della giornata per la quale vuoi le informazioni sugli eventi.
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

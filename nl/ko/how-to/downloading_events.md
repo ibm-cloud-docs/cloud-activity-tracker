@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 이벤트 다운로드
@@ -29,8 +35,8 @@ lastupdated: "2019-01-23"
 
 {{site.data.keyword.cloud_notm}}에 로그인하십시오. 다음 단계를 완료하십시오.
 
-1. [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인하십시오.
-2. [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
+1. [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인하십시오.
+2. [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
 
 **참고:** {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 조직 및 영역을 설정하십시오.
 
@@ -42,7 +48,7 @@ lastupdated: "2019-01-23"
 * 영역 도메인에 있는 이벤트에 대한 정보를 가져오려면 `ibmcloud at status` 명령을 실행하십시오.
 * 계정 도메인에 있는 이벤트에 대한 정보를 가져오려면 `ibmcloud at status` 명령을 옵션 `-a`와 함께 실행하십시오.
 
-자세한 정보는 [이벤트 정보 보기](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status)를 참조하십시오.
+자세한 정보는 [이벤트 정보 보기](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-viewing_event_status#viewing_event_status)를 참조하십시오.
   
 
 

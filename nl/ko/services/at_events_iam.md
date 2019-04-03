@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # IAM 이벤트
@@ -22,9 +28,9 @@ lastupdated: "2019-01-23"
 보안 담당자, 감사자 또는 관리자는 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자 및 애플리케이션과 {{site.data.keyword.Bluemix}}의 {{site.data.keyword.iamlong}}(IAM) 서비스가 어떻게 상호작용하는지 추적할 수 있습니다. 
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailshort}} 서비스는 {{site.data.keyword.cloud_notm}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 정보](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov )를 참조하십시오.
+{{site.data.keyword.cloudaccesstrailfull_notm}} 서비스는 {{site.data.keyword.cloud_notm}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 정보](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)를 참조하십시오.
 
-사용자 조치에 대한 모니터링을 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)의 내용을 참조하십시오. 
+사용자 조치에 대한 모니터링을 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)의 내용을 참조하십시오. 
 
 개시자는 사용자, 서비스 또는 애플리케이션일 수 있습니다.
 {: tip}
@@ -111,5 +117,9 @@ lastupdated: "2019-01-23"
 
 {{site.data.keyword.cloudaccesstrailshort}} 이벤트는 **미국 남부** 지역의 **계정 도메인**에 있습니다.
 
-이러한 이벤트를 보려면 **미국 남부** 지역에 {{site.data.keyword.cloudaccesstrailshort}} 서비스의 인스턴스를 프로비저닝해야 합니다. 이벤트를 보려면 그 후 {{site.data.keyword.cloudaccesstrailshort}} UI를 열고 계정 도메인으로 변경해야 합니다. 자세한 정보는 [계정 이벤트 보기](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events)를 참조하십시오.
+이러한 이벤트를 보려면 **미국 남부** 지역에 {{site.data.keyword.cloudaccesstrailshort}} 서비스의 인스턴스를 프로비저닝해야 합니다. 이벤트를 보려면 그 후 {{site.data.keyword.cloudaccesstrailshort}} UI를 열고 계정 도메인으로 변경해야 합니다. 
+
+자세한 정보는 [계정 이벤트 보기](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events)를 참조하십시오.
+
+
 

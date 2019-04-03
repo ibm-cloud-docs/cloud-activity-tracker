@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,38 +18,40 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Berechtigungen zum Anzeigen von Ereignissen erteilen
 {: #grant_permissions}
 
-In {{site.data.keyword.Bluemix}} können Sie einem Benutzer Cloud Foundry-Rollen, IAM-Rollen oder beide Typen von Rollen zuweisen. Diese Rollen definieren, welche Tasks ein Benutzer beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service ausüben kann.  
+In {{site.data.keyword.cloud}} können Sie einem Benutzer Cloud Foundry-Rollen, IAM-Rollen oder beide Typen von Rollen zuweisen. Diese Rollen definieren, welche Tasks ein Benutzer beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service ausführen kann.   
 {:shortdesc}
 
-## Berechtigungen zum Anzeigen von Ereignissen für ein Konto erteilen
+## Berechtigungen zum Anzeigen von Kontoereignissen erteilen
 {: #grant_acc_events}
 
-Erteilen Sie einem Benutzer die folgenden Berechtigungen, damit er Ereignisse für ein Konto in einer Region anzeigen kann:
+Erteilen Sie einem Benutzer die folgenden Berechtigungen, damit er Kontoereignisse in einer Region anzeigen kann: 
 
 1. Rolle *Entwickler* in einem Bereich (Space) der Region, in der {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird. 
 
-    Weitere Informationen finden Sie in [CF-Rolle erteilen](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Weitere Informationen finden Sie in [CF-Rolle erteilen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. IAM-Richtlinie für den {{site.data.keyword.loganalysisshort}}-Service mit der Rolle *Anzeigeberechtigter* (Viewer) in der Region. 
 
     Die Rolle des Anzeigeberechtigten ist die erforderliche minimale IAM-Rolle. 
 	
-	Weitere Informationen finden Sie im Abschnitt [IAM-Berechtigungen erteilen](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	Weitere Informationen finden Sie in [IAM-Berechtigungen erteilen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy). 
 
 
-## Berechtigungen zum Anzeigen von Ereignissen für einen Bereich (Space) erteilen
+## Berechtigungen zum Anzeigen von Bereichsereignissen erteilen
 {: #grant_space_events}
 
-Erteilen Sie einem Benutzer die folgende Berechtigung, damit er Ereignisse für einen Bereich (Space) in einer Region anzeigen kann:
+Erteilen Sie einem Benutzer die folgende Berechtigung, damit er Bereichsereignisse in einer Region anzeigen kann: 
 
 * Rolle *Entwickler* in dem Bereich (Space) der Region, in der {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird. 
 
-    Weitere Informationen finden Sie in [CF-Rolle erteilen](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Weitere Informationen finden Sie in [CF-Rolle erteilen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
 ## IAM-Berechtigungen erteilen
@@ -57,11 +63,9 @@ Wenn Sie einem Benutzer eine IAM-Rolle zuordnen möchten, berücksichtigen Sie d
 
 * Wenn Sie eine Richtlinie definieren, so definieren Sie durch die Regionen, die Sie angeben, in welchen Regionen ein Benutzer Zugriff zum Anzeigen von Domänenereignissen erteilt wird.
 
-Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zum Anzeigen von Ereignissen einer Kontodomäne zu erteilen:
+Führen Sie die folgenden Schritte aus, um einem Benutzer die Berechtigung zum Anzeigen von Ereignissen einer Kontodomäne zu erteilen: 
 
-1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
-
-    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
+1. [Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an. 
 	
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
@@ -71,7 +75,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zum Anz
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den zugehörigen Benutzernamen aus der Liste aus oder klicken Sie auf im Menü *Aktionen* auf die Option **Benutzer verwalten**.
 
-    Wenn der Benutzer nicht Mitglied des Kontos ist, lesen Sie in [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) nach.
+    Wenn der Benutzer nicht Mitglied des Kontos ist, lesen Sie in [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) nach.
 
 4. Klicken Sie im Abschnitt **Zugriffsrichtlinien** auf **Zugriff zuweisen** und wählen Sie dann **Zugriff auf Ressourcen zuweisen** aus.
 
@@ -99,7 +103,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zum Anz
 	  </tr>
 	  <tr>
 	    <td>Rollen</td>
-		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Die folgenden Rollen sind gültig: *Administrator*, *Bediener* (Operator), *Bearbeiter* (Editor) und *Anzeigeberechtigter* (Viewer).</td>
+		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Gültige Rollen sind *Administrator*, *Operator*, *Editor* und *Anzeigeberechtigter*. </td>
 	  </tr>
      </table>
 	
@@ -119,9 +123,7 @@ Wenn Sie einem Benutzer eine CF-Rolle zuordnen möchten, berücksichtigen Sie di
 
 Führen Sie die folgenden Schritte aus, um einem Benutzer den Zugriff zum Anzeigen von Ereignissen in einem Bereich (Space) zu erteilen:
 
-1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
-
-    Öffnen Sie einen Web-Browser und starten Sie das {{site.data.keyword.cloud_notm}}-Dashboard: [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}
+1. [Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an. 
 	
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
@@ -131,11 +133,11 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer den Zugriff zum Anzeig
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den zugehörigen Benutzernamen aus der Liste aus oder klicken Sie auf im Menü *Aktionen* auf die Option **Benutzer verwalten**.
 
-    Wenn der Benutzer nicht Mitglied des Kontos ist, lesen Sie in [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) nach.
+    Wenn der Benutzer nicht Mitglied des Kontos ist, lesen Sie in [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) nach.
 
-4. Wählen Sie **Cloud Foundry-Zugriff** aus und wählen Sie dann eine Organisation aus.
+4. Wählen Sie **Cloud Foundry-Zugriff** aus. Wählen Sie dann die Organisation aus. 
 
-    Es wird eine Liste der in dieser Organisation verfügbaren Bereiche (Spaces) angezeigt.
+    Die Bereiche, die in dieser Organisation verfügbar sind, werden aufgelistet. 
 
 5. Wählen Sie einen Bereich (Space) aus. Wählen Sie dann im Aktionsmenü die Option **Bereichsrolle bearbeiten** aus.
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 授與許可權以檢視事件
 {: #grant_permissions}
 
-在 {{site.data.keyword.Bluemix}} 中，您可以將 Cloud Foundry 角色、IAM 角色或這兩者指派給使用者。這些角色可定義使用者在使用 {{site.data.keyword.cloudaccesstrailshort}} 服務時可以執行的作業。  
+在 {{site.data.keyword.cloud}} 中，您可以將 Cloud Foundry 角色、IAM 角色或這兩者指派給使用者。這些角色可定義使用者在使用 {{site.data.keyword.cloudaccesstrailshort}} 服務時可以執行的作業。  
 {:shortdesc}
 
 ## 授與許可權以查看帳戶事件
@@ -29,13 +35,13 @@ lastupdated: "2019-01-23"
 
 1. 佈建 {{site.data.keyword.cloudaccesstrailshort}} 之地區空間的*開發人員* 角色。 
 
-    如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
+    如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)。
 
 2. {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則，其含有地區的*檢視者* 角色。 
 
     「檢視者」角色是必要的最小 IAM 角色。 
 	
-	如需相關資訊，請參閱[授與 IAM 許可權](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)。
+	如需相關資訊，請參閱[授與 IAM 許可權](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)。
 
 
 ## 授與許可權以查看空間事件
@@ -45,7 +51,7 @@ lastupdated: "2019-01-23"
 
 * 佈建 {{site.data.keyword.cloudaccesstrailshort}} 之地區空間的*開發人員* 角色。 
 
-    如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
+    如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)。
 
 
 ## 授與 IAM 許可權
@@ -59,9 +65,7 @@ lastupdated: "2019-01-23"
 
 請完成下列步驟，以授與使用者許可權來檢視帳戶網域中的事件：
 
-1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
-
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
+1. [登入 {{site.data.keyword.cloud_notm}} 主控台 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-01-23"
 	
 3. 如果使用者是帳戶成員，請從清單中選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶的成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶的成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**存取原則**區段中，按一下**指派存取權**，然後選取**指派資源的存取權**。
 
@@ -99,7 +103,7 @@ lastupdated: "2019-01-23"
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>選取一個以上的 IAM 角色。<br>有效角色包含：*管理者*、*操作員*、*編輯者* 及*檢視者*。</td>
+		<td>選取一個以上的 IAM 角色。<br>有效角色包含*管理者*、*操作員*、*編輯者* 及*檢視者*。</td>
 	  </tr>
      </table>
 	
@@ -119,9 +123,7 @@ lastupdated: "2019-01-23"
 
 請完成下列步驟，以授與使用者檢視空間事件的存取權：
 
-1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
-
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}
+1. [登入 {{site.data.keyword.cloud_notm}} 主控台 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
@@ -131,11 +133,11 @@ lastupdated: "2019-01-23"
 	
 3. 如果使用者是帳戶成員，請從清單中選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶的成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶的成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
-4. 選取 **Cloud Foundry 存取**，然後選取組織。
+4. 選取 **Cloud Foundry 存取**。然後選取組織。
 
-    即會列出該組織中可用的空間清單。
+    即會列出該組織中可用的空間。
 
 5. 選擇一個空間。然後，從功能表動作中，選取**編輯空間角色**。
 

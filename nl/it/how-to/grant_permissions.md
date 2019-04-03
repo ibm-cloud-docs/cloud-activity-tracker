@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Concessione delle autorizzazioni per visualizzare gli eventi
 {: #grant_permissions}
 
-In {{site.data.keyword.Bluemix}}, puoi assegnare i ruoli Cloud Foundry, i ruoli IAM o entrambi a un utente. Questi ruoli definiscono le attività che un utente può eseguire quando utilizza il servizio {{site.data.keyword.cloudaccesstrailshort}}.  
+In {{site.data.keyword.cloud}}, puoi assegnare i ruoli Cloud Foundry, i ruoli IAM o entrambi a un utente. Questi ruoli definiscono le attività che un utente può eseguire quando utilizzi il servizio {{site.data.keyword.cloudaccesstrailshort}}.  
 {:shortdesc}
 
 ## Concessione delle autorizzazioni per visualizzare gli eventi dell'account
@@ -29,13 +35,13 @@ Concedi a un utente le seguenti autorizzazioni per visualizzare gli eventi dell'
 
 1. Ruolo di *Sviluppatore* in uno spazio della regione in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}. 
 
-    Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. La politica IAM per il servizio {{site.data.keyword.loganalysisshort}} con il ruolo *visualizzatore* nella regione. 
 
     Il ruolo di visualizzatore è il ruolo minimo IAM richiesto. 
 	
-	Per ulteriori informazioni, vedi [Concessione delle autorizzazioni IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	Per ulteriori informazioni, vedi [Concessione delle autorizzazioni IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
 
 ## Concessione delle autorizzazioni per visualizzare gli eventi dello spazio
@@ -45,7 +51,7 @@ Concedi a un utente la seguente autorizzazione per visualizzare gli eventi dello
 
 * Ruolo di *Sviluppatore* nello spazio della regione in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}. 
 
-    Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Per ulteriori informazioni, vedi [Concessione di un ruolo CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
 ## Concessione delle autorizzazioni IAM
@@ -59,9 +65,7 @@ Per concedere a un utente un ruolo IAM, considera le seguenti informazioni:
 
 Completa la seguente procedura per concedere le autorizzazioni utente per visualizzare gli eventi da un dominio dell'account:
 
-1. Accedi alla console {{site.data.keyword.cloud_notm}}.
-
-    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
+1. [Accedi alla console {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 	
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -71,11 +75,11 @@ Completa la seguente procedura per concedere le autorizzazioni utente per visual
 	
 3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni* .
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
-4. Nella sezione **Politiche di accesso**, fai clic su **Assegna accesso** e seleziona quindi **Assegna l'accesso alle risorse**. 
+4. Nella sezione **Politiche di accesso**, fai clic su **Assegna accesso** e seleziona quindi **Assegna l'accesso alle risorse**.
 
-    Viene visualizzata la finestra *Assegna l'accesso alla risorsa all'utente**. 
+    Viene visualizzata la finestra *Assegna l'accesso alla risorsa all'utente**.
 
 5. Immetti le informazioni sulla politica. La seguente tabella elenca i campi necessari per definire una politica: 
 
@@ -99,7 +103,7 @@ Completa la seguente procedura per concedere le autorizzazioni utente per visual
 	  </tr>
 	  <tr>
 	    <td>Ruoli</td>
-		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono: *amministratore*, *operatore*, *editor* e *visualizzatore*.</td>
+		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono *amministratore*, *operatore*, *editor* e *visualizzatore*.</td>
 	  </tr>
      </table>
 	
@@ -119,25 +123,23 @@ Per concedere a un utente un ruolo CF, considera le seguenti informazioni:
 
 Completa la seguente procedura per concedere a un utente l'accesso per visualizzare gli eventi dello spazio:
 
-1. Accedi alla console {{site.data.keyword.cloud_notm}}.
-
-    Apri un browser web e avvia il dashboard {{site.data.keyword.cloud_notm}}: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}
+1. [Accedi alla console {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 	
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
-2. Dalla barra dei menu, fai clic su **Gestisci > Account > Utenti**.  
+2. Dalla barra dei menu, fai clic su **Gestisci > Account > Utenti**. 
 
     La finestra *Utenti* visualizza un elenco di utenti con i relativi indirizzi email per l'account selezionato al momento.
 	
 3. Se l'utente è un membro dell'account, seleziona il nome utente dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni* .
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
-4. Seleziona **Accesso Cloud Foundry** e poi l'organizzazione.
+4. Seleziona **Accesso Cloud Foundry**. Quindi seleziona l'organizzazione.
 
-    Viene visualizzato l'elenco degli spazi disponibili in tale organizzazione.
+    Vengono elencati gli spazi disponibili in tale organizzazione.
 
-5. Scegli uno spazio. Quindi, dal menu delle azioni, seleziona **Modifica ruolo spazio**. 
+5. Scegli uno spazio. Quindi, dal menu delle azioni, seleziona **Modifica ruolo spazio**.
 
 6. Seleziona **Sviluppatore**.
 	

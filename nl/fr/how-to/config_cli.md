@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,14 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Configuration de l'interface de ligne de commande d'Activity Tracker
 {: #config_cli}
 
-Le service {{site.data.keyword.cloudaccesstraillong}} inclut une interface de ligne de commande (CLI) qui vous permet de gérer vos événements dans le cloud. Vous pouvez utiliser le plug-in {{site.data.keyword.cloud_notm}} pour afficher le statut des événements, télécharger des événements et configurer la règle de conservation des événements. L'interface de ligne de commande offre différents types d'aides : une aide générale concernant l'interface de ligne de commande et les commandes prises en charge,
-une aide relative aux commandes pour savoir comment utiliser une commande et une aide relative aux sous-commandes pour savoir comment utiliser une sous-commande d'une commande.
+Le service {{site.data.keyword.cloudaccesstraillong}} inclut une interface de ligne de commande (CLI) qui vous permet de gérer vos événements dans le cloud. Vous pouvez utiliser le plug-in {{site.data.keyword.cloud_notm}} pour afficher le statut des événements, télécharger des événements et configurer la règle de conservation. L'interface CLI offre différents types d'aide : une aide générale concernant l'interface CLI et les commandes prises en charge, une aide sur les commandes pour savoir comment utiliser une commande ou une aide sur les sous-commandes pour savoir comment utiliser une sous-commande d'une commande.
 {:shortdesc}
 
 
@@ -71,11 +76,11 @@ Pour installer l'interface CLI d'{{site.data.keyword.cloudaccesstrailshort}}, pr
 
 2. Installez le plug-in {{site.data.keyword.cloudaccesstrailshort}}.
 
-    * Pour Linux, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Linux](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
-    * Pour Windows, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Windows](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
-    * Pour Mac OS X, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Mac OS X](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac).
+    * Pour Linux, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
+    * Pour Windows, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
+    * Pour Mac OS X, voir [Installation du plug-in {{site.data.keyword.cloudaccesstrailshort}} sous Mac OS X](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac).
  
-3. Vérifiez l'installation du plug-in de l'interface CLI.
+3. Vérifiez l'installation du plug-in de l'interface de ligne de commande.
   
     Par exemple, vérifiez la version du plug-in. Exécutez la commande suivante :
     
@@ -93,7 +98,7 @@ Procédez comme suit pour installer le plug-in sous Linux :
 
 1. Installez le plug-in.
 
-    Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
 	* Sélectionnez la valeur de plateforme : **linux64**. 
 	
@@ -114,7 +119,7 @@ Procédez comme suit pour installer le plug-in sous Linux :
 
 Procédez comme suit pour installer le plug-in sous Windows :
 
-1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
 	
 	1. Sélectionnez la valeur de plateforme : **win64**. 
 	2. Cliquez sur **Enregistrer le fichier**.  
@@ -133,9 +138,9 @@ Procédez comme suit pour installer le plug-in sous Windows :
 
 Procédez comme suit pour installer le plug-in sous Mac OS X :
 
-1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Téléchargez l'édition la plus récente du plug-in d'interface de ligne de commande du service {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) depuis la [page de l'interface de ligne de commande {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
-	1. Sélectionnez la valeur de plateforme : **osx**. 
+	1. Sélectionnez la valeur de plateforme `osx`. 
 	2. Cliquez sur **Enregistrer le fichier**.  
     
 2. Installez le plug-in. Exécutez la commande suivante :
@@ -189,7 +194,7 @@ Procédez comme suit pour mettre à jour l'interface de ligne de commande du ser
     ```
     {: codeblock}
  
-2. Vérifiez l'installation du plug-in de l'interface CLI.
+2. Vérifiez l'installation du plug-in de l'interface de ligne de commande.
   
     Par exemple, vérifiez la version du plug-in. Exécutez la commande suivante :
     
@@ -206,7 +211,7 @@ Procédez comme suit pour mettre à jour l'interface de ligne de commande du ser
 ## Obtenir de l'aide
 {: #general_cli_help}
 
-Pour obtenir des informations générales sur l'interface de ligne de commande et savoir quelles commandes sont prises en charge, procédez comme suit :
+Pour obtenir des informations générales sur l'interface de ligne de commande et les commandes prises en charge, procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.cloud_notm}}. 
     
@@ -222,7 +227,7 @@ Pour obtenir des informations générales sur l'interface de ligne de commande e
 ## Obtenir de l'aide sur une commande
 {: #command_cli_help}
 
-Pour obtenir de l'aide au sujet de l'utilisation d'une commande, procédez comme suit :
+Pour obtenir de l'aide sur l'utilisation d'une commande, procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.cloud_notm}}. 
     
@@ -240,7 +245,7 @@ Pour obtenir de l'aide au sujet de l'utilisation d'une commande, procédez comme
     ```
     {: codeblock}
     
-    où *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *status*.
+    Où *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *status*.
 
 
 
@@ -265,7 +270,7 @@ Une commande peut avoir des sous-commandes. Pour obtenir de l'aide sur des sous-
     ```
     {: codeblock}
     
-    où *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *session*.
+    Où *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *session*.
 
 4. Obtenez de l'aide sur la commande et identifiez les sous-commandes prises en charge. Exécutez la commande suivante :
 
@@ -274,10 +279,11 @@ Une commande peut avoir des sous-commandes. Pour obtenir de l'aide sur des sous-
     ```
     {: codeblock}
     
-    où 
+    Où 
     
-    * *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *status*.
-    * *sous-commande* est le nom d'une sous-commande prise en charge. Par exemple, pour la commande *session*, une sous-commande valide est *list*.
+    *commande* est le nom d'une commande de l'interface de ligne de commande, par exemple *status*.
+
+    *sous-commande* est le nom d'une sous-commande prise en charge. Par exemple, pour la commande *session*, une sous-commande valide est *list*.
 
 
 ## Affichage des détails du plug-in

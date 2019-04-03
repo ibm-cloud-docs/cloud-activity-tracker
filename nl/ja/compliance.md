@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # コンプライアンス
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} は、IBM の厳しいセキュリティー規格に準拠したクラウド・プラットフォームおよびサービスを提供します](/docs/security/compliance.html#compliance)。 {{site.data.keyword.cloudaccesstraillong}} サービスは、{{site.data.keyword.cloud_notm}} 向けに作成された DevOps サービスです。 
+[{{site.data.keyword.cloud_notm}} が提供するクラウド・プラットフォームおよびサービスは、IBM の厳格なセキュリティー標準に準拠しています](/docs/security/compliance.html#compliance)。 {{site.data.keyword.cloudaccesstraillong}} サービスは、{{site.data.keyword.cloud_notm}} 向けに作成された DevOps サービスです。 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ lastupdated: "2019-01-23"
 
 有料プランから標準プランまたはライト・プランに変更すると、長期保管リポジトリー内のイベントは約 1 日後に削除されます。
 
-いつでも、サポート・チケットをオープンし、すべてのデータを削除するよう依頼できます。 IBM サポート・チケットのオープンについて詳しくは、[サポートへのお問い合わせ](/docs/get-support/howtogetsupport.html#getting-customer-support)を参照してください。
+いつでも、サポート・チケットをオープンし、すべてのデータを削除するよう依頼できます。 IBM サポート・チケットのオープンについては、[サポートの利用](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)を参照してください。
 
 
 
@@ -64,9 +72,9 @@ lastupdated: "2019-01-23"
 
 詳しくは、以下を参照してください。
 
-[{{site.data.keyword.cloud_notm}} セキュリティー・コンプライアンス](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} セキュリティー・コンプライアンス](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - {{site.data.keyword.IBM_notm}} 公式ページ](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} 公式ページ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

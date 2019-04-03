@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Affichage d'événements
@@ -33,11 +38,11 @@ Un **propriétaire de compte** dispose des droits nécessaires pour afficher des
 
 En tant que **membre d'un compte**, tenez compte des informations suivantes pour afficher des événements de compte dans une région :
 
-* Vous devez disposer du rôle *Développeur* dans l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+* Vous devez disposer du rôle *Développeur* dans l'espace où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
-* Vous devez disposer d'une règle IAM pour le service {{site.data.keyword.loganalysisshort}} avec le rôle *Afficheur* dans cette région. Le rôle d'afficheur est le rôle IAM minimal requis. Pour plus d'informations, voir [Octroi de droits IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+* Vous devez disposer d'une règle IAM pour le service {{site.data.keyword.loganalysisshort}} avec le rôle *Afficheur* dans cette région. Le rôle d'afficheur est le rôle IAM minimal requis. Pour plus d'informations, voir [Octroi de droits IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
-* Vous pouvez afficher des événements via Kibana. Pour plus d'informations sur le lancement de Kibana, voir [Accès à Kibana depuis un navigateur Web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_Kibana_from_browser).
+* Vous pouvez afficher des événements via Kibana. Pour plus d'informations sur le lancement de Kibana, voir [Accès à Kibana depuis un navigateur Web](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_Kibana_from_browser).
 
 
 

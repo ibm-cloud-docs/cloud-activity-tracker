@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Ereignisinformationen anzeigen
@@ -31,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu den Ereignissen an e
 
 1. Rufen Sie ein UAA-Token ab.
 
-    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Wenn Sie die Gesamtzahl von Ereignissen abrufen wollen, die an einem bestimmten Datum in {{site.data.keyword.cloudaccesstrailshort}} gespeichert wurden, führen Sie den folgenden cURL-Befehl aus:
 
@@ -44,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu den Ereignissen an e
 
     * *token* ist das UAA-Token.
     * *$spaceID* stellt die UUID des Cloud Foundry-Bereichs dar, in dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
-    * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* und *end* stellen einen Zeitbereich dar, für den Sie Ereignisse herunterladen möchten. Das Datumsformat ist JJJJ-MM-TT. 
     * *AtAccountLevel* gibt die Domäne an, in der Informationen zu den Ereignissen abgerufen werden sollen.
     * *SearchTime* gibt die Tageszeit an, für die Sie Informationen zu den Ereignissen abrufen wollen.

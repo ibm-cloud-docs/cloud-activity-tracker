@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # IAM 事件
@@ -22,9 +28,9 @@ lastupdated: "2019-01-23"
 作为安全主管、审计员或管理者，您可以使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来跟踪用户和应用程序与 {{site.data.keyword.Bluemix}} 中 {{site.data.keyword.iamlong}} (IAM) 服务的交互方式。
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailshort}} 服务会记录用户发起的用于在 {{site.data.keyword.cloud_notm}} 中更改服务状态的活动。有关更多信息，请参阅[关于 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov )。
+{{site.data.keyword.cloudaccesstrailfull_notm}} 服务会记录用户发起的用于在 {{site.data.keyword.cloud_notm}} 中更改服务状态的活动。有关更多信息，请参阅[关于 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)。
 
-要开始监视用户的操作，请参阅[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)。 
+要开始监视用户的操作，请参阅[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)。 
 
 发起方可以为用户、服务或应用程序。
 {: tip}
@@ -111,5 +117,9 @@ lastupdated: "2019-01-23"
 
 {{site.data.keyword.cloudaccesstrailshort}} 事件在**美国南部**区域**帐户域**中提供。
 
-要查看这些事件，必须在**美国南部**区域中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例。然后，必须打开 {{site.data.keyword.cloudaccesstrailshort}} UI，并切换到帐户域以查看事件。有关更多信息，请参阅[查看帐户事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events)。
+要查看这些事件，必须在**美国南部**区域中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例。然后，必须打开 {{site.data.keyword.cloudaccesstrailshort}} UI，并切换到帐户域以查看事件。 
+
+有关更多信息，请参阅[查看帐户事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events)。
+
+
 
