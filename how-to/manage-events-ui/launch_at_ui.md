@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-04"
 
 keywords: IBM Cloud, Activity Tracker, launch UI
 
@@ -35,9 +35,7 @@ You can launch the {{site.data.keyword.cloudaccesstrailshort}} UI from the {{sit
 
 Complete the following steps to navigate to the {{site.data.keyword.cloudaccesstrailshort}} UI so that you can monitor Cloud activity in a space:
 
-1. Log in to the space, organization, and region of your {{site.data.keyword.cloud_notm}} account where you want to monitor your cloud activity.
-
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){:new_window}.
+1. Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
     
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -53,9 +51,7 @@ Complete the following steps to navigate to the {{site.data.keyword.cloudaccesst
 
 Complete the following steps to navigate to the {{site.data.keyword.cloudaccesstrailshort}} UI so that you can monitor Cloud activity in an account:
 
-1. Log in to the {{site.data.keyword.cloud_notm}} account where you want to monitor your cloud activity.
-
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com/ ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){:new_window}.
+1. Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
     
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
