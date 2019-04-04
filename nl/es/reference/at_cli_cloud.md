@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -145,7 +149,7 @@ ibmcloud at delete [parámetros] [argumentos..]
 
 **Ejemplo**
 
-Para suprimir eventos del 22 de junio de 2017, ejecute el siguiente mandato:
+Para suprimir sucesos del 22 de junio de 2017, ejecute el siguiente mandato:
 ```
 ibmcloud at delete -s 2017-06-22 -e 2017-06-22
 ```

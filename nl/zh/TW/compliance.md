@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 規範
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} 提供了一個遵照 IBM 的嚴格安全標準而建置的雲端平台及服務。](/docs/security/compliance.html#compliance){{site.data.keyword.cloudaccesstraillong}} 服務是針對 {{site.data.keyword.cloud_notm}} 而建置的 DevOps 服務。
+[{{site.data.keyword.cloud_notm}} 提供了一個遵照 IBM 的嚴格安全標準而建置的雲端平台及服務](/docs/security/compliance.html#compliance)。{{site.data.keyword.cloudaccesstraillong}} 服務是針對 {{site.data.keyword.cloud_notm}} 而建置的 DevOps 服務。
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ lastupdated: "2019-01-23"
 
 如果您從付費方案變更為標準或精簡方案，則會在大約一天內刪除在長期儲存儲存庫中的事件。
 
-您可以隨時開立支援問題單並要求刪除您的所有資料。如需開立 IBM 支援問題單的相關資訊，請參閱[與支援中心聯絡](/docs/get-support/howtogetsupport.html#getting-customer-support)。
+您可以隨時開立支援問題單並要求刪除您的所有資料。如需開立 IBM 支援問題單的相關資訊，請參閱[取得支援](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)。
 
 
 
@@ -64,9 +72,9 @@ lastupdated: "2019-01-23"
 
 如需相關資訊，請參閱：
 
-[{{site.data.keyword.cloud_notm}} 安全規範](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} 安全規範](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - {{site.data.keyword.IBM_notm}} 官方頁面](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} 官方頁面 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

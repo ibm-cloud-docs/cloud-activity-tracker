@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # イベントを表示する許可の付与
 {: #grant_permissions}
 
-{{site.data.keyword.Bluemix}} では、Cloud Foundry 役割、IAM 役割、あるいは両方をユーザーに割り当てることができます。 これらの役割は、ユーザーが {{site.data.keyword.cloudaccesstrailshort}} サービスを使用して作業するときに実行できるタスクを定義します。  
+{{site.data.keyword.cloud}} では、Cloud Foundry 役割、IAM 役割、あるいは両方をユーザーに割り当てることができます。 これらの役割は、{{site.data.keyword.cloudaccesstrailshort}} サービスを使用して作業するときにユーザーが実行できるタスクを定義します。  
 {:shortdesc}
 
 ## アカウント・イベントを表示する許可の付与
@@ -29,13 +35,13 @@ lastupdated: "2019-01-23"
 
 1. {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされた地域のいずれかのスペースでの*開発者* 役割。 
 
-    詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)を参照してください。
+    詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)を参照してください。
 
 2. 地域での*ビューアー* 役割が指定された、{{site.data.keyword.loganalysisshort}} サービスの IAM ポリシー。 
 
     ビューアー役割は、必要な最小の IAM 役割です。 
 	
-	詳しくは、[IAM 許可の付与](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)を参照してください。
+	詳しくは、[IAM 許可の付与](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)を参照してください。
 
 
 ## スペース・イベントを表示する許可の付与
@@ -45,7 +51,7 @@ lastupdated: "2019-01-23"
 
 * {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされた地域の当該スペースでの*開発者* 役割。 
 
-    詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)を参照してください。
+    詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)を参照してください。
 
 
 ## IAM 許可の付与
@@ -59,9 +65,7 @@ lastupdated: "2019-01-23"
 
 アカウント・ドメインからのイベントを表示する許可をユーザーに付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
-
-    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
+1. [{{site.data.keyword.cloud_notm}} コンソールにログイン ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
 	
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-01-23"
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)を参照してください。
+    ユーザーがアカウントのメンバーでない場合、[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)を参照してください。
 
 4. **「アクセス・ポリシー」**セクションで、**「アクセス権限の割り当て」**をクリックし、**「リソースへのアクセス権限の割り当て」**を選択します。
 
@@ -99,7 +103,7 @@ lastupdated: "2019-01-23"
 	  </tr>
 	  <tr>
 	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。</td>
+		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*アドミニストレーター*、*オペレーター*、*エディター*、*ビューアー*です。 </td>
 	  </tr>
      </table>
 	
@@ -119,9 +123,7 @@ lastupdated: "2019-01-23"
 
 スペース・イベントを表示する権限をユーザーに付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
-
-    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
+1. [{{site.data.keyword.cloud_notm}} コンソールにログイン ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
 	
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -131,11 +133,11 @@ lastupdated: "2019-01-23"
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)を参照してください。
+    ユーザーがアカウントのメンバーでない場合、[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)を参照してください。
 
-4. **「Cloud Foundry アクセス権限」**を選択し、組織を選択します。
+4. **「Cloud Foundry アクセス権限」**を選択します。次に、組織を選択します。
 
-    その組織で使用可能なスペースのリストが表示されます。
+    その組織で使用可能なスペースがリストされます。
 
 5. スペースを 1 つ選択します。 次に、メニュー・アクションから**「スペースの役割の編集」**を選択します。
 

@@ -19,7 +19,7 @@ lastupdated: "2019-02-18"
 # 시작하기
 {: #getting-started-with-cla}
 
-{{site.data.keyword.cloudaccesstrailfull}} 서비스는 {{site.data.keyword.Bluemix}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 클라우드 서비스 간의 상호작용을 모니터하는 방법을 알아보십시오.
+{{site.data.keyword.cloudaccesstrailfull}} 서비스는 {{site.data.keyword.Bluemix}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 클라우드 서비스 간의 상호작용을 모니터하는 방법을 알아보십시오. 
 {:shortdesc}
 
 다음 그림은 사용자가 시작한 활동이 서비스의 상태를 변경하는 경우 발생하는 다양한 컴포넌트 및 조치를 보여줍니다.
@@ -35,7 +35,7 @@ lastupdated: "2019-02-18"
 * 서비스가 사용 가능한 지역을 확인하십시오. 자세한 정보는 [지역](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)을 참조하십시오.
 * {{site.data.keyword.cloud_notm}} 계정의 구성원 또는 소유자인 사용자 ID를 가져오십시오. 
 
-    {{site.data.keyword.cloud_notm}} 사용자 ID를 가져오려면 [등록 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/registration/){:new_window}으로 이동하십시오.
+    {{site.data.keyword.cloud_notm}} 사용자 ID를 가져오려면 [등록 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}으로 이동하십시오.
 
 
 
@@ -56,9 +56,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloudaccesstraillong_notm}} 서비스의 인스턴스를 {{site.data.keyword.cloud_notm}}에 프로비저닝하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.cloud_notm}}에 로그인하십시오.
-
-    {{site.data.keyword.cloud_notm}} 대시보드는 [https://cloud.ibm.com ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com){:new_window}에 있습니다.
+1. [{{site.data.keyword.cloud_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
     
 	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
@@ -126,9 +124,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} UI에서 IAM 정책을 사용자에게 부여하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.cloud_notm}} 콘솔에 로그인하십시오.
-
-    웹 브라우저를 열고 {{site.data.keyword.cloud_notm}} 대시보드를 실행하십시오([https://cloud.ibm.com ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com){:new_window}).
+1. [{{site.data.keyword.cloud_notm}} 콘솔 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
 
 2. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 다음 **사용자**를 선택하십시오.
 3. 액세스 권한을 지정할 사용자에 대한 행에서 **조치** 메뉴를 선택한 다음 **액세스 권한 지정**을 클릭하십시오.
@@ -144,9 +140,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} UI에서 영역의 개발자 역할을 사용자에게 부여하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.cloud_notm}} 콘솔에 로그인하십시오.
-
-    웹 브라우저를 열고 {{site.data.keyword.cloud_notm}} 대시보드를 실행하십시오([https://cloud.ibm.com ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com){:new_window}).
+1. [{{site.data.keyword.cloud_notm}} 콘솔 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
 	
 	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
@@ -167,6 +161,7 @@ lastupdated: "2019-02-18"
 8. 조치 메뉴에서 **영역 역할 편집**을 선택하십시오. *영역 역할* 필드에서 **개발자** 역할을 선택하십시오. 그런 다음 **역할 저장**을 클릭하십시오.
 	
 7. **지정**을 클릭하십시오.
+
 
 
 
@@ -206,7 +201,7 @@ lastupdated: "2019-02-18"
 
 다음 표에서는 이벤트를 모니터해야 하는 {{site.data.keyword.cloudaccesstrailshort}} 도메인을 정의합니다.
 
-| 모니터링                                                             | {{site.data.keyword.cloudaccesstrailshort}} 도메인 |  
+| 모니터링                                                           | {{site.data.keyword.cloudaccesstrailshort}} 도메인 |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
 | `글로벌 계정 조치`                                             | 미국 남부 계정 도메인                            |  
 | `리소스 그룹의 컨텍스트에 프로비저닝된 서비스`   | 계정 도메인                                     | 

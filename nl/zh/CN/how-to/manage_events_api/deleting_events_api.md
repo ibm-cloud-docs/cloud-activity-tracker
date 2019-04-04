@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -24,7 +30,7 @@ lastupdated: "2019-01-22"
 {:shortdesc}
 
 **注：**虽然可以使用 API 调用手动删除事件，但请考虑将保留时间策略设置为自动删除事件。有关更多信息，请参阅
-[配置事件保留时间策略](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)。
+[配置事件保留时间策略](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy)。
 
 ## 使用 cURL 删除事件
 {: #deleting_events_api_records_per_day_curl}
@@ -33,7 +39,7 @@ lastupdated: "2019-01-22"
 
 1. 获取 UAA 令牌。
 
-    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)。
+    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)。
 
 2. 运行以下 cURL 命令，以删除在特定日期存储在 {{site.data.keyword.cloudaccesstrailshort}} 中的事件。
 
@@ -47,7 +53,7 @@ lastupdated: "2019-01-22"
 
     * *token* 是 UAA 令牌。
     * *spaceID* 表示您供应 {{site.data.keyword.cloudaccesstrailshort}} 的 Cloud Foundry 空间的 UUID。
-    * *ENDPOINT* 表示服务的入口点。每个区域都有不同的 URL。要获取每个区域的端点的列表，请参阅[端点](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)。
+    * *ENDPOINT* 表示服务的入口点。每个区域都有不同的 URL。要获取每个区域的端点的列表，请参阅[端点](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints)。
     * *start* 和 *end* 表示要下载哪一时间范围的事件。日期格式为 YYYY-MM-DD。 
     * *AtAccountLevel* 指示要获取哪一域中事件的相关信息。
     * *SearchTime* 指示要获取哪一时刻的事件的相关信息。
@@ -123,3 +129,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

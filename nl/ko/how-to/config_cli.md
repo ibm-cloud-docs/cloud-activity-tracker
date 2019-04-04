@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Activity Tracker CLI 구성
@@ -68,11 +74,11 @@ lastupdated: "2019-02-18"
 
    자세한 정보는 [{{site.data.keyword.cloud_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)를 참조하십시오.
 
-2. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 설치하십시오.
+2. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 설치하십시오. 
 
-    * Linux의 경우에는 [Linux에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux)를 참조하십시오.
-    * Windows의 경우에는 [Windows에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows)를 참조하십시오.
-    * Mac OS X의 경우에는 [Mac OS X에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac)를 참조하십시오.
+    * Linux의 경우에는 [Linux에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux)를 참조하십시오.
+    * Windows의 경우에는 [Windows에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows)를 참조하십시오.
+    * Mac OS X의 경우에는 [Mac OS X에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac)를 참조하십시오.
  
 3. CLI 플러그인의 설치를 확인하십시오.
   
@@ -92,7 +98,7 @@ Linux에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 1. 플러그인을 설치하십시오.
 
-    [{{site.data.keyword.cloud_notm}} CLI 페이지](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오. 
+    [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
 	* 플랫폼 값을 **linux64**로 선택하십시오. 
 	
@@ -113,7 +119,7 @@ Linux에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 Windows에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} CLI 페이지](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오. 
+1. [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
 	
 	1. 플랫폼 값을 **win64**로 선택하십시오. 
 	2. **파일 저장**을 클릭하십시오.  
@@ -132,9 +138,9 @@ Windows에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 Mac OS X에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} CLI 페이지](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오. 
+1. [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
-	1. 플랫폼 값을 **osx**로 선택하십시오. 
+	1. 플랫폼 값을 `osx`로 선택하십시오. 
 	2. **파일 저장**을 클릭하십시오.  
     
 2. 플러그인을 설치하십시오. 다음 명령을 실행하십시오.
@@ -190,7 +196,7 @@ CLI를 업데이트하려면 *ibmcloud plugin update* 명령을 실행하십시�
  
 2. CLI 플러그인의 설치를 확인하십시오.
   
-    예를 들면, 플러그인의 버전을 확인하십시오. 다음 명령을 실행하십시오.
+    예를 들어, 플러그인의 버전을 확인하십시오. 다음 명령을 실행하십시오.
     
     ```
     ibmcloud plugin list
@@ -239,7 +245,7 @@ CLI와 지원되는 명령에 대한 일반 정보를 가져오려면 다음 단
     ```
     {: codeblock}
     
-    여기서 *Command*는 CLI 명령의 이름(예: *status*)입니다.
+    여기서, *Command*는 CLI 명령의 이름(예: *status*)입니다.
 
 
 
@@ -264,7 +270,7 @@ CLI와 지원되는 명령에 대한 일반 정보를 가져오려면 다음 단
     ```
     {: codeblock}
     
-    여기서 *Command*는 CLI 명령의 이름(예: *session*)입니다.
+    여기서, *Command*는 CLI 명령의 이름(예: *session*)입니다.
 
 4. 해당 명령에 대한 도움말을 보고 지원되는 하위 명령을 식별하십시오. 다음 명령을 실행하십시오.
 
@@ -275,8 +281,9 @@ CLI와 지원되는 명령에 대한 일반 정보를 가져오려면 다음 단
     
     여기서, 
     
-    * 여기서 *Command*는 CLI 명령의 이름(예: *status*)입니다.
-    * *Subcommand*는 지원되는 하위 명령의 이름(예: 명령 *session*의 경우 유효한 하위 명령은 *list*)입니다.
+    여기서 *Command*는 CLI 명령의 이름(예: *status*)입니다.
+
+    *Subcommand*는 지원되는 하위 명령의 이름(예: 명령 *session*의 경우 유효한 하위 명령은 *list*)입니다.
 
 
 ## 플러그인의 세부사항 표시

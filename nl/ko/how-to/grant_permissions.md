@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 이벤트를 볼 수 있는 권한 부여
 {: #grant_permissions}
 
-{{site.data.keyword.Bluemix}}에서는 사용자에게 Cloud Foundry 역할 또는 IAM 역할을 지정하거나, 이를 둘 다 지정할 수 있습니다. 이러한 역할은 {{site.data.keyword.cloudaccesstrailshort}} 서비스에 대해 작업할 때 사용자가 수행할 수 있는 태스크를 정의합니다.  
+{{site.data.keyword.cloud}}에서는 사용자에게 Cloud Foundry 역할 또는 IAM 역할을 지정하거나, 이를 둘 다 지정할 수 있습니다. 이러한 역할은 {{site.data.keyword.cloudaccesstrailshort}} 서비스에 대해 작업할 때 사용자가 수행할 수 있는 태스크를 정의합니다.  
 {:shortdesc}
 
 ## 계정 이벤트를 볼 수 있는 권한 부여
@@ -29,13 +35,13 @@ lastupdated: "2019-01-23"
 
 1. {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 지역에 있는 영역의 *개발자* 역할. 
 
-    자세한 정보는 [CF 역할 부여](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)를 참조하십시오.
+    자세한 정보는 [CF 역할 부여](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)를 참조하십시오.
 
 2. 해당 지역의 *뷰어* 역할이 있는 {{site.data.keyword.loganalysisshort}} 서비스에 대한 IAM 정책. 
 
     뷰어 역할은 필요한 최소 IAM 역할입니다. 
 	
-	자세한 정보는 [IAM 권한 부여](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)를 참조하십시오.
+	자세한 정보는 [IAM 권한 부여](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)를 참조하십시오.
 
 
 ## 영역 이벤트를 볼 수 있는 권한 부여
@@ -45,7 +51,7 @@ lastupdated: "2019-01-23"
 
 * {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 지역에 있는 영역의 *개발자* 역할. 
 
-    자세한 정보는 [CF 역할 부여](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)를 참조하십시오.
+    자세한 정보는 [CF 역할 부여](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)를 참조하십시오.
 
 
 ## IAM 권한 부여
@@ -59,9 +65,7 @@ lastupdated: "2019-01-23"
 
 사용자에게 계정 도메인의 이벤트를 볼 수 있는 권한을 부여하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.cloud_notm}} 콘솔에 로그인하십시오.
-
-    웹 브라우저를 열고 {{site.data.keyword.cloud_notm}} 대시보드를 실행하십시오([http://bluemix.net ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://bluemix.net){:new_window}).
+1. [{{site.data.keyword.cloud_notm}} 콘솔 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
 	
 	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
@@ -71,7 +75,7 @@ lastupdated: "2019-01-23"
 	
 3. 사용자가 계정의 구성원인 경우에는 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우에는 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우에는 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **액세스 정책** 섹션에서 **액세스 권한 지정**을 클릭한 후 **리소스에 대한 액세스 권한 지정**을 선택하십시오.
 
@@ -119,9 +123,7 @@ lastupdated: "2019-01-23"
 
 사용자에게 영역 이벤트를 볼 수 있는 권한을 부여하려면 다음 단계를 완료하십시오.
 
-1. {{site.data.keyword.cloud_notm}} 콘솔에 로그인하십시오.
-
-    웹 브라우저를 열고 {{site.data.keyword.cloud_notm}} 대시보드를 실행하십시오([http://bluemix.net ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://bluemix.net){:new_window}).
+1. [{{site.data.keyword.cloud_notm}} 콘솔 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
 	
 	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
@@ -131,11 +133,11 @@ lastupdated: "2019-01-23"
 	
 3. 사용자가 계정의 구성원인 경우에는 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우에는 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우에는 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
-4. **Cloud Foundry 액세스 권한**을 선택한 후 조직을 선택하십시오.
+4. **Cloud Foundry 액세스 권한**을 선택하십시오. 그런 다음 조직을 선택하십시오.
 
-    해당 조직에서 사용 가능한 영역의 목록이 나열합니다.
+    해당 조직에서 사용 가능한 영역의 목록이 나열됩니다.
 
 5. 한 영역을 선택하십시오. 그런 다음 메뉴 조치에서 **영역 역할 편집**을 선택하십시오.
 

@@ -31,11 +31,11 @@ lastupdated: "2019-02-18"
 ## 始めに
 {: #index_prereqs}
 
-* {{site.data.keyword.cloudaccesstrailshort}} サービスに関する文書をお読みください。詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} ](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov) についてのページを参照してください。
-* このサービスが使用可能な地域を確認してください。詳しくは、[地域](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)を参照してください。
+* {{site.data.keyword.cloudaccesstrailshort}} サービスに関する文書をお読みください。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} ](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov) についてのページを参照してください。
+* このサービスが使用可能な地域を確認してください。 詳しくは、[地域](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)を参照してください。
 * {{site.data.keyword.cloud_notm}} アカウントのメンバーまたは所有者であるユーザー ID を取得してください。 
 
-    {{site.data.keyword.cloud_notm}} ユーザー ID を取得するには、[登録 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/registration/){:new_window} に移動してください。
+    {{site.data.keyword.cloud_notm}} ユーザー ID を取得するには、[登録 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} に移動してください。
 
 
 
@@ -44,9 +44,9 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする場所を選択する際には、以下のことを考慮してください。
 
-* {{site.data.keyword.cloudaccesstrailshort}} はイベントをドメインに収集します。地域ごとに 1 つのアカウント・ドメインがあり、Cloud Foundry (CF) スペースごとに 1 つのスペース・ドメインがあります。 
+* {{site.data.keyword.cloudaccesstrailshort}} はイベントをドメインに収集します。 地域ごとに 1 つのアカウント・ドメインがあり、Cloud Foundry (CF) スペースごとに 1 つのスペース・ドメインがあります。 
 
-* **グローバル・アカウント・アクションをモニターするには**、米国南部地域のスペースで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする必要があります。グローバル・アクションの例として、インスタンスのプロビジョン、ユーザーの IAM ポリシーの変更、アカウントへのユーザーの招待があります。
+* **グローバル・アカウント・アクションをモニターするには**、米国南部地域のスペースで {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする必要があります。 グローバル・アクションの例として、インスタンスのプロビジョン、ユーザーの IAM ポリシーの変更、アカウントへのユーザーの招待があります。
 
 * **CF 組織およびスペースのコンテキストでプロビジョンされたサービスによって生成されるイベントをモニターするには**、モニター対象アクティビティーのサービスがプロビジョンされているのと同じ地域およびスペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスのインスタンスをプロビジョンする必要があります。 
 
@@ -56,9 +56,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. {{site.data.keyword.cloud_notm}} にログインします。
-
-    {{site.data.keyword.cloud_notm}} ダッシュボードは、[https://cloud.ibm.com ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com){:new_window} にあります。
+1. [{{site.data.keyword.cloud_notm}} にログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
     
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -107,7 +105,7 @@ lastupdated: "2019-02-18"
 ## ステップ 2: イベントをモニターするためのアクセス権限をユーザーに付与する
 {: #index_step2}
 
-イベントを表示するには、{{site.data.keyword.cloud_notm}} でのアクセス許可が必要です。グローバル・アカウント・イベントを表示するか、リソース・グループのコンテキストでプロビジョンされたサービスのイベントを表示するか、または CF 組織およびスペースのコンテキストでプロビジョンされたサービスのイベントを表示するかによって、許可は異なります。 
+イベントを表示するには、{{site.data.keyword.cloud_notm}} でのアクセス許可が必要です。 グローバル・アカウント・イベントを表示するか、リソース・グループのコンテキストでプロビジョンされたサービスのイベントを表示するか、または CF 組織およびスペースのコンテキストでプロビジョンされたサービスのイベントを表示するかによって、許可は異なります。 
 
 **グローバル・アカウント・アクションをモニターする場合**と**リソース・グループのコンテキストでプロビジョンされたサービスをモニターする場合**、以下のことを考慮してください。
 
@@ -126,9 +124,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} UI からユーザーに IAM ポリシーを付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
-
-    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [https://cloud.ibm.com ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com){:new_window} を起動します。
+1. [{{site.data.keyword.cloud_notm}} コンソールにログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
 
 2. メニュー・バーで、**「管理」**&gt;**「セキュリティー」**&gt;**「ID およびアクセス」**をクリックして、**「ユーザー」**を選択します。
 3. アクセス権限を割り当てるユーザーの行から**「アクション」**メニューを選択し、**「アクセス権限の割り当て」**をクリックします。
@@ -144,9 +140,7 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloud_notm}} UI からスペースでの開発者役割をユーザーに付与するには、以下のステップを実行します。
 
-1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
-
-    Web ブラウザーを開き、{{site.data.keyword.cloud_notm}} ダッシュボード [https://cloud.ibm.com ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com){:new_window} を起動します。
+1. [{{site.data.keyword.cloud_notm}} コンソールにログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
 	
 	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -160,13 +154,14 @@ lastupdated: "2019-02-18"
 
     その組織で使用可能なスペースのリストが表示されます。
 
-6. アクション・メニューから**「組織の役割の編集」**を選択します。*「組織の役割」* フィールドに**「監査員」**役割を選択します。次に、**「役割の保存」**をクリックします。
+6. アクション・メニューから**「組織の役割の編集」**を選択します。 *「組織の役割」* フィールドに**「監査員」**役割を選択します。 次に、**「役割の保存」**をクリックします。
 
 7. スペースを選択します。 
 
-8. メニュー・アクションから**「スペースの役割の編集」**を選択します。 *「スペースの役割」* フィールドに**「開発者」**役割を選択します。次に、**「役割の保存」**をクリックします。
+8. メニュー・アクションから**「スペースの役割の編集」**を選択します。 *「スペースの役割」* フィールドに**「開発者」**役割を選択します。 次に、**「役割の保存」**をクリックします。
 	
 7. **「割り当て」**をクリックします。
+
 
 
 
@@ -175,14 +170,14 @@ lastupdated: "2019-02-18"
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスがプロビジョンされた後、選択済みクラウド・サービスからイベントが自動的に収集されるようになります。 {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するアクションに関する詳細など、{{site.data.keyword.cloudaccesstrailshort}} でモニターできるサービスについて詳しくは、[クラウド・サービス](/docs/services/cloud-activity-tracker/cloud_services.html#cloud_services)を参照してください。
 
-**注:** ユーザーが {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するには、ユーザーは IBM Cloud コンソールのインフラストラクチャー・リソースにアクセスできる必要があります。詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} アクティビティーのモニター](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi)を参照してください。
+**注:** ユーザーが {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するには、ユーザーは IBM Cloud コンソールのインフラストラクチャー・リソースにアクセスできる必要があります。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} アクティビティーのモニター](/docs/services/cloud-activity-tracker/tutorials/vsi.html#vsi)を参照してください。
 
 イベントの生成方法の詳細については、[{{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.keymanagementserviceshort}} アクティビティーのモニター](/docs/services/cloud-activity-tracker/tutorials/kp.html#kp)のチュートリアルを完了してください。
 
 ## ステップ 4: イベントを表示する
 {: #index_step4}
 
-{{site.data.keyword.cloud_notm}} UI で {{site.data.keyword.cloudaccesstrailshort}} イベントをモニターすることができます。また、プレミアム・プランにアップグレードして、Kibana でイベントをモニターすることも可能です。 
+{{site.data.keyword.cloud_notm}} UI で {{site.data.keyword.cloudaccesstrailshort}} イベントをモニターすることができます。 また、プレミアム・プランにアップグレードして、Kibana でイベントをモニターすることも可能です。 
 
 **グローバル・アカウント・アクションをモニターする場合**と**リソース・グループのコンテキストでプロビジョンされたサービスをモニターする場合**、以下のことを考慮してください。
 
@@ -208,9 +203,9 @@ lastupdated: "2019-02-18"
 
 | モニタリング                                                           | {{site.data.keyword.cloudaccesstrailshort}} ドメイン |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `グローバル・アカウント・アクション`                                             | 米国南部アカウント・ドメイン|  
-| `リソース・グループのコンテキストでプロビジョンされたサービス`   | アカウント・ドメイン| 
-| `CF 組織およびスペースのコンテキストでプロビジョンされたサービス` | スペース・ドメイン| 
+| `グローバル・アカウント・アクション`                                             | 米国南部アカウント・ドメイン                            |  
+| `リソース・グループのコンテキストでプロビジョンされたサービス`   | アカウント・ドメイン                                     | 
+| `CF 組織およびスペースのコンテキストでプロビジョンされたサービス` | スペース・ドメイン                                       | 
 {: caption="表 1. イベント・ソースごとの {{site.data.keyword.cloudaccesstrailshort}} ドメイン" caption-side="top"} 
 
 イベントを表示する場合、以下のいずれかのオプションを選択できます。
@@ -219,7 +214,7 @@ lastupdated: "2019-02-18"
 * [スペース内のクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_space) 
 * [Web ブラウザーから Kibana へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)
 
-チュートリアルのステップを完了して生成するイベントを表示するには、[アカウントでのクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account)を選択します。アカウント所有者でない場合、サービス・プランをアップグレードして、イベントを表示するための適切なアクセス許可があることを確認してください。 
+チュートリアルのステップを完了して生成するイベントを表示するには、[アカウントでのクラウド・アクティビティーをモニターするための Activity Tracker ダッシュボードへのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui_account_view_account)を選択します。 アカウント所有者でない場合、サービス・プランをアップグレードして、イベントを表示するための適切なアクセス許可があることを確認してください。 
 
 
 ## 次のステップ

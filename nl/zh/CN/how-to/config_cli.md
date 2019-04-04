@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 配置 Activity Tracker CLI
 {: #config_cli}
 
-{{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.cloud_notm}} 插件来查看事件的状态，下载事件以及配置事件保留策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）和子命令帮助（用于了解如何使用某个命令的子命令）。
+{{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.cloud_notm}} 插件来查看事件的状态，下载事件以及配置保留时间策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）或子命令帮助（用于了解如何使用某个命令的子命令）。
 {:shortdesc}
 
 
@@ -70,9 +76,9 @@ lastupdated: "2019-02-18"
 
 2. 安装 {{site.data.keyword.cloudaccesstrailshort}} 插件。
 
-    * 对于 Linux，请参阅[在 Linux 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux)。
-    * 对于 Windows，请参阅[在 Windows 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows)。
-    * 对于 Mac OS X，请参阅[在 Mac OS X 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac)。
+    * 对于 Linux，请参阅[在 Linux 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux)。
+    * 对于 Windows，请参阅[在 Windows 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows)。
+    * 对于 Mac OS X，请参阅[在 Mac OS X 上安装 {{site.data.keyword.cloudaccesstrailshort}} 插件](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac)。
  
 3. 验证 CLI 插件的安装。
   
@@ -92,7 +98,7 @@ lastupdated: "2019-02-18"
 
 1. 安装插件。
 
-    从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+    从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
 	
 	* 选择平台值：**linux64**。 
 	
@@ -113,7 +119,7 @@ lastupdated: "2019-02-18"
 
 要在 Windows 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
 	
 	1. 选择平台值：**win64**。 
 	2. 单击**保存文件**。  
@@ -132,9 +138,9 @@ lastupdated: "2019-02-18"
 
 要在 Mac OS X 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
 	
-	1. 选择平台值：**osx**。 
+	1. 选择平台值 `osx`。 
 	2. 单击**保存文件**。  
     
 2. 安装插件。运行以下命令：
@@ -154,7 +160,7 @@ lastupdated: "2019-02-18"
 
 要卸载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI，请完成以下步骤：
 
-1. 确认所安装的 CLI 插件的版本。
+1. 验证所安装的 CLI 插件的版本。
   
     例如，检查插件的版本。运行以下命令：
     
@@ -190,7 +196,7 @@ lastupdated: "2019-02-18"
  
 2. 验证 CLI 插件的安装。
   
-    例如，确认插件的版本。运行以下命令：
+    例如，验证插件的版本。运行以下命令：
     
     ```
     ibmcloud plugin list
@@ -225,7 +231,7 @@ lastupdated: "2019-02-18"
 
 1. 登录到 {{site.data.keyword.cloud_notm}} 中的区域、组织和空间。 
     
-2. 获取受支持命令的列表，并确定需要的命令。运行以下命令：
+2. 获取受支持命令的列表，并确定您需要的命令。运行以下命令：
 
     ```
     ibmcloud at help 
@@ -239,7 +245,7 @@ lastupdated: "2019-02-18"
     ```
     {: codeblock}
     
-     其中，*Command* 是 CLI 命令的名称，例如 *status*。
+    其中，*Command* 是 CLI 命令的名称，例如 *status*。
 
 
 
@@ -250,7 +256,7 @@ lastupdated: "2019-02-18"
 
 1. 登录到 {{site.data.keyword.cloud_notm}} 中的区域、组织和空间。 
     
-2. 获取受支持命令的列表，并确定需要的命令。运行以下命令：
+2. 获取受支持命令的列表，并确定您需要的命令。运行以下命令：
 
     ```
     ibmcloud at help 
@@ -273,11 +279,11 @@ lastupdated: "2019-02-18"
     ```
     {: codeblock}
     
-    其中
- 
+    其中 
     
-    * *Command* 是 CLI 命令的名称，例如 *status*。
-    * *Subcommand* 是受支持子命令的名称，例如，对于命令 *session*，有效的子命令为 *list*。
+    *Command* 是 CLI 命令的名称，例如 *status*。
+
+    *Subcommand* 是受支持子命令的名称。例如，对于命令 *session*，有效的子命令为 *list*。
 
 
 ## 显示插件的详细信息

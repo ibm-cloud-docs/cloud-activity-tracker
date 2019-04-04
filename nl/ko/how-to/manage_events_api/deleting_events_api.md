@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 {{site.data.keyword.cloudaccesstrailshort}}에 저장된 이벤트를 삭제하려면 {{site.data.keyword.cloudaccesstrailshort}} API를 사용하십시오.
 {:shortdesc}
 
-**참고:** API 호출을 사용하여 이벤트를 수동으로 삭제할 수도 있지만, 보존 정책을 설정하여 이벤트를 자동으로 삭제하는 것을 고려하십시오. 자세한 정보는 [이벤트 보존 정책 구성](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)을 참조하십시오.
+**참고:** API 호출을 사용하여 이벤트를 수동으로 삭제할 수도 있지만, 보존 정책을 설정하여 이벤트를 자동으로 삭제하는 것을 고려하십시오. 자세한 정보는 [이벤트 보존 정책 구성](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy)을 참조하십시오.
 
 ## cURL을 사용하여 이벤트 삭제
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ lastupdated: "2019-01-22"
 
 1. UAA 토큰을 가져오십시오.
 
-    자세한 정보는 [UAA 토큰 가져오기](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)를 참조하십시오.
+    자세한 정보는 [UAA 토큰 가져오기](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)를 참조하십시오.
 
 2. 다음 cURL 명령을 실행하여 특정 날짜에 {{site.data.keyword.cloudaccesstrailshort}}에 저장된 이벤트를 삭제하십시오.
 
@@ -45,7 +51,7 @@ lastupdated: "2019-01-22"
 
     * *token*은 UAA 토큰입니다.
     * *spaceID*는 {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 Cloud Foundry 영역의 UUID입니다.
-    * *ENDPOINT*는 서비스의 시작점을 나타냅니다. 각 지역에는 서로 다른 URL이 있습니다. 지역별 엔드포인트의 목록을 얻으려면 [엔드포인트](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)를 참조하십시오.
+    * *ENDPOINT*는 서비스의 시작점을 나타냅니다. 각 지역에는 서로 다른 URL이 있습니다. 지역별 엔드포인트의 목록을 얻으려면 [엔드포인트](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints)를 참조하십시오.
     * *start* 및 *end*는 이벤트를 다운로드할 시간 범위를 나타냅니다. 날짜 형식은 YYYY-MM-DD입니다. 
     * *AtAccountLevel*은 이벤트에 대한 정보를 가져올 도메인을 나타냅니다.
     * *SearchTime*은 이벤트에 대한 정보를 얻을 시간을 나타냅니다.
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

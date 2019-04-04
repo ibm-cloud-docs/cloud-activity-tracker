@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Configuración de la CLI de Activity Tracker
 {: #config_cli}
 
-El servicio {{site.data.keyword.cloudaccesstraillong}} incluye una interfaz de línea de mandatos (CLI) que puede utilizar para gestionar los sucesos en la nube. Puede utilizar el plugin de {{site.data.keyword.cloud_notm}} para ver el estado de los sucesos, para descargar sucesos y para configurar la política de retención de sucesos. La CLI ofrece distintos tipos de ayuda: ayuda general para obtener información sobre la CLI y los mandatos soportados, ayuda sobre mandatos para ver cómo se utiliza un mandato o ayuda sobre submandatos para aprender a utilizar un submandato de un mandato.
+El servicio {{site.data.keyword.cloudaccesstraillong}} incluye una interfaz de línea de mandatos (CLI) que puede utilizar para gestionar los sucesos en la nube. Puede utilizar el plugin de {{site.data.keyword.cloud_notm}} para ver el estado de los sucesos, descargar sucesos y configurar la política de retención. La CLI ofrece distintos tipos de ayuda: ayuda general para obtener información sobre la CLI y los mandatos soportados, ayuda sobre mandatos para ver cómo se utiliza un mandato o ayuda sobre submandatos para aprender a utilizar un submandato de un mandato.
 {:shortdesc}
 
 
@@ -49,7 +55,7 @@ siga estos pasos:
     ```
     {: codeblock}
  
-4. Verifique que el plugin de {{site.data.keyword.cloudaccesstrailshort}} está instalado.
+4. Compruebe que el plugin de {{site.data.keyword.cloudaccesstrailshort}} esté instalado.
   
     Por ejemplo, ejecute el mandato siguiente para ver la lista de los plugins que están instalados:
     
@@ -72,11 +78,13 @@ siga estos pasos:
 
 2. Instale el plugin de {{site.data.keyword.cloudaccesstrailshort}}.
 
-    * Para Linux, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Linux](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
-    * Para Windows, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Windows](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
-    * Para Mac OS X, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Mac OS X](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac).
+    * Para Linux, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
+    * Para Windows, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
+    * Para Mac OS X, consulte
+[Instalación del plugin de
+{{site.data.keyword.cloudaccesstrailshort}} en Mac OS X](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac).
  
-3. Verifique la instalación del plugin de la CLI.
+3. Compruebe la instalación del plugin de la CLI.
   
     Por ejemplo, compruebe la versión del plugin. Ejecute el mandato siguiente:
     
@@ -94,7 +102,10 @@ Siga estos pasos para instalar el plugin en Linux:
 
 1. Instale el plugin.
 
-    Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Descargue el release más reciente del plugin de la CLI del servicio
+{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
+[la página de la CLI de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
 	* Seleccione el valor de la plataforma: **linux64**. 
 	
@@ -115,7 +126,10 @@ Siga estos pasos para instalar el plugin en Linux:
 
 Siga estos pasos para instalar el plugin en Windows:
 
-1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Descargue el release más reciente del plugin de la CLI del servicio
+{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
+[la página de la CLI de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
 	
 	1. Seleccione el valor de la plataforma: **win64**. 
 	2. Pulse **Guardar archivo**.  
@@ -134,9 +148,12 @@ Siga estos pasos para instalar el plugin en Windows:
 
 Siga estos pasos para instalar el plugin en Mac OS X:
 
-1. Descargue el último release del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}}](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Descargue el release más reciente del plugin de la CLI del servicio
+{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
+[la página de la CLI de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
-	1. Seleccione el valor de plataforma: **osx**. 
+	1. Seleccione el valor de plataforma `osx`. 
 	2. Pulse **Guardar archivo**.  
     
 2. Instale el plugin. Ejecute el mandato siguiente:
@@ -190,7 +207,7 @@ Complete los pasos siguientes para actualizar la CLI de servicio de {{site.data.
     ```
     {: codeblock}
  
-2. Verifique la instalación del plugin de la CLI.
+2. Compruebe la instalación del plugin de la CLI.
   
     Por ejemplo, verifique la versión del plugin. Ejecute el mandato siguiente:
     
@@ -241,7 +258,7 @@ Para obtener ayuda sobre cómo utilizar un mandato, siga los pasos siguientes:
     ```
     {: codeblock}
     
-    donde *Mandato* es el nombre de un mandato de CLI, por ejemplo *status*.
+    Donde *Command* es el nombre de un mandato de CLI, por ejemplo *status*.
 
 
 
@@ -266,7 +283,7 @@ Un mandato puede tener submandatos. Para obtener ayuda sobre los submandatos, si
     ```
     {: codeblock}
     
-    donde *Mandato* es el nombre de un mandato de CLI, por ejemplo *session*.
+    Donde *Command* es el nombre de un mandato de CLI, por ejemplo *session*.
 
 4. Obtenga ayuda sobre el mandato e identifique los submandatos soportados. Ejecute el mandato siguiente:
 
@@ -275,10 +292,11 @@ Un mandato puede tener submandatos. Para obtener ayuda sobre los submandatos, si
     ```
     {: codeblock}
     
-    donde 
+    Donde 
     
-    * *Mandato* es el nombre de un mandato de CLI, por ejemplo *status*.
-    * *Submandato* es el nombre de un submandato soportado, por ejemplo, para el mandato *session*, un submandato válido es *list*.
+    *Command* es el nombre de un mandato de CLI, por ejemplo *status*.
+
+    *Subcommand* es el nombre de un submandato soportado. Por ejemplo, para el mandato *session*, un submandato válido es *list*.
 
 
 ## Mostrar los detalles del plugin

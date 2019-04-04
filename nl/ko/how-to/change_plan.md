@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, change plan
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -47,7 +53,7 @@ CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십�
 
 1. {{site.data.keyword.cloud_notm}}에 로그인하십시오. 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
+    [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
 	
 2. `ibmcloud service list` 명령을 실행하여 현재 플랜을 확인하고, 영역에서 사용 가능한 서비스의 목록에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 이름을 가져오십시오. 
 
@@ -78,6 +84,7 @@ CLI를 통해 서비스 플랜을 변경하려면 다음 단계를 완료하십�
 	
 	* *service_name*은 서비스의 이름입니다. `ibmcloud service list` 명령을 실행하여 이 값을 가져올 수 있습니다.
 	* *new_plan*은 플랜의 이름입니다.
+	
 	
 	다음 표에는 다양한 플랜과 해당 지원 값이 나열되어 있습니다.
 	

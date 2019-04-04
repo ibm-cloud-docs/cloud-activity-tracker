@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 下载事件
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ lastupdated: "2019-01-22"
 
 1. 获取 UAA 令牌。
 
-    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)。
+    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)。
 
 2. 创建一个会话，在其中指定用于定义要下载哪一部分事件的条件。
 
@@ -55,17 +61,17 @@ lastupdated: "2019-01-22"
 
     其中：
     
-    * *token* 表示您在上一步中获取的 UAA 令牌值。
+    *token* 表示您在上一步中获取的 UAA 令牌值。
 
-    * *spaceID* 表示您供应 {{site.data.keyword.cloudaccesstrailshort}} 的 Cloud Foundry 空间的 UUID。
+    *spaceID* 表示您供应 {{site.data.keyword.cloudaccesstrailshort}} 的 Cloud Foundry 空间的 UUID。
 
-    * *ENDPOINT* 表示服务的入口点。每个区域都有不同的 URL。要获取每个区域的端点的列表，请参阅[端点](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)。
+    *ENDPOINT* 表示服务的入口点。每个区域都有不同的 URL。要获取每个区域的端点的列表，请参阅[端点](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)。
 
-    * *start* 和 *end* 表示要下载哪一时间范围的事件。日期格式为 *YYYY-MM-DD*。 
+    *start* 和 *end* 表示要下载哪一时间范围的事件。日期格式为 *YYYY-MM-DD*。 
 
-    * *AtAccountLevel* 指示要下载帐户域中的事件，还是空间域中的事件。
+    *AtAccountLevel* 指示要下载帐户域中的事件，还是空间域中的事件。
     
-    * *SearchTime* 指示要下载哪一时刻的事件。
+    *SearchTime* 指示要下载哪一时刻的事件。
 
     要创建会话以从美国南部区域的空间域中下载事件，请将 **AtAccountLevel** 参数设置为 *false*：
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,38 +18,40 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Octroi de droits pour l'affichage des événements
 {: #grant_permissions}
 
-Dans {{site.data.keyword.Bluemix}}, vous pouvez affecter des rôles Cloud Foundry et/ou des rôles IAM à un utilisateur. Ces rôles définissent les tâches qu'un utilisateur peut effectuer lors de l'utilisation du service {{site.data.keyword.cloudaccesstrailshort}}.  
+Dans {{site.data.keyword.cloud}}, vous pouvez affecter des rôles Cloud Foundry et/ou des rôles IAM à un utilisateur. Ces rôles définissent les tâches qu'un utilisateur peut effectuer lorsque vous utilisez le service {{site.data.keyword.cloudaccesstrailshort}}.  
 {:shortdesc}
 
-## Octroi de droits pour l'affichage d'événements de compte
+## Octroi de droits pour la consultation des événements de compte
 {: #grant_acc_events}
 
 Accordez les droits suivants à un utilisateur pour afficher les événements de compte dans une région :
 
 1. Rôle *Développeur* dans un espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
 
-    Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 2. Règle IAM pour le service {{site.data.keyword.loganalysisshort}} avec le rôle *Afficheur* dans la région. 
 
     Le rôle d'afficheur est le rôle IAM minimal requis. 
 	
-	Pour plus d'informations, voir [Octroi de droits IAM](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy).
+	Pour plus d'informations, voir [Octroi de droits IAM](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy).
 
 
-## Octroi de droits pour l'affichage d'événements d'espace
+## Octroi de droits pour la consultation des événements d'espace
 {: #grant_space_events}
 
 Accordez le droit suivant à un utilisateur pour afficher les événements d'espace dans une région :
 
 * Rôle *Développeur* dans l'espace de la région où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition. 
 
-    Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role).
+    Pour plus d'informations, voir [Octroi d'un rôle CF](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role).
 
 
 ## Octroi de droits IAM
@@ -57,11 +63,9 @@ Pour accorder un rôle IAM à un utilisateur, tenez compte des informations suiv
 
 * Lorsque vous définissez une règle, les régions que vous spécifiez définissent les régions auxquelles un utilisateur peut accéder pour afficher des événements de domaine de compte.
 
-Procédez comme suit pour accorder à un utilisateur des droits permettant d'afficher des événements à partir d'un domaine de compte :
+Procédez comme suit pour accorder à un utilisateur le droit d'afficher des événements à partir d'un domaine de compte :
 
-1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
-
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
+1. [Connectez-vous à la console {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 	
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
@@ -71,11 +75,11 @@ Procédez comme suit pour accorder à un utilisateur des droits permettant d'aff
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Dans la section **Règles d'accès**, cliquez sur **Affecter un accès**, puis cliquez sur **Affecter l'accès aux ressources**.
 
-    La fenêtre *Affecter l'accès à la ressource à** s'ouvre.
+    La fenêtre *Affecter l'accès à la ressource à (nom de l'utilisateur)** s'ouvre.
 
 5. Entrez les informations concernant la règle. Le tableau ci-dessous répertorie les zones requises pour définir une règle. 
 
@@ -119,9 +123,7 @@ Pour accorder un rôle CF à un utilisateur, tenez compte des informations suiva
 
 Procédez comme suit pour permettre à un utilisateur d'afficher les événements d'un espace :
 
-1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
-
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [http://bluemix.net ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://bluemix.net){:new_window}
+1. [Connectez-vous à la console {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 	
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
@@ -131,11 +133,11 @@ Procédez comme suit pour permettre à un utilisateur d'afficher les événement
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
-4. Sélectionnez **Accès Cloud Foundry**, puis sélectionnez l'organisation.
+4. Sélectionnez **Accès Cloud Foundry**. Sélectionnez ensuite l'organisation.
 
-    La liste des espaces disponibles dans cette organisation est affichée.
+    Les espaces disponibles dans cette organisation sont répertoriés.
 
 5. Choisissez un espace. Puis, dans l'action de menu, sélectionnez **Editer un rôle d'espace**.
 

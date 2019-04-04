@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 配置 Activity Tracker CLI
 {: #config_cli}
 
-{{site.data.keyword.cloudaccesstraillong}} 服務包含一個指令行介面 (CLI)，您可以用來管理雲端中的事件。您可以使用 {{site.data.keyword.cloud_notm}} 外掛程式來檢視事件的狀態、下載事件，以及配置事件保留原則。CLI 提供不同類型的說明：瞭解 CLI 及所支援指令的一般說明、瞭解如何使用指令的指令說明，或瞭解如何使用指令之次指令的次指令說明。
+{{site.data.keyword.cloudaccesstraillong}} 服務包含一個指令行介面 (CLI)，您可以用來管理雲端中的事件。您可以使用 {{site.data.keyword.cloud_notm}} 外掛程式來檢視事件的狀態、下載事件，以及配置保留原則。CLI 提供不同類型的說明：瞭解 CLI 及所支援指令的一般說明、瞭解如何使用指令的指令說明，或瞭解如何使用指令之次指令的次指令說明。
 {:shortdesc}
 
 
@@ -70,9 +76,9 @@ lastupdated: "2019-02-18"
 
 2. 安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式。
 
-    * 若為 Linux，請參閱[在 Linux 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux)。
-    * 若為 Windows，請參閱[在 Windows 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows)。
-    * 若為 Mac OS X，請參閱[在 Mac OS X 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac)。
+    * 若為 Linux，請參閱[在 Linux 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux)。
+    * 若為 Windows，請參閱[在 Windows 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows)。
+    * 若為 Mac OS X，請參閱[在 Mac OS X 上安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac)。
  
 3. 驗證 CLI 外掛程式的安裝。
   
@@ -92,7 +98,7 @@ lastupdated: "2019-02-18"
 
 1. 安裝外掛程式。
 
-    從 [ {{site.data.keyword.cloud_notm}} CLI 頁面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
+    從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
 	
 	* 選取平台值：**linux64**。 
 	
@@ -113,7 +119,7 @@ lastupdated: "2019-02-18"
 
 請完成下列步驟，以在 Windows 上安裝外掛程式：
 
-1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
+1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
 	
 	1. 選取平台值：**win64**。 
 	2. 按一下**儲存檔案**。  
@@ -132,9 +138,9 @@ lastupdated: "2019-02-18"
 
 請完成下列步驟，在 Mac OS X 上安裝外掛程式：
 
-1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
+1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
 	
-	1. 選取平台值：**osx**。 
+	1. 選取平台值 `osx`。 
 	2. 按一下**儲存檔案**。  
     
 2. 安裝外掛程式。執行下列指令：
@@ -225,7 +231,7 @@ lastupdated: "2019-02-18"
 
 1. 登入 {{site.data.keyword.cloud_notm}} 中的地區、組織及空間。 
     
-2. 取得支援的指令清單，並識別您需要的指令。執行下列指令：
+2. 取得所支援指令的清單，並識別您需要的指令。執行下列指令：
 
     ```
     ibmcloud at help 
@@ -250,7 +256,7 @@ lastupdated: "2019-02-18"
 
 1. 登入 {{site.data.keyword.cloud_notm}} 中的地區、組織及空間。 
     
-2. 取得支援的指令清單，並識別您需要的指令。執行下列指令：
+2. 取得所支援指令的清單，並識別您需要的指令。執行下列指令：
 
     ```
     ibmcloud at help 
@@ -275,8 +281,9 @@ lastupdated: "2019-02-18"
     
     其中 
     
-    * *Command* 是 CLI 指令的名稱，例如 *status*。
-    * *Subcommand* 是支援的次指令名稱，例如，對於指令 *session* 而言，有效的次指令為 *list*。
+    *Command* 是 CLI 指令的名稱，例如 *status*。
+
+    *Subcommand* 是支援的次指令名稱。例如，對於指令 *session* 而言，有效的次指令為 *list*。
 
 
 ## 顯示外掛程式的詳細資料

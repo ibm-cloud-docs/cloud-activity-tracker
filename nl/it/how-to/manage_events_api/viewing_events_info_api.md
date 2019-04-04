@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # Visualizzazione di informazioni sull'evento
@@ -31,7 +36,7 @@ Completa la seguente procedura per visualizzare le informazioni sugli eventi in 
 
 1. Ottieni un token UAA.
 
-    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Per ulteriori informazioni, consulta [Acquisizione di un token UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Immetti il seguente comando cURL per richiamare il numero totale di eventi archiviati in {{site.data.keyword.cloudaccesstrailshort}} in una data specifica.
 
@@ -44,7 +49,7 @@ Completa la seguente procedura per visualizzare le informazioni sugli eventi in 
 
     * *token* è il token UAA.
     * *$spaceID* rappresenta l'UUID dello spazio Cloud Foundry in cui è stato eseguito il provisioning di {{site.data.keyword.cloudaccesstrailshort}}.
-    * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* rappresenta il punto di ingresso del servizio. Ogni regione ha un URL diverso. Per ottenere l'elenco degli endpoint, consulta [Endpoint](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* e *end*rappresentano un intervallo di tempo in cui vuoi scaricare gli eventi. Il formato della data è YYYY-MM-DD. 
     * *AtAccountLevel* indica il dominio in cui vuoi ottenere le informazioni sugli eventi.
     * *SearchTime* indica l'ora della giornata per la quale vuoi le informazioni sugli eventi.

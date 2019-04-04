@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # 檢視事件
@@ -33,11 +38,11 @@ lastupdated: "2019-01-23"
 
 身為**帳戶中的成員**，請考量下列資訊以檢視地區中的帳戶事件：
 
-* 在佈建 {{site.data.keyword.cloudaccesstrailshort}} 的空間中，您必須具有*開發人員* 角色。如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
+* 在佈建 {{site.data.keyword.cloudaccesstrailshort}} 的空間中，您必須具有*開發人員* 角色。如需相關資訊，請參閱[授與 CF 角色](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)。
 
-* 您必須具有 {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則，其含有該地區的*檢視者* 角色。「檢視者」角色是必要的最小 IAM 角色。如需相關資訊，請參閱[授與 IAM 許可權](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)。
+* 您必須具有 {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則，其含有該地區的*檢視者* 角色。「檢視者」角色是必要的最小 IAM 角色。如需相關資訊，請參閱[授與 IAM 許可權](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)。
 
-* 您可以透過 Kibana 來檢視事件。如需如何啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_Kibana_from_browser)。
+* 您可以透過 Kibana 來檢視事件。如需如何啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_Kibana_from_browser)。
 
 
 

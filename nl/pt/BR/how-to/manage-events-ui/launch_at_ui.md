@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Navegando para o painel Activity Tracker no Console do {{site.data.keyword.cloud_notm}}
+# Abrindo o painel do Activity Tracker no console do {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
-É possível ativar a IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.Bluemix}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
+É possível ativar a IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.cloud_notm}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
 {:shortdesc}
    
 
-## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem em um espaço
+## Abrindo o painel do Activity Tracker para monitorar a atividade de nuvem em um espaço
 {: #launch_at_ui_account_view_space}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em um espaço:
@@ -42,7 +48,7 @@ Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudac
     O painel **ActivityTracker_Space_Dashboard_in_24h** é aberto. Por meio desse painel, é possível monitorar a atividade em nuvem nesse espaço para as últimas 24 horas. 
 
 
-## Navegando para o painel Activity Tracker para monitorar a atividade de nuvem na conta
+## Abrindo o painel do Activity Tracker para monitorar a atividade de nuvem na conta
 {: #launch_at_ui_account_view_account}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em uma conta:

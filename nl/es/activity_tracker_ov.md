@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, overview
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,18 +18,20 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Acerca de
+# Acerca de {{site.data.keyword.cloudaccesstrailshort}}
 {: #activity_tracker_ov}
 
-Utilice el servicio de {{site.data.keyword.cloudaccesstrailfull}} para hacer un seguimiento de cómo interactúan las aplicaciones con los servicios de {{site.data.keyword.Bluemix}}. Utilice {{site.data.keyword.cloudaccesstrailshort}} para supervisar actividad anormal y cumplir con los requisitos de auditoría normativos. Los eventos que se han recopilado cumplen con la normativa de Cloud Auditing Data Federation (CADF).
+Utilice el servicio de {{site.data.keyword.cloudaccesstrailfull}} para hacer un seguimiento de cómo interactúan las aplicaciones con los servicios de {{site.data.keyword.cloud_notm}}. Utilice {{site.data.keyword.cloudaccesstrailshort}} para supervisar actividad anormal y cumplir con los requisitos de auditoría normativos. Los sucesos que se han recopilado cumplen con la normativa de Cloud Auditing Data Federation (CADF).
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}} ofrece control de seguridad de alto nivel para los recursos de TI de la nube.
 * {{site.data.keyword.cloudaccesstrailshort}} ofrece una solución para los administradores para capturar, almacenar, visualizar, buscar y controlar actividad de API en un mismo lugar.
-* {{site.data.keyword.cloudaccesstrailshort}} proporciona capacidades para descargar eventos que puede utilizar para generar un informe de seguimiento de auditoría. Es posible que necesite estos informes para que la organización pueda cumplir con las normativas internas y con las normativas externas del sector y del país.
+* {{site.data.keyword.cloudaccesstrailshort}} proporciona capacidades para descargar sucesos que puede utilizar para generar un informe de seguimiento de auditoría. Es posible que necesite estos informes para que la organización pueda cumplir con las normativas internas y con las normativas externas del sector y del país.
 
 El cumplimiento de las políticas internas y de las normativas del sector es un requisito clave en la estrategia de cualquier organización, independientemente de dónde se ejecuten las aplicaciones: de forma local, en una nube híbrida o en una nube pública. El servicio {{site.data.keyword.cloudaccesstrailshort}} proporciona la infraestructura y la funcionalidad para supervisar llamadas API y generar un informe que demuestre el cumplimiento de las políticas corporativas y las normativas específicas del sector de mercado.
 
@@ -42,7 +48,7 @@ Por ejemplo, puede utilizar los registros de actividad de {{site.data.keyword.cl
 ## Recopilación de sucesos
 {: #activity_tracker_ov_collect}
 
-El servicio de {{site.data.keyword.cloudaccesstrailshort}} solo captura los datos de actividad que están relacionados con las llamadas
+El servicio de {{site.data.keyword.cloudaccesstrailshort}} captura los datos de actividad que están relacionados con las llamadas
 API y otras acciones que se realizan en servicios en la nube seleccionados de {{site.data.keyword.cloud_notm}}. 
 
 * Los sucesos se recopilan automáticamente. 
@@ -52,7 +58,7 @@ API y otras acciones que se realizan en servicios en la nube seleccionados de {{
 El modelo de sucesos CADF incluye los siguientes componentes:
 
 <table>
-  <caption>Tabla 1. Componentes que están disponibles en el modelo de eventos CADF</caption>
+  <caption>Tabla 1. Componentes que están disponibles en el modelo de sucesos CADF</caption>
   <tr>
     <th>Componente</th>
 	<th>Descripción</th>
@@ -82,10 +88,10 @@ El modelo de sucesos CADF incluye los siguientes componentes:
 
 Considere la siguiente información cuando trabaje con el registro de {{site.data.keyword.cloudaccesstrailshort}} en la nube pública {{site.data.keyword.IBM_notm}}:
 
-* Sólo puede almacenar registros de auditoría para llamadas de API realizadas a recursos que se ejecutan en la nube pública de {{site.data.keyword.IBM_notm}}.
+* Solo puede almacenar registros de auditoría para llamadas de API realizadas a recursos que se ejecutan en la nube pública de {{site.data.keyword.IBM_notm}}.
 * Sólo se utiliza la nube pública de almacenamiento {{site.data.keyword.IBM_notm}} para recopilar sucesos.
-* La información se almacena durante 3 días. Una vez que ha transcurrido este tiempo, la información se elimina sobre la base de su antigüedad.
-* Los eventos CADF del tipo *Actividad* están admitidos por el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+* La información se almacena durante 3 días. Una vez que ha transcurrido este tiempo, la información se suprime con el método primero en entrar, primero en salir (FIFO).
+* Los sucesos CADF del tipo *Actividad* están admitidos por el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 
 
 ## Suministro de Activity Tracker
@@ -95,7 +101,7 @@ Para ver los sucesos que están disponibles a través de un dominio de cuenta, d
 
 Para ver los sucesos que están disponibles a través de un dominio de espacio, debe suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}} en el espacio en el que desea supervisar la actividad de la API.
 
-Para aprender a suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}, consulte [Suministro del servicio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/provision.html#provision).
+Para aprender a suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}, consulte [Suministro del servicio {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 
 
@@ -104,12 +110,12 @@ Para aprender a suministrar el servicio {{site.data.keyword.cloudaccesstrailshor
 
 Puede analizar registros de actividad a través de la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}}, o utilizando Kibana, una herramienta de código abierto. Puede supervisar sucesos que están disponibles en un espacio específico o en el nivel de cuentas.
 
-Puede buscar, analizar, y supervisar registros de actividad de las últimas 24 horas a través de la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Navegación a la IU de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui).
+Puede buscar, analizar, y supervisar registros de actividad de las últimas 24 horas a través de la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Navegación a la IU de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui).
 
 Puede buscar, analizar y supervisar los registros de actividad de los últimos 3 días a través de Kibana mediante el {{site.data.keyword.cloudaccesstrailshort}} panel de control de Kibana, o creando sus propios paneles de control personalizados. * **Nota:** Esta característica está disponible para los usuarios del plan **Premium**.
 
-* Para obtener más información sobre cómo iniciar Kibana, consulte [Navegar al panel de control de Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana). 
-* Para obtener una lista de campos que puede utilizar para analizar sucesos en Kibana, consulte [Campos de sucesos de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/at_event.html#at_event)
+* Para obtener más información sobre cómo iniciar Kibana, consulte [Navegar al panel de control de Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). 
+* Para obtener una lista de campos que puede utilizar para analizar sucesos en Kibana, consulte [Campos de sucesos de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
 
 
 
@@ -129,7 +135,7 @@ El servicio de {{site.data.keyword.cloudaccesstrailshort}} está disponible en l
 
 El servicio {{site.data.keyword.cloudaccesstrailshort}} ofrece varios planes.
 
-Puede cambiar un plan mediante la IU de {{site.data.keyword.cloud_notm}} o la línea de mandatos. Puede actualizar o reducir el plan en cualquier momento. Para obtener más información sobre actualizaciones del plan de servicio, consulte [Cambio del plan](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan). 
+Puede cambiar un plan mediante la IU de {{site.data.keyword.cloud_notm}} o la línea de mandatos. Puede actualizar o reducir el plan en cualquier momento. Para obtener más información sobre actualizaciones del plan de servicio, consulte [Cambio del plan](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan). 
 
 En la tabla siguiente se describen los planes disponibles:
 

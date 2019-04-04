@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, view events, UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 
 # イベントの表示
@@ -33,11 +38,11 @@ lastupdated: "2019-01-23"
 
 **アカウントのメンバー**が地域のアカウント・イベントを表示するには、以下を考慮する必要があります。
 
-* {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされたスペースで*開発者*役割を持っている必要があります。 詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)を参照してください。
+* {{site.data.keyword.cloudaccesstrailshort}} がプロビジョンされたスペースで*開発者*役割を持っている必要があります。 詳しくは、[CF 役割の付与](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)を参照してください。
 
-* その地域での*ビューアー* 役割が指定された、{{site.data.keyword.loganalysisshort}} サービスの IAM ポリシーを持っている必要があります。 ビューアー役割は、必要な最小の IAM 役割です。 詳しくは、[IAM 許可の付与](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)を参照してください。
+* その地域での*ビューアー* 役割が指定された、{{site.data.keyword.loganalysisshort}} サービスの IAM ポリシーを持っている必要があります。 ビューアー役割は、必要な最小の IAM 役割です。 詳しくは、[IAM 許可の付与](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)を参照してください。
 
-* Kibana を介してイベントを表示できます。 Kibana の起動方法について詳しくは、『[Web ブラウザーから Kibana へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_Kibana_from_browser)』を参照してください。
+* Kibana を介してイベントを表示できます。 Kibana の起動方法について詳しくは、『[Web ブラウザーから Kibana へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_Kibana_from_browser)』を参照してください。
 
 
 

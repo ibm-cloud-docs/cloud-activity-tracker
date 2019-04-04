@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, account events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # 帳戶管理事件  
 {: #at_events_acc_mgt}
@@ -22,9 +27,9 @@ lastupdated: "2019-01-23"
 身為安全性管理者、審核員或管理員，您可以使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來追蹤使用者及應用程式如何與 {{site.data.keyword.Bluemix}} 帳戶互動。
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull_notm}} 服務會記錄使用者起始的活動，這些活動會在 {{site.data.keyword.cloud_notm}} 中變更服務的狀態。如需相關資訊，請參閱[關於 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov )。
+{{site.data.keyword.cloudaccesstrailfull_notm}} 服務會記錄使用者起始的活動，這些活動會在 {{site.data.keyword.cloud_notm}} 中變更服務的狀態。如需相關資訊，請參閱[關於 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)。
 
-若要開始監視您的使用者動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla)。 
+若要開始監視您的使用者動作，請參閱 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)。 
 
 
 
@@ -53,7 +58,7 @@ lastupdated: "2019-01-23"
   </tr>
   <tr>
     <td>billing.account.subscription.create</td>
-	  <td>當您建立<a href="/docs/account/index.html#subscription-account">訂閱帳戶</a>時，會產生事件。</td>
+	  <td>當您建立<a href="/docs/account?topic=account-accounts#subscription-account">訂閱帳戶</a>時，會產生事件。</td>
   </tr>
 </table>
 
@@ -104,9 +109,11 @@ lastupdated: "2019-01-23"
 ## 尋找事件的位置
 {: #at_events_acc_mgt_ui}
 
-{{site.data.keyword.cloudaccesstrailshort}} 事件可在**美國南部**地區**帳戶網域**中取得。如需相關資訊，請參閱[檢視帳戶事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events)。
+{{site.data.keyword.cloudaccesstrailshort}} 事件可在**美國南部**地區**帳戶網域**中取得。 
 
-若要檢視這些事件，您必須在**美國南部**地區中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例。然後，您必須開啟 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，並切換至帳戶網域以查看事件。如需相關資訊，請參閱[檢視帳戶事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events)。 
+若要檢視這些事件，您必須在**美國南部**地區中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的實例。然後，您必須開啟 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面，並切換至帳戶網域以查看事件。 
+
+如需相關資訊，請參閱[檢視帳戶事件](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events)。
 
 
 

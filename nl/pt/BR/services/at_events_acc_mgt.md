@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, account events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,7 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # Eventos de gerenciamento de conta  
 {: #at_events_acc_mgt}
@@ -22,9 +27,9 @@ lastupdated: "2019-01-23"
 Como um responsável pela segurança, auditor ou gerenciador, é possível usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para controlar como os usuários e aplicativos interagem com a conta do {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
-O serviço {{site.data.keyword.cloudaccesstrailfull_notm}} registra atividades iniciadas pelo usuário que mudam o estado de um serviço no {{site.data.keyword.cloud_notm}}. Para obter mais informações, consulte [Sobre o {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+O serviço {{site.data.keyword.cloudaccesstrailfull_notm}} registra atividades iniciadas pelo usuário que mudam o estado de um serviço no {{site.data.keyword.cloud_notm}}. Para obter mais informações, consulte [Sobre o {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 
-Para começar a monitorar as ações do usuário, veja [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
+Para começar a monitorar as ações do usuário, veja [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). 
 
 
 
@@ -53,7 +58,7 @@ A tabela a seguir lista o método de API que gera um evento quando eles são cha
   </tr>
   <tr>
     <td>billing.account.subscription.create</td>
-	  <td>Um evento é gerado quando você cria uma <a href="/docs/account/index.html#subscription-account">Conta da assinatura</a>.</td>
+	  <td>Um evento é gerado quando você cria uma <a href="/docs/account?topic=account-accounts#subscription-account">Conta da assinatura</a>.</td>
   </tr>
 </table>
 
@@ -104,9 +109,11 @@ A tabela a seguir lista o método de API que gera um evento quando eles são cha
 ## Onde procurar os eventos
 {: #at_events_acc_mgt_ui}
 
-Os eventos do {{site.data.keyword.cloudaccesstrailshort}} estão disponíveis no **domínio de contas** da região **Sul dos EUA**. Para obter mais informações, consulte [Visualizando eventos de conta](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events).
+Os eventos do {{site.data.keyword.cloudaccesstrailshort}} estão disponíveis no **domínio de contas** da região **Sul dos EUA**. 
 
-Para visualizar esses eventos, deve-se provisionar uma instância do serviço {{site.data.keyword.cloudaccesstrailshort}} na região **Sul dos EUA**. Em seguida, deve-se abrir a UI do {{site.data.keyword.cloudaccesstrailshort}} e mudar para o domínio de contas para ver os eventos. Para obter mais informações, consulte [Visualizando eventos de conta](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#view_acc_events_account_events). 
+Para visualizar esses eventos, deve-se provisionar uma instância do serviço {{site.data.keyword.cloudaccesstrailshort}} na região **Sul dos EUA**. Em seguida, deve-se abrir a UI do {{site.data.keyword.cloudaccesstrailshort}} e mudar para o domínio de contas para ver os eventos. 
+
+Para obter mais informações, consulte [Visualizando eventos de conta](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events).
 
 
 

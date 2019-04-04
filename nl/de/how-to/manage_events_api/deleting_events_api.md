@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 Verwenden Sie die {{site.data.keyword.cloudaccesstrailshort}}-API, um in {{site.data.keyword.cloudaccesstrailshort}} gespeicherte Ereignisse zu löschen.
 {:shortdesc}
 
-**Hinweis:** Auch wenn Sie Ereignisse manuell mithilfe des API-Aufrufs löschen können, sollten Sie überlegen, ob Sie die Aufbewahrungsrichtlinie so konfigurieren, dass Ereignisse automatisch gelöscht werden. Weitere Informationen finden Sie in [Ereignisaufbewahrungsrichtlinie konfigurieren](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy).
+**Hinweis:** Auch wenn Sie Ereignisse manuell mithilfe des API-Aufrufs löschen können, sollten Sie überlegen, ob Sie die Aufbewahrungsrichtlinie so konfigurieren, dass Ereignisse automatisch gelöscht werden. Weitere Informationen finden Sie in [Ereignisaufbewahrungsrichtlinie konfigurieren](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy).
 
 ## Ereignisse mithilfe von cURL löschen
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ Führen Sie die folgenden Schritte aus, um Ereignisse zu löschen, die in einer 
 
 1. Rufen Sie ein UAA-Token ab.
 
-    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Weitere Informationen finden Sie in [UAA-Token abrufen](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Wenn Sie Ereignisse löschen wollen, die an einem bestimmten Datum in {{site.data.keyword.cloudaccesstrailshort}} gespeichert wurden, führen Sie den folgenden cURL-Befehl aus:
 
@@ -45,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um Ereignisse zu löschen, die in einer 
 
     * *token* ist das UAA-Token.
     * *spaceID* stellt die UUID des Cloud Foundry-Bereichs dar, in dem {{site.data.keyword.cloudaccesstrailshort}} bereitgestellt wird.
-    * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    * *ENDPOINT* stellt den Eingangspunkt zum Service dar. Jede Region hat eine andere URL. Informationen dazu, wie Sie die Liste der Endpunkte für die jeweilige Region abrufen, finden Sie in [Endpunkte](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints).
     * *start* und *end* stellen einen Zeitbereich dar, für den Sie Ereignisse herunterladen möchten. Das Datumsformat ist JJJJ-MM-TT. 
     * *AtAccountLevel* gibt die Domäne an, in der Informationen zu den Ereignissen abgerufen werden sollen.
     * *SearchTime* gibt die Tageszeit an, für die Sie Informationen zu den Ereignissen abrufen wollen.
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

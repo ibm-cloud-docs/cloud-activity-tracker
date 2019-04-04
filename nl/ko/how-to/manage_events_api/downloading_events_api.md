@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # 이벤트 다운로드
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ API를 사용하여 {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 다
 
 1. UAA 토큰을 가져오십시오.
 
-    자세한 정보는 [UAA 토큰 가져오기](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)를 참조하십시오.
+    자세한 정보는 [UAA 토큰 가져오기](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)를 참조하십시오.
 
 2. 다운로드할 이벤트의 서브세트를 정의하는 조건을 지정하는 세션을 작성하십시오.
 
@@ -53,19 +59,19 @@ API를 사용하여 {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 다
     ```
     {: codeblock}
 
-    여기서,
+    여기서, 
     
-    * *token*은 이전 단계에서 획득한 UAA 토큰 값을 나타냅니다.
+    *token*은 이전 단계에서 획득한 UAA 토큰 값을 나타냅니다.
 
-    * *spaceID*는 {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 Cloud Foundry 영역의 UUID입니다.
+    *spaceID*는 {{site.data.keyword.cloudaccesstrailshort}}이 프로비저닝된 Cloud Foundry 영역의 UUID입니다.
 
-    * *ENDPOINT*는 서비스의 시작점을 나타냅니다. 각 지역에는 서로 다른 URL이 있습니다. 지역별 엔드포인트의 목록을 얻으려면 [엔드포인트](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)를 참조하십시오.
+    *ENDPOINT*는 서비스의 시작점을 나타냅니다. 각 지역에는 서로 다른 URL이 있습니다. 지역별 엔드포인트의 목록을 얻으려면 [엔드포인트](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)를 참조하십시오.
 
-    * *start* 및 *end*는 이벤트를 다운로드할 시간 범위를 나타냅니다. 날짜 형식은 *YYYY-MM-DD*입니다. 
+    *start* 및 *end*는 이벤트를 다운로드할 시간 범위를 나타냅니다. 날짜 형식은 *YYYY-MM-DD*입니다. 
 
-    * *AtAccountLevel*은 다운로드할 이벤트가 계정 도메인에 있는지, 또는 영역 도메인에 있는지 나타냅니다.
+    *AtAccountLevel*은 다운로드할 이벤트가 계정 도메인에 있는지, 또는 영역 도메인에 있는지 나타냅니다.
     
-    * *SearchTime*은 이벤트를 다운로드할 시간을 나타냅니다.
+    *SearchTime*은 이벤트를 다운로드할 시간을 나타냅니다.
 
     미국 남부 지역의 영역 도메인에서 이벤트를 다운로드하기 위한 세션을 작성하려면 매개변수 **AtAccountLevel**을 *false*로 설정하십시오.
 
@@ -97,7 +103,7 @@ API를 사용하여 {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 다
     ```
     {: codeblock}
 
-    여기서 *FILENAME*은 이벤트가 다운로드될 로컬 파일의 이름입니다.
+    여기서, *FILENAME*은 이벤트가 다운로드될 로컬 파일의 이름입니다.
 
     예를 들면, 다음과 같습니다.
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Descarga de sucesos
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
 
 1. Obtenga una señal de UAA.
 
-    Para obtener más información, consulte [Obtención de una señal de UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Para obtener más información, consulte [Obtención de una señal de UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Cree una sesión, en la que debe especificar las condiciones que definen el subconjunto de sucesos que desea descargar.
 
@@ -55,17 +61,17 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
 
     Donde:
     
-    * *token* representa el valor de señal de UAA que ha obtenido en un paso anterior.
+    *token* representa el valor de señal de UAA que ha obtenido en un paso anterior.
 
-    * *spaceID* representa el UUID del espacio de Cloud Foundry en el que se ha suministrado {{site.data.keyword.cloudaccesstrailshort}}.
+    *spaceID* representa el UUID del espacio de Cloud Foundry en el que se ha suministrado {{site.data.keyword.cloudaccesstrailshort}}.
 
-    * *ENDPOINT* representa el punto de entrada al servicio. Cada región tiene un URL diferente. Para obtener la lista de puntos finales por región, consulte [Puntos finales](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* representa el punto de entrada al servicio. Cada región tiene un URL diferente. Para obtener la lista de puntos finales por región, consulte [Puntos finales](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* y *end* representan un intervalo de tiempo en el que desea descargar los sucesos. El formato de fecha es *AAAA-MM-DD*. 
+    *start* y *end* representan un intervalo de tiempo en el que desea descargar los sucesos. El formato de fecha es *AAAA-MM-DD*. 
 
-    * *AtAccountLevel* indica si los sucesos que se van a descargar están en el dominio de cuenta o en un dominio de espacio.
+    *AtAccountLevel* indica si los sucesos que se van a descargar están en el dominio de cuenta o en un dominio de espacio.
     
-    * *SearchTime* indica la hora del día para la que desea descargar los sucesos.
+    *SearchTime* indica la hora del día para la que desea descargar los sucesos.
 
     Para crear una sesión desde la que descargar sucesos desde un dominio de espacio en la región EE. UU. sur, establezca el parámetro **AtAccountLevel** en *false*:
 
@@ -97,7 +103,7 @@ Siga los pasos siguientes para descargar los sucesos en un archivo local:
     ```
     {: codeblock}
 
-    donde *FILENAME* es el nombre del archivo local en el que se descargarán los sucesos.
+    Donde *FILENAME* es el nombre del archivo local donde se van a descargar los sucesos.
 
     Por ejemplo:
 

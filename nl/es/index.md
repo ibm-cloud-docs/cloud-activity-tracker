@@ -35,7 +35,7 @@ En la figura siguiente se muestran los distintos componentes y acciones que se p
 * Compruebe las regiones en las que está disponible el servicio. Para obtener más información, consulte [Regiones](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
 * Obtenga un ID de usuario que sea miembro o propietario de una cuenta de {{site.data.keyword.cloud_notm}}. 
 
-    Para obtener un ID de usuario de {{site.data.keyword.cloud_notm}}, vaya a: [Registro ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/registration/){:new_window}.
+    Para obtener un ID de usuario de {{site.data.keyword.cloud_notm}}, vaya a: [Registro ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 
 
 
@@ -56,9 +56,7 @@ Tenga en cuenta la información siguiente al elegir dónde suministrar una insta
 
 Siga estos pasos para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.cloud_notm}}:
 
-1. Inicie una sesión en {{site.data.keyword.cloud_notm}}.
-
-    Encontrará el panel de control de {{site.data.keyword.cloud_notm}} en: [https://cloud.ibm.com ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com){:new_window}.
+1. [Inicie sesión en {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -127,9 +125,8 @@ para el espacio.
 
 Siga los pasos siguientes para otorgar a un usuario una política IAM desde la interfaz de usuario de {{site.data.keyword.cloud_notm}}:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
-
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com){:new_window}
+1. [Inicie sesión en la consola de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 
 2. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
 3. En la fila del usuario al que desea asignar acceso, seleccione el menú **Acciones** y luego pulse **Asignar acceso**.
@@ -145,9 +142,8 @@ Siga los pasos siguientes para otorgar a un usuario una política IAM desde la i
 
 Para otorgar a un usuario un rol de desarrollador en un espacio desde la interfaz de usuario de {{site.data.keyword.cloud_notm}}, siga estos pasos:
 
-1. Inicie una sesión en la consola de {{site.data.keyword.cloud_notm}}.
-
-    Abra un navegador web e inicie el panel de control de {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com){:new_window}
+1. [Inicie sesión en la consola de {{site.data.keyword.cloud_notm}}
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 	
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -171,6 +167,7 @@ Para otorgar a un usuario un rol de desarrollador en un espacio desde la interfa
 
 
 
+
 ## Paso 3: Generar sucesos de {{site.data.keyword.cloudaccesstrailshort}}
 {: #index_step3}
 
@@ -183,7 +180,7 @@ Para obtener más información sobre cómo generar sucesos, consulte la guía de
 ## Paso 4: Visualizar sucesos
 {: #index_step4}
 
-Puede supervisar los sucesos de {{site.data.keyword.cloudaccesstrailshort}} en la interfaz de usuario de {{site.data.keyword.cloud_notm}}. También puede actualizar su plan al plan premium para supervisar los eventos a través de Kibana. 
+Puede supervisar los sucesos de {{site.data.keyword.cloudaccesstrailshort}} en la interfaz de usuario de {{site.data.keyword.cloud_notm}}. También puede actualizar su plan al plan premium para supervisar los sucesos a través de Kibana. 
 
 **Para supervisar las acciones globales de una cuenta** y **para supervisar un servicio que se ha suministrado en el contexto de un grupo de recursos**, tenga en cuenta la información siguiente:
 
@@ -209,7 +206,7 @@ En la tabla siguiente se define el dominio de {{site.data.keyword.cloudaccesstra
 
 | Supervisión                                                           | Dominio de {{site.data.keyword.cloudaccesstrailshort}} |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `Acciones globales de cuenta`                                             | Dominio de cuenta EE. UU. sur                            |  
+| `Acciones globales de cuenta`                                             | Dominio de cuenta de EE.UU. sur                            |  
 | `Servicios que se suministran en el contexto de un grupo de recursos`   | dominio de cuenta                                     | 
 | `Servicios que se suministran en el contexto de una organización y un espacio de CF` | dominio de espacio                                       | 
 {: caption="Tabla 1. Dominios de {{site.data.keyword.cloudaccesstrailshort}} por origen de sucesos" caption-side="top"} 

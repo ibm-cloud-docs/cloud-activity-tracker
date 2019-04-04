@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Conformidad
 {: #compliance}
 
-[{{site.data.keyword.Bluemix}} proporciona una plataforma y servicios de nube que se basan en los estrictos estándares de seguridad de IBM.](/docs/security/compliance.html#compliance). El servicio {{site.data.keyword.cloudaccesstraillong}} es un servicio DevOps creado para {{site.data.keyword.cloud_notm}}. 
+[{{site.data.keyword.cloud_notm}} proporciona una plataforma y servicios en la nube construidos en base a los estrictos estándares de seguridad de IBM](/docs/security/compliance.html#compliance). El servicio {{site.data.keyword.cloudaccesstraillong}} es un servicio DevOps creado para {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Tenga en cuenta la información siguiente:
 
 Si pasa un plan de pago al plan estándar o lite, los sucesos que se encuentran en el repositorio de almacenamiento a largo plazo se suprimirán en aproximadamente un día.
 
-En cualquier momento puede abrir una incidencia de soporte y solicitar que se supriman todos los datos. Para obtener información sobre cómo abrir una incidencia de soporte de IBM, consulte [Cómo ponerse en contacto con el equipo de soporte](/docs/get-support/howtogetsupport.html#getting-customer-support).
+En cualquier momento puede abrir una incidencia de soporte y solicitar que se supriman todos los datos. Para obtener información sobre cómo abrir una incidencia de soporte de IBM, consulte [Obtención de soporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -64,9 +72,9 @@ En cualquier momento puede abrir una incidencia de soporte y solicitar que se su
 
 Para obtener más información, consulte:
 
-[Conformidad de seguridad de {{site.data.keyword.cloud_notm}}](/docs/security/compliance.html#compliance)
+[Conformidad de seguridad de {{site.data.keyword.cloud_notm}}](/docs/overview?topic=overview-security#compliance)
 
-[Página oficial de GDPR - {{site.data.keyword.IBM_notm}}](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - Página oficial de {{site.data.keyword.IBM_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

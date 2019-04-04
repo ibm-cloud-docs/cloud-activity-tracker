@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # Provisioning del programma di traccia dell'attività
 {: #provision}
 
-Puoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstraillong}} dall'IU {{site.data.keyword.Bluemix}} o dalla riga di comando.
+Puoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstraillong}} dall'IU {{site.data.keyword.cloud_notm}} o dalla riga di comando.
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ Puoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstraill
 
 Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}} in {{site.data.keyword.cloud_notm}}:
 
-1. Accedi al tuo account {{site.data.keyword.cloud_notm}}.
-
-    L'IU {{site.data.keyword.cloud_notm}} può essere trovata all'indirizzo: [http://bluemix.net ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://bluemix.net){:new_window}.
+1. [Accedi al tuo account {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -71,7 +75,7 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 
     Per impostazione predefinita, viene impostato il piano **free**.
 
-    Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
+    Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
 	
 7. Fai clic su **Crea** per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio
 {{site.data.keyword.cloud_notm}} in cui hai eseguito l'accesso.
@@ -92,31 +96,33 @@ in {{site.data.keyword.cloud_notm}} tramite la riga di comando:
     
 2. Accedi a {{site.data.keyword.cloud_notm}}. 
 
-    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
+    Esegui il comando [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) per accedere a {{site.data.keyword.cloud_notm}} e poi esegui il comando [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) per configurare l'organizzazione e lo spazio in cui vuoi eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Immetti il comando `ibmcloud service create` per eseguire il provisioning di un'istanza.
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
-	```
-	{: codeblock}
+	  ibmcloud service create service_name service_plan service_instance_name
+    ```
+	  {: codeblock}
 	
-	Dove
+	  Dove
 	
-	* service_name è il nome del servizio, ossia, **accessTrail**.
-	* service_plan è il nome del piano di servizio. Per un elenco dei piani, consulta [Piani di servizio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
-	* service_instance_name è il nome che vuoi utilizzare per la nuova istanza del servizio da te creata.
+	  * service_name è il nome del servizio, ossia, **accessTrail**.
 
-	Ad esempio, per creare un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} con il piano standard, immetti il seguente comando:
+	  * service_plan è il nome del piano di servizio. Per un elenco dei piani, consulta [Piani di servizio](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
+
+	  * service_instance_name è il nome che vuoi utilizzare per la nuova istanza del servizio da te creata.
+
+	  Ad esempio, per creare un'istanza del servizio {{site.data.keyword.cloudaccesstrailshort}} con il piano standard, immetti il seguente comando:
 	
-	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
+	  ```
+	  {: codeblock}
 	
 4. Verifica che il servizio sia stato creato correttamente. Esegui il seguente comando:
 
-    ```	
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}

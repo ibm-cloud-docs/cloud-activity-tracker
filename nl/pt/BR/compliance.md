@@ -2,22 +2,30 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, compliance
+
+subcollection: cloud-activity-tracker
 
 ---
 
-
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
-{:codeblock: .codeblock}
+{:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
+{:table: .aria-labeledby="caption"}
+{:codeblock: .codeblock}
+{:tip: .tip}
+{:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Conformidade
 {: #compliance}
 
-[O {{site.data.keyword.Bluemix}} fornece uma plataforma de nuvem e serviços que são construídos para padrões de segurança rigorosos da IBM.](/docs/security/compliance.html#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.cloud_notm}}. 
+[O {{site.data.keyword.cloud_notm}} fornece uma plataforma de Nuvem e serviços que são construídos para os rigorosos padrões de segurança da IBM](/docs/security/compliance.html#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 
@@ -55,7 +63,7 @@ Considere as informações a seguir:
 
 Se você mudar de um plano pago para o plano padrão ou Lite, os eventos que estiverem no repositório de armazenamento de longo prazo serão excluídos em aproximadamente um dia.
 
-A qualquer momento, é possível abrir um chamado de suporte e solicitar que todos os seus dados sejam excluídos. Para obter informações sobre como abrir um chamado de suporte IBM, veja [Entrando em contato com o suporte](/docs/get-support/howtogetsupport.html#getting-customer-support).
+A qualquer momento, é possível abrir um chamado de suporte e solicitar que todos os seus dados sejam excluídos. Para obter informações sobre como abrir um chamado de suporte IBM, consulte [Obtendo suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -64,9 +72,9 @@ A qualquer momento, é possível abrir um chamado de suporte e solicitar que tod
 
 Para obter mais informações, veja:
 
-[{{site.data.keyword.cloud_notm}} conformidade de segurança](/docs/security/compliance.html#compliance)
+[{{site.data.keyword.cloud_notm}} conformidade de segurança](/docs/overview?topic=overview-security#compliance)
 
-[PIBR- {{site.data.keyword.IBM_notm}} oficial página](https://www.ibm.com/data-responsibility/gdpr/)
+[GDPR - {{site.data.keyword.IBM_notm}} página oficial ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

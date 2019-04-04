@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # IAM-Ereignisse
@@ -22,9 +28,9 @@ lastupdated: "2019-01-23"
 Als Sicherheitsbeauftragter, Prüfer oder Manager können Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um zu verfolgen, wie Benutzer und Anwendungen mit dem {{site.data.keyword.iamlong}}-Service (IAM-Service) in {{site.data.keyword.Bluemix}} interagieren. 
 {:shortdesc}
 
-Der {{site.data.keyword.cloudaccesstrailshort}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.cloud_notm}} ändern. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov ).
+Der {{site.data.keyword.cloudaccesstrailfull_notm}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.cloud_notm}} ändern. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 
-Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker/index.html#getting-started-with-cla). 
+Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). 
 
 Ein Initiator kann ein Benutzer, ein Service oder eine Anwendung sein.
 {: tip}
@@ -111,5 +117,9 @@ In der folgenden Tabelle sind die Aktionen aufgelistet, die ein Ereignis generie
 
 Sie finden {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse sind in der **Kontodomäne** der Region **'Süden' der Vereinigten Staaten** (us-south) verfügbar.
 
-Um diese Ereignisse anzeigen zu können, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region **'Süden' der Vereinigten Staaten** ('us-south') bereitstellen. Danach müssen Sie die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} öffnen und zu der Kontodomäne wechseln, um Ereignisse zu sehen. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/viewing_events.html#account_events).
+Um diese Ereignisse anzeigen zu können, müssen Sie eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service in der Region **'Süden' der Vereinigten Staaten** ('us-south') bereitstellen. Danach müssen Sie die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} öffnen und zu der Kontodomäne wechseln, um Ereignisse zu sehen. 
+
+Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events).
+
+
 

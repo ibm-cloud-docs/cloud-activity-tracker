@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch Kibana
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Passaggio al dashboard Kibana
+# Apertura del dashboard Kibana
 {: #launch_kibana}
 
-Puoi avviare Kibana dall'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.Bluemix}} o direttamente da un browser web.
+Puoi avviare Kibana dall'IU {{site.data.keyword.cloudaccesstrailshort}} in {{site.data.keyword.cloud_notm}} o direttamente da un browser web.
 {:shortdesc}
    
 
-##  Passaggio a Kibana dal dashboard del servizio del programma di traccia dell'attività
+##  Apertura di Kibana dal dashboard del servizio del programma di traccia dell'attività
 {: #launch_Kibana_from_at}
 
 I log attività che visualizza Kibana includono gli eventi di tutte le risorse distribuite nello spazio dell'organizzazione {{site.data.keyword.cloud_notm}} a cui hai eseguito l'accesso e in cui è stato eseguito il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
@@ -33,7 +39,7 @@ Completa la seguente procedura per avviare Kibana dal dashboard del servizio {{s
 
 1. Accedi al tuo account {{site.data.keyword.cloud_notm}}.
 
-    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com/login ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
+    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com/login ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -50,7 +56,7 @@ Completa la seguente procedura per avviare Kibana dal dashboard del servizio {{s
     Viene caricato il dashboard **ActivityTracker_Account_Dashboard_in_24h** con un filtro temporale impostato sulle ultime 24 ore.
 	
 	
-##  Passaggio a Kibana da un browser web
+##  Apertura di Kibana da un browser web
 {: #launch_Kibana_from_browser}
 
 Completa la seguente procedura per avviare Kibana da un browser:
@@ -87,19 +93,30 @@ Completa la seguente procedura per avviare Kibana da un browser:
 	
 2. Verifica di aver eseguito l'accesso all'account {{site.data.keyword.cloud_notm}} in cui desideri visualizzare e analizzare gli eventi attività.
 
-3. Seleziona un dominio (**Domain**).
+3. Visualizza gli eventi dello spazio e dell'account
 
-    Seleziona **Account** per visualizzare gli eventi del dominio dell'account.
-    Seleziona **Space** per visualizzare gli eventi in un dominio dello spazio.
+* Fai clic in alto a destra nella finestra Kibana in cui vengono visualizzate le tue informazioni di accesso.
+* In **Domain** seleziona lo spazio o l'account nell'elenco a discesa.
+* Per gli eventi dello spazio, seleziona lo **spazio** di interesse nell'elenco a discesa Space
+* Per gli eventi dell'account, seleziona l'**account** nell'elenco a discesa Account
+
+4. Modifica la durata della ricerca
+
+* La durata della ricerca predefinita di Kibana è impostata sugli ultimi 15 minuti.
+* Fai clic su `Last 15 minutes` nella barra grigia in alto a destra
+* Seleziona quanto indietro nel tempo vuoi visualizzare gli eventi. Sono ricercabili gli eventi degli ultimi 3 giorni. Seleziona un intervallo di tempo di 3 giorni o meno.
+
+5. Filtra per visualizzare solo gli eventi del programma di traccia dell'attività
+* Puoi trovare sia gli eventi del programma di traccia dell'attività che di log quando visualizzi direttamente in Kibana.
+* Nella barra di ricerca, immetti `type:ActivityTracker` per mostrare solo gli eventi del programma di traccia dell'attività.
 
 Gli eventi che visualizzi in Kibana corrispondono a quelli ospitati nel dominio selezionato nella regione in cui hai avviato Kibana.
-
 
 ## Limitazioni
 {: #launch_kibana_limitations}
 
- A causa di limitazioni in Kibana, non puoi avere più schede browser Kibana aperte contemporaneamente nella stessa sessione per visualizzare account e spazi differenti. Pertanto, se hai due o più sessioni aperte contemporaneamente e modifichi il dominio dallo spazio all'account o viceversa, potresti riscontrare dei problemi.
-	
+* A causa di limitazioni in Kibana, non puoi avere più schede browser Kibana aperte contemporaneamente nella stessa sessione per visualizzare account e spazi differenti. Pertanto, se hai due o più sessioni aperte contemporaneamente e modifichi il dominio dallo spazio all'account o viceversa, potresti riscontrare dei problemi.
+* Per impostazione predefinita, solo il proprietario dell'account può visualizzare gli eventi dell'account. Per consentire ad altri di visualizzare gli eventi dell'account, segui le istruzioni in [Visualizzazione degli eventi dell'account](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 

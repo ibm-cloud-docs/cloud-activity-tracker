@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Fazendo download de eventos
@@ -30,8 +36,8 @@ Conclua as etapas a seguir para fazer download de eventos em um arquivo local:
 Efetue login no {{site.data.keyword.cloud_notm}}. Conclua
 as etapas a seguir:
 
-1. Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}}.
-2. Execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+1. Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}}.
+2. Execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 
 **Nota:** configure a organização e o espaço nos quais o {{site.data.keyword.cloudaccesstrailshort}} é provisionado.
 
@@ -43,7 +49,7 @@ Use o comando `ibmcloud at status` para ver informações sobre os eventos dispo
 * Para obter informações sobre eventos em um domínio de espaço, execute o comando `ibmcloud at status`.
 * Para obter informações sobre eventos no domínio de contas, execute o comando `ibmcloud at status` com a opção `-a`.
 
-Para obter mais informações, veja [Visualizando informações de evento](/docs/services/cloud-activity-tracker/how-to/viewing_event_information.html#viewing_event_status).
+Para obter mais informações, veja [Visualizando informações de evento](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-viewing_event_status#viewing_event_status).
   
 
 

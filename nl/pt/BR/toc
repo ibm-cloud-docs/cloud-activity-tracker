@@ -59,13 +59,12 @@ IBM Cloud Activity Tracker
     [API do IBM Cloud Activity Tracker](https://console.bluemix.net/apidocs/activity-tracker-api)
 
     {: .topicgroup}
-    Monitorando atividade de nuvem
+    Monitorando a atividade de nuvem
         reference/events.md
         services/at_events_cf.md
         services/at_events_iam.md
         services/at_events_acc_mgt.md
         services/at_events_rc.md
-        services/at_events_sl.md
     {: .navgroup-end}     
 
     {: .navgroup id="help"}

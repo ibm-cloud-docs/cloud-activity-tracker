@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Passaggio al dashboard del programma di traccia dell'attività nella console {{site.data.keyword.cloud_notm}}
+# Apertura del dashboard del programma di traccia dell'attività nella console {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
-Puoi avviare l'IU {{site.data.keyword.cloudaccesstrailshort}} da {{site.data.keyword.Bluemix}}. Per impostazione predefinita, puoi visualizzare gli eventi dello spazio. Puoi anche visualizzare gli eventi dell'account.
+Puoi avviare l'IU {{site.data.keyword.cloudaccesstrailshort}} da {{site.data.keyword.cloud_notm}}. Per impostazione predefinita, puoi visualizzare gli eventi dello spazio. Puoi anche visualizzare gli eventi dell'account.
 {:shortdesc}
    
 
-## Passaggio al dashboard del programma di traccia dell'attività per monitorare l'attività cloud in uno spazio
+## Apertura del dashboard del programma di traccia dell'attività per monitorare l'attività cloud in uno spazio
 {: #launch_at_ui_account_view_space}
 
 Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudaccesstrailshort}} in modo da poter monitorare l'attività cloud in uno spazio:
@@ -42,7 +48,7 @@ Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudacc
     Viene aperto il dashboard **ActivityTracker_Space_Dashboard_in_24h**. Tramite questo dashboard, puoi monitorare l'attività cloud in tale spazio per le ultime 24 ore. 
 
 
-## Passaggio al dashboard del programma di traccia dell'attività per monitorare l'attività cloud nell'account
+## Apertura del dashboard del programma di traccia dell'attività per monitorare l'attività cloud nell'account
 {: #launch_at_ui_account_view_account}
 
 Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudaccesstrailshort}} in modo da poter monitorare l'attività cloud nell'account:

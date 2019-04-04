@@ -19,7 +19,7 @@ lastupdated: "2019-02-18"
 # Initiation
 {: #getting-started-with-cla}
 
-Le service {{site.data.keyword.cloudaccesstrailfull}} enregistre des activités initiées par l'utilisateur qui changent l'état d'un service dans {{site.data.keyword.Bluemix}}. Découvrez comment utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour surveiller l'interaction d'un utilisateur avec un service Cloud.
+Le service {{site.data.keyword.cloudaccesstrailfull}} enregistre des activités initiées par l'utilisateur qui changent l'état d'un service dans {{site.data.keyword.Bluemix}}. Découvrez comment utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour surveiller l'interaction d'un utilisateur avec un service Cloud. 
 {:shortdesc}
 
 La figure suivante représente les différents composants et les actions impliqués lorsqu'une activité initiée par un utilisateur modifie l'état d'un service :
@@ -35,7 +35,7 @@ La figure suivante représente les différents composants et les actions impliqu
 * Consultez les régions dans lesquelles le service est disponible. Pour plus d'informations, voir [Régions](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
 * Obtenez un ID utilisateur membre ou propriétaire d'un compte {{site.data.keyword.cloud_notm}}. 
 
-    Pour obtenir un ID utilisateur {{site.data.keyword.cloud_notm}}, accédez à la page d'[enregistrement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/registration/){:new_window}.
+    Pour obtenir un ID utilisateur {{site.data.keyword.cloud_notm}}, accédez à la page d'[enregistrement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 
 
 
@@ -56,9 +56,7 @@ Tenez compte des informations suivantes pour choisir où mettre à disposition u
 
 Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstraillong_notm}} dans {{site.data.keyword.cloud_notm}} :
 
-1. Connectez-vous à {{site.data.keyword.cloud_notm}}.
-
-    Le tableau de bord {{site.data.keyword.cloud_notm}} se trouve à l'adresse suivante : [https://cloud.ibm.com ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com){:new_window}.
+1. [Connectez-vous à {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
     
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
@@ -126,9 +124,7 @@ Pour afficher des événements, vous devez disposer de droits d'accès dans {{si
 
 Pour accorder une règle IAM à un utilisateur à partir de l'interface utilisateur d'{{site.data.keyword.cloud_notm}} :
 
-1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
-
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [https://cloud.ibm.com ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com){:new_window}
+1. [Connectez-vous à la console {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 
 2. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 3. Sur la ligne de l'utilisateur auquel vous voulez affecter un accès, sélectionnez le menu **Actions**, puis cliquez sur **Affecter un accès**.
@@ -144,9 +140,7 @@ Pour accorder une règle IAM à un utilisateur à partir de l'interface utilisat
 
 Pour octroyer un rôle de développeur aux utilisateurs dans un espace à partir de l'interface utilisateur d'{{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
-
-    Ouvrez un navigateur Web et lancez le tableau de bord {{site.data.keyword.cloud_notm}} : [https://cloud.ibm.com ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com){:new_window}
+1. [Connectez-vous à la console {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 	
 	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
@@ -167,6 +161,7 @@ Pour octroyer un rôle de développeur aux utilisateurs dans un espace à partir
 8. Dans le menu Actions, sélectionnez **Editer un rôle d'espace**. Sélectionnez le rôle **Développeur** pour la zone *Rôles d'espace*. Cliquez ensuite sur **Sauvegarder un rôle**.
 	
 7. Cliquez sur **Affecter**.
+
 
 
 
@@ -208,9 +203,9 @@ Le tableau suivant définit le domaine {{site.data.keyword.cloudaccesstrailshort
 
 | Surveillance                                                           | Domaine {{site.data.keyword.cloudaccesstrailshort}} |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `Actions de compte globales`                                             | domaine de compte us-south                            |  
+| `Actions de compte globales`                                             | domaine de compte Sud des Etats-Unis (us-south)                        |  
 | `Services mis à disposition dans le contexte d'un groupe de ressources`   | domaine de compte                                     | 
-| `Services mis à disposition dans le contexte d'une organisation et d'un espace CF` | domaine d'espace                                      | 
+| `Services mis à disposition dans le contexte d'une organisation et d'un espace CF` | domaine d'espace                                       | 
 {: caption="Tableau 1. Domaines {{site.data.keyword.cloudaccesstrailshort}} par source d'événement" caption-side="top"} 
 
 Pour afficher des événements, vous pouvez choisir l'une des options suivantes :

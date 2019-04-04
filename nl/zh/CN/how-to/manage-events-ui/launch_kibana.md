@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch Kibana
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# 导航至 Kibana 仪表板
+# 打开 Kibana 仪表板
 {: #launch_kibana}
 
-您可以通过 {{site.data.keyword.Bluemix}} 中的 {{site.data.keyword.cloudaccesstrailshort}} UI 或直接通过 Web 浏览器启动 Kibana。
+您可以通过 {{site.data.keyword.cloud_notm}} 中的 {{site.data.keyword.cloudaccesstrailshort}} UI 或直接通过 Web 浏览器启动 Kibana。
 {:shortdesc}
    
 
-##  通过 Activity Tracker 服务的仪表板导航至 Kibana
+##  通过 Activity Tracker 服务的仪表板打开 Kibana
 {: #launch_Kibana_from_at}
 
 Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm}} 组织空间中以及供应了 {{site.data.keyword.cloudaccesstrailshort}} 服务的 Bluemix 组织空间中部署的所有资源的事件。
@@ -33,7 +39,7 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm
 
 1. 登录到您的 {{site.data.keyword.cloud_notm}} 帐户。
 
-    可在以下地址找 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com/login ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
+    可在以下地址找 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com/login ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -50,7 +56,7 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm
     **ActivityTracker_Account_Dashboard_in_24h** 仪表板将通过设置为最近 24 小时的时间过滤器加载数据。
 	
 	
-##  通过 Web 浏览器导航至 Kibana
+##  通过 Web 浏览器打开 Kibana
 {: #launch_Kibana_from_browser}
 
 要通过浏览器启动 Kibana，请完成以下步骤：
@@ -87,18 +93,30 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm
 	
 2. 验证您是否已登录到要在其中查看并分析活动事件的 {{site.data.keyword.cloud_notm}} 帐户中。
 
-3. 选择一个**域**。
+3. 查看空间或帐户事件
 
-    选择**帐户**可在帐户域中查看事件。选择**空间**可在空间域中查看事件。
+* 单击 Kibana 窗口的右上方，其中显示了您的登录信息。
+* 在**域**中的下拉列表中选择空间或帐户。
+* 对于空间事件，在“空间”下拉列表中选择相关的**空间**。
+* 对于帐户事件，在“帐户”下拉列表中选择正确的**帐户**。
+
+4. 调整搜索时间
+
+* Kibana 缺省搜索时间设置为最近 15 分钟。
+* 在右上方的灰色栏中单击`最近 15 分钟`。
+* 选择您希望回看事件的时间范围。最近 3 天的事件可搜索。选取不超过 3 天的时间范围。
+
+5. 过滤以仅显示 Activity Tracker 事件
+* 直接在 Kibana 中查看时，您可能会同时遇到 Logs 和 Activity Tracker 事件。
+* 在搜索栏中输入 `type:ActivityTracker` 以仅显示 Activity Tracker 事件。
 
 在 Kibana 中显示的事件对应于启动了 Kibana 的区域中所选择域中托管的事件。
-
 
 ## 限制
 {: #launch_kibana_limitations}
 
- 由于 Kibana 中的限制，您不能在同一会话中同时打开多个 Kibana 浏览器选项卡来查看不同的空间或帐户。因此，如果同时打开两个或更多会话，并将域从空间更改为帐户或从帐户更改为空间，那么可能会遇到问题。
-	
+* 由于 Kibana 中的限制，您不能在同一会话中同时打开多个 Kibana 浏览器选项卡来查看不同的空间或帐户。因此，如果同时打开两个或更多会话，并将域从空间更改为帐户或从帐户更改为空间，那么可能会遇到问题。
+* 缺省情况下，仅帐户所有者可以查看帐户事件。要允许其他人查看帐户事件，请遵循[查看帐户事件](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)中的指示信息。
 
 
 

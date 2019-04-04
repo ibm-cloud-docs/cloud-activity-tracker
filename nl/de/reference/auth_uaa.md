@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, UAA, security
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -34,7 +38,7 @@ Führen Sie zum Abrufen des UAA-Tokens die folgenden Schritte aus:
 
 1. (Voraussetzung) Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}}.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
    Wenn die CLI installiert ist, fahren Sie mit dem nächsten Schritt fort.
     

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, overview
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# 정보
+# {{site.data.keyword.cloudaccesstrailshort}} 정보
 {: #activity_tracker_ov}
 
-애플리케이션과 {{site.data.keyword.Bluemix}} 서비스가 어떻게 상호작용하는지 추적하려면 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하십시오. {{site.data.keyword.cloudaccesstrailshort}}을 사용하여 비정상 활동을 모니터하고 규정 감사 요구사항을 준수하십시오. 수집되는 이벤트는 CADF(Cloud Auditing Data Federation) 표준을 준수합니다.
+애플리케이션과 {{site.data.keyword.cloud_notm}} 서비스가 어떻게 상호작용하는지 추적하려면 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하십시오. {{site.data.keyword.cloudaccesstrailshort}}을 사용하여 비정상 활동을 모니터하고 규정 감사 요구사항을 준수하십시오. 수집되는 이벤트는 CADF(Cloud Auditing Data Federation) 표준을 준수합니다.
 {:shortdesc}
 
 * {{site.data.keyword.cloudaccesstrailshort}}은 클라우드에서
@@ -46,7 +52,7 @@ lastupdated: "2019-02-18"
 ## 이벤트 수집
 {: #activity_tracker_ov_collect}
 
-{{site.data.keyword.cloudaccesstrailshort}} 서비스는 {{site.data.keyword.cloud_notm}} 내의 선택된 클라우드 서비스에 대해 수행된 API 호출 및 기타 조치와 관련된 활동 데이터만 캡처합니다. 
+{{site.data.keyword.cloudaccesstrailshort}} 서비스는 {{site.data.keyword.cloud_notm}} 내의 선택된 클라우드 서비스에 대해 수행된 API 호출 및 기타 조치와 관련된 활동 데이터를 캡처합니다. 
 
 * 이벤트는 자동으로 수집됩니다. 
 * {{site.data.keyword.cloudaccesstrailshort}}에서 수집되는 이벤트는 CADF(Cloud Auditing Data Federation) 표준을 준수합니다. CADF 표준은 클라우드 환경에서 애플리케이션의 보안을 인증, 관리 및 감사하는 데 필요한 정보가 포함된
@@ -100,7 +106,7 @@ API 호출에서 요청하는 조치에 좌우됩니다.</td>
 
 영역 도메인에 있는 이벤트를 보려면 API 활동을 모니터할 영역에 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝해야 합니다.
 
-{{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하는 방법을 알아보려면 [{{site.data.keyword.cloudaccesstrailshort}} 서비스 프로비저닝](/docs/services/cloud-activity-tracker/how-to/provision.html#provision)을 참조하십시오.
+{{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하는 방법에 대한 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 서비스 프로비저닝](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision)을 참조하십시오.
 
 
 
@@ -109,12 +115,12 @@ API 호출에서 요청하는 조치에 좌우됩니다.</td>
 
 활동 로그는 {{site.data.keyword.cloud_notm}}의 {{site.data.keyword.cloudaccesstrailshort}} UI를 통해 분석하거나, 오픈 소스 도구인 Kibana를 사용하여 분석할 수 있습니다. 사용자는 특정 영역, 또는 계정 레벨에서 사용 가능한 이벤트를 모니터할 수 있습니다.
 
-{{site.data.keyword.cloud_notm}}의 {{site.data.keyword.cloudaccesstrailshort}} UI를 통해 최근 24시간에 대한 활동 로그를 검색하고, 분석하고, 모니터할 수 있습니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} UI로 이동](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_at_ui.html#launch_at_ui)을 참조하십시오.
+{{site.data.keyword.cloud_notm}}의 {{site.data.keyword.cloudaccesstrailshort}} UI를 통해 최근 24시간에 대한 활동 로그를 검색하고, 분석하고, 모니터할 수 있습니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} UI로 이동](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui)을 참조하십시오.
 
 {{site.data.keyword.cloudaccesstrailshort}} Kibana 대시보드를 사용하거나 사용자 정의 대시보드를 작성하여, Kibana를 통해 최근 3일에 대한 활동 로그를 검색하고, 분석하고 모니터할 수 있습니다. * **참고:** 이 기능은 **프리미엄** 플랜 사용자의 경우 사용할 수 있습니다.
 
-* Kibana를 실행하는 방법에 대한 자세한 정보는 [Kibana 대시보드로 이동](/docs/services/cloud-activity-tracker/how-to/manage-events-ui/launch_kibana.html#launch_kibana)을 참조하십시오. 
-* Kibana에서 이벤트를 분석하는 데 사용할 수 있는 필드의 목록은 [{{site.data.keyword.cloudaccesstrailshort}} 이벤트 필드](/docs/services/cloud-activity-tracker/at_event.html#at_event)를 참조하십시오.
+* Kibana를 실행하는 방법에 대한 자세한 정보는 [Kibana 대시보드로 이동](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana)을 참조하십시오. 
+* Kibana에서 이벤트를 분석하는 데 사용할 수 있는 필드의 목록은 [{{site.data.keyword.cloudaccesstrailshort}} 이벤트 필드](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)를 참조하십시오.
 
 
 
@@ -134,7 +140,7 @@ API 호출에서 요청하는 조치에 좌우됩니다.</td>
 
 {{site.data.keyword.cloudaccesstrailshort}} 서비스는 여러 플랜을 제공합니다.
 
-{{site.data.keyword.cloud_notm}} UI 또는 명령행을 통해 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드 또는 다운그레이드할 수 있습니다. 서비스 플랜 업그레이드에 대한 자세한 정보는 [플랜 변경](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)을 참조하십시오. 
+{{site.data.keyword.cloud_notm}} UI 또는 명령행을 통해 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드 또는 다운그레이드할 수 있습니다. 서비스 플랜 업그레이드에 대한 자세한 정보는 [플랜 변경](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)을 참조하십시오. 
 
 다음 표에는 사용 가능한 플랜이 간략하게 설명되어 있습니다.
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -173,8 +177,7 @@ ibmcloud at download [parameters] [arguments...]
 
 <dl>
 <dt>--output value, -o value</dt>
-<dd>(Facultatif) Définit le chemin d'accès et le nom de fichier du fichier de sortie local dans lequel les événement sont téléchargés. <br>La valeur par défaut est un trait d'union (-). <br>Définissez ce
-paramètre sur la valeur par défaut pour que les journaux soient générés dans la sortie standard.</dd>
+<dd>(Facultatif) Définit le chemin d'accès et le nom du fichier de sortie local dans lequel les événements sont téléchargés. <br>La valeur par défaut est un trait d'union (-). <br>Définissez ce paramètre sur la valeur par défaut pour que les journaux soient générés dans la sortie standard.</dd>
 </dl>
 
 **Arguments**
@@ -598,7 +601,7 @@ ibmcloud at status [parameters] [arguments...]
   </dd>
   
   <dt>SEARCHABLE</dt>
-  <dd>Cette zone indique si les événements peuvent être soumis à une opération de recherche dans Kibana. <br>Lorsque la zone **SEARCHABLE** est définie sur *None*, les événements sont disponibles pour téléchargement, mais vous ne pouvez pas les analyser dans Kibana.
+  <dd>Cette zone indique si les événements peuvent être soumis à une opération de recherche dans Kibana. <br>Lorsque la valeur de la zone **SEARCHABLE** est définie sur *None*, les événements sont disponibles pour téléchargement, mais vous ne pouvez pas les analyser dans Kibana.
   </dd>
   
 </dl>

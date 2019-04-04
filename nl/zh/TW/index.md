@@ -35,7 +35,7 @@ lastupdated: "2019-02-18"
 * 查看提供該服務的地區。如需相關資訊，請參閱[地區](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions)。
 * 取得具有 {{site.data.keyword.cloud_notm}} 帳戶成員或擁有者身分的使用者 ID。 
 
-    若要取得 {{site.data.keyword.cloud_notm}} 使用者 ID，請移至：[登錄 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/registration/){:new_window}。
+    若要取得 {{site.data.keyword.cloud_notm}} 使用者 ID，請移至：[登錄 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 
 
 
@@ -56,9 +56,7 @@ lastupdated: "2019-02-18"
 
 請完成下列步驟，以在 {{site.data.keyword.cloud_notm}} 中佈建 {{site.data.keyword.cloudaccesstraillong_notm}} 服務的實例：
 
-1. 登入 {{site.data.keyword.cloud_notm}}。
-
-    {{site.data.keyword.cloud_notm}} 儀表板位於：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}。
+1. [登入 {{site.data.keyword.cloud_notm}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
     
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
@@ -126,9 +124,7 @@ lastupdated: "2019-02-18"
 
 請完成下列步驟，從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與 IAM 原則：
 
-1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
-
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}
+1. [登入 {{site.data.keyword.cloud_notm}} 主控台 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 
 2. 從功能表列按一下**管理** &gt; **安全** &gt; **身分及存取**，然後選取**使用者**。
 3. 從您要指派存取權的使用者列中，選取**動作**功能表，然後按一下**指派存取權**。
@@ -144,9 +140,7 @@ lastupdated: "2019-02-18"
 
 若要從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與空間中的開發人員角色，請完成下列步驟：
 
-1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
-
-    開啟 Web 瀏覽器，並啟動 {{site.data.keyword.cloud_notm}} 儀表板：[https://cloud.ibm.com ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com){:new_window}
+1. [登入 {{site.data.keyword.cloud_notm}} 主控台 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
@@ -167,6 +161,7 @@ lastupdated: "2019-02-18"
 8. 從動作功能表選取**編輯空間角色**。在*空間角色* 欄位選取**開發人員**角色。然後按一下**儲存角色**。
 	
 7. 按一下**指派**。
+
 
 
 

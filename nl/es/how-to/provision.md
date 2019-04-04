@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # Suministro de Activity Tracker
 {: #provision}
 
-Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde la interfaz de usuario de {{site.data.keyword.Bluemix}} o desde la línea de mandatos.
+Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde la interfaz de usuario de {{site.data.keyword.cloud_notm}} o desde la línea de mandatos.
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ Puede suministrar el servicio {{site.data.keyword.cloudaccesstraillong}} desde l
 
 Siga los pasos siguientes para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.cloud_notm}}:
 
-1. Inicie sesión en su cuenta de {{site.data.keyword.cloud_notm}}.
-
-    La interfaz de usuario de {{site.data.keyword.cloud_notm}} se encuentra en: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}.
+1. [Inicie sesión en su cuenta de {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
     
 	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -71,7 +75,7 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
 
     De forma predeterminada, está definido el plan **gratuito**.
 
-    Para obtener más información, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
+    Para obtener más información, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
 	
 7. Pulse **Crear** para suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}} en el espacio de {{site.data.keyword.cloud_notm}} en el que ha iniciado la sesión.
   
@@ -90,31 +94,33 @@ Siga los pasos siguientes para suministrar una instancia del servicio {{site.dat
     
 2. Inicie una sesión en {{site.data.keyword.cloud_notm}}. 
 
-    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Ejecute el mandato `ibmcloud service create` para suministrar una instancia.
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
-	```
-	{: codeblock}
+	  ibmcloud service create service_name service_plan service_instance_name
+    ```
+	  {: codeblock}
 	
-	Donde
+	  Donde
 	
-	* service_name es el nombre del servicio, es decir **accessTrail**.
-	* service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
-	* service_instance_name es el nombre que desea utilizar para la nueva instancia de servicio que cree.
+	  * service_name es el nombre del servicio, es decir **accessTrail**.
 
-	Por ejemplo, para crear una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con el plan estándar, ejecute este mandato:
+	  * service_plan es el nombre del plan de servicio. Para ver una lista de planes, consulte [Planes de servicio](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
+
+	  * service_instance_name es el nombre que desea utilizar para la nueva instancia de servicio que cree.
+
+	  Por ejemplo, para crear una instancia del servicio {{site.data.keyword.cloudaccesstrailshort}} con el plan estándar, ejecute este mandato:
 	
-	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
+	  ```
+	  {: codeblock}
 	
 4. Verifique que el servicio se ha creado correctamente. Ejecute el mandato siguiente:
 
-    ```	
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}

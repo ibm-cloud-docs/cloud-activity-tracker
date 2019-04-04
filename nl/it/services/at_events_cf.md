@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, Cloud Foundry events, CF
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Eventi Cloud Foundry
@@ -30,7 +36,7 @@ Il seguente elenco illustra le diverse attività della piattaforma principale ch
 * Creazione di una chiave API della piattaforma, ridenominazione ed eliminazione di una chiave della piattaforma.
 
 
-## Eventi generati quando interagiscono con i servizi del catalogo 
+## Eventi generati quando interagiscono con i servizi del catalogo
 {: #cf_catalog}
 
 Quando esegui il provisioning di un servizio, lo rimuovi e ne modifichi il nome, un evento viene generato e inviato al dominio dello spazio in {{site.data.keyword.cloudaccesstrailshort}} associato allo spazio Cloud Foundry in cui il servizio è disponibile nell'account. 
@@ -62,7 +68,7 @@ La seguente tabella elenca le azioni del catalogo che generano gli eventi:
 
  	
 
-## Eventi generati durante la gestione dei ruoli Cloud Foundry nell'account 
+## Eventi generati durante la gestione dei ruoli Cloud Foundry nell'account
 {: #cf_cfroles} 
 
 Quando concedi o revochi (elimini) un ruolo Cloud Foundry a un utente nell'account, un evento viene generato e inviato al dominio dello spazio in {{site.data.keyword.cloudaccesstrailshort}} associato allo spazio Cloud Foundry in cui il ruolo viene concesso o revocato. 

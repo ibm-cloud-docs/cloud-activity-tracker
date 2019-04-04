@@ -20,7 +20,7 @@ lastupdated: "2019-02-18"
 {: #getting-started-with-cla}
 
 O serviço {{site.data.keyword.cloudaccesstrailfull}} registra as atividades iniciadas pelo usuário que mudam
-o estado de um serviço no {{site.data.keyword.Bluemix}}. Saiba como usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para monitorar a interação de um usuário com um serviço do Cloud.
+o estado de um serviço no {{site.data.keyword.Bluemix}}. Saiba como usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para monitorar a interação de um usuário com um serviço do Cloud. 
 {:shortdesc}
 
 A figura a seguir mostra os diferentes componentes e ações que ocorrem quando uma atividade iniciada pelo usuário muda o estado de um serviço:
@@ -37,7 +37,7 @@ A figura a seguir mostra os diferentes componentes e ações que ocorrem quando 
 [Regiões](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_regions).
 * Obtenha uma identificação de usuário que seja membro ou proprietário de uma conta do {{site.data.keyword.cloud_notm}}. 
 
-    Para obter uma identificação de usuário do {{site.data.keyword.cloud_notm}}, acesse: [Registro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/registration/){:new_window}.
+    Para obter uma identificação de usuário do {{site.data.keyword.cloud_notm}}, acesse: [Registro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
 
 
 
@@ -58,9 +58,7 @@ Considere as seguintes informações para escolher onde fornecer uma instância 
 
 Conclua as etapas a seguir para provisionar uma instância do serviço {{site.data.keyword.cloudaccesstraillong_notm}} no {{site.data.keyword.cloud_notm}}:
 
-1. Efetue login no {{site.data.keyword.cloud_notm}}.
-
-    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com){:new_window}.
+1. [Efetue login no {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
     
 	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
@@ -128,9 +126,7 @@ Para visualizar eventos, deve-se ter permissões de acesso no {{site.data.keywor
 
 Conclua as etapas a seguir para conceder a um usuário uma política de IAM por meio da IU do {{site.data.keyword.cloud_notm}}:
 
-1. Efetue login no console do {{site.data.keyword.cloud_notm}}.
-
-    Abra um navegador da web e ative o painel do {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com){:new_window}
+1. [Efetue login no console do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
 
 2. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
 3. Na linha para o usuário que você deseja designar acesso, selecione o menu **Ações** e, em seguida, clique em **Designar acesso**.
@@ -146,9 +142,7 @@ Conclua as etapas a seguir para conceder a um usuário uma política de IAM por 
 
 Para conceder a um usuário uma função de desenvolvedor em um espaço por meio da IU do {{site.data.keyword.cloud_notm}}, conclua as etapas a seguir:
 
-1. Efetue login no console do {{site.data.keyword.cloud_notm}}.
-
-    Abra um navegador da web e ative o painel do {{site.data.keyword.cloud_notm}}: [https://cloud.ibm.com ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com){:new_window}
+1. [Efetue login no console do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
 	
 	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
@@ -169,6 +163,7 @@ Para conceder a um usuário uma função de desenvolvedor em um espaço por meio
 8. No menu Ação, selecione **Editar função de espaço**. Selecione a função de **Desenvolvedor** para o campo *Funções de espaço*. Em seguida, clique em **Salvar função**.
 	
 7. Clique em **Designar**.
+
 
 
 

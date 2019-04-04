@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # 供应 Activity Tracker
 {: #provision}
 
-您可以从 {{site.data.keyword.Bluemix}} UI 或从命令行供应 {{site.data.keyword.cloudaccesstraillong}} 服务。
+您可以从 {{site.data.keyword.cloud_notm}} UI 或从命令行供应 {{site.data.keyword.cloudaccesstraillong}} 服务。
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ lastupdated: "2019-02-18"
 
 要在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
 
-1. 登录到您的 {{site.data.keyword.cloud_notm}} 帐户。
-
-    可在以下地址找到 {{site.data.keyword.cloud_notm}} UI：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}。
+1. [登录到 {{site.data.keyword.cloud_notm}} 帐户 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-02-18"
 
     缺省情况下，已设置**免费**套餐。
 
-    有关更多信息，请参阅[服务套餐](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。
+    有关更多信息，请参阅[服务套餐](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)。
 	
 7. 单击**创建**以在您登录到的 {{site.data.keyword.cloud_notm}} 空间中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
   
@@ -90,47 +94,45 @@ lastupdated: "2019-02-18"
     
 2. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 3. 运行 `ibmcloud service create` 命令以供应实例。
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
+	  ibmcloud service create service_name service_plan service_instance_name
 	```
-	{: codeblock}
+	  {: codeblock}
 	
-	其中
+	  其中
 	
-	* service_name 是服务的名称，即 **accessTrail**。
-	* service_plan 是服务套餐名称。有关套餐的列表，请参阅[服务套餐](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)。
-	* service_instance_name 是要用于所创建的新服务实例的名称。
+	  * service_name 是服务的名称，即 **accessTrail**。
 
-	例如，要使用标准套餐创建 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例，请运行以下命令：
+	  * service_plan 是服务套餐名称。有关套餐的列表，请参阅[服务套餐](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)。
+
+	  * service_instance_name 是要用于所创建的新服务实例的名称。
+
+	  例如，要使用标准套餐创建 {{site.data.keyword.cloudaccesstrailshort}} 服务的实例，请运行以下命令：
 	
 	
 	
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
 	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
+	  {: codeblock}
 	
 4. 验证服务是否已成功创建。运行以下命令：
 
-    ```	
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}
 	
 	运行命令的输出如下所示：
 	
-	
-	
 	```
-    Getting services in org MyOrg / space MySpace as xxx@yyy.com...
+        Getting services in org MyOrg / space MySpace as xxx@yyy.com...
     OK
-
-    
-    name                           service                  plan                   bound apps              last operation
+name                           service                  plan                   bound apps              last operation
     my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```
 	{: screen}

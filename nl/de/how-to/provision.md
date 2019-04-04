@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # Activity Tracker bereitstellen
 {: #provision}
 
-Sie können den {{site.data.keyword.cloudaccesstraillong}}-Service über die Benutzerschnittstelle (UI) für {{site.data.keyword.Bluemix}} oder über die Befehlszeile bereitstellen.
+Sie können den {{site.data.keyword.cloudaccesstraillong}}-Service über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloud_notm}} oder über die Befehlszeile bereitstellen.
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ Sie können den {{site.data.keyword.cloudaccesstraillong}}-Service über die Ben
 
 Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in {{site.data.keyword.cloud_notm}} bereitzustellen:
 
-1. Melden Sie sich bei Ihrem {{site.data.keyword.cloud_notm}}-Konto an.
-
-    Die Benutzerschnittstelle (UI) für {{site.data.keyword.cloud_notm}} finden Sie unter der Adresse [http://bluemix.net ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://bluemix.net){:new_window}.
+1. [Melden Sie sich bei Ihrem {{site.data.keyword.cloud_notm}}-Konto ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an. 
     
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
@@ -71,7 +75,7 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
     Standardmäßig ist der Plan **Kostenlos** festgelegt.
 
-    Weitere Informationen finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan).
+    Weitere Informationen finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
 	
 7. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem {{site.data.keyword.cloud_notm}}-Bereich bereitzustellen, bei dem Sie angemeldet sind.
   
@@ -84,37 +88,39 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
 1. [Voraussetzung] Installieren Sie die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}}.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). 
+   Weitere Informationen finden Sie in [{{site.data.keyword.cloud_notm}}-Befehlszeilenschnittstelle (CLI) installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
    
    Wenn die CLI installiert ist, fahren Sie mit dem nächsten Schritt fort.
     
 2. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 3. Führen Sie den Befehl `ibmcloud service create` aus, um eine Instanz bereitzustellen.
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
-	```
-	{: codeblock}
+	  ibmcloud service create service_name service_plan service_instance_name
+    ```
+	  {: codeblock}
 	
-	Dabei gilt Folgendes:
+	  Dabei gilt Folgendes:
 	
-	* 'service_name' ist der Name des Service, d. h. **accessTrail**.
-	* 'service_plan' ist der Name des Serviceplans. Eine Liste der Pläne finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan).
-	* 'service_instance_name' ist der Name für die neue Serviceinstanz, die Sie erstellen.
+	  * 'service_name' ist der Name des Service, d. h. **accessTrail**.
 
-	Wenn Sie zum Beispiel eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service mit dem Standardplan erstellen wollen, führen Sie den folgenden Befehl aus:
-	
-	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
-	
-4. Überprüfen Sie, ob der Service erfolgreich erstellt worden ist. Führen Sie dazu den folgenden Befehl aus:
+	  * 'service_plan' ist der Name des Serviceplans. Eine Liste der Pläne finden Sie in [Servicepläne](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan).
 
-    ```	
+	  * 'service_instance_name' ist der Name für die neue Serviceinstanz, die Sie erstellen.
+
+	  Wenn Sie zum Beispiel eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service mit dem Standardplan erstellen wollen, führen Sie den folgenden Befehl aus:
+	
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
+	  ```
+	  {: codeblock}
+	
+4. Überprüfen Sie, ob der Service erfolgreich erstellt worden ist. Führen Sie den folgenden Befehl aus: 
+
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}

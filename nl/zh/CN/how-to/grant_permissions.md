@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-23"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, IAM
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-01-23"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # 授予查看事件的许可权
 {: #grant_permissions}
 
-在 {{site.data.keyword.Bluemix}} 中，您可以将 Cloud Foundry 角色和/或 IAM 角色分配给用户。这些角色可定义用户在使用 {{site.data.keyword.cloudaccesstrailshort}} 服务时可执行的任务。  
+在 {{site.data.keyword.cloud}} 中，您可以将 Cloud Foundry 角色和/或 IAM 角色分配给用户。这些角色可定义用户在您使用 {{site.data.keyword.cloudaccesstrailshort}} 服务时可执行的任务。  
 {:shortdesc}
 
 ## 授予查看帐户事件的许可权
@@ -29,13 +35,13 @@ lastupdated: "2019-01-23"
 
 1. 在供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的 *Developer* 角色。 
 
-    有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
+    有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)。
 
 2. 具有区域中 *viewer* 角色的 {{site.data.keyword.loganalysisshort}} 服务的 IAM 策略。 
 
     viewer 角色是必需的最低 IAM 角色。 
 	
-	有关更多信息，请参阅[授予 IAM 许可权](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_iam_policy)。
+	有关更多信息，请参阅[授予 IAM 许可权](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_iam_policy)。
 
 
 ## 授予查看空间事件的许可权
@@ -45,7 +51,7 @@ lastupdated: "2019-01-23"
 
 * 在供应 {{site.data.keyword.cloudaccesstrailshort}} 的区域中，空间中的 *Developer* 角色。 
 
-    有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to/grant_permissions.html#grant_cf_role)。
+    有关更多信息，请参阅[授予 CF 角色](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_cf_role)。
 
 
 ## 授予 IAM 许可权
@@ -59,9 +65,7 @@ lastupdated: "2019-01-23"
 
 要授予用户查看帐户域中事件的许可权，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
-
-    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
+1. [登录到 {{site.data.keyword.cloud_notm}} 控制台 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-01-23"
 	
 3. 如果用户是帐户成员，请从列表中选择用户名，或者单击*操作*菜单中的**管理用户**。
 
-    如果用户不是帐户成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**访问策略**部分中，单击**分配访问权**，然后选择**分配对资源的访问权**。
 
@@ -99,7 +103,7 @@ lastupdated: "2019-01-23"
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。</td>
+		<td>选择一个或多个 IAM 角色。<br>有效角色为*管理员*、*操作员*、*编辑者*和*查看者*。</td>
 	  </tr>
      </table>
 	
@@ -119,9 +123,7 @@ lastupdated: "2019-01-23"
 
 要授予用户查看空间事件的访问权，请完成以下步骤：
 
-1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
-
-    打开 Web 浏览器，然后启动 {{site.data.keyword.cloud_notm}} 仪表板：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
+1. [登录到 {{site.data.keyword.cloud_notm}} 控制台 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 	
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -131,11 +133,11 @@ lastupdated: "2019-01-23"
 	
 3. 如果用户是帐户成员，请从列表中选择用户名，或者单击*操作*菜单中的**管理用户**。
 
-    如果用户不是帐户成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
-4. 选择 **Cloud Foundry 访问权**，然后选择组织。
+4. 选择 **Cloud Foundry 访问权**。然后选择组织。
 
-    这将列出该组织中可用的空间的列表。
+    这将列出该组织中可用的空间。
 
 5. 选择一个空间。然后，从菜单操作中，选择**编辑空间角色**。
 

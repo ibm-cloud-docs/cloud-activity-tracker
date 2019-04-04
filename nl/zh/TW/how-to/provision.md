@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, provision instance
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,13 +18,15 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
 # 佈建 Activity Tracker
 {: #provision}
 
-您可以從 {{site.data.keyword.Bluemix}} 使用者介面或從指令行，佈建 {{site.data.keyword.cloudaccesstraillong}} 服務。
+您可以從 {{site.data.keyword.cloud_notm}} 使用者介面或從指令行，佈建 {{site.data.keyword.cloudaccesstraillong}} 服務。
 {:shortdesc}
 
 
@@ -29,9 +35,7 @@ lastupdated: "2019-02-18"
 
 請完成下列步驟，以在 {{site.data.keyword.cloud_notm}} 中佈建 {{site.data.keyword.cloudaccesstraillong_notm}} 服務的實例：
 
-1. 登入 {{site.data.keyword.cloud_notm}} 帳戶。
-
-    {{site.data.keyword.cloud_notm}} 使用者介面位於：[http://bluemix.net ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://bluemix.net){:new_window}。
+1. [登入 {{site.data.keyword.cloud_notm}} 帳戶 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
     
 	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
@@ -71,7 +75,7 @@ lastupdated: "2019-02-18"
 
     依預設，會設定 **free** 方案。
 
-    如需相關資訊，請參閱[服務方案](/docs/services/cloud-activity-tracker/how-to/change_plan.html#change_plan)。
+    如需相關資訊，請參閱[服務方案](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)。
 	
 7. 按一下**建立**，以在您已登入的 {{site.data.keyword.cloud_notm}} 空間中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。
   
@@ -90,31 +94,33 @@ lastupdated: "2019-02-18"
     
 2. 登入 {{site.data.keyword.cloud_notm}}。 
 
-    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
+    執行 [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
 	
 3. 執行 `ibmcloud service create` 指令，以佈建實例。
 
     ```
-	ibmcloud service create service_name service_plan service_instance_name
+	  ibmcloud service create service_name service_plan service_instance_name
 	```
-	{: codeblock}
+	  {: codeblock}
 	
-	其中
+	  其中
 	
-	* service_name 是服務的名稱，即 **accessTrail**。
-	* service_plan 是服務方案名稱。如需方案的清單，請參閱[服務方案](/docs/services/cloud-activity-tracker/activity_tracker_ov.html#activity_tracker_ov_plan)。
-	* service_instance_name 是您要用於建立之新服務實例的名稱。
+	  * service_name 是服務的名稱，即 **accessTrail**。
 
-	例如，若要建立具有標準方案的 {{site.data.keyword.cloudaccesstrailshort}} 服務實例，請執行下列指令：
+	  * service_plan 是服務方案名稱。如需方案的清單，請參閱[服務方案](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-change_plan#change_plan)。
+
+	  * service_instance_name 是您要用於建立之新服務實例的名稱。
+
+	  例如，若要建立具有標準方案的 {{site.data.keyword.cloudaccesstrailshort}} 服務實例，請執行下列指令：
 	
-	```
-	ibmcloud service create accessTrail free my_activitytracker_svc
-	```
-	{: codeblock}
+	  ```
+	  ibmcloud service create accessTrail free my_activitytracker_svc
+	  ```
+	  {: codeblock}
 	
 4. 驗證服務已順利建立。執行下列指令：
 
-    ```	
+	```	
 	ibmcloud service list
 	```
 	{: codeblock}

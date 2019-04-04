@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# 导航至 {{site.data.keyword.cloud_notm}} 控制台中的 Activity Tracker 仪表板
+# 打开 {{site.data.keyword.cloud_notm}} 控制台中的 Activity Tracker 仪表板
 {: #launch_at_ui}
 
-您可以从 {{site.data.keyword.Bluemix}} 启动 {{site.data.keyword.cloudaccesstrailshort}} UI。缺省情况下，可以看到空间事件。还可以查看帐户事件。
+您可以从 {{site.data.keyword.cloud_notm}} 启动 {{site.data.keyword.cloudaccesstrailshort}} UI。缺省情况下，可以看到空间事件。还可以查看帐户事件。
 {:shortdesc}
    
 
-## 导航至 Activity Tracker 仪表板以监视空间中的云活动
+## 打开 Activity Tracker 仪表板以监视空间中的云活动
 {: #launch_at_ui_account_view_space}
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视空间中的云活动，请完成以下步骤：
@@ -42,7 +48,7 @@ lastupdated: "2019-02-18"
     这将打开 **ActivityTracker_Space_Dashboard_in_24h** 仪表板。通过此仪表板，可以监视最近 24 小时该空间中的云活动。 
 
 
-## 导航至 Activity Tracker 仪表板以监视帐户中的云活动
+## 打开 Activity Tracker 仪表板以监视帐户中的云活动
 {: #launch_at_ui_account_view_account}
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视帐户中的云活动，请完成以下步骤：

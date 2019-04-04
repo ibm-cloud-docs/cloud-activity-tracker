@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,16 +18,18 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Configurando a CLI do Activity Tracker
 {: #config_cli}
 
-O serviço {{site.data.keyword.cloudaccesstraillong}} inclui uma interface da linha de comandos (CLI) que pode ser usada para gerenciar seus eventos na nuvem. É possível usar o plug-in do {{site.data.keyword.cloud_notm}} para visualizar o status dos eventos, para fazer download de eventos e para configurar a política de retenção de eventos. A CLI oferece diferentes tipos de ajuda: ajuda geral para aprender sobre a CLI e os comandos suportados, ajuda de comando para aprender como usar um comando ou ajuda de subcomando para aprender como usar um subcomando para um comando.
+O serviço do {{site.data.keyword.cloudaccesstraillong}} inclui uma interface da linha de comandos (CLI) que pode ser usada para gerenciar os seus eventos na nuvem. É possível usar o plug-in do {{site.data.keyword.cloud_notm}} para visualizar o status dos eventos, fazer download de eventos e configurar a política de retenção. A CLI oferece diferentes tipos de ajuda: ajuda geral para aprender sobre a CLI e comandos suportados, ajuda de comando para aprender como usar um comando ou ajuda de subcomando para aprender como usar um subcomando para um comando.
 {:shortdesc}
 
 
-## Instalando o plug-in {{site.data.keyword.cloudaccesstrailshort}} por meio do repositório do {{site.data.keyword.cloud_notm}}
+## Instalando o plug-in do {{site.data.keyword.cloudaccesstrailshort}} por meio do repositório do {{site.data.keyword.cloud_notm}}
 {: #install_cli_repo}
 
 Para instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, conclua as etapas a seguir:
@@ -39,9 +45,9 @@ Para instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, conclua as e
     ```
     {: codeblock}
     
-    O nome do plugin é **activity-tracker**.
+    O nome do plug-in é **activity-tracker**.
 
-3. Instale o plug-in {{site.data.keyword.cloudaccesstrailshort}}. Execute o seguinte comando:
+3. Instale o plug-in do {{site.data.keyword.cloudaccesstrailshort}}. Execute o seguinte comando:
 
     ```
     ibmcloud plugin install activity-tracker -r Bluemix
@@ -59,7 +65,7 @@ Para instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, conclua as e
     
 
 
-## Instalando o plug-in {{site.data.keyword.cloudaccesstrailshort}} por meio de um arquivo
+## Instalando o plug-in do {{site.data.keyword.cloudaccesstrailshort}} por meio de um arquivo
 {: #install_cli}
 
 Para instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, conclua as etapas a seguir:
@@ -68,11 +74,11 @@ Para instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, conclua as e
 
    Para obter mais informações, consulte [Instalando a CLI do {{site.data.keyword.cloud_notm}} ](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
-2. Instale o plug-in {{site.data.keyword.cloudaccesstrailshort}}.
+2. Instale o plug-in do {{site.data.keyword.cloudaccesstrailshort}}.
 
-    * Para Linux, veja [Instalando o plug-in {{site.data.keyword.cloudaccesstrailshort}} no Linux](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux).
-    * Para Windows, veja [Instalando o plug-in {{site.data.keyword.cloudaccesstrailshort}} no Windows](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows).
-    * Para Mac OS X, veja [Instalando o plug-in {{site.data.keyword.cloudaccesstrailshort}} no Mac OS X](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac).
+    * Para Linux, consulte [Instalando o plug-in do {{site.data.keyword.cloudaccesstrailshort}} no Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
+    * Para Windows, consulte [Instalando o plug-in do {{site.data.keyword.cloudaccesstrailshort}} no Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
+    * Para Mac OS X, consulte [Instalando o plug-in do {{site.data.keyword.cloudaccesstrailshort}} no Mac OS X](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac).
  
 3. Verifique a instalação do plug-in da CLI.
   
@@ -92,7 +98,7 @@ Conclua as etapas a seguir para instalar o plug-in no Linux:
 
 1. Instale o plug-in.
 
-    Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+    Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
 	* Selecione o valor de plataforma: **linux64**. 
 	
@@ -113,7 +119,7 @@ Conclua as etapas a seguir para instalar o plug-in no Linux:
 
 Conclua as etapas a seguir para instalar o plug-in no Windows:
 
-1. Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
 	
 	1. Selecione o valor de plataforma: **win64**. 
 	2. Clique em **Salvar arquivo**.  
@@ -132,9 +138,9 @@ Conclua as etapas a seguir para instalar o plug-in no Windows:
 
 Conclua as etapas a seguir para instalar o plug-in no Mac OS X:
 
-1. Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins). 
+1. Faça download da liberação mais recente do plug-in da CLI do serviço do {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) por meio da [página da CLI do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
 	
-	1. Selecione o valor da plataforma: **osx**. 
+	1. Selecione o valor da plataforma `osx`. 
 	2. Clique em **Salvar arquivo**.  
     
 2. Instale o plug-in. Execute o seguinte comando:
@@ -240,7 +246,7 @@ comando:
     ```
     {: codeblock}
     
-    em que *Command* é o nome de um comando da CLI, por exemplo, *status*.
+    Em que *Command* é o nome de um comando da CLI, por exemplo, *status*.
 
 
 
@@ -266,7 +272,7 @@ comando:
     ```
     {: codeblock}
     
-    em que *Command* é o nome de um comando da CLI, por exemplo, *session*.
+    Em que *Command* é o nome de um comando da CLI, por exemplo, *session*.
 
 4. Obtenha ajuda sobre o comando e identifique os subcomandos suportados. Execute o seguinte comando:
 
@@ -275,13 +281,14 @@ comando:
     ```
     {: codeblock}
     
-    em que 
+    Em que 
     
-    * *Command* é o nome de um comando da CLI, por exemplo, *status*.
-    * *Subcommand* é o nome de um subcomando suportado, por exemplo, para o comando *session*, um subcomando válido é *list*.
+    *Command* é o nome de um comando da CLI, por exemplo, *status*.
+
+    *Subcommand* é o nome de um subcomando suportado. Por exemplo, para o comando *session*, um subcomando válido é *list*.
 
 
-## Mostrar os detalhes do plug-in
+## Mostre os detalhes do plug-in
 {: #show}
   
 Use o comando 'ibmcloud plugin show activity-tracker' para mostrar os detalhes do plug-in. 

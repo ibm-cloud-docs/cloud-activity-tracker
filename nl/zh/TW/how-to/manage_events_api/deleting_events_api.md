@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, delete event, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
@@ -23,7 +29,7 @@ lastupdated: "2019-01-22"
 請使用 {{site.data.keyword.cloudaccesstrailshort}} API 來刪除儲存在 {{site.data.keyword.cloudaccesstrailshort}} 中的事件。
 {:shortdesc}
 
-**附註：**雖然您可以使用 API 呼叫手動刪除事件，但請考慮設定保留原則來自動刪除事件。如需相關資訊，請參閱[配置事件保留原則](/docs/services/cloud-activity-tracker/how-to/configuring_retention_policy.html#configuring_retention_policy)。
+**附註：**雖然您可以使用 API 呼叫手動刪除事件，但請考慮設定保留原則來自動刪除事件。如需相關資訊，請參閱[配置事件保留原則](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy)。
 
 ## 使用 cURL 刪除事件
 {: #deleting_events_api_records_per_day_curl}
@@ -32,7 +38,7 @@ lastupdated: "2019-01-22"
 
 1. 取得 UAA 記號。
 
-    如需相關資訊，請參閱[取得 UAA 記號](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa)。
+    如需相關資訊，請參閱[取得 UAA 記號](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa)。
 
 2. 執行下列 cURL 指令，以刪除於特定日期儲存在 {{site.data.keyword.cloudaccesstrailshort}} 中的事件。
 
@@ -45,7 +51,7 @@ lastupdated: "2019-01-22"
 
     * *token* 是 UAA 記號。
     * *spaceID* 代表已在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 之 Cloud Foundry 空間的 UUID。
-    * *ENDPOINT* 代表服務的進入點。每一個地區都有不同的 URL。若要取得每個地區的端點清單，請參閱[端點](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints)。
+    * *ENDPOINT* 代表服務的進入點。每一個地區都有不同的 URL。若要取得每個地區的端點清單，請參閱[端點](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-ref_endpoints#api_endpoints)。
     * *start* 和 *end* 代表您要下載事件的時間範圍。日期格式為 YYYY-MM-DD。 
     * *AtAccountLevel* 指出您要取得事件相關資訊的網域。
     * *SearchTime* 指出您要取得事件相關資訊的當天小時。
@@ -121,3 +127,5 @@ req.write(JSON.stringify({
 req.end();
 ```
 {: codeblock}
+
+

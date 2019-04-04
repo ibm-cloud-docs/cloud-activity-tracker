@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-01-22"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, download events, API
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,6 +18,8 @@ lastupdated: "2019-01-22"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Téléchargement d'événements
 {: #downloading_events_api}
@@ -44,7 +50,7 @@ Pour télécharger des événements dans un fichier local, procédez comme suit 
 
 1. Obtenez un jeton UAA.
 
-    Pour plus d'informations, voir [Obtention d'un jeton UAA](/docs/services/cloud-activity-tracker/reference/auth_uaa.html#auth_uaa).
+    Pour plus d'informations, voir [Obtention d'un jeton UAA](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-auth_uaa#auth_uaa).
 
 2. Créez une session, dans laquelle vous spécifiez les conditions qui définissent le sous-ensemble d'événements à télécharger.
 
@@ -53,19 +59,19 @@ Pour télécharger des événements dans un fichier local, procédez comme suit 
     ```
     {: codeblock}
 
-    où :
+    Où :
     
-    * *token* représente la valeur du jeton UAA que vous avez obtenue lors d'une étape précédente.
+    *token* représente la valeur du jeton UAA que vous avez obtenue lors d'une étape précédente.
 
-    * *spaceID* représente l'identificateur unique universel de l'espace Cloud Foundry où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
+    *spaceID* représente l'identificateur unique universel de l'espace Cloud Foundry où {{site.data.keyword.cloudaccesstrailshort}} est mis à disposition.
 
-    * *ENDPOINT* représente le point d'entrée vers le service. Chaque région a une adresse URL différente. Pour obtenir la liste des noeuds finaux par région, voir [Noeuds finaux](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
+    *ENDPOINT* représente le point d'entrée vers le service. Chaque région a une adresse URL différente. Pour obtenir la liste des noeuds finaux par région, voir [Noeuds finaux](/docs/services/cloud-activity-tracker/reference/ref_endpoints.html#api_endpoints).
 
-    * *start* et *end* représentent la plage de temps pendant laquelle vous souhaitez télécharger des événements. Le format de date est *AAAA-MM-JJ*. 
+    *start* et *end* représentent la plage de temps pendant laquelle vous souhaitez télécharger des événements. Le format de date est *AAAA-MM-JJ*. 
 
-    * *AtAccountLevel* indique si les événements à télécharger se trouvent dans le domaine de compte ou dans un domaine d'espace.
+    *AtAccountLevel* indique si les événements à télécharger se trouvent dans le domaine de compte ou dans un domaine d'espace.
     
-    * *SearchTime* indique l'heure de la journée pour laquelle vous souhaitez télécharger des événements.
+    *SearchTime* indique l'heure de la journée pour laquelle vous souhaitez télécharger des événements.
 
     Pour créer une session afin de télécharger des événements à partir d'un domaine d'espace dans la région us-south, définissez le paramètre **AtAccountLevel** sur *false* :
 
@@ -97,7 +103,7 @@ Pour télécharger des événements dans un fichier local, procédez comme suit 
     ```
     {: codeblock}
 
-    où *FILENAME* est le nom du fichier local où les événements seront téléchargés.
+    Où *FILENAME* représente le nom du fichier local où les événements seront téléchargés.
 
     Par exemple :
 

@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-06"
+
+keywords: IBM Cloud, Activity Tracker, launch UI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,17 +18,19 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 
-# Navegación en el panel de control de Activity Tracker en la consola de {{site.data.keyword.cloud_notm}}
+# Apertura del panel de control de Activity Tracker en la consola de {{site.data.keyword.cloud_notm}}
 {: #launch_at_ui}
 
-Puede iniciar la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} desde {{site.data.keyword.Bluemix}}. Puede ver sucesos de espacio de forma predeterminada. También puede ver sucesos de cuentas.
+Puede iniciar la interfaz de usuario de {{site.data.keyword.cloudaccesstrailshort}} desde {{site.data.keyword.cloud_notm}}. Puede ver sucesos de espacio de forma predeterminada. También puede ver sucesos de cuentas.
 {:shortdesc}
    
 
-## Navegación en el panel de control de Activity Tracker para supervisar la actividad de nube en un espacio
+## Apertura del panel de control de Activity Tracker para supervisar la actividad de la nube en un espacio
 {: #launch_at_ui_account_view_space}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en un espacio:
@@ -42,7 +48,7 @@ Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cl
     Se abre el panel de control de **ActivityTracker_Space_Dashboard_in_24h**. Puede supervisar la actividad de la nube en el espacio durante las últimas 24 horas mediante este panel de control. 
 
 
-## Navegación al panel de control de Activity Tracker para supervisar la actividad de nube en la cuenta
+## Apertura del panel de control de Activity Tracker para supervisar la actividad de la nube en la cuenta
 {: #launch_at_ui_account_view_account}
 
 Complete los siguientes pasos para navegar hasta el IU de {{site.data.keyword.cloudaccesstrailshort}} para que pueda supervisar la actividad de la IU en una cuenta:

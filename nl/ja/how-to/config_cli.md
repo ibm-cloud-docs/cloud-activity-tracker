@@ -2,7 +2,11 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-03-22"
+
+keywords: IBM Cloud, Activity Tracker, config CLI
+
+subcollection: cloud-activity-tracker
 
 ---
 
@@ -14,12 +18,14 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Activity Tracker CLI の構成
 {: #config_cli}
 
-{{site.data.keyword.cloudaccesstraillong}} サービスには、クラウドでイベントを管理するために使用できるコマンド・ライン・インターフェース (CLI) が組み込まれています。 {{site.data.keyword.cloud_notm}} プラグインを使用して、イベントの状況の表示、イベントのダウンロード、およびイベント保存ポリシーの構成を行うことができます。 CLI にはいくつかのタイプのヘルプがあります。つまり、CLI およびサポートされるコマンドについて知ることのできる一般ヘルプ、コマンドの使用法を知ることのできるコマンド・ヘルプ、コマンドのサブコマンドの使用法を知ることのできるサブコマンド・ヘルプがあります。
+{{site.data.keyword.cloudaccesstraillong}} サービスには、クラウドでイベントを管理するために使用できるコマンド・ライン・インターフェース (CLI) が組み込まれています。 {{site.data.keyword.cloud_notm}} プラグインを使用して、イベントの状況の表示、イベントのダウンロード、および保存ポリシーの構成を行うことができます。 この CLI にはいくつかの種類のヘルプがあります。一般ヘルプではこの CLI およびサポートされるコマンドについての情報が、コマンド・ヘルプではコマンドの使用方法が、サブコマンド・ヘルプではコマンドに対するサブコマンドの使用方法が提供されます。
 {:shortdesc}
 
 
@@ -41,7 +47,7 @@ lastupdated: "2019-02-18"
     
     プラグインの名前は **activity-tracker** です。
 
-3. {{site.data.keyword.cloudaccesstrailshort}} プラグインをインストールします。 以下のコマンドを実行します。
+3. {{site.data.keyword.cloudaccesstrailshort}} プラグインをインストールします。以下のコマンドを実行します。
 
     ```
     ibmcloud plugin install activity-tracker -r Bluemix
@@ -70,9 +76,9 @@ lastupdated: "2019-02-18"
 
 2. {{site.data.keyword.cloudaccesstrailshort}} プラグインをインストールします。
 
-    * Linux の場合、[Linux への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_linux)を参照してください。
-    * Windows の場合、[Windows への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services/cloud-activity-tracker/how-to/config_cli.html#install_cli_windows)を参照してください。
-    * Mac OS X の場合、[Mac OS X への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services//cloud-activity-tracker/how-to/config_cli.html#install_cli_mac)を参照してください。
+    * Linux の場合、[Linux への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux)を参照してください。
+    * Windows の場合、[Windows への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows)を参照してください。
+    * Mac OS X の場合、[Mac OS X への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac)を参照してください。
  
 3. CLI プラグインのインストールを検証します。
   
@@ -85,20 +91,20 @@ lastupdated: "2019-02-18"
     
 
 
-## Linux 上でのファイルからの {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
+## ファイルからの Linux への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
 {: #install_cli_linux}
 
 Linux にプラグインをインストールするには、以下のステップを実行します。
 
 1. プラグインをインストールします。
 
-    最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)からダウンロードします。 
+    最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} からダウンロードします。
 	
 	* プラットフォーム値**「linux64」**を選択します。 
 	
 	* **「ファイルの保存」**をクリックします。 
     
-2. プラグインをインストールします。 以下のコマンドを実行します。
+2. プラグインをインストールします。以下のコマンドを実行します。
         
     ```
     ibmcloud plugin install -f activity-tracker-linux-amd64-3.3.0
@@ -108,17 +114,17 @@ Linux にプラグインをインストールするには、以下のステッ�
 
 
 
-## Windows 上でのファイルからの {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
+## ファイルからの Windows への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
 {: #install_cli_windows}
 
 Windows にプラグインをインストールするには、以下のステップを実行します。
 
-1. 最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)からダウンロードします。 
+1. 最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} からダウンロードします。 
 	
 	1. プラットフォーム値**「win64」**を選択します。 
 	2. **「ファイルの保存」**をクリックします。  
     
-2. プラグインをインストールします。 以下のコマンドを実行します。
+2. プラグインをインストールします。以下のコマンドを実行します。
         
     ```
     ibmcloud plugin install -f activity-tracker-windows-amd64-3.3.0.exe
@@ -127,17 +133,17 @@ Windows にプラグインをインストールするには、以下のステッ
 
 	
 
-## Mac OS X 上でのファイルからの {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
+## ファイルからの Mac OS X への {{site.data.keyword.cloudaccesstrailshort}} プラグインのインストール
 {: #install_cli_mac}
 
 Mac OS X にプラグインをインストールするには、以下のステップを実行します。
 
-1. 最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins)からダウンロードします。 
+1. 最新リリースの {{site.data.keyword.cloudaccesstrailshort}} サービス CLI プラグイン (activity-tracker) を [{{site.data.keyword.cloud_notm}} CLI ページ ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} からダウンロードします。
 	
-	1. プラットフォーム値**「osx」**を選択します。 
+	1. プラットフォーム値「`osx`」を選択します。 
 	2. **「ファイルの保存」**をクリックします。  
     
-2. プラグインをインストールします。 以下のコマンドを実行します。
+2. プラグインをインストールします。以下のコマンドを実行します。
         
     ```
     ibmcloud plugin install -f activity-tracker-darwin-amd64-3.3.0
@@ -181,7 +187,7 @@ CLI を更新するには、*ibmcloud plugin update* コマンドを実行しま
 
 {{site.data.keyword.cloudaccesstrailshort}} サービス CLI を更新するには、以下のステップを実行します。
 
-1. {{site.data.keyword.cloudaccesstrailshort}} プラグインを更新します。 以下のコマンドを実行します。
+1. {{site.data.keyword.cloudaccesstrailshort}} プラグインを更新します。以下のコマンドを実行します。
 
     ```
     ibmcloud plugin update activity-tracker -r Bluemix
@@ -190,7 +196,7 @@ CLI を更新するには、*ibmcloud plugin update* コマンドを実行しま
  
 2. CLI プラグインのインストールを検証します。
   
-    例えば、プラグインのバージョンを検証します。 以下のコマンドを実行します。
+    例えば、プラグインのバージョンを確認します。 以下のコマンドを実行します。
     
     ```
     ibmcloud plugin list
@@ -273,10 +279,11 @@ CLI に関する一般情報およびサポートされているコマンドに�
     ```
     {: codeblock}
     
-    ここで、 
+    各部の意味は、次のとおりです。 
     
-    * *Command* は CLI コマンドの名前です (例: *status*)。
-    * *Subcommand* はサポートされるサブコマンドの名前です (例: コマンド *session* の有効なサブコマンドは *list* です)。
+    *Command* は CLI コマンドの名前です (例: *status*)。
+
+    *Subcommand* は、サポートされるサブコマンドの名前です。例えば、コマンド *session* の有効なサブコマンドは *list* です。
 
 
 ## プラグインの詳細の表示
