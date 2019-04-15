@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, compliance
 
@@ -25,7 +25,7 @@ subcollection: cloud-activity-tracker
 # Compliance
 {: #compliance}
 
-[The {{site.data.keyword.cloud_notm}} provides a Cloud platform and services that are built to IBM's stringent security standards](/docs/security/compliance.html#compliance). The {{site.data.keyword.cloudaccesstraillong}} service is a DevOps service that is built for the {{site.data.keyword.cloud_notm}}. 
+[The {{site.data.keyword.cloud_notm}} provides a Cloud platform and services that are built to IBM's stringent security standards](/docs/overview?topic=overview-security#compliance). The {{site.data.keyword.cloudaccesstraillong}} service is a DevOps service that is built for the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 

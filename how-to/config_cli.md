@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -50,7 +50,7 @@ To install the {{site.data.keyword.cloudaccesstrailshort}} CLI, complete the fol
 3. Install the {{site.data.keyword.cloudaccesstrailshort}} plug-in. Run the following command:
 
     ```
-    ibmcloud plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker
     ```
     {: codeblock}
  
@@ -98,7 +98,7 @@ Complete the following steps to install the plug-in on Linux:
 
 1. Install the plug-in.
 
-    Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+    Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}.
 	
 	* Select the platform value: **linux64**. 
 	
@@ -119,7 +119,7 @@ Complete the following steps to install the plug-in on Linux:
 
 Complete the following steps to install the plug-in on Windows:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}. 
 	
 	1. Select the platform value: **win64**. 
 	2. Click **Save file**.  
@@ -138,7 +138,7 @@ Complete the following steps to install the plug-in on Windows:
 
 Complete the following steps to install the plug-in on Mac OS X:
 
-1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+1. Download the latest release of the {{site.data.keyword.cloudaccesstrailshort}} service CLI plug-in (activity-tracker) from [the {{site.data.keyword.cloud_notm}} CLI page ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}.
 	
 	1. Select the platform value `osx`. 
 	2. Click **Save file**.  
@@ -190,7 +190,7 @@ Complete the following steps to update the {{site.data.keyword.cloudaccesstrails
 1. Update the {{site.data.keyword.cloudaccesstrailshort}} plug-in. Run the following command:
 
     ```
-    ibmcloud plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker
     ```
     {: codeblock}
  

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-15"
 
 keywords: IBM Cloud, Activity Tracker, event fields
 
@@ -51,7 +51,7 @@ The following table lists common target fields that are available for an {{site.
 
 | Field Name | Description | Value |
 |------------|-------------|-------|
-| `target.id` | Cloud Resource Name (CRN) of the resource on which the action is executed. </br>For more information, see [CRN format](/docs/overview?topic=overview-format-crn#format). | For example, `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
+| `target.id` | Cloud Resource Name (CRN) of the resource on which the action is executed. </br>For more information, see [CRN format](/docs/overview?topic=overview-crn#format-crn). | For example, `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
 | `target.name` | Human-readable name of the cloud resource on which the action is executed. |  |
 | `target.typeURI` | Type of the cloud resource on which the action is executed. </br>The format of this field is **serviceName/objectType** where `servicename` is the name of the service. | For example, `iam-am/policy` or `cloud-object-storage/bucket/acl` |
 {: caption="Table 2. Common target fields" caption-side="top"} 

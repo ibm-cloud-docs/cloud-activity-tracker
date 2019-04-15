@@ -73,19 +73,19 @@ Complete the following steps to launch Kibana from a browser:
           </tr>
           <tr>
             <td>Germany</td>
-            <td>[`https://logging.eu-fra.bluemix.net`](https://logging.eu-fra.bluemix.net) </td>
+            <td>`https://logging.eu-fra.bluemix.net`</td>
           </tr>
           <tr>
             <td>Sydney</td>
-            <td>[`https://logging.au-syd.bluemix.net`](https://logging.au-syd.bluemix.net) </td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>United Kingdom</td>
-            <td>[`https://logging.eu-gb.bluemix.net`](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>US South</td>
-            <td>[`https://logging.ng.bluemix.net`](https://logging.ng.bluemix.net) </td>
+            <td>`https://logging.ng.bluemix.net`</td>
           </tr>
     </table>
 	
@@ -116,7 +116,7 @@ The events that you see in Kibana correspond to the events that are hosted in th
 {: #launch_kibana_limitations}
 
 * Due to limitations in Kibana, you cannot have multiple Kibana browser tabs open at once in the same session to view different spaces or accounts. Therefore, if you have two or more sessions open at once, and change the domain from space to account or viceversa, you may experience problems.
-* By default, only the account owner can view account events. To enable others to view account events please follow the instructions in [Viewing account events](docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
+* By default, only the account owner can view account events. To enable others to view account events please follow the instructions in [Viewing account events](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 

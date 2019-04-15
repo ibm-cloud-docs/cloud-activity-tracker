@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, help, support
 
@@ -32,7 +32,7 @@ If you have problems or questions when using the {{site.data.keyword.cloudaccess
 
 * You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.cloud_notm}} development teams.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} and tag your question with **ibm-cloud** and **activity-tracker**.
+  * If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://stackoverflow.com/search?q=activity-tracker+ibm-cloud){:new_window} and tag your question with **ibm-cloud** and **activity-tracker**.
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/topics/activity-tracker/?smartspace=cloud){:new_window} forum. Include the  **activity-tracker** and **ibm-cloud** tags.
 

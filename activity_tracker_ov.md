@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -189,6 +189,6 @@ The following table outlines the plans that are available:
 
 Consider the following information about security when you work with the {{site.data.keyword.cloudaccesstrailshort}} service:
 
-* IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* IBM services that generate {{site.data.keyword.cloudaccesstrailshort}} events follow the {{site.data.keyword.IBM_notm}} Cloud security policy. For more information, see [Trust the security and privacy of IBM Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/security){: new_window}.
 * The {{site.data.keyword.cloudaccesstrailshort}} service captures user-initiated actions that change the state of Cloud services. The information does not provide direct access to databases or applications.
 * Only authorized users can view and monitor {{site.data.keyword.cloudaccesstrailshort}} event logs. Each user is identified by their unique ID in the {{site.data.keyword.cloud_notm}}.
