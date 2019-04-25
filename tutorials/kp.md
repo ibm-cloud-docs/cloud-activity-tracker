@@ -33,7 +33,7 @@ Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailfu
 {: deprecated}
 
 1. Learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
-2. Learn how to use a Cloud service to generate activity events that are automatically collected by the {{site.data.keyword.cloudaccesstrailshort}} service. Events comply with the [Cloud Auditing Data Federation (CADF) standard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
+2. Learn how to use a Cloud service to generate activity events that are automatically collected by the {{site.data.keyword.cloudaccesstrailshort}} service.
 3.Learn how to monitor the Cloud activity of a service by using the pre-defined {{site.data.keyword.cloudaccesstrailshort}} dashboards.
 
 The following figure shows the different components and actions that occur when a user-initiated activity changes the state of a service:
