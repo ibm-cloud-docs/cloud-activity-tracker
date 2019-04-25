@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Monitoring {{site.data.keyword.keymanagementserviceshort}} activity with {{site.data.keyword.cloudaccesstrailshort}}
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailfull}} service to monitor a user's interaction with the {{site.data.keyword.keymanagementserviceshort}} service. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances, and access to *Lite* plan instances will be removed. Existing premium plan instances are supported until 9 October 2019. Any instance that is still provisioned as of 9 October 2019 will be deleted. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 1. Learn how to provision the {{site.data.keyword.cloudaccesstrailshort}} service.
 2. Learn how to use a Cloud service to generate activity events that are automatically collected by the {{site.data.keyword.cloudaccesstrailshort}} service. Events comply with the [Cloud Auditing Data Federation (CADF) standard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.

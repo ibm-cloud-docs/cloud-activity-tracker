@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Configuring the Activity Tracker CLI
 {: #config_cli}
 
 The {{site.data.keyword.cloudaccesstraillong}} service includes a command-line interface (CLI) that you can use to manage your events in the cloud. You can use the {{site.data.keyword.cloud_notm}} plug-in to view the status of the events, download events, and configure the retention policy. The CLI offers different types of help: general help to learn about the CLI and supported commands, command help to learn how to use a command, or subcommand help to learn how to use a subcommand for a command.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances, and access to *Lite* plan instances will be removed. Existing premium plan instances are supported until 9 October 2019. Any instance that is still provisioned as of 9 October 2019 will be deleted. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 
 ## Installing the {{site.data.keyword.cloudaccesstrailshort}} plug-in from the {{site.data.keyword.cloud_notm}} repo

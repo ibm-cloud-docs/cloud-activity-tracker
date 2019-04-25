@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Compliance
@@ -28,6 +29,8 @@ subcollection: cloud-activity-tracker
 [The {{site.data.keyword.cloud_notm}} provides a Cloud platform and services that are built to IBM's stringent security standards](/docs/overview?topic=overview-security#compliance). The {{site.data.keyword.cloudaccesstraillong}} service is a DevOps service that is built for the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances, and access to *Lite* plan instances will be removed. Existing premium plan instances are supported until 9 October 2019. Any instance that is still provisioned as of 9 October 2019 will be deleted. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## General Data Protection Regulation
 

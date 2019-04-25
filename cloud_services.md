@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 Use the {{site.data.keyword.cloudaccesstraillong}} service to monitor user-initiated activities that change the state of any of the following services in the {{site.data.keyword.IBM_notm}} Cloud:
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances, and access to *Lite* plan instances will be removed. Existing premium plan instances are supported until 9 October 2019. Any instance that is still provisioned as of 9 October 2019 will be deleted. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 **Note:** To get information about the regions where a service is available in the {{site.data.keyword.cloud_notm}}, see [Services by region](/docs/resources?topic=resources-services_region#services_region).
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-25"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Getting started tutorial
@@ -27,6 +28,11 @@ subcollection: cloud-activity-tracker
 
 The {{site.data.keyword.cloudaccesstrailfull}} service records user-initiated activities that change the state of a service in the {{site.data.keyword.cloud_notm}}. Learn how to use the {{site.data.keyword.cloudaccesstrailfull}} service to monitor a user's interaction with a Cloud service. 
 {:shortdesc}
+
+
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances, and access to *Lite* plan instances will be removed. Existing premium plan instances are supported until 9 October 2019. Any instance that is still provisioned as of 9 October 2019 will be deleted. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 The following figure shows the different components and actions that occur when a user-initiated activity changes the state of a service:
 
@@ -60,7 +66,7 @@ Consider the following information to choose where to provision an instance of t
 
 Complete the following steps to provision an instance of the {{site.data.keyword.cloudaccesstraillong_notm}} service in the {{site.data.keyword.cloud_notm}}:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to the {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
     After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -124,7 +130,7 @@ To view events, you must have access permissions in the {{site.data.keyword.clou
 **Note: To grant a user an IAM policy, you must be the account owner or an administrator of the {{site.data.keyword.loganalysisshort}} service.**
 
 ### Grant users access to monitor account domain events
-{: #gs_acc}
+{: #index_acc}
 
 Complete the following steps to grant a user an IAM policy from the {{site.data.keyword.cloud_notm}} UI:
 
@@ -143,9 +149,11 @@ Complete the following steps to grant a user an IAM policy from the {{site.data.
 
 To grant a user a developer role in a space from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. [Log in to the {{site.data.keyword.cloud_notm}} console ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
+
+    Open a web browser and launch the [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}
 	
-    After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 
