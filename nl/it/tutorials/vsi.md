@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, VSI events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Monitoraggio di {{site.data.keyword.BluVirtServers_short}} e {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,18 +29,21 @@ subcollection: cloud-activity-tracker
 Utilizza questa esercitazione per imparare a configurare gli utenti in un account {{site.data.keyword.cloud_notm}} in modo da poter monitorare gli eventi {{site.data.keyword.cloudaccesstrailshort}} generati da tali utenti quando utilizzano {{site.data.keyword.BluVirtServers_short}} e {{site.data.keyword.baremetal_short}}.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 {{site.data.keyword.BluVirtServers}} sono server virtuali scalabili che vengono acquistati con i core dedicati e le allocazioni di memoria. Sono una grande opzione se stai cercando risorse di calcolo, che possono essere aggiunte in pochi minuti, con l'accesso alle funzioni come i template dell'immagine. 
 * Per ulteriori informazioni, consulta [{{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers). 
 * Per l'elenco delle azioni che generano un evento {{site.data.keyword.cloudaccesstrailshort}}, consulta [Eventi generati da {{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-at_events#at_events).
 
 {{site.data.keyword.baremetal_short}} sono server fisici a singolo tenant che ti forniscono prestazioni e controllo con un accesso di basso livello alle risorse hardware. 
 * Per ulteriori informazioni, consulta [{{site.data.keyword.baremetal_long}}](/docs/bare-metal?topic=bare-metal-about#about).
-* Per l'elenco delle azioni che generano un evento {{site.data.keyword.cloudaccesstrailshort}}, consulta [Eventi generati da {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-at_events#at_events).
+* Per l'elenco delle azioni che generano un evento {{site.data.keyword.cloudaccesstrailshort}}, consulta [Eventi generati da {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events).
 
 **Perché un utente generi degli eventi {{site.data.keyword.BluVirtServers_short}} e {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, deve avere accesso alle risorse dell'infrastruttura nella console IBM Cloud.**
 {: tip}
 
-## Passo 1. Collega l'account Softlayer a un account {{site.data.keyword.cloud_notm}} 
+## Passo 1. Collega l'account Softlayer a un account {{site.data.keyword.cloud_notm}}
 {: #vsi_step1}
 
 ** Per generare gli eventi {{site.data.keyword.cloudaccesstrailshort}}, l'account Softlayer deve essere collegato a un account {{site.data.keyword.cloud_notm}}. Per ulteriori informazioni, consulta [Passaggio all'ID IBM e collegamento degli account](/docs/account?topic=account-unifyingaccounts#link_accounts).
@@ -62,7 +66,7 @@ Completa la seguente procedura per collegare un account:
 **Nota:** se concedi le autorizzazioni dal *portale dell'infrastruttura {{site.data.keyword.cloud_notm}}*, l'utente non ha accesso dal dashboard dell'*Infrastruttura {{site.data.keyword.cloud_notm}}* per gestire i dispositivi e gli eventi {{site.data.keyword.cloudaccesstrailshort}} non vengono generati. **Devi concedere a un utente le autorizzazioni dell'infrastruttura tramite l'account {{site.data.keyword.cloud_notm}} per gestire i dispositivi. Queste azioni generano gli eventi {{site.data.keyword.cloudaccesstrailshort}}.**
 {: tip}
 
-Completa la seguente procedura per concedere a un utente le autorizzazioni dell'infrastruttura: 
+Completa la seguente procedura per concedere a un utente le autorizzazioni dell'infrastruttura:
 
 1. [Accedi a {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
     

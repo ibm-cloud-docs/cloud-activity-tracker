@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch Kibana
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 開啟 Kibana 儀表板
@@ -29,6 +29,9 @@ subcollection: cloud-activity-tracker
 您可以從 {{site.data.keyword.cloud_notm}} 的 {{site.data.keyword.cloudaccesstrailshort}} 使用者介面啟動 Kibana，或是直接從 Web 瀏覽器啟動 Kibana。
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 
 ##  從 Activity Tracker 服務的儀表板開啟 Kibana
 {: #launch_Kibana_from_at}
@@ -73,20 +76,18 @@ Kibana 顯示的活動日誌包括所有資源的事件，這些資源部署在�
           </tr>
           <tr>
             <td>德國</td>
-            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
-          </tr>
+            <td>`https://logging.eu-fra.bluemix.net`</td> </tr>
           <tr>
             <td>雪梨</td>
-            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>英國</td>
-            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>美國南部</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
-          </tr>
+            <td>`https://logging.ng.bluemix.net`</td> </tr>
     </table>
 	
 	這時會開啟 Kibana 中的「探索」頁面。
@@ -116,7 +117,7 @@ Kibana 顯示的活動日誌包括所有資源的事件，這些資源部署在�
 {: #launch_kibana_limitations}
 
 * 由於 Kibana 中的限制，您不能在相同階段作業中一次開啟多個 Kibana 瀏覽器分頁，以檢視不同的空間或帳戶。因此，如果您一次同時開啟了兩個以上的階段作業，並將範圍從空間變更為帳戶（反之亦然），則可能會遇到問題。
-* 依預設，只有帳戶擁有者可以檢視帳戶事件。若要讓其他人能檢視帳戶事件，請遵循[檢視帳戶事件](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)中的指示。
+* 依預設，只有帳戶擁有者可以檢視帳戶事件。若要讓其他人能檢視帳戶事件，請遵循[檢視帳戶事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)中的指示。
 
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Activity Tracker CLI を使用したイベント管理
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 このチュートリアルでは、{{site.data.keyword.cloudaccesstrailshort}} CLI を使用して、コマンド・ラインを介してイベントを管理する方法について説明します。 保管されたイベントに関する情報の取得方法、{{site.data.keyword.IBM_notm}} クラウドに保管されたイベントのダウンロード方法、イベントの削除方法を学習できます。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
 
 以下のステップを実行します。
 
@@ -49,7 +53,7 @@ subcollection: cloud-activity-tracker
 
     **注:** `ライト`・プランでは、{{site.data.keyword.cloudaccesstrailshort}} CLI を使用できません。
 
-3. ローカル・システムに {{site.data.keyword.cloudaccesstrailshort}} CLI がインストール済みであること。この CLI は、コマンド・ラインを介してイベントを管理するために必要です。 
+3. ローカル・システムに {{site.data.keyword.cloudaccesstrailshort}} CLI がインストール済みであること。 この CLI は、コマンド・ラインを介してイベントを管理するために必要です。 
 
     {{site.data.keyword.cloudaccesstrailshort}} CLI のインストールについて詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} CLI の構成](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli)を参照してください。
 
@@ -111,7 +115,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 ```
 {: screen}
 
-このコマンドは、2017 年 6 月 25 日のイベントをカウントします。{{site.data.keyword.cloudaccesstrailshort}} は、グローバル・サービスです。したがって、日付は世界時です。現地時間の丸 1 日のイベントを取得するには、複数の UTC 日のダウンロードが必要になることがあります。
+このコマンドは、2017 年 6 月 25 日のイベントをカウントします。 {{site.data.keyword.cloudaccesstrailshort}} は、グローバル・サービスです。 したがって、日付は世界時です。 現地時間の丸 1 日のイベントを取得するには、複数の UTC 日のダウンロードが必要になることがあります。
 
 
 
@@ -119,7 +123,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 ## ステップ 3. ダウンロードするイベントを指定する
 {: #tutorial2_step3}
 
-イベントのダウンロードを開始する前に、セッションを作成します。セッションは、どのイベントがダウンロードされるのかを指定します。
+イベントのダウンロードを開始する前に、セッションを作成します。 セッションは、どのイベントがダウンロードされるのかを指定します。
 
 
 セッションを作成するには、次のコマンドを使用します。
@@ -161,7 +165,7 @@ ibmcloud at session create -s 2017-07-25 -e 2017-07-25 -a
 * `-e` は、終了日を設定するために使用されます。
 * `-a` は、アカウント・ドメインでのイベントを含めることを指示するために使用されます。
 
-セッションには開始日と終了日が関連付けられています。download コマンドでは、これらの日付の間 (これらの日付を含む) のイベントが含まれます。
+セッションには開始日と終了日が関連付けられています。 download コマンドでは、これらの日付の間 (これらの日付を含む) のイベントが含まれます。
 
 このコマンドの出力の重要部分はセッション `ID` です。 これは download コマンドで参照されます。
 

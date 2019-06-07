@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, Cloud Foundry events, CF
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Cloud Foundry 事件
@@ -28,6 +29,8 @@ subcollection: cloud-activity-tracker
 請使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來追蹤與 {{site.data.keyword.Bluemix}} 中的核心平台服務互動。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 下列清單概述將事件傳送至 {{site.data.keyword.cloudaccesstrailshort}} 服務的不同核心平台作業： 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch Kibana
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 打开 Kibana 仪表板
@@ -29,6 +29,9 @@ subcollection: cloud-activity-tracker
 您可以通过 {{site.data.keyword.cloud_notm}} 中的 {{site.data.keyword.cloudaccesstrailshort}} UI 或直接通过 Web 浏览器启动 Kibana。
 {:shortdesc}
    
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 
 ##  通过 Activity Tracker 服务的仪表板打开 Kibana
 {: #launch_Kibana_from_at}
@@ -73,19 +76,19 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm
           </tr>
           <tr>
             <td>德国</td>
-            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net)</td>
+            <td>`https://logging.eu-fra.bluemix.net`</td>
           </tr>
           <tr>
             <td>悉尼</td>
-            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net)</td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>英国</td>
-            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>美国南部</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net)</td>
+            <td>`https://logging.ng.bluemix.net`</td>
           </tr>
     </table>
 	
@@ -116,7 +119,7 @@ Kibana 显示的活动日志包含您登录到的 {{site.data.keyword.cloud_notm
 {: #launch_kibana_limitations}
 
 * 由于 Kibana 中的限制，您不能在同一会话中同时打开多个 Kibana 浏览器选项卡来查看不同的空间或帐户。因此，如果同时打开两个或更多会话，并将域从空间更改为帐户或从帐户更改为空间，那么可能会遇到问题。
-* 缺省情况下，仅帐户所有者可以查看帐户事件。要允许其他人查看帐户事件，请遵循[查看帐户事件](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)中的指示信息。
+* 缺省情况下，仅帐户所有者可以查看帐户事件。要允许其他人查看帐户事件，请遵循[查看帐户事件](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)中的指示信息。
 
 
 

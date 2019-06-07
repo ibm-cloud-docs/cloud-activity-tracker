@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-04-25"
 
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:deprecated: .deprecated}
 
 # Introdução
 {: #getting-started-with-cla}
@@ -22,6 +22,11 @@ lastupdated: "2019-02-18"
 O serviço {{site.data.keyword.cloudaccesstrailfull}} registra as atividades iniciadas pelo usuário que mudam
 o estado de um serviço no {{site.data.keyword.Bluemix}}. Saiba como usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para monitorar a interação de um usuário com um serviço do Cloud. 
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio
+de 2019, não será possível provisionar novas instâncias do {{site.data.keyword.cloudaccesstrailshort}} e
+o acesso às instâncias do plano *Lite* será removido. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 A figura a seguir mostra os diferentes componentes e ações que ocorrem quando uma atividade iniciada pelo usuário muda o estado de um serviço:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, compliance
 
@@ -20,14 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Conformidade
 {: #compliance}
 
-[O {{site.data.keyword.cloud_notm}} fornece uma plataforma de Nuvem e serviços que são construídos para os rigorosos padrões de segurança da IBM](/docs/security/compliance.html#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.cloud_notm}}. 
+[O {{site.data.keyword.cloud_notm}} fornece uma plataforma de Nuvem e serviços que são construídos para os rigorosos padrões de segurança da IBM](/docs/overview?topic=overview-security#compliance). O serviço {{site.data.keyword.cloudaccesstraillong}} é um serviço DevOps construído para o {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## Regulamento Geral de Proteção de Dados
 

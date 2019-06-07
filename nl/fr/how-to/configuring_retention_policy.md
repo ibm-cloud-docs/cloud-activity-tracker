@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, configure retention policy
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Configuration de la règle de conservation des événements
 {: #configuring_retention_policy}
 
 Utilisez la commande **ibmcloud at option** pour afficher et configurer la règle de conservation qui définit le nombre maximal de jours pendant lequel les événements sont conservés dans {{site.data.keyword.cloudaccesstrailshort}}. Par défaut, la règle de conservation est désactivée et les événements sont conservés indéfiniment. Une fois que la durée de conservation a expiré, les événements sont supprimés automatiquement. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 Vous pouvez définir la même règle de conservation pour tous les espaces du compte ou vous pouvez personnaliser la période de conservation pour un espace. 
 

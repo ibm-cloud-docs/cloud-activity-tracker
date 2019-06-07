@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Gestión de sucesos mediante la CLI de Activity Tracker
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Utilice esta guía de aprendizaje para aprender a utilizar la CLI de {{site.data.keyword.cloudaccesstrailshort}} para gestionar sucesos a través de la línea de mandatos. Aprenda a obtener información sobre sucesos almacenados, cómo descargar los sucesos almacenados en {{site.data.keyword.IBM_notm}} Cloud o cómo suprimir sucesos.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 Siga estos pasos:
 

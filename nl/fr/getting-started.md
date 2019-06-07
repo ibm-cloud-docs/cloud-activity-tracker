@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Tutoriel de prise en main
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 Le service {{site.data.keyword.cloudaccesstrailfull}} enregistre des activités initiées par l'utilisateur qui changent l'état d'un service dans {{site.data.keyword.cloud_notm}}. Découvrez comment utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour surveiller l'interaction d'un utilisateur avec un service Cloud. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 La figure suivante représente les différents composants et les actions impliqués lorsqu'une activité initiée par un utilisateur modifie l'état d'un service :
 
@@ -60,7 +65,7 @@ Tenez compte des informations suivantes pour choisir où mettre à disposition u
 
 Procédez comme suit pour mettre à disposition une instance du service {{site.data.keyword.cloudaccesstraillong_notm}} dans {{site.data.keyword.cloud_notm}} :
 
-1. [Connectez-vous à {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){:new_window}.
+1. [Connectez-vous à {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 
     Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
@@ -124,7 +129,7 @@ Pour afficher des événements, vous devez disposer de droits d'accès dans {{si
 **Remarque : Pour octroyer une règle IAM à un utilisateur, vous devez être propriétaire du compte ou administrateur du service {{site.data.keyword.loganalysisshort}}.**
 
 ### Accorder l'accès des utilisateurs à la surveillance des événements de domaine de compte
-{: #gs_acc}
+{: #index_acc}
 
 Pour accorder une règle IAM à un utilisateur à partir de l'interface utilisateur d'{{site.data.keyword.cloud_notm}} :
 
@@ -143,9 +148,11 @@ Pour accorder une règle IAM à un utilisateur à partir de l'interface utilisat
 
 Pour octroyer un rôle de développeur aux utilisateurs dans un espace à partir de l'interface utilisateur d'{{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. [Connectez-vous à la console {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
+1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}. 
+
+    Ouvrez un navigateur Web et lancez le [tableau de bord {{site.data.keyword.cloud_notm}}![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}
 	
-    Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
+	Après que vous vous êtes connecté avec votre ID utilisateur et votre mot de passe, l'interface utilisateur {{site.data.keyword.cloud_notm}} s'ouvre.
 
 2. Dans la barre de menus, cliquez sur **Gérer** &gt; **Sécurité** &gt; **Identity and Access**, puis sélectionnez **Utilisateurs**.
 

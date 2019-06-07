@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Tutorial de introdução
@@ -28,6 +29,10 @@ subcollection: cloud-activity-tracker
 O serviço {{site.data.keyword.cloudaccesstrailfull}} registra as atividades iniciadas pelo usuário que mudam
 o estado de um serviço no {{site.data.keyword.cloud_notm}}. Saiba como usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para monitorar a interação de um usuário com um serviço do Cloud. 
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 A figura a seguir mostra os diferentes componentes e ações que ocorrem quando uma atividade iniciada pelo usuário muda o estado de um serviço:
 
@@ -62,7 +67,7 @@ Considere as seguintes informações para escolher onde fornecer uma instância 
 
 Conclua as etapas a seguir para provisionar uma instância do serviço {{site.data.keyword.cloudaccesstraillong_notm}} no {{site.data.keyword.cloud_notm}}:
 
-1. [Efetue login no {{site.data.keyword.cloud_notm}} "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
+1. [Efetue login no {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
 
     Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
@@ -126,7 +131,7 @@ Para visualizar eventos, deve-se ter permissões de acesso no {{site.data.keywor
 **Nota: para conceder a um usuário uma política de IAM, deve-se ser o proprietário da conta ou um administrador do serviço {{site.data.keyword.loganalysisshort}}. **
 
 ### Conceda acesso aos usuários para monitorar eventos de domínio de contas
-{: #gs_acc}
+{: #index_acc}
 
 Conclua as etapas a seguir para conceder a um usuário uma política de IAM por meio da IU do {{site.data.keyword.cloud_notm}}:
 
@@ -145,9 +150,11 @@ Conclua as etapas a seguir para conceder a um usuário uma política de IAM por 
 
 Para conceder a um usuário uma função de desenvolvedor em um espaço por meio da IU do {{site.data.keyword.cloud_notm}}, conclua as etapas a seguir:
 
-1. [Efetue login no console do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
+1. Efetue login no console do {{site.data.keyword.cloud_notm}}.
+
+    Abra um navegador da web e ative o [painel do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}
 	
-    Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
+	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
 2. Na barra de menus, clique em **Gerenciar** &gt; **Segurança** &gt; **Identidade e acesso** e, em seguida, selecione **Usuários**.
 
@@ -207,7 +214,7 @@ A tabela a seguir define o domínio do {{site.data.keyword.cloudaccesstrailshort
 
 | Monitoramento                                                           | Domínio do {{site.data.keyword.cloudaccesstrailshort}} |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `Ações de conta globais`                                             | Domínio de contas do sul dos EUA                       |  
+| `Ações de conta globais`                                             | Domínio de contas do sul dos EUA                            |  
 | `Serviços que são fornecidos no contexto de um grupo de recursos`   | Domínio de contas                                     | 
 | `Serviços que são fornecidos no contexto de uma organização e um espaço do CF` | Domínio de espaço                                       | 
 {: caption="Tabela 1. Domínios do {{site.data.keyword.cloudaccesstrailshort}} por origem de eventos" caption-side="top"} 

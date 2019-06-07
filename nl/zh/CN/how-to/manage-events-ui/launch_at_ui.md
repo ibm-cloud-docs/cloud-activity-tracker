@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch UI
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 打开 {{site.data.keyword.cloud_notm}} 控制台中的 Activity Tracker 仪表板
@@ -29,15 +29,15 @@ subcollection: cloud-activity-tracker
 您可以从 {{site.data.keyword.cloud_notm}} 启动 {{site.data.keyword.cloudaccesstrailshort}} UI。缺省情况下，可以看到空间事件。还可以查看帐户事件。
 {:shortdesc}
    
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 ## 打开 Activity Tracker 仪表板以监视空间中的云活动
 {: #launch_at_ui_account_view_space}
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视空间中的云活动，请完成以下步骤：
 
-1. 登录到要在其中监视云活动的 {{site.data.keyword.cloud_notm}} 帐户的空间、组织和区域。
-
-    可在以下地址找到 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/){:new_window}。
+1. 单击 [{{site.data.keyword.cloud_notm}} 仪表板 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window} 以启动 {{site.data.keyword.cloud_notm}}“仪表板”。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -53,9 +53,7 @@ subcollection: cloud-activity-tracker
 
 要导航至 {{site.data.keyword.cloudaccesstrailshort}} UI，以便可以监视帐户中的云活动，请完成以下步骤：
 
-1. 登录到要在其中监视云活动的 {{site.data.keyword.cloud_notm}} 帐户。
-
-    可在以下地址找到 {{site.data.keyword.cloud_notm}} 仪表板：[https://cloud.ibm.com/ ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/){:new_window}。
+1. 单击 [{{site.data.keyword.cloud_notm}} 仪表板 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window} 以启动 {{site.data.keyword.cloud_notm}}“仪表板”。
     
 	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 

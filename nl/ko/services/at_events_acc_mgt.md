@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, account events
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 # 계정 관리 이벤트  
 {: #at_events_acc_mgt}
@@ -27,9 +28,12 @@ subcollection: cloud-activity-tracker
 보안 담당자, 감사자 또는 관리자는 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자 및 애플리케이션과 {{site.data.keyword.Bluemix}} 계정이 어떻게 상호작용하는지 추적할 수 있습니다. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 {{site.data.keyword.cloudaccesstrailfull_notm}} 서비스는 {{site.data.keyword.cloud_notm}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 정보](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)를 참조하십시오.
 
-사용자 조치에 대한 모니터링을 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)의 내용을 참조하십시오. 
+사용자 조치에 대한 모니터링을 시작하려면 [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started)의 내용을 참조하십시오. 
 
 
 
@@ -84,7 +88,7 @@ subcollection: cloud-activity-tracker
 	  <td>계정에서 사용자를 활성화하면 이벤트가 생성됩니다. </br>사용자가 자신의 이메일 주소를 확인하면 이벤트가 생성됩니다.</td>
   </tr>
   <tr>
-    <td>user-management.account.user.delete</td>
+    <td>user-management.user.delete</td>
 	  <td>계정에서 사용자를 제거하면 이벤트가 생성됩니다. </br>계정 소유자는 계정에서 이 조치를 수행할 수 있는 유일한 사용자입니다.</td>
   </tr>
 </table>

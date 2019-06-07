@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Esercitazione introduttiva
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 Il servizio {{site.data.keyword.cloudaccesstrailfull}} registra le attività avviate dall'utente che modificano lo stato di un servizio in {{site.data.keyword.cloud_notm}}. Impara ad utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare un'interazione dell'utente con un servizio cloud. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 La seguente figura mostra i diversi componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio:
 
@@ -60,7 +65,7 @@ Prendi in considerazione le seguenti informazioni per scegliere dove eseguire il
 
 Completa la seguente procedura per eseguire il provisioning di un'istanza del servizio {{site.data.keyword.cloudaccesstraillong_notm}} in {{site.data.keyword.cloud_notm}}:
 
-1. [Accedi a {{site.data.keyword.cloud_notm}} "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
+1. [Accedi a {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 
     Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -124,7 +129,7 @@ Per visualizzare gli eventi, devi avere le autorizzazioni di accesso in {{site.d
 **Nota: per concedere a un utente una politica IAM, devi essere il proprietario dell'account o un amministratore del servizio {{site.data.keyword.loganalysisshort}}.**
 
 ### Concedi l'accesso agli utenti per monitorare gli eventi del dominio dell'account
-{: #gs_acc}
+{: #index_acc}
 
 Completa la seguente procedura per concedere una politica IAM a un utente dall'IU {{site.data.keyword.cloud_notm}}:
 
@@ -143,9 +148,11 @@ Completa la seguente procedura per concedere una politica IAM a un utente dall'I
 
 Per concedere a un utente un ruolo di sviluppatore in uno spazio dall'IU {{site.data.keyword.cloud_notm}}, completa la seguente procedura:
 
-1. [Accedi alla console {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
+1. Accedi alla console {{site.data.keyword.cloud_notm}}.
+
+    Apri un browser web e avvia il [Dashboard {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}
 	
-    Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
+	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
 2. Dalla barra dei menu, fai clic su **Gestisci** &gt; **Sicurezza** &gt; **Identità e accesso** e seleziona **Utenti**.
 

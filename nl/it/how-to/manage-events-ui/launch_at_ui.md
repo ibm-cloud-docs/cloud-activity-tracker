@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch UI
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Apertura del dashboard del programma di traccia dell'attività nella console {{site.data.keyword.cloud_notm}}
@@ -29,15 +29,15 @@ subcollection: cloud-activity-tracker
 Puoi avviare l'IU {{site.data.keyword.cloudaccesstrailshort}} da {{site.data.keyword.cloud_notm}}. Per impostazione predefinita, puoi visualizzare gli eventi dello spazio. Puoi anche visualizzare gli eventi dell'account.
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## Apertura del dashboard del programma di traccia dell'attività per monitorare l'attività cloud in uno spazio
 {: #launch_at_ui_account_view_space}
 
 Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudaccesstrailshort}} in modo da poter monitorare l'attività cloud in uno spazio:
 
-1. Accedi allo spazio, organizzazione e regione del tuo account {{site.data.keyword.cloud_notm}} in cui desideri monitorare la tua attività cloud.
-
-    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/){:new_window}.
+1. Fai clic sul [Dashboard {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window} per avviare il dashboard {{site.data.keyword.cloud_notm}}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 
@@ -53,9 +53,7 @@ Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudacc
 
 Completa le seguenti istruzioni per passare alla IU {{site.data.keyword.cloudaccesstrailshort}} in modo da poter monitorare l'attività cloud nell'account:
 
-1. Accedi all'account {{site.data.keyword.cloud_notm}} in cui desideri monitorare la tua attività cloud.
-
-    Il dashboard {{site.data.keyword.cloud_notm}} può essere trovato all'indirizzo: [https://cloud.ibm.com/ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/){:new_window}.
+1. Fai clic sul [Dashboard {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window} per avviare il dashboard {{site.data.keyword.cloud_notm}}.
     
 	Dopo aver eseguito l'accesso con i tuoi ID e password utente, viene aperta la IU {{site.data.keyword.cloud_notm}}.
 

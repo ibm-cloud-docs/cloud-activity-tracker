@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -30,6 +31,9 @@ Verwenden Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service, um zu verf
 die Überwachung auf abnormale Aktivitäten und die Einhaltung gesetzlicher Prüfvorschriften. Die erfassten Ereignisse erfüllen den
 Standard der Cloud Auditing Data Federation (CADF).
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} bietet allgemeine Sicherheitsgovernance für Ihre IT-Ressourcen in der Cloud.
 * {{site.data.keyword.cloudaccesstrailshort}} bietet eine Lösung für Administratoren zum Erfassen, Speichern, Anzeigen, Suchen und Überwachen der API-Aktivität von einem einzigen Punkt aus.
@@ -50,7 +54,7 @@ Sie können die {{site.data.keyword.cloudaccesstrailshort}}-Aktivitätenprotokol
 ## Erfassen von Ereignissen
 {: #activity_tracker_ov_collect}
 
-Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst Aktivitätsdaten, die sich auf API-Aufrufe und andere Aktionen beziehen, die für ausgewählte Cloud-Services in {{site.data.keyword.cloud_notm}} ausgeführt werden.  
+Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst Aktivitätsdaten, die sich auf API-Aufrufe und andere Aktionen beziehen, die für ausgewählte Cloud-Services in {{site.data.keyword.cloud_notm}} ausgeführt werden. 
 
 * Ereignisse werden automatisch erfasst. 
 * Die in {{site.data.keyword.cloudaccesstrailshort}} erfassten Ereignisse erfüllen den Standard der Cloud Auditing Data Federation (CADF). Der CADF-Standard definiert ein vollständiges Ereignismodell, das alle Informationen beinhaltet, die zum Zertifizieren, Verwalten und Prüfen der Sicherheit von Anwendungen in Cloud-Umgebungen erforderlich sind.
@@ -89,9 +93,9 @@ Das CADF-Ereignismodell umfasst die folgenden Komponenten:
 
 Beachten Sie Folgendes beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Protokoll in der öffentlichen {{site.data.keyword.IBM_notm}} Cloud:
 
-* Sie können nur Prüfdatensätze für API-Aufrufe speichern, die sich auf in der öffentlichen {{site.data.keyword.IBM_notm}} Cloud ausgeführte Ressourcen beziehen. 
+* Sie können nur Prüfdatensätze für API-Aufrufe speichern, die sich auf in der öffentlichen {{site.data.keyword.IBM_notm}} Cloud ausgeführte Ressourcen beziehen.
 * Nur der Speicher der öffentlichen {{site.data.keyword.IBM_notm}} Cloud wird zum Erfassen von Ereignissen verwendet.
-* Die Informationen werden 3 Tage gespeichert. Danach werden die Informationen mit der FIFO-Methode (First In, First Out) gelöscht. 
+* Die Informationen werden 3 Tage gespeichert. Danach werden die Informationen mit der FIFO-Methode (First In, First Out) gelöscht.
 * CADF-Ereignisse des Typs *Aktivität* werden vom {{site.data.keyword.cloudaccesstrailshort}}-Service unterstützt.
 
 
@@ -100,9 +104,9 @@ Beachten Sie Folgendes beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrai
 
 Um Ereignisse anzeigen zu können, die über eine Kontodomäne verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in einem Cloud Foundry-Bereich (Space) in der Region bereitstellen, in der die API-Aktivität überwacht werden soll. Nur der **Kontoeigner** kann Ereignisse für ein Konto anzeigen.
 
-Zum Anzeigen von Ereignissen, die über eine Bereichsdomäne (Space Domain) verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich (Space) bereitstellen, in der die API-Aktivität überwacht werden soll. 
+Zum Anzeigen von Ereignissen, die über eine Bereichsdomäne (Space Domain) verfügbar sind, müssen Sie den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich (Space) bereitstellen, in der die API-Aktivität überwacht werden soll.
 
-Informationen zur Vorgehensweise beim Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service bereitstellen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision). 
+Informationen zur Vorgehensweise beim Bereitstellen des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service bereitstellen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 
 
@@ -189,8 +193,8 @@ Die folgende Tabelle liefert einen Überblick über die verfügbaren Pläne:
 ## Sicherheit
 {: #activity_tracker_ov_security}
 
-Beachten Sie beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service die folgenden Informationen zur Sicherheit: 
+Beachten Sie beim Arbeiten mit dem {{site.data.keyword.cloudaccesstrailshort}}-Service die folgenden Informationen zur Sicherheit:
 
-* IBM Services, die {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse erstellen, entsprechen der Sicherheitsrichtlinie für {{site.data.keyword.IBM_notm}} Cloud. Weitere Informationen finden Sie unter [Vertrauen Sie der Sicherheit und dem Datenschutz von IBM Cloud ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* IBM Services, die {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse erstellen, entsprechen der Sicherheitsrichtlinie für {{site.data.keyword.IBM_notm}} Cloud. Weitere Informationen finden Sie unter [Vertrauen Sie der Sicherheit und dem Datenschutz von IBM Cloud ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/security){: new_window}.
 * Der {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst vom Benutzer eingeleitete Aktionen, die den Status von Cloud-Services ändern. Über diese Informationen ist kein direkter Zugriff auf Datenbanken oder Anwendungen möglich.
 * Nur berechtigte Benutzer können {{site.data.keyword.cloudaccesstrailshort}}-Ereignisprotokolle anzeigen und überwachen. Jeder Benutzer wird durch eine eindeutige persönliche ID in {{site.data.keyword.cloud_notm}} identifiziert.

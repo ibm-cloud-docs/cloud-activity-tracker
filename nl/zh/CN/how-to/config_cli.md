@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -20,13 +20,16 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 配置 Activity Tracker CLI
 {: #config_cli}
 
 {{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.cloud_notm}} 插件来查看事件的状态，下载事件以及配置保留时间策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）或子命令帮助（用于了解如何使用某个命令的子命令）。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 
 ## 通过 {{site.data.keyword.cloud_notm}} 存储库安装 {{site.data.keyword.cloudaccesstrailshort}} 插件
@@ -50,7 +53,7 @@ subcollection: cloud-activity-tracker
 3. 安装 {{site.data.keyword.cloudaccesstrailshort}} 插件。运行以下命令：
 
     ```
-    ibmcloud plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker
     ```
     {: codeblock}
  
@@ -98,7 +101,7 @@ subcollection: cloud-activity-tracker
 
 1. 安装插件。
 
-    从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
+    从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
 	
 	* 选择平台值：**linux64**。 
 	
@@ -119,7 +122,7 @@ subcollection: cloud-activity-tracker
 
 要在 Windows 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。 
 	
 	1. 选择平台值：**win64**。 
 	2. 单击**保存文件**。  
@@ -138,7 +141,7 @@ subcollection: cloud-activity-tracker
 
 要在 Mac OS X 上安装插件，请完成以下步骤：
 
-1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
+1. 从 [{{site.data.keyword.cloud_notm}} CLI 页面 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下载 {{site.data.keyword.cloudaccesstrailshort}} 服务 CLI 插件 (activity-tracker) 的最新发行版。
 	
 	1. 选择平台值 `osx`。 
 	2. 单击**保存文件**。  
@@ -190,7 +193,7 @@ subcollection: cloud-activity-tracker
 1. 更新 {{site.data.keyword.cloudaccesstrailshort}} 插件。运行以下命令：
 
     ```
-    ibmcloud plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker
     ```
     {: codeblock}
  

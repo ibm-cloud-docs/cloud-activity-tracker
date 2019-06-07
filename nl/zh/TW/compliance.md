@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, compliance
 
@@ -20,14 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 規範
 {: #compliance}
 
-[{{site.data.keyword.cloud_notm}} 提供了一個遵照 IBM 的嚴格安全標準而建置的雲端平台及服務](/docs/security/compliance.html#compliance)。{{site.data.keyword.cloudaccesstraillong}} 服務是針對 {{site.data.keyword.cloud_notm}} 而建置的 DevOps 服務。
+[{{site.data.keyword.cloud_notm}} 提供了一個 Cloud 平台，以及遵照 IBM 嚴格安全標準建置的服務](/docs/overview?topic=overview-security#compliance)。{{site.data.keyword.cloudaccesstraillong}} 服務是針對 {{site.data.keyword.cloud_notm}} 而建置的 DevOps 服務。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 ## 一般資料保護規範
 

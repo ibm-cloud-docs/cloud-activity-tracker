@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, change plan
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Changement de plan
@@ -28,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Vous pouvez changer de plan de service {{site.data.keyword.cloudaccesstraillong}} dans l'interface utilisateur {{site.data.keyword.cloud_notm}} ou en exécutant la commande `ibmcloud service update`. Vous pouvez mettre à niveau ou rétrograder votre plan à tout moment.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## Changement de plan de service via l'interface utilisateur
 {: #change_plan_ui}

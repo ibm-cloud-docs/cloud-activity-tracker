@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch UI
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Abrindo o painel do Activity Tracker no console do {{site.data.keyword.cloud_notm}}
@@ -29,15 +29,15 @@ subcollection: cloud-activity-tracker
 É possível ativar a IU do {{site.data.keyword.cloudaccesstrailshort}} no {{site.data.keyword.cloud_notm}}. Por padrão, é possível ver eventos de espaço. Também é possível visualizar eventos de conta.
 {:shortdesc}
    
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## Abrindo o painel do Activity Tracker para monitorar a atividade de nuvem em um espaço
 {: #launch_at_ui_account_view_space}
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em um espaço:
 
-1. Efetue login no espaço, organização e região de sua conta do {{site.data.keyword.cloud_notm}} em que deseja monitorar sua atividade de nuvem.
-
-    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/ ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/){:new_window}.
+1. Clique em [ Painel do {{site.data.keyword.cloud_notm}}![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window} para ativar o painel do {{site.data.keyword.cloud_notm}}.
     
 	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 
@@ -53,9 +53,7 @@ Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudac
 
 Conclua as etapas a seguir para navegar para a UI do {{site.data.keyword.cloudaccesstrailshort}} para que seja possível monitorar a atividade de nuvem em uma conta:
 
-1. Efetue login na conta do {{site.data.keyword.cloud_notm}} em que você deseja monitorar a atividade de nuvem.
-
-    O painel do {{site.data.keyword.cloud_notm}} pode ser localizado em: [https://cloud.ibm.com/ ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/){:new_window}.
+1. Clique em [ Painel do {{site.data.keyword.cloud_notm}}![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window} para ativar o painel do {{site.data.keyword.cloud_notm}}.
     
 	Após você efetuar login com o seu ID do usuário e senha, a UI do {{site.data.keyword.cloud_notm}} será aberta.
 

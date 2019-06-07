@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # {{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.keymanagementserviceshort}} アクティビティーのモニター
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 このチュートリアルでは、{{site.data.keyword.keymanagementserviceshort}} サービスとユーザーとの対話を {{site.data.keyword.cloudaccesstrailfull}} サービスを使用してモニターする方法について説明します。 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
+
 1. {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする方法を説明します。
-2. {{site.data.keyword.cloudaccesstrailshort}} サービスによって自動的に収集されるアクティビティー・イベントを生成するためのクラウド・サービスの使用方法を説明します。イベントは [Cloud Auditing Data Federation (CADF) 標準 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window} に準拠しています。
+2. {{site.data.keyword.cloudaccesstrailshort}} サービスによって自動的に収集されるアクティビティー・イベントを生成するためのクラウド・サービスの使用方法を説明します。
 3.事前定義された {{site.data.keyword.cloudaccesstrailshort}} ダッシュボードを使用してサービスのクラウド・アクティビティーをモニターする方法を説明します。
 
 次の図は、さまざまなコンポーネントと、サービスの状態を変更するユーザー開始アクティビティーがあったときに起こるアクションを示します。
@@ -92,7 +96,7 @@ subcollection: cloud-activity-tracker
 6. **「作成」**をクリックして、ログインしているスペース内で {{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンします。
    
 
-## ステップ 2. クラウド・サービスを構成する  
+## ステップ 2.  クラウド・サービスを構成する  
 {: #kp_step2}
 
 このチュートリアルでは、{{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.keymanagementserviceshort}} サービスの API アクティビティーをモニターする方法を示します。

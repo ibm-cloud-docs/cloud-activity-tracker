@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Gerenciando eventos usando a CLI do Activity Tracker
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Use este tutorial para aprender como usar a CLI do {{site.data.keyword.cloudaccesstrailshort}} para gerenciar eventos por meio da linha de comandos. Saiba como obter informações sobre eventos armazenados, como fazer download de eventos que são armazenados no {{site.data.keyword.IBM_notm}} Cloud ou como excluir eventos.
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 Conclua
 as etapas a seguir:
@@ -44,7 +48,7 @@ as etapas a seguir:
 
 1. Você tem um ID do usuário do {{site.data.keyword.cloud_notm}} que tem permissões de `developer` para trabalhar em um espaço de uma conta do {{site.data.keyword.cloud_notm}} em que o serviço do {{site.data.keyword.cloudaccesstrailshort}} é provisionado. 
 
-    Para obter mais informações sobre como provisionar o serviço do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Provisionando o serviço do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
+    Para obter mais informações sobre como fornecer o serviço {{site.data.keyword.cloudaccesstrailshort}}, consulte [Fornecendo o serviço {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
 2. Você tem uma instância do serviço do {{site.data.keyword.cloudaccesstrailshort}} com um plano premium.
 
@@ -52,7 +56,7 @@ as etapas a seguir:
 
 3. Você tem a CLI do {{site.data.keyword.cloudaccesstrailshort}} instalada em seu sistema local. Essa CLI é necessária para gerenciar eventos por meio da linha de comandos. 
 
-    Para obter mais informações sobre a instalação da CLI do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Configurando a CLI do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli).
+    Para obter mais informações sobre como instalar a CLI do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Configurando a CLI do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli).
 
 4. Você é conectado no {{site.data.keyword.cloud_notm}} por meio da linha de comandos. Para esse tutorial, execute os comandos a seguir em um terminal: 
 

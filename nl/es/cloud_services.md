@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, cloud services
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -29,20 +30,23 @@ subcollection: cloud-activity-tracker
 Utilice el servicio {{site.data.keyword.cloudaccesstraillong}} para supervisar las actividades iniciadas por el usuario que cambian el estado de alguno de los siguientes servicios en {{site.data.keyword.IBM_notm}} Cloud:
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 **Nota:** Para obtener información sobre las regiones en las que hay disponible un servicio en {{site.data.keyword.cloud_notm}}, consulte [Servicios por región](/docs/resources?topic=resources-services_region#services_region).
 
 
 ## Servicios de infraestructura de cálculo
 {: #infrastructure}
 
-**Nota:** para que un usuario genere sucesos de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, el usuario debe tener acceso a recursos de infraestructura en la consola de IBM Cloud. Para obtener más información, consulte [Supervisión de la actividad de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi).
+**Nota:** para que un usuario genere sucesos de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, el usuario debe tener acceso a recursos de infraestructura en la consola de {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Supervisión de la actividad de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi).
 
 La tabla siguiente contiene los servicios de infraestructura que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}:
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.BluVirtServers_short}} ](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)| Los {{site.data.keyword.BluVirtServers}} son servidores virtuales escalables que se adquieren con núcleos dedicados y asignaciones de memoria. Constituyen una opción ideal si necesita recursos de cálculo, que se pueden añadir en cuestión de minutos, con acceso a características como plantillas de imágenes.  | [Sucesos generados por {{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-at_events#at_events) |  
-| [{{site.data.keyword.baremetal_long}} ](/docs/bare-metal?topic=bare-metal-about#about) | {{site.data.keyword.baremetal_short}} son servidores físicos de un solo arrendatario que le proporcionan rendimiento y control con acceso de bajo nivel a los recursos de hardware. | [Sucesos generados por {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-at_events#at_events) | 
+| [{{site.data.keyword.baremetal_long}} ](/docs/bare-metal?topic=bare-metal-about-bm#about-bm) | {{site.data.keyword.baremetal_short}} son servidores físicos de un solo arrendatario que le proporcionan rendimiento y control con acceso de bajo nivel a los recursos de hardware. | [Sucesos generados por {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events) | 
 {: caption="Lista de los servicios de infraestructura que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 
@@ -119,7 +123,7 @@ La tabla siguiente contiene los servicios de base de datos que envían sucesos a
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|----------------------------------------------------|
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} es un servicio PostgreSQL gestionado alojado en {{site.data.keyword.cloud_notm}} e integrado con otros servicios de {{site.data.keyword.cloud_notm}}. | [Sucesos generados por {{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker) |
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} es un servicio Redis gestionado alojado en {{site.data.keyword.cloud_notm}} e integrado con otros servicios de {{site.data.keyword.cloud_notm}}.  | [Sucesos generados por {{site.data.keyword.databases-for-redis_full_notm}} ](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} es un servicio gestionado alojado en {{site.data.keyword.cloud_notm}} e integrado con otros servicios de {{site.data.keyword.cloud_notm}}.  | [Sucesos generados por {{site.data.keyword.databases-for-redis_full_notm}} ](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
 | [{{site.data.keyword.sqlquery_short}}](/docs/services/sql-query?topic=sql-query-overview#overview) | Puede utilizar el servicio {{site.data.keyword.sqlquery_short}} para ejecutar consultas SQL (es decir, sentencias SELECT) para analizar, transformar o limpiar datos rectangulares. | [Sucesos generados por {{site.data.keyword.sqlquery_short}}](/docs/services/sql-query?topic=sql-query-activitytracker#activity-tracker-events) |  
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}} es un servicio etcd gestionado alojado en {{site.data.keyword.cloud_notm}} e integrado con otros servicios de {{site.data.keyword.cloud_notm}}. | [Sucesos generados por {{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-activity-tracker#activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-about#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} es un servicio Elasticsearch gestionado alojado en {{site.data.keyword.cloud_notm}} e integrado con otros servicios de {{site.data.keyword.cloud_notm}}. | [Sucesos generados por {{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-activity-tracker#activity-tracker-integration) |
@@ -136,7 +140,7 @@ La tabla siguiente contiene los servicios de DevOps que envían sucesos a {{site
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.DRA_short}}](/docs/services/DevOpsInsights?topic=DevOpsInsights-insights_about#insights_about) | {{site.data.keyword.DRA_short}} es una integración en el catálogo de cadenas de herramientas abiertas de {{site.data.keyword.cloud_notm}}. | [Sucesos generados por {{site.data.keyword.DRA_short}}](/docs/services/DevOpsInsights?topic=DevOpsInsights-at_events#at_events) |
+| [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | {{site.data.keyword.DRA_short}} es una integración en el catálogo de cadenas de herramientas abiertas de {{site.data.keyword.cloud_notm}}. | [Sucesos generados por {{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-at_events) |
 | [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | Con {{site.data.keyword.contdelivery_short}} puede crear, probar y entregar aplicaciones mediante las herramientas más utilizadas de la industria y prácticas de DevOps. | [Sucesos generados por {{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | Permite que los desarrolladores de apps puedan publicar de forma rápida aplicaciones traducidas para clientes globales. | [Sucesos generados por {{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="Lista de herramientas de desarrollador que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
@@ -166,7 +170,7 @@ La tabla siguiente contiene los servicios básicos de la plataforma de seguridad
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [Inicie una sesión en {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-features#features)| Puede iniciar la sesión en {{site.data.keyword.cloud_notm}} utilizando una contraseña, una clave de API, un código de autorización o un código de acceso. Como usuario federado, puede iniciar la sesión desde la interfaz de línea de mandatos (CLI) utilizando un código de acceso de una sola vez o una clave de API. | [Sucesos generados cuando un usuario o app inicia una sesión en {{site.data.keyword.cloud_notm}}](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
+| [Inicie una sesión en {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-iamoverview#iamoverview)| Puede iniciar la sesión en {{site.data.keyword.cloud_notm}} utilizando una contraseña, una clave de API, un código de autorización o un código de acceso. Como usuario federado, puede iniciar la sesión desde la interfaz de línea de mandatos (CLI) utilizando un código de acceso de una sola vez o una clave de API. | [Sucesos generados cuando un usuario o app inicia una sesión en {{site.data.keyword.cloud_notm}}](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
 | [Gestión del acceso a Cloud Foundry del usuario de la cuenta](/docs/iam?topic=iam-mngcf#mngcf) | Puede otorgar, revocar y actualizar los permisos de Cloud Foundry (CF) a los usuarios de la cuenta. | [Sucesos generados al gestionar roles de CF en la cuenta](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-cf#cf_cfroles) |
 | [{{site.data.keyword.iamlong}} (IAM)](/docs/iam?topic=iam-userroles#userroles) | Puede utilizar IAM para gestionar usuarios y roles en la plataforma {{site.data.keyword.cloud_notm}} y servicios de infraestructura. | [Sucesos generados al gestionar políticas de IAM](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_policies) |
 | [Gestión de claves de API de la plataforma](/docs/iam?topic=iam-manapikey#platform-api-keys) | Puede definir claves de API de la plataforma en el {{site.data.keyword.IBM_notm}} Cloud que están asociadas con un usuario o un ID de servicio. | [Sucesos generados al gestionar claves de API de la plataforma](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_apikeys) |
@@ -194,7 +198,7 @@ La tabla siguiente contiene los servicios de nube de red que envían sucesos a {
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [IBM Cloud Internet Services (CIS)](/docs/infrastructure/cis?topic=cis-about-ibm-cloud-internet-services-cis-#about-ibm-cloud-internet-services-cis-)| IBM Cloud Internet Services (CIS) proporciona un servicio de internet rápido, de alto rendimiento, fiable y seguro. | [Sucesos generados por IBM Cloud Internet Services](/docs/infrastructure/cis?topic=cis-at_events#at_events) |  
+| [IBM Cloud Internet Services (CIS)](/docs/infrastructure/cis?topic=cis-about-ibm-cloud-internet-services-cis#about-ibm-cloud-internet-services-cis)| IBM Cloud Internet Services (CIS) proporciona un servicio de internet rápido, de alto rendimiento, fiable y seguro. | [Sucesos generados por IBM Cloud Internet Services](/docs/infrastructure/cis?topic=cis-at_events#at_events) |  
 {: caption="Lista de los servicios de nube de red que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 
@@ -210,7 +214,7 @@ La tabla siguiente contiene los servicios de nube de seguridad que envían suces
 | [{{site.data.keyword.cloudaccesstraillong_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)| Puede utilizar el servicio {{site.data.keyword.cloudaccesstrailshort}} para supervisar {{site.data.keyword.cloudaccesstraillong_notm}}. | [Sucesos generados por el servicio {{site.data.keyword.cloudaccesstraillong_notm}}](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-downloading_events#events) |  
 | [{{site.data.keyword.appid_full_notm}}](/docs/services/appid?topic=appid-about#about) | Puede utilizar {{site.data.keyword.appid_short}} para añadir autenticación a sus apps móviles y web y para proteger los recursos de fondo. | [Sucesos generados por el servicio {{site.data.keyword.appid_short}}](/docs/services/appid?topic=appid-at-events#at-events) |
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | Puede utilizar {{site.data.keyword.cloudcerts_short}} para gestionar los certificados SSL para las apps y servicios basados en {{site.data.keyword.cloud_notm}}.  | [Sucesos generados por el servicio {{site.data.keyword.cloudcerts_short}}](/docs/services/certificate-manager?topic=certificate-manager-at_events#at_events) |
-| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect?topic=key-protect-getting-started-tutorial#getting-started-with-key-protect) | Puede utilizar el servicio {{site.data.keyword.keymanagementserviceshort}} para facilitar claves cifradas para apps en {{site.data.keyword.cloud_notm}}. | [Sucesos generados por el servicio {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect?topic=key-protect-at-events#at-events) |
+| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect?topic=key-protect-getting-started-tutorial#getting-started-with-key-protect) | Puede utilizar el servicio {{site.data.keyword.keymanagementserviceshort}} para facilitar claves cifradas para apps en {{site.data.keyword.cloud_notm}}. | [Sucesos generados por el servicio {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect?topic=key-protect-activity-tracker-events#activity-tracker-events) |
 | [{{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor?topic=security-advisor-about#about) | Puede utilizar {{site.data.keyword.security-advisor_short}} como ayuda para supervisar la seguridad de sus apps y cargas de trabajo de {{site.data.keyword.cloud_notm}}.   | [Sucesos generados por el servicio {{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor?topic=security-advisor-at_events#at_events) |
 {: caption="Lista de los servicios de nube de seguridad que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
@@ -222,7 +226,7 @@ La tabla siguiente contiene los servicios de nube de almacenamiento envían suce
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about-ibm-cloud-object-storage#about-ibm-cloud-object-storage)| Puede utilizar {{site.data.keyword.cos_full_notm}} para almacenar datos en {{site.data.keyword.cloud_notm}}. Los datos se cifran y se distribuyen entre varias ubicaciones geográficas y se accede a los mismos a través de HTTP utilizando una API REST.   | [Sucesos generados por {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-at_events#at_events) |  
+| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about-ibm-cloud-object-storage)| Puede utilizar {{site.data.keyword.cos_full_notm}} para almacenar datos en {{site.data.keyword.cloud_notm}}. Los datos se cifran y se distribuyen entre varias ubicaciones geográficas y se accede a los mismos a través de HTTP utilizando una API REST.   | [Sucesos generados por {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-at-events) |  
 {: caption="Lista de los servicios de nube de almacenamiento que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 
@@ -233,8 +237,8 @@ La tabla siguiente contiene los servicios de nube de almacenamiento envían suce
 
 | Servicio     | Descripción | Sucesos de {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/getting-started/overview-ws.html?context=analytics&linkInPage=true) | Watson Studio proporciona el entorno y las herramientas para resolver sus problemas empresariales trabajando de forma colaborativa con los datos. Puede elegir las herramientas que necesite para analizar y visualizar datos, limpiar y modelar datos, ingerir datos en streaming o crear, formar y desplegar modelos de aprendizaje automático. | [Sucesos generados por Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#ws) |  
-| [Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/ml-overview.html?audience=dr&context=refinery)| Puede utilizar Watson Machine Learning para crear modelos analíticos sofisticados, entrenados con sus propios datos, que puede desplegar para utilizarlos en aplicaciones. | [Sucesos generados por Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#wml) | 
-| [Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/catalog/overview-wkc.html?audience=dr&context=refinery&linkInPage=true)| Watson Knowledge Catalog proporciona una plataforma de gestión de catálogos de empresa segura que cuenta con el soporte de una infraestructura de políticas de datos. Un catálogo conecta datos y conocimientos con las personas que necesitan usarlos. La infraestructura de políticas de datos garantiza que el acceso a los datos cumple con las reglas de la empresa. | [Sucesos generados por Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#wkc) |  
+| [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/overview-ws.html) | Watson Studio proporciona el entorno y las herramientas para resolver sus problemas empresariales trabajando de forma colaborativa con los datos. Puede elegir las herramientas que necesite para analizar y visualizar datos, limpiar y modelar datos, ingerir datos en streaming o crear, formar y desplegar modelos de aprendizaje automático. | [Sucesos generados por Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#ws) |  
+| [Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html)| Puede utilizar Watson Machine Learning para crear modelos analíticos sofisticados, entrenados con sus propios datos, que puede desplegar para utilizarlos en aplicaciones. | [Sucesos generados por Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#wml) | 
+| [Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/wsj/catalog/overview-wkc.html)| Watson Knowledge Catalog proporciona una plataforma de gestión de catálogos de empresa segura que cuenta con el soporte de una infraestructura de políticas de datos. Un catálogo conecta datos y conocimientos con las personas que necesitan usarlos. La infraestructura de políticas de datos garantiza que el acceso a los datos cumple con las reglas de la empresa. | [Sucesos generados por Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#wkc) |  
 {: caption="Lista de los servicios de datos de nube de Watson que envían sucesos a {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 

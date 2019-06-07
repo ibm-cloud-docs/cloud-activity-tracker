@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, CLI
 
@@ -18,6 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:deprecated: .deprecated}
 
 
 # IBM Cloud Activity Tracker CLI
@@ -25,6 +26,10 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstraillong}} CLI を使用して {{site.data.keyword.cloudaccesstrailshort}} イベントを管理できます。
 {: shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
+
 
 **前提条件**
 * コマンドを実行する前に、`ibmcloud login` コマンドで {{site.data.keyword.Bluemix}} にログインして、アクセス・トークンを生成し、セッションを認証します。
@@ -319,7 +324,7 @@ ibmcloud at session create [parameters] [arguments...]
 
 <dl>
   <dt>--at-account-level、-a </dt>
-  <dd>(オプション) スコープをアカウント・レベルに設定します。 </br>アカウント情報を取得するには、この値を設定します。 <br>このパラメーターが指定されていない場合、デフォルト値は、現行スペース (つまり、`ibmcloud cf login` コマンドを使用してログインしたスペース) のみに設定されます。
+  <dd>(オプション) スコープをアカウント・レベルに設定します。 </br>アカウント情報を取得するには、この値を設定します。<br>このパラメーターが指定されていない場合、デフォルト値は、現行スペース (つまり、`ibmcloud cf login` コマンドを使用してログインしたスペース) のみに設定されます。
   </dd>
 
   <dt>--start value、-s value</dt>

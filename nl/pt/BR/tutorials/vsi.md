@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, VSI events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Monitorando o {{site.data.keyword.BluVirtServers_short}} e o {{site.data.keyword.baremetal_short}} com o {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 Use este tutorial para aprender como configurar usuários em uma conta do {{site.data.keyword.cloud_notm}} para que seja possível monitorar eventos do {{site.data.keyword.cloudaccesstrailshort}} que são gerados por esses usuários quando eles trabalham com o {{site.data.keyword.BluVirtServers_short}} e o {{site.data.keyword.baremetal_short}}.
 {:shortdesc}
 
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 {{site.data.keyword.BluVirtServers}} são servidores virtuais escaláveis que são comprados com núcleos dedicados e alocações de memória. Eles são uma boa opção caso você esteja procurando por recursos de cálculo, que podem ser incluídos em minutos, com acesso a recursos como modelos de imagem. 
 * Para obter mais informações, consulte [{{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers). 
 * Para obter a lista de ações que geram um evento do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Eventos que são gerados pelo {{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-at_events#at_events).
@@ -35,7 +39,7 @@ Use este tutorial para aprender como configurar usuários em uma conta do {{site
 Os {{site.data.keyword.baremetal_short}} são servidores físicos de locatário único que fornecem desempenho e controle com
 acesso de baixo nível aos recursos de hardware. 
 * Para obter mais informações, consulte [{{site.data.keyword.baremetal_long}}](/docs/bare-metal?topic=bare-metal-about#about).
-* Para obter a lista de ações que geram um evento do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Eventos que são gerados pelo {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-at_events#at_events).
+* Para obter a lista de ações que geram um evento do {{site.data.keyword.cloudaccesstrailshort}}, consulte [Eventos que são gerados pelo {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events).
 
 **Para que o usuário gere eventos do {{site.data.keyword.BluVirtServers_short}} e do {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, ele deve ter acesso aos recursos de infraestrutura no IBM Cloud Console.**
 {: tip}

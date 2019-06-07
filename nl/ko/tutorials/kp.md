@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # {{site.data.keyword.cloudaccesstrailshort}}를 사용한 {{site.data.keyword.keymanagementserviceshort}} 활동 모니터링
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 이 튜토리얼을 통해 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 {{site.data.keyword.keymanagementserviceshort}} 서비스 간의 상호작용을 모니터하는 방법을 알아보십시오. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 1. {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하는 방법을 학습합니다.
-2. {{site.data.keyword.cloudaccesstrailshort}} 서비스가 자동으로 수집하는 활동 이벤트를 클라우드 서비스를 사용하여 생성하는 방법을 학습합니다. 이벤트는 [CADF(Cloud Auditing Data Federation) 표준 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}을 준수합니다.
+2. {{site.data.keyword.cloudaccesstrailshort}} 서비스가 자동으로 수집하는 활동 이벤트를 클라우드 서비스를 사용하여 생성하는 방법을 학습합니다.
 3. 사전 정의된 {{site.data.keyword.cloudaccesstrailshort}} 대시보드를 사용하여 서비스의 클라우드 활동을 모니터하는 방법을 학습합니다.
 
 다음 그림은 사용자가 시작한 활동이 서비스의 상태를 변경하는 경우 발생하는 다양한 컴포넌트 및 조치를 보여줍니다.
@@ -92,7 +96,7 @@ subcollection: cloud-activity-tracker
 6. **작성**을 클릭하여 로그인되어 있는 영역에 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하십시오.
    
 
-## 단계 2. 클라우드 서비스 구성  
+## 단계 2.  클라우드 서비스 구성  
 {: #kp_step2}
 
 이 튜토리얼은 {{site.data.keyword.cloud_notm}}에 있는 {{site.data.keyword.keymanagementserviceshort}} 서비스의 API 활동을 모니터하는 방법을 보여줍니다.

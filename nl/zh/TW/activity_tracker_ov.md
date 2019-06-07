@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 請使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來追蹤應用程式與 {{site.data.keyword.cloud_notm}} 服務互動的情形。使用 {{site.data.keyword.cloudaccesstrailshort}} 可以監視異常活動，以及符合法規審核需求。所收集的事件符合雲端審核資料聯盟 (CADF) 標準。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} 會在雲端中為 IT 資源提供高階安全控管。
 * {{site.data.keyword.cloudaccesstrailshort}} 為管理者提供一個解決方案，可在單一位置中擷取、儲存、檢視、搜尋及監視 API 活動。
@@ -189,6 +193,6 @@ CADF 事件模型包含下列元件：
 
 使用 {{site.data.keyword.cloudaccesstrailshort}} 服務時，請考量下列有關安全的資訊：
 
-* 產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服務會遵循 {{site.data.keyword.IBM_notm}} Cloud 安全原則。如需相關資訊，請參閱 [Trust the security and privacy of IBM Cloud ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}。
+* 產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服務會遵循 {{site.data.keyword.IBM_notm}} Cloud 安全原則。如需相關資訊，請參閱 [Trust the security and privacy of IBM Cloud ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/security){: new_window}。
 * {{site.data.keyword.cloudaccesstrailshort}} 擷取會擷取變更雲端服務狀態的使用者起始動作。此資訊不提供資料庫或應用程式的直接存取權。
 * 只有獲授權的使用者才能檢視及監視 {{site.data.keyword.cloudaccesstrailshort}} 事件日誌。每一個使用者都是透過其在 {{site.data.keyword.cloud_notm}} 中的唯一 ID 加以識別。

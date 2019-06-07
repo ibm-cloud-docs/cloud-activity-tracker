@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Monitoraggio dell'attività di {{site.data.keyword.keymanagementserviceshort}} con {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 Utilizza questa esercitazione per imparare ad utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per monitorare l'interazione di un'utente con il servizio {{site.data.keyword.keymanagementserviceshort}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 1. Impara come eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}}.
-2. Impara come utilizzare un servizio cloud per generare gli eventi attività raccolti automaticamente dal servizio {{site.data.keyword.cloudaccesstrailshort}}. Gli eventi sono conformi agli standard [Cloud Auditing Data Federation (CADF) ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
+2. Impara come utilizzare un servizio cloud per generare gli eventi attività raccolti automaticamente dal servizio {{site.data.keyword.cloudaccesstrailshort}}.
 3.Impara come monitorare l'attività cloud di un servizio utilizzando i dashboard {{site.data.keyword.cloudaccesstrailshort}} predefiniti.
 
 La seguente figura mostra i diversi componenti e azioni che si verificano quando un'attività avviata dall'utente modifica lo stato di un servizio:
@@ -92,7 +96,7 @@ Completa la seguente procedura per eseguire il provisioning di un'istanza del se
 6. Fai clic su **Crea** per eseguire il provisioning del servizio {{site.data.keyword.cloudaccesstrailshort}} nello spazio in cui hai eseguito l'accesso.
    
 
-## Passo 2. Configura il servizio cloud  
+## Passo 2.  Configura il servizio cloud  
 {: #kp_step2}
 
 Questa esercitazione illustra come monitorare l'attività dell'API per il servizio {{site.data.keyword.keymanagementserviceshort}} in {{site.data.keyword.cloud_notm}}.

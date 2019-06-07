@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch Kibana
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Kibana 대시보드 열기
@@ -29,6 +29,9 @@ subcollection: cloud-activity-tracker
 Kibana는 {{site.data.keyword.cloud_notm}}의 {{site.data.keyword.cloudaccesstrailshort}} UI에서 실행하거나, 웹 브라우저에서 직접 실행할 수 있습니다.
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 
 ##  Activity Tracker 서비스의 대시보드에서 Kibana 열기
 {: #launch_Kibana_from_at}
@@ -73,19 +76,19 @@ Kibana가 표시하는 활동 로그는 사용자가 로그인했으며 {{site.d
           </tr>
           <tr>
             <td>독일</td>
-            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+            <td>`https://logging.eu-fra.bluemix.net`</td>
           </tr>
           <tr>
             <td>시드니</td>
-            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>영국</td>
-            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>미국 남부</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>`https://logging.ng.bluemix.net`</td>
           </tr>
     </table>
 	
@@ -116,7 +119,7 @@ Kibana에 표시되는 이벤트는 Kibana를 실행한 지역에서 선택한 �
 {: #launch_kibana_limitations}
 
 * Kibana의 제한사항으로 인해, 동일한 세션에서 여러 Kibana 브라우저 탭을 동시에 열어 복수의 영역 또는 계정을 볼 수는 없습니다. 따라서, 동시에 둘 이상의 세션이 있으며 도메인을 영역에서 계정으로, 또는 그 반대로 변경하는 경우에는 문제점이 발생할 수 있습니다.
-* 기본적으로 계정 소유자만 계정 이벤트를 볼 수 있습니다. 기타 사용자가 계정 이벤트를 보도록 설정하려면 [계정 이벤트 보기](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)의 지시사항을 따르십시오.
+* 기본적으로 계정 소유자만 계정 이벤트를 볼 수 있습니다. 기타 사용자가 계정 이벤트를 보도록 설정하려면 [계정 이벤트 보기](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events)의 지시사항을 따르십시오.
 
 
 

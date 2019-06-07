@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, CLI
 
@@ -18,6 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:deprecated: .deprecated}
 
 
 # CLI do IBM Cloud Activity Tracker
@@ -25,6 +26,10 @@ subcollection: cloud-activity-tracker
 
 É possível usar a CLI do {{site.data.keyword.cloudaccesstraillong}} para gerenciar eventos do {{site.data.keyword.cloudaccesstrailshort}}.
 {: shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 **Pré-requisitos**
 * Antes de executar os comandos, efetue login no {{site.data.keyword.Bluemix}} com o comando `ibmcloud login` para gerar um token
@@ -324,7 +329,7 @@ ibmcloud at session create [parameters] [arguments...]
 
 <dl>
   <dt>--at-account-level, -a </dt>
-  <dd>(Opcional) Configura o escopo como nível de conta. </br>Configure esse valor para obter informações de conta. <br>Se esse parâmetro não for especificado, o valor padrão será definido somente para o espaço atual,
+  <dd>(Opcional) Configura o escopo como nível de conta. </br>Configure esse valor para obter informações da conta. <br>Se esse parâmetro não for especificado, o valor padrão será definido somente para o espaço atual,
 ou seja, o espaço no qual você efetuou login usando o comando `ibmcloud cf login`.
   </dd>
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 入門チュートリアル
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailfull}} サービスは、{{site.data.keyword.cloud_notm}} 内のサービスの状態を変更するユーザー開始アクティビティーを記録します。 クラウド・サービスとユーザーとの対話を {{site.data.keyword.cloudaccesstrailfull}} サービスを使用してモニターする方法について説明します。 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
+
 
 次の図は、さまざまなコンポーネントと、サービスの状態を変更するユーザー開始アクティビティーがあったときに起こるアクションを示します。
 
@@ -39,7 +44,7 @@ subcollection: cloud-activity-tracker
 
 * {{site.data.keyword.cloudaccesstrailshort}} サービスに関する文書をお読みください。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} の紹介](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)を参照してください。
 * このサービスが使用可能な地域を確認してください。 詳しくは、[地域](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov_regions)を参照してください。
-* {{site.data.keyword.cloud_notm}} アカウントのメンバーまたは所有者であるユーザー ID を取得してください。[ここで登録 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} してください。
+* {{site.data.keyword.cloud_notm}} アカウントのメンバーまたは所有者であるユーザー ID を取得してください。 [ここで登録 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} してください。
 
 
 
@@ -60,7 +65,7 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstraillong_notm}} サービスのインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. [{{site.data.keyword.cloud_notm}} "外部リンク・アイコン") にログインします。](https://cloud.ibm.com/login){:new_window}.
+1. [{{site.data.keyword.cloud_notm}} にログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
 
     ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
@@ -124,7 +129,7 @@ subcollection: cloud-activity-tracker
 **注: ユーザーに IAM ポリシーを付与するには、アカウント所有者であるか、{{site.data.keyword.loganalysisshort}} サービスの管理者でなければなりません。**
 
 ### アカウント・ドメイン・イベントをモニターするためのアクセス権限をユーザーに付与する
-{: #gs_acc}
+{: #index_acc}
 
 {{site.data.keyword.cloud_notm}} UI からユーザーに IAM ポリシーを付与するには、以下のステップを実行します。
 
@@ -143,9 +148,11 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloud_notm}} UI からスペースでの開発者役割をユーザーに付与するには、以下のステップを実行します。
 
-1. [{{site.data.keyword.cloud_notm}} コンソールにログイン ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} します。
+1. {{site.data.keyword.cloud_notm}} コンソールにログインします。
+
+    Web ブラウザーを開き、[{{site.data.keyword.cloud_notm}} ダッシュボード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} を起動します。
 	
-    ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
+	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.cloud_notm}} UI が開きます。
 
 2. メニュー・バーで、**「管理」**&gt;**「セキュリティー」**&gt;**「ID およびアクセス」**をクリックして、**「ユーザー」**を選択します。
 
@@ -205,9 +212,9 @@ subcollection: cloud-activity-tracker
 
 | モニタリング                                                           | {{site.data.keyword.cloudaccesstrailshort}} ドメイン |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `グローバル・アカウント・アクション`                                             | 米国南部アカウント・ドメイン       |  
-| `リソース・グループのコンテキストでプロビジョンされたサービス`   | アカウント・ドメイン                               | 
-| `CF 組織およびスペースのコンテキストでプロビジョンされたサービス` | スペース・ドメイン                                | 
+| `グローバル・アカウント・アクション`                                             | 米国南部アカウント・ドメイン                            |  
+| `リソース・グループのコンテキストでプロビジョンされたサービス`   | アカウント・ドメイン                                     | 
+| `CF 組織およびスペースのコンテキストでプロビジョンされたサービス` | スペース・ドメイン                                       | 
 {: caption="表 1. イベント・ソースごとの {{site.data.keyword.cloudaccesstrailshort}} ドメイン" caption-side="top"} 
 
 イベントを表示する場合、以下のいずれかのオプションを選択できます。

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, IAM
 
@@ -20,13 +20,16 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 授予查看事件的许可权
 {: #grant_permissions}
 
 在 {{site.data.keyword.cloud}} 中，您可以将 Cloud Foundry 角色和/或 IAM 角色分配给用户。这些角色可定义用户在您使用 {{site.data.keyword.cloudaccesstrailshort}} 服务时可执行的任务。  
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 ## 授予查看帐户事件的许可权
 {: #grant_acc_events}

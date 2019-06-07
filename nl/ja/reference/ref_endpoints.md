@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, endpoints
 
@@ -18,7 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:deprecated: .deprecated}
 
 
 # エンドポイント
@@ -26,6 +26,10 @@ subcollection: cloud-activity-tracker
 
 エンドポイントは {{site.data.keyword.Bluemix}} 地域ごとに異なります。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
+
 
 ## {{site.data.keyword.cloud_notm}} エンドポイント
 {: #ibm_cloud_endpoints}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、アプリケーションが {{site.data.keyword.cloud_notm}} サービスとどのように対話するのかをトラッキングします。 {{site.data.keyword.cloudaccesstrailshort}} を使用して異常なアクティビティーをモニターすることで、規制監査要件に準拠することができます。 収集されるイベントは、Cloud Auditing Data Federation (CADF) 標準に準拠しています。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} は、クラウド内の IT リソースに対する高水準のセキュリティー・ガバナンスを実現します。
 * {{site.data.keyword.cloudaccesstrailshort}} は、管理者が 1 つの場所で API アクティビティーの取り込み、保管、表示、検索、およびモニターを行えるようにするソリューションを提供します。
@@ -111,7 +115,7 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 
 {{site.data.keyword.cloud_notm}} 内で {{site.data.keyword.cloudaccesstrailshort}} UI を介して、過去 24 時間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} UI へのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_at_ui#launch_at_ui)を参照してください。
 
-{{site.data.keyword.cloudaccesstrailshort}} Kibana ダッシュボードを使用して Kibana を介して、または、ユーザー独自のカスタム・ダッシュボードを作成することによって、過去 3 日間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。**注:** この機能を使用できるのは、**プレミアム**・プランのユーザーです。
+{{site.data.keyword.cloudaccesstrailshort}} Kibana ダッシュボードを使用して Kibana を介して、または、ユーザー独自のカスタム・ダッシュボードを作成することによって、過去 3 日間のアクティビティー・ログの検索、分析、およびモニターを行うことができます。 **注:** この機能を使用できるのは、**プレミアム**・プランのユーザーです。
 
 * Kibana の起動方法について詳しくは、[Kibana ダッシュボードへのナビゲート](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana)を参照してください。 
 * Kibana でイベントを分析するために使用できるフィールドのリストについては、[{{site.data.keyword.cloudaccesstrailshort}} イベントのフィールド](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)を参照してください。
@@ -189,6 +193,6 @@ CADF イベント・モデルには、以下のコンポーネントが含まれ
 
 {{site.data.keyword.cloudaccesstrailshort}} サービスでの処理を行うときには、セキュリティーに関する以下の情報を考慮してください。
 
-* {{site.data.keyword.cloudaccesstrailshort}} イベントを生成する IBM サービスは、{{site.data.keyword.IBM_notm}} クラウドのセキュリティー・ポリシーに従います。 詳しくは、[Trust the security and privacy of IBM Cloud ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window} を参照してください。
+* {{site.data.keyword.cloudaccesstrailshort}} イベントを生成する IBM サービスは、{{site.data.keyword.IBM_notm}} クラウドのセキュリティー・ポリシーに従います。 詳しくは、[Trust the security and privacy of IBM Cloud ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/security){: new_window} を参照してください。
 * {{site.data.keyword.cloudaccesstrailshort}} サービスは、クラウド・サービスの状態を変更するユーザー開始アクションを取り込みます。 この情報からデータベースまたはアプリケーションに直接アクセスすることはできません。
 * 許可されたユーザーのみが {{site.data.keyword.cloudaccesstrailshort}} イベント・ログの表示およびモニターを行うことができます。 各ユーザーは、{{site.data.keyword.cloud_notm}} での固有の ID によって識別されます。

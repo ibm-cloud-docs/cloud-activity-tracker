@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 入門指導教學
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailfull}} 服務會記錄使用者起始的活動，這些活動會在 {{site.data.keyword.cloud_notm}} 中變更服務的狀態。學習如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來監視使用者與雲端服務的互動。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 
 下圖顯示當使用者起始的活動變更服務的狀態時，發生的不同元件和動作：
 
@@ -124,7 +129,7 @@ subcollection: cloud-activity-tracker
 **附註：若要為使用者授與 IAM 原則，您必須是帳戶擁有者或 {{site.data.keyword.loganalysisshort}} 服務的管理者。**
 
 ### 為使用者授與監視帳戶網域事件的存取權
-{: #gs_acc}
+{: #index_acc}
 
 請完成下列步驟，從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與 IAM 原則：
 
@@ -143,9 +148,11 @@ subcollection: cloud-activity-tracker
 
 若要從 {{site.data.keyword.cloud_notm}} 使用者介面為使用者授與空間中的開發人員角色，請完成下列步驟：
 
-1. [登入 {{site.data.keyword.cloud_notm}} 主控台 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
+1. 登入 {{site.data.keyword.cloud_notm}} 主控台。
+
+    開啟 Web 瀏覽器，並啟動 [{{site.data.keyword.cloud_notm}} 儀表板 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}
 	
-    使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
+	使用您的使用者 ID 及密碼登入之後，會開啟 {{site.data.keyword.cloud_notm}} 使用者介面。
 
 2. 從功能表列按一下**管理** &gt; **安全** &gt; **身分及存取**，然後選取**使用者**。
 

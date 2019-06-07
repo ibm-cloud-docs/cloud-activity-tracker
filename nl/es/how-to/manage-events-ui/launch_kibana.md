@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch Kibana
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Apertura del panel de control de Kibana
@@ -29,6 +29,9 @@ subcollection: cloud-activity-tracker
 Puede lanzar Kibana desde la IU de {{site.data.keyword.cloudaccesstrailshort}} en {{site.data.keyword.cloud_notm}}, o directamente desde un navegador web.
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 ##  Apertura de Kibana desde el panel de control del servicio Activity Tracker
 {: #launch_Kibana_from_at}
@@ -73,19 +76,19 @@ Siga los siguientes pasos para iniciar Kibana desde el navegador:
           </tr>
           <tr>
             <td>Alemania</td>
-            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+            <td>`https://logging.eu-fra.bluemix.net`</td>
           </tr>
           <tr>
             <td>Sídney</td>
-            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>Reino Unido</td>
-            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>EE. UU. sur</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>`https://logging.ng.bluemix.net`</td>
           </tr>
     </table>
 	
@@ -117,7 +120,7 @@ Los sucesos que se pueden ver en Kibana corresponden a los sucesos que están al
 
 * Debido a limitaciones en Kibana, no puede tener varios separadores de Kibana abiertos al mismo tiempo en la misma sesión para ver distintos espacios o cuentas. Por lo tanto, si tienen dos o más sesiones abiertas a la vez, y cambia el dominio desde el espacio a la cuenta o viceversa, podría surgir algún problema.
 * De forma predeterminada, únicamente el propietario de la cuenta puede visualizar sucesos de cuenta. Para permitir que otros puedan ver sucesos de cuenta, siga las instrucciones de
-[Visualización de sucesos de cuenta](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
+[Visualización de sucesos de cuenta](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events).
 
 
 

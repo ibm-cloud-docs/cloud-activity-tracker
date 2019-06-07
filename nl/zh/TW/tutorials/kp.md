@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 使用 {{site.data.keyword.cloudaccesstrailshort}} 監視 {{site.data.keyword.keymanagementserviceshort}} 活動
@@ -28,9 +29,11 @@ subcollection: cloud-activity-tracker
 使用本指導教學，學習如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服務來監視使用者與 {{site.data.keyword.keymanagementserviceshort}} 服務的互動。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 1. 了解如何佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務。
-2. 了解如何使用雲端服務來產生自動由 {{site.data.keyword.cloudaccesstrailshort}} 服務收集的活動事件。事件會符合[雲端審核資料聯盟 (CADF) 標準 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}。
-3. 了解如何使用預先定義的 {{site.data.keyword.cloudaccesstrailshort}} 儀表板，以監視服務的雲端活動。
+2. 了解如何使用雲端服務來產生自動由 {{site.data.keyword.cloudaccesstrailshort}} 服務收集的活動事件。3. 了解如何使用預先定義的 {{site.data.keyword.cloudaccesstrailshort}} 儀表板，以監視服務的雲端活動。
 
 下圖顯示當使用者起始的活動變更服務的狀態時，發生的不同元件和動作：
 

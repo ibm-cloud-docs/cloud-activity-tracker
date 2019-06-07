@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 使用 Activity Tracker CLI 管理事件
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 使用本指導教學，學習如何使用 {{site.data.keyword.cloudaccesstrailshort}} CLI 來透過指令行管理事件。瞭解如何取得儲存事件的相關資訊、如何下載儲存在 {{site.data.keyword.IBM_notm}} Cloud 中的事件，或如何刪除事件。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 請完成下列步驟：
 

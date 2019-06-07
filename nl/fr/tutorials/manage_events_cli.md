@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Gestion des événements à l'aide de l'interface de ligne de commande d'Activity Tracker
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Utilisez ce tutoriel pour apprendre à utiliser l'interface de ligne de commande d'{{site.data.keyword.cloudaccesstrailshort}} pour gérer des événements via la ligne de commande. Apprenez à obtenir des informations sur des événements stockés, à télécharger des événements stockés dans {{site.data.keyword.IBM_notm}} Cloud ou à supprimer des événements.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 Effectuez les opérations suivantes :
 
@@ -111,7 +115,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 ```
 {: screen}
 
-Cette commande compte les événements du 25 juillet 2017.  {{site.data.keyword.cloudaccesstrailshort}} est un service global. Par conséquent, les jours sont exprimés en temps universel. Pour obtenir un jour complet en heure locale, vous devrez probablement télécharger plusieurs jours en Temps Universel Coordonné (TUC).
+Cette commande compte les événements du 25 juillet 2017. {{site.data.keyword.cloudaccesstrailshort}} est un service global. Par conséquent, les jours sont exprimés en temps universel. Pour obtenir un jour complet en heure locale, vous devrez probablement télécharger plusieurs jours en Temps Universel Coordonné (TUC).
 
 
 

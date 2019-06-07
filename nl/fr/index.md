@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-04-25"
 
 ---
 
@@ -14,13 +14,16 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:deprecated: .deprecated}
 
 # Initiation
 {: #getting-started-with-cla}
 
 Le service {{site.data.keyword.cloudaccesstrailfull}} enregistre des activités initiées par l'utilisateur qui changent l'état d'un service dans {{site.data.keyword.Bluemix}}. Découvrez comment utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour surveiller l'interaction d'un utilisateur avec un service Cloud. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A partir du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}} et l'accès aux instances de plan *Lite* sera retiré. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 La figure suivante représente les différents composants et les actions impliqués lorsqu'une activité initiée par un utilisateur modifie l'état d'un service :
 
@@ -203,7 +206,7 @@ Le tableau suivant définit le domaine {{site.data.keyword.cloudaccesstrailshort
 
 | Surveillance                                                           | Domaine {{site.data.keyword.cloudaccesstrailshort}} |  
 |----------------------------------------------------------------------|----------------------------------------------------| 
-| `Actions de compte globales`                                             | domaine de compte Sud des Etats-Unis (us-south)                        |  
+| `Actions de compte globales`                                             | domaine de compte Sud des Etats-Unis (us-south)                            |  
 | `Services mis à disposition dans le contexte d'un groupe de ressources`   | domaine de compte                                     | 
 | `Services mis à disposition dans le contexte d'une organisation et d'un espace CF` | domaine d'espace                                       | 
 {: caption="Tableau 1. Domaines {{site.data.keyword.cloudaccesstrailshort}} par source d'événement" caption-side="top"} 

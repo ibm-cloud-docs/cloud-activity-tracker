@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 查看事件信息
 {: #viewing_event_status}
 
 使用 `ibmcloud at status` 命令可获取有关在 {{site.data.keyword.cloudaccesstrailshort}} 中为 {{site.data.keyword.Bluemix}} 空间收集和存储的事件的信息。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 
 您可以获取有关 teh 事件日志大小、记录数以及事件是否可供在 Kibana 中进行分析的信息。 
 
@@ -56,7 +60,6 @@ $ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD
 {: codeblock}
     
 其中
-
     
 * *-a* 用于指定该请求适用于帐户域。
 * *-s* 用于设置开始日期，格式为全球标准时间 (UTC)：*YYYY-MM-DD*。

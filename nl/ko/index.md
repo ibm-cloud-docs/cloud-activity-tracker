@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-04-25"
 
 ---
 
@@ -14,13 +14,16 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:deprecated: .deprecated}
 
 # 시작하기
 {: #getting-started-with-cla}
 
 {{site.data.keyword.cloudaccesstrailfull}} 서비스는 {{site.data.keyword.Bluemix}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 클라우드 서비스 간의 상호작용을 모니터하는 방법을 알아보십시오. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없으며 *Lite* 플랜 인스턴스에 대한 액세스가 제거됩니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
 
 다음 그림은 사용자가 시작한 활동이 서비스의 상태를 변경하는 경우 발생하는 다양한 컴포넌트 및 조치를 보여줍니다.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, cloud services
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -29,20 +30,23 @@ subcollection: cloud-activity-tracker
 {{site.data.keyword.cloudaccesstraillong}} 서비스를 사용하여, {{site.data.keyword.IBM_notm}} 클라우드 내 다음 서비스의 상태를 변경하는, 사용자가 시작한 활동을 모니터하십시오.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 **참고:** {{site.data.keyword.cloud_notm}}에서 서비스가 사용 가능한 지역에 대한 정보를 가져오려면 [지역별 서비스](/docs/resources?topic=resources-services_region#services_region)를 참조하십시오.
 
 
 ## 인프라 서비스 컴퓨팅
 {: #infrastructure}
 
-**참고:** 사용자가 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하려면 사용자에게 IBM Cloud 콘솔의 인프라 리소스에 대한 액세스 권한이 있어야 합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} 활동 모니터링](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi)을 참조하십시오.
+**참고:** 사용자가 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하려면 사용자에게 {{site.data.keyword.cloud_notm}} 콘솔의 인프라 리소스에 대한 액세스 권한이 있어야 합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} 활동 모니터링](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi)을 참조하십시오.
 
 다음 표에는 {{site.data.keyword.cloudaccesstrailshort}}에 이벤트를 전송하는 인프라 서비스가 나열되어 있습니다.
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.BluVirtServers_short}} ](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)| {{site.data.keyword.BluVirtServers}}는 전용 코어 및 메모리 할당을 포함하여 구매하는 확장 가능한 가상 서버입니다. 이미지 템플리트와 같은 기능에 액세스할 수 있으며 몇 분 안에 추가할 수 있는 컴퓨팅 리소스를 찾고 있는 경우 이는 훌륭한 선택사항입니다.  | [{{site.data.keyword.BluVirtServers_short}}에 의해 생성된 이벤트](/docs/vsi?topic=virtual-servers-at_events#at_events) |  
-| [{{site.data.keyword.baremetal_long}} ](/docs/bare-metal?topic=bare-metal-about#about) | {{site.data.keyword.baremetal_short}}는 하드웨어 리소스에 대한 하위 레벨 액세스 권한과 함께 성능과 제어를 제공하는 실제 싱글 테넌트 서버입니다. | [{{site.data.keyword.baremetal_short}}에 의해 생성된 이벤트](/docs/bare-metal?topic=bare-metal-at_events#at_events) | 
+| [{{site.data.keyword.baremetal_long}} ](/docs/bare-metal?topic=bare-metal-about-bm#about-bm) | {{site.data.keyword.baremetal_short}}는 하드웨어 리소스에 대한 하위 레벨 액세스 권한과 함께 성능과 제어를 제공하는 실제 싱글 테넌트 서버입니다. | [{{site.data.keyword.baremetal_short}}에 의해 생성된 이벤트](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events) | 
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 인프라 서비스의 목록" caption-side="top"} 
 
 
@@ -119,7 +123,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|----------------------------------------------------|
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}}은 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 PostgreSQL 서비스입니다. | [{{site.data.keyword.databases-for-postgresql_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker) |
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 Redis 서비스입니다.  | [{{site.data.keyword.databases-for-redis_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 서비스입니다. | [{{site.data.keyword.databases-for-redis_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
 | [{{site.data.keyword.sqlquery_short}}](/docs/services/sql-query?topic=sql-query-overview#overview) | 사각형 데이터를 분석하거나, 변형하거나 정리하기 위해 {{site.data.keyword.sqlquery_short}} 서비스를 사용하여 SQL 조회(즉 SELECT문)를 실행할 수 있습니다. | [{{site.data.keyword.sqlquery_short}}에 의해 생성된 이벤트](/docs/services/sql-query?topic=sql-query-activitytracker#activity-tracker-events) |  
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 etcd 서비스입니다. | [{{site.data.keyword.databases-for-etcd_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-etcd?topic=databases-for-etcd-activity-tracker#activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-about#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 Elasticsearch 서비스입니다. | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-activity-tracker#activity-tracker-integration) |
@@ -136,10 +140,9 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.DRA_short}}](/docs/services/DevOpsInsights?topic=DevOpsInsights-insights_about#insights_about) | {{site.data.keyword.DRA_short}}는 {{site.data.keyword.cloud_notm}} 오픈 도구 체인 카탈로그의 통합입니다.| [{{site.data.keyword.DRA_short}}에 의해 생성된 이벤트](/docs/services/DevOpsInsights?topic=DevOpsInsights-at_events#at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | {{site.data.keyword.contdelivery_short}}를 통해 DevOps 사례와 업계 최고의 도구를 사용하여 애플리케이션을 빌드하고 테스트하며 전달할 수 있습니다.
-| [{{site.data.keyword.contdelivery_short}}에 의해 생성된 이벤트](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
-| [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | 앱 개발자가 변환된 애플리케이션을 글로벌 고객에게 신속하게 릴리스할 수 있습니다.| [{{site.data.keyword.GlobalizationPipeline_short}}에 의해 생성된 이벤트](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
+| [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | {{site.data.keyword.DRA_short}}는 {{site.data.keyword.cloud_notm}} 오픈 도구 체인 카탈로그의 통합입니다. | [{{site.data.keyword.DRA_short}}에 의해 생성된 이벤트](/docs/apps?topic=creating-apps-at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | {{site.data.keyword.contdelivery_short}}를 통해 DevOps 사례와 업계 최고의 도구를 사용하여 애플리케이션을 빌드하고 테스트하며 전달할 수 있습니다. | [{{site.data.keyword.contdelivery_short}}에 의해 생성된 이벤트](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
+| [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | 앱 개발자가 변환된 애플리케이션을 글로벌 고객에게 신속하게 릴리스할 수 있습니다. | [{{site.data.keyword.GlobalizationPipeline_short}}에 의해 생성된 이벤트](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 개발자 도구의 목록" caption-side="top"} 
 
 
@@ -167,7 +170,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| {{site.data.keyword.cloud_notm}}에 로그인|비밀번호, API 키, 권한 부여 코드 또는 패스코드를 사용하여 {{site.data.keyword.cloud_notm}}에 로그인할 수 있습니다. 연합된 사용자는 일회성 패스코드 또는 API 키를 사용하여 명령행 인터페이스(CLI)에서 로그인할 수 있습니다. | [사용자 또는 앱이 {{site.data.keyword.cloud_notm}}에 로그인하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
+| [{{site.data.keyword.cloud_notm}}에 로그인](/docs/iam?topic=iam-iamoverview#iamoverview) |비밀번호, API 키, 권한 부여 코드 또는 패스코드를 사용하여 {{site.data.keyword.cloud_notm}}에 로그인할 수 있습니다. 연합된 사용자는 일회성 패스코드 또는 API 키를 사용하여 명령행 인터페이스(CLI)에서 로그인할 수 있습니다. | [사용자 또는 앱이 {{site.data.keyword.cloud_notm}}에 로그인하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
 | [계정 사용자의 Cloud Foundry 액세스 권한 관리](/docs/iam?topic=iam-mngcf#mngcf) | 계정 내의 사용자에게 Cloud Foundry(CF) 권한을 부여하거나, 취소하거나, 이를 업데이트할 수 있습니다. | [계정에서 CF 역할을 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-cf#cf_cfroles) |
 | [{{site.data.keyword.iamlong}}(IAM)](/docs/iam?topic=iam-userroles#userroles) |IAM을 사용하여 {{site.data.keyword.cloud_notm}} 플랫폼 및 인프라 서비스의 사용자 및 역할을 관리할 수 있습니다. | [IAM 정책을 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_policies) |
 | [플랫폼 API 키 관리](/docs/iam?topic=iam-manapikey#platform-api-keys) | {{site.data.keyword.IBM_notm}} Cloud에 사용자 또는 서비스 ID와 연관된 플랫폼 API 키를 정의할 수 있습니다. | [플랫폼 API 키를 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_apikeys) |
@@ -195,7 +198,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [IBM Cloud Internet Services(CIS)](/docs/infrastructure/cis?topic=cis-about-ibm-cloud-internet-services-cis-#about-ibm-cloud-internet-services-cis-)| IBM Cloud Internet Services(CIS)는 빠르고 고성능인 동시에 신뢰할 수 있는 안전한 인터넷 서비스를 제공합니다. | [IBM Cloud Internet Services에 의해 생성된 이벤트](/docs/infrastructure/cis?topic=cis-at_events#at_events) |  
+| [IBM Cloud Internet Services(CIS)](/docs/infrastructure/cis?topic=cis-about-ibm-cloud-internet-services-cis#about-ibm-cloud-internet-services-cis)| IBM Cloud Internet Services(CIS)는 빠르고 고성능인 동시에 신뢰할 수 있는 안전한 인터넷 서비스를 제공합니다. | [IBM Cloud Internet Services에 의해 생성된 이벤트](/docs/infrastructure/cis?topic=cis-at_events#at_events) |  
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 네트워크 클라우드 서비스의 목록" caption-side="top"} 
 
 
@@ -211,8 +214,8 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 | [{{site.data.keyword.cloudaccesstraillong_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)| {{site.data.keyword.cloudaccesstrailshort}} 서비스를 사용하여 {{site.data.keyword.cloudaccesstraillong_notm}}을 모니터할 수 있습니다. | [{{site.data.keyword.cloudaccesstraillong_notm}} 서비스에 의해 생성된 이벤트](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-downloading_events#events) |  
 | [{{site.data.keyword.appid_full_notm}}](/docs/services/appid?topic=appid-about#about) | {{site.data.keyword.appid_short}}를 사용하여 모바일 및 앱에 인증을 추가하고 백엔드 리소스를 보호할 수 있습니다. | [{{site.data.keyword.appid_short}} 서비스에 의해 생성된 이벤트](/docs/services/appid?topic=appid-at-events#at-events) |
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | {{site.data.keyword.cloudcerts_short}}를 사용하여 {{site.data.keyword.cloud_notm}} 기반 앱 및 서비스의 SSL 인증서를 관리할 수 있습니다.  | [{{site.data.keyword.cloudcerts_short}} 서비스에 의해 생성된 이벤트](/docs/services/certificate-manager?topic=certificate-manager-at_events#at_events) |
-| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect?topic=key-protect-getting-started-tutorial#getting-started-with-key-protect) | {{site.data.keyword.keymanagementserviceshort}} 서비스를 사용하여 {{site.data.keyword.cloud_notm}}에서 앱에 대한 암호화된 키를 프로비저닝할 수 있습니다. | [{{site.data.keyword.keymanagementserviceshort}} 서비스에 의해 생성된 이벤트](/docs/services/key-protect?topic=key-protect-at-events#at-events) |
-| [{{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor?topic=security-advisor-about#about) ||{{site.data.keyword.security-advisor_short}}를 사용하여 {{site.data.keyword.cloud_notm}} 앱 및 워크로드의 보안을 모니터할 수 있습니다. | [{{site.data.keyword.security-advisor_short}} 서비스에 의해 생성된 이벤트](/docs/services/security-advisor?topic=security-advisor-at_events#at_events) |
+| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect?topic=key-protect-getting-started-tutorial#getting-started-with-key-protect) | {{site.data.keyword.keymanagementserviceshort}} 서비스를 사용하여 {{site.data.keyword.cloud_notm}}에서 앱에 대한 암호화된 키를 프로비저닝할 수 있습니다. | [{{site.data.keyword.keymanagementserviceshort}} 서비스에 의해 생성된 이벤트](/docs/services/key-protect?topic=key-protect-activity-tracker-events#activity-tracker-events) |
+| [{{site.data.keyword.security-advisor_short}}](/docs/services/security-advisor?topic=security-advisor-about#about) ||{{site.data.keyword.security-advisor_short}}를 사용하여 {{site.data.keyword.cloud_notm}} 앱 및 워크로드의 보안을 모니터할 수 있습니다.   | [{{site.data.keyword.security-advisor_short}} 서비스에 의해 생성된 이벤트](/docs/services/security-advisor?topic=security-advisor-at_events#at_events) |
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 보안 클라우드 서비스의 목록" caption-side="top"} 
 
 
@@ -223,7 +226,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about-ibm-cloud-object-storage#about-ibm-cloud-object-storage)| {{site.data.keyword.cos_full_notm}}를 사용하여 {{site.data.keyword.cloud_notm}}에 데이터를 저장할 수 있습니다. 데이터는 암호화되어 여러 지리적 위치에 분산되며, REST API를 사용하여 HTTP를 통해 액세스할 수 있습니다. | [{{site.data.keyword.cos_full_notm}}에 의해 생성된 이벤트](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-at_events#at_events) |  
+| [{{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about-ibm-cloud-object-storage)| {{site.data.keyword.cos_full_notm}}를 사용하여 {{site.data.keyword.cloud_notm}}에 데이터를 저장할 수 있습니다. 데이터는 암호화되어 여러 지리적 위치에 분산되며, REST API를 사용하여 HTTP를 통해 액세스할 수 있습니다.   | [{{site.data.keyword.cos_full_notm}}에 의해 생성된 이벤트](/docs/services/cloud-object-storage?topic=cloud-object-storage-at-events) |  
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 스토리지 클라우드 서비스의 목록" caption-side="top"} 
 
 
@@ -234,8 +237,8 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/getting-started/overview-ws.html?context=analytics&linkInPage=true) | Watson Studio는 데이터에 대한 협업을 통해 비즈니스 문제점을 해결하기 위한 환경 및 도구를 제공합니다. 사용자는 데이터를 분석하고 시각화하거나, 정리하고 모델화하거나, 스트리밍 데이터를 수집하는 데 필요한 도구, 또는 기계 학습 모델을 작성하고, 훈련하고, 배치하는 데 필요한 도구를 선택할 수 있습니다. | [Watson Studio에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#ws) |  
-| [Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/ml-overview.html?audience=dr&context=refinery)| Watson Machine Learning을 사용하여 애플리케이션에서 사용하기 위해 배치할 수 있는, 자신의 데이터로 훈련된 정교한 분석 모델을 빌드할 수 있습니다. | [Watson Machine Learning에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#wml) | 
-| [Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/catalog/overview-wkc.html?audience=dr&context=refinery&linkInPage=true)| Watson Knowledge Catalog는 데이터 정책 프레임워크에서 지원하는 안전한 엔터프라이즈 카탈로그 관리 플랫폼을 제공합니다. 카탈로그는 데이터 및 지식을 이를 사용해야 하는 사용자와 연결합니다. 데이터 정책 프레임워크는 데이터 액세스가 비즈니스 규칙을 준수하여 이뤄지도록 합니다. | [Watson Knowledge Catalog에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/admin/at-events.html#wkc) |  
+| [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/overview-ws.html) | Watson Studio는 데이터에 대한 협업을 통해 비즈니스 문제점을 해결하기 위한 환경 및 도구를 제공합니다. 사용자는 데이터를 분석하고 시각화하거나, 정리하고 모델화하거나, 스트리밍 데이터를 수집하는 데 필요한 도구, 또는 기계 학습 모델을 작성하고, 훈련하고, 배치하는 데 필요한 도구를 선택할 수 있습니다. | [Watson Studio에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#ws) |  
+| [Watson Machine Learning](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html)| Watson Machine Learning을 사용하여 애플리케이션에서 사용하기 위해 배치할 수 있는, 자신의 데이터로 훈련된 정교한 분석 모델을 빌드할 수 있습니다. | [Watson Machine Learning에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#wml) | 
+| [Watson Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/wsj/catalog/overview-wkc.html)| Watson Knowledge Catalog는 데이터 정책 프레임워크에서 지원하는 안전한 엔터프라이즈 카탈로그 관리 플랫폼을 제공합니다. 카탈로그는 데이터 및 지식을 이를 사용해야 하는 사용자와 연결합니다. 데이터 정책 프레임워크는 데이터 액세스가 비즈니스 규칙을 준수하여 이뤄지도록 합니다. | [Watson Knowledge Catalog에 의해 생성된 이벤트](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#wkc) |  
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 Watson 클라우드 데이터 서비스의 목록" caption-side="top"} 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Visualizando informações de evento
 {: #viewing_event_status}
 
 Use o comando `ibmcloud at status` para obter informações sobre os eventos que são coletados e armazenados no {{site.data.keyword.cloudaccesstrailshort}} para um espaço do {{site.data.keyword.Bluemix}}.
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 É possível obter informações sobre o tamanho do log de eventos, o número de registros e se os eventos estão disponíveis ou não para análise no Kibana. 
 

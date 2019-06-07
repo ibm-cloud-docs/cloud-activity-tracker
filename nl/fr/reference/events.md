@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, events
 
@@ -18,6 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:deprecated: .deprecated}
 
 
 # Evénements {{site.data.keyword.cloudaccesstrailshort}}
@@ -26,6 +27,8 @@ subcollection: cloud-activity-tracker
 Utilisez le service {{site.data.keyword.cloudaccesstrailfull}} pour suivre {{site.data.keyword.cloudaccesstrailshort}} dans {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 
 ## Liste des événements

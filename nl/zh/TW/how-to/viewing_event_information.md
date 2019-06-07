@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 檢視事件資訊
 {: #viewing_event_status}
 
 請使用 `ibmcloud at status` 指令來取得 {{site.data.keyword.Bluemix}} 空間的 {{site.data.keyword.cloudaccesstrailshort}} 中所收集並儲存之事件的相關資訊。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 
 您可以取得事件日誌大小、記錄數，以及事件是否可在 Kibana 中進行分析的相關資訊。 
 

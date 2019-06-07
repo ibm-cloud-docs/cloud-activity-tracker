@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, VSI events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Supervisión de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} con {{site.data.keyword.cloudaccesstrailshort}}
@@ -31,13 +32,16 @@ Utilice esta guía de aprendizaje para aprender a configurar usuarios en una cue
 {{site.data.keyword.BluVirtServers_short}} y {{site.data.keyword.baremetal_short}}.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 Los {{site.data.keyword.BluVirtServers}} son servidores virtuales escalables que se adquieren con núcleos dedicados y asignaciones de memoria. Constituyen una opción ideal si necesita recursos de cálculo, que se pueden añadir en cuestión de minutos, con acceso a características como plantillas de imágenes. 
 * Para obtener más información, consulte [{{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers). 
 * Para ver la lista de acciones que generan un suceso de {{site.data.keyword.cloudaccesstrailshort}}, consulte el apartado [Sucesos generados por {{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-at_events#at_events).
 
 {{site.data.keyword.baremetal_short}} son servidores físicos de un solo arrendatario que le proporcionan rendimiento y control con acceso de bajo nivel a los recursos de hardware. 
 * Para obtener más información, consulte [{{site.data.keyword.baremetal_long}}](/docs/bare-metal?topic=bare-metal-about#about).
-* Para ver la lista de acciones que generan un suceso de {{site.data.keyword.cloudaccesstrailshort}}, consulte el apartado [Sucesos generados por {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-at_events#at_events).
+* Para ver la lista de acciones que generan un suceso de {{site.data.keyword.cloudaccesstrailshort}}, consulte el apartado [Sucesos generados por {{site.data.keyword.baremetal_short}}](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events).
 
 **Para que un usuario genere sucesos de {{site.data.keyword.BluVirtServers_short}} y de {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}}, el usuario debe tener acceso a los recursos de la infraestructura en la consola de IBM Cloud.**
 {: tip}

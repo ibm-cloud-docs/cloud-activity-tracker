@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 Utilizza il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come le applicazioni interagiscono con i servizi {{site.data.keyword.cloud_notm}}. Utilizza {{site.data.keyword.cloudaccesstrailshort}} per monitorare attività anomala e rispettare i requisiti di controllo normativi. Gli eventi vengono raccolti conformi agli standard CADF (Cloud Auditing Data Federation).
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} offre governance di sicurezza di alto livello
 per le tue risorse IT nel cloud.
@@ -205,6 +209,6 @@ La seguente tabella illustra i piani disponibili:
 
 Considera le seguenti informazioni sulla sicurezza quando utilizzi il servizio {{site.data.keyword.cloudaccesstrailshort}}:
 
-* I servizi IBM che generano gli eventi {{site.data.keyword.cloudaccesstrailshort}} seguono la politica di sicurezza cloud {{site.data.keyword.IBM_notm}}. Per ulteriori informazioni, consulta [Trust the security and privacy of IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* I servizi IBM che generano gli eventi {{site.data.keyword.cloudaccesstrailshort}} seguono la politica di sicurezza cloud {{site.data.keyword.IBM_notm}}. Per ulteriori informazioni, consulta [Trust the security and privacy of IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud/security){: new_window}.
 * Il servizio {{site.data.keyword.cloudaccesstrailshort}} acquisisce le azioni avviate dall'utente che modificano lo stato dei servizi cloud. Le informazioni non forniscono l'accesso diretto al database o alle applicazioni.
 * Soltanto gli utenti autorizzati possono visualizzare e monitorare i log evento {{site.data.keyword.cloudaccesstrailshort}}. Ogni utente viene identificato tramite il proprio ID univoco {{site.data.keyword.cloud_notm}}.

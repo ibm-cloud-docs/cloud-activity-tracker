@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -20,13 +20,16 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Activity Tracker CLI 구성
 {: #config_cli}
 
 {{site.data.keyword.cloudaccesstraillong}} 서비스에는 클라우드에서 이벤트를 관리하는 데 사용할 수 있는 명령행 인터페이스(CLI)가 포함되어 있습니다. 사용자는 {{site.data.keyword.cloud_notm}} 플러그인을 사용하여 이벤트의 상태를 보거나, 이벤트를 다운로드하거나, 이벤트 보존 정책을 구성할 수 있습니다. 이 CLI에서는 CLI 및 지원되는 명령에 대해 알려주는 일반 도움말, 명령 사용 방법에 대해 알려주는 명령 도움말, 명령의 하위 명령 사용 방법을 알려주는 하위 명령 도움말과 같은 다양한 유형의 도움말을 제공합니다.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
 
 
 ## {{site.data.keyword.cloud_notm}} 저장소에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치
@@ -50,7 +53,7 @@ subcollection: cloud-activity-tracker
 3. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 설치하십시오. 다음 명령을 실행하십시오.
 
     ```
-    ibmcloud plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker
     ```
     {: codeblock}
  
@@ -74,7 +77,7 @@ subcollection: cloud-activity-tracker
 
    자세한 정보는 [{{site.data.keyword.cloud_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)를 참조하십시오.
 
-2. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 설치하십시오. 
+2. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 설치하십시오.
 
     * Linux의 경우에는 [Linux에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux)를 참조하십시오.
     * Windows의 경우에는 [Windows에서 {{site.data.keyword.cloudaccesstrailshort}} 플러그인 설치](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows)를 참조하십시오.
@@ -98,7 +101,7 @@ Linux에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 1. 플러그인을 설치하십시오.
 
-    [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+    [{{site.data.keyword.cloud_notm}} CLI 페이지 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오.
 	
 	* 플랫폼 값을 **linux64**로 선택하십시오. 
 	
@@ -119,7 +122,7 @@ Linux에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 Windows에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
+1. [{{site.data.keyword.cloud_notm}} CLI 페이지 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오. 
 	
 	1. 플랫폼 값을 **win64**로 선택하십시오. 
 	2. **파일 저장**을 클릭하십시오.  
@@ -138,7 +141,7 @@ Windows에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
 Mac OS X에 플러그인을 설치하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} CLI 페이지![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+1. [{{site.data.keyword.cloud_notm}} CLI 페이지 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}에서 {{site.data.keyword.cloudaccesstrailshort}} 서비스 CLI 플러그인(activity-tracker)의 최신 릴리스를 다운로드하십시오.
 	
 	1. 플랫폼 값을 `osx`로 선택하십시오. 
 	2. **파일 저장**을 클릭하십시오.  
@@ -190,7 +193,7 @@ CLI를 업데이트하려면 *ibmcloud plugin update* 명령을 실행하십시�
 1. {{site.data.keyword.cloudaccesstrailshort}} 플러그인을 업데이트하십시오. 다음 명령을 실행하십시오.
 
     ```
-    ibmcloud plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker
     ```
     {: codeblock}
  

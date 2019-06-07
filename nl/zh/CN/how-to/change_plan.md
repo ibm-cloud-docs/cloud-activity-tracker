@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, change plan
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 更改套餐
@@ -28,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 可以通过 {{site.data.keyword.cloud_notm}} UI 或通过运行 `ibmcloud service update` 命令来更改 {{site.data.keyword.cloudaccesstraillong}} 服务套餐。您可以随时将套餐升级或降级。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 ## 通过 UI 更改服务套餐
 {: #change_plan_ui}
@@ -80,8 +83,7 @@ subcollection: cloud-activity-tracker
 	```
 	{: codeblock}
 	
-	其中
- 
+	其中 
 	
 	* *service_name* 是服务的名称。要获取此值，可以运行 `ibmcloud service list` 命令。
 	* *new_plan* 是套餐的名称。

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, event fields
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -29,6 +30,9 @@ subcollection: cloud-activity-tracker
 Gli eventi {{site.data.keyword.cloudaccesstrailshort}} si basano sugli standard CADF (Cloud Auditing Data Federation). 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 ## Campi dell'iniziatore
 {: #initiator}
 
@@ -36,7 +40,7 @@ La seguente tabella elenca i campi comuni disponibili per un evento {{site.data.
 
 | Nome campo | Descrizione | Valore |
 |------------|-------------|-------|
-| `initiator.id` | ID dell'iniziatore dell'azione. </br></br>I tipi validi di iniziatori sono `IBMID`, `serviceID` e `Cloud Foundry (CF) user ID`. | L'esempio di un IBMID è `IBMid-000000XXX2` </br>L'esempio di un ID del servizio è `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>L'esempio di un ID utente CF è `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
+| `initiator.id` | ID dell'iniziatore dell'azione. </br></br>I tipi validi di iniziatori sono `IBMID`, `serviceID` e `Cloud Foundry (CF) user ID`. |Un esempio di un ID IBM è `IBMid-000000XXX2` </br>Un esempio di un ID servizio è `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>Un esempio di un ID utente CF è `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
 | `initiator.name` | Il nome dell'utente che ha avviato l'azione. | Ad esempio, un indirizzo email. |
 | `initiator.typeURI` | Tipo di origine dell'evento. | I valori validi sono *service/security/account/user*, *service/security/clientid* e *service/security/account/serviceid*. |
 | `initiator.credential.type` | Tipo di credenziali dell'ID iniziatore. | I valori validi sono *user*, *token* e *apikey*. |
@@ -51,7 +55,7 @@ La seguente tabella elenca i campi di destinazione comuni disponibili per un eve
 
 | Nome campo | Descrizione | Valore |
 |------------|-------------|-------|
-| `target.id` | CRN (Cloud Resource Name) della risorsa in cui viene eseguita l'azione. </br>Per ulteriori informazioni, vedi [Formato del CRN](/docs/overview?topic=overview-format-crn#format). | Ad esempio, `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
+| `target.id` | CRN (Cloud Resource Name) della risorsa in cui viene eseguita l'azione. </br>Per ulteriori informazioni, vedi [Formato del CRN](/docs/overview?topic=overview-crn#format-crn). | Ad esempio, `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
 | `target.name` | Nome leggibile della risorsa cloud su cui viene eseguita l'azione. |  |
 | `target.typeURI` | Il tipo di risorsa cloud su cui viene eseguita l'azione. </br>Il formato di questo campo è **serviceName/objectType** dove `servicename` è il nome del servizio. | Ad esempio, `iam-am/policy` o `cloud-object-storage/bucket/acl` |
 {: caption="Tabella 2. Campi di destinazione comuni" caption-side="top"} 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, configure retention policy
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Configurando a política de retenção de eventos
 {: #configuring_retention_policy}
 
 Use o comando **ibmcloud at option** para visualizar e configurar a política de retenção que define o número máximo de dias que os eventos são mantidos no {{site.data.keyword.cloudaccesstrailshort}}. Por padrão, a política de retenção é desativada e os eventos são mantidos indefinidamente. Depois que o período de retenção tiver expirado, os eventos serão excluídos automaticamente. 
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 É possível configurar a mesma política de retenção para todos os espaços na conta ou você pode customizar o período de retenção para um espaço. 
 

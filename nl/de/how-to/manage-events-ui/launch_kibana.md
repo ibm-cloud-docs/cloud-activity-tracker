@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, launch Kibana
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Kibana-Dashboard öffnen
@@ -29,6 +29,9 @@ subcollection: cloud-activity-tracker
 Sie können Kibana von der Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} aus {{site.data.keyword.cloud_notm}} oder direkt von einem Web-Browser aus starten.
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 
 ##  Kibana vom Dashboard des Activity Tracker-Service aus öffnen
 {: #launch_Kibana_from_at}
@@ -73,19 +76,19 @@ Führen Sie die folgenden Schritte aus, um Kibana über einen Browser zu starten
           </tr>
           <tr>
             <td>Deutschland</td>
-            <td>[https://logging.eu-fra.bluemix.net](https://logging.eu-fra.bluemix.net) </td>
+            <td>`https://logging.eu-fra.bluemix.net`</td>
           </tr>
           <tr>
             <td>Sydney</td>
-            <td>[https://logging.au-syd.bluemix.net](https://logging.au-syd.bluemix.net) </td>
+            <td>`https://logging.au-syd.bluemix.net` </td>
           </tr>
 		  <tr>
             <td>Vereinigtes Königreich</td>
-            <td>[https://logging.eu-gb.bluemix.net](https://logging.eu-gb.bluemix.net)</td>
+            <td>`https://logging.eu-gb.bluemix.net`</td>
           </tr>
 		  <tr>
             <td>Vereinigte Staaten (Süden)</td>
-            <td>[https://logging.ng.bluemix.net](https://logging.ng.bluemix.net) </td>
+            <td>`https://logging.ng.bluemix.net`</td>
           </tr>
     </table>
 	
@@ -93,22 +96,22 @@ Führen Sie die folgenden Schritte aus, um Kibana über einen Browser zu starten
 	
 2. Überprüfen Sie, dass Sie bei dem {{site.data.keyword.cloud_notm}}-Konto angemeldet sind, in dem Sie Aktivitätsereignisse anzeigen und analysieren möchten.
 
-3. Zeigen Sie Bereichs- oder Kontoereignisse an. 
+3. Zeigen Sie Bereichs- oder Kontoereignisse an.
 
-* Klicken Sie in der rechten oberen Ecke des Kibana-Fensters auf die Position, an der Ihre Anmeldeinformationen angezeigt werden. 
-* Unter **Domäne** wählen Sie in der Dropdown-Liste die Option für Bereich oder Konto aus. 
-* Für Bereichsereignisse wählen Sie in der Dropdown-Liste **Bereich** den gewünschten Bereich aus. 
-* Für Kontoereignisse wählen Sie in der Dropdown-Liste **Konto** das richtige Konto aus. 
+* Klicken Sie in der rechten oberen Ecke des Kibana-Fensters auf die Position, an der Ihre Anmeldeinformationen angezeigt werden.
+* Unter **Domäne** wählen Sie in der Dropdown-Liste die Option für Bereich oder Konto aus.
+* Für Bereichsereignisse wählen Sie in der Dropdown-Liste **Bereich** den gewünschten Bereich aus.
+* Für Kontoereignisse wählen Sie in der Dropdown-Liste **Konto** das richtige Konto aus.
 
-4. Passen Sie die Suchzeit an. 
+4. Passen Sie die Suchzeit an.
 
-* Die Kibana-Standardsuchzeit ist auf die letzten 15 Minuten gesetzt. 
-* Klicken Sie in der oberen rechten grauen Leiste auf `Letzte 15 Minuten`. 
-* Wählen Sie den Zeitraum aus, für den Ereignisse angezeigt werden sollen. Die Ereignisse der letzten 3 Tage können für die Suche angegeben werden. Wählen Sie einen Zeitraum von maximal 3 Tagen aus. 
+* Die Kibana-Standardsuchzeit ist auf die letzten 15 Minuten gesetzt.
+* Klicken Sie in der oberen rechten grauen Leiste auf `Letzte 15 Minuten`.
+* Wählen Sie den Zeitraum aus, für den Ereignisse angezeigt werden sollen. Die Ereignisse der letzten 3 Tage können für die Suche angegeben werden. Wählen Sie einen Zeitraum von maximal 3 Tagen aus.
 
-5. Filtern Sie, um nur Activity Tracker-Ereignisse anzuzeigen. 
-* Bei der direkten Anzeige in Kibana werden sowohl Protokolle als auch Activity Tracker-Ereignisse aufgeführt. 
-* Geben Sie in der Suchleiste `type:ActivityTracker` ein, um nur Activity Tracker-Ereignisse anzuzeigen. 
+5. Filtern Sie, um nur Activity Tracker-Ereignisse anzuzeigen.
+* Bei der direkten Anzeige in Kibana werden sowohl Protokolle als auch Activity Tracker-Ereignisse aufgeführt.
+* Geben Sie in der Suchleiste `type:ActivityTracker` ein, um nur Activity Tracker-Ereignisse anzuzeigen.
 
 Die in Kibana angezeigten Ereignisse entsprechen den Ereignissen, die in der Domäne gehostet werden, welche in der Region, in der Sie Kibana gestartet haben, ausgewählt wurde.
 
@@ -116,7 +119,7 @@ Die in Kibana angezeigten Ereignisse entsprechen den Ereignissen, die in der Dom
 {: #launch_kibana_limitations}
 
 * Aufgrund von Einschränkungen in Kibana können in derselben Sitzung nicht mehrere Kibana-Browserregisterkarten zum Anzeigen verschiedener Bereiche oder Konten gleichzeitig geöffnet sein. Wenn Sie zwei oder mehr Sitzungen gleichzeitig geöffnet haben und von einer Bereichsdomäne zu einer Kontodomäne wechseln (oder umgekehrt), kann dies zu Problemen führen.
-* Standardmäßig kann nur der Kontoeigner Kontoereignisse anzeigen. Befolgen Sie die Anweisungen in [Ereignisse für ein Konto anzeigen](https://cloud.ibm.com/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events), um anderen Personen die Anzeige von Kontoereignissen zu ermöglichen. 
+* Standardmäßig kann nur der Kontoeigner Kontoereignisse anzeigen. Befolgen Sie die Anweisungen in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-view_acc_events#view_acc_events), um anderen Personen die Anzeige von Kontoereignissen zu ermöglichen.
 
 
 

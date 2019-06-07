@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 使用 {{site.data.keyword.cloudaccesstrailshort}} 监视 {{site.data.keyword.keymanagementserviceshort}} 活动
@@ -28,9 +29,11 @@ subcollection: cloud-activity-tracker
 使用本教程可了解如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来监视用户与 {{site.data.keyword.keymanagementserviceshort}} 服务的交互。
 {:shortdesc}
 
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 1. 了解如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务。
-2. 了解如何使用云服务来生成由 {{site.data.keyword.cloudaccesstrailshort}} 服务自动收集的活动事件。事件符合 [Cloud Auditing Data Federation (CADF) 标准 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}。
-3. 了解如何使用预定义的 {{site.data.keyword.cloudaccesstrailshort}} 仪表板来监视服务的云活动。
+2. 了解如何使用云服务来生成由 {{site.data.keyword.cloudaccesstrailshort}} 服务自动收集的活动事件。3. 了解如何使用预定义的 {{site.data.keyword.cloudaccesstrailshort}} 仪表板来监视服务的云活动。
 
 下图显示用户发起的活动更改服务状态时涉及的不同组件和操作：
 

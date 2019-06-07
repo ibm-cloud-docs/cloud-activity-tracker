@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 시작하기 튜토리얼
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailfull}} 서비스는 {{site.data.keyword.cloud_notm}} 내 서비스의 상태를 변경하는, 사용자가 시작한 활동을 기록합니다. {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 클라우드 서비스 간의 상호작용을 모니터하는 방법을 알아보십시오. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 
 다음 그림은 사용자가 시작한 활동이 서비스의 상태를 변경하는 경우 발생하는 다양한 컴포넌트 및 조치를 보여줍니다.
 
@@ -60,7 +65,7 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstraillong_notm}} 서비스의 인스턴스를 {{site.data.keyword.cloud_notm}}에 프로비저닝하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} "외부 링크 아이콘")에 로그인하십시오](https://cloud.ibm.com/login){:new_window}.
+1. [{{site.data.keyword.cloud_notm}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
 
     사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
@@ -124,7 +129,7 @@ subcollection: cloud-activity-tracker
 **참고: 사용자에게 IAM 정책을 부여하려면 {{site.data.keyword.loganalysisshort}} 서비스의 계정 소유자 또는 관리자여야 합니다.**
 
 ### 계정 도메인 이벤트를 모니터할 수 있는 액세스 권한을 사용자에게 부여
-{: #gs_acc}
+{: #index_acc}
 
 {{site.data.keyword.cloud_notm}} UI에서 IAM 정책을 사용자에게 부여하려면 다음 단계를 완료하십시오.
 
@@ -143,9 +148,11 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloud_notm}} UI에서 영역의 개발자 역할을 사용자에게 부여하려면 다음 단계를 완료하십시오.
 
-1. [{{site.data.keyword.cloud_notm}} 콘솔 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}.
+1. {{site.data.keyword.cloud_notm}} 콘솔에 로그인하십시오.
+
+    웹 브라우저를 열고 [{{site.data.keyword.cloud_notm}} 대시보드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}를 실행하십시오.
 	
-    사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
+	사용자 ID 및 비밀번호를 사용하여 로그인하면 {{site.data.keyword.cloud_notm}} UI가 열립니다.
 
 2. 메뉴 표시줄에서 **관리** &gt; **보안** &gt; **ID 및 액세스**를 클릭한 다음 **사용자**를 선택하십시오.
 

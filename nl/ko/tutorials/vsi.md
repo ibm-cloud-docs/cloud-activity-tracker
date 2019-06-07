@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, VSI events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # {{site.data.keyword.cloudaccesstrailshort}}를 사용하여 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} 모니터링
@@ -28,13 +29,16 @@ subcollection: cloud-activity-tracker
 이 튜토리얼을 사용하면 사용자가 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} 등과 함께 작업할 때 해당 사용자에 의해 생성된 {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 모니터하도록 {{site.data.keyword.cloud_notm}} 계정 내의 사용자를 구성하는 방법을 배울 수 있습니다.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
  {{site.data.keyword.BluVirtServers}}는 전용 코어 및 메모리 할당을 포함하여 구매하는 확장 가능한 가상 서버입니다. 이미지 템플리트와 같은 기능에 액세스할 수 있으며 몇 분 안에 추가할 수 있는 컴퓨팅 리소스를 찾고 있는 경우 이는 훌륭한 선택사항입니다. 
 * 추가 정보는 [{{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)의 내용을 참조하십시오. 
 * {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하는 조치 목록은 [{{site.data.keyword.BluVirtServers_short}}에 의해 생성된 이벤트](/docs/vsi?topic=virtual-servers-at_events#at_events)를 참조하십시오.
 
 {{site.data.keyword.baremetal_short}}는 하드웨어 리소스에 대한 하위 레벨 액세스 권한과 함께 성능과 제어를 제공하는 실제 싱글 테넌트 서버입니다. 
 * 추가 정보는 [{{site.data.keyword.baremetal_long}}](/docs/bare-metal?topic=bare-metal-about#about)의 내용을 참조하십시오.
-* {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하는 조치 목록은 [{{site.data.keyword.baremetal_short}}에 의해 생성된 이벤트](/docs/bare-metal?topic=bare-metal-at_events#at_events)를 참조하십시오.
+* {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하는 조치의 목록은 [{{site.data.keyword.baremetal_short}}에 의해 생성된 이벤트](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events)를 참조하십시오.
 
 **사용자가 {{site.data.keyword.BluVirtServers_short}} 및 {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하려면 사용자에게 IBM Cloud 콘솔의 인프라 리소스에 대한 액세스 권한이 있어야 합니다.**
 {: tip}

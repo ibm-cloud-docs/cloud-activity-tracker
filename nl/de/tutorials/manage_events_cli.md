@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Ereignisse mithilfe der Activity Tracker-CLI verwalten
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 In diesem Lernprogramm erfahren Sie, wie Sie mit der {{site.data.keyword.cloudaccesstrailshort}}-CLI Ereignisse über die Befehlszeile verwalten können. Hier erhalten Sie Informationen zum Abrufen gespeicherter Ereignisse, zum Herunterladen von Ereignissen, die in der {{site.data.keyword.IBM_notm}} Cloud gespeichert sind und zum Löschen von Ereignissen.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
 
 Führen Sie die folgenden Schritte aus:
 
@@ -41,17 +45,17 @@ Führen Sie die folgenden Schritte aus:
 ## Voraussetzungen
 {: #tutorial2_assumptions}
 
-1. Sie haben eine {{site.data.keyword.cloud_notm}}-Benutzer-ID mit der Berechtigung `Entwickler` zum Arbeiten in einem Bereich eines {{site.data.keyword.cloud_notm}}-Kontos, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt ist.  
+1. Sie haben eine {{site.data.keyword.cloud_notm}}-Benutzer-ID mit der Berechtigung `Entwickler` zum Arbeiten in einem Bereich eines {{site.data.keyword.cloud_notm}}-Kontos, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt ist. 
 
-    Weitere Informationen zur Bereitstellung des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service bereitstellen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision). 
+    Weitere Informationen zur Bereitstellung des {{site.data.keyword.cloudaccesstrailshort}}-Service finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-Service bereitstellen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision).
 
-2. Sie verfügen über eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service mit einem Premium-Plan. 
+2. Sie verfügen über eine Instanz des {{site.data.keyword.cloudaccesstrailshort}}-Service mit einem Premium-Plan.
 
-    **Hinweis:** Die {{site.data.keyword.cloudaccesstrailshort}}-CLI ist mit dem Plan `Lite` nicht verfügbar. 
+    **Hinweis:** Die {{site.data.keyword.cloudaccesstrailshort}}-CLI ist mit dem Plan `Lite` nicht verfügbar.
 
-3. Die {{site.data.keyword.cloudaccesstrailshort}}-CLI ist in Ihrem lokalen System installiert. Diese CLI ist erforderlich, um Ereignisse über die Befehlszeile zu verwalten.  
+3. Die {{site.data.keyword.cloudaccesstrailshort}}-CLI ist in Ihrem lokalen System installiert. Diese CLI ist erforderlich, um Ereignisse über die Befehlszeile zu verwalten. 
 
-    Weitere Informationen zum Installieren der {{site.data.keyword.cloudaccesstrailshort}}-CLI finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-CLI konfigurieren](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli). 
+    Weitere Informationen zum Installieren der {{site.data.keyword.cloudaccesstrailshort}}-CLI finden Sie in [{{site.data.keyword.cloudaccesstrailshort}}-CLI konfigurieren](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#config_cli).
 
 4. Sie haben sich über die Befehlszeile bei {{site.data.keyword.cloud_notm}} angemeldet. In diesem Lernprogramm sollten Sie die folgenden Befehle von einem Terminal ausführen: 
 
@@ -82,7 +86,7 @@ Führen Sie die folgenden Schritte aus, um den {{site.data.keyword.keymanagement
 
 {{site.data.keyword.keymanagementserviceshort}}-Ereignisse sind in der {{site.data.keyword.cloudaccesstrailshort}}-Kontodomäne verfügbar.
 
-In diesem Lernprogramm sind {{site.data.keyword.keymanagementserviceshort}}-Ereignisse in der Kontodomäne 'Vereinigte Staaten (Süden)' verfügbar. Dies ist die Region, in der Sie den {{site.data.keyword.keymanagementserviceshort}}-Service bereitgestellt haben.  
+In diesem Lernprogramm sind {{site.data.keyword.keymanagementserviceshort}}-Ereignisse in der Kontodomäne 'Vereinigte Staaten (Süden)' verfügbar. Dies ist die Region, in der Sie den {{site.data.keyword.keymanagementserviceshort}}-Service bereitgestellt haben. 
 
 Führen Sie den folgenden Befehl aus, um Informationen zu Ereignissen abzurufen, die an einem bestimmten Datum erfasst wurden:
 
@@ -111,7 +115,7 @@ ibmcloud at status -s 2017-07-25 -e 2017-07-25 -a
 ```
 {: screen}
 
-Dieser Befehl zählt die Ereignisse für den 25. Juni 2017. {{site.data.keyword.cloudaccesstrailshort}} ist ein globaler Service. Daher sind die Tage in koordinierter Weltzeit (UTC - Coordinated Universal Time) angegeben. Um die Ereignisse für einen vollständigen Tag in Ortszeit abzurufen, müssen Sie möglicherweise die Daten für mehrere UTC-Tage herunterladen. 
+Dieser Befehl zählt die Ereignisse für den 25. Juni 2017. {{site.data.keyword.cloudaccesstrailshort}} ist ein globaler Service. Daher sind die Tage in koordinierter Weltzeit (UTC - Coordinated Universal Time) angegeben. Um die Ereignisse für einen vollständigen Tag in Ortszeit abzurufen, müssen Sie möglicherweise die Daten für mehrere UTC-Tage herunterladen.
 
 
 
@@ -119,7 +123,7 @@ Dieser Befehl zählt die Ereignisse für den 25. Juni 2017. {{site.data.keyword.
 ## Schritt 3. Angeben, welche Ereignisse heruntergeladen werden sollen
 {: #tutorial2_step3}
 
-Erstellen Sie vor dem Herunterladen von Ereignissen eine Sitzung. Die Sitzung gibt an, welche Ereignisse heruntergeladen werden. 
+Erstellen Sie vor dem Herunterladen von Ereignissen eine Sitzung. Die Sitzung gibt an, welche Ereignisse heruntergeladen werden.
 
 
 Verwenden Sie zum Erstellen einer Sitzung den folgenden Befehl:
@@ -161,7 +165,7 @@ Dabei gilt Folgendes:
 * `-e` wird zum Festlegen des Enddatums verwendet.
 * `-a` wird verwendet, um anzugeben, dass Ereignisse in der Kontodomäne einbezogen werden sollen.
 
-Einer Sitzung ist ein Startdatum und ein Enddatum zugeordnet. Der Download-Befehl bezieht die Ereignisse zwischen diesen Daten einschließlich dieser Daten ein. 
+Einer Sitzung ist ein Startdatum und ein Enddatum zugeordnet. Der Download-Befehl bezieht die Ereignisse zwischen diesen Daten einschließlich dieser Daten ein.
 
 Der wichtige Teil der Befehlsausgabe ist die `ID` der Sitzung. Sie wird im Download-Befehl referenziert.
 
@@ -169,7 +173,7 @@ Um Informationen zu bestehenden Sitzungen abzurufen, geben Sie `ibmcloud at sess
 
 Weitere Informationen zu Sitzungen und zum Befehl `ibmcloud at session create` finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#session_create).
 
-Verwenden Sie den Befehl `ibmcloud at session help create`, um Hilfeinformationen über die Befehlszeile abzurufen. 
+Verwenden Sie den Befehl `ibmcloud at session help create`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 4. Die Ereignisse herunterladen, die über den für die Sitzung definierten Bereich angegeben sind
 {: #tutorial2_step4}
@@ -196,16 +200,16 @@ Download Successful
 ```
 {: screen} 
 
-Beim Herunterladen der Ereignisse bewegt sich der Fortschrittsanzeiger von 0 bis 100 % aufwärts. 
+Beim Herunterladen der Ereignisse bewegt sich der Fortschrittsanzeiger von 0 bis 100 % aufwärts.
 
 Weitere Informationen zum Befehl `ibmcloud at download` finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#download).
 
-Verwenden Sie den Befehl `ibmcloud at help download`, um Hilfeinformationen über die Befehlszeile abzurufen. 
+Verwenden Sie den Befehl `ibmcloud at help download`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 5. Sitzung löschen
 {: #tutorial2_step5}
 
-Wenn der Download abgeschlossen ist, löschen Sie die Sitzung. Führen Sie den folgenden Befehl aus: 
+Wenn der Download abgeschlossen ist, löschen Sie die Sitzung. Führen Sie den folgenden Befehl aus:
 
 ```
 ibmcloud at session delete sessionID
@@ -232,7 +236,7 @@ $ ibmcloud at session delete 21b19aeb-3d32-4c60-b912-517609c62db2
 
 Weitere Informationen zum Befehl `ibmcloud at session delete` finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#session_delete).
 
-Verwenden Sie den Befehl `ibmcloud at session help delete`, um Hilfeinformationen über die Befehlszeile abzurufen. 
+Verwenden Sie den Befehl `ibmcloud at session help delete`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 ## Schritt 6. Ereignisse in Activity Tracker automatisch löschen
 {: #tutorial2_step6}
@@ -250,7 +254,7 @@ Deleted successfully
 
 Weitere Informationen zum Befehl `ibmcloud at delete` finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#delete).
 
-Verwenden Sie den Befehl `ibmcloud at help delete`, um Hilfeinformationen über die Befehlszeile abzurufen. 
+Verwenden Sie den Befehl `ibmcloud at help delete`, um Hilfeinformationen über die Befehlszeile abzurufen.
 
 **Anmerkung:** Um Ereignisse automatisch zu löschen, können Sie mit dem CLI-Befehl `ibmcloud at option` eine Aufbewahrungsrichtlinie festlegen. Weitere Informationen finden Sie in der [CLI-Referenz](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#option).
 

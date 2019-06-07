@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Monitorando a atividade do {{site.data.keyword.keymanagementserviceshort}} com o {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 Utilize este tutorial para aprender como usar o serviço {{site.data.keyword.cloudaccesstrailfull}} para monitorar a interação de um usuário com o serviço {{site.data.keyword.keymanagementserviceshort}}. 
 {:shortdesc}
 
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 1. Saiba como provisionar o serviço do {{site.data.keyword.cloudaccesstrailshort}}.
-2. Saiba como usar um serviço de Nuvem para gerar eventos de atividade que são coletados automaticamente pelo serviço do {{site.data.keyword.cloudaccesstrailshort}}. Os eventos estão em conformidade com o [padrão do Cloud Auditing Data Federation (CADF) ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo") ](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
+2. Saiba como usar um serviço de Nuvem para gerar eventos de atividade que são coletados automaticamente pelo serviço do {{site.data.keyword.cloudaccesstrailshort}}.
 3. Saiba como monitorar a atividade de Nuvem de um serviço usando os painéis predefinidos do {{site.data.keyword.cloudaccesstrailshort}}.
 
 A figura a seguir mostra os diferentes componentes e ações que ocorrem quando uma atividade iniciada pelo usuário muda o estado de um serviço:

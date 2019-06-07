@@ -1,11 +1,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker/index.html" path="services/cloud-activity-tracker"}
+{: .toc subcollection="cloud-activity-tracker" audience="service" arm="3663130" href="/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started" path="services/cloud-activity-tracker"}
 Programma di traccia dell'attività IBM Cloud
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     activity_tracker_ov.md
     at_event.md
     cloud_services.md

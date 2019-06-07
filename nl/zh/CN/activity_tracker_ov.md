@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 使用 {{site.data.keyword.cloudaccesstrailfull}} 服务可跟踪应用程序与 {{site.data.keyword.cloud_notm}} 服务进行交互的情况。使用 {{site.data.keyword.cloudaccesstrailshort}} 可监视异常活动，以及满足监管审计要求。收集的事件符合 Cloud Auditing Data Federation (CADF) 标准。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} 为云中的 IT 资源提供了高等级的安全管理。
 * {{site.data.keyword.cloudaccesstrailshort}} 为管理员提供了在一个位置中捕获、存储、查看、搜索和监视 API 活动的解决方案。
@@ -189,6 +193,6 @@ CADF 事件模型包含以下组件：
 
 使用 {{site.data.keyword.cloudaccesstrailshort}} 服务时，请考虑有关安全性的以下信息：
 
-* 生成 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服务遵循 {{site.data.keyword.IBM_notm}} 云安全策略。有关更多信息，请参阅 [Trust the security and privacy of IBM Cloud ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}。
+* 生成 {{site.data.keyword.cloudaccesstrailshort}} 事件的 IBM 服务遵循 {{site.data.keyword.IBM_notm}} 云安全策略。有关更多信息，请参阅 [Trust the security and privacy of IBM Cloud ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/security){: new_window}。
 * {{site.data.keyword.cloudaccesstrailshort}} 服务捕获用户发起的用于更改云服务状态的操作。信息不提供对数据库或应用程序的直接访问。
 * 只有授权用户才能查看和监视 {{site.data.keyword.cloudaccesstrailshort}} 事件日志。每个用户通过 {{site.data.keyword.cloud_notm}} 中的用户唯一标识进行确定。

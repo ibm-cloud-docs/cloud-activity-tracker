@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 Use o serviço {{site.data.keyword.cloudaccesstrailfull}} para controlar como os aplicativos interagem com os serviços do {{site.data.keyword.cloud_notm}}. Use o {{site.data.keyword.cloudaccesstrailshort}} para monitorar atividade anormal e obedeça aos requisitos de auditoria regulamentares. Os eventos que são coletados obedecem ao padrão Cloud Auditing Data Federation (CADF).
 {:shortdesc}
+
+O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 * O {{site.data.keyword.cloudaccesstrailshort}} oferece controle de
 segurança de alto nível para seus recursos de TI na nuvem.
@@ -123,7 +127,7 @@ Para saber como provisionar o serviço do {{site.data.keyword.cloudaccesstrailsh
 É possível procurar, analisar e monitorar logs de atividades durante os últimos 3 dias por meio do Kibana usando o painel do Kibana do {{site.data.keyword.cloudaccesstrailshort}} ou criando os seus próprios painéis customizados. * **Nota:** esse recurso está disponível para usuários do plano **Premium**.
 
 * Para obter mais informações sobre como ativar o Kibana, veja [Navegando para o painel Kibana](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-launch_kibana#launch_kibana). 
-* Para obter uma lista de campos que podem ser usados para analisar eventos no Kibana, consulte [campos de evento do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
+* Para obter uma lista de campos que podem ser usados para analisar eventos no Kibana, consulte [Campo de evento do {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-at_event#at_event)
 
 
 
@@ -198,6 +202,6 @@ A tabela a seguir descreve os planos que estão disponíveis:
 
 Considere as informações a seguir sobre segurança ao trabalhar com o serviço do {{site.data.keyword.cloudaccesstrailshort}}:
 
-* Os serviços IBM que geram eventos do {{site.data.keyword.cloudaccesstrailshort}} seguem a política de segurança do {{site.data.keyword.IBM_notm}} Cloud. Para obter mais informações, veja [Confiar na segurança e privacidade do IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}.
+* Os serviços IBM que geram eventos do {{site.data.keyword.cloudaccesstrailshort}} seguem a política de segurança do {{site.data.keyword.IBM_notm}} Cloud. Para obter mais informações, veja [Confiar na segurança e privacidade do IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud/security){: new_window}.
 * O serviço {{site.data.keyword.cloudaccesstrailshort}} captura ações iniciadas pelo usuário que mudam o estado de serviços de nuvem. As informações não fornecem acesso direto a bancos de dados ou aplicativos.
 * Somente usuários autorizados podem visualizar e monitorar os logs de eventos do {{site.data.keyword.cloudaccesstrailshort}}. Cada usuário é identificado por seu ID exclusivo no {{site.data.keyword.cloud_notm}}.

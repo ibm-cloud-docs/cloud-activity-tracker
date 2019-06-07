@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Surveillance de l'activité de {{site.data.keyword.keymanagementserviceshort}} avec {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 Utilisez ce tutoriel pour apprendre à utiliser le service {{site.data.keyword.cloudaccesstrailfull}} pour surveiller l'interaction d'un utilisateur avec le service {{site.data.keyword.keymanagementserviceshort}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} est obsolète. A compter du 9 mai 2019, vous ne pourrez plus mettre à disposition de nouvelles instances {{site.data.keyword.cloudaccesstrailshort}}. Les instances de plan existantes sont prises en charge jusqu'au 30 septembre 2019. Pour continuer à surveiller l'activité de votre compte {{site.data.keyword.cloud_notm}}, mettez à disposition une instance du [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 1. Découvrez comment mettre à disposition le service {{site.data.keyword.cloudaccesstrailshort}}.
-2. Découvrez comment utiliser un service Cloud pour générer des événements d'activité qui sont automatiquement collectés par le service {{site.data.keyword.cloudaccesstrailshort}}. Les événements sont conformes à la [norme CADF (Cloud Auditing Data Federation) ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
+2. Découvrez comment utiliser un service Cloud pour générer des événements d'activité qui sont automatiquement collectés par le service {{site.data.keyword.cloudaccesstrailshort}}.
 3. Découvrez comment surveiller l'activité Cloud d'un service en utilisant les tableaux de bord prédéfinis d'{{site.data.keyword.cloudaccesstrailshort}}.
 
 La figure suivante représente les différents composants et les actions impliqués lorsqu'une activité initiée par un utilisateur modifie l'état d'un service :

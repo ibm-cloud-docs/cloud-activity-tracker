@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events, API
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 查看事件信息
 {: #viewing_events_info_api}
@@ -28,6 +28,8 @@ subcollection: cloud-activity-tracker
 使用 {{site.data.keyword.cloudaccesstrailshort}} API 可获取 {{site.data.keyword.cloudaccesstrailshort}} 中存储的事件的相关信息。
 {:shortdesc}
 
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 ## 使用 cURL 来获取事件数
 {: #viewing_events_info_api_records_per_day_curl}
@@ -46,7 +48,6 @@ subcollection: cloud-activity-tracker
     {: codeblock}
 
     其中
-
 
     * *token* 是 UAA 令牌。
     * *$spaceID* 表示您供应 {{site.data.keyword.cloudaccesstrailshort}} 的 Cloud Foundry 空间的 UUID。

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, download events
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Ereignisse herunterladen
 {: #downloading_events}
 
 Sie können Ereignisse in eine lokale Datei herunterladen. Ereignisse werden im Kontext einer Sitzung heruntergeladen. In einer Sitzung wird angegeben, welche Ereignisse heruntergeladen werden. Nachdem der Download abgeschlossen ist, müssen Sie die Sitzung löschen.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 
 Führen Sie die folgenden Schritte aus, um Ereignisse in eine lokale Datei herunterzuladen:
 

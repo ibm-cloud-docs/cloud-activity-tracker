@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, VSI events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 使用 {{site.data.keyword.cloudaccesstrailshort}} 來監視 {{site.data.keyword.BluVirtServers_short}} 和 {{site.data.keyword.baremetal_short}}
@@ -28,13 +29,16 @@ subcollection: cloud-activity-tracker
 使用本指導教學，學習如何配置 {{site.data.keyword.cloud_notm}} 帳戶中的使用者，以便您可以監視當這些使用者使用 {{site.data.keyword.BluVirtServers_short}} 及 {{site.data.keyword.baremetal_short}} 時，所產生的 {{site.data.keyword.cloudaccesstrailshort}} 事件。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 {{site.data.keyword.BluVirtServers}} 是與專用核心及記憶體配置一起購買的可擴充虛擬伺服器。如果您要尋找可立即新增的計算資源，並存取映像檔範本這類特性，則它們是不錯的選項。 
 * 如需相關資訊，請參閱[{{site.data.keyword.BluVirtServers_short}}](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)。 
 * 如需產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的動作清單，請參閱 [{{site.data.keyword.BluVirtServers_short}} 所產生的事件](/docs/vsi?topic=virtual-servers-at_events#at_events)。
 
 {{site.data.keyword.baremetal_short}} 是單一承租戶的實體伺服器，可在對硬體資源進行低階存取的情況下，為您提供效能與控制能力。 
 * 如需相關資訊，請參閱[{{site.data.keyword.baremetal_long}}](/docs/bare-metal?topic=bare-metal-about#about)。
-* 如需產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的動作清單，請參閱 [{{site.data.keyword.baremetal_short}} 所產生的事件](/docs/bare-metal?topic=bare-metal-at_events#at_events)。
+* 如需產生 {{site.data.keyword.cloudaccesstrailshort}} 事件的動作清單，請參閱 [{{site.data.keyword.baremetal_short}} 所產生的事件](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events)。
 
 **若要讓使用者產生 {{site.data.keyword.BluVirtServers_short}} 和 {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} 事件，該使用者必須要有在「IBM Cloud 主控台」中存取「基礎架構」資源的權限。**
 {: tip}

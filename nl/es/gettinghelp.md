@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, help, support
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Obtención de ayuda y soporte
@@ -28,12 +29,15 @@ subcollection: cloud-activity-tracker
 Si tiene problemas o preguntas al utilizar el servicio {{site.data.keyword.cloudaccesstraillong}} en {{site.data.keyword.cloud_notm}}, puede obtener ayuda buscando información o formulando preguntas en un foro. También puede abrir una incidencia de soporte.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 * Para comprobar si {{site.data.keyword.cloud_notm}} está disponible, vaya a la [página de estado de {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status){:new_window}.
 
 * Puede revisar los foros para ver si otros usuarios han tenido el mismo problema. Al utilizar los
 foros para formular una pregunta, etiquétela para que la puedan ver los equipos de desarrollo de {{site.data.keyword.cloud_notm}}.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * Si tiene preguntas técnicas sobre el desarrollo o el despliegue de una app con el servicio {{site.data.keyword.cloudaccesstrailshort}}, publique la pregunta en [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://stackoverflow.com/search?q=activity-tracker+ibm-bluemix){:new_window} y etiquete la pregunta con **ibm-cloud** y **activity-tracker**.
+  * Si tiene preguntas técnicas sobre el desarrollo o el despliegue de una app con el servicio {{site.data.keyword.cloudaccesstrailshort}}, publique la pregunta en [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://stackoverflow.com/search?q=activity-tracker+ibm-cloud){:new_window} y etiquete la pregunta con **ibm-cloud** y **activity-tracker**.
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * Para preguntas sobre el servicio e instrucciones sobre cómo empezar, utilice el foro [IBM developerWorks dW Answers ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/topics/activity-tracker/?smartspace=cloud){:new_window}. Incluya las etiquetas **activity-tracker** e **ibm-cloud**.
 

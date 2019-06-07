@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, overview
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -28,6 +29,9 @@ subcollection: cloud-activity-tracker
 
 애플리케이션과 {{site.data.keyword.cloud_notm}} 서비스가 어떻게 상호작용하는지 추적하려면 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하십시오. {{site.data.keyword.cloudaccesstrailshort}}을 사용하여 비정상 활동을 모니터하고 규정 감사 요구사항을 준수하십시오. 수집되는 이벤트는 CADF(Cloud Auditing Data Federation) 표준을 준수합니다.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}}은 클라우드에서
 사용자의 IT 리소스에 대한 높은 수준의 보안 통제를 제공합니다.
@@ -195,6 +199,6 @@ API 호출에서 요청하는 조치에 좌우됩니다.</td>
 
 {{site.data.keyword.cloudaccesstrailshort}} 서비스에 대해 작업할 때는 보안에 대한 다음 정보를 고려하십시오.
 
-* {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하는 IBM 서비스는 {{site.data.keyword.IBM_notm}} 클라우드 보안 정책을 따릅니다. 자세한 정보는 [Trust the security and privacy of IBM Cloud ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud-computing/learn-more/why-ibm-cloud/security/){: new_window}를 참조하십시오.
+* {{site.data.keyword.cloudaccesstrailshort}} 이벤트를 생성하는 IBM 서비스는 {{site.data.keyword.IBM_notm}} 클라우드 보안 정책을 따릅니다. 자세한 정보는 [Trust the security and privacy of IBM Cloud ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/security){: new_window}를 참조하십시오.
 * {{site.data.keyword.cloudaccesstrailshort}} 서비스는 클라우드 서비스의 상태를 변경하는, 사용자가 시작한 조치를 캡처합니다. 정보는 데이터베이스 또는 애플리케이션에 대한 직접 액세스를 제공하지 않습니다.
 * 권한 부여된 사용자만 {{site.data.keyword.cloudaccesstrailshort}} 이벤트 로그를 보고 모니터할 수 있습니다. 각 사용자는 {{site.data.keyword.cloud_notm}}에서 자신의 고유 ID로 식별됩니다.

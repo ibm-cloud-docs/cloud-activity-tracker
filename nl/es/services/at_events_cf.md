@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, Cloud Foundry events, CF
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Sucesos de Cloud Foundry
@@ -28,6 +29,8 @@ subcollection: cloud-activity-tracker
 Utilice el servicio {{site.data.keyword.cloudaccesstrailfull}} para realizar un seguimiento de la interacción con los servicios básicos de la plataforma en {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 En la siguiente lista se describen las distintas tareas básicas de la plataforma que envían sucesos al servicio {{site.data.keyword.cloudaccesstrailshort}}: 
 

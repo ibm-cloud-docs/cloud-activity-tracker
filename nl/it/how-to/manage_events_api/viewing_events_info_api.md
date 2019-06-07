@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events, API
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Visualizzazione di informazioni sull'evento
 {: #viewing_events_info_api}
@@ -28,6 +28,8 @@ subcollection: cloud-activity-tracker
 Utilizza l'API {{site.data.keyword.cloudaccesstrailshort}} per ottenere le informazioni sugli eventi archiviati in {{site.data.keyword.cloudaccesstrailshort}}.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
 
 ## Richiamo del numero di eventi utilizzando cURL
 {: #viewing_events_info_api_records_per_day_curl}

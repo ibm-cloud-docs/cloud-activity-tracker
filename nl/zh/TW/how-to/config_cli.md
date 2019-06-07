@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -20,13 +20,16 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 配置 Activity Tracker CLI
 {: #config_cli}
 
 {{site.data.keyword.cloudaccesstraillong}} 服務包含一個指令行介面 (CLI)，您可以用來管理雲端中的事件。您可以使用 {{site.data.keyword.cloud_notm}} 外掛程式來檢視事件的狀態、下載事件，以及配置保留原則。CLI 提供不同類型的說明：瞭解 CLI 及所支援指令的一般說明、瞭解如何使用指令的指令說明，或瞭解如何使用指令之次指令的次指令說明。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 
 ## 從 {{site.data.keyword.cloud_notm}} 儲存庫安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式
@@ -50,7 +53,7 @@ subcollection: cloud-activity-tracker
 3. 安裝 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式。執行下列指令：
 
     ```
-    ibmcloud plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker
     ```
     {: codeblock}
  
@@ -98,7 +101,7 @@ subcollection: cloud-activity-tracker
 
 1. 安裝外掛程式。
 
-    從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
+    從 [{{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
 	
 	* 選取平台值：**linux64**。 
 	
@@ -119,7 +122,7 @@ subcollection: cloud-activity-tracker
 
 請完成下列步驟，以在 Windows 上安裝外掛程式：
 
-1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
+1. 從 [{{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。 
 	
 	1. 選取平台值：**win64**。 
 	2. 按一下**儲存檔案**。  
@@ -138,7 +141,7 @@ subcollection: cloud-activity-tracker
 
 請完成下列步驟，在 Mac OS X 上安裝外掛程式：
 
-1. 從 [ {{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
+1. 從 [{{site.data.keyword.cloud_notm}} CLI 頁面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window} 下載最新版 {{site.data.keyword.cloudaccesstrailshort}} 服務 CLI 外掛程式 (activity-tracker)。
 	
 	1. 選取平台值 `osx`。 
 	2. 按一下**儲存檔案**。  
@@ -190,7 +193,7 @@ subcollection: cloud-activity-tracker
 1. 更新 {{site.data.keyword.cloudaccesstrailshort}} 外掛程式。執行下列指令：
 
     ```
-    ibmcloud plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker
     ```
     {: codeblock}
  

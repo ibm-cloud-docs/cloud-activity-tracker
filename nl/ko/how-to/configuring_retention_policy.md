@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, configure retention policy
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 이벤트 보존 정책 구성
 {: #configuring_retention_policy}
 
 이벤트가 {{site.data.keyword.cloudaccesstrailshort}}에서 보존되는 최대 일 수를 정의하는 보존 정책을 보고 구성하려면 **ibmcloud at option** 명령을 사용하십시오. 기본적으로 보존 정책은 사용 안함으로 설정되며 이벤트는 무기한으로 보존됩니다. 보존 기간이 만료되면 이벤트는 자동으로 삭제됩니다. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
+
 
 계정 내의 모든 영역에 대해 동일한 보존 정책을 설정하거나 특정 영역에 대한 보존 기간을 사용자 정의할 수 있습니다. 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, manage events, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Activity Tracker CLI를 사용한 이벤트 관리
@@ -27,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 이 튜토리얼을 통해 명령행으로 이벤트를 관리하기 위해 {{site.data.keyword.cloudaccesstrailshort}} CLI를 사용하는 방법에 대해 알아보십시오. 저장된 이벤트에 대한 정보를 가져오는 방법, {{site.data.keyword.IBM_notm}} 클라우드에 저장된 이벤트를 다운로드하는 방법, 또는 이벤트를 삭제하는 방법을 알아보십시오.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
 
 다음 단계를 완료하십시오.
 
@@ -41,7 +45,7 @@ subcollection: cloud-activity-tracker
 ## 가정
 {: #tutorial2_assumptions}
 
-1. {{site.data.keyword.cloudaccesstrailshort}} 서비스가 프로비저닝된 {{site.data.keyword.cloud_notm}} 계정의 영역에서 작업할 수 있는 `개발자` 권한을 가진 {{site.data.keyword.cloud_notm}} 사용자 ID가 있습니다.  
+1. {{site.data.keyword.cloudaccesstrailshort}} 서비스가 프로비저닝된 {{site.data.keyword.cloud_notm}} 계정의 영역에서 작업할 수 있는 `개발자` 권한을 가진 {{site.data.keyword.cloud_notm}} 사용자 ID가 있습니다. 
 
     {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하는 방법에 대한 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 서비스 프로비저닝](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-provision#provision)을 참조하십시오.
 

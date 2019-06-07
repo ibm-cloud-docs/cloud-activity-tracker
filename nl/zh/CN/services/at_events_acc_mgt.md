@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, account events
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 # 帐户管理事件  
 {: #at_events_acc_mgt}
@@ -27,9 +28,12 @@ subcollection: cloud-activity-tracker
 作为安全主管、审计员或管理者，您可以使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来跟踪用户和应用程序与 {{site.data.keyword.Bluemix}} 帐户的交互方式。
 {:shortdesc}
 
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 {{site.data.keyword.cloudaccesstrailfull_notm}} 服务会记录用户发起的用于在 {{site.data.keyword.cloud_notm}} 中更改服务状态的活动。有关更多信息，请参阅[关于 {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov)。
 
-要开始监视用户的操作，请参阅[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla)。 
+要开始监视用户的操作，请参阅[{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started)。 
 
 
 
@@ -77,15 +81,15 @@ subcollection: cloud-activity-tracker
   </tr>
   <tr>
     <td>user-management.user.create</td>
-	  <td>向用户发送加入帐户邀请时，将生成事件。</br>帐户所有者是帐户中唯一可以执行此操作的用户。</td>
+	  <td>向用户发送加入帐户邀请时，将生成事件。</br>帐户所有者是帐户中可执行此操作的唯一用户。</td>
   </tr>
   <tr>
     <td>user-management.user.active</td>
-	  <td>激活帐户中用户时，将生成事件。</br>用户验证其电子邮件地址时，将生成事件。</td>
+	  <td>激活帐户中用户时，将生成事件。</br>用户验证其电子邮件地址时，将生成该事件。</td>
   </tr>
   <tr>
-    <td>user-management.account.user.delete</td>
-	  <td>从帐户中除去用户时，将生成事件。</br>帐户所有者是帐户中唯一可以执行此操作的用户。</td>
+    <td>user-management.user.delete</td>
+	  <td>从帐户中除去用户时，将生成事件。</br>帐户所有者是帐户中可执行此操作的唯一用户。</td>
   </tr>
 </table>
 

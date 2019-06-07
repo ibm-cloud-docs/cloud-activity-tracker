@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, compliance
 
@@ -20,14 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Konformität
 {: #compliance}
 
-[{{site.data.keyword.cloud_notm}} bietet eine Cloudplattform und Services, die den strengen Sicherheitsstandards von IBM entsprechen](/docs/security/compliance.html#compliance). Der {{site.data.keyword.cloudaccesstraillong}}-Service ist ein DevOps-Service, der für {{site.data.keyword.cloud_notm}} erstellt wurde. 
+[{{site.data.keyword.cloud_notm}} bietet eine Cloudplattform und Services, die den strengen Sicherheitsstandards von IBM entsprechen](/docs/overview?topic=overview-security#compliance). Der {{site.data.keyword.cloudaccesstraillong}}-Service ist ein DevOps-Service, der für {{site.data.keyword.cloud_notm}} erstellt wurde. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
 
 ## Datenschutz-Grundverordnung
 
@@ -63,7 +66,7 @@ Beachten Sie die folgenden Informationen:
 
 Wenn Sie von einem kostenpflichtigen Plan in den Standard- oder Lite-Plan wechseln, werden Ereignisse, die sich im Langzeitspeicher befinden, in ungefähr einem Tag gelöscht.
 
-Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). 
+Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Unterstützung anfordern](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

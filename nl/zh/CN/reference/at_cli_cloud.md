@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, CLI
 
@@ -18,6 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:deprecated: .deprecated}
 
 
 # IBM Cloud Activity Tracker CLI
@@ -25,6 +26,10 @@ subcollection: cloud-activity-tracker
 
 您可以使用 {{site.data.keyword.cloudaccesstraillong}} CLI 管理 {{site.data.keyword.cloudaccesstrailshort}} 事件。
 {: shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 
 **先决条件**
 * 运行命令之前，请使用 `ibmcloud login` 命令登录到 {{site.data.keyword.Bluemix}}，以生成访问令牌并对会话进行认证。

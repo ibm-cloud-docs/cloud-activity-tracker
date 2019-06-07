@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, delete event, API
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 이벤트 정보 삭제
@@ -28,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailshort}}에 저장된 이벤트를 삭제하려면 {{site.data.keyword.cloudaccesstrailshort}} API를 사용하십시오.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
+{: deprecated}
 
 **참고:** API 호출을 사용하여 이벤트를 수동으로 삭제할 수도 있지만, 보존 정책을 설정하여 이벤트를 자동으로 삭제하는 것을 고려하십시오. 자세한 정보는 [이벤트 보존 정책 구성](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy)을 참조하십시오.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-04-25"
 
 ---
 
@@ -14,13 +14,16 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:deprecated: .deprecated}
 
 # 入门
 {: #getting-started-with-cla}
 
 {{site.data.keyword.cloudaccesstrailfull}} 服务会记录用户发起的用于在 {{site.data.keyword.Bluemix}} 中更改服务状态的活动。了解如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来监视用户与云服务的交互。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例，并且会除去对*轻量*套餐实例的访问。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
 
 下图显示用户发起的活动更改服务状态时涉及的不同组件和操作：
 

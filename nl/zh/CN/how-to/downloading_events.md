@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, download events
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 下载事件
 {: #downloading_events}
 
 您可以将事件下载到本地文件中。您将在会话的上下文中下载事件。会话指定将下载哪些事件。下载完成后，必须删除相应会话。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 
 要将事件下载到本地文件中，请完成以下步骤：
 
@@ -123,7 +127,6 @@ ibmcloud at download -o Events_File_Name Session_ID
 {: codeblock}
 
 其中
-
 
 * Events_File_Name 是输出文件的名称。
 * Session_ID 是会话的 GUID。您在上一步中获取此值。将此值用于 **Id** 字段。

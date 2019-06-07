@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Guía de aprendizaje de iniciación
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 El servicio {{site.data.keyword.cloudaccesstrailfull}} registra las actividades iniciadas por el usuario que cambian el estado de un servicio en {{site.data.keyword.cloud_notm}}. Obtenga más información sobre cómo utilizar el servicio {{site.data.keyword.cloudaccesstrailfull}} para supervisar la interacción de un usuario con el servicio de nube. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 En la figura siguiente se muestran los distintos componentes y acciones que se producen cuando una actividad iniciada por el usuario cambia el estado de un servicio:
 
@@ -60,7 +65,7 @@ Tenga en cuenta la información siguiente al elegir dónde suministrar una insta
 
 Siga estos pasos para suministrar una instancia del servicio {{site.data.keyword.cloudaccesstraillong_notm}} en {{site.data.keyword.cloud_notm}}:
 
-1. [Inicie sesión en {{site.data.keyword.cloud_notm}} "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
+1. [Inicie sesión en {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 
     Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
@@ -125,7 +130,7 @@ para el espacio.
 **Nota: para otorgar a un usuario una política IAM, debe ser el propietario de la cuenta o un administrador del servicio {{site.data.keyword.loganalysisshort}}.**
 
 ### Cómo otorgar a los usuarios acceso para supervisar sucesos de dominio de cuenta
-{: #gs_acc}
+{: #index_acc}
 
 Siga los pasos siguientes para otorgar a un usuario una política IAM desde la interfaz de usuario de {{site.data.keyword.cloud_notm}}:
 
@@ -145,10 +150,11 @@ Siga los pasos siguientes para otorgar a un usuario una política IAM desde la i
 
 Para otorgar a un usuario un rol de desarrollador en un espacio desde la interfaz de usuario de {{site.data.keyword.cloud_notm}}, siga estos pasos:
 
-1. [Inicie sesión en la consola de {{site.data.keyword.cloud_notm}}
-![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
+1. Inicie la sesión en la consola de {{site.data.keyword.cloud_notm}}.
+
+    Abra un navegador web e inicie el [panel de control de {{site.data.keyword.cloud_notm}} ![Icono de enlace](../../icons/launch-glyph.svg "Icono de enlace")](https://cloud.ibm.com/login){:new_window}.
 	
-    Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
+	Después de iniciar la sesión con su ID de usuario y contraseña, se abre la interfaz de usuario de {{site.data.keyword.cloud_notm}}.
 
 2. Desde la barra de menús, pulse **Gestionar** &gt; **Seguridad** &gt; **Identidad y acceso** y luego seleccione **Usuarios**.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-22"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, config CLI
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Configuración de la CLI de Activity Tracker
 {: #config_cli}
@@ -28,12 +28,14 @@ subcollection: cloud-activity-tracker
 El servicio {{site.data.keyword.cloudaccesstraillong}} incluye una interfaz de línea de mandatos (CLI) que puede utilizar para gestionar los sucesos en la nube. Puede utilizar el plugin de {{site.data.keyword.cloud_notm}} para ver el estado de los sucesos, descargar sucesos y configurar la política de retención. La CLI ofrece distintos tipos de ayuda: ayuda general para obtener información sobre la CLI y los mandatos soportados, ayuda sobre mandatos para ver cómo se utiliza un mandato o ayuda sobre submandatos para aprender a utilizar un submandato de un mandato.
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 
 ## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} desde el repositorio de {{site.data.keyword.cloud_notm}}
 {: #install_cli_repo}
 
-Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}},
-siga estos pasos:
+Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}}, siga estos pasos:
 
 1. Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
@@ -51,7 +53,7 @@ siga estos pasos:
 3. Instale el plugin de {{site.data.keyword.cloudaccesstrailshort}}. Ejecute el mandato siguiente:
 
     ```
-    ibmcloud plugin install activity-tracker -r Bluemix
+    ibmcloud plugin install activity-tracker
     ```
     {: codeblock}
  
@@ -69,8 +71,7 @@ siga estos pasos:
 ## Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} desde un archivo
 {: #install_cli}
 
-Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}},
-siga estos pasos:
+Para instalar la CLI de {{site.data.keyword.cloudaccesstrailshort}}, siga estos pasos:
 
 1. Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
@@ -80,9 +81,7 @@ siga estos pasos:
 
     * Para Linux, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Linux](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_linux).
     * Para Windows, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Windows](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_windows).
-    * Para Mac OS X, consulte
-[Instalación del plugin de
-{{site.data.keyword.cloudaccesstrailshort}} en Mac OS X](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac).
+    * Para Mac OS X, consulte [Instalación del plugin de {{site.data.keyword.cloudaccesstrailshort}} en Mac OS X](/docs/services//cloud-activity-tracker/how-to?topic=cloud-activity-tracker-config_cli#install_cli_mac).
  
 3. Compruebe la instalación del plugin de la CLI.
   
@@ -102,10 +101,7 @@ Siga estos pasos para instalar el plugin en Linux:
 
 1. Instale el plugin.
 
-    Descargue el release más reciente del plugin de la CLI del servicio
-{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
-[la página de la CLI de {{site.data.keyword.cloud_notm}}
-![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+    Descargue el release más reciente del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}.
 	
 	* Seleccione el valor de la plataforma: **linux64**. 
 	
@@ -126,10 +122,7 @@ Siga estos pasos para instalar el plugin en Linux:
 
 Siga estos pasos para instalar el plugin en Windows:
 
-1. Descargue el release más reciente del plugin de la CLI del servicio
-{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
-[la página de la CLI de {{site.data.keyword.cloud_notm}}
-![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}. 
+1. Descargue el release más reciente del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}. 
 	
 	1. Seleccione el valor de la plataforma: **win64**. 
 	2. Pulse **Guardar archivo**.  
@@ -148,10 +141,7 @@ Siga estos pasos para instalar el plugin en Windows:
 
 Siga estos pasos para instalar el plugin en Mac OS X:
 
-1. Descargue el release más reciente del plugin de la CLI del servicio
-{{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde
-[la página de la CLI de {{site.data.keyword.cloud_notm}}
-![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://clis.ng.bluemix.net/ui/repository.html#bluemix-plugins){:new_window}.
+1. Descargue el release más reciente del plugin de la CLI del servicio {{site.data.keyword.cloudaccesstrailshort}} (activity-tracker) desde [la página de la CLI de {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://plugins.cloud.ibm.com/ui/repository.html){:new_window}.
 	
 	1. Seleccione el valor de plataforma `osx`. 
 	2. Pulse **Guardar archivo**.  
@@ -203,7 +193,7 @@ Complete los pasos siguientes para actualizar la CLI de servicio de {{site.data.
 1. Actualice el plugin de {{site.data.keyword.cloudaccesstrailshort}}. Ejecute el mandato siguiente:
 
     ```
-    ibmcloud plugin update activity-tracker -r Bluemix
+    ibmcloud plugin update activity-tracker
     ```
     {: codeblock}
  

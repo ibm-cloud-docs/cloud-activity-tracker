@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, IAM
 
@@ -20,13 +20,16 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # イベントを表示する許可の付与
 {: #grant_permissions}
 
 {{site.data.keyword.cloud}} では、Cloud Foundry 役割、IAM 役割、あるいは両方をユーザーに割り当てることができます。 これらの役割は、{{site.data.keyword.cloudaccesstrailshort}} サービスを使用して作業するときにユーザーが実行できるタスクを定義します。  
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{: deprecated}
 
 ## アカウント・イベントを表示する許可の付与
 {: #grant_acc_events}
@@ -103,7 +106,7 @@ subcollection: cloud-activity-tracker
 	  </tr>
 	  <tr>
 	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*アドミニストレーター*、*オペレーター*、*エディター*、*ビューアー*です。 </td>
+		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*アドミニストレーター*、*オペレーター*、*エディター*、*ビューアー*です。</td>
 	  </tr>
      </table>
 	
@@ -135,7 +138,7 @@ subcollection: cloud-activity-tracker
 
     ユーザーがアカウントのメンバーでない場合、[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)を参照してください。
 
-4. **「Cloud Foundry アクセス権限」**を選択します。次に、組織を選択します。
+4. **「Cloud Foundry アクセス権限」**を選択します。 次に、組織を選択します。
 
     その組織で使用可能なスペースがリストされます。
 

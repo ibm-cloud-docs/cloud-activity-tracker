@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, delete event, API
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # Ereignisinformationen löschen
@@ -28,6 +28,9 @@ subcollection: cloud-activity-tracker
 
 Verwenden Sie die {{site.data.keyword.cloudaccesstrailshort}}-API, um in {{site.data.keyword.cloudaccesstrailshort}} gespeicherte Ereignisse zu löschen.
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
 
 **Hinweis:** Auch wenn Sie Ereignisse manuell mithilfe des API-Aufrufs löschen können, sollten Sie überlegen, ob Sie die Aufbewahrungsrichtlinie so konfigurieren, dass Ereignisse automatisch gelöscht werden. Weitere Informationen finden Sie in [Ereignisaufbewahrungsrichtlinie konfigurieren](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-configuring_retention_policy#configuring_retention_policy).
 

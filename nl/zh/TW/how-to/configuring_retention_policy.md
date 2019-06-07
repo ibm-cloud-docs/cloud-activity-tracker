@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, configure retention policy
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # 配置事件保留原則
 {: #configuring_retention_policy}
@@ -28,6 +28,10 @@ subcollection: cloud-activity-tracker
 使用 **ibmcloud at option** 指令，可檢視及配置定義 {{site.data.keyword.cloudaccesstrailshort}}
 中保留事件最長天數的保留原則。依預設，會停用保留原則，且事件會無限期地保留。在保留期間過期之後，即會自動刪除事件。
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 
 您可以為帳戶中的所有空間設定相同的保留原則，也可以自訂空間的保留期間。 
 

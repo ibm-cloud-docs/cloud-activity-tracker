@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, view events, UI
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Ereignisse anzeigen
 {: #view_acc_events}
@@ -28,6 +28,9 @@ subcollection: cloud-activity-tracker
 Sie können Ereignisse über die Benutzerschnittstelle (UI) für {{site.data.keyword.cloudaccesstrailshort}} in der {{site.data.keyword.cloud_notm}}-Konsole oder über Kibana anzeigen.
 {:shortdesc}
    
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 
 ## Ereignisse für ein Konto anzeigen
 {: #view_acc_events_account_events}

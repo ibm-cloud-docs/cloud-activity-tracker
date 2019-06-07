@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # {{site.data.keyword.keymanagementserviceshort}}-Aktivität mit {{site.data.keyword.cloudaccesstrailshort}} überwachen
@@ -28,9 +29,12 @@ subcollection: cloud-activity-tracker
 In diesem Lernprogramm erfahren Sie, wie Sie mit dem {{site.data.keyword.cloudaccesstrailfull}}-Service die Interaktion eines Benutzers mit dem {{site.data.keyword.keymanagementserviceshort}}-Service überwachen. 
 {:shortdesc}
 
-1. Lernen Sie, wie der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt wird. 
-2. Lernen Sie, wie ein Cloud-Service zum Generieren von Aktivitätsereignissen verwendet wird, die automatisch vom {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst werden. Ereignisse entsprechen dem [Standard der Cloud Auditing Data Federation (CADF) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
-3.Lernen Sie, wie die Cloud-Aktivität eines Service mithilfe vordefinierter {{site.data.keyword.cloudaccesstrailshort}}-Dashboards überwacht wird. 
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
+1. Lernen Sie, wie der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt wird.
+2. Lernen Sie, wie ein Cloud-Service zum Generieren von Aktivitätsereignissen verwendet wird, die automatisch vom {{site.data.keyword.cloudaccesstrailshort}}-Service erfasst werden.
+3.Lernen Sie, wie die Cloud-Aktivität eines Service mithilfe vordefinierter {{site.data.keyword.cloudaccesstrailshort}}-Dashboards überwacht wird.
 
 Die folgende Abbildung zeigt die verschiedenen Komponenten und Aktionen, die ausgeführt werden, wenn eine vom Benutzer eingeleitete Aktivität den Status eines Service ändert:
 
@@ -53,7 +57,7 @@ Sie müssen den {{site.data.keyword.cloudaccesstrailshort}}-Service in derselben
 
 Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.cloudaccesstraillong_notm}}-Service in der {{site.data.keyword.cloud_notm}} bereitzustellen:
 
-1. [Melden Sie sich bei {{site.data.keyword.cloud_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an. 
+1. [Melden Sie sich bei {{site.data.keyword.cloud_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an.
     
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 
@@ -61,7 +65,7 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
 3. Wählen Sie die Kategorie **Sicherheit und Identität** aus, um die Liste der angezeigten Services zu filtern.
 
-    **Hinweis:** Der Service ist auch über die Kategorie **Entwicklertools** verfügbar. 
+    **Hinweis:** Der Service ist auch über die Kategorie **Entwicklertools** verfügbar.
 
 4. Klicken Sie auf die Kachel **Activity Tracker**. 
 
@@ -85,14 +89,14 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 	  </tr>
 	  <tr>
 	    <td>Bereich auswählen</td>
-		<td>Wählen Sie den Bereich (Space) in der Organisation aus, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll. </td>
+		<td>Wählen Sie den Bereich (Space) in der Organisation aus, in dem der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.</td>
 	  </tr>
 	</table>
 
 6. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.cloudaccesstrailshort}}-Service in dem Bereich, in dem Sie angemeldet sind, bereitzustellen.
    
 
-## Schritt 2. Cloud-Service konfigurieren  
+## Schritt 2.  Cloud-Service konfigurieren  
 {: #kp_step2}
 
 In diesem Lernprogramm erfahren Sie, wie Sie die API-Aktivität für den {{site.data.keyword.keymanagementserviceshort}}-Service in der {{site.data.keyword.cloud_notm}} überwachen.
@@ -123,13 +127,13 @@ In diesem Schritt erstellen Sie mit dem {{site.data.keyword.keymanagementservice
 
 In diesem Schritt überprüfen Sie mithilfe der {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle, dass {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse generiert wurden.
 
-Führen Sie die folgenden Schritte aus, um zu überprüfen, dass ein Ereignis erstellt wurde: 
+Führen Sie die folgenden Schritte aus, um zu überprüfen, dass ein Ereignis erstellt wurde:
 
-1. Erteilen Sie dem Benutzer Berechtigungen zum Anzeigen von Ereignissen für ein Konto. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events) und [Berechtigungen zum Anzeigen von Kontoereignissen erteilen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_acc_events). 
+1. Erteilen Sie dem Benutzer Berechtigungen zum Anzeigen von Ereignissen für ein Konto. Weitere Informationen finden Sie in [Ereignisse für ein Konto anzeigen](/docs/services/cloud-activity-tracker/how-to/manage-events-ui?topic=cloud-activity-tracker-view_acc_events#view_acc_events_account_events) und [Berechtigungen zum Anzeigen von Kontoereignissen erteilen](/docs/services/cloud-activity-tracker/how-to?topic=cloud-activity-tracker-grant_permissions#grant_acc_events).
 
 2. Wählen Sie im {{site.data.keyword.cloud_notm}}-Dashboard den {{site.data.keyword.cloudaccesstrailshort}}-Service aus. Das Service-Dashboard wird geöffnet.
 
-3. Konfigurieren Sie die Ansicht, in der nach den {{site.data.keyword.keymanagementserviceshort}}-Ereignissen gesucht werden soll, die generiert wurden, als Sie den Service bereitgestellt und einen Schlüssel hinzugefügt haben. 
+3. Konfigurieren Sie die Ansicht, in der nach den {{site.data.keyword.keymanagementserviceshort}}-Ereignissen gesucht werden soll, die generiert wurden, als Sie den Service bereitgestellt und einen Schlüssel hinzugefügt haben.
 
     * Wähle Sie für das Feld *Protokolle anzeigen* die Option **Kontoprotokolle** aus.
     * Wählen Sie für das Feld *Suche* den Wert **target.typeURI_str** ein und geben Sie im Feld *Filtern* den Wert `kms/secrets` ein.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, account events
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 # Kontoverwaltungsereignisse  
 {: #at_events_acc_mgt}
@@ -27,9 +28,12 @@ subcollection: cloud-activity-tracker
 Als Sicherheitsbeauftragter, Prüfer oder Manager können Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um zu verfolgen, wie Benutzer und Anwendungen mit dem {{site.data.keyword.Bluemix}}-Konto interagieren. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 Der {{site.data.keyword.cloudaccesstrailfull_notm}}-Service zeichnet vom Benutzer eingeleitete Aktivitäten auf, die den Status eines Service in der {{site.data.keyword.cloud_notm}} ändern. Weitere Informationen finden Sie in [Informationen zu {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-activity_tracker_ov#activity_tracker_ov).
 
-Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started-with-cla#getting-started-with-cla). 
+Informationen zum Einstieg in die Überwachung der Aktionen Ihrer Benutzer finden Sie in [{{site.data.keyword.cloudaccesstrailfull_notm}}](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-getting-started). 
 
 
 
@@ -77,15 +81,15 @@ In der folgenden Tabelle sind die API-Methoden aufgeführt, die ein Ereignis gen
   </tr>
   <tr>
     <td>user-management.user.create</td>
-	  <td>Es wird ein Ereignis generiert, wenn Sie einem Benutzer eine Einladung schicken, um einem Konto beizutreten. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen.</td>
+	  <td>Es wird ein Ereignis generiert, wenn Sie einem Benutzer eine Einladung schicken, um einem Konto beizutreten. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen. </td>
   </tr>
   <tr>
     <td>user-management.user.active</td>
 	  <td>Es wird ein Ereignis generiert, wenn Sie den Benutzer im Konto aktivieren. </br>Wenn der Benutzer seine E-Mail-Adresse bestätigt, wird das Ereignis generiert.</td>
   </tr>
   <tr>
-    <td>user-management.account.user.delete</td>
-	  <td>Es wird ein Ereignis generiert, wenn Sie einen Benutzer aus dem Konto entfernen. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen.</td>
+    <td>user-management.user.delete</td>
+	  <td>Es wird ein Ereignis generiert, wenn Sie einen Benutzer aus dem Konto entfernen. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen. </td>
   </tr>
 </table>
 

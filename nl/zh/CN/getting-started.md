@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, getting started
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # 入门教程
@@ -27,6 +28,10 @@ subcollection: cloud-activity-tracker
 
 {{site.data.keyword.cloudaccesstrailfull}} 服务会记录用户发起的用于在 {{site.data.keyword.cloud_notm}} 中更改服务状态的活动。了解如何使用 {{site.data.keyword.cloudaccesstrailfull}} 服务来监视用户与云服务的交互。
 {:shortdesc}
+
+不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{: deprecated}
+
 
 下图显示用户发起的活动更改服务状态时涉及的不同组件和操作：
 
@@ -60,7 +65,7 @@ subcollection: cloud-activity-tracker
 
 要在 {{site.data.keyword.cloud_notm}} 中供应 {{site.data.keyword.cloudaccesstraillong_notm}} 服务的实例，请完成以下步骤：
 
-1. [登录到 {{site.data.keyword.cloud_notm}} "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
+1. [登录到 {{site.data.keyword.cloud_notm}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 
     使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
@@ -124,7 +129,7 @@ subcollection: cloud-activity-tracker
 **注：要为用户授予 IAM 策略，您必须是 {{site.data.keyword.loganalysisshort}} 服务的帐户所有者或管理员。**
 
 ### 授予用户访问权以监视帐户域事件
-{: #gs_acc}
+{: #index_acc}
 
 要通过 {{site.data.keyword.cloud_notm}} UI 来为用户授予 IAM 策略，请完成以下步骤：
 
@@ -143,9 +148,11 @@ subcollection: cloud-activity-tracker
 
 要通过 {{site.data.keyword.cloud_notm}} UI 为用户授予空间中的 developer 角色，请完成以下步骤：
 
-1. [登录到 {{site.data.keyword.cloud_notm}} 控制台 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
+1. 登录到 {{site.data.keyword.cloud_notm}} 控制台。
+
+    打开 Web 浏览器，然后启动 [{{site.data.keyword.cloud_notm}} 仪表板 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}
 	
-    使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
+	使用您的用户标识和密码登录后，{{site.data.keyword.cloud_notm}} UI 会打开。
 
 2. 在菜单栏中，单击**管理** &gt; **安全性** &gt; **身份和访问权**，然后选择**用户**。
 

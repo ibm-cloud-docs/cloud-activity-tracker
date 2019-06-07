@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, provision instance
 
@@ -20,7 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 
 # 佈建 Activity Tracker
@@ -29,6 +29,8 @@ subcollection: cloud-activity-tracker
 您可以從 {{site.data.keyword.cloud_notm}} 使用者介面或從指令行，佈建 {{site.data.keyword.cloudaccesstraillong}} 服務。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
 
 ## 從使用者介面佈建
 {: #provision_ui}
@@ -120,7 +122,7 @@ subcollection: cloud-activity-tracker
 	
 4. 驗證服務已順利建立。執行下列指令：
 
-	```	
+  ```	
 	ibmcloud service list
 	```
 	{: codeblock}
@@ -130,7 +132,7 @@ subcollection: cloud-activity-tracker
 	```
     Getting services in org MyOrg / space MySpace as xxx@yyy.com...
     OK
-    
+
     name                           service                  plan                   bound apps              last operation
     my_activitytracker_svc         accessTrail             free                                            create succeeded
 	```

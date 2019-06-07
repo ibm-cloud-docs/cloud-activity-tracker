@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, monitoring activity, tutorial
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 # Supervisión de la actividad de {{site.data.keyword.keymanagementserviceshort}} con {{site.data.keyword.cloudaccesstrailshort}}
@@ -28,8 +29,11 @@ subcollection: cloud-activity-tracker
 Utilice esta guía de aprendizaje para aprender a utilizar el servicio {{site.data.keyword.cloudaccesstrailfull}} para supervisar la interacción de un usuario con el servicio {{site.data.keyword.keymanagementserviceshort}}. 
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{: deprecated}
+
 1. Aprenda a suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
-2. Aprenda a utilizar un servicio en la nube para generar sucesos de actividad que el servicio {{site.data.keyword.cloudaccesstrailshort}} recopila automáticamente. Los sucesos cumplen con la [normativa de Cloud Auditing Data Federation (CADF)![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.dmtf.org/sites/default/files/standards/documents/DSP0262_1.0.0.pdf){: new_window}.
+2. Aprenda a utilizar un servicio en la nube para generar sucesos de actividad que el servicio {{site.data.keyword.cloudaccesstrailshort}} recopila automáticamente.
 3. Aprenda a supervisar la actividad en la nube de un servicio mediante los paneles de control predefinidos de {{site.data.keyword.cloudaccesstrailshort}}.
 
 En la figura siguiente se muestran los distintos componentes y acciones que se producen cuando una actividad iniciada por el usuario cambia el estado de un servicio:

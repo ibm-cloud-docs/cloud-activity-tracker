@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, configure retention policy
 
@@ -20,13 +20,17 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
+{:deprecated: .deprecated}
 
 # Ereignisaufbewahrungsrichtlinie konfigurieren
 {: #configuring_retention_policy}
 
 Verwenden Sie den Befehl **ibmcloud at option**, um die Aufbewahrungsrichtlinie, die angibt, über welchen Zeitraum (in Tagen) Ereignisse höchstens in {{site.data.keyword.cloudaccesstrailshort}} aufbewahrt werden, anzuzeigen und zu konfigurieren. Die Aufbewahrungsrichtlinie ist standardmäßig inaktiviert und Ereignisse werden für eine unbegrenzte Dauer aufbewahrt. Nach Ablauf des Aufbewahrungszeitraums werden Ereignisse automatisch gelöscht. 
 {:shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 
 Sie können dieselbe Aufbewahrungsrichtlinie für alle Bereiche (Spaces) des Kontos festlegen oder aber auch die Aufbewahrungsrichtlinie für einen Bereich anpassen. 
 

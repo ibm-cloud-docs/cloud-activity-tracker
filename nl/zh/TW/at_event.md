@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, event fields
 
@@ -20,6 +20,7 @@ subcollection: cloud-activity-tracker
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:deprecated: .deprecated}
 
 
 
@@ -29,6 +30,9 @@ subcollection: cloud-activity-tracker
 {{site.data.keyword.cloudaccesstrailshort}} 事件是以雲端審核資料聯盟 (CADF) 標準為基礎。
 {:shortdesc}
 
+{{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
+{: deprecated}
+
 ## 起始者欄位
 {: #initiator}
 
@@ -36,7 +40,7 @@ subcollection: cloud-activity-tracker
 
 |欄位名稱|說明|值|
 |------------|-------------|-------|
-| `initiator.id` |動作起始者的 ID。</br></br>起始者的有效類型為 `IBMID`、`serviceID` 及 `Cloud Foundry (CF) 使用者 ID`。|IBM ID 的範例為 `IBMid-000000XXX2` </br>服務 ID 的範例為 `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>CF 使用者 ID 的範例為 `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
+| `initiator.id` |動作起始者的 ID。</br></br>起始者的有效類型為 `IBM ID`、`服務 ID` 及 `Cloud Foundry (CF) 使用者 ID`。|IBM ID 的範例是 `IBMid-000000XXX2` </br>服務 ID 的範例是 `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>CF 使用者 ID 的範例是 `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
 | `initiator.name` |起始動作之使用者的使用者名稱。|例如，電子郵件位址。|
 | `initiator.typeURI` |事件來源的類型。|有效值為 *service/security/account/user*、*service/security/clientid* 及 *service/security/account/serviceid*。|
 | `initiator.credential.type` |起始者 ID 認證的類型。|有效值為 *user*、*token* 及 *apikey*。|
@@ -51,7 +55,7 @@ subcollection: cloud-activity-tracker
 
 |欄位名稱|說明|值|
 |------------|-------------|-------|
-| `target.id` |執行動作所在資源的「雲端資源名稱 (CRN) 」。</br>如需相關資訊，請參閱 [CRN 格式](/docs/overview?topic=overview-format-crn#format)。|例如 `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
+| `target.id` |執行動作所在資源的「雲端資源名稱 (CRN) 」。</br>如需相關資訊，請參閱 [CRN 格式](/docs/overview?topic=overview-crn#format-crn)。|例如 `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
 | `target.name` |執行動作所在雲端資源的人類可讀名稱。|  |
 | `target.typeURI` |執行動作所在雲端資源的類型。</br>此欄位的格式為 **serviceName/objectType**，其中 `servicename` 是服務的名稱。|例如 `iam-am/policy` 或 `cloud-object-storage/bucket/acl` |
 {: caption="表 2. 一般目標欄位" caption-side="top"} 
@@ -66,7 +70,7 @@ subcollection: cloud-activity-tracker
 |欄位名稱|說明|值|
 |------------|-------------|-------|
 | `action` |觸發事件的動作。</br>此欄位的格式為 **serviceName.objectType.action**，其中 `servicename` 是服務的名稱。</br>如需服務所產生之事件的動作值相關資訊，請參閱<a href="/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-cloud_services#cloud_services">雲端服務</a> |例如 `iam-identity.serviceid-apikey.login` |
-| `eventTime` |指出建立事件的時間戳記。</br>日期以「世界標準時間 (UTC)」表示。</br>該格式符合 ISO 8601 標準。|例如 `2017-10-19T19:07:50.32+0000` |
+| `eventTime` |指出建立事件的時間戳記。</br>日期以「世界標準時間 (UTC)」表示。</br>此格式符合 ISO 8601 標準。|例如 `2017-10-19T19:07:50.32+0000` |
 {: caption="表 3. 一般動作欄位" caption-side="top"} 
 
 

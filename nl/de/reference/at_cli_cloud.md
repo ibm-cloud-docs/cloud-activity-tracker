@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: IBM Cloud, Activity Tracker, CLI
 
@@ -18,6 +18,7 @@ subcollection: cloud-activity-tracker
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:deprecated: .deprecated}
 
 
 # IBM Cloud Activity Tracker-CLI
@@ -25,6 +26,10 @@ subcollection: cloud-activity-tracker
 
 Sie können die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloudaccesstraillong}} verwenden, um {{site.data.keyword.cloudaccesstrailshort}}-Ereignisse zu verwalten.
 {: shortdesc}
+
+{{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
+{: deprecated}
+
 
 **Voraussetzungen**
 * Melden Sie sich vor dem Ausführen der Befehlen bei {{site.data.keyword.Bluemix}} mit dem Befehl `ibmcloud login` an, um ein Zugriffstoken zu erstellen und Ihre Sitzung zu authentifizieren.
