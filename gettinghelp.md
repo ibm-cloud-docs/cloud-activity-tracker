@@ -34,11 +34,7 @@ If you have problems or questions when using the {{site.data.keyword.cloudaccess
 
 * You can check whether the {{site.data.keyword.cloud_notm}} is available by going to the [{{site.data.keyword.cloud_notm}} status page](https://cloud.ibm.com/status?selected=status){:new_window}.
 
-* You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.cloud_notm}} development teams.
-
-  * If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://stackoverflow.com/search?q=activity-tracker+ibm-cloud){:new_window} and tag your question with **ibm-cloud** and **activity-tracker**.
-
-  * For questions about the service and getting started instructions, use the [IBM developerWorks dW Answers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/){:new_window} forum. Include the  **activity-tracker** and **ibm-cloud** tags.
+* You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.cloud_notm}} development teams. If you have technical questions about developing or deploying an app with the {{site.data.keyword.cloudaccesstrailshort}} service, post your question on [Stack Overflow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://stackoverflow.com/search?q=activity-tracker+ibm-cloud){:new_window} and tag your question with **ibm-cloud** and **activity-tracker**.
 
 * If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
