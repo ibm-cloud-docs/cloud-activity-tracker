@@ -137,11 +137,11 @@ ibmcloud at delete [parameters] [arguments..]
 
 <dl>
   <dt>--start value, -s value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
+  <dd>（選用）以「世界標準時間 (UTC)」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
   </dd>
   
   <dt>--end value, -e value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定結束日期：*YYYY-MM-DD*。<br>日期的 UTC 格式是 **YYYY-MM-DD**，例如 `2017-01-02`。<br>預設值設為現行日期。
+  <dd>（選用）以「世界標準時間 (UTC)」設定結束日期：*YYYY-MM-DD*。<br>日期的 UTC 格式是 **YYYY-MM-DD**，例如 `2017-01-02`。<br>預設值設為現行日期。
   </dd>
   
   <dt>--search-time value, -T value</dt>
@@ -327,11 +327,11 @@ ibmcloud at session create [parameters] [arguments...]
   </dd>
 
   <dt>--start value, -s value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
+  <dd>（選用）以「世界標準時間 (UTC)」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
   </dd>
   
   <dt>--end value, -e value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定結束日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為現行日期。
+  <dd>（選用）以「世界標準時間 (UTC)」設定結束日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為現行日期。
   </dd>
 
   <dt>--search-time value, -T value</dt>
@@ -568,11 +568,11 @@ ibmcloud at status [parameters] [arguments...]
 
 <dl>
   <dt>--start value, -s value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
+  <dd>（選用）以「世界標準時間 (UTC)」設定開始日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為 2 週前。
   </dd>
   
   <dt>--end value, -e value</dt>
-  <dd>（選用）以「世界標準時間 (UTC) 」設定結束日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為現行日期。
+  <dd>（選用）以「世界標準時間 (UTC)」設定結束日期：*YYYY-MM-DD*，例如 `2017-01-02`。<br>預設值設為現行日期。
   </dd>
   
   <dt>--at-account-level, -a </dt>
@@ -588,7 +588,7 @@ ibmcloud at status [parameters] [arguments...]
 
 <dl>
   <dt>DATE</dt>
-  <dd>「世界標準時間 (UTC) 」的日期：*YYYY-MM-DD*，例如 `2017-01-02`。
+  <dd>「世界標準時間 (UTC)」的日期：*YYYY-MM-DD*，例如 `2017-01-02`。
   </dd>
   
   <dt>COUNT</dt>

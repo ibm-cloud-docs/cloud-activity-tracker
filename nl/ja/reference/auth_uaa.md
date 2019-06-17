@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,10 +24,10 @@ subcollection: cloud-activity-tracker
 # UAA トークンの取得
 {: #auth_uaa}
 
-{{site.data.keyword.Bluemix}} UAA を使用して、{{site.data.keyword.cloudaccesstraillong}} サービスでの作業に使用できる認証トークンを取得します。 {{site.data.keyword.cloud_notm}} CLI を使用するか、または API を使用することによって、認証トークンを取得できます。
+{{site.data.keyword.cloud_notm}} UAA を使用して、{{site.data.keyword.cloudaccesstraillong}} サービスでの作業に使用できる認証トークンを取得します。 {{site.data.keyword.cloud_notm}} CLI を使用するか、または API を使用することによって、認証トークンを取得できます。
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。 2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。 既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。 {{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
 {: deprecated}
 
 
@@ -49,7 +49,7 @@ UAA トークンを取得するには、以下の手順を実行します。
     
 2. {{site.data.keyword.cloud_notm}} にログインします。 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
+    [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) コマンドを実行して {{site.data.keyword.cloud_notm}} にログインし、次に、[ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) コマンドを実行して、{{site.data.keyword.cloudaccesstrailshort}} サービスをプロビジョンする組織とスペースを設定します。
 	
 3. `ibmcloud iam oauth-tokens` コマンドを実行して、UAA トークンを取得します。
 

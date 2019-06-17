@@ -77,7 +77,7 @@ Para obtener más información, consulte:
 
 [Conformidad de seguridad de {{site.data.keyword.cloud_notm}}](/docs/overview?topic=overview-security#compliance)
 
-[GDPR - Página oficial de {{site.data.keyword.IBM_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
+[GDPR - Página oficial de {{site.data.keyword.IBM_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/data-responsibility/gdpr/){:new_window}
 
 
 

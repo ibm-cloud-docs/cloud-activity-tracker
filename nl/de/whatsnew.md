@@ -40,11 +40,11 @@ Die aktuelle Liste der Services, die mit {{site.data.keyword.cloudaccesstrailsho
 
 * {{site.data.keyword.cloudaccesstrailshort}}-Befehlszeilenschnittstelle
 
-Es wurde ein Problem bei der Activity Tracker-Befehlszeilenschnittstelle festgestellt. Dieses Problem wird mit einer neuen Version der Befehlszeilenschnittstelle behoben. 
+Es wurde ein Problem bei der Activity Tracker-Befehlszeilenschnittstelle festgestellt. Dieses Problem wird mit einer neuen Version der Befehlszeilenschnittstelle behoben.
 
-Wenn Sie sich über die Befehlszeile bei {{site.data.keyword.cloud_notm}} anmelden, indem Sie `ibmcloud login` verwenden, und dann {{site.data.keyword.cloudaccesstrailshort}}-Befehle ausführen, wird der Fehler `Fehler: Keine Berechtigung` für jeden ausgeführten {{site.data.keyword.cloudaccesstrailshort}}-Befehl ausgegeben.  
+Wenn Sie sich über die Befehlszeile bei {{site.data.keyword.cloud_notm}} anmelden, indem Sie `ibmcloud login` verwenden, und dann {{site.data.keyword.cloudaccesstrailshort}}-Befehle ausführen, wird der Fehler `Fehler: Keine Berechtigung` für jeden ausgeführten {{site.data.keyword.cloudaccesstrailshort}}-Befehl ausgegeben. 
 
-Als temporäre Lösung melden Sie sich mit den nachfolgend aufgeführten Befehle bei {{site.data.keyword.cloud_notm}} an, um die Befehlszeilenschnittstelle weiter zu verwenden. 
+Als temporäre Lösung melden Sie sich mit den nachfolgend aufgeführten Befehle bei {{site.data.keyword.cloud_notm}} an, um die Befehlszeilenschnittstelle weiter zu verwenden.
 
 | Region | Befehl |
 |--------|---------|

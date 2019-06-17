@@ -148,7 +148,7 @@ Pour accorder une règle IAM à un utilisateur à partir de l'interface utilisat
 
 Pour octroyer un rôle de développeur aux utilisateurs dans un espace à partir de l'interface utilisateur d'{{site.data.keyword.cloud_notm}}, procédez comme suit :
 
-1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}. 
+1. Connectez-vous à la console {{site.data.keyword.cloud_notm}}.
 
     Ouvrez un navigateur Web et lancez le [tableau de bord {{site.data.keyword.cloud_notm}}![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}
 	

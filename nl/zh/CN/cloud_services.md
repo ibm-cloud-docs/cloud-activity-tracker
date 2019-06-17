@@ -30,7 +30,7 @@ subcollection: cloud-activity-tracker
 使用 {{site.data.keyword.cloudaccesstraillong}} 服务可监视用户发起的用于更改 {{site.data.keyword.IBM_notm}} 云中以下任一服务状态的活动：
 {:shortdesc}
 
-不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{{site.data.keyword.cloudaccesstrailfull}} 已被弃用。从 2019 年 5 月 9 日开始，您无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
 {: deprecated}
 
 **注：**要获取有关服务在 {{site.data.keyword.cloud_notm}} 中的哪些区域可用的信息，请参阅[按区域列出的服务](/docs/resources?topic=resources-services_region#services_region)。
@@ -59,7 +59,7 @@ subcollection: cloud-activity-tracker
 
 |服务|描述|{{site.data.keyword.cloudaccesstrailshort}} 事件|
 |-------------|-------------|-------------|
-| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-index#index) | {{site.data.keyword.openwhisk_short}} 是一种基于 Apache OpenWhisk 的多语言功能即服务 (FaaaS) 编程平台，可用于编写轻量级`代码（称为操作）`。| [{{site.data.keyword.openwhisk_short}} 生成的事件](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-getting_started) | {{site.data.keyword.openwhisk_short}} 是一种基于 Apache OpenWhisk 的多语言功能即服务 (FaaaS) 编程平台，可用于编写轻量级`代码（称为操作）`。| [{{site.data.keyword.openwhisk_short}} 生成的事件](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
 {: caption="将事件发送到 {{site.data.keyword.cloudaccesstrailshort}} 的无服务器计算服务的列表" caption-side="top"} 
 
 
@@ -85,8 +85,8 @@ subcollection: cloud-activity-tracker
 
 |服务|描述|{{site.data.keyword.cloudaccesstrailshort}} 事件|
 |-------------|-------------|-------------|
-|[{{site.data.keyword.containerlong_notm}}：集群管理事件](/docs/containers?topic=containers-container_index#container_index)|这些事件会报告集群创建、删除或更新等操作。|[集群管理事件](/docs/containers?topic=containers-at_events#cluster-events)|  
-|[{{site.data.keyword.containerlong_notm}}：API 服务器审计事件](/docs/containers?topic=containers-container_index#container_index)|Kubernetes API 服务器审计事件会提供有关影响集群的一系列活动的时间顺序信息。每个操作都会生成一个事件|[Kubernetes API 服务器审计事件](/docs/containers?topic=containers-at_events#kube-events)|
+|[{{site.data.keyword.containerlong_notm}}：集群管理事件](/docs/containers?topic=containers-getting-started#getting-started)|这些事件会报告集群创建、删除或更新等操作。|[集群管理事件](/docs/containers?topic=containers-at_events#cluster-events)|  
+|[{{site.data.keyword.containerlong_notm}}：API 服务器审计事件](/docs/containers?topic=containers-getting-started#getting-started)|Kubernetes API 服务器审计事件会提供有关影响集群的一系列活动的时间顺序信息。每个操作都会生成一个事件|[Kubernetes API 服务器审计事件](/docs/containers?topic=containers-at_events#kube-events)|
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) |您可以使用 {{site.data.keyword.registrylong_notm}} 服务在高度可用且可扩展的体系结构中存储和访问专用 Docker 映像。| [与 {{site.data.keyword.registrylong_notm}} 交互时生成的事件](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="容器事件" caption-side="top"} 
 
@@ -141,7 +141,7 @@ subcollection: cloud-activity-tracker
 |服务|描述|{{site.data.keyword.cloudaccesstrailshort}} 事件|
 |-------------|-------------|-------------|
 | [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | {{site.data.keyword.DRA_short}} 是 {{site.data.keyword.cloud_notm}} 开放工具链目录中的一个集成。| [{{site.data.keyword.DRA_short}} 生成的事件](/docs/apps?topic=creating-apps-at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) |通过 {{site.data.keyword.contdelivery_short}}，您可以使用 DevOps 实践和业界领先的工具来构建、测试和交付应用程序。| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) 生成的事件 |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |通过 {{site.data.keyword.contdelivery_short}}，您可以使用 DevOps 实践和业界领先的工具来构建、测试和交付应用程序。| [{{site.data.keyword.contdelivery_short}} 生成的事件](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) |支持应用程序开发者快速将翻译的应用程序发布到全球客户。| [{{site.data.keyword.GlobalizationPipeline_short}} 生成的事件](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="将事件发送到 {{site.data.keyword.cloudaccesstrailshort}} 的开发者工具的列表" caption-side="top"} 
 
@@ -154,7 +154,7 @@ subcollection: cloud-activity-tracker
 
 |服务|描述|{{site.data.keyword.cloudaccesstrailshort}} 事件|
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-tutorial-getting-started#create) |在 {{site.data.keyword.cloud_notm}} 中，您可以构建企业级移动和 Web 应用程序，还可以利用由 {{site.data.keyword.cloud_notm}} 托管的云扩展。使用 {{site.data.keyword.cloud_notm}} 控制台和命令行工具，可构建、运行和部署应用程序。您可以使用入门模板工具包通过 {{site.data.keyword.dev_console}} 来创建应用程序。| [{{site.data.keyword.dev_console}} 生成的事件](/docs/apps?topic=creating-apps-at_events#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-getting-started) |在 {{site.data.keyword.cloud_notm}} 中，您可以构建企业级移动和 Web 应用程序，还可以利用由 {{site.data.keyword.cloud_notm}} 托管的云扩展。使用 {{site.data.keyword.cloud_notm}} 控制台和命令行工具，可构建、运行和部署应用程序。您可以使用入门模板工具包通过 {{site.data.keyword.dev_console}} 来创建应用程序。| [{{site.data.keyword.dev_console}} 生成的事件](/docs/apps?topic=creating-apps-at_events#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-overview-push#overview-push)|您可以使用 {{site.data.keyword.mobilepushshort}} 服务向移动设备和浏览器发送通知。通知可以定向发送到所有应用程序用户，也可以通过添加标记定向发送到一组特定的用户和设备。每向服务提交一条消息，目标受众就会收到一个通知。| [{{site.data.keyword.mobilepushshort}} 生成的事件](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker#push_activity_tracker) |  
 {: caption="将事件发送到 {{site.data.keyword.cloudaccesstrailshort}} 的 Web 和移动云服务的列表" caption-side="top"} 
 

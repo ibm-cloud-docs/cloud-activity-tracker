@@ -67,8 +67,8 @@ ibmcloud at delete -s YYYY-MM-DD -e YYYY-MM-DD
     
 其中
 
-* *-s* 用來以「世界標準時間 (UTC) 」設定開始日期：*YYYY-MM-DD*。
-* *-e* 用來以「世界標準時間 (UTC) 」設定結束日期：*YYYY-MM-DD*。
+* *-s* 用來以「世界標準時間 (UTC)」設定開始日期：*YYYY-MM-DD*。
+* *-e* 用來以「世界標準時間 (UTC)」設定結束日期：*YYYY-MM-DD*。
 
 例如，若要刪除 2017 年 6 月 10 日的事件，請執行下列指令：
 

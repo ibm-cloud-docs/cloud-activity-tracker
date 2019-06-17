@@ -26,7 +26,7 @@ subcollection: cloud-activity-tracker
 # IAM-Ereignisse
 {: #at_events_iam}
 
-Als Sicherheitsbeauftragter, Prüfer oder Manager können Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um zu verfolgen, wie Benutzer und Anwendungen mit dem {{site.data.keyword.iamlong}}-Service (IAM-Service) in {{site.data.keyword.Bluemix}} interagieren. 
+Als Sicherheitsbeauftragter, Prüfer oder Manager können Sie den {{site.data.keyword.cloudaccesstrailfull}}-Service verwenden, um zu verfolgen, wie Benutzer und Anwendungen mit dem {{site.data.keyword.iamlong}}-Service (IAM-Service) in {{site.data.keyword.cloud_notm}} interagieren. 
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.

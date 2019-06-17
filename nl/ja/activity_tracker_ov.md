@@ -30,7 +30,7 @@ subcollection: cloud-activity-tracker
 {{site.data.keyword.cloudaccesstrailfull}} サービスを使用して、アプリケーションが {{site.data.keyword.cloud_notm}} サービスとどのように対話するのかをトラッキングします。 {{site.data.keyword.cloudaccesstrailshort}} を使用して異常なアクティビティーをモニターすることで、規制監査要件に準拠することができます。 収集されるイベントは、Cloud Auditing Data Federation (CADF) 標準に準拠しています。
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。 2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。 既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。 {{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
 {: deprecated}
 
 * {{site.data.keyword.cloudaccesstrailshort}} は、クラウド内の IT リソースに対する高水準のセキュリティー・ガバナンスを実現します。

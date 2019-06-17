@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,10 +24,10 @@ subcollection: cloud-activity-tracker
 # 获取 UAA 令牌
 {: #auth_uaa}
 
-使用 {{site.data.keyword.Bluemix}} UAA，获取可用于 {{site.data.keyword.cloudaccesstraillong}} 服务的认证令牌。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或 API 获取认证令牌。
+使用 {{site.data.keyword.cloud_notm}} UAA，获取可用于 {{site.data.keyword.cloudaccesstraillong}} 服务的认证令牌。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或 API 获取认证令牌。
 {:shortdesc}
 
-不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{{site.data.keyword.cloudaccesstrailfull}} 已被弃用。从 2019 年 5 月 9 日开始，您无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
 {: deprecated}
 
 
@@ -49,7 +49,7 @@ subcollection: cloud-activity-tracker
     
 2. 登录到 {{site.data.keyword.cloud_notm}}。 
 
-    运行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
+    运行 [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 命令以登录到 {{site.data.keyword.cloud_notm}}，然后运行 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 命令以设置要在其中供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的组织和空间。
 	
 3. 运行 `ibmcloud iam oauth-tokens` 命令以获取 UAA 令牌。
 

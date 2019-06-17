@@ -148,9 +148,9 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer über die {{site.data.
 
 Führen Sie die folgenden Schritte aus, um einem Benutzer über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle die Entwicklerrolle in einem Bereich zu erteilen:
 
-1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an. 
+1. Melden Sie sich bei der {{site.data.keyword.cloud_notm}}-Konsole an.
 
-    Öffnen Sie einen Web-Browser und starten Sie das [{{site.data.keyword.cloud_notm}}-Dashboard ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window}. 
+    Öffnen Sie einen Web-Browser und starten Sie das [{{site.data.keyword.cloud_notm}}-Dashboard ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window}.
 	
 	Nachdem Sie sich mit Ihrer Benutzer-ID und Ihrem Kennwort angemeldet haben, wird die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle geöffnet.
 

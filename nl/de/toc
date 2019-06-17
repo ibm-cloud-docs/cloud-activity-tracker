@@ -7,6 +7,7 @@ IBM Cloud Activity Tracker
     {: .navgroup id="learn"}
     getting-started.md
     activity_tracker_ov.md
+    transition.md
     at_event.md
     cloud_services.md
     compliance.md
@@ -56,7 +57,7 @@ IBM Cloud Activity Tracker
     reference/auth_uaa.md
     reference/at_cli_cloud.md
 	
-    [IBM Cloud Activity Tracker-API](https://console.bluemix.net/apidocs/activity-tracker-api)
+    [IBM Cloud Activity Tracker-API](https://cloud.ibm.com/apidocs/activity-tracker-api)
 
     {: .topicgroup}
     Cloud-Aktivität überwachen

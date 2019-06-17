@@ -59,7 +59,7 @@ subcollection: cloud-activity-tracker
 
 |服務|說明| {{site.data.keyword.cloudaccesstrailshort}} 事件 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-index#index) | {{site.data.keyword.openwhisk_short}} 是以 Apache OpenWhisk 為基礎的多國語言「函數即服務 (FaaS)」程式設計平台，您可以用來撰寫輕量型的`程式碼呼叫動作`。| [{{site.data.keyword.openwhisk_short}} 所產生的事件](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-getting_started) | {{site.data.keyword.openwhisk_short}} 是以 Apache OpenWhisk 為基礎的多國語言「函數即服務 (FaaS)」程式設計平台，您可以用來撰寫輕量型的`程式碼呼叫動作`。| [{{site.data.keyword.openwhisk_short}} 所產生的事件](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
 {: caption="將事件傳送至 {{site.data.keyword.cloudaccesstrailshort}} 的無伺服器運算服務清單" caption-side="top"} 
 
 
@@ -85,8 +85,8 @@ subcollection: cloud-activity-tracker
 
 |服務|說明| {{site.data.keyword.cloudaccesstrailshort}} 事件 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}：叢集管理事件](/docs/containers?topic=containers-container_index#container_index)|這些事件會報告像是叢集建立、刪除或更新的動作。| [叢集管理事件 ](/docs/containers?topic=containers-at_events#cluster-events) |  
-| [{{site.data.keyword.containerlong_notm}}：API 伺服器審核事件](/docs/containers?topic=containers-container_index#container_index)| Kubernetes API 伺服器審核事件可提供影響叢集之活動順序的時間順序相關資訊。每一個動作都會產生一個事件| [Kubernetes API 伺服器審核事件](/docs/containers?topic=containers-at_events#kube-events) |
+| [{{site.data.keyword.containerlong_notm}}：叢集管理事件](/docs/containers?topic=containers-getting-started#getting-started)|這些事件會報告像是叢集建立、刪除或更新的動作。| [叢集管理事件 ](/docs/containers?topic=containers-at_events#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}：API 伺服器審核事件](/docs/containers?topic=containers-getting-started#getting-started)| Kubernetes API 伺服器審核事件可提供影響叢集之活動順序的時間順序相關資訊。每一個動作都會產生一個事件| [Kubernetes API 伺服器審核事件](/docs/containers?topic=containers-at_events#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) |您可以使用 {{site.data.keyword.registrylong_notm}} 服務，以高可用性及可擴充的架構來儲存及存取專用 Docker 映像檔。| [與 {{site.data.keyword.registrylong_notm}} 互動時所產生的事件](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="容器事件" caption-side="top"} 
 
@@ -141,7 +141,7 @@ Cloud Foundry 應用程式傳送至 {{site.data.keyword.cloudaccesstrailshort}} 
 |服務|說明| {{site.data.keyword.cloudaccesstrailshort}} 事件 |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) |{{site.data.keyword.DRA_short}} 是 {{site.data.keyword.cloud_notm}} 開放式工具鏈型錄中的一項整合。| [{{site.data.keyword.DRA_short}} 所產生的事件](/docs/apps?topic=creating-apps-at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) |使用 {{site.data.keyword.contdelivery_short}} 時，您可以使用 DevOps 作法及業界領先工具來建置、測試及提供應用程式。| [{{site.data.keyword.contdelivery_short}} 所產生的事件](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started) |使用 {{site.data.keyword.contdelivery_short}} 時，您可以使用 DevOps 作法及業界領先工具來建置、測試及提供應用程式。| [{{site.data.keyword.contdelivery_short}} 所產生的事件](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) |讓應用程式開發人員能快速地將翻譯過的應用程式發行給全球客戶。| [{{site.data.keyword.GlobalizationPipeline_short}} 所產生的事件](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="將事件傳送至 {{site.data.keyword.cloudaccesstrailshort}} 的開發人員工具清單" caption-side="top"} 
 
@@ -154,7 +154,7 @@ Cloud Foundry 應用程式傳送至 {{site.data.keyword.cloudaccesstrailshort}} 
 
 |服務|說明| {{site.data.keyword.cloudaccesstrailshort}} 事件 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-tutorial-getting-started#create) |在 {{site.data.keyword.cloud_notm}} 中，您可以建置企業層級的行動式和 Web 應用程式，並利用 {{site.data.keyword.cloud_notm}} 所管理的雲端延伸。您可以使用 {{site.data.keyword.cloud_notm}} 主控台及指令行工具來建置、執行及部署應用程式。您可以使用 {{site.data.keyword.dev_console}}，以透過使用入門範本套件來建立應用程式。| [{{site.data.keyword.dev_console}} 所產生的事件](/docs/apps?topic=creating-apps-at_events#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-getting-started) |在 {{site.data.keyword.cloud_notm}} 中，您可以建置企業層級的行動式和 Web 應用程式，並利用 {{site.data.keyword.cloud_notm}} 所管理的雲端延伸。您可以使用 {{site.data.keyword.cloud_notm}} 主控台及指令行工具來建置、執行及部署應用程式。您可以使用 {{site.data.keyword.dev_console}}，以透過使用入門範本套件來建立應用程式。| [{{site.data.keyword.dev_console}} 所產生的事件](/docs/apps?topic=creating-apps-at_events#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-overview-push#overview-push)|您可以使用 {{site.data.keyword.mobilepushshort}} 服務，將通知傳送至行動式裝置及瀏覽器。可以使用標籤將通知目標設為傳送給所有應用程式使用者或特定的一組使用者和裝置。對於您提交給服務的每一則訊息，預期的對象都會收到通知。| [{{site.data.keyword.mobilepushshort}} 所產生的事件](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker#push_activity_tracker) |  
 {: caption="將事件傳送至 {{site.data.keyword.cloudaccesstrailshort}} 的 Web 及行動雲端服務清單" caption-side="top"} 
 

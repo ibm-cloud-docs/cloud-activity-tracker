@@ -7,6 +7,7 @@ Programma di traccia dell'attività IBM Cloud
     {: .navgroup id="learn"}
     getting-started.md
     activity_tracker_ov.md
+    transition.md
     at_event.md
     cloud_services.md
     compliance.md
@@ -56,7 +57,7 @@ Programma di traccia dell'attività IBM Cloud
     reference/auth_uaa.md
     reference/at_cli_cloud.md
 	
-    [API del programma di traccia dell'attività IBM Cloud](https://console.bluemix.net/apidocs/activity-tracker-api)
+    [API del programma di traccia dell'attività IBM Cloud](https://cloud.ibm.com/apidocs/activity-tracker-api)
 
     {: .topicgroup}
     Monitoraggio dell'attività cloud

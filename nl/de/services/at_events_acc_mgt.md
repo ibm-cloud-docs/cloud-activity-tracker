@@ -81,7 +81,7 @@ In der folgenden Tabelle sind die API-Methoden aufgeführt, die ein Ereignis gen
   </tr>
   <tr>
     <td>user-management.user.create</td>
-	  <td>Es wird ein Ereignis generiert, wenn Sie einem Benutzer eine Einladung schicken, um einem Konto beizutreten. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen. </td>
+	  <td>Es wird ein Ereignis generiert, wenn Sie einem Benutzer eine Einladung schicken, um einem Konto beizutreten. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen.</td>
   </tr>
   <tr>
     <td>user-management.user.active</td>
@@ -89,7 +89,7 @@ In der folgenden Tabelle sind die API-Methoden aufgeführt, die ein Ereignis gen
   </tr>
   <tr>
     <td>user-management.user.delete</td>
-	  <td>Es wird ein Ereignis generiert, wenn Sie einen Benutzer aus dem Konto entfernen. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen. </td>
+	  <td>Es wird ein Ereignis generiert, wenn Sie einen Benutzer aus dem Konto entfernen. </br>Der Kontoeigner kann als einzige Person des Kontos diese Aktion ausführen.</td>
   </tr>
 </table>
 
