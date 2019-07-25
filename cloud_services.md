@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-07-24"
 
 keywords: IBM Cloud, Activity Tracker, cloud services
 
@@ -87,7 +87,7 @@ The following table lists container platform services that send events to {{site
 |-------------|-------------|-------------|
 | [{{site.data.keyword.containerlong_notm}}: cluster management events](/docs/containers?topic=containers-getting-started#getting-started)| These events report on actions like cluster creation, deletion, or update. | [Cluster management events ](/docs/containers?topic=containers-at_events#cluster-events) |  
 | [{{site.data.keyword.containerlong_notm}}: API server audit events](/docs/containers?topic=containers-getting-started#getting-started)| Kubernetes API server audit events provide chronological information about the sequence of activities that affect a cluster. Each action generates an event | [Kubernetes API server audit events](/docs/containers?topic=containers-at_events#kube-events) |
-| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) | You can use the {{site.data.keyword.registrylong_notm}} service to store and access private Docker images in a highly available and scalable architecture. | [Events that are generated when you interact with the {{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-at_events#at_events) | 
+| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use the {{site.data.keyword.registrylong_notm}} service to store and access private Docker images in a highly available and scalable architecture. | [Events that are generated when you interact with the {{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="Container events" caption-side="top"} 
 
 
