@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-08-16"
 
 keywords: IBM Cloud, Activity Tracker, migration
 
@@ -42,6 +42,11 @@ Complete the following steps to migrate to {{site.data.keyword.at_full_notm}}:
     * [Downloading events by using the CLI](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-downloading_events).
 
     * [Downloading events by using the API](/docs/services/cloud-activity-tracker?topic=cloud-activity-tracker-downloading_events_api).
+
+    Use the `-a` flag to download all events in your accountby using the CLI, and `AtAccountLevel: true` when you use the API. This download includes account and the space events from where you are accessing the global domain.
+    {: important}
+
+    If you download too much data at one time, it can fail due to network time-outs. If that occurs, download one day (or hour) at a time. 
 
 2. Provision [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-provision).
 
