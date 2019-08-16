@@ -55,7 +55,7 @@ subcollection: cloud-activity-tracker
 
 |欄位名稱|說明|值|
 |------------|-------------|-------|
-| `target.id` |執行動作所在資源的「雲端資源名稱 (CRN) 」。</br>如需相關資訊，請參閱 [CRN 格式](/docs/overview?topic=overview-crn#format-crn)。|例如 `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
+| `target.id` |執行動作所在資源的「雲端資源名稱 (CRN)」。</br>如需相關資訊，請參閱 [CRN 格式](/docs/overview?topic=overview-crn#format-crn)。|例如 `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
 | `target.name` |執行動作所在雲端資源的人類可讀名稱。|  |
 | `target.typeURI` |執行動作所在雲端資源的類型。</br>此欄位的格式為 **serviceName/objectType**，其中 `servicename` 是服務的名稱。|例如 `iam-am/policy` 或 `cloud-object-storage/bucket/acl` |
 {: caption="表 2. 一般目標欄位" caption-side="top"} 

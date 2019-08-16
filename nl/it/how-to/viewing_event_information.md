@@ -32,7 +32,7 @@ Utilizza il comando `ibmcloud at status` per ottenere le informazioni sugli even
 {: deprecated}
 
 
-Puoi ottenere le informazioni sulla dimensione del log di eventi teh, il numero di record e se gli eventi sono disponibili o meno per l'analisi in Kibana. 
+Puoi ottenere le informazioni sulla dimensione del log di eventi, il numero di record e se gli eventi sono disponibili o meno per l'analisi in Kibana. 
 
 Completa la seguente procedura per visualizzare le informazioni sul log degli eventi:
 

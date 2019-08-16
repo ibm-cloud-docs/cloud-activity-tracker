@@ -30,7 +30,7 @@ subcollection: cloud-activity-tracker
 {{site.data.keyword.cloudaccesstraillong}} サービスを使用して、{{site.data.keyword.IBM_notm}} クラウド内の以下のいずれかのサービスの状態を変更するユーザー開始アクティビティーをモニターします。
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。{{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
+{{site.data.keyword.cloudaccesstrailfull}} は非推奨になりました。 2019 年 5 月 9 日以降、新しい {{site.data.keyword.cloudaccesstrailshort}} インスタンスをプロビジョンできません。 既存のプレミアム・プランのインスタンスは、2019 年 9 月 30 日までサポートされます。 {{site.data.keyword.cloud_notm}} アカウントのアクティビティーのモニタリングを続行するには、[{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) のインスタンスをプロビジョンします。
 {: deprecated}
 
 **注:** {{site.data.keyword.cloud_notm}} でサービスが使用可能な地域についての情報を取得するには、[地域ごとのサービス](/docs/resources?topic=resources-services_region#services_region)を参照してください。
@@ -39,7 +39,7 @@ subcollection: cloud-activity-tracker
 ## コンピュート・インフラストラクチャー・サービス
 {: #infrastructure}
 
-**注:** ユーザーが {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するには、ユーザーは {{site.data.keyword.cloud_notm}} コンソールのインフラストラクチャー・リソースにアクセスできる必要があります。詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} アクティビティーのモニター](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi)を参照してください。
+**注:** ユーザーが {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloudaccesstrailshort}} イベントを生成するには、ユーザーは {{site.data.keyword.cloud_notm}} コンソールのインフラストラクチャー・リソースにアクセスできる必要があります。 詳しくは、[{{site.data.keyword.cloudaccesstrailshort}} での {{site.data.keyword.BluVirtServers_short}} および {{site.data.keyword.baremetal_short}} アクティビティーのモニター](/docs/services/cloud-activity-tracker/tutorials?topic=cloud-activity-tracker-vsi#vsi)を参照してください。
 
 以下の表に、イベントを {{site.data.keyword.cloudaccesstrailshort}} に送信するインフラストラクチャー・サービスをリストします。
 
@@ -59,7 +59,7 @@ subcollection: cloud-activity-tracker
 
 | サービス     | 説明 | {{site.data.keyword.cloudaccesstrailshort}} イベント |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-index#index) | {{site.data.keyword.openwhisk_short}} は、Apache OpenWhisk に基づく多言語 Functions-as-a-Service (FaaS) プログラミング・プラットフォームであり、軽量の`アクションと呼ばれるコード`を書くために使用できます。 | [{{site.data.keyword.openwhisk_short}} によって生成されるイベント](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-getting_started) | {{site.data.keyword.openwhisk_short}} は、Apache OpenWhisk に基づく多言語 Functions-as-a-Service (FaaS) プログラミング・プラットフォームであり、軽量の`アクションと呼ばれるコード`を書くために使用できます。 | [{{site.data.keyword.openwhisk_short}} によって生成されるイベント](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
 {: caption="イベントを {{site.data.keyword.cloudaccesstrailshort}} に送信するサーバーレス・コンピュート・サービスのリスト" caption-side="top"} 
 
 
@@ -85,8 +85,8 @@ subcollection: cloud-activity-tracker
 
 | サービス     | 説明 | {{site.data.keyword.cloudaccesstrailshort}} イベント |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}: クラスター管理イベント](/docs/containers?topic=containers-container_index#container_index)| これらのイベントは、クラスターの作成、削除、または更新などのアクションについて報告します。 | [クラスター管理イベント](/docs/containers?topic=containers-at_events#cluster-events) |  
-| [{{site.data.keyword.containerlong_notm}}: API サーバー監査イベント](/docs/containers?topic=containers-container_index#container_index)| Kubernetes API サーバー監査イベントは、クラスターに影響を与える一連のアクティビティーについて発生順の情報を提供します。 各アクションが 1 つのイベントを生成します。 | [Kubernetes API サーバー監査イベント](/docs/containers?topic=containers-at_events#kube-events) |
+| [{{site.data.keyword.containerlong_notm}}: クラスター管理イベント](/docs/containers?topic=containers-getting-started#getting-started)| これらのイベントは、クラスターの作成、削除、または更新などのアクションについて報告します。 | [クラスター管理イベント](/docs/containers?topic=containers-at_events#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}: API サーバー監査イベント](/docs/containers?topic=containers-getting-started#getting-started)| Kubernetes API サーバー監査イベントは、クラスターに影響を与える一連のアクティビティーについて発生順の情報を提供します。 各アクションが 1 つのイベントを生成します。 | [Kubernetes API サーバー監査イベント](/docs/containers?topic=containers-at_events#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) | {{site.data.keyword.registrylong_notm}} サービスを使用して、可用性の高いスケーラブルなアーキテクチャーでプライベート Docker イメージの保管およびアクセスを行うことができます。 | [{{site.data.keyword.registrylong_notm}} との対話時に生成されるイベント](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="コンテナー・イベント" caption-side="top"} 
 
@@ -123,7 +123,7 @@ Cloud Foundry アプリケーションによって {{site.data.keyword.cloudacce
 | サービス     | 説明 | {{site.data.keyword.cloudaccesstrailshort}} イベント |
 |-------------|-------------|----------------------------------------------------|
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象 PostgreSQL サービスです。 | [{{site.data.keyword.databases-for-postgresql_full_notm}} によって生成されるイベント](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker) |
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象サービスです。 | [{{site.data.keyword.databases-for-redis_full_notm}} によって生成されるイベント](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象サービスです。  | [{{site.data.keyword.databases-for-redis_full_notm}} によって生成されるイベント](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
 | [{{site.data.keyword.sqlquery_short}}](/docs/services/sql-query?topic=sql-query-overview#overview) | {{site.data.keyword.sqlquery_short}} サービスを使用して、矩形データを分析、変換、またはクリーンアップするためのSQL 照会 (つまり、SELECT ステートメント) を実行できます。 | [{{site.data.keyword.sqlquery_short}} によって生成されるイベント](/docs/services/sql-query?topic=sql-query-activitytracker#activity-tracker-events) |  
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象 etcd サービスです。 | [{{site.data.keyword.databases-for-etcd_full_notm}} によって生成されるイベント](/docs/services/databases-for-etcd?topic=databases-for-etcd-activity-tracker#activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-about#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} は、{{site.data.keyword.cloud_notm}} でホストされ、他の {{site.data.keyword.cloud_notm}} サービスと統合される管理対象 Elasticsearch サービスです。 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}} によって生成されるイベント](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-activity-tracker#activity-tracker-integration) |
@@ -141,7 +141,7 @@ Cloud Foundry アプリケーションによって {{site.data.keyword.cloudacce
 | サービス     | 説明 | {{site.data.keyword.cloudaccesstrailshort}} イベント |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | {{site.data.keyword.DRA_short}} は、{{site.data.keyword.cloud_notm}} オープン・ツールチェーン・カタログ内の統合の 1 つです。 | [{{site.data.keyword.DRA_short}} によって生成されるイベント](/docs/apps?topic=creating-apps-at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | {{site.data.keyword.contdelivery_short}} は、DevOps プラクティスや業界最高レベルのツールを使用したアプリケーションのビルド、テスト、デリバリーを可能にします。 | [{{site.data.keyword.contdelivery_short}} によって生成されるイベント](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | {{site.data.keyword.contdelivery_short}} は、DevOps プラクティスや業界最高レベルのツールを使用したアプリケーションのビルド、テスト、デリバリーを可能にします。 | [{{site.data.keyword.contdelivery_short}} によって生成されるイベント](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | アプリの開発者が翻訳済みアプリケーションをグローバルな顧客に素早くリリースすることを可能にします。 | [{{site.data.keyword.GlobalizationPipeline_short}} によって生成されるイベント](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="イベントを {{site.data.keyword.cloudaccesstrailshort}} に送信する開発者用ツールのリスト" caption-side="top"} 
 
@@ -154,7 +154,7 @@ Cloud Foundry アプリケーションによって {{site.data.keyword.cloudacce
 
 | サービス     | 説明 | {{site.data.keyword.cloudaccesstrailshort}} イベント |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-tutorial-getting-started#create) | {{site.data.keyword.cloud_notm}} では、企業レベルのモバイル・アプリケーションおよび Web アプリケーションを作成でき、{{site.data.keyword.cloud_notm}} でホストされているクラウド拡張機能を利用できます。 アプリをビルド、実行、およびデプロイするには、{{site.data.keyword.cloud_notm}} コンソールおよびコマンド・ライン・ツールを使用できます。 スターター・キットを使用してアプリを作成するには、{{site.data.keyword.dev_console}} を使用できます。 | [{{site.data.keyword.dev_console}} によって生成されるイベント](/docs/apps?topic=creating-apps-at_events#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-getting-started) | {{site.data.keyword.cloud_notm}} では、企業レベルのモバイル・アプリケーションおよび Web アプリケーションを作成でき、{{site.data.keyword.cloud_notm}} でホストされているクラウド拡張機能を利用できます。 アプリをビルド、実行、およびデプロイするには、{{site.data.keyword.cloud_notm}} コンソールおよびコマンド・ライン・ツールを使用できます。 スターター・キットを使用してアプリを作成するには、{{site.data.keyword.dev_console}} を使用できます。 | [{{site.data.keyword.dev_console}} によって生成されるイベント](/docs/apps?topic=creating-apps-at_events#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-overview-push#overview-push)| {{site.data.keyword.mobilepushshort}} サービスを使用して、通知をモバイル・デバイスおよびブラウザーに送信できます。 通知は、すべてのアプリケーション・ユーザーを宛先にするか、または、タグを使用することによって特定のユーザーおよびデバイスのセットを宛先にすることができます。 このサービスにサブミットするメッセージごとに、対象者は通知を受け取ります。 | [{{site.data.keyword.mobilepushshort}} によって生成されるイベント](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker#push_activity_tracker) |  
 {: caption="イベントを {{site.data.keyword.cloudaccesstrailshort}} に送信する Web クラウド・サービスおよびモバイル・クラウド・サービスのリスト" caption-side="top"} 
 

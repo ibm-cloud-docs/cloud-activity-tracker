@@ -28,7 +28,7 @@ subcollection: cloud-activity-tracker
 {{site.data.keyword.cloudaccesstraillong}} 服务包含可用于在云中管理事件的命令行界面 (CLI)。您可以使用 {{site.data.keyword.cloud_notm}} 插件来查看事件的状态，下载事件以及配置保留时间策略。该 CLI 提供了以下不同类型的帮助：一般帮助（用于了解 CLI 和受支持的命令）、命令帮助（用于了解如何使用命令）或子命令帮助（用于了解如何使用某个命令的子命令）。
 {:shortdesc}
 
-不推荐使用 {{site.data.keyword.cloudaccesstrailfull}}。从 2019 年 5 月 9 日开始，无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
+{{site.data.keyword.cloudaccesstrailfull}} 已被弃用。从 2019 年 5 月 9 日开始，您无法供应新的 {{site.data.keyword.cloudaccesstrailshort}} 实例。对现有高端套餐实例的支持会持续到 2019 年 9 月 30 日。要继续监视 {{site.data.keyword.cloud_notm}} 帐户的活动，请供应 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的实例。
 {: deprecated}
 
 

@@ -62,8 +62,8 @@ $ ibmcloud at status -a -s YYYY-MM-DD -e YYYY-MM-DD
 其中
     
 * *-a* 用來指定要求適用於帳戶網域。
-* *-s* 用來以「世界標準時間 (UTC) 」設定開始日期：*YYYY-MM-DD*。
-* *-e* 用來以「世界標準時間 (UTC) 」設定結束日期：*YYYY-MM-DD*。
+* *-s* 用來以「世界標準時間 (UTC)」設定開始日期：*YYYY-MM-DD*。
+* *-e* 用來以「世界標準時間 (UTC)」設定結束日期：*YYYY-MM-DD*。
 
 例如，若要查看空間網域中過去 2 週可用的事件，請執行下列指令：
 

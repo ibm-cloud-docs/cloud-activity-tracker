@@ -141,7 +141,7 @@ Download completed successfully
 ```
 {: screen}
 
-L'indicatore di avanzamento si muove da 0 a 100% come vengono scaricati gli eventi.
+L'indicatore di avanzamento passa da 0 a 100% man mano che vengono scaricati gli eventi.
 
 **Nota:** 
 

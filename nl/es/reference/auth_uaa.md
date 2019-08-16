@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,7 +24,7 @@ subcollection: cloud-activity-tracker
 # Obtención de una señal de UAA
 {: #auth_uaa}
 
-Utilice UAA de {{site.data.keyword.Bluemix}} para obtener una señal de autenticación que puede utilizar para trabajar con el servicio {{site.data.keyword.cloudaccesstraillong}}. Puede obtener la señal de autenticación mediante la CLI de {{site.data.keyword.cloud_notm}} o mediante las API.
+Utilice UAA de {{site.data.keyword.cloud_notm}} para obtener una señal de autenticación que puede utilizar para trabajar con el servicio {{site.data.keyword.cloudaccesstraillong}}. Puede obtener la señal de autenticación mediante la CLI de {{site.data.keyword.cloud_notm}} o mediante las API.
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}} está en desuso. A partir del 9 de mayo de 2019, no se pueden suministrar nuevas instancias de {{site.data.keyword.cloudaccesstrailshort}}. Las instancias existentes del plan premium recibirán soporte hasta el 30 de septiembre de 2019. Para seguir supervisando la actividad de la cuenta de {{site.data.keyword.cloud_notm}} suministre una instancia de [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
@@ -49,7 +49,7 @@ Para obtener una señal de UAA, siga estos pasos:
     
 2. Inicie una sesión en {{site.data.keyword.cloud_notm}}. 
 
-    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
+    Ejecute el mandato [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) para iniciar una sesión en {{site.data.keyword.cloud_notm}} y luego ejecute el mandato [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) para definir la organización y el espacio donde desea suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Ejecute el mandato `ibmcloud iam oauth-tokens` para obtener la señal de UAA.
 

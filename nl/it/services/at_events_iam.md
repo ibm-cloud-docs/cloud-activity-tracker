@@ -26,7 +26,7 @@ subcollection: cloud-activity-tracker
 # Eventi IAM
 {: #at_events_iam}
 
-In qualità di responsabile della sicurezza, revisore o gestore, puoi utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come gli utenti e le applicazioni interagiscono con il servizio {{site.data.keyword.iamlong}} (IAM) in {{site.data.keyword.Bluemix}}. 
+In qualità di responsabile della sicurezza, revisore o gestore, puoi utilizzare il servizio {{site.data.keyword.cloudaccesstrailfull}} per tracciare come gli utenti e le applicazioni interagiscono con il servizio {{site.data.keyword.iamlong}} (IAM) in {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}} è obsoleto. A partire dal 9 maggio 2019, non puoi eseguire il provisioning delle nuove istanze di {{site.data.keyword.cloudaccesstrailshort}}. Le istanze del piano Premium esistenti sono supportate fino al 30 settembre 2019. Per continuare a monitorare l'attività del tuo account {{site.data.keyword.cloud_notm}}, esegui il provisioning di un'istanza di [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
@@ -39,7 +39,7 @@ Per iniziare a monitorare le azioni del tuo utente, vedi [{{site.data.keyword.cl
 Un iniziatore può essere un utente, un servizio o un'applicazione.
 {: tip}
 
-## Gestione dei gruppi di accesso
+## Gestione degli eventi dei gruppi di accesso
 {: #at_events_iam_access}
 
 La seguente tabella elenca le azioni che generano un evento:

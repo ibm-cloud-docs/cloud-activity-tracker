@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,7 +24,7 @@ subcollection: cloud-activity-tracker
 # UAA-Token abrufen
 {: #auth_uaa}
 
-Verwenden Sie die {{site.data.keyword.Bluemix}}-UAA, um ein Authentifizierungstoken abzurufen, das Sie zum Arbeiten mit dem {{site.data.keyword.cloudaccesstraillong}}-Service verwenden können. Dieses Authentifizierungstoken können Sie über die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}} oder mithilfe von APIs abrufen.
+Verwenden Sie die {{site.data.keyword.cloud_notm}}-UAA, um ein Authentifizierungstoken abzurufen, das Sie zum Arbeiten mit dem {{site.data.keyword.cloudaccesstraillong}}-Service verwenden können. Dieses Authentifizierungstoken können Sie über die Befehlszeilenschnittstelle (CLI) für {{site.data.keyword.cloud_notm}} oder mithilfe von APIs abrufen.
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}} wird nicht mehr verwendet. Ab 09. Mai 2019 können keine neuen {{site.data.keyword.cloudaccesstrailshort}}-Instanzen mehr bereitgestellt werden. Vorhandene Instanzen des Premium-Plans werden bis 30. September 2019 unterstützt. Wenn Sie die Aktivitäten Ihres {{site.data.keyword.cloud_notm}}-Kontos weiterhin verfolgen möchten, stellen Sie eine Instanz von [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) bereit.
@@ -49,7 +49,7 @@ Führen Sie zum Abrufen des UAA-Tokens die folgenden Schritte aus:
     
 2. Melden Sie sich bei {{site.data.keyword.cloud_notm}} an. 
 
-    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
+    Melden Sie sich durch Ausführen des Befehls [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) bei {{site.data.keyword.cloud_notm}} an und führen Sie dann den Befehl [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) aus, um festzulegen, für welche Organisation und welchen Bereich (Space) der {{site.data.keyword.cloudaccesstrailshort}}-Service bereitgestellt werden soll.
 	
 3. Rufen Sie das UAA-Token durch Ausführen des Befehls `ibmcloud iam oauth-tokens` ab.
 

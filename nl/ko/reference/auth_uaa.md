@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,7 +24,7 @@ subcollection: cloud-activity-tracker
 # UAA 토큰 가져오기
 {: #auth_uaa}
 
-{{site.data.keyword.cloudaccesstraillong}} 서비스에 대해 작업하는 데 사용할 수 있는 인증 토큰을 가져오려면 {{site.data.keyword.Bluemix}} UAA를 사용하십시오. 인증 토큰은 {{site.data.keyword.cloud_notm}} CLI 또는 API를 사용하여 얻을 수 있습니다.
+{{site.data.keyword.cloudaccesstraillong}} 서비스에 대해 작업하는 데 사용할 수 있는 인증 토큰을 가져오려면 {{site.data.keyword.cloud_notm}} UAA를 사용하십시오. 인증 토큰은 {{site.data.keyword.cloud_notm}} CLI 또는 API를 사용하여 얻을 수 있습니다.
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}}는 더 이상 사용되지 않습니다. 2019년 5월 9일을 기준으로 새 {{site.data.keyword.cloudaccesstrailshort}} 인스턴스를 프로비저닝할 수 없습니다. 기존 프리미엄 플랜 인스턴스는 2019년 9월 30일까지 지원됩니다. {{site.data.keyword.cloud_notm}} 계정의 활동을 계속 모니터하려면 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started)의 인스턴스를 프로비저닝하십시오.
@@ -49,7 +49,7 @@ UAA 토큰을 가져오려면 다음 단계를 완료하십시오.
     
 2. {{site.data.keyword.cloud_notm}}에 로그인하십시오. 
 
-    [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
+    [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 명령을 실행하여 {{site.data.keyword.cloud_notm}}에 로그인한 후 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 명령을 실행하여 {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝할 조직 및 영역을 설정하십시오.
 	
 3. `ibmcloud iam oauth-tokens` 명령을 실행하여 UAA 토큰을 가져오십시오.
 

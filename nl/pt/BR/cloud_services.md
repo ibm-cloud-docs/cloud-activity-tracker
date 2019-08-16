@@ -59,7 +59,7 @@ A tabela a seguir lista os serviços de cálculo serverless que enviam eventos p
 
 | Serviço     | Descrição | Eventos do {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-index#index) | O {{site.data.keyword.openwhisk_short}} é uma plataforma de programação poliglota Functions-as-a-Service (FaaS) com base no Apache OpenWhisk que pode ser usada para escrever `code called actions` leves. | [Eventos que são gerados pelo {{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-getting_started) | O {{site.data.keyword.openwhisk_short}} é uma plataforma de programação poliglota Functions-as-a-Service (FaaS) com base no Apache OpenWhisk que pode ser usada para escrever `code called actions` leves. | [Eventos que são gerados pelo {{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
 {: caption="Lista de serviços de cálculo serverless que enviam eventos para o {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
 
@@ -85,8 +85,8 @@ A tabela a seguir lista os serviços de plataforma de contêiner que enviam even
 
 | Serviço     | Descrição | Eventos do {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}: eventos de gerenciamento de cluster](/docs/containers?topic=containers-container_index#container_index)| Esses eventos relatam ações como criação, exclusão ou atualização de cluster. | [Eventos de gerenciamento de cluster ](/docs/containers?topic=containers-at_events#cluster-events) |  
-| [{{site.data.keyword.containerlong_notm}}: eventos de auditoria do servidor de API](/docs/containers?topic=containers-container_index#container_index)| Os eventos de auditoria do servidor de API do Kubernetes fornecem informações cronológicas sobre a sequência de atividades que afetam um cluster. Cada ação gera um evento | [Eventos de auditoria do servidor de API do Kubernetes](/docs/containers?topic=containers-at_events#kube-events) |
+| [{{site.data.keyword.containerlong_notm}}: eventos de gerenciamento de cluster](/docs/containers?topic=containers-getting-started#getting-started)| Esses eventos relatam ações como criação, exclusão ou atualização de cluster. | [Eventos de gerenciamento de cluster ](/docs/containers?topic=containers-at_events#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}: eventos de auditoria do servidor de API](/docs/containers?topic=containers-getting-started#getting-started)| Os eventos de auditoria do servidor de API do Kubernetes fornecem informações cronológicas sobre a sequência de atividades que afetam um cluster. Cada ação gera um evento | [Eventos de auditoria do servidor de API do Kubernetes](/docs/containers?topic=containers-at_events#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) | É possível usar o serviço {{site.data.keyword.registrylong_notm}} para armazenar e acessar imagens privadas do Docker em uma arquitetura altamente disponível e escalável. | [Eventos que são gerados quando você interage com o {{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="Eventos de contêiner" caption-side="top"} 
 
@@ -141,8 +141,8 @@ A tabela a seguir lista os serviços do DevOps que enviam eventos para o {{site.
 | Serviço     | Descrição | Eventos do {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | O {{site.data.keyword.DRA_short}} é uma integração no catálogo de cadeia de ferramentas aberta do {{site.data.keyword.cloud_notm}}. | [Eventos que são gerados pelo {{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | Com o {{site.data.keyword.contdelivery_short}}, é possível construir, testar
-e entregar aplicativos usando práticas DevOps e ferramentas líderes de mercado. | [Eventos que são gerados pelo {{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | Com o {{site.data.keyword.contdelivery_short}}, é possível construir, testar
+e entregar aplicativos usando práticas DevOps e ferramentas líderes de mercado. | [Eventos que são gerados pelo {{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | Permite que os desenvolvedores de aplicativos liberem rapidamente os aplicativos traduzidos para clientes globais. | [Eventos gerados pelo {{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="Lista de ferramentas do desenvolvedor que enviam eventos para o {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 
@@ -155,7 +155,7 @@ A tabela a seguir lista os serviços do Cloud que podem ser usados para desenvol
 
 | Serviço     | Descrição | Eventos do {{site.data.keyword.cloudaccesstrailshort}} |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-tutorial-getting-started#create) | No {{site.data.keyword.cloud_notm}}, é possível construir aplicativos móveis e da web no nível corporativo e tirar vantagem das extensões de nuvem que são hospedadas pelo {{site.data.keyword.cloud_notm}}. É possível usar o console do {{site.data.keyword.cloud_notm}} e as ferramentas de linha de comandos para construir, executar e implementar os seus apps. É possível usar o {{site.data.keyword.dev_console}} para criar um app usando um kit do iniciador. | [Eventos que são gerados pelo {{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-at_events#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-getting-started) | No {{site.data.keyword.cloud_notm}}, é possível construir aplicativos móveis e da web no nível corporativo e tirar vantagem das extensões de nuvem que são hospedadas pelo {{site.data.keyword.cloud_notm}}. É possível usar o console do {{site.data.keyword.cloud_notm}} e as ferramentas de linha de comandos para construir, executar e implementar os seus apps. É possível usar o {{site.data.keyword.dev_console}} para criar um app usando um kit do iniciador. | [Eventos que são gerados pelo {{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-at_events#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-overview-push#overview-push)| É possível usar o serviço {{site.data.keyword.mobilepushshort}} para enviar notificações para dispositivos móveis e navegadores. Notificações podem ser destinadas a todos os usuários do aplicativo ou a um conjunto específico de usuários e dispositivos usando tags. Para cada mensagem enviada para o serviço, o público desejado recebe uma notificação. | [Eventos que são gerados pelo {{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker#push_activity_tracker) |  
 {: caption="Lista de serviços da web e móveis do Cloud que enviam eventos para o {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
 

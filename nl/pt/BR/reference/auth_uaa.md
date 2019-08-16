@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,7 +24,7 @@ subcollection: cloud-activity-tracker
 # Obtendo um token da UAA
 {: #auth_uaa}
 
-Use o {{site.data.keyword.Bluemix}} UAA para obter um token de autenticação que você possa usar para trabalhar com o serviço {{site.data.keyword.cloudaccesstraillong}}. É possível obter o token de autenticação usando a CLI do {{site.data.keyword.cloud_notm}} ou usando APIs.
+Use o {{site.data.keyword.cloud_notm}} UAA para obter um token de autenticação que você possa usar para trabalhar com o serviço {{site.data.keyword.cloudaccesstraillong}}. É possível obter o token de autenticação usando a CLI do {{site.data.keyword.cloud_notm}} ou usando APIs.
 {:shortdesc}
 
 O {{site.data.keyword.cloudaccesstrailfull}} foi descontinuado. A partir de 9 de maio de 2019, não é possível fornecer novas instâncias do {{site.data.keyword.cloudaccesstrailshort}}. As instâncias existentes do plano premium são suportadas até 30 de setembro de 2019. Para continuar o monitoramento da atividade de sua conta do {{site.data.keyword.cloud_notm}}, provisione uma instância do [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
@@ -49,7 +49,7 @@ Para obter o token do UAA, conclua as etapas a seguir:
     
 2. Efetue login no {{site.data.keyword.cloud_notm}}. 
 
-    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
+    Execute o comando [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) para efetuar login no {{site.data.keyword.cloud_notm}} e, em seguida, execute o comando [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) para configurar a organização e o espaço nos quais você deseja provisionar o serviço {{site.data.keyword.cloudaccesstrailshort}}.
 	
 3. Execute o comando `ibmcloud iam oauth-tokens` para obter o token do UAA.
 

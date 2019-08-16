@@ -40,7 +40,7 @@ Pour obtenir la liste à jour des services intégrés avec {{site.data.keyword.c
 
 * {{site.data.keyword.cloudaccesstrailshort}} Interface de ligne de commande
 
-Nous avons identifié un problème lié à l'interface CLI de suivi d'activité (Activity Tracker). Une nouvelle version de l'interface CLI sera publiée afin de résoudre ce problème. 
+Nous avons identifié un problème lié à l'interface CLI de suivi d'activité (Activity Tracker). Une nouvelle version de l'interface CLI sera publiée afin de résoudre ce problème.
 
 Si vous vous connectez à {{site.data.keyword.cloud_notm}} depuis la ligne de commande en utilisant `ibmcloud login` puis exécutez des commandes {{site.data.keyword.cloudaccesstrailshort}}, vous obtenez l'erreur `Failed: Unauthorized` pour toute commande {{site.data.keyword.cloudaccesstrailshort}} que vous exécutez. 
 

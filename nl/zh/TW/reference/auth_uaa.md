@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-06-06"
 
 keywords: IBM Cloud, Activity Tracker, UAA, security
 
@@ -24,7 +24,7 @@ subcollection: cloud-activity-tracker
 # 取得 UAA 記號
 {: #auth_uaa}
 
-請使用 {{site.data.keyword.Bluemix}} UAA 來取得鑑別記號，您可利用它來使用 {{site.data.keyword.cloudaccesstraillong}} 服務。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或使用 API 來取得鑑別記號。
+請使用 {{site.data.keyword.cloud_notm}} UAA 來取得鑑別記號，您可利用它來使用 {{site.data.keyword.cloudaccesstraillong}} 服務。您可以使用 {{site.data.keyword.cloud_notm}} CLI 或使用 API 來取得鑑別記號。
 {:shortdesc}
 
 {{site.data.keyword.cloudaccesstrailfull}} 已淘汰。從 2019 年 5 月 9 日開始，您無法佈建新的 {{site.data.keyword.cloudaccesstrailshort}} 實例。現有的超值方案實例將支援到 2019 年 9 月 30 日為止。若要繼續監視 {{site.data.keyword.cloud_notm}} 帳戶的活動，請佈建 [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started) 的實例。
@@ -49,7 +49,7 @@ subcollection: cloud-activity-tracker
     
 2. 登入 {{site.data.keyword.cloud_notm}}。 
 
-    執行 [ibmcloud login](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
+    執行 [ibmcloud login](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login) 指令以登入 {{site.data.keyword.cloud_notm}}，然後執行 [ibmcloud target](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) 指令，以設定您要在其中佈建 {{site.data.keyword.cloudaccesstrailshort}} 服務的組織及空間。
 	
 3. 執行 `ibmcloud iam oauth-tokens` 指令以取得 UAA 記號。
 

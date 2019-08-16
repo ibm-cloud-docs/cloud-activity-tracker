@@ -40,7 +40,7 @@ La tabla siguiente contiene los campos comunes que están disponibles para un su
 
 | Nombre de campo | Descripción | Valor |
 |------------|-------------|-------|
-| `initiator.id` | ID del iniciador de la acción. </br></br>Los tipos válidos de iniciadores son `IBMID`, `serviceID` y `Cloud Foundry (CF) user ID`. |Un ejemplo de IBMID es `IBMid-000000XXX2` </br>Un ejemplo de ID de servicio es `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>Un ejemplo de ID de usuario de CF es `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
+| `initiator.id` | ID del iniciador de la acción. </br></br>Los tipos válidos de iniciadores son `IBMID`, `serviceID` y `Cloud Foundry (CF) user ID`. | Un ejemplo de IBMID es `IBMid-000000XXX2` </br>Un ejemplo de ID de servicio es `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>Un ejemplo de ID de usuario de CF es `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
 | `initiator.name` | Nombre de usuario del usuario que ha iniciado la acción. | Por ejemplo, una dirección de correo electrónico. |
 | `initiator.typeURI` | Tipo de origen del suceso. | Los valores válidos son *service/security/account/user*, *service/security/clientid* y *service/security/account/serviceid*. |
 | `initiator.credential.type` | Tipo de credencial del ID de iniciador. | Los valores válidos son *user*, *token* y *apikey*. |

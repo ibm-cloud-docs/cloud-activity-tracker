@@ -40,7 +40,7 @@ La seguente tabella elenca i campi comuni disponibili per un evento {{site.data.
 
 | Nome campo | Descrizione | Valore |
 |------------|-------------|-------|
-| `initiator.id` | ID dell'iniziatore dell'azione. </br></br>I tipi validi di iniziatori sono `IBMID`, `serviceID` e `Cloud Foundry (CF) user ID`. |Un esempio di un ID IBM è `IBMid-000000XXX2` </br>Un esempio di un ID servizio è `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>Un esempio di un ID utente CF è `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
+| `initiator.id` | ID dell'iniziatore dell'azione. </br></br>I tipi validi di iniziatori sono `IBMID`, `serviceID` e `Cloud Foundry (CF) user ID`. | Un esempio di un ID IBM è `IBMid-000000XXX2` </br>Un esempio di un ID servizio è `iam-ServiceId-12345678-0165-4c89-847d-9660b1632e14` </br>Un esempio di un ID utente CF è `7666666b-23ae-4a34-8569-cu75tgdr4da3` |
 | `initiator.name` | Il nome dell'utente che ha avviato l'azione. | Ad esempio, un indirizzo email. |
 | `initiator.typeURI` | Tipo di origine dell'evento. | I valori validi sono *service/security/account/user*, *service/security/clientid* e *service/security/account/serviceid*. |
 | `initiator.credential.type` | Tipo di credenziali dell'ID iniziatore. | I valori validi sono *user*, *token* e *apikey*. |

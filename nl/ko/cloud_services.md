@@ -59,7 +59,7 @@ subcollection: cloud-activity-tracker
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-index#index) | {{site.data.keyword.openwhisk_short}}는 경량 `code called actions`를 작성하는 데 사용할 수 있는 Apache OpenWhisk를 기반으로 하며 여러 언어로 된 FaaS(Functions-as-a-Service) 프로그래밍 플랫폼입니다. | [{{site.data.keyword.openwhisk_short}}에 의해 생성된 이벤트](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
+| [{{site.data.keyword.openwhisk_short}}](/docs/openwhisk?topic=cloud-functions-getting_started) | {{site.data.keyword.openwhisk_short}}는 경량 `code called actions`를 작성하는 데 사용할 수 있는 Apache OpenWhisk를 기반으로 하며 여러 언어로 된 FaaS(Functions-as-a-Service) 프로그래밍 플랫폼입니다. | [{{site.data.keyword.openwhisk_short}}에 의해 생성된 이벤트](/docs/openwhisk?topic=cloud-functions-activity_tracker#activity_tracker) |
 {: caption="{{site.data.keyword.cloudaccesstrailshort}}에 이벤트를 전송하는 서버리스 컴퓨팅 서비스 목록" caption-side="top"} 
 
 
@@ -85,8 +85,8 @@ subcollection: cloud-activity-tracker
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.containerlong_notm}}: 클러스터 관리 이벤트](/docs/containers?topic=containers-container_index#container_index)| 이러한 이벤트는 클러스터 작성, 삭제 또는 업데이트와 같은 조치에 대해 보고합니다. | [클러스터 관리 이벤트](/docs/containers?topic=containers-at_events#cluster-events) |  
-| [{{site.data.keyword.containerlong_notm}}: API 서버 감사 이벤트](/docs/containers?topic=containers-container_index#container_index)| Kubernetes API 서버 감사 이벤트는 클러스터에 영향을 미치는 활동 시퀀스에 대한 시간 순서대로의 정보를 제공합니다. 각 조치는 이벤트를 생성합니다. | [Kubernetes API 서버 감사 이벤트](/docs/containers?topic=containers-at_events#kube-events) |
+| [{{site.data.keyword.containerlong_notm}}: 클러스터 관리 이벤트](/docs/containers?topic=containers-getting-started#getting-started)| 이러한 이벤트는 클러스터 작성, 삭제 또는 업데이트와 같은 조치에 대해 보고합니다. | [클러스터 관리 이벤트](/docs/containers?topic=containers-at_events#cluster-events) |  
+| [{{site.data.keyword.containerlong_notm}}: API 서버 감사 이벤트](/docs/containers?topic=containers-getting-started#getting-started)| Kubernetes API 서버 감사 이벤트는 클러스터에 영향을 미치는 활동 시퀀스에 대한 시간 순서대로의 정보를 제공합니다. 각 조치는 이벤트를 생성합니다. | [Kubernetes API 서버 감사 이벤트](/docs/containers?topic=containers-at_events#kube-events) |
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-registry_overview#registry_overview) | {{site.data.keyword.registrylong_notm}} 서비스를 사용하여 확장 가능한 고가용성 아키텍처에서 개인용 Docker 이미지를 저장하고 액세스할 수 있습니다. | [{{site.data.keyword.registrylong_notm}}와 상호작용하면 생성되는 이벤트](/docs/services/Registry?topic=registry-at_events#at_events) | 
 {: caption="컨테이너 이벤트" caption-side="top"} 
 
@@ -123,7 +123,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|----------------------------------------------------|
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}}은 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 PostgreSQL 서비스입니다. | [{{site.data.keyword.databases-for-postgresql_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker#activity-tracker) |
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 서비스입니다. | [{{site.data.keyword.databases-for-redis_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 서비스입니다.  | [{{site.data.keyword.databases-for-redis_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-redis?topic=databases-for-redis-activity-tracker-integration#activity-tracker-integration) |
 | [{{site.data.keyword.sqlquery_short}}](/docs/services/sql-query?topic=sql-query-overview#overview) | 사각형 데이터를 분석하거나, 변형하거나 정리하기 위해 {{site.data.keyword.sqlquery_short}} 서비스를 사용하여 SQL 조회(즉 SELECT문)를 실행할 수 있습니다. | [{{site.data.keyword.sqlquery_short}}에 의해 생성된 이벤트](/docs/services/sql-query?topic=sql-query-activitytracker#activity-tracker-events) |  
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 etcd 서비스입니다. | [{{site.data.keyword.databases-for-etcd_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-etcd?topic=databases-for-etcd-activity-tracker#activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-about#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}}는 {{site.data.keyword.cloud_notm}}에서 호스팅되고 다른 {{site.data.keyword.cloud_notm}} 서비스와 통합되는 관리 Elasticsearch 서비스입니다. | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}에 의해 생성된 이벤트](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-activity-tracker#activity-tracker-integration) |
@@ -141,7 +141,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
 | [{{site.data.keyword.DRA_short}}](/docs/apps?topic=creating-apps-insights-overview) | {{site.data.keyword.DRA_short}}는 {{site.data.keyword.cloud_notm}} 오픈 도구 체인 카탈로그의 통합입니다. | [{{site.data.keyword.DRA_short}}에 의해 생성된 이벤트](/docs/apps?topic=creating-apps-at_events) |
-| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-cd_overview#cd_overview) | {{site.data.keyword.contdelivery_short}}를 통해 DevOps 사례와 업계 최고의 도구를 사용하여 애플리케이션을 빌드하고 테스트하며 전달할 수 있습니다. | [{{site.data.keyword.contdelivery_short}}에 의해 생성된 이벤트](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_events) |
+| [{{site.data.keyword.contdelivery_short}}](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | {{site.data.keyword.contdelivery_short}}를 통해 DevOps 사례와 업계 최고의 도구를 사용하여 애플리케이션을 빌드하고 테스트하며 전달할 수 있습니다. | [{{site.data.keyword.contdelivery_short}}에 의해 생성된 이벤트](/docs/services/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [{{site.data.keyword.GlobalizationPipeline_short}}](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-globalizationpipeline#globalizationpipeline) | 앱 개발자가 변환된 애플리케이션을 글로벌 고객에게 신속하게 릴리스할 수 있습니다. | [{{site.data.keyword.GlobalizationPipeline_short}}에 의해 생성된 이벤트](/docs/services/GlobalizationPipeline?topic=GlobalizationPipeline-gpat_events#gpat_events)|
 {: caption="이벤트를 {{site.data.keyword.cloudaccesstrailshort}}에 전송하는 개발자 도구의 목록" caption-side="top"} 
 
@@ -154,7 +154,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-tutorial-getting-started#create) | {{site.data.keyword.cloud_notm}}에서는 엔터프라이즈 레벨의 모바일 및 웹 애플리케이션을 빌드하고 {{site.data.keyword.cloud_notm}}에서 호스팅하는 클라우드 확장기능을 이용할 수 있습니다. {{site.data.keyword.cloud_notm}} 콘솔 및 명령행 도구를 사용하여 앱을 빌드하고 실행하고 배치할 수 있습니다. 스타터 킷을 사용하여 {{site.data.keyword.dev_console}}을 사용해 앱을 작성할 수 있습니다. | [{{site.data.keyword.dev_console}}에 의해 생성된 이벤트](/docs/apps?topic=creating-apps-at_events#at_events) |
+| [{{site.data.keyword.dev_console}}](/docs/apps?topic=creating-apps-getting-started) | {{site.data.keyword.cloud_notm}}에서는 엔터프라이즈 레벨의 모바일 및 웹 애플리케이션을 빌드하고 {{site.data.keyword.cloud_notm}}에서 호스팅하는 클라우드 확장기능을 이용할 수 있습니다. {{site.data.keyword.cloud_notm}} 콘솔 및 명령행 도구를 사용하여 앱을 빌드하고 실행하고 배치할 수 있습니다. 스타터 킷을 사용하여 {{site.data.keyword.dev_console}}을 사용해 앱을 작성할 수 있습니다. | [{{site.data.keyword.dev_console}}에 의해 생성된 이벤트](/docs/apps?topic=creating-apps-at_events#at_events) |
 | [{{site.data.keyword.mobilepushshort}}](/docs/services/mobilepush?topic=mobile-pushnotification-overview-push#overview-push)| {{site.data.keyword.mobilepushshort}} 서비스를 사용하여 모바일 디바이스 및 브라우저에 알림을 전송할 수 있습니다. 알림은 모든 애플리케이션 사용자를 대상으로 하거나, 태그를 사용하여 특정 사용자 및 디바이스 세트를 대상으로 할 수 있습니다. 서비스에 제출되는 모든 메시지에 대해, 의도된 대상이 알림을 수신합니다. | [{{site.data.keyword.mobilepushshort}}에 의해 생성된 이벤트](/docs/services/mobilepush?topic=mobile-pushnotification-push_activity_tracker#push_activity_tracker) |  
 {: caption="{{site.data.keyword.cloudaccesstrailshort}}에 이벤트를 전송하는 웹 및 모바일 클라우드 서비스의 목록" caption-side="top"} 
 
@@ -170,7 +170,7 @@ Cloud Foundry 애플리케이션에서 {{site.data.keyword.cloudaccesstrailshort
 
 |서비스     |설명 | {{site.data.keyword.cloudaccesstrailshort}} 이벤트 |
 |-------------|-------------|-------------|
-| [{{site.data.keyword.cloud_notm}}에 로그인](/docs/iam?topic=iam-iamoverview#iamoverview) |비밀번호, API 키, 권한 부여 코드 또는 패스코드를 사용하여 {{site.data.keyword.cloud_notm}}에 로그인할 수 있습니다. 연합된 사용자는 일회성 패스코드 또는 API 키를 사용하여 명령행 인터페이스(CLI)에서 로그인할 수 있습니다. | [사용자 또는 앱이 {{site.data.keyword.cloud_notm}}에 로그인하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
+| [{{site.data.keyword.cloud_notm}}에 로그인](/docs/iam?topic=iam-iamoverview#iamoverview)|비밀번호, API 키, 권한 부여 코드 또는 패스코드를 사용하여 {{site.data.keyword.cloud_notm}}에 로그인할 수 있습니다. 연합된 사용자는 일회성 패스코드 또는 API 키를 사용하여 명령행 인터페이스(CLI)에서 로그인할 수 있습니다. | [사용자 또는 앱이 {{site.data.keyword.cloud_notm}}에 로그인하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_login) |
 | [계정 사용자의 Cloud Foundry 액세스 권한 관리](/docs/iam?topic=iam-mngcf#mngcf) | 계정 내의 사용자에게 Cloud Foundry(CF) 권한을 부여하거나, 취소하거나, 이를 업데이트할 수 있습니다. | [계정에서 CF 역할을 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-cf#cf_cfroles) |
 | [{{site.data.keyword.iamlong}}(IAM)](/docs/iam?topic=iam-userroles#userroles) |IAM을 사용하여 {{site.data.keyword.cloud_notm}} 플랫폼 및 인프라 서비스의 사용자 및 역할을 관리할 수 있습니다. | [IAM 정책을 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_policies) |
 | [플랫폼 API 키 관리](/docs/iam?topic=iam-manapikey#platform-api-keys) | {{site.data.keyword.IBM_notm}} Cloud에 사용자 또는 서비스 ID와 연관된 플랫폼 API 키를 정의할 수 있습니다. | [플랫폼 API 키를 관리하면 생성되는 이벤트](/docs/services/cloud-activity-tracker/services?topic=cloud-activity-tracker-at_events_iam#at_events_iam_apikeys) |

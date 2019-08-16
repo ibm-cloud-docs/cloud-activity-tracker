@@ -145,7 +145,7 @@ Download completed successfully
 **附註：** 
 
 * 所下載資料的格式為壓縮 JSON。例如，當您在 Linux 系統下載事件，請解壓縮 .gz 檔並開啟它，以查看 JSON 格式的資料。 
-* 壓縮的 JSON 適用於 ElasticSearch 或 Logstash 的汲取。例如，如果未提供 -o ，而您是在 Linux 系統上工作，則資料將串流至 stdout，以便您可以將其直接以管道傳送到自己的 Elastic 堆疊。
+* 壓縮的 JSON 適用於 ElasticSearch 或 Logstash 的汲取。例如，如果未提供 -o，而您是在 Linux 系統上工作，則資料將串流至 stdout，以便您可以將其直接以管道傳送到自己的 Elastic 堆疊。
 * 您也可以使用可以剖析 JSON 的任何程式來處理資料。 
 
 ## 步驟 4：刪除階段作業

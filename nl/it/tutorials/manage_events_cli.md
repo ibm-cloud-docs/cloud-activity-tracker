@@ -201,7 +201,7 @@ Download Successful
 ```
 {: screen} 
 
-L'indicatore di avanzamento si muove da 0 a 100% come vengono scaricati gli eventi.
+L'indicatore di avanzamento passa dallo 0 al 100% man mano che vengono scaricati gli eventi.
 
 Per ulteriori informazioni sul comando `ibmcloud at download`, fai riferimento a [Guida di riferimento alla CLI](/docs/services/cloud-activity-tracker/reference?topic=cloud-activity-tracker-at_cli_cloud#download).
 
