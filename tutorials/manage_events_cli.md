@@ -29,7 +29,7 @@ subcollection: cloud-activity-tracker
 Use this tutorial to learn how to use the {{site.data.keyword.cloudaccesstrailshort}} CLI to manage events through the command-line. Learn how to get information about stored events, how to download events that are stored in the {{site.data.keyword.IBM_notm}} Cloud, or how to delete events.
 {:shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances. Existing premium plan instances are supported until 30 September 2019. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
+{{site.data.keyword.cloudaccesstrailfull}} is deprecated. As of 9 May 2019, you cannot provision new {{site.data.keyword.cloudaccesstrailshort}} instances. Existing premium plan instances are supported until 9 October 2019. To continue monitoring the activity of your {{site.data.keyword.cloud_notm}} account, provision an instance of the [{{site.data.keyword.at_full}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started).
 {: deprecated}
 
 Complete the following steps:
